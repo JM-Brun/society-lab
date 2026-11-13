@@ -1,0 +1,51 @@
+name: Validate SMIC OpenFisca prototype
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/smic_openfisca.py"
+      - "tests/test_smic_openfisca.py"
+      - "requirements-openfisca.txt"
+      - "docs/smic-openfisca-prototype.md"
+      - ".github/workflows/smic-openfisca.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-openfisca.txt
+
+      - name: Install pinned OpenFisca-France
+        run: python -m pip install --disable-pip-version-check -r requirements-openfisca.txt
+
+      - name: Record resolved environment
+        run: python -m pip freeze
+
+      - name: Run input tests
+        run: python -m unittest discover -s tests -p "test_smic_openfisca.py"
+
+      - name: Execute annualized household scenarios
+        run: |
+          mkdir -p artifacts
+          python tools/smic_openfisca.py > artifacts/smic-openfisca-cases.json
+          python -m json.tool artifacts/smic-openfisca-cases.json > /dev/null
+
+      - name: Upload simulation output
+        uses: actions/upload-artifact@v4
+        with:
+          name: smic-openfisca-cases
+          path: artifacts/smic-openfisca-cases.json
+          if-no-files-found: error

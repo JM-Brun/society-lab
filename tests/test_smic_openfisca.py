@@ -26,6 +26,18 @@ class SmicOpenFiscaInputTests(unittest.TestCase):
         self.assertEqual(set(wage), set(MONTHS))
         self.assertTrue(all(value == REFERENCE_MONTHLY_GROSS_SMIC for value in wage.values()))
 
+    def test_birth_dates_are_explicit_for_adults_and_children(self):
+        situation = build_situation(CASES[1], 1000, 0)
+        individuals = situation["individus"]
+        self.assertEqual(
+            individuals["adult_1"]["date_naissance"],
+            {"ETERNITY": "1985-01-01"},
+        )
+        self.assertEqual(
+            individuals["child_1"]["date_naissance"],
+            {"ETERNITY": "2018-01-01"},
+        )
+
     def test_uplift_changes_gross_salary_not_household_composition(self):
         case = CASES[0]
         baseline = build_situation(case, 1000, 0)
@@ -45,6 +57,10 @@ class SmicOpenFiscaInputTests(unittest.TestCase):
     def test_negative_salary_uplift_below_minus_100_percent_is_rejected(self):
         with self.assertRaises(ValueError):
             build_situation(CASES[0], 1000, -1.01)
+
+    def test_non_finite_uplift_is_rejected(self):
+        with self.assertRaises(ValueError):
+            build_situation(CASES[0], 1000, float("nan"))
 
     def test_non_positive_reference_wage_is_rejected(self):
         with self.assertRaises(ValueError):
