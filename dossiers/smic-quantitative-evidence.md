@@ -38,11 +38,11 @@ Le rapport 2025 cite les évaluations microéconométriques du CICE : effet moye
 
 Il indique également que l'estimation varie lorsque le financement de la mesure est pris en compte : de l'ordre de **150 000 à 200 000 emplois** dans un scénario où le financement combine économies de dépenses et hausse de fiscalité, et jusqu'à **400 000** dans un scénario où le coût n'est pas compensé par des prélèvements ou des dépenses moindres.
 
-Ces chiffres ne sont pas interchangeables : le traitement, le périmètre et le contrefactuel diffèrent selon que l'on inclut ou non le financement. Le chiffre brut de 100 000 ne doit donc pas être présenté comme l'effet net définitif de la politique.
+Ces chiffres ne sont pas interchangeables : le traitement, le périmètre et le contrefactuel diffèrent selon que l'on retient l'estimation microéconométrique (environ 100 000 emplois), l'estimation macrosectorielle (près de 200 000 dans les services), les effets de bouclage macroéconomique (jusqu'à 400 000, estimation jugée très incertaine), ou l'effet estimé après financement (environ 160 000 dans l'analyse France Stratégie). Le rapport 2025 du Groupe d'experts présente une fourchette de 150 000 à 200 000 emplois en tenant compte du financement. Il faut rapporter chaque chiffre à sa méthode et à son contrefactuel ; aucun ne constitue une mesure unique et définitive.
 
 **Leçon méthodologique :** toute évaluation d'une baisse de cotisations ou d'un crédit d'impôt doit examiner son financement. Les effets d'une politique non financée et ceux d'une politique financée ne répondent pas à la même question.
 
-Source : [Groupe d'experts SMIC 2025, chapitre 4, section B](https://travail-emploi.gouv.fr/sites/travail-emploi/files/2025-12/SMIC-RAPPORT-2025-25novembre-VF.pdf).
+Sources : [Groupe d'experts SMIC 2025, chapitre 4, section B](https://travail-emploi.gouv.fr/sites/travail-emploi/files/2025-12/SMIC-RAPPORT-2025-25novembre-VF.pdf) ; [France Stratégie (2020), évaluation approfondie du CICE](https://www.strategie-plan.gouv.fr/publications/evaluation-credit-dimpot-competitivite-lemploi-synthese-travaux-dapprofondissement).
 
 ### 1.3 Dispositif « zéro charges » — Cahuc, Carcillo et Le Barbanchon
 
@@ -60,13 +60,13 @@ Source : [Groupe d'experts SMIC 2025, chapitre 4, section B](https://travail-emp
 
 ### 1.4 Cottet : hétérogénéité selon les entreprises
 
-Le rapport 2025 cite Cottet (2020) à propos des réformes de 1995 et 1996 : la réduction du coût du travail au niveau du SMIC d'environ **13 %** aurait eu un effet significatif sur l'emploi des salariés rémunérés au minimum, plus marqué dans les entreprises initialement peu intensives en main-d'œuvre à bas salaires.
+Le rapport 2025 cite la version 2020 du travail de Cottet sur les réformes de 1995 et 1996 : la baisse du coût du travail au niveau du SMIC d'environ **13 %** aurait eu un effet significatif sur l'emploi des salariés rémunérés au minimum, plus marqué dans les entreprises initialement peu intensives en main-d'œuvre à bas salaires.
 
-Ce résultat invite à ne pas supposer un effet uniforme : les réactions dépendent de la structure initiale des entreprises et de leur exposition au dispositif.
+La version publiée comme CESifo Working Paper en 2024 précise l'hétérogénéité : la réforme aurait accru de **13 points de pourcentage** le nombre d'emplois au SMIC dans les entreprises qui avaient peu ou pas de salariés au minimum avant la réforme ; les entreprises déjà utilisatrices de main-d'œuvre au SMIC auraient, elles, connu une croissance supplémentaire d'environ **4 %** sur les deux premières années, avec un effet plus fort dans les entreprises contraintes en liquidité ou en crédit.
 
-**Attention bibliographique :** ce résultat cité comme Cottet (2020) ne doit pas être confondu avec les autres travaux plus récents de l'auteur sur les réductions de cotisations. Les publications doivent être enregistrées séparément avec leurs titres, dates, données et stratégies d'identification respectives.
+Ce résultat invite à ne pas supposer un effet uniforme : les réactions dépendent de la structure initiale des entreprises, de l'exposition relative au dispositif et des contraintes de financement. La version 2020 (PSE WP 2020-72) et la version CESifo 2024 (WP 11076) sont des versions d'un même travail, pas deux réplications indépendantes.
 
-Source : [Groupe d'experts SMIC 2025, chapitre 4, section B](https://travail-emploi.gouv.fr/sites/travail-emploi/files/2025-12/SMIC-RAPPORT-2025-25novembre-VF.pdf).
+Sources : [Cottet (2024), CESifo Working Paper 11076](https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or) ; [version HAL déposée en 2020](https://shs.hal.science/halshs-03010943/preview/WP_202072_.pdf) ; [Groupe d'experts SMIC 2025, chapitre 4, section B](https://travail-emploi.gouv.fr/sites/travail-emploi/files/2025-12/SMIC-RAPPORT-2025-25novembre-VF.pdf).
 
 ## 2. Simulations du Groupe d'experts : résultats conditionnels, pas effets observés
 
