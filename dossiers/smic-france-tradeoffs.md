@@ -52,7 +52,7 @@ Ces montants sont des repères datés, pas une prévision de salaire net individ
 
 ### 1.3 Qui est concerné ?
 
-La Dares indique que 2,2 millions de salariés du secteur privé non agricole ont été directement concernés par la revalorisation de novembre 2024, soit 12,4 % du champ étudié. La proportion était plus élevée parmi les salariés à temps partiel (24,5 %), les salariés des très petites entreprises (19,4 %) et les femmes (59,2 % des bénéficiaires).
+La Dares indique que 2,1 millions de salariés du secteur privé non agricole ont bénéficié directement de la revalorisation du 1er janvier 2026, soit 11,8 % du champ Acemo. Il s'agit d'un indicateur de bénéficiaires directs, qui ne signifie pas que tous ces salariés perçoivent une rémunération globale exactement égale au SMIC. À titre de comparaison, 2,2 millions de salariés (12,4 %) avaient été directement concernés en novembre 2024. En 2024, la Dares estimait par ailleurs que les salariés à temps partiel et ceux des TPE étaient davantage exposés aux revalorisations. Les champs et dates doivent rester explicites.
 
 Ce chiffre désigne les bénéficiaires directs de cette revalorisation et de ce champ statistique ; il ne faut pas le présenter comme la part de tous les salariés français rémunérés au SMIC, ni comme un décompte actuel en 2026.
 
@@ -150,7 +150,7 @@ Les séries INSEE montrent que le pouvoir d'achat horaire net du SMIC a progress
 
 ### 5.3 Salariés directement concernés
 
-La Dares montre qu'en novembre 2024, 12,4 % des salariés du champ privé non agricole étaient directement concernés par la revalorisation, contre 14,6 % en janvier 2024 et 17,3 % en janvier 2023. La part dépend de l'inflation passée, de la fréquence des revalorisations, des négociations de branche et du rattrapage des grilles.
+La Dares montre qu'en janvier 2026, 11,8 % des salariés du champ privé non agricole ont bénéficié directement de la revalorisation (2,1 millions). En novembre 2024, la proportion était de 12,4 % (2,2 millions), contre 14,6 % en janvier 2024 et 17,3 % en janvier 2023. La publication Dares d'octobre 2026 souligne aussi qu'aucune source statistique ne permet de mesurer précisément le nombre total de salariés rémunérés au SMIC : les éléments de rémunération entrant dans l'assiette légale ne recouvrent pas toute la rémunération brute globale.
 
 ### 5.4 Effets sur le salaire moyen
 
