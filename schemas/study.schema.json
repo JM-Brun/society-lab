@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://jm-brun.github.io/society-lab/schemas/study.schema.json",
+  "title":"Society Lab Study","type":"object","additionalProperties":false,
+  "required":["id","title","study_type","source_ids","domains","review_status"],
+  "properties":{
+    "id":{"type":"string","pattern":"^STUDY-[A-Z0-9][A-Z0-9-]*$"},
+    "title":{"type":"string","minLength":1},"authors":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "organization":{"type":"string"},"publication_date":{"type":"string","format":"date"},
+    "study_type":{"enum":["experimental","quasi_experimental","observational","qualitative","mixed_methods","systematic_review","meta_analysis","modelling","descriptive","other"]},
+    "source_ids":{"type":"array","items":{"type":"string","pattern":"^SOURCE-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+    "dataset_ids":{"type":"array","items":{"type":"string","pattern":"^DATASET-[A-Z0-9-]+$"},"uniqueItems":true},
+    "domains":{"type":"array","items":{"type":"string","pattern":"^DOMAIN-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+    "research_question":{"type":"string"},"methods":{"type":"array","items":{"type":"string"}},
+    "population_or_unit":{"type":"string"},"geographic_scope":{"type":"array","items":{"type":"string"}},
+    "temporal_scope":{"type":"string"},"key_findings":{"type":"array","items":{"type":"string"}},
+    "limitations":{"type":"array","items":{"type":"string"}},
+    "funding_and_conflicts":{"type":"string"},
+    "review_status":{"enum":["unreviewed","screened","method_reviewed","cross_checked","challenged","superseded"]},
+    "review_notes":{"type":"string"},"tags":{"type":"array","items":{"type":"string","pattern":"^TAG-[A-Z0-9-]+$"},"uniqueItems":true}
+  }
+}
