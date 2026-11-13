@@ -6,7 +6,7 @@
   "properties":{
     "id":{"type":"string","pattern":"^DOSSIER-[A-Z0-9][A-Z0-9-]*$"},
     "title":{"type":"string","minLength":1},"summary":{"type":"string"},
-    "status":{"enum":["scoping","researching","draft","under_review","published","更新","archived"]},
+    "status":{"enum":["scoping","researching","draft","under_review","published","archived"]},
     "domain_ids":{"type":"array","items":{"type":"string","pattern":"^DOMAIN-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
     "question":{"type":"string"},"geographic_scope":{"type":"array","items":{"type":"string"}},
     "temporal_scope":{"type":"string"},"claim_ids":{"type":"array","items":{"type":"string","pattern":"^CLAIM-[A-Z0-9-]+$"},"uniqueItems":true},
