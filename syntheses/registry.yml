@@ -1,0 +1,15 @@
+version: 1
+description: "Correspondance obligatoire entre les dossiers de recherche principaux et leurs synthèses autonomes."
+dossiers:
+  - dossier_id: "DOSSIER-PARCOURSUP-EDUCATION-EQUITY"
+    dossier_path: "dossiers/parcoursup-education-equity.md"
+    synthesis_id: "SYNTHESIS-EDUCATION-PARCOURSUP-EQUITY"
+    synthesis_path: "syntheses/parcoursup-education.md"
+  - dossier_id: "DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE"
+    dossier_path: "dossiers/tig-peines-alternatives-incarceration.md"
+    synthesis_id: "SYNTHESIS-SECURITY-TIG-FRANCE"
+    synthesis_path: "syntheses/tig-france.md"
+  - dossier_id: "DOSSIER-SMIC-FRANCE-TRADEOFFS"
+    dossier_path: "dossiers/smic-france-tradeoffs.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
