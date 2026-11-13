@@ -335,3 +335,13 @@ Ne pas comparer les taux de récidive entre pays sans harmoniser les définition
 ## Principe de prudence
 
 Ce dossier ne conclut ni que le TIG est une peine universellement préférable à la prison, ni qu'il est inefficace parce que le taux brut de récidive est élevé. La question pertinente est celle de son efficacité comparative, pour des personnes et des infractions comparables, dans des conditions concrètes d'exécution. Toute recommandation doit expliciter le scénario de substitution, les objectifs poursuivis et les coûts complets.
+
+
+## 10. Suite logique : enquête territoriale
+
+La comparaison européenne et le premier repérage territorial doivent maintenant être prolongés par une enquête empirique en Loire-Atlantique. Le but est de mesurer la capacité réellement mobilisable et les pertes entre les étapes du parcours, sans présumer d'une pénurie de postes.
+
+- [Protocole d'enquête territoriale TIG](../analysis/tig-territorial-inquiry-protocol.md) — périmètre, chaîne de mise en œuvre, échantillonnage, données agrégées à demander, guides d'entretien, indicateurs, triangulation et garanties éthiques.
+- [Suite logique de recherche du dossier TIG](../analysis/tig-research-next-steps.md) — hypothèses à départager, jalons, livrables et règles de décision éditoriale.
+
+Ces documents décrivent un protocole préparatoire. Aucune demande de données, aucun entretien ni aucune observation de terrain ne sont réputés réalisés à ce stade.
