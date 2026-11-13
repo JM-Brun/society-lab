@@ -38,6 +38,14 @@ class ParcoursupAnalysisTests(unittest.TestCase):
         self.assertAlmostEqual(result["bursary_share_candidates_new_bac_pp"], 0.26)
         self.assertAlmostEqual(result["bursary_share_admitted_new_bac"], 0.375)
 
+    def test_missing_subgroup_count_is_not_silently_zero(self):
+        row = {key: 0 for key in FIELDS}
+        row.update({"session": "2025", "region_etab_aff": "Bretagne", "Fili": "BUT", "select_form": "1"})
+        row["nb_VOE_PP_BT"] = None
+        result = profile([row])
+        self.assertIsNone(result["candidate_share_general_among_new_bac_pp"])
+        self.assertIsNone(result["bursary_share_candidates_new_bac_pp"])
+
     def test_csv_rejects_wrong_session(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "sample.csv"
