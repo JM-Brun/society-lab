@@ -16,7 +16,7 @@ from statistics import median
 
 REQUIRED = {
     "session", "region_etab_aff", "fili", "select_form", "capa_fin",
-    "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot",
+    "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot", "acc_pp", "acc_pc",
     "nb_voe_pp_bg", "nb_voe_pp_bt", "nb_voe_pp_bp",
     "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
     "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
@@ -76,7 +76,7 @@ def sum_complete(rows: list[dict], key: str) -> float | None:
 
 
 def profile(rows: list[dict]) -> dict:
-    sums = {key: sum_complete(rows, key) for key in NUMERIC}
+    sums = {key: sum_complete(rows, key) for key in NUMERIC_FIELDS}
     result = {
         "formations": len(rows),
         "capacity": sums["capa_fin"],
