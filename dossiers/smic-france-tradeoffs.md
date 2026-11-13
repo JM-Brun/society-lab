@@ -292,13 +292,18 @@ Toujours indiquer les unités, champs, dates, dénominateurs, ruptures de série
 2. [Service-Public — SMIC, montants et règles de revalorisation](https://www.service-public.gouv.fr/particuliers/vosdroits/F2300) — règles juridiques et montants en vigueur.
 3. [Ministère du Travail — Revalorisation du SMIC au 1er juin 2026](https://travail-emploi.gouv.fr/revalorisation-du-smic-au-1er-juin-2026) — montants et mécanisme de revalorisation.
 4. [Dares — La revalorisation du SMIC au 1er novembre 2024](https://dares.travail-emploi.gouv.fr/publication/la-revalorisation-du-smic-au-1er-novembre-2024) — bénéficiaires directs, distribution et caractéristiques.
-5. [Dares — Combien de salariés sont rémunérés au SMIC ?](https://dares.travail-emploi.gouv.fr/publication/combien-de-salaries-sont-remuneres-au-smic) — structure des salaires en 2024.
-6. [OCDE — Low-wage employment in France (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/01/low-wage-employment-in-france_ac641c84/82539f44-en.pdf) — comparaison internationale, distribution des bas salaires et mobilité.
-7. [Groupe d'experts SMIC — Rapport 2025](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025) — recommandation sur la revalorisation et analyse du système socio-fiscal.
-8. [Groupe d'experts SMIC — Rapport 2024](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2024) — effets et coût des allègements.
-9. [Mission Bozio-Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire (France Stratégie, 3 octobre 2024)](https://www.strategie-plan.gouv.fr/publications/mission-bozio-wasmer-politiques-dexonerations-de-cotisations-sociales-une-inflexion) — bilan et scénarios de réforme, avec code et données de simulation.
-10. [Cour des comptes — Synthèse de l'évaluation des exonérations de cotisations sociales](https://www.ccomptes.fr/fr/plateformes-citoyennes/plateforme-evaluations-politique-publique/explorer-evaluations/les-46) — synthèse critique du rapport France Stratégie.
-11. [INSEE — Les effets des hausses du SMIC sur le salaire moyen (2012)](https://www.insee.fr/fr/statistiques/1377686) — étude historique 1970-2009.
+5. [Dares — La revalorisation du SMIC au 1er janvier 2026](https://dares.travail-emploi.gouv.fr/publication/la-revalorisation-du-smic-au-1er-janvier-2026) — bénéficiaires directs, ventilations par temps de travail, taille d'entreprise et branche.
+6. [Dares — Combien de salariés sont rémunérés au SMIC ?](https://dares.travail-emploi.gouv.fr/publication/combien-de-salaries-sont-remuneres-au-smic) — structure des salaires en 2024.
+7. [OCDE — Low-wage employment in France (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/01/low-wage-employment-in-france_ac641c84/82539f44-en.pdf) — comparaison internationale, distribution des bas salaires et mobilité.
+8. [Groupe d'experts SMIC — Rapport 2025](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025) — recommandation sur la revalorisation et analyse du système socio-fiscal.
+9. [Groupe d'experts SMIC — Rapport 2024](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2024) — effets et coût des allègements.
+10. [Mission Bozio-Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire (France Stratégie, 3 octobre 2024)](https://www.strategie-plan.gouv.fr/publications/mission-bozio-wasmer-politiques-dexonerations-de-cotisations-sociales-une-inflexion) — bilan et scénarios de réforme, avec code et données de simulation.
+11. [Cour des comptes — Synthèse de l'évaluation des exonérations de cotisations sociales](https://www.ccomptes.fr/fr/plateformes-citoyennes/plateforme-evaluations-politique-publique/explorer-evaluations/les-46) — synthèse critique du rapport France Stratégie.
+12. [INSEE — Les effets des hausses du SMIC sur le salaire moyen (2012)](https://www.insee.fr/fr/statistiques/1377686) — étude historique 1970-2009.
+
+13. [INSEE — Les salaires minima rendent-ils les salaires plus rigides ? (2019)](https://www.insee.fr/fr/statistiques/4249066) — effets sur les ajustements salariaux individuels et la diffusion via les minima de branche.
+14. [Albertini, Poirier et Terriau — Payroll Tax Reductions on Low Wages and Minimum Wage in France (2025)](https://pmb.cereq.fr/doc_num.php?explnum_id=12532) — modèle structurel des interactions entre SMIC, allègements et emploi.
+15. [Sophie Cottet — Payroll Tax Reductions for Minimum Wage Workers (CESifo, 2024)](https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or) — étude sur les réactions des entreprises à une baisse des cotisations patronales.
 
 ## Conclusion provisoire
 
