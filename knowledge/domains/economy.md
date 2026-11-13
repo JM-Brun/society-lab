@@ -15,6 +15,7 @@ Ce domaine étudie les mécanismes de production, de rémunération, d'emploi, d
 
 - [Augmenter le SMIC en France : pouvoir d'achat, emploi, salaires et finances publiques](../../dossiers/smic-france-tradeoffs.md) — dossier contradictoire avec registre de sources, études, affirmations et hypothèses.
 - [Revue des travaux économiques sur le SMIC](../../dossiers/smic-economists-literature-review.md) — synthèse organisée par questions de recherche, méthodes et niveaux de preuve ; la littérature existante constitue le point de départ.
+- [Synthèse quantitative des résultats](../../dossiers/smic-quantitative-evidence.md) — extraction des estimations empiriques, simulations et résultats de mobilité, avec leurs hypothèses et limites.
 - [Positions des partenaires sociaux et confrontation aux preuves](../../dossiers/smic-social-partners-evidence.md) — arguments syndicaux, patronaux et économiques confrontés à leurs niveaux de preuve.
 - [Prototype OpenFisca du SMIC](../../docs/smic-openfisca-prototype.md) — outil complémentaire de microsimulation statique, non substitut aux évaluations empiriques.
 

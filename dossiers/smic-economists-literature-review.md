@@ -1,7 +1,7 @@
 # SMIC : ce que montrent les travaux économiques existants
 
 - **Dossier parent :** [Augmenter le SMIC en France](smic-france-tradeoffs.md)
-- **Dossier connexe :** [Positions des partenaires sociaux et confrontation aux preuves](smic-social-partners-evidence.md)
+- **Dossier connexe :** [Synthèse quantitative des résultats](smic-quantitative-evidence.md) ; [positions des partenaires sociaux et confrontation aux preuves](smic-social-partners-evidence.md)
 - **Statut :** synthèse de littérature initiale ; à compléter par lecture intégrale des articles et extraction des estimations
 - **Date de revue :** 14 novembre 2026
 - **Principe :** partir des travaux existants ; ne produire une simulation propre que pour une question résiduelle clairement identifiée.
@@ -20,7 +20,7 @@ Les travaux français sur les allègements de cotisations fournissent une partie
 
 Les travaux plus récents nuancent les mécanismes. Cottet distingue les entreprises déjà fortement exposées au SMIC de celles qui le sont peu et met en évidence des réactions hétérogènes aux réductions de cotisations. Terriau, Albertini et Poirier proposent une analyse d'équilibre avec recherche d'emploi et négociation salariale ; leurs résultats sont ceux d'un modèle estimé, et non d'une expérimentation directement observée.
 
-**Conclusion provisoire :** le coût du travail compte, mais l'effet dépend de la réforme, du niveau de salaire, de la situation initiale de l'entreprise, des contraintes financières et du modèle retenu. Il est incorrect d'en déduire un nombre d'emplois détruits pour toute hausse donnée du SMIC sans expliciter le contrefactuel et les paramètres.
+**Conclusion provisoire :** le coût du travail compte, mais l'effet dépend de la réforme, du niveau de salaire, de la situation initiale de l'entreprise, des contraintes financières et du modèle retenu. Voir la [synthèse quantitative des estimations et scénarios](smic-quantitative-evidence.md), qui distingue notamment les évaluations des allègements des simulations de réforme. Il est incorrect d'en déduire un nombre d'emplois détruits pour toute hausse donnée du SMIC sans expliciter le contrefactuel et les paramètres.
 
 ### 2.2 Progression salariale, trappes à bas salaires et mobilité
 
@@ -67,7 +67,7 @@ Les effets peuvent différer selon les branches, les territoires et les entrepri
 | Barreto et al., OCDE (2025), *L'emploi à bas salaire en France* | Comparaison internationale, compétences, trajectoires et trappes à bas salaires | Analyse comparative et données de trajectoires | Les pays et définitions doivent être harmonisés |
 | Bozio et Wasmer (2024), rapport sur les prélèvements et cotisations | Réforme des allègements et incitations salariales | Diagnostic et simulations de politiques | Scénarios simulés, pas effets observés d'une réforme future |
 | Crépon et Desplatz (2001), *The impact of differential payroll tax subsidies on minimum wage employment* | Effets des variations du coût du travail sur l'emploi peu qualifié | Évaluation empirique de réformes historiques | Contexte des années 1990, réforme et institutions différentes |
-| Cottet (2024), *Payroll Tax Reductions for Minimum Wage Workers* | Réactions des entreprises aux baisses de cotisations | Données administratives employeurs-salariés | Hétérogénéité des entreprises ; ne mesure pas directement une hausse du SMIC |
+| Cottet (2020), travaux cités par le Groupe d'experts sur les réformes de 1995–1996 | Effet de la baisse du coût du travail au niveau du SMIC et hétérogénéité entre entreprises | Évaluation empirique citée dans le rapport 2025 | Ne pas confondre avec les publications ultérieures de l'auteur ; ne mesure pas une hausse du SMIC |
 | Terriau, Albertini et Poirier, *Equilibrium effects of payroll tax reductions and optimal policy design* | Effets d'équilibre des baisses de cotisations et combinaison optimale | Modèle d'équilibre estimé | Les résultats dépendent de la structure et des hypothèses du modèle |
 | Cahuc, Carcillo, Cette et Zylberberg (2024), tribune sur une hausse de 12 % | Discussion des effets attendus d'une hausse très importante | Prise de position argumentée d'économistes | Les chiffres avancés doivent être reliés aux hypothèses et travaux sous-jacents ; une tribune n'est pas une publication évaluée par les pairs |
 
