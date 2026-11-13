@@ -13,3 +13,7 @@ dossiers:
     dossier_path: "dossiers/smic-france-tradeoffs.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-HISTORICAL-EPISODES"
+    dossier_path: "dossiers/smic-historical-episodes.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
