@@ -38,3 +38,15 @@ Contenu éditorial principalement français. Conserver titre original, langue or
 
 ## Historique
 Toute modification substantielle d'une fiche doit laisser une trace Git et, si elle change une conclusion ou une interprétation, une note de révision.
+
+
+## Périmètre territorial
+
+Les territoires de référence sont définis par identifiants stables dans `knowledge/TERRITORIES.yml`. Une fiche peut référencer plusieurs territoires (par exemple `territory_ids`) et préciser séparément :
+- le périmètre d'observation ;
+- la juridiction ou compétence institutionnelle ;
+- l'aire fonctionnelle affectée ;
+- le périmètre géographique des données ;
+- les territoires de comparaison.
+
+Ne pas coder une seule échelle dans le domaine ou dans un tag générique si plusieurs territoires sont concernés. Les tags `TAG-LEVEL-*` facilitent le filtrage éditorial ; ils ne remplacent pas les références aux territoires. Documenter les dates de validité lorsque les limites ou compétences changent. Distinguer territoire administratif, espace fonctionnel et quartier / périmètre de projet.
