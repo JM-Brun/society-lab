@@ -32,7 +32,8 @@
 - [x] Première extension rétrocompatible du schéma Claim (steelman, confiance argumentée, vérification des sources, provenance et historique de révision) ; validation complète sur les claims existants à confirmer par CI.
 - [x] Registre Forecast initial et intégration de son schéma dans le validateur commun.
 - [ ] Formaliser un registre structuré des incertitudes avec schéma dédié ; le modèle documentaire actuel reste non automatisé.
-- [ ] Tester les exigences de revue et de vérification sur les dossiers TIG et Parcoursup.
+- [x] Première revue structurelle des 20 Claims existants sur les dossiers TIG et Parcoursup ; priorisation des vérifications, des contre-arguments et des scissions d'affirmations documentée dans [le rapport de revue pilote](../analysis/claim-review-pilot-tig-parcoursup-2026-11-13.md).
+- [ ] Vérifier individuellement les sources primaires, localisateurs, dénominateurs et résultats économétriques prioritaires ; ne faire évoluer les statuts qu'après contrôle effectif.
 
 **Sortie :** les méthodes réellement appliquées sont décrites et reproductibles autant que possible.
 
