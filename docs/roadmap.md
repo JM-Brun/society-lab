@@ -14,8 +14,8 @@
 - [x] Registres initiaux pour sources, études, datasets, claims, hypothèses et dossiers.
 - [x] Vocabulaire contrôlé de tags.
 - [x] Ontologie légère des relations et registre initial du graphe.
-- [ ] Validation complète des schémas, identifiants, domaines, tags et relations.
-- [ ] Premier exemple complet reliant source, étude, données, affirmation et dossier.
+- [x] Validation automatisée des schémas, identifiants, domaines, tags, références et types de relations (première version ; exécution CI à confirmer).
+- [x] Premier cas réel initial reliant sources, études, données, affirmations, hypothèses et dossier (éducation / Parcoursup ; revue approfondie à poursuivre).
 
 **Sortie :** un exemple relie les objets et passe les contrôles automatisés.
 
@@ -28,7 +28,17 @@
 
 **Sortie :** les méthodes réellement appliquées sont décrites et reproductibles autant que possible.
 
-## M3 — Dossier pilote : transition énergétique européenne
+## M3 — Dossier pilote : Parcoursup et égalité des chances dans l'éducation
+- [x] Question et périmètre initiaux.
+- [x] Sources institutionnelles initiales et références comparatives.
+- [x] Premiers jeux de données identifiés.
+- [x] Premières affirmations et hypothèses enregistrées.
+- [ ] Extraction détaillée des tableaux et contrôle des dénominateurs.
+- [ ] Études indépendantes et données de trajectoires post-admission.
+- [ ] Comparaisons européennes approfondies.
+- [ ] Synthèse contradictoire et recommandations.
+
+## M4 — Dossier pilote : transition énergétique européenne
 - [ ] Question et périmètre.
 - [ ] Concepts et mécanismes.
 - [ ] Sources institutionnelles et scientifiques.
@@ -39,7 +49,7 @@
 
 **Sortie :** dossier traçable, documenté et révisable.
 
-## M4 — Validation inter-domaines
+## M5 — Validation inter-domaines
 - [ ] Finances publiques et dette.
 - [ ] Éducation et mobilité sociale.
 - [ ] Immigration et intégration.
@@ -47,7 +57,7 @@
 
 **Sortie :** modèles réutilisables entre domaines.
 
-## M5 — Publication
+## M6 — Publication
 - [ ] Configuration Quarto.
 - [ ] Navigation par domaines.
 - [ ] Pages de méthode et dossiers.
@@ -56,7 +66,7 @@
 
 **Sortie :** site accessible, compréhensible et aligné sur les contenus validés.
 
-## M6 — Automatisation
+## M7 — Automatisation
 - [ ] Ingestion assistée.
 - [ ] Détection de doublons.
 - [ ] Contrôle des références et du graphe.
