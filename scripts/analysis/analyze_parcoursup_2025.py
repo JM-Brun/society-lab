@@ -48,13 +48,15 @@ def ratio(numerator: float | None, denominator: float | None) -> float | None:
     return numerator / denominator
 
 
-def sum_known(rows: list[dict], key: str) -> float | None:
-    values = [r[key] for r in rows if r[key] is not None]
-    return sum(values) if values else None
+def sum_complete(rows: list[dict], key: str) -> float | None:
+    values = [r[key] for r in rows]
+    if not values or any(value is None for value in values):
+        return None
+    return sum(values)
 
 
 def profile(rows: list[dict]) -> dict:
-    sums = {key: sum_known(rows, key) for key in NUMERIC}
+    sums = {key: sum_complete(rows, key) for key in NUMERIC}
     result = {
         "formations": len(rows),
         "capacity": sums["capa_fin"],
@@ -82,8 +84,8 @@ def profile(rows: list[dict]) -> dict:
         "technological": sums["Acc_BT"],
         "vocational": sums["Acc_BP"],
     }
-    candidates_total = sum(v for v in bac_candidates.values() if v is not None)
-    classified_total = sum(v for v in bac_classified.values() if v is not None)
+    candidates_total = (sum(bac_candidates.values()) if all(v is not None for v in bac_candidates.values()) else None)
+    classified_total = (sum(bac_classified.values()) if all(v is not None for v in bac_classified.values()) else None)
     admitted_total = sums["Acc_neobac"]
     for track, value in bac_candidates.items():
         result[f"candidate_share_{track}_among_new_bac_pp"] = ratio(value, candidates_total)
@@ -96,8 +98,8 @@ def profile(rows: list[dict]) -> dict:
         sums["nb_VOE_PP_BG_brs"], sums["nb_VOE_PP_BT_brs"], sums["nb_VOE_PP_BP_brs"]
     ]
     bursary_candidates_total = (
-        sum(v for v in bursary_candidates if v is not None)
-        if any(v is not None for v in bursary_candidates) else None
+        sum(bursary_candidates)
+        if all(v is not None for v in bursary_candidates) else None
     )
     result["bursary_share_candidates_new_bac_pp"] = ratio(
         bursary_candidates_total, candidates_total
@@ -178,6 +180,7 @@ def run(input_path: Path, output_dir: Path) -> dict:
         "dataset": "Parcoursup 2025 — fr-esr-parcoursup",
         "source_file": input_path.name,
         "records": len(rows),
+        "missing_values_by_variable": {key: sum(row[key] is None for row in rows) for key in sorted(NUMERIC)},
         "unit_of_observation": "formation / établissement",
         "warning": (
             "Aggregating counts across formations counts candidate-formation records or wishes, "
