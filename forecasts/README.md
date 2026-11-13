@@ -14,7 +14,7 @@ Ce répertoire accueille les prévisions probabilistes de Society Lab, enregistr
 
 ## Organisation
 
-Créer une fiche par prévision, par exemple FORECAST-<DOMAINE>-<SUJET>.yml. Le nom de fichier doit rester stable. Les identifiants ne doivent pas contenir de données personnelles.
+Pour cette première version, enregistrer les prévisions comme entrées de forecasts/registry.yml : le validateur existant contrôle ce registre et ses références. Une séparation en fichiers individuels ne sera introduite que si le validateur est étendu pour les découvrir et les vérifier. Les identifiants ne doivent pas contenir de données personnelles.
 
 Voir la [méthodologie de prévision](../docs/forecasting.md) et le [schéma JSON](../schemas/forecast.schema.json).
 
