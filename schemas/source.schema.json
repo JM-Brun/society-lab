@@ -21,6 +21,7 @@
     "geographic_scope": {"type": "array", "items": {"type": "string"}},
     "temporal_scope": {"type": "string"},
     "domains": {"type": "array", "items": {"type": "string", "pattern": "^DOMAIN-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "tags": {"type": "array", "items": {"type": "string", "pattern": "^TAG-[A-Z0-9-]+$"}, "uniqueItems": true},
     "methodology": {"type": "string"},
     "limitations": {"type": "array", "items": {"type": "string"}},
     "funding_and_conflicts": {"type": "string"},
