@@ -23,7 +23,7 @@ Chaque cas est comparé sous une référence et des hausses brutes hypothétique
 Installer le paquet officiel :
 
 ```bash
-python -m pip install openfisca-france
+python -m pip install -r requirements-openfisca.txt
 python tools/smic_openfisca.py
 ```
 
