@@ -23,7 +23,14 @@ REQUIRED = {
     "nb_voe_pp_bg_brs", "nb_voe_pp_bt_brs", "nb_voe_pp_bp_brs", "acc_brs",
 }
 
-NUMERIC = REQUIRED - {"session", "region_etab_aff", "fili", "select_form"}
+NUMERIC_FIELDS = (
+    "capa_fin", "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot", "acc_pp", "acc_pc",
+    "nb_voe_pp_bg", "nb_voe_pp_bt", "nb_voe_pp_bp",
+    "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
+    "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
+    "nb_voe_pp_bg_brs", "nb_voe_pp_bt_brs", "nb_voe_pp_bp_brs", "acc_brs",
+)
+NUMERIC = set(NUMERIC_FIELDS)
 GROUPS = {
     "region": "region_etab_aff",
     "filiere": "fili",
@@ -76,11 +83,13 @@ def profile(rows: list[dict]) -> dict:
         "wishes_phase_principale": sums["nb_voe_pp"],
         "classified_phase_principale": sums["nb_cla_pp"],
         "proposals_total": sums["prop_tot"],
-        "admissions_total": sums["acc_tot"],
+        "accepted_candidates_total": sums["acc_tot"],
+        "accepted_phase_principale": sums["acc_pp"],
+        "accepted_phase_complementaire": sums["acc_pc"],
         "demand_per_seat": ratio(sums["nb_voe_pp"], sums["capa_fin"]),
         "classified_over_wishes": ratio(sums["nb_cla_pp"], sums["nb_voe_pp"]),
-        "proposals_over_wishes": ratio(sums["prop_tot"], sums["nb_voe_pp"]),
-        "admissions_over_capacity": ratio(sums["acc_tot"], sums["capa_fin"]),
+        "pp_acceptances_over_pp_wishes": ratio(sums["acc_pp"], sums["nb_voe_pp"]),
+        "accepted_campaign_over_capacity": ratio(sums["acc_tot"], sums["capa_fin"]),
     }
     bac_candidates = {
         "general": sums["nb_voe_pp_bg"],
@@ -183,8 +192,8 @@ def run(input_path: Path, output_dir: Path) -> dict:
             "select_form_raw": row.get("select_form", ""),
             "demand_per_seat": ratio(row["nb_voe_pp"], row["capa_fin"]),
             "classified_over_wishes": ratio(row["nb_cla_pp"], row["nb_voe_pp"]),
-            "proposals_over_wishes": ratio(row["prop_tot"], row["nb_voe_pp"]),
-            "admissions_over_capacity": ratio(row["acc_tot"], row["capa_fin"]),
+            "pp_acceptances_over_pp_wishes": ratio(row["acc_pp"], row["nb_voe_pp"]),
+            "accepted_campaign_over_capacity": ratio(row["acc_tot"], row["capa_fin"]),
         })
     write_csv(output_dir / "formation_indicators.csv", per_formation)
 
@@ -193,7 +202,7 @@ def run(input_path: Path, output_dir: Path) -> dict:
         "dataset": "Parcoursup 2025 — fr-esr-parcoursup",
         "source_file": input_path.name,
         "records": len(rows),
-        "missing_values_by_variable": {key: sum(row[key] is None for row in rows) for key in sorted(NUMERIC)},
+        "missing_values_by_variable": {key: sum(row[key] is None for row in rows) for key in NUMERIC_FIELDS},
         "unit_of_observation": "formation / établissement",
         "warning": (
             "Aggregating counts across formations counts candidate-formation records or wishes, "
