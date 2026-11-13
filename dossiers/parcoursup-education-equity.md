@@ -19,9 +19,11 @@ Parcoursup est le premier terrain d'observation, mais ne doit pas être confondu
 ## Premiers constats documentés
 
 ### Fonctionnement et volumes de Parcoursup 2026
-Le bilan ministériel indique 1 046 000 candidats pour la campagne 2026, soit +66 000 en un an. Il rapporte 603 910 lycéens ayant reçu au moins une proposition, soit 91,5 % des lycéens ayant formulé des vœux. La note statistique SIES indique pour sa part que 93,7 % des néo-bacheliers inscrits ont reçu au moins une proposition et 81,0 % en ont accepté une.
+Le bilan ministériel indique 1 046 000 candidats ayant confirmé au moins un vœu d'orientation dans l'enseignement supérieur pour la campagne 2026, soit +66 000 en un an. Le total regroupe notamment 660 000 lycéens préparant le baccalauréat français, 206 000 étudiants en réorientation, 122 000 candidats non scolarisés en reprise d'études et 58 000 candidats suivant une scolarité étrangère. Le communiqué du 19 octobre précise que la procédure couvrait 25 000 formations post-bac, y compris en apprentissage.
 
-Ces taux ne sont pas interchangeables : les populations de référence et dénominateurs diffèrent. Ils mesurent la réception ou l'acceptation d'une proposition, pas l'accès au premier choix, la qualité de l'appariement, l'inscription effective ou la réussite ultérieure.
+Le ministère rapporte 603 910 lycéens ayant reçu au moins une proposition, soit 91,5 % des lycéens ayant formulé des vœux. La note statistique SIES n° 2026-26 indique pour sa part que 93,7 % des néo-bacheliers inscrits sur la plateforme ont reçu au moins une proposition et 81,0 % en ont accepté une.
+
+Ces indicateurs ne sont pas interchangeables : les 1 046 000 désignent l'ensemble des candidats ayant confirmé au moins un vœu ; les 91,5 % concernent les lycéens ayant formulé des vœux ; les 93,7 % concernent les néo-bacheliers inscrits. Ils mesurent la réception ou l'acceptation d'une proposition, pas l'accès au premier choix, la qualité de l'appariement, l'inscription effective ou la réussite ultérieure.
 
 Sources : [bilan Parcoursup 2026](https://www.enseignementsup-recherche.gouv.fr/fr/parcoursup-2026-des-resultats-stables-dans-un-contexte-de-progression-historique-des-candidatures-104400) ; [note Flash SIES 2026-26](https://www.enseignementsup-recherche.gouv.fr/fr/parcoursup-2026-les-propositions-d-admission-dans-l-enseignement-superieur-104448).
 
