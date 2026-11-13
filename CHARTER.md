@@ -6,7 +6,9 @@ Comprendre les grandes transformations de la société européenne et mondiale, 
 Society Lab est un laboratoire personnel public associant base de connaissances, recherche et analyse systémique. Il ne vise pas à défendre un parti ou une doctrine, mais à améliorer la qualité du raisonnement et de la discussion publique.
 
 ## Périmètre
-Le périmètre principal est l'Union européenne (UE-27), complété par les autres pays européens et des comparaisons internationales pertinentes. La France bénéficie d'une attention particulière. Toute recherche précise son périmètre géographique, temporel et démographique. Europe et Union européenne ne sont pas synonymes.
+Society Lab est d'abord ancré en France, replacée dans son contexte européen et dans les interdépendances internationales et mondiales. L'analyse peut descendre jusqu'aux Pays de la Loire, à la Loire-Atlantique, à Nantes Métropole, à la commune de Nantes et à l'Île de Nantes. Le cadre de référence comprend ainsi neuf niveaux, du monde au quartier / secteur urbain.
+
+Ces niveaux ne forment pas une chaîne administrative uniforme : l'international est transversal, l'Europe et l'Union européenne ne sont pas synonymes, Nantes Métropole est un établissement public de coopération intercommunale et l'Île de Nantes est un périmètre urbain, non une collectivité. Toute recherche précise son périmètre géographique, temporel et démographique, ainsi que les juridictions, populations et territoires fonctionnels concernés. Les influences sont étudiées dans les deux sens, du global au local et du local vers les niveaux plus larges, sans présumer de causalité.
 
 ## Dix principes
 1. **Primauté des éléments vérifiables** : distinguer observations et interprétations.
