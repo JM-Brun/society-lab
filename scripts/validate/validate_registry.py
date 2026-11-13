@@ -121,7 +121,7 @@ def main():
                 errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
 
     if errors:
-        print("\\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
+        print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
         return 1
     print("Society Lab schemas, records, references and knowledge graph: OK")
     return 0
