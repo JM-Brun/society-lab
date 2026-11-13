@@ -8,7 +8,7 @@ import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
-ID_RE = re.compile(r"^(DOMAIN|TAG|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD)-[A-Z0-9][A-Z0-9-]*$")
+ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD)-[A-Z0-9][A-Z0-9-]*$")
 
 REGISTRIES = [
     ("sources/registry.yml", "sources", "SOURCE"),
