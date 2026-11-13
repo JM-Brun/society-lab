@@ -55,6 +55,13 @@ Il faut également distinguer la plateforme nationale des décisions des formati
 Ces hypothèses doivent être testées par origine sociale, type de baccalauréat, genre, territoire, handicap, situation de boursier, sélectivité, discipline et trajectoire post-admission, avec des données adaptées.
 
 ## Questions à instruire
+
+### Critères locaux et commissions d'examen des vœux
+- Quels critères sont effectivement mobilisés par les commissions d'examen des vœux (CEV), avec quelles pondérations et quelles marges d'appréciation ?
+- Les rapports d'analyse des candidatures sont-ils suffisamment précis, comparables et accessibles pour permettre un audit externe ?
+- Les critères varient-ils selon les filières, les établissements, les territoires et les profils de candidats ?
+- Comment distinguer les critères formellement annoncés, les outils d'aide à la décision et les décisions humaines finales ?
+
 ### Parcoursup : que mesure-t-on réellement ?
 - Quels sont les dénominateurs exacts des taux de proposition et d'acceptation ?
 - Quelle part des candidats obtient son premier vœu, un vœu de rang élevé ou une formation choisie par défaut ?
@@ -84,6 +91,17 @@ Le protocole descriptif et son script reproductible sont désormais intégrés a
 
 Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, les quantiles et le chargement CSV ont été ajoutés. Le statut CI du dernier commit n'est pas encore remonté dans GitHub (aucun statut publié au moment de la vérification). Le contrôle du code a aussi révélé et corrigé un décalage important : l'API officielle expose les noms de champs en snake_case minuscules, alors que la première version du script attendait des variantes en majuscules. Le script et le protocole sont maintenant alignés sur les noms canoniques. Cette correction reste à confirmer par l'exécution CI et par un essai sur le CSV complet. Le fichier source n'a pas encore été téléchargé ni analysé ; aucun résultat empirique n'est donc présenté.
 
+## Pistes d'amélioration du dispositif de recherche
+
+1. **Construire un corpus des rapports CEV 2026** : collecter un échantillon stratifié par filière, sélectivité, territoire et statut public/privé ; coder les critères, pondérations explicites, attendus et informations manquantes.
+2. **Relier les niveaux de la chaîne éducative** : établir une matrice des données disponibles de la petite enfance à la diplomation, en documentant les ruptures de cohortes et les changements de définition.
+3. **Renforcer la mesure de l'équité** : distinguer accès à toute formation, accès aux formations demandées, adéquation des vœux, mobilité, inscription et réussite ; ventiler par origine sociale lorsque les données le permettent.
+4. **Ajouter une revue des travaux indépendants** : recherches évaluées par les pairs, travaux de chercheurs et évaluations contradictoires des politiques d'orientation et d'admission.
+5. **Séparer descriptif et causal** : réserver les conclusions causales aux dispositifs de données et méthodes adaptés (cohortes, quasi-expériences, discontinuités, appariements), après vérification des hypothèses d'identification.
+6. **Documenter les mécanismes de compensation** : quotas boursiers, priorités légales, accompagnement, CAES et aides matérielles ; examiner leur mise en œuvre et leurs effets plutôt que présumer leur efficacité.
+
+Ces pistes sont des améliorations du programme de recherche, pas des recommandations de politique publique déjà démontrées.
+
 ## Programme de recherche
 1. Audit des données Parcoursup 2026 : télécharger les fichiers ouverts, reconstruire les dénominateurs et identifier les croisements disponibles.
 2. Revue des mécanismes d'admission : commissions d'examen des vœux, algorithmes locaux, quotas, transparence et contrôle.
@@ -101,4 +119,4 @@ Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, le
 - Conserver les résultats contradictoires et documenter les limites des sources institutionnelles comme des sources privées ou militantes.
 
 ## Registre de preuve
-Les sources, études, jeux de données, affirmations et hypothèses associés sont indexés dans les registres du dépôt. Les statuts `screened` et `under_review` indiquent un examen initial, pas une validation méthodologique finale.
+Les sources, études, jeux de données, affirmations et hypothèses associés sont indexés dans les registres du dépôt. La page thématique [Éducation](../knowledge/domains/education.md) rassemble la carte des connaissances, les principaux manques et les priorités d’amélioration. Les statuts `screened` et `under_review` indiquent un examen initial, pas une validation méthodologique finale.
