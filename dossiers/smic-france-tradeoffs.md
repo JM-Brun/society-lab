@@ -237,6 +237,8 @@ Les effets du SMIC ne s'arrêtent pas à la frontière nationale, mais les donn�
 | Réforme des allègements | Arbitrage emploi, progression salariale et finances publiques |
 | Négociation de branche renforcée | Différenciation des qualifications et grilles salariales |
 
+Le cadre détaillé de comparaison est désormais documenté dans [Comparer les politiques de soutien aux bas salaires : scénarios, ménages et entreprises](smic-policy-scenarios.md). Il définit des scénarios S0-S6, des profils de ménages et d'employeurs, un tableau d'évaluation commun et les conditions méthodologiques nécessaires avant tout chiffrage. Les profils sont des cas-types à simuler, pas des statistiques représentatives ni des résultats déjà calculés.
+
 Chaque scénario doit être évalué à horizon court (0-1 an), moyen (2-3 ans) et long (4-10 ans), avec analyse distributive et sensibilité aux hypothèses.
 
 ## 10. Indicateurs de suivi
