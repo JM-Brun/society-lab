@@ -49,6 +49,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
 - [Guide de contribution](CONTRIBUTING.md)
+- [Contrat d'intégration inter-dépôts](docs/cross-repository-contract.md)
 
 ## État du projet
 
