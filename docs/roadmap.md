@@ -2,22 +2,25 @@
 
 ## M0 — Fondations
 - [x] Dépôt public créé.
-- [x] README initial.
-- [ ] Charte, méthodologie, architecture et contribution intégrées.
-- [ ] Politique détaillée des sources, licences et publication.
+- [x] README, charte, méthodologie, architecture et contribution intégrés.
+- [x] Politique initiale des sources, licences et publication documentée.
 
 **Sortie :** mission, périmètre, principes et architecture documentés.
 
 ## M1 — Modèle de connaissance
-- [ ] Taxonomie européenne versionnée.
-- [ ] Conventions d'identifiants.
-- [ ] Schémas Source, Study, Dataset, Claim, Hypothesis et Dossier.
-- [ ] Registres initiaux.
-- [ ] Validation des identifiants et relations.
+- [x] Taxonomie européenne initiale.
+- [x] Conventions d'identifiants et de nomenclature.
+- [x] Schémas Source, Study, Dataset, Claim, Hypothesis et Dossier (première version).
+- [x] Registres initiaux pour sources, études, datasets, claims, hypothèses et dossiers.
+- [x] Vocabulaire contrôlé de tags.
+- [x] Ontologie légère des relations et registre initial du graphe.
+- [ ] Validation complète des schémas, identifiants, domaines, tags et relations.
+- [ ] Premier exemple complet reliant source, étude, données, affirmation et dossier.
 
-**Sortie :** un exemple relie source, étude, données, affirmation et dossier.
+**Sortie :** un exemple relie les objets et passe les contrôles automatisés.
 
 ## M2 — Méthodes opérationnelles
+- [x] Protocole initial d'ingestion des sources.
 - [ ] Protocole de revue de littérature.
 - [ ] Grille d'examen des études.
 - [ ] Protocoles quantitatif, qualitatif et comparatif.
@@ -56,10 +59,10 @@
 ## M6 — Automatisation
 - [ ] Ingestion assistée.
 - [ ] Détection de doublons.
-- [ ] Contrôle des références.
+- [ ] Contrôle des références et du graphe.
 - [ ] Extraction assistée des affirmations.
 - [ ] Détection de contradictions potentielles.
-- [ ] Rapports de maintenance et veille.
+- [ ] Exports de graphe et rapports de maintenance.
 
 **Sortie :** tâches répétitives assistées sans déléguer la validation intellectuelle à l'IA.
 
