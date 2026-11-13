@@ -3,7 +3,7 @@
 - **Dossier parent :** [Augmenter le SMIC en France](smic-france-tradeoffs.md)
 - **Cadre de scénarios :** [Comparer les politiques de soutien aux bas salaires](smic-policy-scenarios.md)
 - **Statut :** cartographie contradictoire initiale ; certaines positions et sources doivent encore être vérifiées sur les textes intégraux
-- **Date de revue :** 13 novembre 2026
+- **Date de revue :** 13 novembre 2026 (mise à jour après la conférence sociale du 9 novembre)
 - **Périmètre :** France ; positions nationales interprofessionnelles et prises de position sectorielles identifiées
 
 ## 1. Règle de lecture
@@ -28,9 +28,9 @@ La CFDT demande un coup de pouce, mais insiste aussi sur les négociations de br
 
 ### Force ouvrière (FO)
 
-La première collecte montre FO contestant l'absence de coup de pouce au SMIC en 2026 et défendant une hausse réelle du pouvoir d'achat plutôt que des dispositifs ponctuels comme le déblocage de l'épargne salariale. La documentation est incomplète : il faut récupérer une revendication confédérale chiffrée et distinguer les déclarations nationales des fédérations.
+La résolution générale du congrès de Dijon 2026 fixe une revendication chiffrée : porter le SMIC à **au moins 80 % du salaire médian**. FO défend également la refonte des grilles conventionnelles, le retour de l'échelle mobile des salaires et l'indexation des salaires sur l'inflation. Le 9 novembre 2026, FO a pris acte de la hausse anticipée de 1,6 %, estimant qu'elle ne répondait pas à l'ampleur des enjeux, tout en saluant l'ouverture de négociations de branche et la conditionnalité des aides publiques. La revendication FO n'est donc pas réductible à une demande d'augmentation ponctuelle : elle porte aussi sur l'échelle salariale et les règles d'indexation.
 
-**Étayage et limites.** Une prime ponctuelle, un déblocage d'épargne et une hausse de salaire récurrente n'ont pas les mêmes effets sur les droits sociaux, les cotisations et le revenu permanent. Ces différences sont calculables selon les dispositifs, mais ne signifient pas que toute prime est sans intérêt pour le salarié.
+**Étayage et limites.** Le seuil de 80 % est une cible normative ; sa traduction en euros dépend de la définition du salaire médian (net/brut, temps plein/équivalent temps plein, population et année). Il faut calculer l'écart exact avec le SMIC en retenant un dénominateur homogène. Une prime ponctuelle, un déblocage d'épargne et une hausse de salaire récurrente n'ont pas les mêmes effets sur les droits sociaux, les cotisations et le revenu permanent.
 
 ### CFTC
 
@@ -38,15 +38,23 @@ La CFTC a salué la hausse anticipée de novembre 2026 tout en alertant sur le t
 
 **Étayage et limites.** Les taux marginaux effectifs élevés entre 1,2 et 2 SMIC signalés par le groupe d'experts appuient l'existence d'un problème possible de progression du revenu disponible. En revanche, le seuil d'écart entre coefficients est une proposition de négociation, pas une valeur scientifiquement établie. Les constats sur les grilles obsolètes doivent être contrôlés à partir des textes conventionnels officiels.
 
-### CFE-CGC et UNSA
+### CFE-CGC
 
-La collecte ne suffit pas encore à documenter précisément les positions nationales de la CFE-CGC et de l'UNSA sur le niveau du SMIC. Ne pas leur attribuer par analogie la position d'autres confédérations. Une collecte dédiée doit porter sur les bas salaires, les classifications, les techniciens et cadres, les minima de branche et les prélèvements marginaux.
+La CFE-CGC ne formule pas de cible chiffrée dans les déclarations publiques recueillies. Sa présidente met l'accent sur le risque d'écrasement des échelles salariales et demande que les augmentations se diffusent de façon homogène dans toute la grille. Elle se distingue ainsi d'une revendication centrée sur le seul niveau du plancher : son enjeu central est aussi la préservation des écarts de rémunération liés aux qualifications et responsabilités.
+
+**Étayage et limites.** Le tassement des grilles est mesurable par comparaison des minima conventionnels et des salaires réellement pratiqués. Les propos disponibles sont rapportés par la presse ; il faut retrouver une expression directe de la CFE-CGC et interroger les effets sur les techniciens, agents de maîtrise et cadres.
+
+### UNSA
+
+L'UNSA demande explicitement un coup de pouce au SMIC au-delà de l'indexation légale. Elle présente le salaire minimum comme un instrument de lutte contre la pauvreté laborieuse, tout en rappelant que le temps de travail et la durée des contrats influencent le reste à vivre. À la suite de la conférence sociale du 9 novembre 2026, l'UNSA s'est jointe à l'appel à une journée d'action du 17 novembre, avec la CGT et d'autres organisations.
+
+**Étayage et limites.** Le lien entre bas salaire et pauvreté ne se déduit pas du seul taux horaire : il faut raisonner en revenu disponible du ménage, volume d'heures, continuité d'emploi, prestations et coût du logement. La position de l'UNSA est donc cohérente avec une approche de pauvreté laborieuse, mais ne suffit pas à établir l'effet causal d'un coup de pouce donné.
 
 ## 3. Positions patronales
 
 ### MEDEF
 
-Dans une déclaration commune avec d'autres organisations patronales en octobre 2024, le MEDEF a contesté une réduction importante des allègements de cotisations. Il soutient que ces allègements préservent l'emploi, notamment des personnes peu qualifiées, et que leur réduction augmente le coût du travail, fragilise les marges et peut freiner les augmentations salariales dans les secteurs à faible rentabilité. Une interview de son président indique une ouverture aux augmentations de salaires sous réserve d'une baisse du coût du travail et des prélèvements associés.
+Dans une déclaration commune avec d'autres organisations patronales en octobre 2024, le MEDEF a contesté une réduction importante des allègements de cotisations. Le 9 novembre 2026, son président a qualifié la hausse anticipée de « mauvaise réponse » à un problème réel et a plaidé pour remettre l'emploi, l'investissement et la croissance au centre. Il a aussi dénoncé le manque de visibilité sur la réforme des allègements généraux et les négociations salariales de branche. La position exprimée ne se limite donc pas à une opposition abstraite au SMIC : elle lie le calendrier des hausses, le coût du travail, les exonérations et la visibilité économique.
 
 **Étayage et limites.** Les évaluations historiques concluent à un effet positif des allègements près du SMIC, surtout dans les premières phases de la politique ; les estimations récentes sont plus incertaines. Une déclaration patronale établit la position et rend explicite un mécanisme plausible, mais ne chiffre pas l'effet causal d'une hausse donnée du SMIC. Il faut distinguer secteurs, tailles, marges, pouvoir de marché, contrats publics et intensité en travail.
 
@@ -58,7 +66,7 @@ La CPME est signataire de la déclaration patronale commune d'octobre 2024 sur l
 
 ### U2P et organisations de proximité
 
-La CAPEB rapporte en novembre 2026 que l'U2P demande une réduction de la pression fiscale et sociale afin de donner aux entreprises les moyens de mieux rémunérer leurs salariés. CAPEB et U2P présentent les allègements comme importants pour préserver l'emploi dans les TPE et contestent la cohérence d'une politique qui encouragerait les hausses salariales tout en augmentant simultanément le coût du travail.
+Le 9 novembre 2026, le président de l'U2P a déclaré qu'une hausse du SMIC à 1 500 € était possible si elle s'accompagnait d'un allègement des charges patronales. Il souhaite que la baisse de la facture fiscale et sociale donne aux entreprises la capacité de mieux rémunérer non seulement les salariés au SMIC, mais aussi ceux situés au-dessus. À la sortie de la conférence sociale, il a qualifié l'anticipation de hausse de contrainte supplémentaire pour les entreprises, compte tenu du ralentissement économique et de l'alourdissement attendu du coût du travail. La position est donc conditionnelle, et non un refus absolu de toute hausse.
 
 **Étayage et limites.** Le coût employeur est calculable précisément selon les règles applicables. La vulnérabilité des petites entreprises ne doit toutefois pas être présumée : elle doit être testée par secteur, taille, marge, productivité, trésorerie, intensité de main-d'œuvre et dépendance aux contrats. La position de l'U2P n'est pas une estimation causale des effets sur les défaillances ou l'emploi.
 
@@ -145,12 +153,13 @@ Publier les comptes rendus avec accord, distinguer citations et paraphrases, con
 
 ## 9. Vérifications prioritaires
 
-1. Lire les textes intégraux des organisations et compléter FO, CFE-CGC et UNSA.
-2. Recueillir des positions propres à CPME et U2P sur le niveau du SMIC, distinctes des déclarations communes sur les exonérations.
-3. Vérifier les minima de branche : date de signature, entrée en vigueur, extension et nombre de salariés couverts.
-4. Relier chaque affirmation à une étude précise sans inférer une validation scientifique depuis la convergence d'acteurs.
-5. Ajouter des coûts employeurs par secteur et taille à partir des données Urssaf/Insee.
-6. Tester les hausses de 1 %, 3 % et 5 %, puis un niveau cible, en distinguant hausse nominale, gain réel et revenu disponible.
+1. Retrouver les textes confédéraux directs de la CFE-CGC sur le SMIC et les grilles ; la collecte actuelle s'appuie sur des propos rapportés.
+2. Recueillir une position autonome de la CPME sur le niveau du SMIC, distincte des déclarations communes sur les exonérations.
+3. Compléter la comparaison des revendications syndicales par une définition homogène du salaire médian (net/brut, EQTP, année).
+4. Vérifier les minima de branche : date de signature, entrée en vigueur, extension et nombre de salariés couverts.
+5. Relier chaque affirmation à une étude précise sans inférer une validation scientifique depuis la convergence d'acteurs.
+6. Ajouter des coûts employeurs par secteur et taille à partir des données Urssaf/Insee.
+7. Tester les hausses de 1 %, 3 % et 5 %, puis un niveau cible, en distinguant hausse nominale, gain réel et revenu disponible.
 
 ## 10. Sources principales
 
@@ -161,12 +170,19 @@ Publier les comptes rendus avec accord, distinguer citations et paraphrases, con
 - [CFDT — Revalorisation des grilles, 12 novembre 2026](https://www.cfdt.fr/index.php/sinformer/toutes-les-actualites-par-dossiers-thematiques/revalorisation-des-grilles-de-salaires-il-y-a-urgence-a-negocier-dans-les-branches).
 - [CFDT — Communiqué du 15 décembre 2025](https://www.cfdt.fr/sinformer/communiques-de-presse/la-cfdt-regrette-labsence-de-coup-de-pouce-et-appelle-a-une-reflexion-globale-sur-le-smic).
 - [CFTC — Hausse du SMIC et revalorisation des autres salaires, 10 novembre 2026](https://www.cftc.fr/actualites/hausse-du-smic-une-avancee-necessaire-mais-comment-revaloriser-les-autres-salaires).
-- [FO — Pouvoir d'achat et épargne salariale, 22 janvier 2026](https://www.force-ouvriere.fr/pouvoir-d-achat-fo-opposee-au-projet-de-debloquer-l-epargne) — position sur un dispositif ponctuel ; revendication chiffrée nationale à compléter.
+- [FO — Résolution générale du congrès de Dijon 2026](https://www.force-ouvriere.fr/resolution-generale-congres-dijon-2026?id_source=167) — revendique un SMIC au moins égal à 80 % du salaire médian.
+- [FO — La mobilisation paye, 9 novembre 2026](https://www.force-ouvriere.fr/la-mobilisation-paye) — réaction à la conférence sociale et négociations de branche.
+- [FO — Pouvoir d'achat et épargne salariale, 22 janvier 2026](https://www.force-ouvriere.fr/pouvoir-d-achat-fo-opposee-au-projet-de-debloquer-l-epargne) — position sur un dispositif ponctuel.
+- [UNSA — SMIC : un coup de pouce est nécessaire, 17 décembre 2025](https://www.unsa.org/smic-un-coup-de-pouce-est-necessaire/).
+- [CFE-CGC — propos de sa présidente rapportés après la conférence sociale, 9 novembre 2026](https://www.tf1info.fr/societe/insuffisante-des-miettes-une-mauvaise-reponse-syndicats-et-patronat-divises-sur-la-hausse-anticipee-du-smic-2474833.html) — vigilance sur le tassement des grilles ; source secondaire.
 
 ### Organisations patronales
 - [MEDEF — Déclaration commune sur le PLFSS, 22 octobre 2024](https://extranet.medef.fr/actualites/plfss-declaration-commune-des-organisations-patronales).
 - [MEDEF — Entretien de Patrick Martin sur les salaires et le coût du travail](https://extranet.medef.fr/actualites/patrick-martin-aux-4-verites-nous-voulons-durgence-des-mesures-positives-pour-la-croissance-pour-linnovation-et-pour-lemploi).
+- [U2P — propos de son président sur une hausse à 1 500 € sous condition d'allègements, 9 novembre 2026](https://www.boursorama.com/actualite-economique/actualites/hausse-du-smic-on-attend-que-le-gouvernement-nous-donne-un-coup-de-pouce-assure-le-president-de-l-u2p-6fcfa74d2fe6553a065eaffa8e378294) — source secondaire rapportant une déclaration publique.
+- [U2P — Rencontre avec le ministre du Travail, 27 octobre 2026](https://u2p-france.fr/articles/rencontre-avec-le-ministre-du-travail-et-des-solidarites) — position institutionnelle sur la préservation des allègements.
 - [CAPEB — Salaires, SMIC et charges patronales, novembre 2026](https://www.capeb.fr/actualites/salaires-smic-et-charges-patronales) — position CAPEB/U2P.
+- [MEDEF — réaction à la hausse anticipée du SMIC, 9 novembre 2026](https://www.tf1info.fr/societe/insuffisante-des-miettes-une-mauvaise-reponse-syndicats-et-patronat-divises-sur-la-hausse-anticipee-du-smic-2474833.html) — source secondaire rapportant les propos de Patrick Martin.
 - [Sénat — Rapport sur les prélèvements obligatoires et auditions](https://www.senat.fr/rap/r25-942/r25-94224.html).
 
 ### Économistes et évaluations
