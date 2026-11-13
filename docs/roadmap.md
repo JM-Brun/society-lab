@@ -16,6 +16,9 @@
 - [x] Ontologie légère des relations et registre initial du graphe.
 - [x] Validation automatisée des schémas, identifiants, domaines, tags, références et types de relations (première version ; exécution CI à confirmer).
 - [x] Premier cas réel initial reliant sources, études, données, affirmations, hypothèses et dossier (éducation / Parcoursup ; revue approfondie à poursuivre).
+- [x] Page thématique Éducation reliant les objets et priorités de recherche.
+- [x] Graphe enrichi pour relier les sources, études, jeux de données, affirmations et dossier au domaine Éducation.
+- [ ] Ajouter progressivement les concepts et mécanismes réutilisables du domaine.
 
 **Sortie :** un exemple relie les objets et passe les contrôles automatisés.
 
@@ -33,7 +36,8 @@
 - [x] Sources institutionnelles initiales et références comparatives.
 - [x] Premiers jeux de données identifiés.
 - [x] Premières affirmations et hypothèses enregistrées.
-- [ ] Extraction détaillée des tableaux et contrôle des dénominateurs.
+- [ ] Télécharger et analyser le CSV Parcoursup 2025 ; contrôler les dénominateurs et publier les sorties reproductibles.
+- [ ] Constituer un corpus stratifié et coder les rapports CEV 2026.
 - [ ] Études indépendantes et données de trajectoires post-admission.
 - [ ] Comparaisons européennes approfondies.
 - [ ] Synthèse contradictoire et recommandations.
