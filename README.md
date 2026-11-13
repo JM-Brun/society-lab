@@ -24,20 +24,30 @@ Society Lab est un laboratoire public indépendant de connaissance, de recherche
 
 Le périmètre principal est l'Union européenne (UE-27), élargi aux autres pays européens selon les sujets. Les comparaisons internationales sont mobilisées lorsqu'elles éclairent les trajectoires européennes. La France fait l'objet d'une attention particulière sans être le seul point de référence.
 
+## Architecture de connaissance
+
+Le dépôt organise les contenus autour d'objets identifiés et reliés :
+- **Sources, études et jeux de données** : provenance et éléments de preuve.
+- **Affirmations et hypothèses** : propositions examinées, statut et limites.
+- **Concepts, mécanismes et institutions** : base de connaissance structurée.
+- **Dossiers et analyses** : synthèses transversales et résultats reproductibles.
+- **Graphe de connaissances** : relations typées entre objets, conservées dans Git et exportables.
+
+Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags dans [le vocabulaire contrôlé](knowledge/TAGS.yml) et les relations dans [l'ontologie légère](knowledge/RELATION_TYPES.yml). Voir [métadonnées et nomenclature](docs/metadata-and-naming.md), [graphe](knowledge/GRAPH.md) et [protocole d'ingestion](docs/ingestion-protocol.md).
+
 ## Documents fondateurs
 
 - [Charte fondatrice](CHARTER.md)
 - [Méthodologie](METHODOLOGY.md)
 - [Architecture](docs/architecture.md)
 - [Feuille de route](docs/roadmap.md)
-- [Taxonomie des domaines](knowledge/TAXONOMY.yml)
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
 - [Guide de contribution](CONTRIBUTING.md)
 
 ## État du projet
 
-Le projet démarre par la définition de son cadre de recherche et de son modèle documentaire. Le premier dossier pilote portera sur la transition énergétique européenne. Les structures annoncées dans la roadmap sont des objectifs, pas des fonctionnalités réputées opérationnelles avant leur implémentation et validation.
+Les structures de métadonnées, taxonomie transversale, types de relations et registres initiaux sont en cours d'initialisation. Leur présence ne signifie pas que les données ont déjà été ingérées, évaluées ou validées. Le premier dossier pilote portera sur la transition énergétique européenne.
 
 ## Langue et statut
 
