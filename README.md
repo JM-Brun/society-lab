@@ -37,7 +37,8 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 ## Premier dossier de recherche
 
-- [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier en cours, avec registres de sources, études, données, affirmations et hypothèses.
+- [Éducation](knowledge/domains/education.md) — page thématique reliant les connaissances, sources, études, données, affirmations, hypothèses et priorités de recherche.
+- [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif.
 
 ## Documents fondateurs
 
