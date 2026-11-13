@@ -11,7 +11,7 @@
     "label": {"type": "string", "minLength": 1},
     "scale": {"enum": ["global", "international", "continental", "national", "regional", "departmental", "metropolitan", "municipal", "neighbourhood"]},
     "entity_type": {"type": "string", "minLength": 1},
-    "parent_id": {"type": "string", "pattern": "^TERRITORY-[A-Z0-9][A-Z0-9-]*$"},
+    "geographic_parent_id": {"type": "string", "pattern": "^TERRITORY-[A-Z0-9][A-Z0-9-]*$"},
     "description": {"type": "string", "minLength": 1}
   }
 }
