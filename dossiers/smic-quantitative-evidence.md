@@ -138,7 +138,74 @@ La bonne conclusion est donc nuancée : il existe un signal de ralentissement lo
 
 Source : [Barreto et al. (2025), OCDE, *Low-wage employment in France: A cross-country perspective*](https://doi.org/10.1787/82539f44-en).
 
-## 4. Ce que ces résultats disent — et ne disent pas — d'une hausse du SMIC
+## 4. Études portant directement sur les hausses du salaire minimum
+
+Les évaluations d'allègements précédentes ne suffisent pas à répondre à la question de l'effet d'une hausse du salaire minimum. Il faut donc mobiliser séparément les études qui exploitent des variations du plancher salarial lui-même.
+
+### 4.1 France : Abowd, Kramarz et Margolis
+
+Abowd, Kramarz et Margolis (1999), avec une version publiée dans un ouvrage en 2000, utilisent des données longitudinales individuelles en France et aux États-Unis. Pour la France, ils estiment qu'une hausse de **1 % du SMIC réel** réduit la probabilité future d'emploi des hommes actuellement rémunérés au minimum de **1,3 %**, et celle des femmes de **1,0 %**.
+
+Il s'agit d'une variation de la probabilité individuelle de rester en emploi pour les salariés initialement au minimum, et non d'une baisse de 1,3 % ou 1,0 % de l'emploi total. Les auteurs trouvent des effets particulièrement marqués pour les travailleurs directement concernés, tandis que les effets généraux sont plus modérés.
+
+**Limites :** étude ancienne, portant sur des institutions, des périodes et des configurations de marché du travail antérieures aux réformes ultérieures. Les résultats ne doivent pas être transposés directement au marché du travail français actuel. Ils constituent néanmoins une pièce importante de l'évidence française et ne doivent pas être omis au profit exclusif des travaux récents.
+
+Sources :
+- [Abowd, Kramarz et Margolis (1999), NBER Working Paper 6996](https://www.nber.org/papers/w6996)
+- [Abowd et al. (2000), IZA Discussion Paper 203](https://www.iza.org/publications/dp/203/the-tail-of-two-countries-minimum-wages-and-employment-in-france-and-the-united-states)
+
+### 4.2 France : effets de diffusion sur les salaires — Aeberhardt, Givord et Marbot
+
+Aeberhardt, Givord et Marbot (2012) exploitent la convergence, entre 2003 et 2005, de plusieurs niveaux de salaire minimum qui coexistaient à la suite de la mise en œuvre des 35 heures. À l'aide d'une régression quantile inconditionnelle et d'une stratégie de quasi-expérience visant à traiter l'endogénéité du processus français de revalorisation, ils trouvent des effets significatifs sur la distribution des rémunérations des hommes et des femmes **jusqu'au septième décile**.
+
+Ce travail documente les effets de diffusion du minimum salarial au-delà des seuls salariés exactement au plancher. Il ne constitue pas une estimation directe de l'effet sur l'emploi et ne permet pas d'isoler les effets de toutes les composantes de la réforme des 35 heures.
+
+Source : [Aeberhardt, Givord et Marbot (2012), Insee, Document de travail G2012/07](https://www.insee.fr/en/statistiques/1380949).
+
+### 4.3 Comparaison internationale : synthèse de Dube et Lindner
+
+Dube et Lindner (2024), dans leur revue de la littérature récente, examinent les méthodes empiriques quasi expérimentales et les effets des salaires minimums sur les salaires, l'emploi, les conditions de travail, les autres facteurs de production, les entrées et sorties d'entreprises, les prix, la demande, les profits, la productivité et les inégalités.
+
+Cette revue est utile pour éviter de limiter l'évaluation au seul nombre d'emplois. Elle insiste sur les ajustements possibles des entreprises et des travailleurs sur plusieurs marges. La synthèse doit être lue dans son ensemble : les résultats dépendent du contexte économique, du niveau initial du salaire minimum et de l'intensité avec laquelle le plancher s'impose aux employeurs.
+
+Source : [Dube et Lindner (2024), *Minimum Wages in the 21st Century*, NBER Working Paper 32878](https://www.nber.org/papers/w32878).
+
+### 4.4 Europe : résultats récents de la Commission européenne (ESDE 2026)
+
+Le chapitre 3 du rapport *Employment and Social Developments in Europe 2026* examine les liens entre salaires, qualité de l'emploi et productivité. Son analyse quasi expérimentale des mises à jour du salaire minimum exploite des variations entre pays, secteurs et périodes, ainsi que la part des salariés rémunérés près du plancher.
+
+Les résultats présentés dans le chapitre indiquent :
+- une association estimée entre une hausse de 1 % du ratio salaire minimum/salaire moyen et une hausse d'environ **0,08 à 0,12 point de pourcentage** de la croissance annuelle de la productivité horaire, selon la part des salariés proches du minimum ;
+- **aucun effet statistiquement significatif sur l'emploi** dans la spécification correspondante ; les intervalles de confiance incluent zéro ;
+- des effets de prix généralement qualifiés de modestes dans la synthèse de la littérature citée par le rapport.
+
+La Commission interprète ces résultats comme compatibles avec des ajustements des entreprises par les prix, la technologie, les salaires et la réallocation des travailleurs plutôt que par une réduction immédiate des effectifs.
+
+**Précautions :** il s'agit d'une analyse européenne pays-secteurs, pas d'une estimation propre à la France. Le résultat de productivité porte sur le ratio minimum/moyenne et sur la productivité horaire, non sur une hausse nominale uniforme de 1 % du SMIC français. L'absence de significativité statistique sur l'emploi n'établit pas un effet exactement nul ; elle signifie que l'analyse ne permet pas de distinguer cet effet de zéro aux seuils usuels.
+
+Source : [Commission européenne, ESDE 2026, chapitre 3 et annexe A3.5](https://ec.europa.eu/employment_social/employment_analysis/esde/2026/Chapter%203.html).
+
+### 4.5 Europe : hétérogénéité sectorielle et régionale — FMI (2025)
+
+Une étude du FMI de 2025 exploite les variations sectorielles et régionales du ratio salaire minimum/salaire moyen dans les pays européens. Elle trouve des effets moyens sur l'emploi proches de zéro à court terme, mais négatifs à moyen terme, avec une hétérogénéité selon le sexe, l'âge, l'ampleur de la hausse et le niveau relatif du minimum salarial. Les effets deviennent négatifs lorsque le salaire minimum dépasse environ **35 % du salaire moyen sectoriel** dans le cadre de cette estimation.
+
+Ce seuil ne constitue pas une règle universelle : il est issu d'une stratégie et d'un échantillon déterminés, et dépend de la définition du ratio sectoriel. Il souligne néanmoins l'importance de la contrainte du plancher relativement au salaire moyen de chaque secteur, plutôt que du seul ratio national.
+
+Source : [FMI (2025), *Minimum Wage and Employment: Sectoral and Regional Perspectives*](https://doi.org/10.5089/9798229030779.001.A001).
+
+### 4.6 Pourquoi les résultats ne sont pas nécessairement contradictoires
+
+Les études françaises anciennes identifient des effets négatifs sur les transitions individuelles à partir du minimum salarial ; les études européennes récentes trouvent souvent des effets agrégés faibles ou statistiquement non significatifs. Ces résultats peuvent coexister parce qu'ils n'estiment pas le même paramètre :
+
+- emploi total, embauches, probabilité individuelle de maintien en emploi et emploi des groupes directement concernés sont des variables distinctes ;
+- les effets à court terme peuvent différer des effets à moyen terme ;
+- les secteurs où le salaire minimum est très contraignant peuvent réagir différemment des secteurs où peu de salariés sont concernés ;
+- les entreprises peuvent ajuster les prix, les heures, les marges, la productivité, la composition des emplois et les embauches ;
+- les institutions, les allègements et la négociation collective changent les effets d'une hausse donnée.
+
+La bonne démarche consiste à comparer les estimands, pas à compter les études « positives » et « négatives ».
+
+## 5. Ce que ces résultats disent — et ne disent pas — d'une hausse du SMIC
 
 | Proposition | État des preuves | Conclusion prudente |
 |---|---|---|
@@ -150,7 +217,7 @@ Source : [Barreto et al. (2025), OCDE, *Low-wage employment in France: A cross-c
 
 Une hausse du SMIC est un choc différent d'une baisse de cotisations : elle augmente le salaire brut des personnes concernées et peut modifier les écarts de rémunération, les minima conventionnels, les coûts, les prix, les marges, les heures et les décisions d'embauche. Les études précédentes renseignent certains mécanismes, mais ne suffisent pas à quantifier tous ces canaux.
 
-## 5. Lacunes prioritaires dans la littérature à exploiter
+## 6. Lacunes prioritaires dans la littérature à exploiter
 
 1. **Effets directs des hausses du SMIC en France récente :** isoler les hausses automatiques, les coups de pouce discrétionnaires et les effets de rattrapage des minima conventionnels.
 2. **Effets sur les heures et la qualité de l'emploi :** ne pas réduire l'emploi au seul nombre de postes ; examiner durée du travail, temps partiel, contrats, intensité et composition de la main-d'œuvre.
@@ -160,7 +227,7 @@ Une hausse du SMIC est un choc différent d'une baisse de cotisations : elle aug
 6. **Mobilité salariale :** prolonger l'analyse des trajectoires et chercher une identification causale de l'effet des taux marginaux et des allègements.
 7. **Territorialisation :** identifier les données disponibles aux niveaux Pays de la Loire, Loire-Atlantique, Nantes Métropole et Nantes ; ne pas extrapoler des coefficients nationaux.
 
-## 6. Protocole de mise à jour du registre des preuves
+## 7. Protocole de mise à jour du registre des preuves
 
 Chaque résultat chiffré doit être enregistré comme une affirmation distincte avec :
 - l'étude et la version exacte du document ;
@@ -174,8 +241,13 @@ Chaque résultat chiffré doit être enregistré comme une affirmation distincte
 
 Ne pas enregistrer une valeur de simulation comme une observation empirique. Ne pas additionner des effets issus d'études dont les populations, périodes et contrefactuels se recouvrent.
 
-## 7. Références principales
+## 8. Références principales
 
+- [Commission européenne, ESDE 2026, chapitre 3 — salaires minimums et productivité](https://ec.europa.eu/employment_social/employment_analysis/esde/2026/Chapter%203.html)
+- [Dube et Lindner (2024), *Minimum Wages in the 21st Century*](https://www.nber.org/papers/w32878)
+- [Abowd, Kramarz et Margolis (1999), *Minimum Wages and Employment in France and the United States*](https://www.nber.org/papers/w6996)
+- [Aeberhardt, Givord et Marbot (2012), Insee, effets de diffusion du SMIC](https://www.insee.fr/en/statistiques/1380949)
+- [FMI (2025), effets sectoriels et régionaux des salaires minimums](https://doi.org/10.5089/9798229030779.001.A001)
 - [Groupe d'experts SMIC (2025), rapport complet — chapitre 4](https://travail-emploi.gouv.fr/sites/travail-emploi/files/2025-12/SMIC-RAPPORT-2025-25novembre-VF.pdf)
 - [Crépon et Desplatz (2001), *The impact of differential payroll tax subsidies on minimum wage employment*](https://doi.org/10.1016/S0047-2727(00)00137-7)
 - [Barreto et al. (2025), OCDE, *Low-wage employment in France*](https://doi.org/10.1787/82539f44-en)
