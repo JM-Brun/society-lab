@@ -82,7 +82,7 @@ Le protocole descriptif et son script reproductible sont désormais intégrés a
 - [Protocole d'analyse Parcoursup 2025](../research/analysis/parcoursup-2025-protocol.md)
 - [Script Python](../scripts/analysis/analyze_parcoursup_2025.py)
 
-La validation automatisée et les tests unitaires passent. Cette étape valide l'outillage et les garde-fous, pas les résultats empiriques : le CSV officiel doit encore être téléchargé, contrôlé et exécuté. Aucun tableau de résultats ne doit être interprété avant cette exécution.
+Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, les quantiles et le chargement CSV ont été ajoutés. Le statut CI du dernier commit n'est pas encore remonté dans GitHub (aucun statut publié au moment de la vérification). Le contrôle du code a aussi révélé et corrigé un décalage important : l'API officielle expose les noms de champs en snake_case minuscules, alors que la première version du script attendait des variantes en majuscules. Le script et le protocole sont maintenant alignés sur les noms canoniques. Cette correction reste à confirmer par l'exécution CI et par un essai sur le CSV complet. Le fichier source n'a pas encore été téléchargé ni analysé ; aucun résultat empirique n'est donc présenté.
 
 ## Programme de recherche
 1. Audit des données Parcoursup 2026 : télécharger les fichiers ouverts, reconstruire les dénominateurs et identifier les croisements disponibles.
