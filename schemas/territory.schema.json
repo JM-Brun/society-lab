@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/territory.schema.json",
+  "title": "Society Lab Territory",
+  "description": "A territorial reference used to describe the geographic scope of research.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "label", "scale", "entity_type", "description"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^TERRITORY-[A-Z0-9][A-Z0-9-]*$"},
+    "label": {"type": "string", "minLength": 1},
+    "scale": {"enum": ["global", "international", "continental", "national", "regional", "departmental", "metropolitan", "municipal", "neighbourhood"]},
+    "entity_type": {"type": "string", "minLength": 1},
+    "parent_id": {"type": "string", "pattern": "^TERRITORY-[A-Z0-9][A-Z0-9-]*$"},
+    "description": {"type": "string", "minLength": 1}
+  }
+}
