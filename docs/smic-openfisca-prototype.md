@@ -16,7 +16,7 @@ Cas-types de la première version :
 - couple avec un salarié au SMIC et un second salarié à 80 % du SMIC, avec un enfant ;
 - couple avec deux salariés à temps plein au SMIC.
 
-Chaque cas est comparé sous une référence et des hausses brutes hypothétiques de 1 %, 3 % et 5 %. Le résultat visé est le revenu disponible annuel du ménage, puis son équivalent mensuel. Les scénarios de hausse sont des variations de salaire saisies dans les situations, pas une modification de la loi sur le SMIC.
+Chaque cas est comparé sous une référence et des hausses brutes hypothétiques de 1 %, 3 % et 5 %. Le calcul annuel est une **année-type annualisée** : le taux horaire mensuel de juin 2026 est appliqué aux douze mois pour comparer des situations stabilisées, et non pour reconstituer le revenu effectivement perçu au cours de l'année civile 2026. Le résultat visé est le revenu disponible annuel du ménage, puis son équivalent mensuel. Les scénarios de hausse sont des variations de salaire saisies dans les situations, pas une modification de la loi sur le SMIC.
 
 ## 2. Exécution
 
@@ -36,7 +36,7 @@ python tools/smic_openfisca.py --gross-monthly-smic 1867.02 --uplifts 0 2 4 6
 Le programme émet un JSON avec une ligne par ménage et par scénario. Les tests des structures d'entrée, indépendants de l'installation d'OpenFisca, s'exécutent avec :
 
 ```bash
-python -m unittest tests.test_smic_openfisca
+python -m unittest discover -s tests -p "test_smic_openfisca.py"
 ```
 
 ## 3. Hypothèses explicites et précautions
