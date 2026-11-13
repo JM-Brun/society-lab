@@ -29,7 +29,9 @@
 - [ ] Grille d'examen des études.
 - [ ] Protocoles quantitatif, qualitatif et comparatif (généraux et réutilisables entre domaines).
 - [x] Ajout des exigences de steelman, provenance des énoncés, vérification des passages et reproductibilité quantitative à la méthodologie.
-- [ ] Registre structuré des incertitudes et révisions ; modèle de Claim enrichi à valider sur les objets existants.
+- [x] Première extension rétrocompatible du schéma Claim (steelman, confiance argumentée, vérification des sources, provenance et historique de révision) ; validation complète sur les claims existants à confirmer par CI.
+- [x] Registre Forecast initial et intégration de son schéma dans le validateur commun.
+- [ ] Formaliser un registre structuré des incertitudes avec schéma dédié ; le modèle documentaire actuel reste non automatisé.
 - [ ] Tester les exigences de revue et de vérification sur les dossiers TIG et Parcoursup.
 
 **Sortie :** les méthodes réellement appliquées sont décrites et reproductibles autant que possible.
@@ -87,7 +89,7 @@ Le dossier éducation / Parcoursup constitue désormais le premier cas d'applica
 
 ## M8 — Prévisions et évaluation rétrospective
 - [x] Définition méthodologique d'une prévision probabiliste et du score de Brier.
-- [x] Première version du schéma Forecast.
+- [x] Première version du schéma Forecast et registre YAML central contrôlé par la validation commune.
 - [ ] Constituer un petit ensemble de prévisions datées, résolubles et non redondantes.
 - [ ] Définir les règles de résolution et les cas indéterminés.
 - [ ] Construire un bilan de calibration avec nombre de prévisions, horizons et base de comparaison.
