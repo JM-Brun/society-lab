@@ -21,7 +21,7 @@ Séparer les sources, les objets de connaissance, les travaux d'analyse et les p
 - `site/` : publication Quarto.
 
 ## Objets fondamentaux
-Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method et Dossier. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
+Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method, Dossier et Territory. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
 
 ## Identifiants et vocabulaire
 Les identifiants sont sémantiques, stables, uniques et indépendants du chemin. Voir [métadonnées et nomenclature](metadata-and-naming.md). Les domaines sont définis dans `knowledge/TAXONOMY.yml`, les tags transversaux dans `knowledge/TAGS.yml`. Les mots-clés libres ne doivent pas remplacer les vocabulaires contrôlés.
