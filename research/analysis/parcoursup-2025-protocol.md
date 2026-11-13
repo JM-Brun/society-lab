@@ -27,7 +27,7 @@ Source et dictionnaire : [documentation méthodologique officielle](https://data
 | Demande | voe_tot, nb_voe_pp | Effectifs de candidats/vœux enregistrés par formation ; ne pas sommer pour produire un nombre de personnes uniques |
 | Classement | nb_cla_pp, nb_cla_pp_bg, nb_cla_pp_bt, nb_cla_pp_bp | Effectifs classés par formation, selon les catégories documentées |
 | Proposition | prop_tot, prop_tot_bg, prop_tot_bt, prop_tot_bp | Effectifs ayant reçu une proposition |
-| Admission | acc_tot, acc_neobac, acc_bg, acc_bt, acc_bp | Effectifs ayant accepté une proposition (admis) |
+| Admission | acc_tot, acc_pp, acc_pc, acc_neobac, acc_bg, acc_bt, acc_bp | Effectifs ayant accepté une proposition sur l'ensemble de la campagne, en phase principale et complémentaire, et par voie du bac |
 | Bourse | nb_voe_pp_bg_brs, nb_voe_pp_bt_brs, nb_voe_pp_bp_brs, acc_brs | Boursiers parmi les néo-bacheliers en phase principale, puis boursiers parmi les néo-bacheliers admis |
 | Territoire | region_etab_aff, dep, acad_mies | Territoire de l'établissement d'accueil |
 | Formation | fili, lib_for_voe_ins, select_form, contrat_etab | filière et caractéristiques de la formation |
@@ -40,16 +40,16 @@ Au niveau d'une formation, lorsque le dénominateur est strictement positif :
 
 - demande/capacité = nb_voe_pp / capa_fin ;
 - classés/demande = nb_cla_pp / nb_voe_pp ;
-- propositions/demande = prop_tot / nb_voe_pp ;
-- admissions/capacité = acc_tot / capa_fin ;
+- acceptations en phase principale / vœux PP = acc_pp / nb_voe_pp ;
+- acceptations sur l'ensemble de la campagne / capacité = acc_tot / capa_fin (indicateur d'intensité rapportée à la capacité, **pas** un taux d'occupation ni un taux de conversion individuel) ;
 - part de chaque voie parmi les néo-bacheliers candidats en PP = effectif de la voie / somme bg + bt + bp ;
 - part de chaque voie parmi les néo-bacheliers admis = acc_bg, acc_bt ou acc_bp / acc_neobac ;
 - part de boursiers parmi les néo-bacheliers candidats en PP = somme des boursiers bg + bt + bp / somme des candidats bg + bt + bp ;
 - part de boursiers parmi les néo-bacheliers admis = acc_brs / acc_neobac.
 
-Les deux parts de boursiers sont des compositions de populations distinctes : la première concerne les vœux de phase principale, la seconde les admissions cumulées de la campagne. Leur différence n'est **pas** un taux de sélection ni un effet causal.
+Les deux parts de boursiers sont des compositions de populations distinctes : la première concerne les vœux de phase principale, la seconde les admissions cumulées de la campagne. Leur différence n'est **pas** un taux de sélection ni un effet causal. Le ratio `prop_tot / nb_voe_pp` n'est pas calculé : `prop_tot` couvre les propositions sur l'ensemble de la campagne tandis que `nb_voe_pp` se limite à la phase principale, ce qui mélange des périodes et bases différentes.
 
-Les ratios agrégés par région, filière ou sélectivité sont des ratios de sommes de comptes formation par formation. Ils décrivent des volumes de candidatures/formation, pas des probabilités individuelles. Les mêmes candidats peuvent apparaître dans plusieurs formations et les vœux multiples/sous-vœux compliquent toute interprétation en personnes uniques.
+Les ratios agrégés par région, filière ou sélectivité sont des ratios de sommes de comptes formation par formation. Ils décrivent des volumes de candidatures/formation, pas des probabilités individuelles. Le ratio `acc_pp / nb_voe_pp` rapproche deux comptes de phase principale au niveau formation, mais reste un ratio descriptif de comptes par formation, et non la probabilité qu'un candidat obtienne une admission. Les mêmes candidats peuvent apparaître dans plusieurs formations et les vœux multiples/sous-vœux compliquent toute interprétation en personnes uniques.
 
 ## 5. Règles d'agrégation
 
@@ -77,7 +77,7 @@ Avec Python standard (aucune dépendance externe) :
 
     python scripts/analysis/analyze_parcoursup_2025.py --input /chemin/vers/fr-esr-parcoursup.csv --output-dir data/derived/parcoursup-2025
 
-Le script produit des agrégats descriptifs, des indicateurs par formation et un manifeste rappelant l'unité d'analyse et les limites. La distribution du ratio demande/capacité inclut minimum, premier quartile, médiane, troisième quartile et maximum. Les sorties sont des données dérivées, pas des microdonnées.
+Le script produit des agrégats descriptifs, des indicateurs par formation et un manifeste rappelant l'unité d'analyse et les limites. Les ratios de proposition et d'acceptation sont choisis pour ne pas mélanger un total de campagne (`prop_tot`, `acc_tot`) avec un dénominateur limité à la phase principale. La distribution du ratio demande/capacité inclut minimum, premier quartile, médiane, troisième quartile et maximum. Les sorties sont des données dérivées, pas des microdonnées.
 
 ## 8. Critères d'acceptation
 
