@@ -150,7 +150,9 @@ Les séries INSEE montrent que le pouvoir d'achat horaire net du SMIC a progress
 
 ### 5.3 Salariés directement concernés
 
-La Dares montre qu'en janvier 2026, 11,8 % des salariés du champ privé non agricole ont bénéficié directement de la revalorisation (2,1 millions). En novembre 2024, la proportion était de 12,4 % (2,2 millions), contre 14,6 % en janvier 2024 et 17,3 % en janvier 2023. La publication Dares d'octobre 2026 souligne aussi qu'aucune source statistique ne permet de mesurer précisément le nombre total de salariés rémunérés au SMIC : les éléments de rémunération entrant dans l'assiette légale ne recouvrent pas toute la rémunération brute globale.
+La Dares montre qu'au 1er janvier 2026, 11,8 % des salariés du secteur privé non agricole ont bénéficié directement de la revalorisation (2,1 millions). La proportion était de 12,4 % au 1er novembre 2024, 14,6 % au 1er janvier 2024 et 17,3 % au 1er janvier 2023. En janvier 2026, 25,6 % des salariés à temps partiel ont bénéficié de la hausse, contre 8,8 % des salariés à temps complet ; les proportions étaient de 21,9 % dans les entreprises de 1 à 9 salariés et 9,5 % dans les entreprises plus grandes. Les femmes représentaient 59,6 % des bénéficiaires. Les proportions sectorielles atteignaient 62,3 % dans la restauration rapide et 53,8 % dans les services à la personne (entreprises). Ces données décrivent l'exposition directe à la hausse, non des pertes ou créations d'emplois causées par elle.
+
+La Dares précise qu'aucune source statistique ne mesure exactement le nombre de salariés rémunérés au SMIC, car l'assiette légale ne correspond pas à la rémunération brute totale. En 2024, 4,9 % des salariés du privé en équivalent temps plein (0,9 million EQTP) percevaient un salaire brut horaire global inférieur à 1,05 SMIC. Sur le champ Ecmoss des entreprises privées de 10 salariés ou plus, 14,5 % des salariés avaient en 2022 un salaire de base inférieur à 1,05 SMIC ; parmi eux, 40,2 % avaient une rémunération totale inférieure à 1,05 SMIC. Ces indicateurs ne sont pas interchangeables : années, champ et définition diffèrent.
 
 ### 5.4 Effets sur le salaire moyen
 
@@ -161,6 +163,27 @@ Une étude INSEE publiée en 2012, portant sur 1970-2009, estime que les revalor
 Les sources consultées ici ne justifient pas une élasticité unique et universelle de l'emploi au SMIC français. Il faut comparer les études selon leur stratégie d'identification, les périodes, les populations, les secteurs, l'ampleur des hausses et les marges d'ajustement observées.
 
 Une étude descriptive des évolutions de l'emploi après une hausse ne suffit pas : la conjoncture, les autres réformes, les allègements, la demande et les changements sectoriels peuvent expliquer simultanément les évolutions.
+
+### 5.6 Ce que montrent les études empiriques et les modèles
+
+Il faut éviter de mettre sur le même plan quatre familles de résultats :
+
+| Étude | Objet effectivement étudié | Ce qu'elle apporte | Ce qu'elle ne démontre pas |
+|---|---|---|---|
+| Cottet (CESifo, 2024) | Réduction de cotisations patronales ciblant les emplois au SMIC ; données administratives employeurs-salariés | Réponses différentes selon le profil antérieur des entreprises : hausse du nombre d'emplois au SMIC dans les entreprises peu exposées auparavant ; croissance de l'emploi dans les entreprises déjà exposées | L'effet d'une hausse du SMIC ; les effets d'une baisse de cotisations ne sont pas symétriques à ceux d'une hausse salariale |
+| Albertini, Poirier et Terriau (TEPP, 2025) | Modèle structurel du marché du travail et du système socio-fiscal français | Les simulations prévoient un risque de baisse de l'emploi et du surplus budgétaire en cas de hausse du SMIC, avec sensibilité à l'indexation des allègements et prestations | Un nombre observé d'emplois détruits ; résultat causal issu d'une expérience réelle |
+| Gautier, Roux et Suarez Castillo (INSEE, 2019) | Salaires individuels et minima de branche | Les minima influencent le calendrier et l'ampleur des ajustements salariaux ; diffusion aux salaires supérieurs via les minima de branche | Une mesure contemporaine de l'effet sur l'emploi, les prix ou la pauvreté |
+| OCDE (2025) | Comparaison internationale des emplois à bas salaire, des compétences et des trajectoires | Le SMIC français est relativement élevé ; la mobilité salariale ascendante des travailleurs à bas salaire n'est pas plus difficile dans les pays comparés | Une identification causale de l'effet d'un coup de pouce français précis |
+
+La distinction la plus importante est celle entre l'effet du salaire minimum et l'effet du système complet qui l'entoure. Les allègements patronaux modifient le coût employeur ; la prime d'activité et les prélèvements modifient le gain net du salarié ; les minima de branche diffusent les hausses. Un résultat sur l'un de ces leviers ne peut pas être attribué automatiquement à un autre.
+
+L'étude de Cottet est particulièrement utile parce qu'elle montre que les entreprises ne réagissent pas toutes de la même manière à une variation du coût du travail. Elle porte toutefois sur une baisse de cotisations patronales : elle ne permet pas de conclure qu'une hausse du SMIC aurait des effets opposés ou de même ampleur. Le modèle d'Albertini et ses coauteurs traite directement de hausses du SMIC, mais ses conclusions restent conditionnelles aux hypothèses de modélisation. Les deux résultats doivent être lus ensemble, sans transformer le modèle en fait observé.
+
+### 5.7 Le SMIC et les grilles salariales
+
+L'étude INSEE de 2019 indique que les minima salariaux modifient le calendrier et l'ampleur des hausses individuelles. Dans son modèle, ils amplifient par un facteur 1,7 la réponse agrégée des salaires à l'inflation passée ; une hausse du SMIC se diffuse notamment via les minima conventionnels. Cela renforce la nécessité de suivre les grilles de branche, mais ne signifie pas que chaque salarié au-dessus du SMIC obtient une hausse identique.
+
+L'OCDE (2025) ajoute une nuance importante au débat sur la « trappe à bas salaires » : elle identifie des mécanismes socio-fiscaux susceptibles de limiter les gains de mobilité, mais son analyse des trajectoires ne conclut pas que les travailleurs à bas salaire français ont moins de chances de progresser que ceux des pays comparés. Il faut donc distinguer les taux marginaux élevés à certains niveaux de salaire, le comportement des employeurs, et les mobilités professionnelles effectivement observées.
 
 ## 6. Questions de recherche et hypothèses
 
