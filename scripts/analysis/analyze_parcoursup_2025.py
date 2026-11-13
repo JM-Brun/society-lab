@@ -15,18 +15,18 @@ from pathlib import Path
 from statistics import median
 
 REQUIRED = {
-    "session", "region_etab_aff", "Fili", "select_form", "capa_fin",
-    "nb_VOE_PP", "nb_cla_PP", "Prop_tot", "Acc_tot",
-    "nb_VOE_PP_BG", "nb_VOE_PP_BT", "nb_VOE_PP_BP",
-    "nb_cla_pp_BG", "nb_cla_pp_BT", "nb_cla_pp_BP",
-    "Acc_neobac", "Acc_BG", "Acc_BT", "Acc_BP",
-    "nb_VOE_PP_BG_brs", "nb_VOE_PP_BT_brs", "nb_VOE_PP_BP_brs", "Acc_brs",
+    "session", "region_etab_aff", "fili", "select_form", "capa_fin",
+    "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot",
+    "nb_voe_pp_BG", "nb_voe_pp_BT", "nb_voe_pp_BP",
+    "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
+    "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
+    "nb_voe_pp_BG_brs", "nb_voe_pp_BT_brs", "nb_voe_pp_BP_brs", "acc_brs",
 }
 
-NUMERIC = REQUIRED - {"session", "region_etab_aff", "Fili", "select_form"}
+NUMERIC = REQUIRED - {"session", "region_etab_aff", "fili", "select_form"}
 GROUPS = {
     "region": "region_etab_aff",
-    "filiere": "Fili",
+    "filiere": "fili",
     "select_form_raw": "select_form",
 }
 
@@ -73,33 +73,33 @@ def profile(rows: list[dict]) -> dict:
     result = {
         "formations": len(rows),
         "capacity": sums["capa_fin"],
-        "wishes_phase_principale": sums["nb_VOE_PP"],
-        "classified_phase_principale": sums["nb_cla_PP"],
-        "proposals_total": sums["Prop_tot"],
-        "admissions_total": sums["Acc_tot"],
-        "demand_per_seat": ratio(sums["nb_VOE_PP"], sums["capa_fin"]),
-        "classified_over_wishes": ratio(sums["nb_cla_PP"], sums["nb_VOE_PP"]),
-        "proposals_over_wishes": ratio(sums["Prop_tot"], sums["nb_VOE_PP"]),
-        "admissions_over_capacity": ratio(sums["Acc_tot"], sums["capa_fin"]),
+        "wishes_phase_principale": sums["nb_voe_pp"],
+        "classified_phase_principale": sums["nb_cla_pp"],
+        "proposals_total": sums["prop_tot"],
+        "admissions_total": sums["acc_tot"],
+        "demand_per_seat": ratio(sums["nb_voe_pp"], sums["capa_fin"]),
+        "classified_over_wishes": ratio(sums["nb_cla_pp"], sums["nb_voe_pp"]),
+        "proposals_over_wishes": ratio(sums["prop_tot"], sums["nb_voe_pp"]),
+        "admissions_over_capacity": ratio(sums["acc_tot"], sums["capa_fin"]),
     }
     bac_candidates = {
-        "general": sums["nb_VOE_PP_BG"],
-        "technological": sums["nb_VOE_PP_BT"],
-        "vocational": sums["nb_VOE_PP_BP"],
+        "general": sums["nb_voe_pp_BG"],
+        "technological": sums["nb_voe_pp_BT"],
+        "vocational": sums["nb_voe_pp_BP"],
     }
     bac_classified = {
-        "general": sums["nb_cla_pp_BG"],
-        "technological": sums["nb_cla_pp_BT"],
-        "vocational": sums["nb_cla_pp_BP"],
+        "general": sums["nb_cla_pp_bg"],
+        "technological": sums["nb_cla_pp_bt"],
+        "vocational": sums["nb_cla_pp_bp"],
     }
     bac_admitted = {
-        "general": sums["Acc_BG"],
-        "technological": sums["Acc_BT"],
-        "vocational": sums["Acc_BP"],
+        "general": sums["acc_bg"],
+        "technological": sums["acc_bt"],
+        "vocational": sums["acc_bp"],
     }
     candidates_total = (sum(bac_candidates.values()) if all(v is not None for v in bac_candidates.values()) else None)
     classified_total = (sum(bac_classified.values()) if all(v is not None for v in bac_classified.values()) else None)
-    admitted_total = sums["Acc_neobac"]
+    admitted_total = sums["acc_neobac"]
     for track, value in bac_candidates.items():
         result[f"candidate_share_{track}_among_new_bac_pp"] = ratio(value, candidates_total)
     for track, value in bac_classified.items():
@@ -108,7 +108,7 @@ def profile(rows: list[dict]) -> dict:
         result[f"admitted_share_{track}_among_new_bac"] = ratio(value, admitted_total)
 
     bursary_candidates = [
-        sums["nb_VOE_PP_BG_brs"], sums["nb_VOE_PP_BT_brs"], sums["nb_VOE_PP_BP_brs"]
+        sums["nb_voe_pp_BG_brs"], sums["nb_voe_pp_BT_brs"], sums["nb_voe_pp_BP_brs"]
     ]
     bursary_candidates_total = (
         sum(bursary_candidates)
@@ -117,7 +117,7 @@ def profile(rows: list[dict]) -> dict:
     result["bursary_share_candidates_new_bac_pp"] = ratio(
         bursary_candidates_total, candidates_total
     )
-    result["bursary_share_admitted_new_bac"] = ratio(sums["Acc_brs"], admitted_total)
+    result["bursary_share_admitted_new_bac"] = ratio(sums["acc_brs"], admitted_total)
     return result
 
 
@@ -143,7 +143,7 @@ def load_rows(path: Path) -> list[dict]:
                 raise ValueError(f"Unexpected session at CSV line {line_no}: {raw['session']!r}")
             row = {key: (raw.get(key) or "").strip() for key in GROUPS.values()}
             row.update({key: number(raw.get(key)) for key in NUMERIC})
-            row["LIB_FOR_VOE_INS"] = (raw.get("LIB_FOR_VOE_INS") or "").strip()
+            row["lib_for_voe_ins"] = (raw.get("lib_for_voe_ins") or "").strip()
             rows.append(row)
     if not rows:
         raise ValueError("No Parcoursup 2025 records found")
@@ -177,14 +177,14 @@ def run(input_path: Path, output_dir: Path) -> dict:
     per_formation = []
     for row in rows:
         per_formation.append({
-            "formation": row.get("LIB_FOR_VOE_INS", ""),
+            "formation": row.get("lib_for_voe_ins", ""),
             "region": row.get("region_etab_aff", ""),
-            "filiere": row.get("Fili", ""),
+            "filiere": row.get("fili", ""),
             "select_form_raw": row.get("select_form", ""),
-            "demand_per_seat": ratio(row["nb_VOE_PP"], row["capa_fin"]),
-            "classified_over_wishes": ratio(row["nb_cla_PP"], row["nb_VOE_PP"]),
-            "proposals_over_wishes": ratio(row["Prop_tot"], row["nb_VOE_PP"]),
-            "admissions_over_capacity": ratio(row["Acc_tot"], row["capa_fin"]),
+            "demand_per_seat": ratio(row["nb_voe_pp"], row["capa_fin"]),
+            "classified_over_wishes": ratio(row["nb_cla_pp"], row["nb_voe_pp"]),
+            "proposals_over_wishes": ratio(row["prop_tot"], row["nb_voe_pp"]),
+            "admissions_over_capacity": ratio(row["acc_tot"], row["capa_fin"]),
         })
     write_csv(output_dir / "formation_indicators.csv", per_formation)
 
