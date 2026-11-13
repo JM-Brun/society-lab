@@ -1,0 +1,61 @@
+version: 1
+language: fr
+description: "Référentiel des échelles territoriales d'analyse de Society Lab. Les niveaux sont des repères analytiques ; ils ne constituent pas tous une hiérarchie administrative."
+principles:
+  - "Un sujet peut concerner plusieurs territoires et plusieurs échelles simultanément."
+  - "Distinguer périmètre géographique, juridiction compétente, aire fonctionnelle et territoire vécu."
+  - "Le niveau international est transversal et ne correspond pas à un territoire administratif emboîté."
+  - "L'Union européenne n'épuise pas l'espace européen."
+territories:
+  - id: TERRITORY-WORLD
+    label: Monde
+    scale: global
+    entity_type: global-context
+    description: "Systèmes planétaires et dynamiques mondiales : climat, biodiversité, ressources, économie, géopolitique et transitions."
+  - id: TERRITORY-INTERNATIONAL
+    label: International et transnational
+    scale: international
+    entity_type: relational-scope
+    description: "Relations entre États, organisations internationales, accords, réseaux, flux et acteurs transnationaux. Échelle transversale, non administrative."
+  - id: TERRITORY-EUROPE
+    label: Europe
+    scale: continental
+    entity_type: macro-region
+    parent_id: TERRITORY-WORLD
+    description: "Espace européen au sens géographique et politique large ; distinguer Conseil de l'Europe, Union européenne et autres cadres européens selon le sujet."
+  - id: TERRITORY-FRANCE
+    label: France
+    scale: national
+    entity_type: state
+    parent_id: TERRITORY-EUROPE
+    description: "État français, institutions, politiques nationales et dynamiques sociétales."
+  - id: TERRITORY-PAYS-DE-LA-LOIRE
+    label: Pays de la Loire
+    scale: regional
+    entity_type: administrative-region
+    parent_id: TERRITORY-FRANCE
+    description: "Région administrative française et espace régional d'action publique."
+  - id: TERRITORY-LOIRE-ATLANTIQUE
+    label: Loire-Atlantique
+    scale: departmental
+    entity_type: department
+    parent_id: TERRITORY-PAYS-DE-LA-LOIRE
+    description: "Département de Loire-Atlantique et périmètre de compétences départementales."
+  - id: TERRITORY-NANTES-METROPOLE
+    label: Nantes Métropole
+    scale: metropolitan
+    entity_type: intermunicipal-authority
+    parent_id: TERRITORY-LOIRE-ATLANTIQUE
+    description: "Établissement public de coopération intercommunale et aire métropolitaine ; son périmètre ne se confond pas avec la commune de Nantes."
+  - id: TERRITORY-NANTES
+    label: Nantes
+    scale: municipal
+    entity_type: municipality
+    parent_id: TERRITORY-NANTES-METROPOLE
+    description: "Commune de Nantes, à distinguer de Nantes Métropole."
+  - id: TERRITORY-ILE-DE-NANTES
+    label: Île de Nantes
+    scale: neighbourhood
+    entity_type: urban-area
+    parent_id: TERRITORY-NANTES
+    description: "Secteur urbain de l'Île de Nantes ; périmètre infra-communal et projet urbain, non collectivité territoriale."
