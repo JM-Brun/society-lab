@@ -183,7 +183,72 @@ Les propositions ne doivent pas se limiter à « augmenter le nombre de TIG ». 
 6. **Mesurer les résultats :** tableau de bord public sur délais, postes, taux de démarrage, achèvement, incidents, récidive, fréquence et gravité.
 7. **Évaluer les effets de substitution :** vérifier si le TIG remplace effectivement la prison ou une autre peine, ou s'il étend le contrôle pénal à des personnes qui n'auraient pas été incarcérées.
 
-## 10. Programme de recherche restant à conduire
+## 11. Étude territoriale pilote : Loire-Atlantique et métropole nantaise
+
+### 11.1 Le stock national ne suffit pas à mesurer la capacité locale
+
+Les conclusions des États généraux de l'insertion et de la probation publiées en janvier 2026 indiquent que l'offre nationale recensée est passée de 18 000 postes en 2018 à 30 000 en 2025. Le même rapport précise que la répartition territoriale, notamment en milieu rural, et l'adaptabilité aux profils vulnérables restent à améliorer.
+
+Une communication ministérielle de 2026 annonce par ailleurs 47 000 places nationales, dont 65 % portées par des collectivités territoriales. Ces chiffres ne sont pas directement contradictoires : ils peuvent relever de dates, définitions et périmètres différents (postes recensés, places et stocks partenaires). Ils ne doivent pas être fusionnés en une série sans clarification méthodologique. Aucun de ces totaux ne donne le nombre de places libres, activables rapidement et adaptées en Loire-Atlantique.
+
+### 11.2 Point d'entrée opérationnel identifié
+
+L'annuaire ATIGIP mis à jour le 16 septembre 2026 désigne **Jeanne-Marie Jobert**, référente territoriale TIG pour la Loire-Atlantique, rattachée au SPIP à Saint-Herblain. Les coordonnées professionnelles publiées sont : jeanne-marie.jobert@justice.fr et 06 12 74 94 71. Elles doivent être revérifiées avant utilisation.
+
+La plateforme **TIG 360°** est l'outil de référence pour les acteurs habilités : elle recense les structures, postes et places, permet leur pré-réservation et le suivi de l'exécution. Sa cartographie détaillée n'est pas librement consultable dans les sources publiques examinées. Il faut donc obtenir, avec le SPIP/ATIGIP, une extraction agrégée et anonymisée des postes actifs, occupés, vacants, suspendus et des délais d'affectation par bassin de vie.
+
+### 11.3 Deux précédents locaux utiles
+
+- **Saint-Herblain :** la Ville indique avoir accueilli en 2022 des personnes en TIG dans ses services municipaux pour un total de 200 heures. Le retour d'expérience décrit des missions diversifiées, un tuteur chargé de l'accueil et du contrôle de l'assiduité, puis un bilan de fin de mesure. C'est un précédent documenté, mais pas une preuve que les places sont toujours actives en 2026.
+- **CapAtlantique La Baule-Guérande Agglo :** sa stratégie territoriale de sécurité et de prévention de la délinquance prévoit une action 2026-2027 visant à identifier des postes et tuteurs dans les communes, consolider les postes existants et en ouvrir de nouveaux. Le document cite le SPIP, la PJJ et les services techniques comme partenaires possibles. Il s'agit d'un engagement programmatique à suivre, pas d'un bilan de réalisation.
+
+### 11.4 Cartographie de prospection — pistes, pas organismes TIG confirmés
+
+Les acteurs suivants ont des activités compatibles avec certaines missions d'intérêt général ou des fonctions d'insertion. Leur mention constitue une **piste de prospection**, et non l'affirmation qu'ils sont habilités, qu'ils accueillent déjà des tigistes ou qu'ils disposent de places libres.
+
+| Acteur / réseau | Intérêt potentiel à explorer | Vérification indispensable |
+|---|---|---|
+| Communes et services techniques de Nantes Métropole | Espaces verts, propreté, petite maintenance, logistique, appui à des équipements | Accord de la collectivité, tuteur identifié, postes TIG actifs dans TIG 360° |
+| Réseau 44 / Insertion 44 | Mise en relation avec les ateliers et chantiers d'insertion du département | Capacité réelle d'encadrement, règles d'accueil, absence de substitution à des emplois |
+| CHANTIER école Pays de la Loire | Réseau des ateliers et chantiers d'insertion ; réemploi, propreté, espaces verts, logistique | Identifier les adhérents qui souhaitent et peuvent accueillir des TIG |
+| Oser Forêt Vivante, à Rezé | Réemploi, tri et valorisation de matières, activités de chantier d'insertion | Compatibilité des tâches, sécurité, tutorat et habilitation |
+| OCEAN, à Saint-Herblain | Chantiers d'insertion, entretien d'espaces collectifs, maraîchage et réemploi | Capacité de supervision et articulation avec les parcours d'insertion existants |
+| Ateliers des 2 Rives, à La Chapelle-sur-Erdre | Activités de chantier d'insertion et interventions de proximité | Accord formel, disponibilité et tâches adaptées |
+| Partage 44, à Nantes | Jardinage, manutention, petits travaux et services de proximité | Vérifier si son modèle d'association intermédiaire permet et souhaite un accueil TIG |
+
+Les structures d'insertion accompagnent déjà des salariés en parcours et ne doivent pas devenir un réservoir de travail gratuit. Un TIG ne doit ni remplacer un emploi rémunéré, ni désorganiser l'encadrement des personnes en insertion. Les activités doivent être distinctes, utiles, supervisables, sûres et compatibles avec les règles juridiques d'habilitation.
+
+### 11.5 Protocole de diagnostic départemental
+
+La première collecte doit être réalisée avec le référent territorial TIG et le SPIP, sans demander de données personnelles sur les personnes condamnées.
+
+**Données à obtenir, idéalement par commune ou bassin de mobilité :**
+1. nombre d'organismes habilités et nombre de postes actifs ;
+2. places totales, occupées, vacantes, suspendues et réellement mobilisables ;
+3. délai médian et distribution des délais entre prononcé, affectation et première journée ;
+4. nombre d'heures proposées et réalisées, par type de mission ;
+5. nombre de tuteurs formés, temps d'encadrement disponible et besoins de formation ;
+6. taux de démarrage, achèvement, interruption et incidents, avec définitions harmonisées ;
+7. répartition des missions par secteur, horaires, accessibilité en transport et exigences physiques ;
+8. répartition géographique entre Nantes Métropole, littoral, Pays de Retz, vignoble, Châteaubriant et autres bassins ruraux.
+
+**Entretiens à conduire :**
+- référent territorial ATIGIP et direction du SPIP 44 ;
+- magistrats du siège et du parquet, juges de l'application des peines ;
+- directions des ressources humaines et services techniques des communes ;
+- associations d'accueil et réseaux de l'insertion par l'activité économique ;
+- tuteurs actuels et anciens tuteurs ;
+- personnes ayant exécuté un TIG, sur la base du volontariat et sans collecte d'informations identifiantes.
+
+**Indicateurs de résultat :** ne pas retenir uniquement le nombre de postes créés. Mesurer aussi la part des postes réellement utilisés, le délai de démarrage, la distance domicile-poste, le taux d'achèvement, la satisfaction des tuteurs et l'absence de substitution à l'emploi. À terme, évaluer séparément la récidive, l'insertion et la réparation collective.
+
+### 11.6 Hypothèse territoriale
+
+Le diagnostic à tester est le suivant : la Loire-Atlantique dispose d'un réseau d'acteurs publics et associatifs potentiellement mobilisable, mais la capacité effective dépend de la coordination, de l'actualisation des postes, du temps de tutorat et de l'adéquation des missions. Le cas de Saint-Herblain montre une faisabilité municipale ; la stratégie de CapAtlantique montre qu'un territoire peut inscrire explicitement le développement du TIG dans sa politique de prévention.
+
+Il serait prématuré d'affirmer que le département manque globalement de postes : les données locales de TIG 360° ne sont pas publiques dans les sources consultées. La priorité est donc de mesurer le taux de transformation entre poste recensé, place vacante, affectation et exécution effective.
+
+## 12. Programme de recherche restant à conduire
 
 ### Priorité A — Consolider les résultats français
 - Lire les annexes du rapport de la Cour des comptes, vérifier les cohortes, définitions de récidive et modèles économétriques.
@@ -260,6 +325,12 @@ Ne pas comparer les taux de récidive entre pays sans harmoniser les définition
 6. [Wermink et al. — The price of retribution: community service versus short-term imprisonment (2023)](https://link.springer.com/article/10.1007/s11292-023-09583-9).
 7. [HM Inspectorate of Probation — Unpaid work: evidence base](https://hmiprobation.justiceinspectorates.gov.uk/our-research/evidence-base-probation-service/specific-types-of-delivery/unpaid-work/).
 8. [Comparative Studies of Sentencing: The First Four Decades](https://www.journals.uchicago.edu/doi/10.1086/739848) — tableau comparatif européen, à lire avec ses dénominateurs et ses sources sous-jacentes.
+9. [IGJ — Conclusions des États généraux de l'insertion et de la probation (janvier 2026)](https://www.justice.gouv.fr/sites/default/files/2026-02/rapport_conclusions_etats_generaux_insertion_probation.pdf).
+10. [ATIGIP — Annuaire des référents territoriaux TIG (mise à jour 16 septembre 2026)](https://atigip.justice.gouv.fr/wp-content/uploads/2026/02/annuaire-RT.pdf).
+11. [ATIGIP — TIG 360°](https://atigip.justice.gouv.fr/tig/tig-360/).
+12. [Ville de Saint-Herblain — La Ville participe à la justice de proximité](https://www.saint-herblain.fr/actualites/la-ville-participe-a-la-justice-de-proximite/).
+13. [CapAtlantique La Baule-Guérande Agglo — Stratégie territoriale CISPD 2024-2028](https://www.cap-atlantique.fr/fileadmin/Cap_Atlantique/Actualites/CISPD/strat%C3%A9gie_territoriale_cispd-2024-2028.pdf).
+14. [Ministère de la Justice — Partenariats et développement de l'offre de places TIG (2026)](https://www.justice.gouv.fr/actualites/espace-presse/travail-dinteret-general-ladministration-penitentiaire-signe-convention-faciliter-son).
 
 ## Principe de prudence
 
