@@ -14,7 +14,7 @@
 - [x] Registres initiaux pour sources, études, datasets, claims, hypothèses et dossiers.
 - [x] Vocabulaire contrôlé de tags.
 - [x] Ontologie légère des relations et registre initial du graphe.
-- [x] Validation automatisée des schémas, identifiants, domaines, tags, références et types de relations (première version ; exécution CI à confirmer).
+- [x] Validation automatisée des schémas, identifiants, domaines, tags, références et types de relations (première version ; CI vérifiée sur la PR Éducation).
 - [x] Premier cas réel initial reliant sources, études, données, affirmations, hypothèses et dossier (éducation / Parcoursup ; revue approfondie à poursuivre).
 - [x] Page thématique Éducation reliant les objets et priorités de recherche.
 - [x] Graphe enrichi pour relier les sources, études, jeux de données, affirmations et dossier au domaine Éducation.
@@ -26,7 +26,8 @@
 - [x] Protocole initial d'ingestion des sources.
 - [ ] Protocole de revue de littérature.
 - [ ] Grille d'examen des études.
-- [ ] Protocoles quantitatif, qualitatif et comparatif.
+- [x] Protocole préparatoire d'audit documentaire qualitatif des rapports CEV 2026.
+- [ ] Protocoles quantitatif, qualitatif et comparatif (généraux et réutilisables entre domaines).
 - [ ] Registre des incertitudes et révisions.
 
 **Sortie :** les méthodes réellement appliquées sont décrites et reproductibles autant que possible.
