@@ -44,7 +44,7 @@ class ParcoursupAnalysisTests(unittest.TestCase):
     def test_profiles_keep_distinct_populations(self):
         row = {key: None for key in FIELDS}
         row.update({
-            "session": "2025", "region_etab_aff": "Bretagne", "Fili": "BUT",
+            "session": "2025", "region_etab_aff": "Bretagne", "fili": "BUT",
             "select_form": "1", "capa_fin": 10, "nb_voe_pp": 100,
             "nb_cla_pp": 50, "prop_tot": 20, "acc_tot": 10,
             "nb_voe_pp_bg": 60, "nb_voe_pp_bt": 30, "nb_voe_pp_bp": 10,
@@ -62,11 +62,25 @@ class ParcoursupAnalysisTests(unittest.TestCase):
 
     def test_missing_subgroup_count_is_not_silently_zero(self):
         row = {key: 0 for key in FIELDS}
-        row.update({"session": "2025", "region_etab_aff": "Bretagne", "Fili": "BUT", "select_form": "1"})
+        row.update({"session": "2025", "region_etab_aff": "Bretagne", "fili": "BUT", "select_form": "1"})
         row["nb_voe_pp_bt"] = None
         result = profile([row])
         self.assertIsNone(result["candidate_share_general_among_new_bac_pp"])
         self.assertIsNone(result["bursary_share_candidates_new_bac_pp"])
+
+    def test_csv_normalizes_official_mixed_case_headers(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "sample.csv"
+            with path.open("w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=CSV_FIELDS)
+                writer.writeheader()
+                row = {key: "0" for key in CSV_FIELDS}
+                row["session"] = "2025"
+                row["Fili"] = "BUT"
+                writer.writerow(row)
+            loaded = load_rows(path)
+            self.assertEqual(loaded[0]["fili"], "BUT")
+            self.assertEqual(loaded[0]["nb_voe_pp"], 0)
 
     def test_csv_rejects_wrong_session(self):
         with tempfile.TemporaryDirectory() as tmp:
