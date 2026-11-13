@@ -26,7 +26,7 @@ class ParcoursupAnalysisTests(unittest.TestCase):
     def test_profile_does_not_turn_missing_values_into_zero(self):
         row = {
             "capa_fin": 10, "nb_voe_pp": 20, "nb_cla_pp": 15,
-            "prop_tot": 12, "acc_tot": 8,
+            "prop_tot": 12, "acc_tot": 8, "acc_pp": 6, "acc_pc": 2,
             "nb_voe_pp_bg": 10, "nb_voe_pp_bt": 5, "nb_voe_pp_bp": 5,
             "nb_cla_pp_bg": 8, "nb_cla_pp_bt": 4, "nb_cla_pp_bp": 3,
             "acc_neobac": 6, "acc_bg": 4, "acc_bt": 1, "acc_bp": 1,
@@ -42,7 +42,7 @@ class ParcoursupAnalysisTests(unittest.TestCase):
     def test_load_rows_accepts_api_snake_case_headers_and_checks_session(self):
         fields = [
             "session", "region_etab_aff", "fili", "select_form", "capa_fin",
-            "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot",
+            "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot", "acc_pp", "acc_pc",
             "nb_voe_pp_bg", "nb_voe_pp_bt", "nb_voe_pp_bp",
             "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
             "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
