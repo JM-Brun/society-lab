@@ -1,0 +1,31 @@
+version: 1
+description: "Vocabulaire contrôlé de tags transversaux. Les domaines restent dans TAXONOMY.yml."
+rules:
+  - "Un tag décrit un angle, une méthode, un statut ou une propriété transversale, jamais un second domaine."
+  - "Utiliser les identifiants TAG-* dans les métadonnées ; les libellés sont éditoriaux."
+  - "Ne créer un tag que s'il est réutilisable sur plusieurs objets."
+tags:
+  - {id: TAG-METHOD-QUANTITATIVE, group: method, label: Quantitatif}
+  - {id: TAG-METHOD-QUALITATIVE, group: method, label: Qualitatif}
+  - {id: TAG-METHOD-COMPARATIVE, group: method, label: Comparatif}
+  - {id: TAG-METHOD-CAUSAL-INFERENCE, group: method, label: Inférence causale}
+  - {id: TAG-METHOD-SYSTEMATIC-REVIEW, group: method, label: Revue systématique}
+  - {id: TAG-EVIDENCE-PRIMARY, group: evidence, label: Source primaire}
+  - {id: TAG-EVIDENCE-SECONDARY, group: evidence, label: Source secondaire}
+  - {id: TAG-EVIDENCE-ADMINISTRATIVE, group: evidence, label: Données administratives}
+  - {id: TAG-EVIDENCE-SURVEY, group: evidence, label: Enquête}
+  - {id: TAG-EVIDENCE-MODELLED, group: evidence, label: Résultat modélisé}
+  - {id: TAG-STATUS-PRELIMINARY, group: status, label: Préliminaire}
+  - {id: TAG-STATUS-PEER-REVIEWED, group: status, label: Évaluation par les pairs}
+  - {id: TAG-STATUS-REVISED, group: status, label: Révisé}
+  - {id: TAG-ISSUE-EQUITY, group: lens, label: Équité et distribution}
+  - {id: TAG-ISSUE-EFFICIENCY, group: lens, label: Efficacité}
+  - {id: TAG-ISSUE-RESILIENCE, group: lens, label: Résilience}
+  - {id: TAG-ISSUE-SOVEREIGNTY, group: lens, label: Souveraineté}
+  - {id: TAG-ISSUE-EXTERNALITIES, group: lens, label: Externalités}
+  - {id: TAG-ISSUE-TRADEOFFS, group: lens, label: Arbitrages}
+  - {id: TAG-LEVEL-EU, group: scale, label: Union européenne}
+  - {id: TAG-LEVEL-NATIONAL, group: scale, label: National}
+  - {id: TAG-LEVEL-LOCAL, group: scale, label: Local}
+  - {id: TAG-TIME-SHORT-TERM, group: horizon, label: Court terme}
+  - {id: TAG-TIME-LONG-TERM, group: horizon, label: Long terme}
