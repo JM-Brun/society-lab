@@ -35,7 +35,7 @@ jobs:
         run: python -m pip freeze
 
       - name: Run input tests
-        run: python -m unittest tests.test_smic_openfisca
+        run: python -m unittest discover -s tests -p "test_smic_openfisca.py"
 
       - name: Execute annualized household scenarios
         run: |
