@@ -14,6 +14,7 @@ Ce domaine étudie les mécanismes de production, de rémunération, d'emploi, d
 ## Dossier associé
 
 - [Augmenter le SMIC en France : pouvoir d'achat, emploi, salaires et finances publiques](../../dossiers/smic-france-tradeoffs.md) — dossier contradictoire en cours de recherche, avec registre de sources, études, affirmations et hypothèses.
+- [Positions des partenaires sociaux et confrontation aux preuves](../../dossiers/smic-social-partners-evidence.md) — arguments syndicaux, patronaux et économiques confrontés à leurs niveaux de preuve.
 
 ## Précautions
 
