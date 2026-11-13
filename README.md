@@ -43,7 +43,9 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 - [Éducation](knowledge/domains/education.md) — page thématique reliant les connaissances, sources, études, données, affirmations, hypothèses et priorités de recherche.
 - [Sécurité, justice et libertés](knowledge/domains/security.md) — page thématique sur les politiques de sécurité, l'exécution des peines, l'efficacité pénale et les libertés.
+- [Économie, emploi et productivité](knowledge/domains/economy.md) — page thématique sur les salaires, le marché du travail, les entreprises et la productivité.
 - [Travaux d'intérêt général : efficacité pénale, coûts et freins au déploiement en France](dossiers/tig-peines-alternatives-incarceration.md) — dossier de recherche sur le recours au TIG en France, les comparaisons européennes, la récidive, la dissuasion et les conditions d'exécution.
+- [Augmenter le SMIC en France : pouvoir d'achat, emploi, salaires et finances publiques](dossiers/smic-france-tradeoffs.md) — dossier contradictoire sur le salaire minimum, son indexation, ses effets économiques et ses interactions socio-fiscales.
 - [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif.
 
 ## Documents fondateurs
