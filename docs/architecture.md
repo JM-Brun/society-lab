@@ -4,73 +4,39 @@
 Séparer les sources, les objets de connaissance, les travaux d'analyse et les publications. Le dépôt Git est la source de vérité ; le site Quarto est une vue éditoriale construite à partir des contenus sélectionnés.
 
 ## Couches logiques
-1. **Evidence** : documents, publications, données et métadonnées de provenance. Les ressources tierces ne sont stockées que si leur licence, leur taille et leur nature le permettent.
+1. **Evidence** : documents, publications, données et métadonnées de provenance.
 2. **Knowledge & research** : concepts, institutions, mécanismes, études, affirmations, hypothèses, débats et analyses.
-3. **Publication** : dossiers et pages éditorialisées, compréhensibles indépendamment et reliés aux sources.
+3. **Knowledge graph** : relations typées entre objets, stockées en YAML et exportables vers des formats interopérables.
+4. **Publication** : dossiers et pages éditorialisées, compréhensibles indépendamment et reliés aux sources.
 
-## Arborescence cible
-```text
-society-lab/
-├── README.md
-├── CHARTER.md
-├── METHODOLOGY.md
-├── CONTRIBUTING.md
-├── knowledge/
-│   ├── TAXONOMY.yml
-│   ├── concepts/
-│   ├── institutions/
-│   └── mechanisms/
-├── sources/registry.yml
-├── research/{studies,datasets}/
-├── claims/registry.yml
-├── hypotheses/
-├── debates/
-├── dossiers/
-├── analysis/{quantitative,qualitative,notebooks}/
-├── data/{metadata,processed,derived}/
-├── schemas/
-├── scripts/
-├── tests/
-├── docs/
-└── site/
-    ├── _quarto.yml
-    ├── index.qmd
-    ├── domains/
-    ├── dossiers/
-    ├── methods/
-    └── assets/
-```
-Cette arborescence est une cible évolutive. Les répertoires seront créés lorsqu'un contenu ou un besoin les justifie.
+## Organisation du dépôt
+- `knowledge/` : taxonomie, tags, types de relations, graphe, concepts, institutions et mécanismes.
+- `sources/` : registre, fiches et manifestes d'ingestion.
+- `research/studies/` et `research/datasets/` : études et jeux de données.
+- `claims/`, `hypotheses/`, `debates/` : propositions examinées et controverses.
+- `analysis/` : analyses quantitatives, qualitatives et reproductibles.
+- `dossiers/` : synthèses éditoriales transversales.
+- `schemas/` : contrats de données.
+- `scripts/` et `tests/` : validation et automatisation.
+- `site/` : publication Quarto.
 
 ## Objets fondamentaux
-- Source : document ou ressource d'origine.
-- Dataset : jeu de données et documentation.
-- Study : recherche ou étude avec méthode identifiable.
-- Claim : proposition précise susceptible d'être examinée.
-- Hypothesis : explication proposée.
-- Concept : notion ou mécanisme.
-- Institution : organisme pertinent.
-- Debate : désaccord structuré.
-- Analysis : travail analytique documenté ou reproductible.
-- Dossier : synthèse éditoriale transversale.
+Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method et Dossier. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
 
-## Identifiants
-Les identifiants sont sémantiques, stables, uniques et indépendants du chemin du fichier. Ils n'embarquent pas un verdict susceptible de changer.
+## Identifiants et vocabulaire
+Les identifiants sont sémantiques, stables, uniques et indépendants du chemin. Voir [métadonnées et nomenclature](metadata-and-naming.md). Les domaines sont définis dans `knowledge/TAXONOMY.yml`, les tags transversaux dans `knowledge/TAGS.yml`. Les mots-clés libres ne doivent pas remplacer les vocabulaires contrôlés.
 
-Exemples : `DOMAIN-ENERGY`, `CONCEPT-PUBLIC-DEBT`, `ORG-EUROSTAT`, `SOURCE-IEA-WEO-2025`, `CLAIM-IMMIGRATION-FISCAL-BALANCE`, `DOSSIER-EUROPEAN-ENERGY-TRANSITION`.
-
-Les collisions sont résolues par un suffixe distinctif documenté, jamais par la réutilisation d'un identifiant.
-
-## Relations
-Relations prévues : Study supports/contradicts/qualifies Claim ; Study uses Dataset ; Source published-by Institution ; Claim depends-on Hypothesis ; Concept explains Mechanism ; Dossier examines Claim et references Study ; Domain includes Concept.
-
-Les relations doivent pointer vers des identifiants existants et seront validées automatiquement lorsque les registres seront implémentés.
+## Graphe
+Les nœuds sont les objets identifiés. Les arêtes sont des relations orientées et typées, définies dans `knowledge/RELATION_TYPES.yml` et instanciées dans `knowledge/graph.yml`. Les relations probantes doivent être justifiées ; les relations inverses sont calculées. Le graphe est une vue dérivée des fiches, pas une base séparée ni une preuve autonome. Voir [principes du graphe](../knowledge/GRAPH.md).
 
 ## Données et reproductibilité
 Conserver les données brutes uniquement lorsque leur licence, taille et conditions le permettent. Sinon, préférer métadonnées, scripts de téléchargement et instructions de reproduction. Documenter provenance, date d'extraction, transformations, unités et limites. Aucun secret ni donnée personnelle inutile dans Git.
+
+## Ingestion
+Toute source suit un pipeline documenté : découverte, déduplication, identification, vérification des droits, qualification, extraction, mise en relation, revue et maintenance. Voir [protocole d'ingestion](ingestion-protocol.md).
 
 ## Publication Quarto
 Le site est une projection éditoriale, pas une seconde source de vérité. La construction et le déploiement doivent échouer si les contrôles bloquants échouent.
 
 ## Automatisation
-Contrôles prévus : validation YAML/JSON et schémas, unicité des identifiants, références internes, relations, tests d'analyse et construction Quarto. Ces contrôles ne certifient pas la qualité scientifique.
+Contrôles prévus : validation YAML/JSON et schémas, unicité des identifiants, références internes, types de relations, tests d'analyse et construction Quarto. Ces contrôles ne certifient pas la qualité scientifique.
