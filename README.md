@@ -54,6 +54,8 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Feuille de route](docs/roadmap.md)
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
+- [Prévisions probabilistes](docs/forecasting.md) et [registre des prévisions](forecasts/README.md)
+- [Incertitudes et révisions](docs/uncertainty-and-revisions.md)
 - [Guide de contribution](CONTRIBUTING.md)
 - [Contrat d'intégration inter-dépôts](docs/cross-repository-contract.md)
 
