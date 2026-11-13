@@ -9,7 +9,7 @@
 
 ## M1 — Modèle de connaissance
 - [x] Taxonomie européenne initiale.
-- [ ] Référentiel territorial multiscalaire France–Europe–monde et Pays de la Loire–Île de Nantes ; validation des périmètres et des métadonnées territoriales.
+- [x] Référentiel territorial multiscalaire initial France–Europe–monde et Pays de la Loire–Île de Nantes ; validation approfondie des périmètres et métadonnées à poursuivre.
 - [x] Conventions d'identifiants et de nomenclature.
 - [x] Schémas Source, Study, Dataset, Claim, Hypothesis et Dossier (première version).
 - [x] Registres initiaux pour sources, études, datasets, claims, hypothèses et dossiers.
