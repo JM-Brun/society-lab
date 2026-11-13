@@ -4,7 +4,7 @@
 Le graphe relie les objets du dépôt sans remplacer leurs fiches descriptives. Les fichiers YAML/JSON restent la source de vérité ; le graphe est une vue dérivée, reconstruisible.
 
 ## Nœuds
-Chaque nœud possède un identifiant stable et un type : DOMAIN, CONCEPT, MECHANISM, ORG, SOURCE, STUDY, DATASET, CLAIM, HYPOTHESIS, ANALYSIS, METHOD ou DOSSIER. Un identifiant ne change pas lorsque le titre, le statut ou le chemin évolue.
+Chaque nœud possède un identifiant stable et un type : DOMAIN, CONCEPT, MECHANISM, ORG, SOURCE, STUDY, DATASET, CLAIM, HYPOTHESIS, ANALYSIS, METHOD, DOSSIER ou TERRITORY. Un identifiant ne change pas lorsque le titre, le statut ou le chemin évolue.
 
 ## Arêtes
 Les relations sont orientées, typées et documentées dans [RELATION_TYPES.yml](RELATION_TYPES.yml). Une relation peut porter des métadonnées (date d'observation, justification, portée, confiance, source justificative). Ne pas créer une arête seulement parce que deux objets partagent un tag.
