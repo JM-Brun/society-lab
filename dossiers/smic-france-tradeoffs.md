@@ -349,3 +349,29 @@ Sources : Cottet, https://www.ifo.de/en/cesifo/publications/2024/working-paper/p
 La preuve disponible invite à prendre au sérieux les coûts d'ajustement et les interactions socio-fiscales, mais elle ne justifie ni une élasticité unique de l'emploi au SMIC, ni l'affirmation que toute hausse détruit un nombre déterminé d'emplois. À l'inverse, les gains de salaire brut des personnes concernées ne suffisent pas à démontrer une hausse équivalente du niveau de vie ni une baisse de la pauvreté. Le bon objet d'évaluation reste un scénario précisément défini (montant, calendrier, indexation des allègements, prestations, horizon), mesuré simultanément sur revenus disponibles, emplois, heures, prix, marges, mobilité salariale et finances publiques.
 
 **Travaux encore ouverts :** extraction des tableaux et annexes des rapports 2024-2025 ; réconciliation comptable 75/78 Md€ ; examen détaillé des stratégies d'identification de Cottet et des hypothèses/calibrations d'Albertini et al. ; mise en regard avec les données Dares sur les salariés directement concernés.
+
+
+## 14. Clarification des périmètres des exonérations de cotisations (14 novembre 2026)
+
+### 14.1 Les trois montants ne sont pas encore une série homogène
+
+La note HCREP du 16 décembre 2024 indique, en se référant au PLFSS, 78 Md€ pour l'ensemble des dispositifs d'exonération de cotisations sociales en 2024, dont 66 Md€ pour les dispositifs généraux. Le rapport du groupe d'experts SMIC 2025 mentionne pour sa part près de 75 Md€ d'allègements de cotisations en 2024, soit environ 2,5 % du PIB.
+
+Ces deux publications ne permettent pas de conclure que 75 Md€ et 78 Md€ sont contradictoires, ni qu'ils mesurent exactement le même périmètre. Le montant de 66 Md€ est explicitement un sous-ensemble des dispositifs généraux dans la note HCREP ; les 78 Md€ concernent l'ensemble des dispositifs d'exonération. Le périmètre comptable précis de l'agrégat de 75 Md€ du rapport 2025 doit encore être rapproché des tableaux sources, de la compensation et des conventions de comptabilisation.
+
+En conséquence, l'ancien claim qui décrivait « près de 80 Md€ » comme le coût des seuls allègements généraux a été remplacé par des claims séparés. Aucun de ces agrégats ne doit être attribué exclusivement au SMIC.
+
+### 14.2 Portée des résultats économiques
+
+La note HCREP rappelle que les trappes à bas salaire sont plausibles mais difficiles à démontrer empiriquement en France. Le rapport 2025 du groupe d'experts documente des taux marginaux effectifs fréquemment proches de 75 % et pouvant dépasser 80 % entre 1,2 et 2 SMIC, ainsi qu'un ralentissement de progression salariale dans cette zone. Ces constats sont importants pour étudier les incitations et la mobilité, mais ils ne démontrent pas à eux seuls que les allègements causent tout le ralentissement observé.
+
+L'étude Cottet (2024) exploite des données administratives appariées pour mesurer les réactions des entreprises à une baisse de cotisations ; elle ne mesure pas directement une hausse du SMIC. Le modèle structurel d'Albertini, Poirier et Terriau (2025) simule directement des hausses du salaire minimum et prévoit des effets négatifs sur l'emploi et le surplus budgétaire dans les scénarios étudiés ; ce résultat reste conditionnel à la calibration, aux hypothèses et à l'indexation des dispositifs socio-fiscaux.
+
+### 14.3 Suite de la vérification
+
+- Extraire les tableaux et annexes HCREP / PLFSS pour rapprocher les 78 Md€, les 66 Md€ et les composantes incluses.
+- Extraire les tableaux du rapport du groupe d'experts 2025 pour identifier précisément le périmètre des 75 Md€.
+- Lire les stratégies d'identification et tests de robustesse du papier Cottet, et les équations, calibrations et analyses de sensibilité d'Albertini et al.
+- Ne produire aucune élasticité unique de l'emploi au SMIC sans préciser le scénario, l'horizon, la population et le dispositif socio-fiscal.
+
+Sources primaires : HCREP, https://www.strategie-plan.gouv.fr/files/2024-12/hcrep_2024_note_orientation_16_decembre_0.pdf ; Groupe d'experts SMIC 2025, https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025 ; Cottet, https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or ; Albertini, Poirier et Terriau, https://www.gate.cnrs.fr/RePEc/2025/2501.pdf.
