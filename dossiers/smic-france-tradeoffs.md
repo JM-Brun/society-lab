@@ -316,3 +316,36 @@ Toujours indiquer les unités, champs, dates, dénominateurs, ruptures de série
 Le débat pertinent n'est pas de savoir si le SMIC doit être « haut » ou « bas » dans l'absolu. Il est de déterminer quel niveau et quel rythme permettent d'améliorer le revenu et la dignité du travail, tout en préservant les possibilités d'embauche, de progression professionnelle et d'investissement productif.
 
 Le choix de politique publique doit comparer le SMIC avec les instruments qui l'entourent : prime d'activité, transferts, fiscalité, allègements patronaux, négociation collective, formation et politique de productivité. La conclusion restera conditionnelle tant que les effets causaux, les coûts complets et les effets distributifs ne seront pas établis.
+
+
+## 13. Audit de preuve complémentaire — effets du SMIC et système socio-fiscal (13 novembre 2026)
+
+### 13.1 Ce que le rapport du groupe d'experts 2025 établit — et ce qu'il n'établit pas
+
+Le rapport 2025 du groupe d'experts documente plusieurs constats descriptifs importants : entre 2021 et 2025, le SMIC a progressé d'environ 17 %, contre environ 15 % pour les salaires de base et négociés en moyenne ; le ratio SMIC/salaire médian brut à temps plein atteint 62,5 % en 2024 selon la comparaison OCDE reprise dans le rapport ; le coût des allègements de cotisations est estimé à près de 75 Md€ en 2024 (environ 2,5 % du PIB). Le rapport identifie également des taux marginaux effectifs souvent compris entre 75 et 80 % entre 1,2 et 2 SMIC, liés à la combinaison du retrait des allègements, de la prime d'activité et de l'impôt, ainsi qu'une moindre progression salariale observée dans cette zone.
+
+Ces éléments ne constituent pas, à eux seuls, une estimation causale de l'effet d'un « coup de pouce » donné sur l'emploi. Le ratio au salaire médian est un indicateur comparatif, non un seuil causal d'alerte. La progression salariale observée selon le salaire initial appelle une analyse de composition, de sélection et de trajectoires avant d'attribuer le ralentissement au seul barème socio-fiscal.
+
+Source : Groupe d'experts SMIC, rapport 2025, publié le 12 décembre 2025 : https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025.
+
+### 13.2 Réconcilier les ordres de grandeur 75 / 78 Md€ sans les fusionner
+
+Le rapport du groupe d'experts SMIC 2025 indique près de 75 Md€ d'allègements en 2024. La note d'orientation du Haut Conseil des rémunérations, de l'emploi et de la productivité (16 décembre 2024) cite 78 Md€ pour l'ensemble des dispositifs d'exonération en 2024 selon le PLFSS, dont 66 Md€ pour les dispositifs généraux. Ces montants ne doivent pas être présentés comme une contradiction résolue ni comme une série homogène tant que ne sont pas rapprochés : périmètre (général / ensemble), traitement des exonérations ciblées, compensation, source comptable (PLFSS ou estimation du rapport), année de référence et éventuels arrondis.
+
+Source HCREP : https://www.strategie.gouv.fr/files/2024-12/hcrep_2024_note_orientation_16_decembre_0.pdf. Source du groupe d'experts : lien ci-dessus. **Action restante :** reconstituer les tableaux et notes méthodologiques correspondants avant de choisir un chiffre de référence.
+
+### 13.3 Trois familles d'études à ne pas confondre
+
+| Travail | Méthode / objet | Résultat utilisable | Limite pour le débat sur une hausse du SMIC |
+|---|---|---|---|
+| Cottet (2024), CESifo WP 11076 | Données administratives employeurs-salariés ; évalue une baisse de cotisations patronales ciblant les emplois au minimum, en exploitant les variations de coût au niveau emploi et entreprise | Réponses hétérogènes : +13 points de hausse des emplois au minimum dans les entreprises auparavant peu exposées ; +4 % de croissance d'emploi sur deux ans dans les entreprises déjà exposées, tous niveaux de salaire confondus | Étudie une baisse de cotisations, pas une hausse du salaire minimum ; l'asymétrie des mécanismes interdit d'inverser directement le résultat |
+| Albertini, Poirier et Terriau (2025), WP 25-01 | Modèle structurel d'appariement sur cycle de vie, hétérogénéité des travailleurs et interactions socio-fiscales | Les simulations du modèle prévoient des effets négatifs sur emploi et surplus budgétaire d'une hausse du SMIC, dépendants de l'indexation du barème d'allègements et des autres dispositifs | Résultat de modèle conditionnel aux hypothèses et à la calibration, non observation expérimentale d'emplois détruits |
+| Groupe d'experts SMIC 2025 | Rapport institutionnel mobilisant données descriptives, travaux empiriques et analyses du système socio-fiscal | Documente compression salariale, exposition relative élevée et frictions de progression dans certaines tranches | Recommandation d'experts et diagnostic de politique publique ; ne remplace pas une identification causale d'un scénario précis |
+
+Sources : Cottet, https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or ; Albertini, Poirier et Terriau, https://www.gate.cnrs.fr/RePEc/2025/2501.pdf ; Groupe d'experts SMIC 2025, lien ci-dessus.
+
+### 13.4 Conclusion provisoire de cette revue
+
+La preuve disponible invite à prendre au sérieux les coûts d'ajustement et les interactions socio-fiscales, mais elle ne justifie ni une élasticité unique de l'emploi au SMIC, ni l'affirmation que toute hausse détruit un nombre déterminé d'emplois. À l'inverse, les gains de salaire brut des personnes concernées ne suffisent pas à démontrer une hausse équivalente du niveau de vie ni une baisse de la pauvreté. Le bon objet d'évaluation reste un scénario précisément défini (montant, calendrier, indexation des allègements, prestations, horizon), mesuré simultanément sur revenus disponibles, emplois, heures, prix, marges, mobilité salariale et finances publiques.
+
+**Travaux encore ouverts :** extraction des tableaux et annexes des rapports 2024-2025 ; réconciliation comptable 75/78 Md€ ; examen détaillé des stratégies d'identification de Cottet et des hypothèses/calibrations d'Albertini et al. ; mise en regard avec les données Dares sur les salariés directement concernés.

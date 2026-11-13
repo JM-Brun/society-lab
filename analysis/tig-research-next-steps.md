@@ -146,3 +146,29 @@ Calendrier indicatif : huit semaines après le lancement effectif, sous réserve
 La première action doit être une prise de contact exploratoire auprès du référent territorial TIG et du SPIP de Loire-Atlantique, accompagnée d’une demande limitée à des données agrégées et d’une proposition d’entretien méthodologique. Le but de ce premier échange n’est pas de solliciter immédiatement une politique de développement, mais de vérifier ce qui peut être mesuré, avec quelles définitions et à quelle échelle.
 
 Un modèle de demande figure dans le protocole d’enquête territoriale.
+
+
+## 9. Audit documentaire complémentaire — délais et exécution (13 novembre 2026)
+
+### 9.1 Correction de périmètre : chiffres du Sénat à ne pas attribuer à la France
+
+Le rapport du Sénat n° 2 (2025-2026), déposé le 1er octobre 2025, présente les chiffres « 28 500 TIG exécutés en tout ou partie en 2024 », « 16 % interrompus prématurément » et « 10 % non entamés pour cause de renvoi devant la justice » dans le paragraphe consacré au **taakstraf néerlandais** (Pays-Bas), et non dans la partie décrivant l'exécution française. Ces données ne doivent donc pas être utilisées comme statistiques françaises. Le même paragraphe indique une durée moyenne de 74 heures pour les TIG prononcés par un juge et 45 heures pour ceux prononcés par ordonnance pénale du ministère public : ces chiffres relèvent également du contexte néerlandais.
+
+Source primaire : Sénat, rapport d'information n° 2 (2025-2026), partie « Le travail d'intérêt général », sous-partie « Le taakstraf aux Pays-Bas », paragraphes 192-200 : https://www.senat.fr/rap/r25-002/r25-00212.html.
+
+### 9.2 Indicateurs français effectivement rapportés par le Sénat
+
+Dans la partie consacrée à la France, le rapport indique que le délai moyen entre la **saisine du SPIP et l'affectation à un poste** est passé de 7,9 mois en 2023 à 6,9 mois en 2024 (données communiquées à la mission par la DACG, note 156). Il rapporte par ailleurs, en citant la Cour des comptes (mars 2025), un délai moyen d'exécution de 16,7 mois et une situation à trois ans répartie comme suit : 75 % exécutés, 9 % convertis en une autre peine, 16 % non exécutés ou ayant débouché sur un échec imputable au condamné (notes 157-158).
+
+Ces indicateurs ne sont pas interchangeables :
+- 7,9 → 6,9 mois : saisine SPIP → affectation à un poste ;
+- 16,7 mois : délai moyen d'exécution cité par la Cour ; ne pas lui attribuer une définition plus précise sans retour au tableau/méthode de la Cour ;
+- 75/9/16 % : issue à trois ans selon la formulation du Sénat, dont la catégorie résiduelle regroupe non-exécution et échec imputable ; ne pas la renommer « interruption ».
+
+Source primaire : https://www.senat.fr/rap/r25-002/r25-00212.html (paragraphes 229-230 et notes 156-158) ; Cour des comptes, rapport du 4 mars 2025 : https://www.ccomptes.fr/fr/publications/evaluation-de-deux-peines-alternatives-lincarceration.
+
+### 9.3 Conséquence méthodologique
+
+La prochaine extraction doit conserver au minimum trois horloges distinctes : prononcé → saisine SPIP ; saisine SPIP → affectation ; prononcé (ou autre origine explicitement définie) → issue d'exécution. Les statistiques de flux annuels, les cohortes de prononcé et les stocks de mesures en cours doivent rester séparés. Les données néerlandaises peuvent alimenter la comparaison européenne, mais jamais le tableau de bord français.
+
+**État de preuve :** la présence d'un délai d'affectation encore long est étayée ; son amélioration entre 2023 et 2024 est documentée sur l'intervalle saisine-affectation. L'affirmation selon laquelle l'ensemble du délai d'exécution se serait amélioré dans la même proportion n'est pas démontrée par ces chiffres.
