@@ -95,18 +95,10 @@ def build_situation(case: HouseholdCase, gross_monthly_smic: float,
 
 
 def run_case(case: HouseholdCase, gross_monthly_smic: float,
-             uplift: float) -> dict[str, Any]:
-    """Exécute un cas avec la version installée d'OpenFisca-France."""
-    try:
-        from openfisca_core.simulation_builder import SimulationBuilder
-        from openfisca_france import FranceTaxBenefitSystem
-    except ImportError as error:
-        raise RuntimeError(
-            "Dépendances absentes. Installer avec : "
-            "python -m pip install -r requirements-openfisca.txt"
-        ) from error
+             uplift: float, tax_benefit_system: Any) -> dict[str, Any]:
+    """Exécute un cas avec une instance partagée du système de législation."""
+    from openfisca_core.simulation_builder import SimulationBuilder
 
-    tax_benefit_system = FranceTaxBenefitSystem()
     simulation = SimulationBuilder().build_from_dict(
         tax_benefit_system,
         build_situation(case, gross_monthly_smic, uplift),
@@ -133,14 +125,24 @@ def run_case(case: HouseholdCase, gross_monthly_smic: float,
 
 def run_all(gross_monthly_smic: float, uplifts_percent: list[float]) -> dict[str, Any]:
     """Calcule chaque scénario et son écart au cas de référence du même ménage."""
+    try:
+        from openfisca_france import FranceTaxBenefitSystem
+    except ImportError as error:
+        raise RuntimeError(
+            "Dépendances absentes. Installer avec : "
+            "python -m pip install -r requirements-openfisca.txt"
+        ) from error
+
+    # Charger les paramètres et formules une seule fois pour toute la matrice.
+    tax_benefit_system = FranceTaxBenefitSystem()
     requested = sorted(set([0.0, *uplifts_percent]))
     results: list[dict[str, Any]] = []
     for case in CASES:
-        baseline = run_case(case, gross_monthly_smic, 0.0)
+        baseline = run_case(case, gross_monthly_smic, 0.0, tax_benefit_system)
         baseline_income = baseline["disposable_income_annual_eur"]
         for uplift_percent in requested:
             row = baseline if uplift_percent == 0 else run_case(
-                case, gross_monthly_smic, uplift_percent / 100
+                case, gross_monthly_smic, uplift_percent / 100, tax_benefit_system
             )
             delta = round(row["disposable_income_annual_eur"] - baseline_income, 2)
             row["disposable_income_delta_vs_baseline_eur"] = delta
