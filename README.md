@@ -35,6 +35,10 @@ Le dépôt organise les contenus autour d'objets identifiés et reliés :
 
 Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags dans [le vocabulaire contrôlé](knowledge/TAGS.yml) et les relations dans [l'ontologie légère](knowledge/RELATION_TYPES.yml). Voir [métadonnées et nomenclature](docs/metadata-and-naming.md), [graphe](knowledge/GRAPH.md) et [protocole d'ingestion](docs/ingestion-protocol.md).
 
+## Premier dossier de recherche
+
+- [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier en cours, avec registres de sources, études, données, affirmations et hypothèses.
+
 ## Documents fondateurs
 
 - [Charte fondatrice](CHARTER.md)
@@ -47,7 +51,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 ## État du projet
 
-Les structures de métadonnées, taxonomie transversale, types de relations et registres initiaux sont en cours d'initialisation. Leur présence ne signifie pas que les données ont déjà été ingérées, évaluées ou validées. Le premier dossier pilote portera sur la transition énergétique européenne.
+Les structures de métadonnées, taxonomie transversale, types de relations et registres sont initialisés. Un premier dossier pilote sur Parcoursup et l'égalité des chances dans l'éducation est en cours ; ses sources et affirmations restent à examiner. Le dossier énergie demeure un chantier ultérieur.
 
 ## Langue et statut
 
