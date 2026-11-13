@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/claim.schema.json",
+  "title": "Society Lab Claim",
+  "description": "A precise proposition examined by Society Lab.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "statement", "claim_type", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CLAIM-[A-Z0-9][A-Z0-9-]*$"},
+    "statement": {"type": "string", "minLength": 10},
+    "claim_type": {"enum": ["descriptive", "empirical", "causal", "interpretive", "normative", "predictive"]},
+    "status": {"enum": ["unexamined", "under_review", "supported", "partially_supported", "contested", "not_supported", "insufficient_evidence", "superseded"]},
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geography": {"type": "array", "items": {"type": "string"}},
+        "population": {"type": "string"},
+        "period": {"type": "string"},
+        "conditions": {"type": "string"}
+      }
+    },
+    "domain_ids": {"type": "array", "items": {"type": "string", "pattern": "^DOMAIN-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "source_ids": {"type": "array", "items": {"type": "string", "pattern": "^SOURCE-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "supporting_evidence": {"type": "array", "items": {"type": "string"}},
+    "counter_evidence": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "last_reviewed": {"type": "string", "format": "date"}
+  }
+}
