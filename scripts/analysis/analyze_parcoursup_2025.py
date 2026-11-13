@@ -17,10 +17,10 @@ from statistics import median
 REQUIRED = {
     "session", "region_etab_aff", "fili", "select_form", "capa_fin",
     "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot",
-    "nb_voe_pp_BG", "nb_voe_pp_BT", "nb_voe_pp_BP",
+    "nb_voe_pp_bg", "nb_voe_pp_bt", "nb_voe_pp_bp",
     "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
     "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
-    "nb_voe_pp_BG_brs", "nb_voe_pp_BT_brs", "nb_voe_pp_BP_brs", "acc_brs",
+    "nb_voe_pp_bg_brs", "nb_voe_pp_bt_brs", "nb_voe_pp_bp_brs", "acc_brs",
 }
 
 NUMERIC = REQUIRED - {"session", "region_etab_aff", "fili", "select_form"}
@@ -83,9 +83,9 @@ def profile(rows: list[dict]) -> dict:
         "admissions_over_capacity": ratio(sums["acc_tot"], sums["capa_fin"]),
     }
     bac_candidates = {
-        "general": sums["nb_voe_pp_BG"],
-        "technological": sums["nb_voe_pp_BT"],
-        "vocational": sums["nb_voe_pp_BP"],
+        "general": sums["nb_voe_pp_bg"],
+        "technological": sums["nb_voe_pp_bt"],
+        "vocational": sums["nb_voe_pp_bp"],
     }
     bac_classified = {
         "general": sums["nb_cla_pp_bg"],
@@ -108,7 +108,7 @@ def profile(rows: list[dict]) -> dict:
         result[f"admitted_share_{track}_among_new_bac"] = ratio(value, admitted_total)
 
     bursary_candidates = [
-        sums["nb_voe_pp_BG_brs"], sums["nb_voe_pp_BT_brs"], sums["nb_voe_pp_BP_brs"]
+        sums["nb_voe_pp_bg_brs"], sums["nb_voe_pp_bt_brs"], sums["nb_voe_pp_bp_brs"]
     ]
     bursary_candidates_total = (
         sum(bursary_candidates)
