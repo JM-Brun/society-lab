@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://jm-brun.github.io/society-lab/schemas/dataset.schema.json",
+  "title":"Society Lab Dataset","type":"object","additionalProperties":false,
+  "required":["id","title","provider","domains","access_status"],
+  "properties":{
+    "id":{"type":"string","pattern":"^DATASET-[A-Z0-9][A-Z0-9-]*$"},
+    "title":{"type":"string","minLength":1},"provider":{"type":"string"},
+    "source_ids":{"type":"array","items":{"type":"string","pattern":"^SOURCE-[A-Z0-9-]+$"},"uniqueItems":true},
+    "url":{"type":"string","format":"uri"},"doi":{"type":"string"},
+    "domains":{"type":"array","items":{"type":"string","pattern":"^DOMAIN-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+    "geographic_scope":{"type":"array","items":{"type":"string"}},
+    "temporal_coverage":{"type":"string"},"unit_of_observation":{"type":"string"},
+    "variables":{"type":"array","items":{"type":"string"}},
+    "license":{"type":"string"},
+    "access_status":{"enum":["open","restricted","paywalled","request_required","unknown"]},
+    "retrieved_at":{"type":"string","format":"date-time"},
+    "version_or_vintage":{"type":"string"},"file_hash":{"type":"string"},
+    "transformation_notes":{"type":"array","items":{"type":"string"}},
+    "limitations":{"type":"array","items":{"type":"string"}},
+    "tags":{"type":"array","items":{"type":"string","pattern":"^TAG-[A-Z0-9-]+$"},"uniqueItems":true}
+  }
+}
