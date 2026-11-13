@@ -37,6 +37,8 @@ L'OCDE estime que 75 % des 25-34 ans en France dont au moins un parent est dipl�
 
 Source : [OCDE — Regards sur l'éducation 2025, France](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
 
+L'OCDE rapporte également un écart intergénérationnel important : 75 % des 25-34 ans ayant au moins un parent diplômé du supérieur ont eux-mêmes un diplôme du supérieur, contre 32 % lorsque leurs parents n'ont pas achevé le deuxième cycle du secondaire. Cet indicateur ne mesure pas l'effet propre de Parcoursup, mais éclaire la persistance de la transmission sociale des diplômes. [Source OCDE](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
+
 ## Hypothèses de travail — non établies
 - Les écarts d'accès et de réussite dans le supérieur résultent en partie de mécanismes cumulatifs qui se forment avant la terminale.
 - Des taux élevés de propositions peuvent coexister avec des inégalités d'accès aux formations les plus demandées, de qualité de l'appariement et de trajectoires après admission.
