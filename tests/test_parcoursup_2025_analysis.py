@@ -8,7 +8,7 @@ from scripts.analysis.analyze_parcoursup_2025 import load_rows, profile, quantil
 # Canonical field names exposed by the Explore API 2.1 export.
 FIELDS = [
     "session", "region_etab_aff", "fili", "select_form", "capa_fin",
-    "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot",
+    "nb_voe_pp", "nb_cla_pp", "prop_tot", "acc_tot", "acc_pp", "acc_pc",
     "nb_voe_pp_bg", "nb_voe_pp_bt", "nb_voe_pp_bp",
     "nb_cla_pp_bg", "nb_cla_pp_bt", "nb_cla_pp_bp",
     "acc_neobac", "acc_bg", "acc_bt", "acc_bp",
@@ -41,7 +41,7 @@ class ParcoursupAnalysisTests(unittest.TestCase):
             "session": "2025", "region_etab_aff": "Bretagne",
             "fili": "BUT", "select_form": "1", "capa_fin": 10,
             "nb_voe_pp": 100, "nb_cla_pp": 50, "prop_tot": 20,
-            "acc_tot": 10, "nb_voe_pp_bg": 60, "nb_voe_pp_bt": 30,
+            "acc_tot": 10, "acc_pp": 7, "acc_pc": 3, "nb_voe_pp_bg": 60, "nb_voe_pp_bt": 30,
             "nb_voe_pp_bp": 10, "nb_cla_pp_bg": 30,
             "nb_cla_pp_bt": 15, "nb_cla_pp_bp": 5,
             "acc_neobac": 8, "acc_bg": 5, "acc_bt": 2, "acc_bp": 1,
@@ -50,6 +50,8 @@ class ParcoursupAnalysisTests(unittest.TestCase):
         })
         result = profile([row])
         self.assertAlmostEqual(result["demand_per_seat"], 10)
+        self.assertAlmostEqual(result["pp_acceptances_over_pp_wishes"], 0.07)
+        self.assertAlmostEqual(result["accepted_campaign_over_capacity"], 1.0)
         self.assertAlmostEqual(result["candidate_share_general_among_new_bac_pp"], 0.6)
         self.assertAlmostEqual(result["admitted_share_general_among_new_bac"], 0.625)
         self.assertAlmostEqual(result["bursary_share_candidates_new_bac_pp"], 0.26)
