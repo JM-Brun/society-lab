@@ -10,4 +10,7 @@ relations:
   - {id: REL-EXPLAINS, label: explique, inverse: REL-EXPLAINED-BY, from: [CONCEPT], to: [MECHANISM]}
   - {id: REL-DEPENDS-ON, label: dépend de, inverse: REL-REQUIRED-BY, from: [CLAIM, ANALYSIS], to: [CLAIM, HYPOTHESIS, DATASET]}
   - {id: REL-INCLUDES, label: inclut, inverse: REL-PART-OF, from: [DOSSIER, DOMAIN], to: [CLAIM, STUDY, HYPOTHESIS, CONCEPT]}
+  - {id: REL-SUBTERRITORY-OF, label: est une subdivision territoriale de, inverse: REL-HAS-SUBTERRITORY, from: [TERRITORY], to: [TERRITORY]}
+  - {id: REL-CONTEXTUALIZES, label: contextualise, inverse: REL-CONTEXTUALIZED-BY, from: [TERRITORY], to: [TERRITORY]}
+  - {id: REL-INTERDEPENDENT-WITH, label: est interdépendant avec, inverse: REL-INTERDEPENDENT-WITH, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-ALTERNATIVE-TO, label: alternative à, inverse: REL-ALTERNATIVE-TO, from: [HYPOTHESIS], to: [HYPOTHESIS]}
