@@ -5,7 +5,7 @@
 - **Périmètre :** France, comparaisons européennes et ouvertures internationales
 - **Période prioritaire :** 2015-2025
 - **Statut :** recherche en cours
-- **Dernière revue :** 13 novembre 2026
+- **Dernière revue :** 13 novembre 2026 (revue P1 des coûts)
 
 ## Question de recherche
 
@@ -20,7 +20,7 @@ La question initiale — le TIG est-il peu utilisé en raison de son coût, de s
 
 ## Résultat provisoire
 
-Le sous-recours au TIG ne semble pas s'expliquer d'abord par un coût direct trop élevé. La Cour des comptes estime le coût du TIG à 1 862 €, contre 2 788 € pour la détention à domicile sous surveillance électronique (DDSE), selon le périmètre de calcul de son évaluation de 2025. Ce chiffre doit cependant être interprété avec prudence : il ne constitue pas une analyse exhaustive du coût social ni une comparaison complète avec toutes les peines alternatives.
+Le sous-recours au TIG ne semble pas s'expliquer d'abord par un coût direct trop élevé. La Cour des comptes estime, pour 2022, le coût moyen comptable d’une mesure TIG à 1 862 €, contre 2 788 € pour une DDSE. Ce résultat est une estimation budgétaire de l’administration pénitentiaire, pas un coût social complet : le dénominateur TIG de 22 701 mesures inclut aussi les travaux non rémunérés (TNR), et les dépenses des structures d’accueil, des juridictions et de nombreux partenaires ne sont pas intégrées.
 
 Les freins opérationnels et institutionnels sont particulièrement documentés : délais d'exécution supérieurs à 16 mois, besoin d'organismes d'accueil et de tuteurs, contrôle insuffisant et accompagnement limité. Le nombre de TIG prononcés a diminué de 34 % entre 2015 et 2022, alors même que des politiques publiques ont cherché à développer cette peine.
 
@@ -127,6 +127,32 @@ Une analyse de coût complet devrait intégrer :
 - effets à long terme sur la récidive et l'insertion.
 
 Il faut éviter de faire supporter invisiblement le coût du dispositif aux associations, collectivités et agents qui encadrent les personnes condamnées.
+
+### 5.1 Ce que recouvrent réellement les 1 862 €
+
+L’annexe 7 permet de reconstituer la logique du calcul. Pour 2022, la Cour estime les coûts nationaux puis les divise par le flux de mesures nouvelles prises en charge : 22 701 TIG et 40 259 DDSE. Le dénominateur TIG inclut les travaux non rémunérés (TNR), les CPIP les traitant de manière similaire dans leur temps de travail. La Cour ventile notamment 12 % de l’activité annuelle des CPIP et 2 % de celle des directeurs de SPIP sur le TIG, et prend en compte les référents territoriaux TIG, le marché TIG 360° et les coûts ATIGIP.
+
+Cette estimation est plus large que le seul coût journalier DAP, mais elle reste incomplète. L’annexe précise que les dépenses des juridictions et de nombreux partenaires ne sont pas comptabilisées. Surtout, les coûts engagés par les organismes d’accueil ne figurent pas dans l’agrégat : temps de travail, chaussures de sécurité, gants, équipements et repas. La Cour ajoute que ces dépenses sont partiellement compensées par l’apport de force de travail. Il faut donc mesurer les deux côtés du bilan, et non compter toute dépense d’accueil comme une perte nette.
+
+### 5.2 Le temps de tutorat : ressource mobilisée, coût non monétisé
+
+Dans l’enquête de la Cour auprès de 4 824 tuteurs et responsables de postes, l’encadrement déclaré atteint 9,6 heures pour un TIG classique de 100 heures. Les réponses diffèrent selon les structures : 14,4 heures dans les associations contre 9,3 heures dans les structures publiques. La Cour suggère que cet écart peut refléter des visions différentes de l’accueil, davantage sociales et orientées vers la réinsertion dans certaines associations, parfois plus utilitaires dans les structures publiques.
+
+Ces durées sont déclaratives et ne doivent pas être transformées directement en coût salarial sans connaître les statuts, salaires chargés, tâches exactes et éventuels bénéfices du travail réalisé. Elles montrent néanmoins que le dispositif repose sur une ressource d’encadrement réelle, en partie externalisée vers les partenaires.
+
+### 5.3 Pourquoi 1 862 € ne se compare pas directement à 141,99 €
+
+Le montant de 1 862 € est un coût moyen par mesure, quelle que soit sa durée ; les 141,99 € correspondent à une journée de détention en 2022, calculée par la Cour en valorisant le parc pénitentiaire. Le ministère affichait 127,14 € selon son autre périmètre. La Cour avertit explicitement que les unités ne sont pas directement comparables.
+
+Une comparaison économique pertinente doit définir le scénario de substitution : combien de jours de prison auraient effectivement été exécutés sans le TIG ? La place libérée permet-elle d'éviter une dépense variable ou seulement de réduire une pression sur un établissement saturé ? Le TIG remplace-t-il une incarcération ferme, une autre peine en milieu ouvert, ou s'ajoute-t-il à une réponse pénale qui aurait été plus légère ? Sans ces réponses, le calcul « coût prison moins coût TIG » n'est pas une économie nette démontrée.
+
+### 5.4 Les territoires : premiers écarts, pas classement national
+
+La Cour a complété son estimation nationale par une analyse plus détaillée dans deux SPIP : le Territoire de Belfort et les Hauts-de-Seine. Elle rapporte 3 421 € par DDSE dans le premier et 2 150 € dans le second ; elle estime aussi le coût d'un TIG à 1 343 € à Belfort. Les écarts sont associés aux charges de travail estimées, aux frais de fonctionnement, à la propriété ou location des locaux, à la géographie et au niveau d'urbanisation, notamment aux déplacements pour poser et déposer les bracelets.
+
+Ces données sont utiles pour montrer que le coût dépend de l'organisation territoriale, mais deux services ne suffisent pas à établir une moyenne régionale, un classement départemental ou un effet général de la ruralité. Il faut surtout éviter de comparer les deux chiffres DDSE comme si toutes les différences de périmètre étaient neutralisées.
+
+**Bilan P1 :** le TIG apparaît moins coûteux dans les comptes de l’administration pénitentiaire que la DDSE, mais le coût complet pour la collectivité n’est pas connu. Les données disponibles ne permettent pas encore de chiffrer une économie nette par rapport à la prison. Le prochain progrès utile est une comptabilité territoriale harmonisée qui valorise le tutorat, les coûts d’accueil et le travail produit, et distingue substitution réelle et extension du contrôle pénal.
 
 ## 6. Les freins opérationnels et institutionnels
 
