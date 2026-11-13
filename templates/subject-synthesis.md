@@ -109,6 +109,10 @@ Lister en priorité les sources primaires et les études déterminantes. Pour ch
 
 ---
 
+## Registre et automatisation
+
+Toute création d'un nouveau dossier principal dans `dossiers/registry.yml` doit être accompagnée d'une entrée correspondante dans `syntheses/registry.yml` et d'un fichier de synthèse. Le contrôle GitHub Actions vérifie la correspondance des identifiants, l'existence des fichiers, les métadonnées obligatoires et les sections minimales. Les documents d'approfondissement d'un sujet existant peuvent être rattachés à sa synthèse principale sans créer artificiellement une nouvelle synthèse.
+
 ## Contrôle qualité avant publication
 
 - [ ] La réponse courte est visible dès le début et compréhensible seule.
