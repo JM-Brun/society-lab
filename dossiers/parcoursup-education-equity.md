@@ -37,8 +37,6 @@ L'OCDE estime que 75 % des 25-34 ans en France dont au moins un parent est dipl�
 
 Source : [OCDE — Regards sur l'éducation 2025, France](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
 
-L'OCDE rapporte également un écart intergénérationnel important : 75 % des 25-34 ans ayant au moins un parent diplômé du supérieur ont eux-mêmes un diplôme du supérieur, contre 32 % lorsque leurs parents n'ont pas achevé le deuxième cycle du secondaire. Cet indicateur ne mesure pas l'effet propre de Parcoursup, mais éclaire la persistance de la transmission sociale des diplômes. [Source OCDE](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
-
 ## Données ouvertes et fonctionnement de l'examen des candidatures
 
 Le jeu de données ouvert Parcoursup 2025 constitue une première base exploitable : 115 variables, 14 252 formations et 1 015 200 candidats, avec un sous-ensemble de 652 800 néo-bacheliers. Il contient notamment des agrégats par sexe, série du bac, statut de boursier, origine géographique, capacité, propositions, admissions et rang du dernier appelé. La documentation précise toutefois que certains indicateurs cartographiques ne sont pas recalculables à partir du fichier et que l'unité d'observation est la formation, non l'individu. [Jeu de données et documentation](https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/?flg=fr).
@@ -55,6 +53,13 @@ Il faut également distinguer la plateforme nationale des décisions des formati
 Ces hypothèses doivent être testées par origine sociale, type de baccalauréat, genre, territoire, handicap, situation de boursier, sélectivité, discipline et trajectoire post-admission, avec des données adaptées.
 
 ## Questions à instruire
+
+### Critères locaux et commissions d'examen des vœux
+- Quels critères sont effectivement mobilisés par les commissions d'examen des vœux (CEV), avec quelles pondérations et quelles marges d'appréciation ?
+- Les rapports d'analyse des candidatures sont-ils suffisamment précis, comparables et accessibles pour permettre un audit externe ?
+- Les critères varient-ils selon les filières, les établissements, les territoires et les profils de candidats ?
+- Comment distinguer les critères formellement annoncés, les outils d'aide à la décision et les décisions humaines finales ?
+
 ### Parcoursup : que mesure-t-on réellement ?
 - Quels sont les dénominateurs exacts des taux de proposition et d'acceptation ?
 - Quelle part des candidats obtient son premier vœu, un vœu de rang élevé ou une formation choisie par défaut ?
@@ -81,8 +86,20 @@ Ces hypothèses doivent être testées par origine sociale, type de baccalauréa
 Le protocole descriptif et son script reproductible sont désormais intégrés au dépôt :
 - [Protocole d'analyse Parcoursup 2025](../research/analysis/parcoursup-2025-protocol.md)
 - [Script Python](../scripts/analysis/analyze_parcoursup_2025.py)
+- [Protocole d'audit documentaire des rapports CEV 2026](../research/analysis/parcoursup-cev-2026-protocol.md)
 
-Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, les quantiles et le chargement CSV ont été ajoutés. Le statut CI du dernier commit n'est pas encore remonté dans GitHub (aucun statut publié au moment de la vérification). Le contrôle du code a aussi révélé et corrigé un décalage important : l'API officielle expose les noms de champs en snake_case minuscules, alors que la première version du script attendait des variantes en majuscules. Le script et le protocole sont maintenant alignés sur les noms canoniques. Cette correction reste à confirmer par l'exécution CI et par un essai sur le CSV complet. Le fichier source n'a pas encore été téléchargé ni analysé ; aucun résultat empirique n'est donc présenté.
+Les tests unitaires couvrent les dénominateurs nuls, les valeurs manquantes, les quantiles, l'agrégation au niveau formation et le rejet d'une session incorrecte. La CI GitHub a d'abord révélé une incohérence entre les noms de colonnes des tests (anciens noms avec majuscules) et ceux du script/API (snake_case minuscules). Les tests ont été corrigés pour utiliser les noms canoniques. Sur le commit `a2de052`, les validations des registres et identifiants, les 11 tests unitaires et les schémas JSON passent. Le CSV complet n'a toutefois pas encore été téléchargé ni exécuté dans l'environnement de recherche ; aucun résultat empirique n'est donc présenté.
+
+## Pistes d'amélioration du dispositif de recherche
+
+1. **Construire un corpus des rapports CEV 2026** : collecter un échantillon stratifié par filière, sélectivité, territoire et statut public/privé ; coder les critères, pondérations explicites, attendus et informations manquantes.
+2. **Relier les niveaux de la chaîne éducative** : établir une matrice des données disponibles de la petite enfance à la diplomation, en documentant les ruptures de cohortes et les changements de définition.
+3. **Renforcer la mesure de l'équité** : distinguer accès à toute formation, accès aux formations demandées, adéquation des vœux, mobilité, inscription et réussite ; ventiler par origine sociale lorsque les données le permettent.
+4. **Ajouter une revue des travaux indépendants** : recherches évaluées par les pairs, travaux de chercheurs et évaluations contradictoires des politiques d'orientation et d'admission.
+5. **Séparer descriptif et causal** : réserver les conclusions causales aux dispositifs de données et méthodes adaptés (cohortes, quasi-expériences, discontinuités, appariements), après vérification des hypothèses d'identification.
+6. **Documenter les mécanismes de compensation** : quotas boursiers, priorités légales, accompagnement, CAES et aides matérielles ; examiner leur mise en œuvre et leurs effets plutôt que présumer leur efficacité.
+
+Ces pistes sont des améliorations du programme de recherche, pas des recommandations de politique publique déjà démontrées.
 
 ## Programme de recherche
 1. Audit des données Parcoursup 2026 : télécharger les fichiers ouverts, reconstruire les dénominateurs et identifier les croisements disponibles.
@@ -101,4 +118,4 @@ Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, le
 - Conserver les résultats contradictoires et documenter les limites des sources institutionnelles comme des sources privées ou militantes.
 
 ## Registre de preuve
-Les sources, études, jeux de données, affirmations et hypothèses associés sont indexés dans les registres du dépôt. Les statuts `screened` et `under_review` indiquent un examen initial, pas une validation méthodologique finale.
+Les sources, études, jeux de données, affirmations et hypothèses associés sont indexés dans les registres du dépôt. La page thématique [Éducation](../knowledge/domains/education.md) rassemble la carte des connaissances, les principaux manques et les priorités d’amélioration. Les statuts `screened` et `under_review` indiquent un examen initial, pas une validation méthodologique finale.
