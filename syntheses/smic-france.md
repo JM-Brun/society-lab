@@ -141,3 +141,25 @@ Le SMIC reste national, mais l'exposition varie selon les secteurs, le temps par
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Première synthèse transversale ; statut provisoire dans l'attente des validations des modules et des preuves. |
+
+
+## 13. Historique des revalorisations et épisodes défavorables ou mixtes
+
+Une synthèse historique dédiée a été créée : [Historique des revalorisations du SMIC en France](../dossiers/smic-historical-episodes.md). Elle distingue les gains directs, les effets de diffusion, la compression salariale et les effets sur l'emploi.
+
+Les premiers résultats ne permettent pas de qualifier globalement les hausses de bonnes ou mauvaises :
+- Neumark et Wascher (1997) identifient un signal négatif sur l'emploi des jeunes après la hausse de juin 1981 ;
+- Abowd, Kramarz et Margolis (1999) trouvent une détérioration des trajectoires d'emploi des salariés français rémunérés au minimum dans leur dispositif longitudinal ;
+- Aeberhardt, Givord et Marbot (2012) documentent des effets de diffusion de la convergence des minima de 2003–2005 ;
+- la DARES documente en 2021–2023 la protection du plancher et le retard temporaire de minima conventionnels ;
+- la DG Trésor (2025) montre qu'une part importante des salariés proches du SMIC connaît une mobilité ascendante, tandis qu'une minorité reste durablement proche du plancher.
+
+**Limite majeure :** les études historiques sont hétérogènes et les résultats de 1981 ou des années 1990 ne sont pas transposables mécaniquement à la situation actuelle. La chronologie exhaustive et les séries en euros constants restent à construire avant toute conclusion comparative ferme.
+
+**Fiche pédagogique :** [Le SMIC en France : quand une hausse aide-t-elle, et quand peut-elle coûter ?](../docs/smic-historical-revaluations-brief.md).
+
+## 14. Historique des révisions
+
+| Date | Modification |
+|---|---|
+| 2026-11-14 | Ajout du module historique des revalorisations, des épisodes négatifs et mixtes, et de la fiche pédagogique. |
