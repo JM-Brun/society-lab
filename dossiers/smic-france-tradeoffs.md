@@ -132,7 +132,7 @@ Il faut établir un compte consolidé : coût des exonérations, recettes de cot
 
 La France a construit des allègements de cotisations patronales concentrés sur les bas salaires pour réduire le coût du travail peu qualifié. Ils atténuent le coût employeur au niveau du SMIC, mais leur dégressivité et leurs seuils peuvent créer des taux marginaux élevés lorsque le salaire progresse.
 
-Le rapport du groupe d'experts SMIC 2024 indique que les allègements ont un effet avéré sur l'emploi, que leur coût a augmenté de plus de 30 % en quatre ans pour atteindre près de 80 milliards d'euros en 2024, et estime que leur suppression totale entraînerait 1,5 à 2 millions de suppressions d'emplois. Cette dernière estimation est un résultat de scénario sur la suppression des allègements, pas l'effet d'une hausse du SMIC.
+Le rapport du groupe d'experts SMIC 2024 indique que les allègements ont un effet avéré sur l'emploi et estime que leur suppression totale entraînerait 1,5 à 2 millions de suppressions d'emplois. Le rapport 2025 chiffre les allègements à près de 75 milliards d'euros en 2024 ; le rapport 2024 avançait un ordre de grandeur proche de 80 milliards. Ces montants doivent être réconciliés à partir des périmètres comptables et versions de calcul avant d'être traités comme une série comparable. L'estimation d'emplois est un résultat de scénario sur la suppression des allègements, pas l'effet d'une hausse du SMIC.
 
 Le rapport 2025 recommande de ne pas dépasser la revalorisation automatique au 1er janvier 2026 et critique l'extension des allègements au-delà des bas salaires. Il s'agit d'une recommandation d'experts, non d'une preuve que toute hausse discrétionnaire aurait un effet négatif net.
 
@@ -273,7 +273,7 @@ Toujours indiquer les unités, champs, dates, dénominateurs, ruptures de série
 6. [OCDE — Low-wage employment in France (2025)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/01/low-wage-employment-in-france_ac641c84/82539f44-en.pdf) — comparaison internationale, distribution des bas salaires et mobilité.
 7. [Groupe d'experts SMIC — Rapport 2025](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025) — recommandation sur la revalorisation et analyse du système socio-fiscal.
 8. [Groupe d'experts SMIC — Rapport 2024](https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2024) — effets et coût des allègements.
-9. [France Stratégie — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire (2024)](https://www.strategie.gouv.fr/publications/politiques-dexonerations-cotisations-sociales-une-inflexion-necessaire) — bilan de trente ans d'exonérations.
+9. [Mission Bozio-Wasmer — Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire (France Stratégie, 3 octobre 2024)](https://www.strategie-plan.gouv.fr/publications/mission-bozio-wasmer-politiques-dexonerations-de-cotisations-sociales-une-inflexion) — bilan et scénarios de réforme, avec code et données de simulation.
 10. [Cour des comptes — Synthèse de l'évaluation des exonérations de cotisations sociales](https://www.ccomptes.fr/fr/plateformes-citoyennes/plateforme-evaluations-politique-publique/explorer-evaluations/les-46) — synthèse critique du rapport France Stratégie.
 11. [INSEE — Les effets des hausses du SMIC sur le salaire moyen (2012)](https://www.insee.fr/fr/statistiques/1377686) — étude historique 1970-2009.
 
