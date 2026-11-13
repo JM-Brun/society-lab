@@ -398,3 +398,24 @@ Les 28 500 taakstraffen exécutées en tout ou partie en 2024, les 16 % interrom
 Le tableau de suivi doit désormais séparer au minimum : prononcé → saisine SPIP ; saisine SPIP → affectation ; affectation → démarrage ; démarrage → achèvement / interruption / conversion. Pour chaque étape, documenter cohorte, flux ou stock, dénominateur, moyenne ou médiane, dispersion, censure et cause de sortie. La diminution de 7,9 à 6,9 mois est un signal positif sur l'affectation, mais elle ne prouve pas à elle seule que le délai total ou le taux d'achèvement se sont améliorés.
 
 Source primaire : Sénat, rapport d'information n° 2 (2025-2026), https://www.senat.fr/rap/r25-002/r25-00212.html ; Cour des comptes, mars 2025, https://www.ccomptes.fr/fr/publications/evaluation-de-deux-peines-alternatives-lincarceration.
+
+
+## 15. Définition précise du délai et ventilation des issues à trois ans (14 novembre 2026)
+
+### 15.1 Le délai de 16,7 mois : définition retrouvée
+
+L'annexe 5 du rapport de la Cour des comptes définit le délai national de **16,7 mois** comme le temps moyen entre la date de condamnation et la fin d'exécution de la mesure, pour les **TIG ou sursis-TIG prononcés en 2020 et exécutés dans les trois ans**. La source statistique est SSER/DACG. Il s'agit donc d'un délai conditionnel à l'exécution dans les trois ans : les mesures non exécutées dans cette fenêtre ne contribuent pas à cette moyenne. Le chiffre ne doit pas être présenté comme le délai moyen de l'ensemble des TIG prononcés.
+
+### 15.2 L'enquête directe de la Cour : un autre champ, une autre moyenne
+
+Dans l'échantillon de 940 mesures individuelles et neuf territoires, la Cour mesure près de 20 mois entre condamnation et fin de mesure, avec 16 mois pour les TIG autonomes et 20 mois en incluant les sursis-TIG. L'enquête porte sur des TIG terminés entre le quatrième trimestre 2023 et le premier trimestre 2024. Cette moyenne d'échantillon n'est pas interchangeable avec les 16,7 mois de la cohorte nationale 2020.
+
+L'annexe décompose également plusieurs étapes : condamnation → prise en charge SPIP (médiane 2,5 mois, moyenne 7 mois en raison de valeurs extrêmes) ; prise en charge SPIP → affectation à un CPIP (moyenne 21 jours, médiane 2 jours) ; prise en charge SPIP → affectation à un poste (moyenne 6,1 mois dans l'enquête Cour ; 7,9 mois dans l'enquête flash DAP de septembre-octobre 2023) ; affectation au poste → fin des heures (moyenne 5,7 mois, médiane 2,3 mois) ; fin des heures → fin administrative dans APPI (moyenne 2 mois, médiane 19 jours).
+
+### 15.3 Les 16 % agrégés se décomposent en 5 % et 11 %
+
+La synthèse sénatoriale agrège 16 % de TIG non exécutés ou ayant débouché sur un échec imputable. Le tableau de la Cour permet de distinguer les deux catégories : à 36 mois, 5 % restent non exécutés et 11 % ont débouché sur un échec imputable au condamné. Les 75 % exécutés et 9 % convertis complètent la distribution. Il est donc incorrect de qualifier les 16 % d'« interruptions ».
+
+**Conséquence pour le suivi :** conserver une série nationale SSER/DACG (cohorte 2020, 36 mois, délai conditionnel à l'exécution) et une série d'enquête Cour (neuf SPIP, TIG terminés 2023-2024) distinctes ; suivre les cinq étapes de délai sans les agréger. Les claims de délai et d'issue ont été mis à jour ou scindés en conséquence.
+
+Source : Cour des comptes, rapport de mars 2025, p. 46-47 et annexe 5, p. 151 : https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf.
