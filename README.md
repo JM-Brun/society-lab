@@ -44,6 +44,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Charte fondatrice](CHARTER.md)
 - [Méthodologie](METHODOLOGY.md)
 - [Architecture](docs/architecture.md)
+- [Contrat d'intégration inter-dépôts](docs/cross-repository-contract.md)
 - [Feuille de route](docs/roadmap.md)
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
