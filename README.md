@@ -31,6 +31,8 @@ Le périmètre principal est l'Union européenne (UE-27), élargi aux autres pay
 - [Architecture](docs/architecture.md)
 - [Feuille de route](docs/roadmap.md)
 - [Taxonomie des domaines](knowledge/TAXONOMY.yml)
+- [Politique des sources](docs/source-policy.md)
+- [Politique de licences](docs/licensing.md)
 - [Guide de contribution](CONTRIBUTING.md)
 
 ## État du projet
