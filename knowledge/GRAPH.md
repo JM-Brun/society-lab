@@ -30,3 +30,10 @@ DOSSIER-FUTURE-OF-WORK -> REL-INCLUDES -> CLAIM-JOB-POLARISATION
 ```
 
 Les identifiants ci-dessus illustrent une forme, ils ne déclarent pas l'existence de ces objets.
+
+
+## Territoires et relations entre échelles
+
+Les territoires sont des entités référentielles décrites dans [TERRITORIES.yml](TERRITORIES.yml). Ils ne sont ni des domaines thématiques ni des organisations. Les objets de recherche peuvent concerner plusieurs territoires ; leurs fiches doivent conserver les périmètres exacts plutôt que d'inférer une localisation à partir d'un tag.
+
+La hiérarchie géographique ne suffit pas à représenter les interdépendances. Les relations entre échelles (transmission d'une politique, flux économiques, dépendance énergétique, diffusion d'une innovation, externalité environnementale, comparaison, coopération ou rétroaction) doivent être décrites séparément, avec direction, mécanisme, période, preuve et limites. Une relation contextuelle n'est pas automatiquement une relation causale.
