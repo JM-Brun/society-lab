@@ -69,12 +69,10 @@ def main():
             errors.append(f"{territory.get('id')}: unknown parent territory {parent_id}")
     relation_types = unique_ids(relation_defs, "knowledge/RELATION_TYPES.yml", errors)
 
-    for identifier in domains | tags | relation_types:
+    for identifier in domains | tags | relation_types | territory_ids:
         if not ID_RE.fullmatch(identifier):
             errors.append(f"Invalid controlled identifier: {identifier}")
 
-    node_ids = {"DOMAIN": domains, "TAG": tags}
-    node_type_by_id = {identifier: kind for kind, values in node_ids.items() for identifier in values}
     all_records = {}
     for relative, collection, prefix, schema_path in REGISTRIES:
         records = load_yaml(relative).get(collection, [])
