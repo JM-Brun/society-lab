@@ -24,7 +24,11 @@ Le sous-recours au TIG ne semble pas s'expliquer d'abord par un coût direct tro
 
 Les freins opérationnels et institutionnels sont particulièrement documentés : délais d'exécution supérieurs à 16 mois, besoin d'organismes d'accueil et de tuteurs, contrôle insuffisant et accompagnement limité. Le nombre de TIG prononcés a diminué de 34 % entre 2015 et 2022, alors même que des politiques publiques ont cherché à développer cette peine.
 
-La réponse sur la récidive est moins favorable qu'on aurait pu l'espérer. La Cour des comptes mesure près de 60 % de récidive à cinq ans après un TIG ou un sursis-TIG. Après correction économétrique des caractéristiques observables des condamnés, le TIG ne paraît pas plus efficace que l'emprisonnement ferme pour réduire la probabilité de récidive à cinq ou dix ans. Les résultats sont toutefois plus favorables au TIG pour la fréquence et la gravité des récidives. Ces résultats ne doivent pas être présentés comme une preuve expérimentale : les personnes orientées vers le TIG et celles incarcérées ne sont pas interchangeables, et des facteurs non observés peuvent subsister.
+La mesure de la récidive exige de distinguer plusieurs résultats. Pour la cohorte 2010, la Cour observe dans les cinq ans une nouvelle condamnation définitive chez 58 % des personnes condamnées à un TIG, 61 % après un sursis-TIG et 64 % après un emprisonnement ferme de deux ans ou moins. Le taux est calculé à partir du prononcé, non de l'exécution effective du TIG ; il inclut la réitération et la récidive au sens légal dès lors qu'une nouvelle infraction conduit à une condamnation définitive. Environ 25 % des TIG n'étant pas exécutés ou étant convertis, ce choix de mesure doit rester visible.
+
+Après ajustement des caractéristiques observables (âge, genre, nationalité, antécédents, nature des infractions, mode de jugement, département et mois de condamnation), les écarts de probabilité de nouvelle condamnation à cinq ans entre TIG/sursis-TIG et emprisonnement ferme sont proches de zéro et statistiquement non significatifs. Cela ne démontre pas l'équivalence des peines : des facteurs non observés peuvent subsister et la Cour souligne les limites des données disponibles.
+
+À dix ans, pour la cohorte 2010, les résultats ajustés sont plus favorables au TIG sur deux indicateurs distincts : la recondamnation à une peine d'emprisonnement ferme est estimée inférieure de 11,3 points, et le nombre cumulé de nouvelles condamnations inférieur d'environ 0,268 en moyenne. Ces résultats ne doivent pas être fusionnés avec le taux binaire de récidive à cinq ans ni présentés comme une preuve expérimentale d'un effet causal.
 
 **Conclusion provisoire :** l'explication la plus solide du sous-recours est une combinaison de contraintes de mise en œuvre, de délais, de suivi et de choix judiciaires. Le coût direct paraît plutôt constituer un argument potentiel en faveur du TIG qu'un obstacle central. Son effet dissuasif propre reste insuffisamment mesuré ; il serait abusif de conclure qu'il est intrinsèquement « non dissuasif ».
 
@@ -59,15 +63,17 @@ La Cour des comptes explique notamment la baisse de l'utilisation comme peine au
 
 ### 3.1 Le chiffre brut
 
-La Cour des comptes relève un taux de récidive proche de 60 % dans les cinq ans suivant un TIG ou un sursis-TIG. Ce chiffre est proche de celui observé pour les personnes condamnées à l'emprisonnement ferme.
+Pour la cohorte 2010, la Cour donne 58 % après un TIG, 61 % après un sursis-TIG et 64 % après un emprisonnement ferme de deux ans ou moins (tableau 5, p. 103). L'indicateur mesure la part des condamnés ayant au moins une nouvelle infraction sanctionnée par une condamnation définitive dans les cinq ans suivant le prononcé. Il inclut réitération et récidive légale et ne mesure pas la récidive après exécution de la mesure.
 
-Il ne faut pas en déduire que le TIG provoque la récidive, ni qu'il est aussi efficace ou inefficace que la prison sans examiner les profils comparés.
+La Cour précise qu'environ 25 % des TIG ne sont pas exécutés ou sont convertis en une autre peine. Le taux après prononcé répond à la question du choix de peine du juge ; il ne répond pas à la question de l'effet de l'exécution effective chez les personnes ayant achevé leur TIG.
 
 ### 3.2 Le biais de sélection
 
-Les personnes orientées vers le TIG sont en moyenne plus jeunes, moins insérées professionnellement et présentent souvent un passé pénal plus marqué. Les magistrats ne distribuent pas les peines au hasard : ils tiennent compte de la gravité des faits, de la personnalité, de la situation et de la faisabilité de la mesure.
+Les groupes ne sont pas comparables spontanément : les magistrats tiennent compte du profil, des antécédents, des faits, du mode de jugement et de la faisabilité de la peine. La Cour estime des modèles de probabilité linéaire contrôlant notamment âge, genre, nationalité, antécédents, infractions, mode de jugement, département et mois de condamnation.
 
-La Cour tente de corriger économétriquement les différences observables. Après correction, le TIG ne semble pas réduire davantage la probabilité de récidive que l'emprisonnement ferme à cinq ou dix ans. Les résultats sont néanmoins plus favorables pour la fréquence et la gravité des récidives.
+À cinq ans, les écarts ajustés de probabilité de nouvelle condamnation après TIG ou sursis-TIG sont proches de zéro et statistiquement non significatifs. La Cour indique explicitement que les bases ne permettent pas de corriger avec certitude toutes les différences prises en compte par les magistrats. Il faut donc parler d'estimations ajustées observationnelles, pas d'un effet causal identifié.
+
+À dix ans, deux résultats complémentaires sont plus favorables au TIG dans la cohorte 2010 : -11,3 points sur la recondamnation à une peine d'emprisonnement ferme et -0,268 nouvelle condamnation cumulée en moyenne. Ils portent sur des indicateurs différents et ne contredisent pas le résultat non significatif sur la probabilité de toute nouvelle condamnation.
 
 Ces résultats appellent trois précautions :
 - une correction statistique ne neutralise pas les facteurs non observés ;
