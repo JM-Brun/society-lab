@@ -48,6 +48,19 @@ def ratio(numerator: float | None, denominator: float | None) -> float | None:
     return numerator / denominator
 
 
+def quantile(values: list[float], probability: float) -> float | None:
+    if not values:
+        return None
+    ordered = sorted(values)
+    position = (len(ordered) - 1) * probability
+    lower = math.floor(position)
+    upper = math.ceil(position)
+    if lower == upper:
+        return ordered[lower]
+    weight = position - lower
+    return ordered[lower] * (1 - weight) + ordered[upper] * weight
+
+
 def sum_complete(rows: list[dict], key: str) -> float | None:
     values = [r[key] for r in rows]
     if not values or any(value is None for value in values):
@@ -191,7 +204,11 @@ def run(input_path: Path, output_dir: Path) -> dict:
         "selectivity": "Raw select_form values retained; do not infer labels without codebook validation.",
         "demand_per_seat_distribution": {
             "n_non_missing": len(demand_values),
+            "minimum": min(demand_values) if demand_values else None,
+            "p25": quantile(demand_values, 0.25),
             "median": median(demand_values) if demand_values else None,
+            "p75": quantile(demand_values, 0.75),
+            "maximum": max(demand_values) if demand_values else None,
         },
         "outputs": [
             "by_region.csv", "by_filiere.csv", "by_select_form_raw.csv",
