@@ -7,7 +7,7 @@
 
 Décrire comment la demande, le classement, les propositions et les admissions varient entre formations, selon le territoire, la filière et la modalité de sélectivité déclarée. Examiner séparément les profils par voie de baccalauréat et le poids des boursiers parmi les néo-bacheliers.
 
-Le fichier officiel décrit 14 252 formations hors apprentissage, avec 115 variables, pour la campagne du 15 janvier au 10 septembre 2025 (extraction du 7 octobre 2025). Il couvre 1 015 200 candidats, dont 652 800 néo-bacheliers. L'unité de ligne est la formation/établissement, pas le candidat individuel.
+L'API Explore 2.1 expose les enregistrements sous des noms de champs en snake_case (minuscules), utilisés directement par le script. Le fichier officiel décrit 14 252 formations hors apprentissage, avec 115 variables, pour la campagne du 15 janvier au 10 septembre 2025 (extraction du 7 octobre 2025). Il couvre 1 015 200 candidats, dont 652 800 néo-bacheliers. L'unité de ligne est la formation/établissement, pas le candidat individuel.
 
 Source et dictionnaire : [documentation méthodologique officielle](https://data.enseignementsup-recherche.gouv.fr/api/datasets/1.0/fr-esr-parcoursup/attachments/methodologie_opendata_2025pdf/).
 
@@ -24,13 +24,13 @@ Source et dictionnaire : [documentation méthodologique officielle](https://data
 | Étape | Variables | Interprétation |
 |---|---|---|
 | Offre | capa_fin | Capacité d'accueil |
-| Demande | voe_tot, nb_VOE_PP | Effectifs de candidats/vœux enregistrés par formation ; ne pas sommer pour produire un nombre de personnes uniques |
-| Classement | nb_cla_PP, nb_cla_pp_BG, nb_cla_pp_BT, nb_cla_pp_BP | Effectifs classés par formation, selon les catégories documentées |
-| Proposition | Prop_tot, prop_tot_BG, prop_tot_BT, prop_tot_BP | Effectifs ayant reçu une proposition |
-| Admission | Acc_tot, Acc_neobac, Acc_BG, Acc_BT, Acc_BP | Effectifs ayant accepté une proposition (admis) |
-| Bourse | nb_VOE_PP_BG_brs, nb_VOE_PP_BT_brs, nb_VOE_PP_BP_brs, Acc_brs | Boursiers parmi les néo-bacheliers en phase principale, puis boursiers parmi les néo-bacheliers admis |
+| Demande | voe_tot, nb_voe_pp | Effectifs de candidats/vœux enregistrés par formation ; ne pas sommer pour produire un nombre de personnes uniques |
+| Classement | nb_cla_pp, nb_cla_pp_bg, nb_cla_pp_bt, nb_cla_pp_bp | Effectifs classés par formation, selon les catégories documentées |
+| Proposition | prop_tot, prop_tot_bg, prop_tot_bt, prop_tot_bp | Effectifs ayant reçu une proposition |
+| Admission | acc_tot, acc_neobac, acc_bg, acc_bt, acc_bp | Effectifs ayant accepté une proposition (admis) |
+| Bourse | nb_voe_pp_bg_brs, nb_voe_pp_bt_brs, nb_voe_pp_bp_brs, acc_brs | Boursiers parmi les néo-bacheliers en phase principale, puis boursiers parmi les néo-bacheliers admis |
 | Territoire | region_etab_aff, dep, acad_mies | Territoire de l'établissement d'accueil |
-| Formation | Fili, LIB_FOR_VOE_INS, select_form, contrat_etab | Filière et caractéristiques de la formation |
+| Formation | fili, lib_for_voe_ins, select_form, contrat_etab | filière et caractéristiques de la formation |
 
 Les libellés et les définitions du dictionnaire officiel priment sur les noms de variables. Les valeurs de select_form seront conservées dans leur modalité brute dans les premières sorties : leur codage ne sera pas traduit en « sélectif/non sélectif » avant vérification explicite du dictionnaire et de la version du fichier.
 
@@ -38,14 +38,14 @@ Les libellés et les définitions du dictionnaire officiel priment sur les noms 
 
 Au niveau d'une formation, lorsque le dénominateur est strictement positif :
 
-- demande/capacité = nb_VOE_PP / capa_fin ;
-- classés/demande = nb_cla_PP / nb_VOE_PP ;
-- propositions/demande = Prop_tot / nb_VOE_PP ;
-- admissions/capacité = Acc_tot / capa_fin ;
-- part de chaque voie parmi les néo-bacheliers candidats en PP = effectif de la voie / somme BG + BT + BP ;
-- part de chaque voie parmi les néo-bacheliers admis = Acc_BG, Acc_BT ou Acc_BP / Acc_neobac ;
-- part de boursiers parmi les néo-bacheliers candidats en PP = somme des boursiers BG + BT + BP / somme des candidats BG + BT + BP ;
-- part de boursiers parmi les néo-bacheliers admis = Acc_brs / Acc_neobac.
+- demande/capacité = nb_voe_pp / capa_fin ;
+- classés/demande = nb_cla_pp / nb_voe_pp ;
+- propositions/demande = prop_tot / nb_voe_pp ;
+- admissions/capacité = acc_tot / capa_fin ;
+- part de chaque voie parmi les néo-bacheliers candidats en PP = effectif de la voie / somme bg + bt + bp ;
+- part de chaque voie parmi les néo-bacheliers admis = acc_bg, acc_bt ou acc_bp / acc_neobac ;
+- part de boursiers parmi les néo-bacheliers candidats en PP = somme des boursiers bg + bt + bp / somme des candidats bg + bt + bp ;
+- part de boursiers parmi les néo-bacheliers admis = acc_brs / acc_neobac.
 
 Les deux parts de boursiers sont des compositions de populations distinctes : la première concerne les vœux de phase principale, la seconde les admissions cumulées de la campagne. Leur différence n'est **pas** un taux de sélection ni un effet causal.
 
@@ -71,7 +71,7 @@ Les écarts observés ne démontrent pas à eux seuls une discrimination, une in
 
 ## 7. Exécution reproductible
 
-Télécharger le CSV depuis la page officielle du jeu de données Parcoursup 2025 et conserver le fichier original hors du dépôt si sa taille ou sa politique de conservation le justifie. Ne jamais modifier le fichier source.
+Télécharger le CSV depuis la page officielle du jeu de données Parcoursup 2025 (export Explore API 2.1 : https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv) et conserver le fichier original hors du dépôt si sa taille ou sa politique de conservation le justifie. Ne jamais modifier le fichier source.
 
 Avec Python standard (aucune dépendance externe) :
 
