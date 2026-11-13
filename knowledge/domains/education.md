@@ -91,8 +91,8 @@ Les relations sont orientées et justifiées. Les relations inverses sont dédui
 4. Documenter séparément les dénominateurs de chaque indicateur et ne pas reconstruire les taux d'accès que la documentation déclare non recalculables.
 
 ### Priorité 2 — examiner les décisions locales
-1. Collecter un corpus stratifié de rapports CEV 2026.
-2. Construire une grille de codage des critères, pondérations, attendus, modalités d'examen et zones d'opacité.
+1. Collecter un inventaire du corpus réellement accessible de rapports CEV 2026.
+2. Appliquer le [protocole d'audit documentaire CEV 2026](../../research/analysis/parcoursup-cev-2026-protocol.md) : échantillonnage stratifié, grille de codage, contrôle de fiabilité et limites d'inférence.
 3. Mesurer la comparabilité et l'hétérogénéité des rapports, puis confronter les critères publiés aux recherches indépendantes sur les admissions.
 
 ### Priorité 3 — suivre les trajectoires avant et après Parcoursup
