@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.analysis.analyze_parcoursup_2025 import load_rows, profile, ratio
+from scripts.analysis.analyze_parcoursup_2025 import load_rows, profile, quantile, ratio
 
 FIELDS = [
     "session", "region_etab_aff", "Fili", "select_form", "capa_fin",
@@ -18,6 +18,17 @@ class ParcoursupAnalysisTests(unittest.TestCase):
     def test_zero_denominator_is_missing(self):
         self.assertIsNone(ratio(3, 0))
         self.assertIsNone(ratio(None, 10))
+
+    def test_quantiles_use_interpolated_order_statistics(self):
+        self.assertEqual(quantile([1, 2, 3, 4], 0.25), 1.75)
+        self.assertIsNone(quantile([], 0.5))
+
+    def test_aggregates_count_formations_not_unique_people(self):
+        row = {key: 0 for key in FIELDS}
+        row.update({"session": "2025", "region_etab_aff": "Bretagne", "Fili": "BUT", "select_form": "1"})
+        result = profile([row, row.copy()])
+        self.assertEqual(result["formations"], 2)
+        self.assertEqual(result["wishes_phase_principale"], 0)
 
     def test_profiles_keep_distinct_populations(self):
         row = {key: None for key in FIELDS}
