@@ -7,6 +7,10 @@
 - **Périmètre :** France hors Mayotte pour les séries nationales citées ; comparaison européenne et OCDE ; déclinaisons territoriales à construire.
 - **Période principale :** 1990-2026, avec attention particulière à 2021-2026.
 
+## Prolongement quantitatif
+
+- [Prototype de microsimulation avec OpenFisca-France](../docs/smic-openfisca-prototype.md) — cas-types de ménages, comparaison statique de hausses hypothétiques et protocole de validation. Aucun résultat chiffré n'est publié avant exécution et audit du modèle.
+
 ## Question de recherche
 
 Dans quelles conditions une hausse du salaire minimum interprofessionnel de croissance (SMIC), au-delà de son mécanisme légal d'indexation, améliore-t-elle durablement le niveau de vie des travailleurs modestes sans dégrader excessivement l'emploi, la progression salariale, la compétitivité, la productivité et les finances publiques ?
