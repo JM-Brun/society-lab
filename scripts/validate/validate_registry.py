@@ -9,7 +9,7 @@ import yaml
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[2]
-ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD)-[A-Z0-9][A-Z0-9-]*$")
+ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY)-[A-Z0-9][A-Z0-9-]*$")
 
 REGISTRIES = [
     ("sources/registry.yml", "sources", "SOURCE", "schemas/source.schema.json"),
@@ -53,18 +53,26 @@ def main():
     taxonomy = load_yaml("knowledge/TAXONOMY.yml")
     tags_vocab = load_yaml("knowledge/TAGS.yml")
     relation_vocab = load_yaml("knowledge/RELATION_TYPES.yml")
+    territories_vocab = load_yaml("knowledge/TERRITORIES.yml")
 
     domains = unique_ids(taxonomy.get("domains", []), "knowledge/TAXONOMY.yml", errors)
     tags = unique_ids(tags_vocab.get("tags", []), "knowledge/TAGS.yml", errors)
     relation_defs = relation_vocab.get("relations", [])
+    territories = territories_vocab.get("territories", [])
+    territory_ids = unique_ids(territories, "knowledge/TERRITORIES.yml", errors)
+    node_ids = {"DOMAIN": domains, "TAG": tags, "TERRITORY": territory_ids}
+    node_type_by_id = {identifier: kind for kind, values in node_ids.items() for identifier in values}
+    validate_schema_and_records("schemas/territory.schema.json", territories, "knowledge/TERRITORIES.yml", errors)
+    for territory in territories:
+        parent_id = territory.get("geographic_parent_id")
+        if parent_id and parent_id not in territory_ids:
+            errors.append(f"{territory.get('id')}: unknown parent territory {parent_id}")
     relation_types = unique_ids(relation_defs, "knowledge/RELATION_TYPES.yml", errors)
 
-    for identifier in domains | tags | relation_types:
+    for identifier in domains | tags | relation_types | territory_ids:
         if not ID_RE.fullmatch(identifier):
             errors.append(f"Invalid controlled identifier: {identifier}")
 
-    node_ids = {"DOMAIN": domains, "TAG": tags}
-    node_type_by_id = {identifier: kind for kind, values in node_ids.items() for identifier in values}
     all_records = {}
     for relative, collection, prefix, schema_path in REGISTRIES:
         records = load_yaml(relative).get(collection, [])

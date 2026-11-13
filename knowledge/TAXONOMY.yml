@@ -1,10 +1,18 @@
 version: 1
 language: fr
 scope:
-  primary: "Union européenne (UE-27)"
-  extended: "Europe"
-  comparative: "International"
-  notes: "Chaque recherche précise son périmètre. Europe et Union européenne ne sont pas synonymes."
+  primary: "France"
+  european: "Europe, dont l'Union européenne (UE-27)"
+  international: "International et transnational"
+  global: "Monde"
+  local_focus:
+    - "Pays de la Loire"
+    - "Loire-Atlantique"
+    - "Nantes Métropole"
+    - "Nantes"
+    - "Île de Nantes"
+  territorial_framework: "knowledge/TERRITORIES.yml"
+  notes: "Approche multiscalaire : ancrage français, contexte européen, ouvertures internationales et mondiales, déclinaisons régionales et locales. Chaque recherche précise son périmètre. Europe et Union européenne ne sont pas synonymes ; les échelles administratives, fonctionnelles et vécues sont distinguées."
 domains:
   - id: DOMAIN-POLITICS
     slug: politics

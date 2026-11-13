@@ -20,9 +20,13 @@ Society Lab est un laboratoire public indépendant de connaissance, de recherche
 - Les incertitudes, limites et révisions sont documentées.
 - L'IA assiste la recherche, mais ne valide pas seule les conclusions.
 
-## Périmètre
+## Périmètre territorial
 
-Le périmètre principal est l'Union européenne (UE-27), élargi aux autres pays européens selon les sujets. Les comparaisons internationales sont mobilisées lorsqu'elles éclairent les trajectoires européennes. La France fait l'objet d'une attention particulière sans être le seul point de référence.
+Society Lab adopte une approche **multiscalaire, d'abord ancrée en France**, inscrite dans son contexte européen et ouverte aux dynamiques internationales et mondiales. Les neuf niveaux de référence vont du monde à l'Île de Nantes : monde, international/transnational, Europe, France, Pays de la Loire, Loire-Atlantique, Nantes Métropole, Nantes et Île de Nantes.
+
+Cette liste est un cadre d'analyse, pas une hiérarchie administrative stricte. L'international est une dimension transversale ; l'Europe ne se réduit pas à l'Union européenne ; Nantes Métropole, la commune de Nantes et l'Île de Nantes désignent des périmètres différents. Chaque recherche précise les territoires observés, les juridictions compétentes, la population, la période et les limites géographiques pertinentes.
+
+L'analyse circule dans les deux sens : les dynamiques globales et européennes aident à expliquer les situations françaises et locales ; les observations, initiatives et résultats locaux permettent en retour de tester, nuancer et enrichir les interprétations plus générales. Les liens latéraux entre territoires (réseaux, flux, coopérations, comparaisons et interdépendances) sont également pris en compte. Voir [le référentiel territorial](knowledge/TERRITORIES.yml) et [le cadre d'analyse multiscalaire](docs/multiscalar-analysis.md).
 
 ## Architecture de connaissance
 

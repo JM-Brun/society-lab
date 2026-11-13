@@ -21,7 +21,7 @@ Séparer les sources, les objets de connaissance, les travaux d'analyse et les p
 - `site/` : publication Quarto.
 
 ## Objets fondamentaux
-Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method et Dossier. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
+Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method, Dossier et Territory. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
 
 ## Identifiants et vocabulaire
 Les identifiants sont sémantiques, stables, uniques et indépendants du chemin. Voir [métadonnées et nomenclature](metadata-and-naming.md). Les domaines sont définis dans `knowledge/TAXONOMY.yml`, les tags transversaux dans `knowledge/TAGS.yml`. Les mots-clés libres ne doivent pas remplacer les vocabulaires contrôlés.
@@ -47,3 +47,12 @@ Les dépôts publics doivent rester autonomes vis-à-vis des espaces privés : a
 
 ## Automatisation
 Contrôles prévus : validation YAML/JSON et schémas, unicité des identifiants, références internes, types de relations, tests d'analyse et construction Quarto. Ces contrôles ne certifient pas la qualité scientifique.
+
+
+## Analyse territoriale multiscalaire
+
+Le périmètre territorial est défini dans [knowledge/TERRITORIES.yml](../knowledge/TERRITORIES.yml) et ses principes d'utilisation dans [multiscalar-analysis.md](multiscalar-analysis.md). Les territoires constituent des objets de connaissance référentiels, distincts des domaines thématiques et des organisations.
+
+Une fiche de recherche peut concerner plusieurs territoires et plusieurs échelles. Il faut distinguer le lieu où un phénomène est observé, le territoire de compétence de l'acteur public, l'aire fonctionnelle affectée et le périmètre des données. Les relations d'influence, de dépendance ou de comparaison ne se déduisent jamais d'une simple proximité géographique.
+
+L'approche doit permettre la contextualisation descendante (global vers local), ascendante (local vers global) et latérale (territoires reliés par des flux, réseaux, coopérations ou comparaisons). Les liens causaux restent des hypothèses à documenter, pas des propriétés automatiques de l'arborescence territoriale.

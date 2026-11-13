@@ -4,7 +4,7 @@
 Le graphe relie les objets du dépôt sans remplacer leurs fiches descriptives. Les fichiers YAML/JSON restent la source de vérité ; le graphe est une vue dérivée, reconstruisible.
 
 ## Nœuds
-Chaque nœud possède un identifiant stable et un type : DOMAIN, CONCEPT, MECHANISM, ORG, SOURCE, STUDY, DATASET, CLAIM, HYPOTHESIS, ANALYSIS, METHOD ou DOSSIER. Un identifiant ne change pas lorsque le titre, le statut ou le chemin évolue.
+Chaque nœud possède un identifiant stable et un type : DOMAIN, CONCEPT, MECHANISM, ORG, SOURCE, STUDY, DATASET, CLAIM, HYPOTHESIS, ANALYSIS, METHOD, DOSSIER ou TERRITORY. Un identifiant ne change pas lorsque le titre, le statut ou le chemin évolue.
 
 ## Arêtes
 Les relations sont orientées, typées et documentées dans [RELATION_TYPES.yml](RELATION_TYPES.yml). Une relation peut porter des métadonnées (date d'observation, justification, portée, confiance, source justificative). Ne pas créer une arête seulement parce que deux objets partagent un tag.
@@ -45,3 +45,10 @@ DOSSIER-FUTURE-OF-WORK -> REL-INCLUDES -> CLAIM-JOB-POLARISATION
 ```
 
 Les identifiants ci-dessus illustrent une forme, ils ne déclarent pas l'existence de ces objets.
+
+
+## Territoires et relations entre échelles
+
+Les territoires sont des entités référentielles décrites dans [TERRITORIES.yml](TERRITORIES.yml). Ils ne sont ni des domaines thématiques ni des organisations. Les objets de recherche peuvent concerner plusieurs territoires ; leurs fiches doivent conserver les périmètres exacts plutôt que d'inférer une localisation à partir d'un tag.
+
+La hiérarchie géographique ne suffit pas à représenter les interdépendances. Les relations entre échelles (transmission d'une politique, flux économiques, dépendance énergétique, diffusion d'une innovation, externalité environnementale, comparaison, coopération ou rétroaction) doivent être décrites séparément, avec direction, mécanisme, période, preuve et limites. Une relation contextuelle n'est pas automatiquement une relation causale.
