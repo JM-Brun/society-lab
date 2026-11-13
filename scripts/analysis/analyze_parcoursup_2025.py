@@ -132,6 +132,10 @@ def load_rows(path: Path) -> list[dict]:
         reader = csv.DictReader(handle, dialect=dialect)
         if reader.fieldnames is None:
             raise ValueError("CSV has no header row")
+        # The official export uses mixed-case headers (for example Fili,
+        # nb_VOE_PP and Acc_tot). Normalize names once at the CSV boundary;
+        # internal records then use the canonical lowercase keys everywhere.
+        reader.fieldnames = [name.strip().casefold() if name else name for name in reader.fieldnames]
         missing = sorted(REQUIRED - set(reader.fieldnames))
         if missing:
             raise ValueError("Missing required columns: " + ", ".join(missing))
