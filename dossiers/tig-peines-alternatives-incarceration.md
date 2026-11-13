@@ -377,3 +377,24 @@ La comparaison européenne et le premier repérage territorial doivent maintenan
 - [Suite logique de recherche du dossier TIG](../analysis/tig-research-next-steps.md) — hypothèses à départager, jalons, livrables et règles de décision éditoriale.
 
 Ces documents décrivent un protocole préparatoire. Aucune demande de données, aucun entretien ni aucune observation de terrain ne sont réputés réalisés à ce stade.
+
+
+## 14. Revue du périmètre des données d'exécution (14 novembre 2026)
+
+### 14.1 Trois indicateurs français à ne pas fusionner
+
+Le rapport du Sénat déposé le 1er octobre 2025 rapporte, pour la France, une amélioration du délai moyen entre la saisine du SPIP et l'affectation à un poste : 7,9 mois en 2023 puis 6,9 mois en 2024 (données communiquées à la mission par la DACG, note 156). Ce délai n'est ni le délai depuis le prononcé, ni le délai jusqu'au début effectif du travail, ni le délai jusqu'à l'achèvement.
+
+Le même rapport cite la Cour des comptes pour un délai moyen d'exécution de 16,7 mois (note 157). Il faut encore revenir au tableau et à la méthode de la Cour pour documenter précisément l'origine et la fin de cette durée. Le chiffre ne doit pas être assimilé aux 6,9 mois saisine-affectation.
+
+Enfin, le Sénat reprend en note 158 une répartition à trois ans : 75 % exécutés, 9 % convertis en une autre peine et 16 % non exécutés ou ayant débouché sur un échec imputable au condamné. La catégorie de 16 % agrège plusieurs issues et ne signifie pas que 16 % ont tous été « interrompus ».
+
+### 14.2 Les chiffres 28 500 / 16 % / 10 % concernent les Pays-Bas
+
+Les 28 500 taakstraffen exécutées en tout ou partie en 2024, les 16 % interrompues prématurément et les 10 % n'ayant pas pu commencer à la suite d'un renvoi devant la justice figurent dans la sous-partie du rapport consacrée au **taakstraf néerlandais**. Ils ne décrivent pas le TIG français. Ils sont conservés uniquement comme repères de comparaison, avec une réserve sur l'harmonisation des définitions et des dénominateurs.
+
+### 14.3 Implication pour le diagnostic opérationnel
+
+Le tableau de suivi doit désormais séparer au minimum : prononcé → saisine SPIP ; saisine SPIP → affectation ; affectation → démarrage ; démarrage → achèvement / interruption / conversion. Pour chaque étape, documenter cohorte, flux ou stock, dénominateur, moyenne ou médiane, dispersion, censure et cause de sortie. La diminution de 7,9 à 6,9 mois est un signal positif sur l'affectation, mais elle ne prouve pas à elle seule que le délai total ou le taux d'achèvement se sont améliorés.
+
+Source primaire : Sénat, rapport d'information n° 2 (2025-2026), https://www.senat.fr/rap/r25-002/r25-00212.html ; Cour des comptes, mars 2025, https://www.ccomptes.fr/fr/publications/evaluation-de-deux-peines-alternatives-lincarceration.
