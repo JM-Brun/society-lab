@@ -77,7 +77,7 @@ Avec Python standard (aucune dépendance externe) :
 
     python scripts/analysis/analyze_parcoursup_2025.py --input /chemin/vers/fr-esr-parcoursup.csv --output-dir data/derived/parcoursup-2025
 
-Le script produit des agrégats descriptifs et un manifeste rappelant l'unité d'analyse et les limites. Les sorties sont des données dérivées, pas des microdonnées.
+Le script produit des agrégats descriptifs, des indicateurs par formation et un manifeste rappelant l'unité d'analyse et les limites. La distribution du ratio demande/capacité inclut minimum, premier quartile, médiane, troisième quartile et maximum. Les sorties sont des données dérivées, pas des microdonnées.
 
 ## 8. Critères d'acceptation
 
@@ -86,5 +86,5 @@ Le script produit des agrégats descriptifs et un manifeste rappelant l'unité d
 - Les ratios à dénominateur nul sont laissés vides.
 - Les agrégations sont explicitement étiquetées comme comptes formation/candidature, non comme personnes uniques.
 - Les sorties conservent les valeurs brutes de sélectivité.
-- Les tests couvrent les dénominateurs nuls, les valeurs manquantes et les doublons de candidatures entre formations.
+- Les tests couvrent les dénominateurs nuls, les valeurs manquantes, les quantiles et le fait que les agrégats comptent des formations (et non des personnes uniques).
 - Aucun résultat substantiel n'est publié avant l'exécution sur le fichier officiel et la revue des contrôles.
