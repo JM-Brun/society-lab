@@ -15,13 +15,14 @@ Séparer les sources, les objets de connaissance, les travaux d'analyse et les p
 - `research/studies/` et `research/datasets/` : études et jeux de données.
 - `claims/`, `hypotheses/`, `debates/` : propositions examinées et controverses.
 - `analysis/` : analyses quantitatives, qualitatives et reproductibles.
+- `forecasts/` : prévisions probabilistes datées, règles de résolution et historique des résultats.
 - `dossiers/` : synthèses éditoriales transversales.
 - `schemas/` : contrats de données.
 - `scripts/` et `tests/` : validation et automatisation.
 - `site/` : publication Quarto.
 
 ## Objets fondamentaux
-Source, Study, Dataset, Claim, Hypothesis, Concept, Institution, Mechanism, Debate, Analysis, Method, Dossier et Territory. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
+Source, Study, Dataset, Claim, Hypothesis, Forecast, Concept, Institution, Mechanism, Debate, Analysis, Method, Dossier et Territory. Chaque objet possède une fiche structurée, un identifiant stable et des métadonnées adaptées à sa nature.
 
 ## Identifiants et vocabulaire
 Les identifiants sont sémantiques, stables, uniques et indépendants du chemin. Voir [métadonnées et nomenclature](metadata-and-naming.md). Les domaines sont définis dans `knowledge/TAXONOMY.yml`, les tags transversaux dans `knowledge/TAGS.yml`. Les mots-clés libres ne doivent pas remplacer les vocabulaires contrôlés.
@@ -38,7 +39,6 @@ Toute source suit un pipeline documenté : découverte, déduplication, identifi
 ## Publication Quarto
 Le site est une projection éditoriale, pas une seconde source de vérité. La construction et le déploiement doivent échouer si les contrôles bloquants échouent.
 
-
 ## Intégration avec les autres dépôts
 
 Society Lab conserve la propriété canonique de ses objets de recherche, de ses analyses et de ses conclusions. Les autres projets peuvent apporter des concepts, méthodes ou artefacts, mais aucune proximité thématique ne vaut intégration ni équivalence sémantique. Les graphes et identifiants restent propres à chaque dépôt ; les correspondances utiles sont explicites, qualifiées et révisées.
@@ -47,7 +47,6 @@ Les dépôts publics doivent rester autonomes vis-à-vis des espaces privés : a
 
 ## Automatisation
 Contrôles prévus : validation YAML/JSON et schémas, unicité des identifiants, références internes, types de relations, tests d'analyse et construction Quarto. Ces contrôles ne certifient pas la qualité scientifique.
-
 
 ## Analyse territoriale multiscalaire
 
