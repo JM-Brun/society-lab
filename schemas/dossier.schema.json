@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://jm-brun.github.io/society-lab/schemas/dossier.schema.json",
+  "title":"Society Lab Dossier","type":"object","additionalProperties":false,
+  "required":["id","title","status","domain_ids"],
+  "properties":{
+    "id":{"type":"string","pattern":"^DOSSIER-[A-Z0-9][A-Z0-9-]*$"},
+    "title":{"type":"string","minLength":1},"summary":{"type":"string"},
+    "status":{"enum":["scoping","researching","draft","under_review","published","更新","archived"]},
+    "domain_ids":{"type":"array","items":{"type":"string","pattern":"^DOMAIN-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+    "question":{"type":"string"},"geographic_scope":{"type":"array","items":{"type":"string"}},
+    "temporal_scope":{"type":"string"},"claim_ids":{"type":"array","items":{"type":"string","pattern":"^CLAIM-[A-Z0-9-]+$"},"uniqueItems":true},
+    "study_ids":{"type":"array","items":{"type":"string","pattern":"^STUDY-[A-Z0-9-]+$"},"uniqueItems":true},
+    "hypothesis_ids":{"type":"array","items":{"type":"string","pattern":"^HYPOTHESIS-[A-Z0-9-]+$"},"uniqueItems":true},
+    "concept_ids":{"type":"array","items":{"type":"string","pattern":"^CONCEPT-[A-Z0-9-]+$"},"uniqueItems":true},
+    "last_reviewed":{"type":"string","format":"date"},"tags":{"type":"array","items":{"type":"string","pattern":"^TAG-[A-Z0-9-]+$"},"uniqueItems":true}
+  }
+}
