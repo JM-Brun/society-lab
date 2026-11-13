@@ -50,7 +50,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 ## Synthèses des sujets
 
-Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et révisable, qui présente les constats, les preuves, les controverses, les limites, les conclusions et les travaux restant à mener. Les synthèses ne remplacent pas les dossiers détaillés ni les registres structurés.
+Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et révisable, qui présente les constats, les preuves, les controverses, les limites, les conclusions et les travaux restant à mener. Les synthèses ne remplacent pas les dossiers détaillés ni les registres structurés. La correspondance entre dossiers principaux et synthèses est tenue dans le [registre des synthèses](syntheses/registry.yml) et vérifiée automatiquement par GitHub Actions.
 
 - [Synthèse TIG — France](syntheses/tig-france.md)
 - [Synthèse SMIC — France](syntheses/smic-france.md)
