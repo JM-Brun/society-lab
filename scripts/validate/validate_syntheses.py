@@ -39,7 +39,7 @@ def load_yaml(path: Path) -> dict:
 
 def read_frontmatter(path: Path) -> tuple[dict, str]:
     text = path.read_text(encoding="utf-8")
-    if not text.startswith("---\\n"):
+    if not text.startswith("---\n"):
         raise ValueError(f"{path.relative_to(ROOT)}: missing YAML frontmatter")
     parts = text.split("---", 2)
     if len(parts) != 3:
