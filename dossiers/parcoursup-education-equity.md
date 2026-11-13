@@ -37,8 +37,6 @@ L'OCDE estime que 75 % des 25-34 ans en France dont au moins un parent est dipl�
 
 Source : [OCDE — Regards sur l'éducation 2025, France](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
 
-L'OCDE rapporte également un écart intergénérationnel important : 75 % des 25-34 ans ayant au moins un parent diplômé du supérieur ont eux-mêmes un diplôme du supérieur, contre 32 % lorsque leurs parents n'ont pas achevé le deuxième cycle du secondaire. Cet indicateur ne mesure pas l'effet propre de Parcoursup, mais éclaire la persistance de la transmission sociale des diplômes. [Source OCDE](https://www.oecd.org/content/dam/oecd/fr/publications/reports/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/france_0639c7fb/aca6dceb-fr.pdf).
-
 ## Données ouvertes et fonctionnement de l'examen des candidatures
 
 Le jeu de données ouvert Parcoursup 2025 constitue une première base exploitable : 115 variables, 14 252 formations et 1 015 200 candidats, avec un sous-ensemble de 652 800 néo-bacheliers. Il contient notamment des agrégats par sexe, série du bac, statut de boursier, origine géographique, capacité, propositions, admissions et rang du dernier appelé. La documentation précise toutefois que certains indicateurs cartographiques ne sont pas recalculables à partir du fichier et que l'unité d'observation est la formation, non l'individu. [Jeu de données et documentation](https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/?flg=fr).
