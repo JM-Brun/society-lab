@@ -1,0 +1,56 @@
+version: 1
+language: fr
+scope:
+  primary: "Union européenne (UE-27)"
+  extended: "Europe"
+  comparative: "International"
+  notes: "Chaque recherche précise son périmètre. Europe et Union européenne ne sont pas synonymes."
+domains:
+  - id: DOMAIN-POLITICS
+    slug: politics
+    label: Politique et démocratie
+    description: Systèmes politiques, représentation, élections et vie démocratique.
+  - id: DOMAIN-INSTITUTIONS
+    slug: institutions
+    label: Institutions et gouvernance
+    description: Institutions publiques, administration, droit et gouvernance multiniveau.
+  - id: DOMAIN-ECONOMY
+    slug: economy
+    label: Économie et productivité
+    description: Croissance, emploi, productivité, commerce et organisation économique.
+  - id: DOMAIN-FINANCE
+    slug: finance
+    label: Finances publiques et fiscalité
+    description: Budgets, dette, impôts, dépenses publiques et redistribution.
+  - id: DOMAIN-ENERGY
+    slug: energy
+    label: Énergie et ressources
+    description: Systèmes énergétiques, ressources, réseaux, coûts et dépendances.
+  - id: DOMAIN-ENVIRONMENT
+    slug: environment
+    label: Climat et environnement
+    description: Climat, biodiversité, pollution, eau, sols et ressources.
+  - id: DOMAIN-EDUCATION
+    slug: education
+    label: Éducation et recherche
+    description: École, enseignement supérieur, formation, recherche et innovation.
+  - id: DOMAIN-HEALTH
+    slug: health
+    label: Santé et démographie
+    description: Santé publique, systèmes de soins, démographie et vieillissement.
+  - id: DOMAIN-SECURITY
+    slug: security
+    label: Sécurité, justice et libertés
+    description: Sécurité, justice, libertés publiques et état de droit.
+  - id: DOMAIN-MIGRATION
+    slug: migration
+    label: Immigration et intégration
+    description: Mobilités, migrations, asile, intégration et cohésion sociale.
+  - id: DOMAIN-GEOPOLITICS
+    slug: geopolitics
+    label: Géopolitique et souveraineté
+    description: Relations internationales, défense, commerce et autonomie stratégique.
+  - id: DOMAIN-TECHNOLOGY
+    slug: technology
+    label: Technologie et transformations sociales
+    description: Numérique, IA, automatisation et transformations du travail.
