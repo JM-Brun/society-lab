@@ -2,7 +2,7 @@
 
 - **Identifiant :** `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE`
 - **Domaine :** sécurité, justice et libertés ; institutions ; finances publiques
-- **Périmètre initial :** France, avec comparaisons européennes à construire
+- **Périmètre :** France, comparaisons européennes et ouvertures internationales
 - **Période prioritaire :** 2015-2025
 - **Statut :** recherche en cours
 - **Dernière revue :** 13 novembre 2026
@@ -197,9 +197,52 @@ Les propositions ne doivent pas se limiter à « augmenter le nombre de TIG ». 
 - Distinguer les effets de la certitude, de la célérité et de l'intensité de la sanction.
 
 ### Priorité C — Comparer les modèles
-- Étudier les sanctions communautaires dans des pays européens comparables.
-- Comparer les règles d'éligibilité, la densité des postes, les modalités de contrôle et le suivi.
-- Ne pas transposer des taux de récidive sans harmoniser définitions, cohortes, infractions et sélection des bénéficiaires.
+
+La comparaison doit porter sur les fonctions réellement exercées par les mesures, pas seulement sur leur intitulé. Un TIG autonome français, une obligation de travail non rémunéré intégrée à une probation et une peine de substitution à une courte incarcération ne sont pas nécessairement équivalents.
+
+#### 10.1 Intensité d'utilisation : un écart européen à interpréter avec prudence
+
+Un tableau comparatif publié dans la littérature rapporte, pour 2022, la part des personnes suivies par la probation qui exécutent une mesure de travail communautaire : Pays-Bas 56,2 %, Espagne 60,7 %, Finlande 33,5 %, Norvège 40,7 %, Écosse 27,1 %, France 15,3 %, Angleterre et pays de Galles 9,0 %.
+
+Ces chiffres signalent une différence d'usage, mais ne constituent pas un classement direct des systèmes pénaux. Le dénominateur est la population suivie par les services de probation, et non l'ensemble des condamnations. Les catégories juridiques, la composition des files actives et les pratiques statistiques varient. Ils doivent être utilisés comme signal de comparaison, puis vérifiés dans les données SPACE et les rapports nationaux.
+
+#### 10.2 Pays-Bas : un résultat causal plus favorable au travail communautaire
+
+Une étude néerlandaise publiée en 2023 exploite les données administratives de l'ensemble des condamnations de 2012 et suit la récidive jusqu'en 2018. Son approche par variables instrumentales vise à réduire le biais de sélection entre personnes envoyées en prison et personnes condamnées à un travail communautaire.
+
+Les auteurs concluent que les courtes peines d'emprisonnement augmentent la récidive par rapport aux ordres de travail communautaire dans les cas identifiés par leur stratégie d'estimation. Ils estiment aussi que le coût journalier de la détention est au moins trois fois supérieur à celui du travail communautaire, à partir du jugement.
+
+C'est un résultat important, mais il ne démontre pas que tout TIG français serait supérieur à toute incarcération. L'estimation est propre au contexte néerlandais, à une cohorte et aux cas affectés par l'instrument. Elle ne mesure pas à elle seule la dissuasion générale, et les coûts dépendent des institutions et conventions comptables néerlandaises.
+
+#### 10.3 Royaume-Uni et Écosse : l'exécution concrète compte autant que la peine nominale
+
+L'inspection britannique des services de probation relève un manque de preuves robustes sur l'effet propre du travail non rémunéré sur la récidive. Elle identifie néanmoins plusieurs facteurs d'engagement : démarrage rapide, régularité, utilité perçue du travail, adaptation aux besoins et intérêts, acquisition de compétences professionnelles, encadrement cohérent et règles explicites.
+
+L'évaluation écossaise des Community Payback Orders souligne l'importance de la flexibilité horaire, de l'adéquation entre la personne et le poste, et du sentiment de réparation envers la collectivité. Les mesures constituées uniquement d'une obligation de travail présentaient le taux d'achèvement le plus élevé dans l'évaluation citée. Cela ne prouve pas qu'une mesure isolée réduit mieux la récidive : l'indicateur porte sur l'achèvement, pas sur la prévention des infractions.
+
+#### 10.4 Enseignements transversaux
+
+L'étude comparative de 22 États membres de l'Union européenne relève des obstacles récurrents : pénurie de postes, listes d'attente, capacité limitée des services de probation, méconnaissance des alternatives par les magistrats et responsables politiques, complexité des régimes de sanctions et risque d'extension du filet pénal (*net-widening*).
+
+La comparaison renforce donc une hypothèse déjà visible en France : l'usage dépend d'une infrastructure de mise en œuvre, d'une offre de postes, de la capacité de suivi et de la lisibilité de la mesure pour les magistrats. Elle invite aussi à distinguer deux questions :
+- **Substitution :** le travail communautaire remplace-t-il effectivement une courte peine de prison ?
+- **Extension :** est-il ajouté à des situations qui auraient reçu une réponse moins contraignante ?
+
+Le second cas peut augmenter le nombre de personnes sous contrôle pénal sans réduire l'incarcération. Le taux d'utilisation, à lui seul, ne dit donc pas si la politique est efficace.
+
+#### 10.5 Grille de comparaison à maintenir
+
+Pour chaque pays, documenter séparément :
+- rôle légal de la mesure (peine autonome, peine de substitution, condition de probation, mesure pré- ou post-jugement) ;
+- conditions d'éligibilité et consentement ;
+- heures imposées et délai de démarrage/achèvement ;
+- densité des postes, profils des organismes d'accueil et financement du tutorat ;
+- fréquence du contrôle, gestion des absences et conséquences des manquements ;
+- accompagnement social et professionnel ;
+- taux d'achèvement, incidents, nouvelles condamnations, fréquence et gravité des infractions ;
+- scénario pénal effectivement remplacé et coût complet.
+
+Ne pas comparer les taux de récidive entre pays sans harmoniser les définitions, durées de suivi, cohortes, infractions et méthodes de contrôle des différences de profils.
 
 ### Priorité D — Évaluer les scénarios
 - TIG autonome contre emprisonnement ferme de courte durée ;
@@ -213,6 +256,10 @@ Les propositions ne doivent pas se limiter à « augmenter le nombre de TIG ». 
 2. [Ministère de la Justice — Un prononcé du travail d'intérêt général en baisse depuis 2015 (2024, actualisé en 2025)](https://www.justice.gouv.fr/documentation/etudes-et-statistiques/prononce-du-travail-dinteret-general-baisse-2015).
 3. [Ministère de la Justice — Les tuteurs de personnes majeures condamnées à un TIG (2024)](https://www.justice.gouv.fr/documentation/etudes-et-statistiques/tuteurs-personnes-majeures-condamnees-peine-travail-dinteret-general).
 4. [Sénat — L'exécution à la peine, 20 propositions pour mieux exécuter et donner du sens aux sanctions pénales (1er octobre 2025)](https://www.senat.fr/rap/r25-002/r25-00212.html).
+5. [Penal Reform International, University of Coimbra et Hungarian Helsinki Committee — Comparative study on non-custodial sanctions in 22 EU Member States (2025)](https://www.penalreform.org/resource/non-custodial-sanctions-and-measures-eu-comparative-study/).
+6. [Wermink et al. — The price of retribution: community service versus short-term imprisonment (2023)](https://link.springer.com/article/10.1007/s11292-023-09583-9).
+7. [HM Inspectorate of Probation — Unpaid work: evidence base](https://hmiprobation.justiceinspectorates.gov.uk/our-research/evidence-base-probation-service/specific-types-of-delivery/unpaid-work/).
+8. [Comparative Studies of Sentencing: The First Four Decades](https://www.journals.uchicago.edu/doi/10.1086/739848) — tableau comparatif européen, à lire avec ses dénominateurs et ses sources sous-jacentes.
 
 ## Principe de prudence
 
