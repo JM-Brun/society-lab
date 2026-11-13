@@ -142,7 +142,7 @@ Le rapport France Stratégie sur les exonérations de cotisations (2024) et les 
 
 ### 5.1 Niveau relatif du SMIC
 
-L'OCDE (2025) situe le salaire minimum français parmi les plus élevés des pays étudiés relativement au salaire médian, autour de 60 % selon le périmètre comparatif présenté. Elle observe une compression de la distribution salariale dans le bas de l'échelle. Cette comparaison dépend de la définition du salaire, du champ des salariés et de l'année ; elle ne suffit pas à conclure à un optimum ou à un seuil de danger.
+Le rapport du groupe d'experts SMIC 2025 donne un ratio SMIC/salaire médian brut à temps plein de 62,5 % en 2024, le plus élevé parmi les pays européens comparés dans son graphique ; le ratio au salaire moyen brut est de 50,4 %. L'OCDE (2025) décrit également un nombre élevé de salariés proches du minimum et une compression en bas de la distribution. Ces ratios ne sont pas des seuils scientifiques universels d'optimalité ou de danger, et dépendent du champ, de l'année et de la définition retenue. Cette comparaison dépend de la définition du salaire, du champ des salariés et de l'année ; elle ne suffit pas à conclure à un optimum ou à un seuil de danger.
 
 ### 5.2 Pouvoir d'achat historique
 
