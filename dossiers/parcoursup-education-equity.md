@@ -76,6 +76,14 @@ Ces hypothèses doivent être testées par origine sociale, type de baccalauréa
 - Comment la France se situe-t-elle par rapport aux pays de l'UE et de l'OCDE ?
 - Quels systèmes réduisent mieux la dépendance des parcours à l'origine sociale, et à quel coût ou avec quels arbitrages ?
 
+## État de l'analyse quantitative Parcoursup 2025
+
+Le protocole descriptif et son script reproductible sont désormais intégrés au dépôt :
+- [Protocole d'analyse Parcoursup 2025](../research/analysis/parcoursup-2025-protocol.md)
+- [Script Python](../scripts/analysis/analyze_parcoursup_2025.py)
+
+La validation automatisée et les tests unitaires passent. Cette étape valide l'outillage et les garde-fous, pas les résultats empiriques : le CSV officiel doit encore être téléchargé, contrôlé et exécuté. Aucun tableau de résultats ne doit être interprété avant cette exécution.
+
 ## Programme de recherche
 1. Audit des données Parcoursup 2026 : télécharger les fichiers ouverts, reconstruire les dénominateurs et identifier les croisements disponibles.
 2. Revue des mécanismes d'admission : commissions d'examen des vœux, algorithmes locaux, quotas, transparence et contrôle.
