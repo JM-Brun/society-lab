@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/source.schema.json",
+  "title": "Society Lab Source",
+  "description": "Metadata record for a source used in Society Lab research.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "source_type", "language"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SOURCE-[A-Z0-9][A-Z0-9-]*$"},
+    "title": {"type": "string", "minLength": 1},
+    "original_title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "organization": {"type": "string"},
+    "publication_date": {"type": "string", "format": "date"},
+    "updated_date": {"type": "string", "format": "date"},
+    "source_type": {"enum": ["primary_data", "law_or_policy", "scientific_study", "systematic_review", "meta_analysis", "institutional_report", "think_tank_report", "book", "journalism", "opinion", "other"]},
+    "language": {"type": "string", "minLength": 2},
+    "url": {"type": "string", "format": "uri"},
+    "doi": {"type": "string"},
+    "geographic_scope": {"type": "array", "items": {"type": "string"}},
+    "temporal_scope": {"type": "string"},
+    "domains": {"type": "array", "items": {"type": "string", "pattern": "^DOMAIN-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "methodology": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "funding_and_conflicts": {"type": "string"},
+    "license": {"type": "string"},
+    "access_status": {"enum": ["open", "restricted", "paywalled", "unavailable", "unknown"]},
+    "notes": {"type": "string"}
+  }
+}
