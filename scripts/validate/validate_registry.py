@@ -64,7 +64,7 @@ def main():
     node_type_by_id = {identifier: kind for kind, values in node_ids.items() for identifier in values}
     validate_schema_and_records("schemas/territory.schema.json", territories, "knowledge/TERRITORIES.yml", errors)
     for territory in territories:
-        parent_id = territory.get("parent_id")
+        parent_id = territory.get("geographic_parent_id")
         if parent_id and parent_id not in territory_ids:
             errors.append(f"{territory.get('id')}: unknown parent territory {parent_id}")
     relation_types = unique_ids(relation_defs, "knowledge/RELATION_TYPES.yml", errors)
