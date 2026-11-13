@@ -9,7 +9,7 @@ import yaml
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[2]
-ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY)-[A-Z0-9][A-Z0-9-]*$")
+ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY|FORECAST)-[A-Z0-9][A-Z0-9-]*$")
 
 REGISTRIES = [
     ("sources/registry.yml", "sources", "SOURCE", "schemas/source.schema.json"),
@@ -17,6 +17,7 @@ REGISTRIES = [
     ("research/datasets/registry.yml", "datasets", "DATASET", "schemas/dataset.schema.json"),
     ("claims/registry.yml", "claims", "CLAIM", "schemas/claim.schema.json"),
     ("hypotheses/registry.yml", "hypotheses", "HYPOTHESIS", "schemas/hypothesis.schema.json"),
+    ("forecasts/registry.yml", "forecasts", "FORECAST", "schemas/forecast.schema.json"),
     ("dossiers/registry.yml", "dossiers", "DOSSIER", "schemas/dossier.schema.json"),
 ]
 
