@@ -7,6 +7,9 @@ last_reviewed: "2026-11-14"
 related_dossiers:
   - "dossiers/smic-france-tradeoffs.md"
   - "dossiers/smic-policy-scenarios.md"
+  - "dossiers/smic-economists-literature-review.md"
+  - "dossiers/smic-quantitative-evidence.md"
+  - "dossiers/smic-social-partners-evidence.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -128,6 +131,9 @@ Le SMIC reste national, mais l'exposition varie selon les secteurs, le temps par
 - Albertini, Poirier et Terriau (2025) : modèle structurel et simulations, à interpréter selon les hypothèses.
 - Dossier principal : [dossiers/smic-france-tradeoffs.md](../dossiers/smic-france-tradeoffs.md).
 - Scénarios : [dossiers/smic-policy-scenarios.md](../dossiers/smic-policy-scenarios.md).
+- Travaux des économistes : [dossiers/smic-economists-literature-review.md](../dossiers/smic-economists-literature-review.md).
+- Résultats quantitatifs : [dossiers/smic-quantitative-evidence.md](../dossiers/smic-quantitative-evidence.md).
+- Positions des partenaires sociaux : [dossiers/smic-social-partners-evidence.md](../dossiers/smic-social-partners-evidence.md).
 - Les registres du dépôt doivent rester la référence pour les claims, études, sources et relations ; cette synthèse n'en est pas un substitut.
 
 ## 12. Historique des révisions
