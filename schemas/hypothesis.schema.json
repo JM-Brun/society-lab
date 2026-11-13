@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://jm-brun.github.io/society-lab/schemas/hypothesis.schema.json",
+  "title":"Society Lab Hypothesis","type":"object","additionalProperties":false,
+  "required":["id","statement","domain_ids","status"],
+  "properties":{
+    "id":{"type":"string","pattern":"^HYPOTHESIS-[A-Z0-9][A-Z0-9-]*$"},
+    "statement":{"type":"string","minLength":1},"domain_ids":{"type":"array","items":{"type":"string","pattern":"^DOMAIN-[A-Z0-9-]+$"},"minItems":1,"uniqueItems":true},
+    "mechanism":{"type":"string"},"scope_conditions":{"type":"array","items":{"type":"string"}},
+    "supporting_study_ids":{"type":"array","items":{"type":"string","pattern":"^STUDY-[A-Z0-9-]+$"},"uniqueItems":true},
+    "challenging_study_ids":{"type":"array","items":{"type":"string","pattern":"^STUDY-[A-Z0-9-]+$"},"uniqueItems":true},
+    "alternative_explanations":{"type":"array","items":{"type":"string"}},
+    "status":{"enum":["proposed","under_examination","supported_in_scope","mixed_evidence","challenged","rejected_in_scope","retired"]},
+    "confidence_rationale":{"type":"string"},"reviewed_at":{"type":"string","format":"date"},
+    "tags":{"type":"array","items":{"type":"string","pattern":"^TAG-[A-Z0-9-]+$"},"uniqueItems":true}
+  }
+}
