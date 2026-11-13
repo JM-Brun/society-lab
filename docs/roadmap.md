@@ -50,8 +50,9 @@
 **Sortie :** dossier traçable, documenté et révisable.
 
 ## M5 — Validation inter-domaines
+
+Le dossier éducation / Parcoursup constitue désormais le premier cas d'application du modèle. La validation inter-domaines portera sur les autres secteurs pour vérifier que la taxonomie et les schémas restent génériques.
 - [ ] Finances publiques et dette.
-- [ ] Éducation et mobilité sociale.
 - [ ] Immigration et intégration.
 - [ ] IA et transformations du travail.
 
