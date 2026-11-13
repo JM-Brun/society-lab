@@ -27,9 +27,10 @@
 - [x] Protocole initial d'ingestion des sources.
 - [ ] Protocole de revue de littérature.
 - [ ] Grille d'examen des études.
-- [x] Protocole préparatoire d'audit documentaire qualitatif des rapports CEV 2026.
 - [ ] Protocoles quantitatif, qualitatif et comparatif (généraux et réutilisables entre domaines).
-- [ ] Registre des incertitudes et révisions.
+- [x] Ajout des exigences de steelman, provenance des énoncés, vérification des passages et reproductibilité quantitative à la méthodologie.
+- [ ] Registre structuré des incertitudes et révisions ; modèle de Claim enrichi à valider sur les objets existants.
+- [ ] Tester les exigences de revue et de vérification sur les dossiers TIG et Parcoursup.
 
 **Sortie :** les méthodes réellement appliquées sont décrites et reproductibles autant que possible.
 
@@ -80,8 +81,20 @@ Le dossier éducation / Parcoursup constitue désormais le premier cas d'applica
 - [ ] Extraction assistée des affirmations.
 - [ ] Détection de contradictions potentielles.
 - [ ] Exports de graphe et rapports de maintenance.
+- [ ] Validation d'exemples Forecast et contrôle des règles de résolution.
 
 **Sortie :** tâches répétitives assistées sans déléguer la validation intellectuelle à l'IA.
 
+## M8 — Prévisions et évaluation rétrospective
+- [x] Définition méthodologique d'une prévision probabiliste et du score de Brier.
+- [x] Première version du schéma Forecast.
+- [ ] Constituer un petit ensemble de prévisions datées, résolubles et non redondantes.
+- [ ] Définir les règles de résolution et les cas indéterminés.
+- [ ] Construire un bilan de calibration avec nombre de prévisions, horizons et base de comparaison.
+- [ ] Évaluer les prévisions uniquement après leur échéance et conserver les versions initiales.
+
+**Sortie :** un historique auditable de prévisions et de leurs résolutions, sans objectif artificiel de volume.
+
 ## Definition of Done
+
 Un contenu est prêt lorsque son objectif est clair, ses sources sont identifiables, ses références vérifiables, ses limites explicites, ses relations cohérentes et les contrôles applicables passent. La création d'un fichier ou la génération d'un texte par IA ne suffit pas.
