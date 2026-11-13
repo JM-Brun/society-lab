@@ -24,8 +24,16 @@ tags:
   - {id: TAG-ISSUE-SOVEREIGNTY, group: lens, label: Souveraineté}
   - {id: TAG-ISSUE-EXTERNALITIES, group: lens, label: Externalités}
   - {id: TAG-ISSUE-TRADEOFFS, group: lens, label: Arbitrages}
+  - {id: TAG-LEVEL-GLOBAL, group: scale, label: Mondial}
+  - {id: TAG-LEVEL-INTERNATIONAL, group: scale, label: International / transnational}
+  - {id: TAG-LEVEL-EUROPE, group: scale, label: Europe}
   - {id: TAG-LEVEL-EU, group: scale, label: Union européenne}
   - {id: TAG-LEVEL-NATIONAL, group: scale, label: National}
+  - {id: TAG-LEVEL-REGIONAL, group: scale, label: Régional}
+  - {id: TAG-LEVEL-DEPARTMENTAL, group: scale, label: Départemental}
+  - {id: TAG-LEVEL-METROPOLITAN, group: scale, label: Métropolitain}
+  - {id: TAG-LEVEL-MUNICIPAL, group: scale, label: Communal}
+  - {id: TAG-LEVEL-NEIGHBOURHOOD, group: scale, label: Quartier / infra-urbain}
   - {id: TAG-LEVEL-LOCAL, group: scale, label: Local}
   - {id: TAG-TIME-SHORT-TERM, group: horizon, label: Court terme}
   - {id: TAG-TIME-LONG-TERM, group: horizon, label: Long terme}
