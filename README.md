@@ -46,7 +46,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Économie, emploi et productivité](knowledge/domains/economy.md) — page thématique sur les salaires, le marché du travail, les entreprises et la productivité.
 - [Travaux d'intérêt général : efficacité pénale, coûts et freins au déploiement en France](dossiers/tig-peines-alternatives-incarceration.md) — dossier de recherche sur le recours au TIG en France, les comparaisons européennes, la récidive, la dissuasion et les conditions d'exécution. Voir aussi la [synthèse TIG](syntheses/tig-france.md).
 - [Augmenter le SMIC en France : pouvoir d'achat, emploi, salaires et finances publiques](dossiers/smic-france-tradeoffs.md) — dossier contradictoire sur le salaire minimum, son indexation, ses effets économiques et ses interactions socio-fiscales ; [revue des travaux économiques](dossiers/smic-economists-literature-review.md), [positions des partenaires sociaux](dossiers/smic-social-partners-evidence.md) et [synthèse SMIC](syntheses/smic-france.md).
-- [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif.
+- [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif ; voir aussi la [synthèse Parcoursup](syntheses/parcoursup-education.md).
 
 ## Synthèses des sujets
 
@@ -54,6 +54,7 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 
 - [Synthèse TIG — France](syntheses/tig-france.md)
 - [Synthèse SMIC — France](syntheses/smic-france.md)
+- [Synthèse Parcoursup — égalité des chances](syntheses/parcoursup-education.md)
 - [Modèle réutilisable de synthèse](templates/subject-synthesis.md)
 
 ## Documents fondateurs
