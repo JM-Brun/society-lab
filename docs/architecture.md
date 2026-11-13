@@ -38,5 +38,11 @@ Toute source suit un pipeline documenté : découverte, déduplication, identifi
 ## Publication Quarto
 Le site est une projection éditoriale, pas une seconde source de vérité. La construction et le déploiement doivent échouer si les contrôles bloquants échouent.
 
+## Intégration avec les autres dépôts
+
+Society Lab conserve la propriété canonique de ses objets de recherche, de ses analyses et de ses conclusions. Les autres projets peuvent apporter des concepts, méthodes ou artefacts, mais aucune proximité thématique ne vaut intégration ni équivalence sémantique. Les graphes et identifiants restent propres à chaque dépôt ; les correspondances utiles sont explicites, qualifiées et révisées.
+
+Les dépôts publics doivent rester autonomes vis-à-vis des espaces privés : aucune dépendance de build, de CI ou de lecture ne doit nécessiter un accès privé. Aucun transfert automatique n'est présumé. Toute publication d'un dossier dans un portfolio exige une revue distincte des preuves, de la reproductibilité, des droits et des limites. Voir le [contrat d'intégration inter-dépôts](cross-repository-contract.md).
+
 ## Automatisation
 Contrôles prévus : validation YAML/JSON et schémas, unicité des identifiants, références internes, types de relations, tests d'analyse et construction Quarto. Ces contrôles ne certifient pas la qualité scientifique.
