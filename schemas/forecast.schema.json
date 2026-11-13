@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/forecast.schema.json",
+  "title": "Society Lab Forecast",
+  "description": "A dated, probabilistic and resolvable prediction. A forecast is not an explanatory hypothesis or a conditional scenario.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "question", "probability", "issued_at", "deadline", "resolution_rule", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^FORECAST-[A-Z0-9][A-Z0-9-]*$"},
+    "question": {"type": "string", "minLength": 15},
+    "event_definition": {"type": "string", "minLength": 10},
+    "scope": {"type": "object", "additionalProperties": false, "properties": {
+      "geography": {"type": "array", "items": {"type": "string"}},
+      "population": {"type": "string"},
+      "period": {"type": "string"},
+      "conditions": {"type": "string"}
+    }},
+    "probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "issued_at": {"type": "string", "format": "date"},
+    "deadline": {"type": "string", "format": "date"},
+    "resolution_rule": {"type": "string", "minLength": 20},
+    "resolution_source": {"type": "string", "format": "uri"},
+    "baseline_or_reference_class": {"type": "string"},
+    "rationale": {"type": "string"},
+    "key_assumptions": {"type": "array", "items": {"type": "string"}},
+    "indicators": {"type": "array", "items": {"type": "string"}},
+    "claim_ids": {"type": "array", "items": {"type": "string", "pattern": "^CLAIM-[A-Z0-9][A-Z0-9-]*$"}, "uniqueItems": true},
+    "domain_ids": {"type": "array", "items": {"type": "string", "pattern": "^DOMAIN-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "status": {"enum": ["open", "resolved_true", "resolved_false", "indeterminate", "withdrawn_superseded"]},
+    "resolved_at": {"type": "string", "format": "date"},
+    "observed_outcome": {"type": "string"},
+    "resolution_note": {"type": "string"},
+    "revision_history": {"type": "array", "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["date", "probability", "reason"],
+      "properties": {
+        "date": {"type": "string", "format": "date"},
+        "probability": {"type": "number", "minimum": 0, "maximum": 1},
+        "reason": {"type": "string"},
+        "evidence_note": {"type": "string"}
+      }
+    }},
+    "created_by": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
