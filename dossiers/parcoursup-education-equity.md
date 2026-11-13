@@ -86,8 +86,9 @@ Ces hypothèses doivent être testées par origine sociale, type de baccalauréa
 Le protocole descriptif et son script reproductible sont désormais intégrés au dépôt :
 - [Protocole d'analyse Parcoursup 2025](../research/analysis/parcoursup-2025-protocol.md)
 - [Script Python](../scripts/analysis/analyze_parcoursup_2025.py)
+- [Protocole d'audit documentaire des rapports CEV 2026](../research/analysis/parcoursup-cev-2026-protocol.md)
 
-Des tests unitaires couvrant les dénominateurs nuls, les valeurs manquantes, les quantiles et le chargement CSV ont été ajoutés. Le statut CI du dernier commit n'est pas encore remonté dans GitHub (aucun statut publié au moment de la vérification). Le contrôle du code a aussi révélé et corrigé un décalage important : l'API officielle expose les noms de champs en snake_case minuscules, alors que la première version du script attendait des variantes en majuscules. Le script et le protocole sont maintenant alignés sur les noms canoniques. Cette correction reste à confirmer par l'exécution CI et par un essai sur le CSV complet. Le fichier source n'a pas encore été téléchargé ni analysé ; aucun résultat empirique n'est donc présenté.
+Les tests unitaires couvrent les dénominateurs nuls, les valeurs manquantes, les quantiles, l'agrégation au niveau formation et le rejet d'une session incorrecte. La CI GitHub a d'abord révélé une incohérence entre les noms de colonnes des tests (anciens noms avec majuscules) et ceux du script/API (snake_case minuscules). Les tests ont été corrigés pour utiliser les noms canoniques. Sur le commit `a2de052`, les validations des registres et identifiants, les 11 tests unitaires et les schémas JSON passent. Le CSV complet n'a toutefois pas encore été téléchargé ni exécuté dans l'environnement de recherche ; aucun résultat empirique n'est donc présenté.
 
 ## Pistes d'amélioration du dispositif de recherche
 
