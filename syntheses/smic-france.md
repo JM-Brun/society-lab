@@ -6,6 +6,7 @@ status: "provisional"
 last_reviewed: "2026-11-14"
 related_dossiers:
   - "dossiers/smic-france-tradeoffs.md"
+  - "dossiers/smic-historical-episodes.md"
   - "dossiers/smic-policy-scenarios.md"
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
@@ -130,6 +131,7 @@ Le SMIC reste national, mais l'exposition varie selon les secteurs, le temps par
 - Cottet (2024) : étude empirique sur des baisses de cotisations, à ne pas assimiler à une hausse du SMIC.
 - Albertini, Poirier et Terriau (2025) : modèle structurel et simulations, à interpréter selon les hypothèses.
 - Dossier principal : [dossiers/smic-france-tradeoffs.md](../dossiers/smic-france-tradeoffs.md).
+- Historique des revalorisations : [dossiers/smic-historical-episodes.md](../dossiers/smic-historical-episodes.md).
 - Scénarios : [dossiers/smic-policy-scenarios.md](../dossiers/smic-policy-scenarios.md).
 - Travaux des économistes : [dossiers/smic-economists-literature-review.md](../dossiers/smic-economists-literature-review.md).
 - Résultats quantitatifs : [dossiers/smic-quantitative-evidence.md](../dossiers/smic-quantitative-evidence.md).
@@ -141,7 +143,7 @@ Le SMIC reste national, mais l'exposition varie selon les secteurs, le temps par
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Première synthèse transversale ; statut provisoire dans l'attente des validations des modules et des preuves. |
-
+| 2026-11-14 | Ajout du dossier historique aux sources suivies par la synthèse et clarification du lien de traçabilité. |
 
 ## 13. Historique des revalorisations et épisodes défavorables ou mixtes
 
@@ -157,9 +159,3 @@ Les premiers résultats ne permettent pas de qualifier globalement les hausses d
 **Limite majeure :** les études historiques sont hétérogènes et les résultats de 1981 ou des années 1990 ne sont pas transposables mécaniquement à la situation actuelle. La chronologie exhaustive et les séries en euros constants restent à construire avant toute conclusion comparative ferme.
 
 **Fiche pédagogique :** [Le SMIC en France : quand une hausse aide-t-elle, et quand peut-elle coûter ?](../docs/smic-historical-revaluations-brief.md).
-
-## 14. Historique des révisions
-
-| Date | Modification |
-|---|---|
-| 2026-11-14 | Ajout du module historique des revalorisations, des épisodes négatifs et mixtes, et de la fiche pédagogique. |
