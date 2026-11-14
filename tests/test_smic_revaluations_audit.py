@@ -1,7 +1,7 @@
 import csv
 import sys
-from decimal import Decimal
 import unittest
+from decimal import Decimal
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,9 +23,9 @@ class SmicHistoricalAuditTests(unittest.TestCase):
         with path.open(encoding="utf-8", newline="") as stream:
             result = audit_rows(list(csv.DictReader(stream)))
         self.assertEqual(len(result["observed_vs_legal_plus_boost"]), 9)
-        self.assertEqual(max(abs(x["gap_pp"]) for x in result["observed_vs_legal_plus_boost"]), 1.1)
+        self.assertEqual(max(abs(x["gap_pp"]) for x in result["observed_vs_legal_plus_boost"]), Decimal("1.1"))
         self.assertEqual(len(result["legal_vs_price_plus_half_tsh"]), 9)
-        self.assertEqual(max(abs(x["gap_pp"]) for x in result["legal_vs_price_plus_half_tsh"]), 0.4)
+        self.assertEqual(max(abs(x["gap_pp"]) for x in result["legal_vs_price_plus_half_tsh"]), Decimal("0.4"))
         self.assertEqual(TOLERANCE_PP, Decimal("0.15"))
 
     def test_rejects_duplicate_periods(self):
