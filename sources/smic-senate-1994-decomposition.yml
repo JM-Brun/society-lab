@@ -1,0 +1,18 @@
+id: SOURCE-SENAT-1994-SMIC-DECOMPOSITION
+title: "Emploi et chômage des non-qualifiés en France — tableau historique de décomposition du SMIC"
+organization: "Sénat, Délégation pour la planification"
+source_type: "parliamentary_report"
+language: "fr"
+url: "https://www.senat.fr/rap/1993-1994/i1993_1994_0504.pdf"
+publication_date: "1994-06-15"
+geographic_scope: ["France"]
+temporal_scope: "Décomposition des glissements annuels 1970–1993"
+domains: ["DOMAIN-ECONOMY"]
+tags: ["TAG-EVIDENCE-PRIMARY", "TAG-METHOD-QUANTITATIVE", "TAG-LEVEL-NATIONAL"]
+methodology: "Tableau 3 du rapport : taux de croissance annuel du SMIC, évolution des prix, moitié du TSH réel, obligation légale et coup de pouce. Transcription tabulaire dans data/smic-revaluations-1970-1993.csv."
+limitations:
+  - "Mesure un glissement annuel à une date donnée, pas la moyenne annuelle."
+  - "Valeurs en francs courants ; ne mesure pas le pouvoir d'achat."
+  - "Les définitions et fenêtres d'indices sont historiques et ne sont pas directement comparables à la formule contemporaine."
+  - "Des écarts existent avec les chiffres du rapport du groupe d'experts 2020 pour certains épisodes, notamment 1973 et 1981 ; réconciliation nécessaire."
+access_status: "open"
