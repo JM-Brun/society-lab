@@ -14,3 +14,7 @@ relations:
   - {id: REL-CONTEXTUALIZES, label: contextualise, inverse: REL-CONTEXTUALIZED-BY, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-INTERDEPENDENT-WITH, label: est interdépendant avec, inverse: REL-INTERDEPENDENT-WITH, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-ALTERNATIVE-TO, label: alternative à, inverse: REL-ALTERNATIVE-TO, from: [HYPOTHESIS], to: [HYPOTHESIS]}
+  - {id: REL-CHILD-OF, label: est un sous-dossier de, inverse: REL-PARENT-OF, from: [DOSSIER], to: [DOSSIER]}
+  - {id: REL-PARENT-OF, label: contient comme sous-dossier, inverse: REL-CHILD-OF, from: [DOSSIER], to: [DOSSIER]}
+  - {id: REL-SUMMARIZED-BY, label: est synthétisé par, inverse: REL-SUMMARIZES, from: [DOSSIER], to: [SYNTHESIS]}
+  - {id: REL-SUMMARIZES, label: synthétise, inverse: REL-SUMMARIZED-BY, from: [SYNTHESIS], to: [DOSSIER]}
