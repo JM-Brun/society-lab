@@ -95,6 +95,22 @@ Pour chaque période :
 Un second calcul doit être produit en moyenne annuelle afin de ne pas confondre glissements à date donnée et évolution moyenne du salaire minimum sur l'année.
 
 
+
+## 4 bis. Vérification directe du tableau source
+
+La lecture visuelle du PDF original confirme les définitions en note de bas de page (p. 158) :
+
+- « Prix » : évolution de mai à mai, hors tabac à partir de 1993 ;
+- « 1/2 TSH » : moitié de l'évolution du TSH en francs constants d'avril à avril ;
+- « Obligation légale » : hausse résultant de l'indexation sur les prix et sur la moitié du TSH ;
+- « Coup de pouce » : ensemble des hausses du SMIC au-delà de l'obligation légale.
+
+Le tableau 3 (p. 158) porte le titre « glissement annuel du SMIC en juillet de 1970 à 1992 », mais présente aussi une ligne 1993 ; l'épisode 1981 est daté du 1er juin, et non de juillet. Il faut donc conserver les dates d'effet réelles et signaler l'écart entre le titre et les lignes effectivement publiées.
+
+**Divergence interne à signaler :** pour le taux horaire au 1er juillet 1978, le tableau 2 (p. 157, série des taux successifs) indique 10,65 francs, tandis que le tableau 3 (p. 158) semble indiquer 10,85 francs. La colonne `smic_hourly_francs` de la transcription suit désormais le tableau 3, car c'est le tableau visé par ce jeu de données ; la valeur du tableau 2 est conservée dans la note de ligne. Ce point reste à réconcilier et ne doit pas être effacé par une correction silencieuse.
+
+La note de source permet aussi de comprendre pourquoi une simple addition des colonnes arrondies peut produire des écarts : les composantes reposent sur des fenêtres distinctes (mai–mai et avril–avril) et sont publiées au dixième de point. Les écarts de l'audit sont donc des signaux de méthode/transcription à examiner, pas une preuve automatique d'erreur arithmétique.
+
 ## 5 bis. Audit arithmétique initial de la transcription
 
 Un contrôle reproductible a été ajouté dans `scripts/analysis/audit_smic_revaluations.py`. Sur les 24 lignes du CSV (1970–1971 à 1993–1994), il signale, avec un seuil de 0,15 point de pourcentage :
