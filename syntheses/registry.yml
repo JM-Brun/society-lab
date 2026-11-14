@@ -17,3 +17,7 @@ dossiers:
     dossier_path: "dossiers/smic-historical-episodes.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-INDEXATION-DECOMPOSITION"
+    dossier_path: "dossiers/smic-indexation-decomposition.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"

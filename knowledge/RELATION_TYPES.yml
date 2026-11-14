@@ -9,8 +9,14 @@ relations:
   - {id: REL-ABOUT, label: porte sur, inverse: REL-TOPIC-OF, from: [SOURCE, STUDY, DATASET, CLAIM, DOSSIER], to: [CONCEPT, DOMAIN, ORG]}
   - {id: REL-EXPLAINS, label: explique, inverse: REL-EXPLAINED-BY, from: [CONCEPT], to: [MECHANISM]}
   - {id: REL-DEPENDS-ON, label: dépend de, inverse: REL-REQUIRED-BY, from: [CLAIM, ANALYSIS], to: [CLAIM, HYPOTHESIS, DATASET]}
-  - {id: REL-INCLUDES, label: inclut, inverse: REL-PART-OF, from: [DOSSIER, DOMAIN], to: [CLAIM, STUDY, HYPOTHESIS, CONCEPT]}
+  - {id: REL-INCLUDES, label: inclut, inverse: REL-PART-OF, from: [DOSSIER, DOMAIN], to: [CLAIM, STUDY, HYPOTHESIS, CONCEPT, DOSSIER]}
   - {id: REL-GEOGRAPHICALLY-WITHIN, label: est géographiquement situé dans, inverse: REL-GEOGRAPHICALLY-CONTAINS, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-CONTEXTUALIZES, label: contextualise, inverse: REL-CONTEXTUALIZED-BY, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-INTERDEPENDENT-WITH, label: est interdépendant avec, inverse: REL-INTERDEPENDENT-WITH, from: [TERRITORY], to: [TERRITORY]}
   - {id: REL-ALTERNATIVE-TO, label: alternative à, inverse: REL-ALTERNATIVE-TO, from: [HYPOTHESIS], to: [HYPOTHESIS]}
+  - {id: REL-CHILD-OF, label: est un sous-dossier de, inverse: REL-PARENT-OF, from: [DOSSIER], to: [DOSSIER]}
+  - {id: REL-PARENT-OF, label: contient comme sous-dossier, inverse: REL-CHILD-OF, from: [DOSSIER], to: [DOSSIER]}
+  - {id: REL-SUMMARIZED-BY, label: est synthétisé par, inverse: REL-SUMMARIZES, from: [DOSSIER], to: [SYNTHESIS]}
+  - {id: REL-SUMMARIZES, label: synthétise, inverse: REL-SUMMARIZED-BY, from: [SYNTHESIS], to: [DOSSIER]}
+  - {id: REL-TRANSCRIBES, label: transcrit, inverse: REL-TRANSCRIBED-FROM, from: [SOURCE], to: [DATASET]}
+  - {id: REL-TRANSCRIBED-FROM, label: est transcrit depuis, inverse: REL-TRANSCRIBES, from: [DATASET], to: [SOURCE]}
