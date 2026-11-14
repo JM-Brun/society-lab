@@ -94,6 +94,16 @@ Pour chaque période :
 
 Un second calcul doit être produit en moyenne annuelle afin de ne pas confondre glissements à date donnée et évolution moyenne du salaire minimum sur l'année.
 
+
+## 5 bis. Audit arithmétique initial de la transcription
+
+Un contrôle reproductible a été ajouté dans `scripts/analysis/audit_smic_revaluations.py`. Sur les 24 lignes du CSV (1970–1971 à 1993–1994), il signale, avec un seuil de 0,15 point de pourcentage :
+
+- 9 épisodes où la hausse observée ne correspond pas à la somme arithmétique « obligation légale + coup de pouce déclaré » ; l'écart absolu maximal atteint 1,1 point ;
+- 9 épisodes où l'obligation légale ne correspond pas à la somme « composante prix + moitié TSH » ; l'écart absolu maximal atteint 0,4 point.
+
+Ces écarts sont des signaux de réconciliation, pas des preuves automatiques d'erreur : les composantes peuvent mobiliser des fenêtres, bases ou conventions d'arrondi différentes. Le contrôle ne calcule volontairement ni somme cumulée ni taux composé des colonnes de composantes. Les tests vérifient la reproductibilité de ces constats. Le niveau de confiance « high » du CSV doit être compris comme une confiance de transcription des valeurs visibles, et non comme une validation indépendante de leur interprétation ou de leur additivité.
+
 ## 6. Sources à mobiliser
 
 - **Sénat, rapport 1993–1994**, tableau 3 : source de la transcription 1970–1993, référencée dans le registre des sources.
