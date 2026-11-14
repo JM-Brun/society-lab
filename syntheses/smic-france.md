@@ -163,3 +163,12 @@ Les premiers résultats ne permettent pas de qualifier globalement les hausses d
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Ajout du module historique des revalorisations, des épisodes négatifs et mixtes, et de la fiche pédagogique. |
+
+
+## Actualisation historique et quantitative (14 novembre 2026)
+
+Le dossier historique est désormais complété par une actualisation quantitative des séries INSEE et DARES couvrant 2014–2026 : [dossier des épisodes historiques](../dossiers/smic-historical-episodes.md) et [actualisation quantitative 2014–2026](../dossiers/smic-quantitative-update-2026.md).
+
+Les séries officielles indiquent que le pouvoir d'achat annuel moyen du SMIC horaire brut a évolué de -0,1 % en 2021, 0,0 % en 2022, +0,5 % en 2023, +0,2 % en 2024 et +0,7 % en 2025. La hausse nominale répétée de 2022 a donc essentiellement compensé l'inflation sur l'année moyenne. Au 1er janvier 2026, 2,1 millions de salariés du privé non agricole (11,8 %) ont bénéficié directement de la revalorisation. Le taux horaire brut est ensuite passé à 12,31 € au 1er juin 2026.
+
+Ces constats documentent le pouvoir d'achat du plancher et l'exposition directe ; ils ne démontrent pas un effet causal sur l'emploi, les heures, les prix ou les marges. La synthèse générale reste provisoire tant que les séries longues, les trajectoires individuelles et les évaluations causales ne sont pas rapprochées.
