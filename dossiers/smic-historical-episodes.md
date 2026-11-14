@@ -255,3 +255,21 @@ Ne pas classer une hausse comme bonne ou mauvaise sur son seul taux nominal. Év
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Création de la synthèse historique ; premiers épisodes négatifs et mixtes documentés ; protocole de quantification défini. |
+
+
+## 11. Actualisation quantitative 2014–2026
+
+Une actualisation des séries officielles est désormais disponible dans le document complémentaire [Actualisation quantitative du SMIC — séries officielles et lecture 2014–2026](smic-quantitative-update-2026.md). Elle apporte :
+
+- la série annuelle 2014–2025 du SMIC horaire brut moyen et de l'évolution de son pouvoir d'achat brut/net ;
+- la chronologie des taux et dates d'effet de 2021 à juin 2026 ;
+- le nombre et la part des salariés directement concernés au 1er janvier 2026 (2,1 millions, 11,8 % du privé non agricole) ;
+- les limites d'interprétation des séries et les travaux quantitatifs prioritaires.
+
+**Correction importante :** le taux horaire brut est passé à 12,31 € au 1er juin 2026, après 12,02 € au 1er janvier 2026. Le dossier initial mentionnait l'actualisation de janvier 2026 mais ne couvrait pas cette revalorisation de juin.
+
+**Constat renforcé :** le pouvoir d'achat annuel moyen du SMIC brut a évolué de -0,1 % en 2021, 0,0 % en 2022, +0,5 % en 2023, +0,2 % en 2024 et +0,7 % en 2025. Cette séquence montre que les revalorisations ont d'abord amorti l'inflation, puis permis une progression réelle modérée. Elle ne mesure pas les effets sur les heures, l'emploi ou le revenu disponible des ménages.
+
+| Date | Modification |
+|---|---|
+| 2026-11-14 | Ajout de l'actualisation quantitative 2014–2026 à partir des séries INSEE et DARES ; correction du taux en vigueur depuis juin 2026. |
