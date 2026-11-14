@@ -31,7 +31,7 @@ La transcription du CSV reprend les valeurs publiées, sans recalcul ni correcti
 | 1986–1987 | 3,4 % | 2,3 % | 1,0 % | 3,4 % | 0,0 % |
 | 1992–1993 | 2,3 % | 1,8 % | 0,5 % | 2,3 % | 0,0 % |
 
-Les colonnes sont les valeurs de la source ; l'écart éventuel entre la somme des composantes et le total publié provient des arrondis et/ou de la méthode de calcul de l'époque. Ne pas imposer artificiellement une égalité exacte.
+Les colonnes sont les valeurs de la source. Un contrôle arithmétique simple montre que les composantes prix + demi-TSH + coup de pouce ne reproduisent pas toujours le taux total : l'écart atteint 1,2 point en 1973–1974 et 1,3 point en 1974–1975. Il ne faut donc pas attribuer ces écarts aux seuls arrondis. Ils peuvent tenir aux conventions de calcul, aux bases successives et aux périodes de référence ; leur origine doit être réconciliée dans les sources méthodologiques avant tout recalcul. Le CSV conserve les chiffres publiés sans ajustement.
 
 ## 3. Un point de vigilance : les chiffres de 1973 et 1981
 
