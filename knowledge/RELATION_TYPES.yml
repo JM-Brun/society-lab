@@ -20,5 +20,3 @@ relations:
   - {id: REL-SUMMARIZES, label: synthétise, inverse: REL-SUMMARIZED-BY, from: [SYNTHESIS], to: [DOSSIER]}
   - {id: REL-TRANSCRIBES, label: transcrit, inverse: REL-TRANSCRIBED-FROM, from: [SOURCE], to: [DATASET]}
   - {id: REL-TRANSCRIBED-FROM, label: est transcrit depuis, inverse: REL-TRANSCRIBES, from: [DATASET], to: [SOURCE]}
-  - {id: REL-TRANSCRIBES, label: transcrit, inverse: REL-TRANSCRIBED-FROM, from: [SOURCE], to: [DATASET]}
-  - {id: REL-TRANSCRIBED-FROM, label: est transcrit depuis, inverse: REL-TRANSCRIBES, from: [DATASET], to: [SOURCE]}
