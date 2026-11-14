@@ -1,5 +1,6 @@
 import csv
 import sys
+from decimal import Decimal
 import unittest
 from pathlib import Path
 
@@ -25,7 +26,7 @@ class SmicHistoricalAuditTests(unittest.TestCase):
         self.assertEqual(max(abs(x["gap_pp"]) for x in result["observed_vs_legal_plus_boost"]), 1.1)
         self.assertEqual(len(result["legal_vs_price_plus_half_tsh"]), 9)
         self.assertEqual(max(abs(x["gap_pp"]) for x in result["legal_vs_price_plus_half_tsh"]), 0.4)
-        self.assertEqual(TOLERANCE_PP, 0.15)
+        self.assertEqual(TOLERANCE_PP, Decimal("0.15"))
 
     def test_rejects_duplicate_periods(self):
         row = {
