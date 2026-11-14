@@ -176,3 +176,8 @@ Ces constats documentent le pouvoir d'achat du plancher et l'exposition directe 
 ## Décomposition des règles historiques
 
 Un dossier méthodologique distingue maintenant les contributions automatiques, les coups de pouce discrétionnaires, les transitions GMR et les changements de calendrier : [Décomposer les revalorisations du SMIC (1970–2026)](../dossiers/smic-indexation-and-boosts-1970-2026.md). Ce travail est nécessaire pour ne pas assimiler toute hausse nominale à une décision politique discrétionnaire. Le rapport historique de 2020 documente un rattrapage très marqué dans les années 1970, puis une modération à partir du tournant de 1983 ; les 35 heures/GMR et les revalorisations automatiques de 2021–2026 constituent des épisodes spécifiques qui ne doivent pas être confondus avec des coups de pouce classiques.
+
+
+### Données historiques tabulaires 1970–1993
+
+Une première reconstitution exploitable est disponible à partir du tableau 3 du rapport du Sénat de 1994 : [dossier et méthode](../dossiers/smic-revaluations-data-1970-1993.md), [données CSV](../data/smic-revaluations-1970-1993.csv). Les divergences avec les chiffres du rapport 2020 pour certains épisodes sont explicitement conservées comme point de réconciliation, et non masquées.
