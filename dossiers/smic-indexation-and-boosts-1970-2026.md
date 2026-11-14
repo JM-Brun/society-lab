@@ -161,3 +161,10 @@ Contrôles :
 Le rapport du groupe d'experts est une source institutionnelle de synthèse ; son récit historique et ses recommandations doivent être distingués des résultats de chaque étude citée. Les contributions des partenaires sociaux annexées au rapport sont des positions argumentées, pas des évaluations indépendantes. Les valeurs issues d'un graphique ou de séries historiques doivent être reproduites à partir des données sous-jacentes avant d'être utilisées dans un modèle quantitatif.
 
 **Conclusion :** l'histoire du SMIC n'est pas une succession de hausses homogènes. Elle alterne une phase de rattrapage volontaire, une phase de modération, une transition institutionnelle liée aux 35 heures, puis une période de revalorisations automatiques sensibles à l'inflation. Toute évaluation des effets doit commencer par classer correctement le mécanisme de chaque événement.
+
+
+## 9. Première série historique tabulaire (1970–1993)
+
+Une transcription du tableau 3 du rapport d'information du Sénat n° 504 (1993–1994) est maintenant disponible : [dossier méthodologique](smic-revaluations-data-1970-1993.md) et [CSV](../data/smic-revaluations-1970-1993.csv). La série distingue hausse observée, prix, moitié du TSH réel, obligation légale et coup de pouce.
+
+**Réserve importante :** les chiffres du Sénat pour 1973 et 1981 (respectivement 9,7 % et 5,2 % de coup de pouce selon sa convention) diffèrent de ceux cités par le rapport du groupe d'experts 2020 (10,1 % et 6,9 %). Les séries sont conservées séparément jusqu'à réconciliation des dates, fenêtres d'indices et définitions. Le CSV ne mesure ni les moyennes annuelles ni les effets causaux sur l'emploi.
