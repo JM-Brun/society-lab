@@ -9,7 +9,7 @@ import yaml
 from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[2]
-ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY|FORECAST)-[A-Z0-9][A-Z0-9-]*$")
+ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|SYNTHESIS|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY|FORECAST)-[A-Z0-9][A-Z0-9-]*$")
 
 REGISTRIES = [
     ("sources/registry.yml", "sources", "SOURCE", "schemas/source.schema.json"),
@@ -106,6 +106,16 @@ def main():
                 for target in record.get(field, []) or []:
                     if target not in node_ids.get(target_type, set()):
                         errors.append(f"{record.get('id')}: unresolved {field} reference {target}")
+
+    # Synthesis documents are first-class graph nodes, referenced by the synthesis registry.
+    synthesis_entries = load_yaml("syntheses/registry.yml").get("dossiers", [])
+    synthesis_ids = {entry.get("synthesis_id") for entry in synthesis_entries if isinstance(entry, dict)}
+    synthesis_ids.discard(None)
+    for identifier in synthesis_ids:
+        if not isinstance(identifier, str) or not ID_RE.fullmatch(identifier) or not identifier.startswith("SYNTHESIS-"):
+            errors.append(f"Invalid synthesis identifier: {identifier!r}")
+    node_ids["SYNTHESIS"] = synthesis_ids
+    node_type_by_id.update({identifier: "SYNTHESIS" for identifier in synthesis_ids})
 
     # Check graph edge identifiers, endpoint existence, relation type and endpoint types.
     graph = load_yaml("knowledge/graph.yml")
