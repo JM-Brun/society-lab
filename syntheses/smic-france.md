@@ -6,6 +6,7 @@ status: "provisional"
 last_reviewed: "2026-11-14"
 related_dossiers:
   - "dossiers/smic-france-tradeoffs.md"
+  - "dossiers/smic-historical-episodes.md"
   - "dossiers/smic-policy-scenarios.md"
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
