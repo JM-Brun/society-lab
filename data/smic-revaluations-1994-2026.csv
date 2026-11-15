@@ -34,7 +34,7 @@ effective_date,smic_hourly_eur,change_pct,period_type,event_classification,mecha
 2021-10-01,10.48,2.2,infra_annual,automatic_inflation_trigger,Inflation threshold reached,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
 2022-01-01,10.57,0.9,annual_glide,ordinary_annual,Annual January revaluation,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
 2022-05-01,10.85,2.65,infra_annual,automatic_inflation_trigger,Inflation threshold reached,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
-2022-08-01,11.07,2.01,infra_annual,automatic_inflation_trigger,Inflation threshold reached,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
+2022-08-01,11.07,2.03,infra_annual,automatic_inflation_trigger,Inflation threshold reached,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
 2023-01-01,11.27,1.81,annual_glide,ordinary_annual,Annual January revaluation,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
 2023-05-01,11.52,2.22,infra_annual,automatic_inflation_trigger,Inflation threshold reached,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
 2024-01-01,11.65,1.13,annual_glide,ordinary_annual,Annual January revaluation,SOURCE-INSEE-SMIC-ANNUAL-TABLE,https://www.insee.fr/fr/statistiques/1375188,high,
