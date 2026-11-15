@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
+import json
 import math
 import time
 import urllib.error
@@ -158,8 +160,13 @@ def main() -> int:
         print(f"Downloading {name}: {url}", flush=True)
         raw[name] = fetch_bytes(url)
         print(f"Downloaded {name}: {len(raw[name])} bytes", flush=True)
+    raw_filenames = {
+        "smic": "insee-smic-1970-2025.xml",
+        "cpi_1980": "insee-cpi-base-1980-1970-1992.xml",
+        "cpi_2015": "insee-cpi-base-2015-1990-2025.xml",
+    }
     for name, payload in raw.items():
-        (args.output_dir / f"insee-{name}-{START_YEAR}-{END_YEAR}.xml").write_bytes(payload)
+        (args.output_dir / raw_filenames[name]).write_bytes(payload)
 
     smic = parse_sdmx_observations(raw["smic"])
     cpi_old = parse_sdmx_observations(raw["cpi_1980"])
@@ -180,6 +187,23 @@ def main() -> int:
     write_csv(args.output_dir / "smic-cpi-monthly-1970-2025.csv", monthly_rows)
     annual = annual_reconstruction(smic, cpi)
     write_csv(args.output_dir / "smic-real-purchasing-power-1970-2025.csv", annual)
+
+    manifest = {
+        "retrieved_at_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+        "series": {
+            "smic": {"idbank": SMIC_ID, "url": SOURCE_URLS["smic"], "observations": len(smic)},
+            "cpi_base_1980": {"idbank": CPI_1980_ID, "url": SOURCE_URLS["cpi_1980"], "observations": len(cpi_old)},
+            "cpi_base_2015": {"idbank": CPI_2015_ID, "url": SOURCE_URLS["cpi_2015"], "observations": len(cpi_new)},
+        },
+        "linked_cpi_observations": len(cpi),
+        "cpi_link_factor_1980_to_2015": f"{factor:.12f}",
+        "cpi_link_method": "geometric mean of monthly base-2015/base-1980 ratios over 1990-01 to 1992-12",
+        "annual_method": "mean(monthly SMIC) / mean(monthly CPI); do not average monthly ratios",
+        "raw_sha256": {raw_filenames[name]: hashlib.sha256(payload).hexdigest() for name, payload in raw.items()},
+    }
+    (args.output_dir / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+    )
 
     print(f"SMIC observations: {len(smic)}; CPI observations used: {len(cpi)}")
     print(f"CPI base-link factor (1980 -> 2015): {factor:.12f}")
