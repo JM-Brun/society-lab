@@ -251,3 +251,31 @@ Sources de méthode :
 - INSEE, série SMIC horaire brut 000822484 : https://www.insee.fr/fr/statistiques/serie/000822484
 - data.gouv.fr, jeu de données IPC et documentation du raccordement : https://www.data.gouv.fr/datasets/indice-des-prix-a-la-consommation-base-100-en-2015-ensemble-des-menages-ensemble-france
 - Code source de la visualisation qui documente le point d'accès CSV INSEE et son format ZIP : https://commons.wikimedia.org/wiki/File:SMIC_horaire_brut_depuis_1980.svg
+
+
+## 11. Contrôle externe indépendant : pouvoir d'achat du SMIC horaire 1980–2025
+
+Une source secondaire récente, Datapi, publie un tableau annuel construit à partir de séries INSEE, avec notamment le SMIC horaire brut moyen annuel, le coefficient INSEE de conversion en euros 2025 et le montant horaire exprimé en euros 2025.
+
+- Publication : https://datapi.fr/chiffre/smic-histoire--pouvoir-achat-1980
+- La page donne **2,1025 €** de SMIC horaire brut moyen en 1980, un coefficient de **30,28** et une valeur déflatée de **6,94 € de 2025**.
+- Pour 2025, elle donne **11,88 €** de SMIC horaire brut moyen et un coefficient de **100**.
+- Le rapport des valeurs affichées (11,88 / 6,94 - 1) correspond à environ **+71,2 %** entre 1980 et 2025, cohérent avec le titre arrondi « +71 % ».
+
+La méthode explicitée par l'éditeur est : SMIC horaire brut moyen annuel × 100 / coefficient INSEE de conversion, le coefficient 1980 étant 30,28. La série de coefficient citée est l'idBank **011813530**.
+
+### Interprétation et limites
+
+Ce résultat constitue un **contrôle externe utile**, pas la série de référence à intégrer comme pouvoir d'achat officiel sans examen supplémentaire.
+
+1. Il s'agit d'une déflation par le coefficient INSEE de transformation du franc/euro en euros d'une année donnée, pas du calcul direct décrit à la section 10 avec la moyenne annuelle d'un IPC mensuel déterminé.
+2. Le champ de l'indice sous-jacent au coefficient évolue dans le temps : ménages urbains ouvriers ou employés jusqu'en 1992, ensemble des ménages en métropole de 1993 à 1998, France entière depuis 1999. La comparabilité de long terme doit donc être qualifiée.
+3. La valeur de 1980 est arrondie à deux décimales dans le résultat déflaté (6,94 €) ; le pourcentage calculé à partir de valeurs arrondies ne doit pas être présenté avec une précision excessive.
+4. La comparaison porte sur le **SMIC horaire brut moyen annuel**, pas sur le salaire net effectivement perçu, le revenu disponible, le niveau de vie des ménages ou le pouvoir d'achat de tous les salariés au SMIC.
+5. Cette évolution de niveau entre deux dates ne mesure pas l'effet causal des hausses du SMIC sur l'emploi, les prix, les salaires voisins ou les finances publiques.
+
+### Conclusion opérationnelle
+
+Le résultat « environ +71 % entre 1980 et 2025 » peut être cité comme ordre de grandeur selon la convention de conversion INSEE utilisée par Datapi. Il ne doit pas remplacer la reconstruction mensuelle ni être fusionné avec les variations annuelles TEF. Il fournit un point de comparaison à expliquer lors de la confrontation des méthodes.
+
+Source : Datapi, « +71 % pouvoir d'achat du Smic horaire brut entre 1980 et 2025 », tableau annuel et méthode, consulté le 15 novembre 2026 : https://datapi.fr/chiffre/smic-histoire--pouvoir-achat-1980. L'éditeur indique comme sources les séries INSEE 000822484 et 011813530. La page et ses chiffres doivent être traités comme une reprise secondaire de données officielles, non comme une publication statistique de l'INSEE.
