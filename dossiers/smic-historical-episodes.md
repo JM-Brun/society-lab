@@ -284,3 +284,17 @@ Le rapport du groupe d'experts de 2020 chiffre un exemple de décomposition pour
 ## 13. Chronologie événementielle 1994–2026
 
 Voir [dossier détaillé](smic-revaluations-data-1994-2026.md) et [CSV événementiel](../data/smic-revaluations-1994-2026.csv). Cette extension permet de distinguer les revalorisations ordinaires, les déclenchements automatiques du seuil d'inflation, les coups de pouce discrétionnaires, la convergence des GMR (2003–2005) et le changement de calendrier au 1er janvier en 2010. Elle ne doit pas être lue comme une série homogène de hausses discrétionnaires.
+
+## 14. Matrice de preuves causales et de mobilité (15 novembre 2026)
+
+Une matrice dédiée a été créée : [Matrice des preuves — effets historiques et contemporains du SMIC](smic-causal-evidence-matrix.md). Elle distingue désormais explicitement :
+- les études d'emploi (Neumark-Wascher ; Abowd-Kramarz-Margolis) ;
+- les études de diffusion salariale (Aeberhardt-Givord-Marbot ; Gautier-Roux-Suarez Castillo) ;
+- les études descriptives de mobilité (DG Trésor 2025 ; OCDE 2025) ;
+- les travaux sur les baisses de cotisations (Cottet 2024), qui ne doivent pas être assimilés à une hausse du SMIC.
+
+**Correction d'interprétation importante :** le résultat d'Abowd et al. ne doit pas être présenté comme une élasticité de l'emploi total. Les auteurs indiquent des effets généraux plutôt modérés, mais beaucoup plus marqués pour les salariés directement au minimum ; les estimations de baisse de probabilité future d'emploi (1,3 % pour les hommes et 1,0 % pour les femmes pour une hausse de 1 % du SMIC réel) sont rapportées pour cette population exposée et doivent être considérées comme imprécises et dépendantes du cadre historique.
+
+L'OCDE (2025) ajoute un contrepoint utile au récit de « trappe » : malgré une forte proximité du minimum et des risques socio-fiscaux, les trajectoires ascendantes des travailleurs à bas salaire ne sont pas plus difficiles en France que dans les pays comparés. Cela ne démontre pas l'absence de stagnation pour certains profils ; cela oblige à distinguer mobilité individuelle, part des emplois à bas salaire et incitations socio-fiscales.
+
+La matrice reste une revue structurée, non une méta-analyse. Les lectures intégrales des articles historiques, des annexes et des tests de robustesse restent prioritaires.
