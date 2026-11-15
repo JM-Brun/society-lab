@@ -190,3 +190,9 @@ La chronologie des taux horaires et des ruptures institutionnelles est maintenan
 ### Réconciliation des coups de pouce
 
 Le dossier 1994–2026 a été affiné à partir des annexes DARES et des rapports parlementaires : les coups de pouce de 1995 (2,2 points), 1996 (0,16), 1997 (2,26), 1998 (0,46 selon la décomposition DARES, arrondi à 0,5 dans le rapport parlementaire), 2001 (0,29), 2006 (0,3) et 2012 (0,6) sont distingués des déclenchements automatiques. Les divergences de mesure pour 1973 et 1981 restent ouvertes et sont détaillées dans le dossier événementiel 1994–2026.
+
+### Audit de cohérence de la chronologie 1994–2026
+
+La chronologie événementielle a fait l'objet d'un contrôle structurel et arithmétique complémentaire : [audit du dataset 1994–2026](../dossiers/smic-revaluations-audit-1994-2026.md). Le CSV contient 42 événements. Les hausses mixtes de 1995, 1997 et juillet 2012 sont désormais explicitement distinguées des coups de pouce intégralement discrétionnaires. Un écart de 0,065 point entre la variation publiée et le ratio des taux affichés a été isolé pour juillet 1999 ; il reste à vérifier à partir des montants non arrondis et n'a pas été corrigé arbitrairement.
+
+**Conséquence pour l'analyse :** cette chronologie est une base descriptive provisoire, pas une variable causale prête à l'emploi. Il faut encore harmoniser les taux non arrondis, les unités temporelles et les épisodes GMR avant d'estimer les effets sur l'emploi, les salaires ou les prix.
