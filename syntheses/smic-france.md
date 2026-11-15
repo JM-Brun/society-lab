@@ -238,3 +238,12 @@ Voir [l'audit détaillé de la réforme Fillon 2003](../dossiers/smic-fillon-ref
 Hennion & Loisy estiment une élasticité de long terme de l’emploi en ETP au coût réel du travail de −0,9 et chiffrent à environ 250 000 ETP l’effet de la baisse du taux apparent de cotisations patronales entre 1990 et 2003. Ce chiffre est toutefois fondé sur un taux apparent agrégé, qui ne permet pas d’isoler les exonérations ciblées sur les bas salaires. L’étude suppose les salaires exogènes, ne distingue pas les substitutions entre qualifications, traite la RTT par une indicatrice à partir de 1998 et exclut le financement macroéconomique des exonérations. Il s’agit d’une simulation toutes choses égales par ailleurs, non d’une mesure causale directe des exonérations bas salaires ni de l’effet d’une hausse isolée du SMIC.
 
 Voir [l’audit Hennion & Loisy (2006)](../dossiers/smic-hennion-loisy-2006-macro-audit.md).
+
+
+### Synthèse DARES–Trésor de 2012 : distinguer estimations et extrapolations
+
+Ourliac & Nouveau (DARES, Document d’études n°169 ; Trésor-Éco n°97) jugent plausible que les allègements de 1993–1997 aient créé ou sauvegardé 200 000 à 400 000 emplois. Ils estiment le coût brut par emploi à 20 000–40 000 € de 2009 et le coût net à 8 000–28 000 €, ce dernier chiffre reposant sur des hypothèses simplificatrices de prestations évitées.
+
+Le rapport extrapole qu’une suppression totale des allègements de 2009 pourrait détruire 550 000 à 1,1 million d’emplois sous rendements constants, ou 400 000 à 800 000 si le rendement de la deuxième vague était divisé par deux. Ces chiffres sont des scénarios fragiles, pas des estimations causales observées. Le rapport conclut à un effet faible ou globalement neutre de la réforme Fillon 2003–2005, et à des résultats contradictoires et partiels sur les éventuelles trappes à bas salaires.
+
+Voir [l’audit Ourliac & Nouveau (2012)](../dossiers/smic-ourliac-nouveau-2012-synthesis-audit.md).
