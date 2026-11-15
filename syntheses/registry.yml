@@ -34,3 +34,7 @@ dossiers:
     dossier_path: "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-GOARANT-MULLER-2011-DIFFUSION"
+    dossier_path: "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
