@@ -268,3 +268,12 @@ Voir [l'audit Barlet, Blanchet & Le Barbanchon (2010)](../dossiers/smic-barlet-b
 Lhommeau & Rémy étudient les trajectoires salariales des salariés bas salaire restés dans la même entreprise, sur le panel DADS 1984–2003. Ils distinguent l'effet positif de l'intensité des allègements (surplus potentiel pour les hausses de salaire) de l'effet négatif de leur progressivité (coût marginal accru lorsqu'un salaire augmente). Dans leur estimation, le second effet domine : pour 1996, ils calculent un frein de 2,7 points sur la croissance salariale sous 1,3 SMIC imputable aux allègements, ramené à 1,8 point après prise en compte des hausses du SMIC. Ce résultat porte sur les exonérations et les trajectoires de salariés qui restent dans la même entreprise ; il ne mesure ni l'effet causal d'une hausse isolée du SMIC, ni l'emploi net, ni les parcours des personnes changeant d'employeur.
 
 Voir [l'audit Lhommeau & Rémy (2010)](../dossiers/smic-lhommeau-remy-2010-mobilite-salariale.md).
+
+
+### Confrontation des études sur la trappe salariale : Lhommeau & Rémy vs Aeberhardt & Sraer
+
+Les résultats ne sont pas identiques, mais ne sont pas strictement contradictoires. Lhommeau & Rémy (2010), sur DADS 1984–2003 et des cellules d'entreprises, trouvent que l'effet négatif de la progressivité du coût marginal domine l'effet positif de l'intensité des allègements pour les salariés qui restent dans la même entreprise. Aeberhardt & Sraer (2010), sur la première vague 1994–1997, comparent les salaires 1,2–1,33 SMIC aux salaires 1,33–1,5 SMIC par différence de différences, puis exploitent le seuil de 1,33 SMIC en RDD : ils ne trouvent pas de progression inférieure pour les bénéficiaires ; l'effet favorable de la RDD disparaît toutefois après contrôles et fenêtres plus étroites.
+
+Les écarts tiennent aux périodes, aux populations, aux variables de traitement et aux méthodes. La DiD d'Aeberhardt & Sraer peut être affectée par la diffusion du SMIC et par des effets indirects sur le groupe témoin ; sa RDD est locale au seuil. Lhommeau & Rémy étudient un éventail plus long de dispositifs et séparent l'intensité de la progressivité, mais leur estimation sur cellules et leur sélection de salariés stables limitent aussi la portée causale. Ces deux études portent sur les exonérations et les carrières salariales, non sur l'effet emploi d'une hausse isolée du SMIC.
+
+Voir [Lhommeau & Rémy](../dossiers/smic-lhommeau-remy-2010-mobilite-salariale.md) et [Aeberhardt & Sraer](../dossiers/smic-aeberhardt-sraer-2010-dynamique-salariale.md).
