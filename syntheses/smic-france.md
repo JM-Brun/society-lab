@@ -17,6 +17,7 @@ related_dossiers:
   - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
   - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
+  - "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -425,3 +426,14 @@ Dans les simulations à cinq ans, une hausse de 1 % du SMIC augmente les salaire
 L'effet du SMIC est plus fort près du plancher. Les minima de branche contribuent à la diffusion vers les déciles supérieurs, mais cette conclusion est sensible aux effets temporels et à la composition sectorielle, notamment à la métallurgie et au BTP.
 
 **Limite fondamentale :** les simulations maintiennent la composition de l'échantillon fixe et n'incluent ni créations/destructions d'emplois ni réactions des prix. Les résultats sont conditionnels au modèle de rigidité et à ses hypothèses d'identification. Le facteur 1,7 décrit l'amplification de la transmission de l'inflation aux salaires, pas un effet sur l'emploi. Voir [l'audit complet](../dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md).
+
+
+## 26. Trajectoires des salariés proches du SMIC (Benyamina & Stutzmann, DG Trésor, 2025)
+
+Le Panel Tous salariés de l'INSEE permet de suivre les personnes initialement rémunérées sous 1,1 SMIC entre 2013 et 2019. La moitié environ rejoint une tranche salariale supérieure en 2019 ; 41 % appartiennent à des trajectoires de mobilité ascendante (13 % forte progression, 28 % progression modérée). Mais 25 % suivent une trajectoire de proximité durable du SMIC, 15 % connaissent des épisodes de chômage et 19 % sont dans un groupe de non-observation prolongée.
+
+La matrice de transition montre que 52 % des salariés sous 1,1 SMIC restent dans cette tranche l'année suivante, 27 % passent entre 1,1 et 1,6 SMIC, 8 % sont au chômage et 9 % non observés. La hausse médiane nominale de rémunération sur 2013–2019 est de 36 % pour les salariés initialement sous 1,1 SMIC, contre 14 % pour ceux initialement entre 2,5 et 3,5 SMIC.
+
+Les trajectoires sont très hétérogènes : les jeunes sont davantage présents dans les trajectoires de forte progression ; les femmes, employés et salariés des services sont davantage susceptibles de rester durablement proches du plancher. La mobilité observée ne signifie donc pas que la situation de tous les salariés au SMIC s'améliore.
+
+**Limite fondamentale :** cette étude est descriptive. Elle ne construit pas de contrefactuel permettant d'attribuer les trajectoires aux revalorisations du SMIC. Le seuil est inférieur à 1,1 SMIC, la progression de 36 % est nominale et les sorties du panel ne sont pas toutes assimilables à du chômage. Elle documente la mobilité et la persistance, pas l'effet causal des hausses du SMIC. Voir [l'audit complet](../dossiers/smic-tresor-2025-wage-trajectories-audit.md).

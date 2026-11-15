@@ -42,3 +42,7 @@ dossiers:
     dossier_path: "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-TRESOR-2025-WAGE-TRAJECTORIES"
+    dossier_path: "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
