@@ -12,6 +12,7 @@ import csv
 import hashlib
 import json
 import math
+from datetime import datetime, timezone
 import time
 import urllib.error
 import urllib.request
@@ -189,7 +190,7 @@ def main() -> int:
     write_csv(args.output_dir / "smic-real-purchasing-power-1970-2025.csv", annual)
 
     manifest = {
-        "retrieved_at_utc": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
+        "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
         "series": {
             "smic": {"idbank": SMIC_ID, "url": SOURCE_URLS["smic"], "observations": len(smic)},
             "cpi_base_1980": {"idbank": CPI_1980_ID, "url": SOURCE_URLS["cpi_1980"], "observations": len(cpi_old)},
