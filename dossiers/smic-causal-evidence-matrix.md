@@ -287,3 +287,16 @@ Hennion & Loisy, *Dossiers Solidarité et Santé* n°2, 2006, p. 65–72. Compte
 Modèle à correction d’erreur : relation de long terme emploi–PIB–coût réel du travail–tendance, avec indicatrice RTT à partir de 1998T4 ; élasticité de long terme emploi/coût estimée à −0,9 (t = −3,3). Le coefficient court terme du coût est −0,04 (t = −1,1), non significatif. La baisse du taux apparent de 2,6 points entre 1990 et 2003 conduit à un chiffrage d’environ 250 000 emplois ETP, toutes choses égales par ailleurs.
 
 **Limites :** taux agrégé non ciblé, hypothèse d’exogénéité des salaires, substitution qualifié/non qualifié non identifiable, colinéarité RTT/allègements, financement des exonérations exclu. Le chiffre de 250 000 est une simulation macroéconomique et non une identification causale des exonérations bas salaires. Il ne mesure pas une hausse isolée du SMIC. Fiche : [Hennion & Loisy (2006)](smic-hennion-loisy-2006-macro-audit.md).
+
+
+## 14. Fiche d'audit n° 9 — Ourliac & Nouveau (2012), synthèse DARES–Trésor
+
+Document de synthèse (DARES Document d’études n°169, février 2012 ; Trésor-Éco n°97), non nouvelle évaluation économétrique. La première vague 1993–1997 est jugée avoir créé ou sauvegardé 200 000–400 000 emplois, pour un coût brut de 20–40 k€ par emploi (euros 2009) et net de 8–28 k€. Le coût net repose notamment sur une hypothèse simplifiée de 12 k€ de cotisations/prestations évitées par emploi.
+
+Le rapport extrapole la suppression totale des allègements de 2009 à 550 000–1,1 million d’emplois détruits sous rendements constants, puis 400 000–800 000 sous l’hypothèse de rendements divisés par deux pour la seconde vague. Ces valeurs sont des scénarios explicitement qualifiés de fragiles, pas des effets causaux observés.
+
+Pour la réforme Fillon, les trois rapports de recherche examinés concluent à un impact faible ou globalement neutre ; Simonnet & Terracol évaluent une hausse de 0,8 mois de la durée médiane des épisodes de chômage. Pour les trappes à bas salaires, les résultats sont contradictoires et partiels : mobilité salariale des salariés qui restent en emploi, salaires à l’embauche et formation insuffisamment observés.
+
+**Point de réconciliation :** le tableau DARES reprend Crépon & Desplatz à 260–670k (central 460k, dont 220k peu qualifiés et 240k qualifiés), soit une présentation arrondie de l’intervalle détaillé dans la fiche primaire. Le rapport DARES qualifie également les paramètres de Gafsi et al. d’extrêmes et certains résultats de peu crédibles, contrepoint critique à intégrer à la lecture de cette étude.
+
+Fiche : [Ourliac & Nouveau (2012)](smic-ourliac-nouveau-2012-synthesis-audit.md).
