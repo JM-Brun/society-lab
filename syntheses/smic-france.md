@@ -11,6 +11,7 @@ related_dossiers:
   - "dossiers/smic-policy-scenarios.md"
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
+  - "dossiers/smic-quantitative-update-2026.md"
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
