@@ -112,3 +112,32 @@ L'indicateur « pouvoir d'achat du SMIC horaire moyen annuel » est un indicateu
 - Montants et dates d'effet 2021–2026 : élevé, tableau officiel INSEE.
 - Pouvoir d'achat annuel 2014–2025 : élevé pour la définition et le champ publiés par l'INSEE.
 - Interprétation causale de l'emploi et des effets sur les entreprises : non déterminée par ces séries.
+
+
+## 8. Contrôle de fraîcheur et limites des données 2026 (15 novembre 2026)
+
+Une vérification de la page INSEE publiée le 9 septembre 2026 et de la série chronologique 000822484, consultée après sa mise à jour du 1er octobre 2026, confirme les niveaux suivants pour la France hors Mayotte : 12,02 € au 1er janvier 2026 puis 12,31 € au 1er juin 2026. La série mensuelle donne 12,31 € d'octobre 2026 ; aucun nouveau changement de taux n'apparaît entre juin et octobre dans cette extraction. Le taux de 12,31 € est donc le dernier niveau observé dans la source consultée, et non une moyenne annuelle.
+
+**Point de vigilance important :** le tableau annuel de pouvoir d'achat publié sur la page INSEE s'arrête à 2025. Il ne fournit pas encore de pouvoir d'achat moyen annuel 2026. Il serait incorrect de prolonger la ligne 2025 ou de déduire un chiffre annuel 2026 à partir du seul taux en vigueur depuis juin. La moyenne annuelle 2026 devra être calculée seulement lorsque les données mensuelles et l'indice de prix annuel correspondant seront disponibles, en explicitant le déflateur et la méthode.
+
+Autre distinction à conserver dans les calculs :
+- l'indice de prix utilisé pour la revalorisation légale récente cible les ménages du premier quintile et exclut le tabac ;
+- le tableau INSEE de pouvoir d'achat annuel cité ci-dessus présente une variation annuelle de l'indice des prix à la consommation moyen, y compris tabac, pour l'ensemble des ménages ;
+- ces deux indices répondent à des usages différents et ne doivent pas être substitués l'un à l'autre ;
+- la série horaire brute datée, la moyenne annuelle du taux horaire et le pouvoir d'achat moyen annuel restent trois objets distincts.
+
+La page INSEE distingue également la France hors Mayotte de Mayotte. Le présent dossier conserve ce périmètre principal ; les montants mahorais ne doivent pas être ajoutés à la même série sans une colonne de territoire explicite.
+
+**Contrôle des valeurs officielles :**
+- 1er janvier 2026 : 12,02 € brut/heure ; 1 823,03 € brut/mois pour 151,67 heures ;
+- 1er juin 2026 : 12,31 € brut/heure ; 1 867,02 € brut/mois pour 151,67 heures ;
+- hausse entre ces deux taux : 2,41 % ;
+- bénéficiaires directs au 1er janvier 2026 : 2,1 millions, soit 11,8 % des salariés du privé non agricole, selon la DARES. Cet indicateur d'exposition n'est pas une estimation d'effet causal sur l'emploi.
+
+Sources primaires contrôlées le 15 novembre 2026 :
+- INSEE, « Salaire minimum interprofessionnel de croissance », données annuelles 1980–2026, publication du 9 septembre 2026 : https://www.insee.fr/fr/statistiques/1375188
+- INSEE, série chronologique du SMIC horaire brut 000822484, parue le 1er octobre 2026 : https://www.insee.fr/fr/statistiques/serie/000822484
+- Ministère du Travail, « Revalorisation du SMIC au 1er juin 2026 », 13 mai 2026 : https://travail-emploi.gouv.fr/revalorisation-du-smic-au-1er-juin-2026
+- DARES, « Combien de salariés sont rémunérés au Smic ? », actualisation 2026 : https://dares.travail-emploi.gouv.fr/publication/combien-de-salaries-sont-remuneres-au-smic
+
+**Statut de preuve :** montants et dates de taux confirmés par source officielle ; pouvoir d'achat annuel 2026 non disponible dans le tableau consulté ; aucun effet causal sur l'emploi ou le niveau de vie des ménages ne peut être déduit de ces seules séries.
