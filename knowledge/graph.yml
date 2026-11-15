@@ -235,3 +235,6 @@ relations:
   - {"id":"REL-SMIC-BOOSTS-ASSEMBLY-2021","type":"REL-TRANSCRIBES","from":"SOURCE-ASSEMBLY-2021-SMIC-BOOSTS","to":"DATASET-SMIC-REVALUATIONS-1994-2026","justification":"Source parlementaire complémentaire pour les composantes discrétionnaires de plusieurs revalorisations, notamment 1995, 1996, 1997, 1998, 2001, 2006 et 2012."}
   - {"id":"REL-SMIC-1996-2008-TRANSCRIBES","type":"REL-TRANSCRIBES","from":"SOURCE-DARES-SMIC-ANNEX-2009","to":"DATASET-SMIC-REVALUATIONS-1996-2008","justification":"Le CSV transcrit les taux et les contributions de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009, p. 32."}
   - {"id":"REL-SMIC-1996-2008-ABOUT","type":"REL-ABOUT","from":"DATASET-SMIC-REVALUATIONS-1996-2008","to":"DOMAIN-ECONOMY","justification":"Jeu de données historique sur les mécanismes de revalorisation du salaire minimum en France."}
+
+  - {"id":"REL-SMIC-REAL-POWER-TRANSCRIBES","type":"REL-TRANSCRIBES","from":"SOURCE-INSEE-SMIC-POWER-2014-2025","to":"DATASET-SMIC-REAL-POWER-2014-2025","justification":"Le dataset transcrit les moyennes annuelles du SMIC et les variations officielles de pouvoir d'achat publiées par l'INSEE."}
+  - {"id":"REL-SMIC-REAL-POWER-ABOUT","type":"REL-ABOUT","from":"DATASET-SMIC-REAL-POWER-2014-2025","to":"DOMAIN-ECONOMY","justification":"Série annuelle du pouvoir d'achat du salaire minimum horaire en France."}

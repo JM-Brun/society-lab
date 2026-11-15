@@ -141,3 +141,23 @@ Sources primaires contrôlées le 15 novembre 2026 :
 - DARES, « Combien de salariés sont rémunérés au Smic ? », actualisation 2026 : https://dares.travail-emploi.gouv.fr/publication/combien-de-salaries-sont-remuneres-au-smic
 
 **Statut de preuve :** montants et dates de taux confirmés par source officielle ; pouvoir d'achat annuel 2026 non disponible dans le tableau consulté ; aucun effet causal sur l'emploi ou le niveau de vie des ménages ne peut être déduit de ces seules séries.
+
+
+## 9. Série annuelle de pouvoir d'achat structurée (2014–2025)
+
+Le tableau officiel de l'INSEE a été structuré dans [le CSV annuel de pouvoir d'achat 2014–2025](../data/smic-real-purchasing-power-2014-2025.csv). Il contient le SMIC horaire brut moyen annuel, les évolutions officielles du pouvoir d'achat brut et net, le SHBOE et l'inflation moyenne annuelle.
+
+Un indice chaîné complémentaire, base 2014 = 100, est calculé en appliquant multiplicativement les évolutions annuelles officielles du pouvoir d'achat brut à partir de 2015. Il atteint **102,93 en 2025**, soit une progression cumulée d'environ 2,93 % sur la période 2014–2025. Cet indice est une reconstruction Society Lab à partir de taux publiés arrondis au dixième ; ce n'est pas une série officielle INSEE autonome. La variation 2014 est utilisée comme repère de base et non appliquée à l'indice de base.
+
+### Ce que montre la série
+
+- La progression cumulée du pouvoir d'achat horaire brut entre 2014 et 2025 est faible, autour de 2,9 % selon l'indice chaîné des taux annuels publiés.
+- 2018 constitue un épisode de divergence entre les indicateurs brut (-0,6 %) et net (+2,2 %). L'INSEE précise que son indicateur net est calculé avant déduction de la CSG et de la CRDS ; il ne faut donc pas le présenter comme une mesure du net effectivement versé après tous prélèvements.
+- En 2021 et 2022, le pouvoir d'achat annuel moyen du SMIC brut recule légèrement puis stagne (-0,1 %, 0,0 %) malgré plusieurs revalorisations nominales en cours d'année.
+- En 2023–2025, les gains annuels sont positifs mais modestes (+0,5 %, +0,2 %, +0,7 %).
+
+**Limite de comparabilité :** le taux horaire brut moyen annuel et l'évolution officielle du pouvoir d'achat sont deux variables publiées distinctement. Les taux d'inflation annuels affichés sont la variation de l'indice moyen annuel des prix, y compris tabac, pour l'ensemble des ménages. Ils ne correspondent pas à l'indice légal de déclenchement de la revalorisation du SMIC (ménages du premier quintile, hors tabac). Les variations de pouvoir d'achat INSEE ne doivent donc pas être recalculées par simple soustraction du taux d'inflation affiché.
+
+**Périmètre :** France hors Mayotte. Le tableau s'arrête à 2025 pour le pouvoir d'achat annuel ; le taux horaire de 12,31 € au 1er juin 2026 ne permet pas de déduire une variation annuelle 2026.
+
+Source primaire : INSEE, *Salaire minimum interprofessionnel de croissance (Smic)*, données annuelles, publication du 9 septembre 2026, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
