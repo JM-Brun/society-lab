@@ -168,3 +168,12 @@ Le rapport du groupe d'experts est une source institutionnelle de synthèse ; so
 Une transcription du tableau 3 du rapport d'information du Sénat n° 504 (1993–1994) est maintenant disponible : [dossier méthodologique](smic-revaluations-data-1970-1993.md) et [CSV](../data/smic-revaluations-1970-1993.csv). La série distingue hausse observée, prix, moitié du TSH réel, obligation légale et coup de pouce.
 
 **Réserve importante :** les chiffres du Sénat pour 1973 et 1981 (respectivement 9,7 % et 5,2 % de coup de pouce selon sa convention) diffèrent de ceux cités par le rapport du groupe d'experts 2020 (10,1 % et 6,9 %). Les séries sont conservées séparément jusqu'à réconciliation des dates, fenêtres d'indices et définitions. Le CSV ne mesure ni les moyennes annuelles ni les effets causaux sur l'emploi.
+
+
+## 10. Extension de la chronologie : 1994–2026
+
+La reconstitution événementielle est désormais disponible dans [le dossier 1994–2026](smic-revaluations-data-1994-2026.md) et le [CSV associé](../data/smic-revaluations-1994-2026.csv). Elle s'appuie sur les séries mensuelles INSEE, les annexes DARES et les rapports institutionnels.
+
+La période est découpée en quatre régimes : coups de pouce et indexation annuelle dans les années 1990 ; coexistence des GMR et convergence liée aux 35 heures entre 1999 et 2005 ; déplacement de la date annuelle au 1er janvier à partir de 2010 ; enfin, revalorisations automatiques infra-annuelles répétées lors de la poussée inflationniste 2021–2026.
+
+**Précaution :** le taux horaire légal n'est pas le minimum mensuel garanti pour chaque salarié pendant la coexistence des GMR. Les hausses 2003–2005 sont en partie des rattrapages de convergence institutionnelle. Les relèvements automatiques de 2021–2026 ne sont pas des coups de pouce discrétionnaires. Le dossier sépare ces catégories et distingue les taux nominaux du pouvoir d'achat annuel.
