@@ -110,3 +110,12 @@ La convergence des GMR est parfois présentée comme une hausse cumulée de 17,6
 **À résoudre :** la divergence de mesure 1973/1981 et l'écart entre les indicateurs de convergence GMR de 11,4 % et 17,6 %.
 
 **Prochaine opération :** recalculer les contributions sur une base commune à partir des dates exactes d'entrée en vigueur et des indices légaux, en s'appuyant sur les textes réglementaires et les séries mensuelles INSEE. Ne pas utiliser les chiffres de coups de pouce historiques comme une série homogène avant cette harmonisation.
+
+
+## 8. Comparabilité avec la décomposition annuelle DARES 1996–2008
+
+La série événementielle ci-dessus enregistre les changements à chaque date d'effet. Elle ne doit pas être comparée directement aux variations annuelles de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009, qui présente des glissements annuels à date de juillet. Ainsi, en 1996, la série événementielle sépare le déclenchement automatique de mai (+2,0 %) et la revalorisation de juillet (+0,5 %), tandis que le tableau annuel DARES affiche +2,51 % au point de juillet. En 2008, la série événementielle sépare mai (+2,3 %) et juillet (+0,9 %), tandis que le tableau annuel DARES affiche +3,2 % au point de juillet. Ces chiffres annuels incluent les deux événements ; ils ne doivent pas être ajoutés aux lignes événementielles.
+
+Des écarts de précision subsistent également pour 2001, 2004, 2005, 2006 et 2007. Le cas 2006 est explicitement non résolu : l'annexe DARES affiche +3,05 %, alors que le ratio des taux horaires affichés dans le CSV (8,27 € / 8,03 €) implique environ +2,99 %. Une différence liée aux taux sous-jacents non arrondis est possible, mais doit être vérifiée avant de conclure. Les deux valeurs sont conservées avec leur provenance.
+
+Source de comparaison : rapport du Groupe d'experts SMIC / DARES, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf.
