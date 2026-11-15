@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 CSV_PATH = ROOT / "data" / "smic-real-purchasing-power-historical-benchmarks.csv"
 EXPECTED_YEARS = ["1990", "1995", "2000", "2005", "2009", "2010", "2011", "2012", "2013",
-                  "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008"]
+                  "2001", "2002", "2003", "2004", "2006", "2007", "2008"]
 # The CSV is sorted chronologically; keep one row per year. The 2005 duplicate
 # across source vintages is deliberately not allowed: retain the earlier TEF
 # benchmark row and document the TEF 2010 value in its own provenance field.
