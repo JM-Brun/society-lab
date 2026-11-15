@@ -105,11 +105,9 @@ Les intervalles ci-dessus sont ceux des élasticités estimées dans les tableau
 
 Les auteurs mettent en évidence un ralentissement des sorties du chômage vers les entreprises passées à 35 heures. Les baisses de cotisations patronales semblent insuffisantes pour compenser la hausse du coût du travail dans ces entreprises ; elles compensent davantage la hausse chez les entreprises non signataires restées à 39 heures. Les sorties du chômage des personnes les plus diplômées ne sont pas modifiées, tandis que celles des moins diplômées ralentissent.
 
-### 3.3 Limites de l'audit à ce stade
+### 3.3 Statut de vérification
 
-Le résumé et les notices bibliographiques sont accessibles, mais le texte intégral n'a pas encore été audité de manière suffisamment fiable pour transcrire les effectifs, les équations, les coefficients, les intervalles de confiance, les tests placebo ou les contrôles détaillés. Il serait incorrect de présenter ces éléments comme vérifiés. L'étude porte sur les flux d'entrée du chômage vers l'emploi et complète donc Bunel et al., qui étudient principalement les évolutions d'entreprises entre 2002 et 2005.
-
-**Niveau provisoire :** résultat descriptif/économétrique ciblé et cohérent avec le mécanisme de coûts différenciés ; confiance causale à réserver jusqu'à lecture intégrale de la stratégie d'identification et des tableaux.
+Le texte intégral a depuis été obtenu et dépouillé : les données, le modèle de durée, les hypothèses d'identification, les coefficients et erreurs-types des tableaux 5 à 7, les tests de différences entre types d'entreprises et les principales limites sont documentés dans la section 3 de l'audit quantitatif approfondi ci-dessous. Les résultats sont donc désormais plus précis que le résumé initial ; ils restent conditionnels aux hypothèses du modèle et ne constituent pas un bilan net d'emplois.
 
 ## 4. Pourquoi les résultats diffèrent de Crépon & Desplatz (2001)
 
