@@ -372,3 +372,14 @@ Sur l'enquête Acemo trimestrielle, les auteurs suivent des postes représentati
 **Limites décisives :** TPE de moins de 10 salariés exclues (les auteurs indiquent que 41 % des salariés au SMIC travaillent dans ces entreprises) ; salaires de base seulement ; postes représentatifs plutôt que personnes ; cinq points annuels seulement ; base RTT/GMR incomplète ; période 2000–2005 marquée par la convergence des minima après les 35 heures ; identification non expérimentale et circularité potentielle entre SHBO et formule d'indexation du SMIC. Aucune estimation d'emploi, d'heures effectivement travaillées, de rémunération totale, de prix ou de marges.
 
 **Conclusion :** preuve microéconomique descriptive/modélisée de diffusion salariale dans les entreprises couvertes, pas évaluation causale globale du bilan d'une hausse isolée du SMIC. Voir [l'audit complet](smic-koubi-lhommeau-2007-diffusion-grilles-salariales.md).
+
+
+## 21. Fiche d'audit n° 16 — Cette, Chouard & Verdugo (2011), diffusion agrégée 1970–2009
+
+Sur 156 observations trimestrielles couvrant 1971–2009, les auteurs estiment des équations macroéconomiques du SHBO et du SMPT, avec retards, prix, chômage, productivité, durée du travail et effets saisonniers. Ils reconstituent les revalorisations mensuelles du SMIC depuis 1970 et les décomposent entre indexation prix, indexation sur la moitié des gains de pouvoir d'achat du SHBO et coups de pouce. Le modèle 3, qui autorise les retards, estime une élasticité du salaire moyen aux variations du SMIC de 0,14 à court terme et 0,34 à long terme pour le SHBO ; 0,06 et 0,30 pour le SMPT.
+
+Le modèle 5 estime que les coups de pouce se transmettent à long terme à hauteur de 0,23 au SHBO et 0,28 au SMPT. La composante d'indexation sur la moitié des gains de pouvoir d'achat du SHBO se répercute à hauteur de 0,65 sur le SHBO lui-même, ce qui suggère une boucle de rétroaction entre SHBO et SMIC. L'indexation totale de long terme des salaires sur les prix (canal direct et canal via le SMIC) serait d'environ 89 %/83 % avant 1982 (SHBO/SMPT), puis 71 %/60 % après 1982.
+
+**Limites :** séries agrégées et 156 trimestres seulement ; MCO sans groupe témoin ni choc exogène isolé ; les auteurs reconnaissent l'endogénéité possible des prix, salaires et chômage ; la rupture de 1982 peut recouvrir plusieurs changements concomitants ; décomposition des hausses 2003–2005 en composantes « fictives » liées à la convergence des minima ; aucune estimation d'emploi, d'heures, de marges, de prix de vente ou de revenu disponible. Les résultats sont des élasticités macroéconomiques conditionnelles, pas des effets causaux isolés d'un coup de pouce donné.
+
+**Portée :** étude majeure sur la diffusion agrégée des hausses et la boucle d'indexation, complémentaire de Koubi & Lhommeau (2007) qui observent la diffusion par tranche de salaire dans les grilles. Voir [l'audit complet](smic-cette-chouard-verdugo-2011-diffusion-salaire-moyen.md).
