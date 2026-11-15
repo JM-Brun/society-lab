@@ -1,0 +1,74 @@
+# Reconstitution des revalorisations du SMIC, 1994–2026
+
+- **Identifiant :** DATASET-SMIC-REVALUATIONS-1994-2026
+- **Périmètre :** événements de modification du taux horaire brut légal, France hors Mayotte sauf séries historiques anciennes.
+- **Données :** [CSV événementiel](../data/smic-revaluations-1994-2026.csv)
+- **Statut :** première reconstitution consolidée à partir des séries INSEE/DARES et des rapports institutionnels ; certaines colonnes de classification sont interprétatives et doivent être relues avec les textes réglementaires.
+
+## 1. Synthèse chronologique
+
+| Période | Évolution institutionnelle | Ce qu'il faut retenir |
+|---|---|---|
+| 1994–1998 | Revalorisation annuelle en juillet ; déclenchement infra-annuel en mai 1996 | Reprise du pouvoir d'achat et coups de pouce notables, notamment 1995 et 1997 |
+| 1999–2002 | Mise en œuvre des 35 heures et coexistence de plusieurs minima | Le taux horaire du SMIC ne suffit plus à représenter le minimum mensuel garanti à chaque salarié |
+| 2003–2005 | Convergence des GMR et du SMIC | Les hausses fortes sont en partie des rattrapages institutionnels, pas des coups de pouce discrétionnaires ordinaires |
+| 2006–2009 | Retour à une valeur unifiée et fin de l'ancien calendrier | Revalorisation de mai 2008 déclenchée par l'inflation ; complément en juillet |
+| 2010–2012 | Revalorisation annuelle au 1er janvier ; seuil d'inflation infra-annuel maintenu | Décembre 2011 puis juillet 2012 constituent deux épisodes distincts |
+| 2013–2020 | Indexation annuelle sur formule révisée, sans coup de pouce gouvernemental | Hausses généralement modestes ; les gains de pouvoir d'achat varient selon l'inflation |
+| 2021–2026 | Multiples déclenchements automatiques infra-annuels en contexte inflationniste | Les fortes hausses nominales ne signifient pas des gains réels équivalents |
+
+## 2. Les ruptures institutionnelles à ne pas confondre
+
+### 1994–2002 : règle annuelle et seuil de 2 %
+
+La revalorisation annuelle s'effectue au 1er juillet. Une hausse infra-annuelle intervient lorsque l'indice des prix de référence dépasse de 2 % le niveau retenu lors de la dernière revalorisation. Le rapport du groupe d'experts de 2009 décrit explicitement cette règle, ainsi que les composantes de l'indexation prix et de la moitié du gain de pouvoir d'achat du SHBO. En 1996 et 2008, le seuil a déclenché des relèvements en cours d'année.
+
+### 1999–2005 : GMR et 35 heures
+
+La réduction du temps de travail a produit plusieurs générations de garanties mensuelles de rémunération (GMR), selon la date de passage de l'entreprise aux 35 heures. Entre 2002 et 2005, jusqu'à sept niveaux de minima ont coexisté selon les situations. La loi du 17 janvier 2003 a organisé la convergence sur trois ans vers la GMR la plus élevée et la restauration d'un minimum unique au 1er juillet 2005.
+
+La hausse du SMIC horaire liée à la convergence a représenté environ 11,4 % en termes réels sur trois ans selon les documents parlementaires. Il serait erroné d'interpréter les relèvements de 2003, 2004 et 2005 comme des coups de pouce politiques ordinaires ou comme une séquence isolée de hausses discrétionnaires.
+
+### 2008–2010 : changement de calendrier
+
+La loi du 3 décembre 2008 a déplacé la date de revalorisation annuelle du 1er juillet au 1er janvier à compter de 2010. Le rapport du groupe d'experts de 2017 rappelle la rupture de calendrier. Les taux de 2009 et 2010 ne sont donc pas deux points d'une série annuelle homogène sans ajustement.
+
+### 2013–2026 : indexation révisée et inflation
+
+Depuis 2013, le calcul utilise notamment l'évolution des prix mesurée pour les 20 % de ménages ayant les revenus les plus faibles et la moitié du gain de pouvoir d'achat du salaire horaire de base des ouvriers et employés (SHBOE). Les seuils d'inflation continuent de produire des relèvements infra-annuels lorsque le seuil légal est franchi.
+
+Le gouvernement a accordé un coup de pouce en juillet 2012 : l'augmentation de 2 % comprenait 1,4 point d'inflation et 0,6 point de décision discrétionnaire selon l'INSEE. Ne pas assimiler les autres revalorisations infra-annuelles automatiques de 2021–2026 à des coups de pouce.
+
+## 3. Quelques repères chiffrés
+
+- 1995 : +4,0 % au 1er juillet ; 1997 : +4,0 %, dont 2,26 points de coup de pouce selon l'annexe DARES 2009.
+- 1996 : +2,0 % au 1er mai après franchissement du seuil d'inflation, puis +0,5 % au 1er juillet.
+- 2003, 2004, 2005 : +5,27 %, +5,84 %, +5,52 % au SMIC horaire, dans le cadre de la convergence GMR.
+- 2008 : +2,3 % au 1er mai, puis +0,9 % au 1er juillet.
+- 2012 : +2,0 % au 1er juillet, dont +0,6 point de coup de pouce gouvernemental.
+- 2010 : première revalorisation annuelle au 1er janvier.
+- 2021–2024 : épisodes automatiques infra-annuels répétés, liés à l'inflation.
+- 2025 : aucun changement du taux légal par rapport au 1er novembre 2024 dans la série d'événements ; 2026 : 12,02 € au 1er janvier puis 12,31 € au 1er juin.
+
+## 4. Ce que les données disent — et ne disent pas
+
+**Constat descriptif :** le taux horaire légal a connu des épisodes de hausse nominale forte en 1995/1997, 2003–2005, 2012 et 2021–2024. Les mécanismes ne sont pas identiques : coups de pouce, convergence des GMR, déclenchement automatique de l'inflation ou indexation annuelle.
+
+**Effet réel :** le taux horaire ne permet pas à lui seul de déduire le gain de pouvoir d'achat sur l'année. La moyenne annuelle dépend de la date des hausses et du niveau des prix. L'INSEE publie une série séparée de pouvoir d'achat du SMIC horaire brut et net ; elle doit être utilisée pour juger les gains réels.
+
+**Effet causal :** la chronologie ne permet pas d'attribuer à une hausse l'évolution de l'emploi, des heures, des prix, des marges ou de la pauvreté. La période 2003–2005 est particulièrement confondue par la réforme des 35 heures, les GMR et les allégements de cotisations.
+
+## 5. Contrôles et réserves
+
+1. Les pourcentages du CSV sont ceux des sources publiées lorsqu'une source les donne ; les valeurs 2026 sont à jour au 1er juin 2026.
+2. Les pourcentages arrondis peuvent ne pas correspondre exactement au ratio calculé entre deux taux horaires arrondis.
+3. Les classifications `event_classification` et `mechanism_or_context` sont des annotations documentaires, non des variables légales brutes.
+4. La série 1994–1999 utilise des taux historiques exprimés initialement en francs puis convertis en euros dans les sources.
+5. La coexistence SMIC/GMR implique qu'un seul taux horaire ne décrit pas tous les minima effectivement applicables de 2000 à 2005.
+6. Les données 2025 indiquent une absence de modification du taux, pas une absence d'évolution des salaires ou du pouvoir d'achat.
+
+## 6. Synthèse opérationnelle
+
+La période 1994–2026 ne doit pas être racontée comme une succession uniforme de hausses du SMIC. Elle comporte quatre régimes : (1) coups de pouce et indexation annuelle dans les années 1990 ; (2) fragmentation des minima puis convergence GMR avec les 35 heures ; (3) changement de calendrier et révision des paramètres d'indexation ; (4) déclenchements automatiques infra-annuels répétés lors de la poussée inflationniste récente.
+
+Pour l'étude des effets, la prochaine étape est de relier cette chronologie aux séries de pouvoir d'achat moyen annuel, de proportion de salariés concernés, de salaires de branche, d'emploi et de coût du travail, en traitant explicitement les ruptures institutionnelles comme facteurs de confusion.
