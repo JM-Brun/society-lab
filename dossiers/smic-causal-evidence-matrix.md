@@ -309,3 +309,16 @@ La référence à une évaluation GRECSTA de la réforme Fillon est confirmée p
 **Ce n'est pas un audit économétrique du rapport.** Le texte primaire complet n'a pas été retrouvé. Échantillon, données, traitement, groupe témoin, pré-tendances, coefficients et intervalles de confiance restent inconnus. Aucun chiffre causal ne doit lui être attribué sur la seule base de sources secondaires. Il faut également distinguer ce rapport GRECSTA du rapport CEE de Bunel et al. et de l'étude CES de Simonnet & Terracol, tous trois associés au même appel à projets.
 
 Fiche de traçabilité : [GRECSTA — note d'accès documentaire](smic-grecsta-fillon-2009-source-access-note.md).
+
+
+## 16. Fiche d'audit n° 11 — Barlet, Blanchet & Le Barbanchon (2010), microsimulation et modèles d'agents
+
+Modèle dynamique de microsimulation/ACE calibré sur le marché du travail français : créations et destructions d'emplois, appariement, renouvellement de la main-d'œuvre, négociation salariale des insiders, profitabilité et demande agrégée. Les auteurs simulent notamment un choc sur le salaire minimum et des allègements de cotisations. Le modèle est présenté comme un prototype complémentaire aux évaluations ex post.
+
+La DARES–Trésor reprend un résultat de rendements non linéaires : le rendement des allègements sur l'emploi serait environ divisé par deux entre la première vague (1993–1997) et la seconde (à partir de 1998). Le mécanisme est la diminution de la contrainte du SMIC sur la distribution des salaires quand le barème est étendu ; les négociations salariales et les ajustements dynamiques réduisent une partie de l'avantage de coût. La rigidité nominale à la baisse des salaires amplifie les effets de court terme ; à moyen-long terme, la modération salariale les atténue.
+
+**Interprétation :** cette simulation fragilise l'hypothèse de rendements constants utilisée pour extrapoler la suppression totale des allègements. Le scénario prudent 400–800k emplois détruits est une extrapolation DARES construite à partir de cette hypothèse de rendement divisé par deux, non un résultat directement observé ou une estimation causale de Barlet et al.
+
+**Limites :** prototype calibré, règles de comportement simplifiées, résultats conditionnels aux paramètres et hypothèses, rigidité nominale structurante. Ne pas confondre simulation et évaluation ex post ; l'article ne mesure pas l'effet causal d'une hausse isolée du SMIC.
+
+Fiche : [Barlet, Blanchet & Le Barbanchon (2010)](smic-barlet-blanchet-le-barbanchon-2010-microsimulation.md).
