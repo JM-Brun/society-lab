@@ -16,6 +16,7 @@ related_dossiers:
   - "dossiers/smic-causal-evidence-matrix.md"
   - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
   - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
+  - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -413,3 +414,14 @@ Le résultat est particulièrement défavorable dans certaines spécifications p
 **Précautions majeures :** la mesure salariale repose sur des tranches de salaire mensuel et des heures déclarées ; l'identification compare des groupes proches sans test moderne de pré-tendances ; la période est ancienne ; l'estimation inconditionnelle suppose que les hausses du SMIC ne modifient pas les entrées en emploi, marge non identifiée directement dans le cas français. Enfin, cette étude et Abowd, Kramarz & Margolis (1999) reposent sur des données françaises très proches et ne doivent pas être comptées comme deux réplications indépendantes.
 
 **Bilan :** signal négatif crédible mais historiquement circonscrit pour la rétention des jeunes directement exposés ; preuve beaucoup plus faible d'un effet massif sur l'emploi total des jeunes ou d'une transposition à la période actuelle. Audit détaillé : [Abowd et al. (1997/2000)](../dossiers/smic-abowd-kramarz-lemieux-margolis-1997-emploi-jeunes.md).
+
+
+## 25. Rigidité et transmission salariale par les minima (Gautier, Roux & Suarez Castillo, 2019)
+
+L'étude INSEE G2019/09 relie les salaires individuels trimestriels ACEMO (2005–2015) aux minima conventionnels de plus de 360 branches et aux accords salariaux d'entreprise. Elle montre que le SMIC et les minima de branche modifient à la fois la probabilité et la taille des hausses de salaire. Les minima conventionnels sont un canal de diffusion du SMIC vers des rémunérations plus élevées.
+
+Dans les simulations à cinq ans, une hausse de 1 % du SMIC augmente les salaires agrégés de 0,13 point en effet direct et de 0,17 point lorsque les minima de branche et les rétroactions sont intégrés. Une hausse d'inflation de 1 % augmente les salaires de 0,22 point sans réaction des minima, mais de 0,42 point lorsque les institutions salariales réagissent : la transmission de l'inflation passée est amplifiée d'un facteur 1,7.
+
+L'effet du SMIC est plus fort près du plancher. Les minima de branche contribuent à la diffusion vers les déciles supérieurs, mais cette conclusion est sensible aux effets temporels et à la composition sectorielle, notamment à la métallurgie et au BTP.
+
+**Limite fondamentale :** les simulations maintiennent la composition de l'échantillon fixe et n'incluent ni créations/destructions d'emplois ni réactions des prix. Les résultats sont conditionnels au modèle de rigidité et à ses hypothèses d'identification. Le facteur 1,7 décrit l'amplification de la transmission de l'inflation aux salaires, pas un effet sur l'emploi. Voir [l'audit complet](../dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md).
