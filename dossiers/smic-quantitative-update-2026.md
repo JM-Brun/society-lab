@@ -180,3 +180,15 @@ Le tableau 5.3 du TEF 2010 publie des observations annuelles pour 2001–2008 : 
 **Millésime et comparabilité.** Le tableau est celui du TEF 2010 et ses valeurs doivent rester identifiées comme telles. Il fournit une série annuelle directe pour 2001–2008, mais ne suffit pas à établir une série révisée homogène avec les tableaux TEF 2014/2015 et la série INSEE 2014–2025. Le net INSEE est calculé avant déduction de la CSG et de la CRDS ; l'inflation est l'indice moyen annuel y compris tabac. Le SHBO ne doit pas être assimilé au SHBOE utilisé depuis 2013.
 
 Source : INSEE, TEF 2010, tableau 5.3 « Salaire minimum – Coût du travail », p. 62 : https://www.insee.fr/fr/statistiques/fichier/1373375/T10F053.pdf.
+
+## Décomposition annuelle DARES des composantes du pouvoir d'achat (1971–2001)
+
+Le tableau V de l'article de Desplatz, Jamet, Passeron et Romans, « La modération salariale en France depuis le début des années 1980 », publié dans Économie et Statistique n° 367 (2003), reproduit une décomposition annuelle du pouvoir d'achat du SMIC de 1971 à 2001, avec la DARES comme source.
+
+Le CSV de transcription conserve séparément les deux composantes publiées : (1) la moitié du gain réel du salaire horaire de base ouvrier (SHBO) et (2) le coup de pouce nominal. Il couvre notamment 1980–1989, 1991–1994, 1996–1999 et 2001, auparavant absents des tableaux TEF intégrés.
+
+**Précaution essentielle :** ce fichier restitue les composantes d'une décomposition, pas une série autonome des variations observées du pouvoir d'achat. Les colonnes ne sont pas additionnées pour fabriquer un total ; l'identité comptable, les arrondis et la relation exacte entre composantes et variation observée doivent être vérifiés avant tout calcul. Depuis 1999, les chiffres incluent les revalorisations des garanties mensuelles de rémunération (GMR).
+
+Cette série ne doit pas être raccordée directement aux moyennes annuelles INSEE 2014–2025 ni aux glissements juillet-juillet de l'annexe DARES 1996–2008. Elle ne couvre pas 2002–2008 ; le graphique du rapport d'experts 2009 pour cette période est une source distincte dont l'extraction chiffrée reste à effectuer.
+
+Source : Desplatz, R., Jamet, S., Passeron, V. et Romans, F. (2003), « La modération salariale en France depuis le début des années 1980 », Économie et Statistique, n° 367, tableau V, p. 50, source DARES : https://www.insee.fr/fr/statistiques/fichier/1375888/es367b.pdf.
