@@ -278,3 +278,12 @@ Modèle structurel sectoriel et agrégation des interactions entre secteurs, à 
 Panel de 16 secteurs, Enquêtes Emploi 1982–2002, barèmes légaux et comptes nationaux. Système de demandes de facteurs (travail qualifié, peu qualifié, capital) avec salaires, prix, activité et cointégration. Pour 1997, estimation de 118 000 à 140 000 emplois peu qualifiés créés ou sauvegardés, mais 41 000 à 76 000 emplois qualifiés évincés ; bilan net total estimé à 60 000–80 000 emplois. Robustesses sur trois définitions de qualification, période arrêtée en 1998, exclusion des services aux entreprises et mesures alternatives du coût du capital. Sensibilité persistante à la spécification et aux mesures du capital ; document de travail EPEE, non à présenter comme preuve expérimentale.
 
 **Enseignement comparatif :** les évaluations microéconomiques de Crépon & Desplatz peuvent surestimer l’emploi net lorsqu’elles ne modélisent pas suffisamment les substitutions entre qualifications, les prix, les salaires et les interactions sectorielles. Les chiffres d’emplois peu qualifiés ne sont pas interchangeables avec le solde d’emploi total.
+
+
+## 13. Fiche d'audit n° 8 — Hennion & Loisy (2006), estimation macroéconomique agrégée
+
+Hennion & Loisy, *Dossiers Solidarité et Santé* n°2, 2006, p. 65–72. Comptes trimestriels INSEE et données DSS, 1985T1–2003T3, secteur marchand non agricole, emploi en ETP. Le taux apparent de cotisations patronales est le ratio cotisations versées/masse salariale et agrège plusieurs prélèvements ; il n’isole pas les exonérations ciblées bas salaires.
+
+Modèle à correction d’erreur : relation de long terme emploi–PIB–coût réel du travail–tendance, avec indicatrice RTT à partir de 1998T4 ; élasticité de long terme emploi/coût estimée à −0,9 (t = −3,3). Le coefficient court terme du coût est −0,04 (t = −1,1), non significatif. La baisse du taux apparent de 2,6 points entre 1990 et 2003 conduit à un chiffrage d’environ 250 000 emplois ETP, toutes choses égales par ailleurs.
+
+**Limites :** taux agrégé non ciblé, hypothèse d’exogénéité des salaires, substitution qualifié/non qualifié non identifiable, colinéarité RTT/allègements, financement des exonérations exclu. Le chiffre de 250 000 est une simulation macroéconomique et non une identification causale des exonérations bas salaires. Il ne mesure pas une hausse isolée du SMIC. Fiche : [Hennion & Loisy (2006)](smic-hennion-loisy-2006-macro-audit.md).
