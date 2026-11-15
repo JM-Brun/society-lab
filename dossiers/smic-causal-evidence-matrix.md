@@ -249,3 +249,18 @@ Les auteurs indiquent que les contrats de promotion de l'emploi et les exonérat
 | 2026-11-15 | Audit distinct du chapitre Abowd, Kramarz, Lemieux & Margolis (2000) : séparation des élasticités conditionnelles et inconditionnelles, contrôle par âge, analyse des contrats aidés, robustesses et limites de l'identification ; fiche autonome créée. |
 | 2026-11-15 | Audit Kramarz & Philippon (2001) : distinction du coût employeur total et du SMIC légal, résultats asymétriques sur sorties/entrées, effets non significatifs des exonérations sur les embauches et limites du DID ; fiche autonome créée. |
 | 2026-11-15 | Audit Crépon & Desplatz (2001) : panel BRN-DADS, traitement continu, comparaison des estimateurs linéaires et semi-paramétrique, intervalles, commentaires de L'Horty et Lacroix et critique de Sterdyniak ; distinction explicite entre allègements et hausse du SMIC. |
+
+
+## 11. Fiche d'audit n° 6 — Réforme Fillon 2003 : Bunel et al. (2009), Simonnet & Terracol (2009)
+
+**Références :** Bunel, Gilles & L’Horty, *Économie et Statistique* n°429-430, p. 77–105 ; Simonnet & Terracol, même numéro, p. 107–128. Fiche détaillée : [audit de la réforme Fillon 2003](smic-fillon-reform-2003-audit.md).
+
+La réforme de 2003 associe convergence du SMIC et des GMR, réorganisation des exonérations patronales et différences de coût selon les entreprises à 35 h et 39 h. Elle ne permet donc pas d'isoler l'effet d'une hausse du SMIC.
+
+**Bunel, Gilles & L’Horty :** panel cylindré 2002–2005 d'environ 92 939 entreprises de plus de cinq salariés du privé non agricole, appariement ACOSS (AROME, ORME, SEQUOIA), DADS et SUSE. Traitement continu calculé sur la structure salariale de 2002 maintenue constante ; MCO, régressions quantiles et appariement sur score de propension (plus proche voisin/noyau). L'emploi des entreprises à 39 h progresse relativement avec la baisse de coût ; celui des entreprises à 35 h recule relativement. Les auteurs estiment un bilan agrégé très faible, voire légèrement négatif, sans effet clair en effectifs ou ETP. Pour les 35 h, élasticité MCO ETP −0,2776 (IC95 % [−0,4601 ; −0,0950]) ; pour les 39 h, élasticité emploi brut −0,2234 (IC95 % [−0,3414 ; −0,1054]) et ETP −0,3133 (IC95 % [−0,4252 ; −0,2015]). Les salaires horaires bruts progressent dans les deux groupes.
+
+**Simonnet & Terracol :** appariement Enquête Emploi 2001–2007 et CERFA ; comparaison des transitions chômage→emploi vers entreprises signataires 35 h et non signataires. Le résumé éditeur rapporte un ralentissement des sorties vers les entreprises à 35 h et un ralentissement spécifique pour les moins diplômés. Coefficients et robustesses détaillés non encore vérifiés sur texte intégral.
+
+**Limites communes :** traitement composite SMIC-GMR-cotisations-RTT ; sélection des entreprises et différences préexistantes ; panel cylindré excluant les créations/destructions ; absence de bouclage macro et de prise en compte complète des substitutions intersectorielles. Pas de test événementiel moderne de pré-tendances établi dans l'audit. Ne pas interpréter ces travaux comme l'effet causal d'une hausse isolée du SMIC.
+
+**Niveau de preuve :** modéré pour les associations différentielles au niveau des entreprises ; faible à modéré pour le bilan agrégé ; provisoire pour Simonnet & Terracol tant que les tableaux intégraux ne sont pas dépouillés.
