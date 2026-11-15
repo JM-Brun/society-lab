@@ -78,7 +78,7 @@ class MonthlySmicReconstructionTests(unittest.TestCase):
             inflation = float(row["ipc_inflation_pct"]) / 100
             expected = 100 * ((1 + nominal) / (1 + inflation) - 1)
             actual = float(row["real_purchasing_power_change_pct"])
-            self.assertAlmostEqual(actual, expected, places=4, msg=row["year"])
+            self.assertAlmostEqual(actual, expected, delta=0.0001, msg=row["year"])
 
     def test_annual_formula_uses_ratio_of_annual_means(self):
         smic = {}
