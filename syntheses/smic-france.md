@@ -196,3 +196,16 @@ Le dossier 1994–2026 a été affiné à partir des annexes DARES et des rappor
 La chronologie événementielle a fait l'objet d'un contrôle structurel et arithmétique complémentaire : [audit du dataset 1994–2026](../dossiers/smic-revaluations-audit-1994-2026.md). Le CSV contient 42 événements. Les hausses mixtes de 1995, 1997 et juillet 2012 sont désormais explicitement distinguées des coups de pouce intégralement discrétionnaires. Un écart de 0,065 point entre la variation publiée et le ratio des taux affichés a été isolé pour juillet 1999 ; il reste à vérifier à partir des montants non arrondis et n'a pas été corrigé arbitrairement.
 
 **Conséquence pour l'analyse :** cette chronologie est une base descriptive provisoire, pas une variable causale prête à l'emploi. Il faut encore harmoniser les taux non arrondis, les unités temporelles et les épisodes GMR avant d'estimer les effets sur l'emploi, les salaires ou les prix.
+
+
+## 15. Pouvoir d'achat annuel : première série structurée (2014–2025)
+
+Le dossier quantitatif contient désormais un jeu de données dédié au pouvoir d'achat annuel du SMIC horaire : [CSV 2014–2025](../data/smic-real-purchasing-power-2014-2025.csv), issu du tableau INSEE publié le 9 septembre 2026. Un indice chaîné du pouvoir d'achat brut, base 2014=100, atteint **102,93 en 2025** (+2,93 % environ sur la période). Il s'agit d'un calcul Society Lab à partir de variations annuelles officielles arrondies au dixième, et non d'une série officielle INSEE autonome.
+
+Cette série confirme que les hausses nominales ne se traduisent pas automatiquement par des gains réels importants : le pouvoir d'achat brut moyen annuel recule en 2017 (-0,1 %) et 2018 (-0,6 %), puis de nouveau en 2021 (-0,1 %) ; il stagne en 2022 (0,0 %) malgré plusieurs revalorisations infra-annuelles. Les gains de 2023, 2024 et 2025 restent modestes (+0,5 %, +0,2 %, +0,7 %).
+
+**Précaution sur le net :** l'indicateur INSEE intitulé « pouvoir d'achat du Smic horaire net » est défini dans la note de source comme avant déduction de CSG et CRDS. Il ne doit pas être présenté comme le net effectivement perçu après tous prélèvements. En 2018, l'indicateur brut baisse de 0,6 % tandis que cet indicateur net progresse de 2,2 % ; cette divergence souligne l'effet des changements de prélèvements et la nécessité de ne pas mélanger brut, net conventionnel et revenu disponible.
+
+**Limite :** la série annuelle de pouvoir d'achat s'arrête à 2025. Le taux horaire de 12,31 € applicable depuis juin 2026 ne permet pas de calculer un pouvoir d'achat moyen annuel 2026. La série 2014–2025 ne renseigne pas non plus les heures travaillées, la durée d'emploi, les revenus du ménage ou les effets causaux sur l'emploi.
+
+Source : INSEE, *Salaire minimum interprofessionnel de croissance*, données annuelles, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
