@@ -348,3 +348,14 @@ Au 1er janvier 2023, 3,13 millions de salariés du privé non agricole, soit 17,
 **Bilan provisoire :** protection du taux horaire brut directement établie ; diffusion aux salaires voisins partielle et retardée ; compression temporaire des grilles documentée ; exposition disproportionnée des temps partiels, des TPE et des femmes établie. Les publications descriptives citées n'identifient pas les effets causaux sur l'emploi, les heures, les prix, les marges ou la pauvreté. Le bilan global de l'épisode reste donc indéterminé sur ces dimensions.
 
 Voir [l'audit Dares des bénéficiaires et de la période inflationniste 2021–2024](../dossiers/smic-dares-beneficiaires-inflation-2021-2024-audit.md).
+
+
+## 19. Transmission aux prix : restauration (Fougère, Gautier & Le Bihan, 2010)
+
+Une étude microéconométrique française exploite 104 542 relevés individuels de prix de repas dans 3 396 établissements entre juillet 1994 et février 2003. Elle estime un modèle de rigidité des prix de type (S,s), car le SMIC est national et ne fournit pas de groupe témoin non exposé. Dans les simulations microéconomiques, une hausse permanente de 1 % du SMIC augmente à long terme le niveau des prix d'environ 0,097 % dans les restaurants traditionnels et 0,130 % dans la restauration rapide. La transmission est lente : la moitié de l'effet est atteinte après environ 14 mois dans la restauration traditionnelle et six mois dans la restauration rapide.
+
+**Limites :** le résultat concerne la restauration, les données s'arrêtent en 2003, l'estimation repose sur un modèle structurel sans groupe témoin et les simulations sont en équilibre partiel. Les hausses du SMIC coexistent avec de fortes baisses de cotisations patronales ; le coût salarial est construit en tenant compte de celles-ci. L'étude ne mesure ni les marges ni l'emploi, et ne permet pas de déduire une hausse équivalente de l'IPC général.
+
+**Bilan :** les prix sont une marge d'ajustement empirique réelle, mais partielle et retardée dans le secteur étudié. Cette preuve doit entrer dans le bilan du SMIC sans être extrapolée à l'ensemble de l'économie.
+
+Voir [l'audit détaillé de Fougère, Gautier & Le Bihan](../dossiers/smic-fougere-gautier-le-bihan-2010-prix-restauration.md).
