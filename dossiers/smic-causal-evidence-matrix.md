@@ -350,3 +350,14 @@ La seconde stratégie exploite le seuil de 1,33 SMIC par régression sur discont
 **Portée pour le dossier SMIC :** étude utile sur les trajectoires salariales et l'hypothèse de trappe liée aux exonérations, pas une évaluation de l'effet causal des hausses du SMIC. Elle tempère les résultats de Lhommeau & Rémy, dont le champ, la période et la méthode sont différents.
 
 Fiche : [Aeberhardt & Sraer (2010)](smic-aeberhardt-sraer-2010-dynamique-salariale.md).
+
+
+## 19. Note d'audit n° 14 — Audenis, Laïb & Roux (2002) : mobilité des bas salaires et allégements
+
+Le chapitre de l'Insee (pp. 159–201) n'a pas été retrouvé en version intégrale. L'audit est donc documentaire et secondaire, pas une reproduction des estimations originales. Le CAE (2008) rapporte que la décote salariale associée au fait d'avoir été payé à bas salaire l'année précédente ne s'est pas aggravée pendant les années 1990 malgré l'extension des allégements ; une persistance des bas salaires existait déjà au début de la décennie. Il précise que les hausses du SMIC peuvent avoir masqué un effet de trappe. Le COE (2006) nuance : un phénomène de trappe existe, mais ne se serait pas accentué entre le début des années 1990 et 2001. Ces formulations ne signifient pas que les allégements sont sans effet.
+
+L'étude ultérieure de Lhommeau (2005), directement consultable et fondée sur le panel DADS 1984–2001, documente une mobilité salariale ascendante moins fréquente au milieu des années 1990 : le taux moyen de sortie du seuil de 1,3 SMIC en deux ans passe de 29,4 % (1984–1991) à 21,1 % (1994–1998), et de 39,3 % à 31,5 % avec un seuil fixe de 1,3 SMIC 1998 actualisé par les prix. L'auteur précise que cette comparaison n'est pas « toutes choses égales par ailleurs » et qu'elle ne corrige pas la sélection liée à l'entrée dans l'emploi. Il ne faut pas attribuer ces chiffres à Audenis et al.
+
+**Portée :** éclairage indirect sur les interactions entre SMIC, seuils statistiques et allégements ; aucune estimation causale d'une hausse isolée du SMIC sur emploi, heures ou revenu disponible. Le résultat « pas d'aggravation de la décote » doit être lu comme une stabilité relative malgré un contexte changeant, pas comme une absence de trappe.
+
+**Niveau de preuve :** faible à modéré tant que le chapitre primaire n'est pas consulté. Voir [la note d'accès et l'audit secondaire](smic-audenis-laib-roux-2002-source-access-audit.md).
