@@ -59,7 +59,8 @@
         "institutional_research",
         "institutional_explainer",
         "historical_institutional_publication",
-        "parliamentary_report"
+        "parliamentary_report",
+        "research_review"
       ]
     },
     "language": {
