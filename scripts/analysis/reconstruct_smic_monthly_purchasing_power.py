@@ -17,7 +17,6 @@ import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
-from collections import defaultdict
 from pathlib import Path
 
 START_YEAR = 1970
@@ -203,7 +202,7 @@ def main() -> int:
         "raw_sha256": {raw_filenames[name]: hashlib.sha256(payload).hexdigest() for name, payload in raw.items()},
     }
     (args.output_dir / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
     print(f"SMIC observations: {len(smic)}; CPI observations used: {len(cpi)}")
