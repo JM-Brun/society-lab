@@ -192,3 +192,62 @@ Le CSV de transcription conserve séparément les deux composantes publiées : (
 Cette série ne doit pas être raccordée directement aux moyennes annuelles INSEE 2014–2025 ni aux glissements juillet-juillet de l'annexe DARES 1996–2008. Elle ne couvre pas 2002–2008 ; le graphique du rapport d'experts 2009 pour cette période est une source distincte dont l'extraction chiffrée reste à effectuer.
 
 Source : Desplatz, R., Jamet, S., Passeron, V. et Romans, F. (2003), « La modération salariale en France depuis le début des années 1980 », Économie et Statistique, n° 367, tableau V, p. 50, source DARES : https://www.insee.fr/fr/statistiques/fichier/1375888/es367b.pdf.
+
+
+## 10. Protocole d'extraction des séries mensuelles — état au 15 novembre 2026
+
+La recherche des points d'accès a permis de préciser le protocole de collecte, mais **les fichiers mensuels n'ont pas encore été récupérés et archivés dans le dépôt**. Aucune série reconstruite n'est donc publiée à ce stade.
+
+### 10.1 SMIC horaire nominal
+
+- Source primaire : INSEE, série chronologique idBank **000822484**, « Montant du Smic (Salaire minimum interprofessionnel de croissance) brut horaire », en euros.
+- Page de référence : https://www.insee.fr/fr/statistiques/serie/000822484
+- Point d'accès CSV identifié : `https://bdm.insee.fr/series/000822484/csv?lang=fr&ordre=chronologique&transposition=donnees_colonne&periodeDebut=1&anneeDebut=1980&periodeFin=12&anneeFin=2025&revision=sans_revisions`
+- La réponse de ce point d'accès est une archive ZIP contenant le CSV ; le script d'extraction devra vérifier le type de réponse, l'intégrité de l'archive, les colonnes et les dates avant de l'enregistrer.
+- Le paramètre `revision=sans_revisions` doit être documenté : il vise la série sans historique des révisions, et ne doit pas être confondu avec une extraction de toutes les versions historiques.
+
+La série est en paliers : le taux légal applicable à un mois est celui en vigueur pendant ce mois. Pour chaque année civile, la moyenne arithmétique des 12 taux mensuels constitue le taux horaire brut moyen annuel à comparer au tableau annuel INSEE. Les années incomplètes doivent être rejetées ou marquées explicitement.
+
+### 10.2 Indice des prix à la consommation
+
+Le jeu de données public « Indice des prix à la consommation - Base 100 en 2015 - Ensemble des ménages - Ensemble - France » fournit un CSV mensuel avec les colonnes `periode`, `date` et `ipc`.
+
+- Fiche du jeu de données : https://www.data.gouv.fr/datasets/indice-des-prix-a-la-consommation-base-100-en-2015-ensemble-des-menages-ensemble-france
+- Ressource CSV identifiée : https://static.data.gouv.fr/resources/indice-des-prix-a-la-consommation-base-100-en-2015-ensemble-des-menages-ensemble-france/20261018-133505/indice-prix-consommation.csv
+- Série INSEE de référence 1990–2025 : idBank **001759970**, base 100 en 2015.
+- Avant 1990 : idBank **000008964**, base 100 en 1980.
+- À partir de 2026 : idBank **011814630**, base 100 en 2025.
+
+La documentation du jeu précise le raccordement : la série antérieure à 1990 est raccordée à la base 2015 par la moyenne géométrique des rapports sur la période de recouvrement 1990–1992 ; la série en base 2025 est raccordée sur 1996–2025. Il faut donc conserver le fichier raccordé comme série de travail et archiver séparément les séries natives et leurs métadonnées si l'objectif est de reproduire le raccordement.
+
+### 10.3 Calcul annuel à reproduire
+
+Pour chaque année complète (y) :
+
+1. calculer (SMIC_y = \frac{1}{12}\sum_{m=1}^{12} SMIC_{y,m}) ;
+2. calculer (IPC_y = \frac{1}{12}\sum_{m=1}^{12} IPC_{y,m}), conformément à la moyenne arithmétique annuelle des indices mensuels ;
+3. calculer un indice de niveau réel (R_y = SMIC_y / IPC_y) ;
+4. calculer sa variation annuelle (100 \times (R_y/R_{y-1}-1)).
+
+Ce calcul est une **reconstruction de contrôle**, et non un remplacement automatique de l'indicateur officiel de pouvoir d'achat publié par l'INSEE. Les écarts avec les valeurs officielles doivent être conservés et expliqués : arrondis des taux mensuels, révisions, champ géographique, conventions de déflation et différences éventuelles de définition. Il est interdit de forcer le résultat à coïncider avec les valeurs TEF.
+
+### 10.4 Contrôles obligatoires avant publication
+
+- exactement 12 mois distincts par année complète ;
+- aucune valeur manquante, doublon ou taux non numérique ;
+- taux SMIC constant à l'intérieur de chaque palier légal, sauf changement officiel ;
+- cohérence des dates de changement avec la chronologie officielle INSEE ;
+- IPC strictement positif et couverture mensuelle continue ;
+- absence de mélange entre IPC natifs et IPC raccordés ;
+- champ territorial et éventuelles ruptures explicitement documentés ;
+- comparaison des moyennes annuelles reconstruites aux montants moyens annuels publiés par l'INSEE ;
+- comparaison des variations réelles aux millésimes TEF 2010, 2014, 2015, 2017 et 2020 sans fusionner ces millésimes.
+
+### 10.5 Limite d'accès rencontrée
+
+Au cours de cette revue, la page INSEE de la série SMIC et la fiche descriptive du jeu IPC ont été consultées. Le moteur de recherche a également révélé le point d'accès CSV du SMIC et la ressource CSV de l'IPC. En revanche, l'ouverture directe des fichiers binaires/archives a échoué dans l'environnement de consultation utilisé. **Il ne faut donc pas présenter les observations mensuelles comme téléchargées, ni produire des résultats calculés à partir de ces fichiers tant que leur récupération et leur empreinte ne sont pas vérifiées.**
+
+Sources de méthode :
+- INSEE, série SMIC horaire brut 000822484 : https://www.insee.fr/fr/statistiques/serie/000822484
+- data.gouv.fr, jeu de données IPC et documentation du raccordement : https://www.data.gouv.fr/datasets/indice-des-prix-a-la-consommation-base-100-en-2015-ensemble-des-menages-ensemble-france
+- Code source de la visualisation qui documente le point d'accès CSV INSEE et son format ZIP : https://commons.wikimedia.org/wiki/File:SMIC_horaire_brut_depuis_1980.svg
