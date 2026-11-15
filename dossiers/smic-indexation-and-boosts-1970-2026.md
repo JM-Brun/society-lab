@@ -168,3 +168,14 @@ Le rapport du groupe d'experts est une source institutionnelle de synthèse ; so
 Une transcription du tableau 3 du rapport d'information du Sénat n° 504 (1993–1994) est maintenant disponible : [dossier méthodologique](smic-revaluations-data-1970-1993.md) et [CSV](../data/smic-revaluations-1970-1993.csv). La série distingue hausse observée, prix, moitié du TSH réel, obligation légale et coup de pouce.
 
 **Réserve importante :** les chiffres du Sénat pour 1973 et 1981 (respectivement 9,7 % et 5,2 % de coup de pouce selon sa convention) diffèrent de ceux cités par le rapport du groupe d'experts 2020 (10,1 % et 6,9 %). Les séries sont conservées séparément jusqu'à réconciliation des dates, fenêtres d'indices et définitions. Le CSV ne mesure ni les moyennes annuelles ni les effets causaux sur l'emploi.
+
+
+## 10. Deuxième tranche de décomposition tabulaire : 1996–2008
+
+Une seconde tranche de la décomposition officielle a été structurée à partir de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009 : [CSV 1996–2008](../data/smic-revaluations-1996-2008.csv). Elle complète la transcription du Sénat pour 1970–1993, sans fusionner les deux conventions de calcul.
+
+La tranche 1996–2008 distingue le taux horaire, la hausse observée, la moitié du gain de pouvoir d'achat du SHBO, la contribution des prix, le coup de pouce et, lorsque la période l'exige, la convergence des GMR ou l'alignement sur une GMR. Les années 2003–2005 sont volontairement codées dans des colonnes spécifiques : le rapport décrit une convergence institutionnelle exceptionnelle, qui ne doit pas être assimilée à un coup de pouce ordinaire.
+
+**Limites de transcription :** l'annexe commence en juillet 1996 ; elle ne remplace donc pas une série complète à partir de 1994. Les composantes publiées sont parfois arrondies et peuvent ne pas sommer exactement à la variation affichée (notamment 1998 et 2000). Les tirets du rapport sont codés 0.00 uniquement lorsqu'ils signifient l'absence de coup de pouce dans la colonne correspondante ; les cellules de convergence ne sont pas imputées à zéro hors de la période de convergence. Les revalorisations distinctes des GMR en 2000–2002 sont signalées dans les notes et ne sont pas additionnées au taux horaire du SMIC.
+
+Source primaire : Groupe d'experts SMIC, *Rapport*, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf. Le rapport distingue explicitement la convergence des minima salariaux entre 2003 et 2005 et les composantes ordinaires de revalorisation (voir également p. 6–8).
