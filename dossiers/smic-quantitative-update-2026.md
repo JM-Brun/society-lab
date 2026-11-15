@@ -379,3 +379,35 @@ Les années de baisse du pouvoir d'achat horaire brut dans la reconstruction son
 - Workflow d'exécution et conservation des XML bruts et de la série mensuelle alignée : `.github/workflows/smic-monthly-reconstruction.yml` (artefact GitHub Actions).
 
 La série mensuelle alignée et les XML bruts sont conservés dans l'artefact d'exécution pour audit ; le script permet de les re-télécharger depuis les URL INSEE consignées dans le manifeste. La série annuelle est versionnée dans le dépôt.
+
+
+## 13. Épisodes de recul ou de stagnation du pouvoir d'achat : décomposition nominal / inflation
+
+La série annuelle permet de distinguer deux grandeurs qui sont souvent confondues dans le débat : la progression de la moyenne annuelle du taux horaire brut du SMIC et l'inflation moyenne annuelle. Le changement réel est le rapport entre ces deux évolutions, et non la simple comparaison du taux de revalorisation décidé à une date donnée avec l'inflation de la même année.
+
+| Année | Croissance nominale du SMIC moyen annuel | Inflation IPC moyenne | Variation réelle reconstruite | Événements de revalorisation documentés |
+|---:|---:|---:|---:|---|
+| 2010 | +1,08 % | +1,53 % | −0,44 % | +0,5 % au 1er janvier ; changement du calendrier de revalorisation (juillet → janvier) |
+| 2011 | +1,76 % | +2,11 % | −0,35 % | +1,6 % au 1er janvier ; +2,1 % au 1er décembre après franchissement du seuil d'inflation |
+| 2017 | +0,93 % | +1,03 % | −0,10 % | +0,9 % au 1er janvier ; pas de coup de pouce |
+| 2018 | +1,23 % | +1,85 % | −0,61 % | +1,2 % au 1er janvier ; inflation annuelle plus rapide que la hausse moyenne du taux horaire |
+| 2021 | +1,55 % | +1,64 % | −0,09 % | +1,0 % au 1er janvier ; +2,2 % au 1er octobre après franchissement du seuil d'inflation |
+| 2022 | +5,25 % | +5,22 % | +0,02 % | +0,9 % au 1er janvier, +2,65 % au 1er mai et +2,03 % au 1er août après déclenchements liés à l'inflation |
+
+### Lecture par épisode
+
+- **2010 :** la revalorisation de janvier (+0,5 %) intervient dans le contexte du déplacement de la date annuelle de juillet à janvier. La moyenne annuelle du SMIC progresse davantage (+1,08 %) du fait de l'effet de report des hausses intervenues en 2009, mais moins vite que l'IPC moyen (+1,53 %). La perte réelle annuelle ne signifie donc pas que le taux horaire a baissé ; elle signifie que le pouvoir d'achat moyen du taux horaire a reculé.
+- **2011 :** la hausse de janvier (+1,6 %) ne suffit pas à suivre l'inflation moyenne. Le seuil de déclenchement automatique est atteint en cours d'année et la revalorisation de +2,1 % intervient seulement en décembre : elle ne pèse que sur un mois de la moyenne annuelle. Cela explique pourquoi la hausse du taux horaire en fin d'année ne compense pas rétroactivement l'inflation déjà subie sur les mois précédents.
+- **2017 :** l'augmentation annuelle (+0,9 %) est très proche mais légèrement inférieure à l'inflation moyenne (+1,03 %). Le recul réel est faible (−0,10 %) ; il s'agit d'une quasi-stagnation plutôt que d'une forte perte.
+- **2018 :** la hausse nominale moyenne du SMIC (+1,23 %) est nettement inférieure à l'IPC moyen (+1,85 %). La perte réelle (−0,61 %) est la plus importante des années négatives de la période 2010–2025 dans cette reconstruction. Une revalorisation ponctuelle en début d'année ne compense pas une inflation moyenne plus élevée sur l'ensemble de l'année.
+- **2021 :** les revalorisations de janvier et d'octobre (+1,0 % puis +2,2 %) limitent le recul, mais l'effet de la hausse d'octobre ne porte que sur le dernier trimestre. La moyenne annuelle du taux horaire progresse de +1,55 %, légèrement moins que l'IPC (+1,64 %).
+- **2022 :** trois revalorisations rapprochées portent la croissance de la moyenne annuelle du SMIC à +5,25 %, quasiment au niveau de l'inflation (+5,22 %). Le résultat réel est presque nul (+0,02 %). Les revalorisations ont donc essentiellement rattrapé l'inflation moyenne, sans créer de gain réel annuel substantiel.
+
+### Ce que ces épisodes démontrent — et ne démontrent pas
+
+1. Une revalorisation nominale positive ne garantit pas une hausse du pouvoir d'achat moyen sur l'année : tout dépend de son ampleur, de sa date et de la trajectoire de l'IPC.
+2. Une revalorisation déclenchée en cours d'année ne compense pas rétroactivement l'inflation des mois antérieurs ; son effet sur la moyenne annuelle est mécaniquement partiel.
+3. Une année de baisse du pouvoir d'achat horaire brut ne signifie pas nécessairement une baisse du revenu disponible des ménages : les transferts, la prime d'activité, les cotisations, le temps de travail et les autres revenus ne sont pas mesurés ici.
+4. Ces épisodes ne permettent pas d'isoler l'effet causal d'une hausse discrétionnaire du SMIC : ils décrivent la combinaison des règles, des dates d'effet et de l'inflation observée.
+
+Références pour les dates et taux de revalorisation : série historique `data/smic-revaluations-1994-2026.csv`, source INSEE `SOURCE-INSEE-SMIC-ANNUAL-TABLE` (https://www.insee.fr/fr/statistiques/1375188), historique ministériel `SOURCE-MINISTRY-SMIC-HISTORY` (https://travail-emploi.gouv.fr/le-smic-salaire-minimum-de-croissance) et rapport du groupe d'experts 2017 `SOURCE-EXPERT-GROUP-2017` (https://www.vie-publique.fr/files/rapport/pdf/174000842.pdf).
