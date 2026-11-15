@@ -84,8 +84,75 @@ Une étude ne reçoit pas le niveau « élevé » uniquement parce qu'elle utili
 - OCDE (2025), *Low-wage employment in France: A cross-country perspective* : https://doi.org/10.1787/82539f44-en
 - Cottet (2024), réduction de cotisations patronales : https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or
 
-## 7. Historique des révisions
+
+## 8. Fiche d'audit n° 1 — Bazen & Skourias (1997), épisode 1981–1984
+
+**Référence :** Stephen Bazen et Nicolas Skourias, « Is there a negative effect of minimum wages on youth employment in France? », *European Economic Review*, 41(3–5), avril 1997, p. 723–732, DOI [10.1016/S0014-2921(97)00004-4](https://doi.org/10.1016/S0014-2921(97)00004-4).
+
+**Statut de lecture :** fiche d'audit provisoire fondée sur le résumé éditeur et sur la description critique détaillée publiée par Neumark & Wascher (2007, section consacrée aux études internationales, p. 97–98 de la pagination du document). Le texte intégral de l'article de 1997 n'a pas encore été obtenu ; les coefficients exacts, erreurs-types, intervalles de confiance et tableaux ne sont donc pas retranscrits ici.
+
+### 8.1 Données, période et unité d'observation
+
+- Période de l'analyse : augmentations françaises du SMIC entre 1981 et 1984 ; l'article s'intéresse notamment à la hausse de 10 % de juin 1981.
+- Source de données indiquée par la revue : enquête française sur la population active (*French Labour Force Survey*), 1980–1984.
+- Population : jeunes de 15 à 24 ans.
+- Unité d'analyse : 32 secteurs d'activité, et non des individus suivis longitudinalement.
+- Variable de résultat : part de l'emploi des jeunes dans l'emploi total du secteur.
+- Mesure d'exposition : proportion des salariés du secteur dont le salaire était inférieur au niveau du SMIC fixé en juin 1981. Il s'agit d'une mesure de « mordant » sectoriel, pas d'une observation individuelle de chaque salarié effectivement augmenté.
+
+### 8.2 Traitement, groupe témoin et identification
+
+La stratégie est une différence de différences sectorielle : comparer l'évolution de la part des jeunes dans les secteurs où le nouveau minimum était davantage contraignant à l'évolution dans les secteurs moins exposés. Les secteurs moins exposés servent de comparaison ; il n'existe pas de groupe témoin parfaitement non traité puisque le SMIC est national.
+
+La revue de Neumark & Wascher précise que les auteurs conditionnent également l'évolution de la part des jeunes à la croissance globale de l'emploi dans le secteur. Le paramètre identifié est donc une variation relative de la composition par âge de l'emploi sectoriel, conditionnelle à l'évolution de l'emploi total ; il ne correspond pas directement à une variation du nombre total d'emplois jeunes dans l'économie.
+
+### 8.3 Résultats et fenêtres temporelles rapportées
+
+Les différences de première période rapportées sont :
+- octobre 1980–octobre 1981 ;
+- mars 1981–mars 1982.
+
+Les estimations sont décrites comme négatives et statistiquement significatives : la part de l'emploi des jeunes baisse relativement davantage dans les secteurs où le SMIC est le plus contraignant. Les différences calculées sur une fenêtre plus longue sont rapportées comme donnant des effets négatifs un peu plus importants.
+
+**Ce qui n'est pas établi par cette étude :**
+- elle ne fournit pas, dans les informations vérifiées à ce stade, d'estimation distincte des heures travaillées ;
+- elle ne mesure pas directement l'effet sur les salaires individuels (les salaires servent à construire l'exposition) ;
+- la variable dépendante est une part sectorielle, non un taux d'emploi individuel ;
+- elle n'établit pas à elle seule une baisse agrégée de l'emploi total des jeunes en France.
+
+### 8.4 Tendances préalables et robustesse : point critique
+
+La stratégie exige que, sans la hausse, les secteurs initialement plus exposés auraient connu une évolution comparable de la part des jeunes, conditionnellement aux contrôles. Or les éléments consultés ne documentent pas un véritable test graphique ou statistique de tendances parallèles préalables, ni une étude d'événement permettant de vérifier l'absence de divergence avant juin 1981. **Ce point reste non vérifié dans l'article intégral.**
+
+Neumark & Wascher (2007) formulent deux critiques précises :
+1. Les auteurs expliquent la variation de la part des jeunes par la croissance en pourcentage de l'emploi total du secteur. Le dénominateur de cette croissance peut être très différent selon les secteurs ; la revue estime qu'il aurait été préférable de définir de façon cohérente la variable dépendante et le contrôle.
+2. Pour les différences longues (mars 1980–mars 1984), l'exposition retenue reste la proportion de salariés affectés par la seule hausse de juin 1981. Or plusieurs hausses du minimum ont eu lieu entre 1980 et 1984, dont une part de la hausse cumulée était déjà intervenue avant juin 1981. L'exposition de juin 1981 peut alors capter des ajustements retardés ou des différences sectorielles préexistantes plutôt que le seul effet de cette hausse.
+
+Ces critiques ne réfutent pas mécaniquement le résultat, mais fragilisent son interprétation causale, en particulier pour les fenêtres longues. La significativité statistique rapportée ne remplace pas les tests de pré-tendances, les erreurs-types détaillées et les analyses de sensibilité.
+
+### 8.5 Concomitants et validité externe
+
+L'épisode 1981–1984 cumule plusieurs revalorisations du SMIC et s'inscrit dans un contexte macroéconomique et institutionnel particulier. Une comparaison fondée sur l'exposition sectorielle peut aussi capter des chocs différenciés entre secteurs (demande, composition de la main-d'œuvre, restructurations) si ceux-ci ne sont pas correctement neutralisés.
+
+La transposition à la France actuelle est limitée : structure sectorielle, niveau de qualification, couverture conventionnelle, allègements de cotisations, alternance et dispositifs d'emploi des jeunes ont changé. L'étude porte sur les 15–24 ans et sur la composition de l'emploi sectoriel ; elle ne permet pas d'extrapoler un effet moyen à l'ensemble des salariés ni d'évaluer une hausse contemporaine isolée.
+
+### 8.6 Verdict provisoire
+
+**Résultat à conserver :** signal négatif sectoriel sur la part de l'emploi des 15–24 ans dans les secteurs davantage exposés aux hausses du SMIC de 1981–1984.
+
+**Niveau de confiance :** faible à modéré pour une interprétation causale, modéré pour le constat descriptif/économétrique rapporté. La principale réserve porte sur la spécification du contrôle d'emploi sectoriel et la mesure de l'exposition aux hausses cumulées.
+
+**Avant de relever le niveau de preuve :** obtenir l'article intégral ; vérifier les tableaux et la définition précise des 32 secteurs ; extraire coefficients, erreurs-types et tests ; examiner les tendances préalables ; reproduire les fenêtres courtes et longues avec une mesure d'exposition couvrant l'ensemble des hausses 1980–1984.
+
+### Sources de cette fiche
+
+- Bazen & Skourias (1997), notice et résumé éditeur : https://www.sciencedirect.com/science/article/pii/S0014292197000044
+- Neumark & Wascher (2007), *Minimum Wages and Employment*, IZA DP 2570, discussion de Bazen & Skourias, pagination imprimée p. 97–98 : https://www.iza.org/publications/dp/2570/minimum-wages-and-employment (copie texte consultée pour localiser la discussion : https://studylib.net/doc/18073222/minimum-wages-and-employment)
+
+
+## 9. Historique des révisions
 
 | Date | Modification |
 |---|---|
 | 2026-11-15 | Création de la matrice des preuves, distinction des instruments et hiérarchisation des travaux de vérification. |
+| 2026-11-15 | Première fiche d'audit détaillée : Bazen & Skourias (1997), description des données, du DID sectoriel, des fenêtres et des deux critiques méthodologiques documentées par Neumark & Wascher (2007). |
