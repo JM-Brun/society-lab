@@ -21,3 +21,8 @@ dossiers:
     dossier_path: "dossiers/smic-indexation-decomposition.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+
+  - dossier_id: "DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX"
+    dossier_path: "dossiers/smic-causal-evidence-matrix.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"

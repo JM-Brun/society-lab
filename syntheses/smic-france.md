@@ -12,6 +12,7 @@ related_dossiers:
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
   - "dossiers/smic-social-partners-evidence.md"
+  - "dossiers/smic-causal-evidence-matrix.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
