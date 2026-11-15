@@ -27,7 +27,7 @@ Le tableau ci-dessous liste les écarts supérieurs à 0,06 point entre le pourc
 |---|---:|---:|---:|
 | 1999-07-01 | 1.24 | 1.305 | -0.065 |
 
-Ces écarts ne sont pas automatiquement des erreurs : les montants en euros sont affichés au centime et certaines variations sont publiées avec une convention ou un arrondi différent. Pour les épisodes à fort enjeu analytique, conserver simultanément la valeur source et le ratio de contrôle, et retrouver le taux non arrondi ou la base de comparaison avant toute réconciliation.
+Cet écart est expliqué par le passage francs/euros : 40,22 F à 40,72 F correspond à +1,24 %, tandis que le ratio de 6,13 € à 6,21 € est affecté par l'arrondi des deux montants convertis. Le contrôle confirme l'intérêt de conserver les taux dans leur unité source, ou les valeurs non arrondies, lorsque l'on recalcule des variations historiques.
 
 ## Taxonomie retenue
 
