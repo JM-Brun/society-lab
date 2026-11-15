@@ -124,6 +124,6 @@ Source de comparaison : rapport du Groupe d'experts SMIC / DARES, juin 2009, ann
 
 Un contrôle structurel et arithmétique complémentaire est publié dans [l'audit de cohérence 1994–2026](smic-revaluations-audit-1994-2026.md). Il confirme 42 événements, 10 colonnes et une chronologie triée. Il distingue les variations publiées par les sources du ratio recalculé à partir des montants horaires affichés au centime.
 
-Une anomalie apparente limitée a été relevée pour juillet 1999 : la variation publiée de 1,24 % diffère de 0,065 point du ratio calculé entre les taux affichés (6,21 € et 6,13 €). Cet écart est conservé comme point de vérification, et non corrigé automatiquement : il peut provenir des montants non arrondis ou de la convention de calcul de la source.
+Un écart apparent de 0,065 point pour juillet 1999 a été résolu en revenant aux montants sources en francs : 40,22 F puis 40,72 F donnent +1,24 %. Le ratio calculé sur les montants convertis et arrondis en euros (6,13 € puis 6,21 €) diffère légèrement en raison des arrondis.
 
 La taxonomie du CSV a également été normalisée : les hausses de 1995, 1997 et juillet 2012 sont désormais classées comme hausses annuelles ou mixtes avec composante discrétionnaire, plutôt que comme coups de pouce intégralement discrétionnaires.
