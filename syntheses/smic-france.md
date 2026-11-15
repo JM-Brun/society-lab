@@ -288,3 +288,14 @@ L'étude Insee-Dares ultérieure de Lhommeau (2005), consultable directement, ob
 **Conclusion :** ces travaux éclairent l'interaction entre hausse du SMIC, définition des bas salaires et exonérations dégressives ; ils ne mesurent pas l'effet causal d'une revalorisation isolée du SMIC sur l'emploi ou le revenu disponible. Le chapitre primaire Audenis et al. reste à obtenir pour auditer ses données et ses estimations.
 
 Voir [la note d'accès documentaire Audenis, Laïb & Roux (2002)](../dossiers/smic-audenis-laib-roux-2002-source-access-audit.md).
+
+
+### Diffusion des revalorisations dans les grilles salariales : Koubi & Lhommeau (2007)
+
+Sur la période 2000–2005, Koubi & Lhommeau exploitent l'enquête Acemo trimestrielle pour suivre des postes représentatifs de grilles salariales dans les entreprises de 10 salariés ou plus du secteur marchand non agricole. Ils trouvent une diffusion au-delà des salariés directement au minimum, décroissante avec la distance au SMIC à court terme et plus importante après un an. Une hausse de 1 % du minimum est associée à +0,39 % de salaire de base à 1–1,1 SMIC et +0,07 % à 1,4–1,5 SMIC après un trimestre. À un an, les estimations sont respectivement de 0,47–1,19 % et 0,31–0,49 % selon la spécification ; les valeurs supérieures à l'unité doivent être interprétées comme proches de l'unité, selon les auteurs.
+
+Ce résultat concerne les salaires bruts de base de postes-types, non les rémunérations totales ou les trajectoires individuelles. Le champ exclut les entreprises de moins de 10 salariés, qui concentrent selon les auteurs 41 % des salariés au SMIC. La période est fortement marquée par la convergence des GMR et du SMIC dans le contexte des 35 heures ; le minimum explicatif agrège donc SMIC et GMR. La stratégie est une estimation conditionnelle sur variation temporelle et tranches salariales, pas une expérience naturelle avec groupe témoin externe. Elle ne mesure pas les effets sur l'emploi, les heures, les prix ou les marges.
+
+**Conclusion :** les revalorisations entraînent une diffusion réelle dans la hiérarchie salariale, immédiate près du minimum et plus lente au-delà. C'est une preuve sur le mécanisme de transmission salariale, non un bilan causal net des hausses du SMIC.
+
+Voir [l'audit détaillé Koubi & Lhommeau (2007)](../dossiers/smic-koubi-lhommeau-2007-diffusion-grilles-salariales.md).
