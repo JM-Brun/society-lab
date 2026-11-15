@@ -185,3 +185,8 @@ Un dossier méthodologique distingue maintenant les contributions automatiques, 
 La chronologie des taux horaires et des ruptures institutionnelles est maintenant documentée dans [le dossier 1994–2026](../dossiers/smic-revaluations-data-1994-2026.md) et [son CSV événementiel](../data/smic-revaluations-1994-2026.csv). Elle distingue les hausses ordinaires, les déclenchements automatiques liés à l'inflation, les coups de pouce, la convergence des GMR et le changement de calendrier de 2010.
 
 **Lecture centrale :** les fortes hausses de 2003–2005 sont liées à la convergence des minima issus des 35 heures ; celles de 2021–2024 comprennent plusieurs déclenchements automatiques liés à l'inflation. Les comparer comme s'il s'agissait de coups de pouce identiques serait une erreur de catégorie.
+
+
+### Réconciliation des coups de pouce
+
+Le dossier 1994–2026 a été affiné à partir des annexes DARES et des rapports parlementaires : les coups de pouce de 1995 (2,2 points), 1996 (0,16), 1997 (2,26), 1998 (0,46 selon la décomposition DARES, arrondi à 0,5 dans le rapport parlementaire), 2001 (0,29), 2006 (0,3) et 2012 (0,6) sont distingués des déclenchements automatiques. Les divergences de mesure pour 1973 et 1981 restent ouvertes et sont détaillées dans le dossier événementiel 1994–2026.
