@@ -254,3 +254,10 @@ Voir [l’audit Ourliac & Nouveau (2012)](../dossiers/smic-ourliac-nouveau-2012-
 La Cour des comptes mentionne une évaluation distincte du GRECSTA, aux côtés des travaux du CEE et du CES. Le résumé institutionnel rapporte des effets contrastés selon les entreprises et les types d'emplois, mais indique que l'étude ne permet pas de chiffrer les emplois créés ou sauvegardés. Le rapport primaire complet n'ayant pas été retrouvé, ses données, son identification et ses coefficients ne peuvent pas être audités. Il ne faut pas confondre ce travail avec Bunel et al. (CEE) ni Simonnet & Terracol (CES).
 
 Voir [la note d'accès documentaire GRECSTA](../dossiers/smic-grecsta-fillon-2009-source-access-note.md).
+
+
+### Modèle de Barlet, Blanchet & Le Barbanchon : rendements décroissants des allègements
+
+Le modèle dynamique de microsimulation/agents de Barlet, Blanchet et Le Barbanchon (2010) suggère que le rendement des allègements sur l'emploi aurait été environ divisé par deux entre la première vague (1993–1997) et la seconde. Le mécanisme tient notamment à la moindre contrainte du SMIC sur la distribution des salaires lorsque les allègements s'étendent au-delà des rémunérations les plus proches du minimum, avec des ajustements de négociation salariale. Ce résultat est une simulation conditionnelle au calibrage et aux hypothèses du modèle, pas une estimation causale ex post. La DARES l'utilise pour construire un scénario prudent de suppression totale des allègements (400 000–800 000 emplois), qui reste une extrapolation distincte.
+
+Voir [l'audit Barlet, Blanchet & Le Barbanchon (2010)](../dossiers/smic-barlet-blanchet-le-barbanchon-2010-microsimulation.md).
