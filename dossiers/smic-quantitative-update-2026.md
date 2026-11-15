@@ -161,3 +161,22 @@ Un indice chaîné complémentaire, base 2014 = 100, est calculé en appliquant 
 **Périmètre :** France hors Mayotte. Le tableau s'arrête à 2025 pour le pouvoir d'achat annuel ; le taux horaire de 12,31 € au 1er juin 2026 ne permet pas de déduire une variation annuelle 2026.
 
 Source primaire : INSEE, *Salaire minimum interprofessionnel de croissance (Smic)*, données annuelles, publication du 9 septembre 2026, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
+
+## Série annuelle INSEE du pouvoir d'achat du SMIC — millésime TEF 2010 (2001–2008)
+
+Le tableau 5.3 du TEF 2010 publie des observations annuelles pour 2001–2008 : SMIC horaire brut moyen annuel, évolutions du pouvoir d'achat brut et net, SHBO et inflation moyenne annuelle. Le jeu est transcrit séparément dans le fichier data/smic-real-purchasing-power-2001-2008-tef2010.csv afin de préserver le millésime de publication.
+
+| Année | SMIC horaire brut moyen (€) | Pouvoir d'achat brut (%) | Pouvoir d'achat net INSEE (%) | SHBO (%) | IPC annuel (%) |
+|---:|---:|---:|---:|---:|---:|
+| 2001 | 6,54 | +1,9 | +2,1 | +2,6 | 1,7 |
+| 2002 | 6,75 | +1,3 | +1,4 | +1,8 | 1,9 |
+| 2003 | 7,01 | +1,7 | +1,3 | +0,8 | 2,1 |
+| 2004 | 7,40 | +3,4 | +3,3 | +0,8 | 2,1 |
+| 2005 | 7,82 | +3,8 | +3,9 | +1,2 | 1,8 |
+| 2006 | 8,15 | +2,6 | +2,4 | +1,4 | 1,6 |
+| 2007 | 8,36 | +1,1 | +1,0 | +1,4 | 1,5 |
+| 2008 | 8,61 | +0,2 | +0,2 | +0,3 | 2,8 |
+
+**Millésime et comparabilité.** Le tableau est celui du TEF 2010 et ses valeurs doivent rester identifiées comme telles. Il fournit une série annuelle directe pour 2001–2008, mais ne suffit pas à établir une série révisée homogène avec les tableaux TEF 2014/2015 et la série INSEE 2014–2025. Le net INSEE est calculé avant déduction de la CSG et de la CRDS ; l'inflation est l'indice moyen annuel y compris tabac. Le SHBO ne doit pas être assimilé au SHBOE utilisé depuis 2013.
+
+Source : INSEE, TEF 2010, tableau 5.3 « Salaire minimum – Coût du travail », p. 62 : https://www.insee.fr/fr/statistiques/fichier/1373375/T10F053.pdf.
