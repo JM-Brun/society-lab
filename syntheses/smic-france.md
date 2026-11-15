@@ -277,3 +277,14 @@ Les résultats ne sont pas identiques, mais ne sont pas strictement contradictoi
 Les écarts tiennent aux périodes, aux populations, aux variables de traitement et aux méthodes. La DiD d'Aeberhardt & Sraer peut être affectée par la diffusion du SMIC et par des effets indirects sur le groupe témoin ; sa RDD est locale au seuil. Lhommeau & Rémy étudient un éventail plus long de dispositifs et séparent l'intensité de la progressivité, mais leur estimation sur cellules et leur sélection de salariés stables limitent aussi la portée causale. Ces deux études portent sur les exonérations et les carrières salariales, non sur l'effet emploi d'une hausse isolée du SMIC.
 
 Voir [Lhommeau & Rémy](../dossiers/smic-lhommeau-remy-2010-mobilite-salariale.md) et [Aeberhardt & Sraer](../dossiers/smic-aeberhardt-sraer-2010-dynamique-salariale.md).
+
+
+### Audenis, Laïb & Roux (2002) : trappe à bas salaires, mais source primaire non consultée
+
+Les reprises institutionnelles du chapitre Audenis, Laïb & Roux (2002) rapportent que la décote salariale liée au fait d'avoir été payé à bas salaire l'année précédente ne s'est pas aggravée après le développement des allégements des années 1990. Le CAE précise cependant que les hausses du SMIC ont pu masquer une partie de l'effet des allégements ; le COE parle d'un phénomène de trappe existant mais non accentué entre le début des années 1990 et 2001. Il faut donc éviter la conclusion simpliste « les allégements n'ont pas créé de trappe ».
+
+L'étude Insee-Dares ultérieure de Lhommeau (2005), consultable directement, observe un ralentissement de la mobilité salariale ascendante au milieu des années 1990. Pour les salariés restés dans la même entreprise, la sortie du seuil de 1,3 SMIC en deux ans passe de 29,4 % (1984–1991) à 21,1 % (1994–1998), mais cette comparaison n'est pas toutes choses égales par ailleurs et ne corrige pas la sélection liée aux entrées dans l'emploi. Elle ne peut pas être attribuée à Audenis et al. ni imputée causalement aux allégements.
+
+**Conclusion :** ces travaux éclairent l'interaction entre hausse du SMIC, définition des bas salaires et exonérations dégressives ; ils ne mesurent pas l'effet causal d'une revalorisation isolée du SMIC sur l'emploi ou le revenu disponible. Le chapitre primaire Audenis et al. reste à obtenir pour auditer ses données et ses estimations.
+
+Voir [la note d'accès documentaire Audenis, Laïb & Roux (2002)](../dossiers/smic-audenis-laib-roux-2002-source-access-audit.md).
