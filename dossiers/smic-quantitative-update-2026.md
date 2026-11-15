@@ -161,3 +161,30 @@ Un indice chaîné complémentaire, base 2014 = 100, est calculé en appliquant 
 **Périmètre :** France hors Mayotte. Le tableau s'arrête à 2025 pour le pouvoir d'achat annuel ; le taux horaire de 12,31 € au 1er juin 2026 ne permet pas de déduire une variation annuelle 2026.
 
 Source primaire : INSEE, *Salaire minimum interprofessionnel de croissance (Smic)*, données annuelles, publication du 9 septembre 2026, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
+
+
+## Reconstitution historique du pouvoir d'achat : observations disponibles avant 2014
+
+Les tableaux historiques des *Tableaux de l'économie française* permettent d'ajouter des observations officielles, mais pas de reconstituer une série annuelle complète. Le fichier `data/smic-real-purchasing-power-historical-benchmarks.csv` conserve les valeurs publiées pour 1990, 1995, 2000, 2005 et 2009–2013. Il s'agit d'années repères pour les quatre premières dates, puis d'observations annuelles pour 2009–2013.
+
+| Année | SMIC brut horaire moyen (€) | Pouvoir d'achat brut (%) | Pouvoir d'achat net INSEE (%) | Salaire horaire de base (%) | Inflation moyenne (%) |
+|---:|---:|---:|---:|---:|---:|
+| 1990 | 4,70 | +0,8 | +0,9 | +1,5 | 3,4 |
+| 1995 | 5,53 | +1,4 | +1,1 | +0,7 | 1,7 |
+| 2000 | 6,31 | +0,5 | +0,5 | +3,4 | 1,7 |
+| 2005 | 7,82 | +3,8 | +3,9 | +1,2 | 1,8 |
+| 2009 | 8,77 | +1,8 | +1,6 | +2,3 | 0,1 |
+| 2010 | 8,86 | −0,5 | −0,3 | +0,4 | 1,5 |
+| 2011 | 9,02 | −0,3 | −0,4 | −0,1 | 2,1 |
+| 2012 | 9,31 | +1,2 | +1,1 | +0,2 | 2,0 |
+| 2013 | 9,43 | +0,4 | +0,3 | +0,9 | 0,9 |
+
+**Lecture prudente.** Ces valeurs documentent des épisodes contrastés : gains élevés dans les années repères 1995 et 2005, pertes de pouvoir d'achat en 2010–2011, puis reprise en 2012–2013. Elles ne suffisent pas à attribuer ces évolutions à un coup de pouce isolé : le taux horaire moyen annuel dépend de l'ensemble des changements intervenus dans l'année et du calendrier des revalorisations.
+
+**Ruptures et millésimes.**
+- Les chiffres 1990, 1995, 2000 et 2005 sont repris du TEF 2015 ; 2009–2012 sont repris du TEF 2014 et 2013 du TEF 2015.
+- Les éditions ultérieures révisent certains chiffres historiques : par exemple, le tableau INSEE publié en 2018 affiche pour 1995 +1,3 % de pouvoir d'achat brut et pour 2005 +3,9 %, contre respectivement +1,4 % et +3,8 % dans le TEF 2015. Il faut donc traiter les millésimes comme une question de révision statistique, pas fusionner silencieusement les valeurs.
+- Le SHBO devient SHBOE en 2013 ; la comparaison de la colonne salariale doit tenir compte de cette rupture.
+- Le SMIC net publié par l'INSEE est mesuré avant déduction de la CSG et de la CRDS. L'inflation indiquée est l'évolution de l'indice moyen annuel, y compris tabac ; ce n'est pas l'indice juridique de revalorisation du SMIC.
+
+**Conséquence pour la suite.** La période 1980–1989 et les années manquantes des années 1990 et 2000 restent à documenter à partir des séries DARES/INSEE d'origine ou des fichiers statistiques téléchargeables. Aucune interpolation n'est ajoutée au jeu de données. Les observations de ce fichier ne sont pas chaînées à l'indice 2014=100 du jeu 2014–2025 tant que les millésimes et conventions n'ont pas été réconciliés.
