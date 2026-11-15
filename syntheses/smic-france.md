@@ -299,3 +299,16 @@ Ce résultat concerne les salaires bruts de base de postes-types, non les rémun
 **Conclusion :** les revalorisations entraînent une diffusion réelle dans la hiérarchie salariale, immédiate près du minimum et plus lente au-delà. C'est une preuve sur le mécanisme de transmission salariale, non un bilan causal net des hausses du SMIC.
 
 Voir [l'audit détaillé Koubi & Lhommeau (2007)](../dossiers/smic-koubi-lhommeau-2007-diffusion-grilles-salariales.md).
+
+
+### Transmission des revalorisations au salaire moyen sur longue période : Cette, Chouard & Verdugo (2011)
+
+Cette étude utilise 156 observations trimestrielles de 1971 à 2009 et distingue les composantes des hausses du SMIC : prix, indexation sur la moitié des gains de pouvoir d'achat du SHBO et coups de pouce. Dans le modèle dynamique principal, une hausse de 1 % du SMIC est associée à long terme à +0,34 % de SHBO et +0,30 % de SMPT (élasticités de court terme : 0,14 et 0,06). Les coups de pouce se transmettraient à long terme à hauteur de 0,23 au SHBO et 0,28 au SMPT. La composante liée au SHBO se transmet à hauteur de 0,65 au SHBO lui-même, ce qui suggère une boucle de rétroaction entre salaire ouvrier et minimum.
+
+L'étude estime également que l'indexation totale de long terme des salaires sur les prix, directe et indirecte via le SMIC, est passée d'environ 89 % pour le SHBO et 83 % pour le SMPT avant 1982 à 71 % et 60 % après 1982. Ces estimations sont macroéconomiques : elles ne donnent pas l'effet par tranche de salaire ni l'effet net sur l'emploi.
+
+**Réserve causale majeure :** les équations sont estimées sur séries temporelles agrégées par MCO, sans groupe témoin ni choc exogène isolé. Les auteurs reconnaissent que prix, chômage et salaires peuvent être endogènes. La convergence des minima 2003–2005 est ventilée en composantes fictives, dont le surplus classé en coups de pouce. Aucun résultat direct sur emploi, heures, marges, prix de vente ou revenu disponible n'est estimé.
+
+**Conclusion :** preuve importante d'une transmission dynamique du SMIC aux salaires moyens et d'une rétroaction institutionnelle, mais pas d'une évaluation causale complète des épisodes de revalorisation.
+
+Voir [l'audit détaillé Cette, Chouard & Verdugo (2011)](../dossiers/smic-cette-chouard-verdugo-2011-diffusion-salaire-moyen.md).
