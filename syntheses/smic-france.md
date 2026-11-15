@@ -326,3 +326,14 @@ Les années de baisse du pouvoir d'achat horaire brut reconstruit sont 2010 (−
 **Ce qu'elle n'établit pas :** l'effet causal d'une hausse du SMIC sur l'emploi, les heures, les prix, la pauvreté ou les finances publiques. Elle ne mesure pas le revenu disponible des ménages ni l'indice du premier quintile utilisé pour l'indexation légale depuis 2013. Les résultats restent distincts des taux annuels officiels TEF/INSEE, avec des écarts de l'ordre de 0,10 point au plus sur les repères comparés.
 
 Données et méthode : [dossier quantitatif 1970–2025](../dossiers/smic-quantitative-update-2026.md), [CSV annuel reconstruit](../data/smic-real-purchasing-power-1970-2025.csv), [manifeste des sources et empreintes](../data/smic-monthly-source-manifest-1970-2025.yml).
+
+
+## 17. Pourquoi certaines années perdent du pouvoir d'achat malgré les revalorisations
+
+La décomposition de la série mensuelle met en évidence cinq années de recul réel : 2010 (SMIC moyen annuel +1,08 % ; IPC +1,53 % ; réel −0,44 %), 2011 (+1,76 % ; +2,11 % ; −0,35 %), 2017 (+0,93 % ; +1,03 % ; −0,10 %), 2018 (+1,23 % ; +1,85 % ; −0,61 %) et 2021 (+1,55 % ; +1,64 % ; −0,09 %). En 2022, trois revalorisations rapprochées portent la hausse moyenne annuelle du SMIC à +5,25 %, presque exactement au niveau de l'inflation (+5,22 %) : le gain réel est quasi nul (+0,02 %).
+
+Le mécanisme est particulièrement visible en 2011 et 2021 : les hausses automatiques déclenchées en cours d'année interviennent trop tard pour compenser, dans la moyenne annuelle, l'inflation des mois précédents. En 2018, l'inflation moyenne (+1,85 %) dépasse nettement la hausse annuelle moyenne du taux horaire (+1,23 %). En 2017, l'écart est minime : il s'agit davantage d'une stagnation que d'une perte marquée.
+
+**Interprétation :** ces épisodes montrent qu'une hausse nominale du SMIC ne garantit pas un gain réel sur l'année. La date d'effet et le rythme de l'inflation comptent autant que le taux affiché. Ils ne démontrent toutefois pas une baisse du revenu disponible des ménages ni un effet causal négatif sur l'emploi : ces dimensions ne figurent pas dans la série horaire brute.
+
+Voir le [dossier quantitatif, section 13](../dossiers/smic-quantitative-update-2026.md#13-épisodes-de-recul-ou-de-stagnation-du-pouvoir-dachat-décomposition-nominal--inflation), et la [série annuelle avec croissance nominale et inflation](../data/smic-real-purchasing-power-1970-2025.csv).
