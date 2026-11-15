@@ -161,3 +161,23 @@ Un indice chaîné complémentaire, base 2014 = 100, est calculé en appliquant 
 **Périmètre :** France hors Mayotte. Le tableau s'arrête à 2025 pour le pouvoir d'achat annuel ; le taux horaire de 12,31 € au 1er juin 2026 ne permet pas de déduire une variation annuelle 2026.
 
 Source primaire : INSEE, *Salaire minimum interprofessionnel de croissance (Smic)*, données annuelles, publication du 9 septembre 2026, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
+
+
+## 10. Complément annuel issu du TEF 2010 : 2001–2008
+
+Le tableau 5.3 « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier » du *Tableau de l'économie française*, édition 2010, fournit les observations annuelles manquantes pour 2001–2008. Elles sont ajoutées au fichier historique avec leur source et leur millésime d'origine, sans écraser les valeurs ultérieures publiées dans d'autres éditions.
+
+| Année | SMIC brut horaire moyen (€) | Pouvoir d'achat brut (%) | Pouvoir d'achat net INSEE (%) | SHBO (%) | Prix moyen annuel (%) |
+|---:|---:|---:|---:|---:|---:|
+| 2001 | 6,54 | +1,9 | +2,1 | +2,6 | +1,7 |
+| 2002 | 6,75 | +1,3 | +1,4 | +1,8 | +1,9 |
+| 2003 | 7,01 | +1,7 | +1,3 | +0,8 | +2,1 |
+| 2004 | 7,40 | +3,4 | +3,3 | +0,8 | +2,1 |
+| 2005 | 7,82 | +3,8 | +3,9 | +1,2 | +1,8 |
+| 2006 | 8,15 | +2,6 | +2,4 | +1,4 | +1,6 |
+| 2007 | 8,36 | +1,1 | +1,0 | +1,4 | +1,5 |
+| 2008 | 8,61 | +0,2 | +0,2 | +0,3 | +2,8 |
+
+**Comparabilité.** Ces observations constituent un bloc homogène au regard de leur publication dans le même tableau et le même millésime statistique. Elles ne doivent toutefois pas être fusionnées sans contrôle avec les valeurs des éditions ultérieures : les révisions de séries peuvent modifier des années passées. Le SMIC net reste calculé avant CSG/CRDS ; le SHBO désigne le salaire horaire de base ouvrier ; l'indice des prix est annuel moyen, y compris tabac. Les valeurs de 2001–2008 ne sont pas une mesure des effets causaux des relèvements du SMIC.
+
+**Source primaire :** INSEE, *Tableau de l'économie française*, édition 2010, fiche 5.3 « Salaire minimum – Coût du travail », tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier », p. 62 : https://www.insee.fr/fr/statistiques/fichier/1373375/T10F053.pdf. Les données de cette édition sont conservées comme millésime 2010 ; elles ne remplacent pas les séries révisées publiées ultérieurement.
