@@ -264,3 +264,17 @@ La réforme de 2003 associe convergence du SMIC et des GMR, réorganisation des 
 **Limites communes :** traitement composite SMIC-GMR-cotisations-RTT ; sélection des entreprises et différences préexistantes ; panel cylindré excluant les créations/destructions ; absence de bouclage macro et de prise en compte complète des substitutions intersectorielles. Pas de test événementiel moderne de pré-tendances établi dans l'audit. Ne pas interpréter ces travaux comme l'effet causal d'une hausse isolée du SMIC.
 
 **Niveau de preuve :** modéré pour les associations différentielles au niveau des entreprises ; faible à modéré pour le bilan agrégé ; provisoire pour Simonnet & Terracol tant que les tableaux intégraux ne sont pas dépouillés.
+
+
+## 12. Fiche d'audit n° 7 — Flux de chômage et agrégation sectorielle des allègements
+
+### Simonnet & Terracol (2009), réforme Fillon 2003
+Modèle de durée à risques concurrents dépendants sur 17 706 épisodes de chômage (2002–2007), appariement Enquête Emploi, CERFA, DADS et URSSAF. Après juillet 2005, le coefficient de sortie du chômage vers les entreprises signataires 35 h est −0,230 (SE 0,061), contre −0,030 (SE 0,057) vers les non-signataires ; différence des coefficients −0,20, p=0,003. Pour les bas diplômes, différence −0,20, p=0,014 ; pour les hauts diplômes, non significative (p=0,130). L'étude contrôle la démographie des entreprises, mais repose sur des hypothèses de risques concurrents et une corrélation parfaite imposée pour l'hétérogénéité inobservée après estimation à la borne. Elle ne mesure ni emploi total net ni effet du SMIC isolé. Audit détaillé dans [smic-fillon-reform-2003-audit.md](smic-fillon-reform-2003-audit.md).
+
+### Jamet (2005), effets sectoriels et macroéconomiques, allègements 1993–1997
+Modèle structurel sectoriel et agrégation des interactions entre secteurs, à partir d’Enquêtes Emploi, barèmes de cotisations et comptes nationaux. Les allègements ont réduit d’environ six points la hausse du coût du travail peu qualifié (hausse observée +5,6 %, contre +11,6 % simulée sans mesures). Selon les hypothèses de substitution, l’estimation varie d’environ 50 000 à 190 000 emplois peu qualifiés ETP ; scénario privilégié autour de 165 000. Ce chiffre n’est pas le solde net tous emplois confondus. Le capital est absent du modèle central, le financement des allègements n’est pas traité, et les scénarios dépendent d’élasticités estimées/calibrées.
+
+### Gafsi, L’Horty & Mihoubi (2004), réévaluation sectorielle
+Panel de 16 secteurs, Enquêtes Emploi 1982–2002, barèmes légaux et comptes nationaux. Système de demandes de facteurs (travail qualifié, peu qualifié, capital) avec salaires, prix, activité et cointégration. Pour 1997, estimation de 118 000 à 140 000 emplois peu qualifiés créés ou sauvegardés, mais 41 000 à 76 000 emplois qualifiés évincés ; bilan net total estimé à 60 000–80 000 emplois. Robustesses sur trois définitions de qualification, période arrêtée en 1998, exclusion des services aux entreprises et mesures alternatives du coût du capital. Sensibilité persistante à la spécification et aux mesures du capital ; document de travail EPEE, non à présenter comme preuve expérimentale.
+
+**Enseignement comparatif :** les évaluations microéconomiques de Crépon & Desplatz peuvent surestimer l’emploi net lorsqu’elles ne modélisent pas suffisamment les substitutions entre qualifications, les prix, les salaires et les interactions sectorielles. Les chiffres d’emplois peu qualifiés ne sont pas interchangeables avec le solde d’emploi total.
