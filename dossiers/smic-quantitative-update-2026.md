@@ -297,3 +297,85 @@ Références INSEE :
 - L'essentiel sur l'inflation, rôle des différents indices et indice du premier quintile utilisé pour la revalorisation du SMIC : https://www.insee.fr/fr/statistiques/4268033
 
 **Conséquence pour l'étude :** conserver trois objets séparés dans les analyses futures : (a) évolution du SMIC horaire brut déflatée par le coefficient général du convertisseur ; (b) évolution du SMIC horaire brut déflatée par un IPC d'ensemble raccordé ; (c) revalorisation légale du SMIC calculée avec l'indice spécifique du premier quintile et les autres paramètres réglementaires. Ces trois séries répondent à des questions différentes.
+
+
+## 12. Reconstruction mensuelle du pouvoir d'achat réel, 1970–2025
+
+### Synthèse
+
+Une première reconstruction complète a été exécutée à partir des séries mensuelles de la Banque de données macroéconomiques de l'INSEE. Elle couvre **672 mois et 56 moyennes annuelles**, de janvier 1970 à décembre 2025.
+
+Le rapport entre le SMIC horaire brut moyen annuel et l'IPC moyen annuel raccordé augmente d'environ **70,9 % entre 1980 et 2025**. Cette mesure est proche du contrôle secondaire Datapi (+71 %), mais repose ici sur un calcul direct à partir des observations mensuelles des séries INSEE. Elle ne doit pas être confondue avec une estimation causale des effets économiques des revalorisations.
+
+### Sources et raccordement
+
+- SMIC horaire brut mensuel : INSEE BDM, idBank `000822484`, extraction 1970-01 à 2025-12.
+- IPC mensuel base 1980 : INSEE BDM, idBank `000008964`, extraction 1970-01 à 1992-12.
+- IPC mensuel base 2015 : INSEE BDM, idBank `001759970`, extraction 1990-01 à 2025-12.
+- Documentation du service SDMX de l'INSEE : https://www.insee.fr/fr/information/2862759
+- Description du raccordement des séries IPC et de la convention de moyenne géométrique : https://www.data.gouv.fr/datasets/indice-des-prix-a-la-consommation-base-100-en-2015-ensemble-des-menages-ensemble-france
+
+Les séries IPC base 1980 et base 2015 se chevauchent sur 36 mois, de janvier 1990 à décembre 1992. Le facteur de raccordement calculé est **0,366648982859** (base 1980 vers base 2015), obtenu comme moyenne géométrique des rapports mensuels IPC base 2015 / IPC base 1980. Les observations antérieures à 1990 sont multipliées par ce facteur ; à partir de janvier 1990, la série base 2015 est conservée.
+
+### Méthode de calcul
+
+Pour chaque année complète (y) :
+
+\[
+SMIC_y = \frac{1}{12}\sum_{m=1}^{12}SMIC_{y,m}
+\qquad
+IPC_y = \frac{1}{12}\sum_{m=1}^{12}IPC_{y,m}
+\]
+
+\[
+R_y = \frac{SMIC_y}{IPC_y}
+\qquad
+\Delta R_y = 100\left(\frac{R_y}{R_{y-1}}-1\right)
+\]
+
+Il s'agit du **rapport des moyennes annuelles**, et non de la moyenne des 12 rapports mensuels. Les 12 observations mensuelles sont exigées pour chaque année ; les valeurs manquantes, doublons et valeurs non positives entraînent un échec de validation.
+
+### Résultats repères
+
+| Année | SMIC horaire brut moyen (€) | IPC moyen, base 2015=100 | Indice réel, 2015=100 | Variation réelle annuelle |
+|---:|---:|---:|---:|---:|
+| 1970 | 0,518333 | 14,549854 | 37,070078 | — |
+| 1980 | 2,102500 | 36,579347 | 59,809897 | +1,89 % |
+| 1990 | 4,695833 | 67,425833 | 72,470181 | +0,79 % |
+| 2000 | 6,310000 | 79,929167 | 82,148014 | +0,58 % |
+| 2008 | 8,606667 | 93,205000 | 96,087914 | +0,19 % |
+| 2015 | 9,610000 | 99,999167 | 100,000000 | +0,80 % |
+| 2020 | 10,150000 | 104,729167 | 100,848952 | +0,72 % |
+| 2021 | 10,307500 | 106,449167 | 100,759052 | −0,09 % |
+| 2022 | 10,848333 | 112,008333 | 100,782628 | +0,02 % |
+| 2023 | 11,436667 | 117,472500 | 101,306251 | +0,52 % |
+| 2024 | 11,688333 | 119,820833 | 101,506358 | +0,20 % |
+| 2025 | 11,880000 | 120,951667 | 102,206279 | +0,69 % |
+
+Entre 1980 et 2025, le ratio de pouvoir d'achat réel progresse de **+70,89 %**. Entre 1970 et 2025, la progression est de **+175,71 %**. Ces comparaisons sont des évolutions de niveau du SMIC horaire brut déflaté, pas des effets causaux attribuables à une hausse ponctuelle.
+
+Les années de baisse du pouvoir d'achat horaire brut dans la reconstruction sont 2010 (−0,44 %), 2011 (−0,35 %), 2017 (−0,10 %), 2018 (−0,61 %) et 2021 (−0,09 %). En 2022, le résultat est pratiquement stable (+0,02 %) : les hausses nominales infra-annuelles ont essentiellement compensé l'inflation sur la moyenne annuelle.
+
+### Contrôles de cohérence
+
+- Pour 1980, la moyenne mensuelle du SMIC brut est **2,1025 €**, identique au point de départ cité par Datapi. Pour 2025, la moyenne est **11,88 €**. La reconstruction IPC donne +70,89 %, contre environ +71 % dans le contrôle Datapi : les deux ordres de grandeur concordent.
+- Comparaison aux variations publiées dans le TEF 2010 pour 2001–2008 : l'écart absolu maximal entre la reconstruction et les variations publiées est d'environ **0,10 point de pourcentage**.
+- Comparaison aux variations annuelles INSEE 2014–2025 : l'écart absolu maximal est d'environ **0,05 point**. Ces écarts sont faibles mais non nuls ; ils peuvent refléter les millésimes, champs, conventions de calcul et arrondis différents. La reconstruction ne remplace donc pas les séries annuelles publiées.
+- Le niveau réel 2025 est 102,206 (base 2015=100). Il ne doit pas être comparé directement à l'indice chaîné 2014=100 du tableau INSEE sans tenir compte de la base et des taux publiés arrondis.
+
+### Limites et interprétation
+
+1. L'indicateur porte sur le **SMIC horaire brut**, pas sur le salaire net réellement perçu, les heures rémunérées, le revenu disponible du ménage ou le niveau de vie.
+2. L'IPC est celui de l'ensemble des ménages. Depuis 2013, l'indexation légale du SMIC mobilise notamment l'indice des prix du premier quintile hors tabac : cette reconstruction n'est donc pas la reconstitution de la formule juridique de revalorisation.
+3. Le raccordement avant 1990 modifie l'échelle de l'IPC ancien pour l'exprimer en base 2015. La convention est documentée, mais elle ne supprime pas les ruptures historiques de champ et de population de référence.
+4. Les résultats ne mesurent aucun effet causal sur l'emploi, les heures, les prix, les marges, la pauvreté ou les finances publiques. Ces questions nécessitent des stratégies d'identification et des données distinctes.
+5. Les valeurs 1970–2025 sont une reconstruction de recherche reproductible, et non une série annuelle officielle publiée telle quelle par l'INSEE.
+
+### Fichiers et reproductibilité
+
+- Série annuelle reconstruite : `data/smic-real-purchasing-power-1970-2025.csv`.
+- Provenance et empreintes des extractions : `data/smic-monthly-source-manifest-1970-2025.yml`.
+- Script de téléchargement, raccordement et calcul : `scripts/analysis/reconstruct_smic_monthly_purchasing_power.py`.
+- Workflow d'exécution et conservation des XML bruts et de la série mensuelle alignée : `.github/workflows/smic-monthly-reconstruction.yml` (artefact GitHub Actions).
+
+La série mensuelle alignée et les XML bruts sont conservés dans l'artefact d'exécution pour audit ; le script permet de les re-télécharger depuis les URL INSEE consignées dans le manifeste. La série annuelle est versionnée dans le dépôt.
