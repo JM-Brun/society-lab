@@ -371,3 +371,22 @@ Ce résultat indique que le minimum peut influencer des rémunérations au-delà
 Les taux de création/destruction d'emplois par groupe ne montrent pas de relation monotone claire, mais l'étude ne conduit pas d'estimation causale de l'emploi. Elle ne permet donc ni de conclure à l'absence d'effet sur l'emploi, ni de transposer directement les effets salariaux à une hausse uniforme du SMIC actuel.
 
 **Conclusion de synthèse :** preuve modérée de diffusion salariale au-delà du plancher dans cet épisode institutionnel exceptionnel ; preuve insuffisante sur l'emploi et le bien-être. Voir [l'audit complet](../dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md) et [la matrice des preuves](../dossiers/smic-causal-evidence-matrix.md).
+
+
+## 21. Emploi : transitions individuelles et coût total employeur (1981–1998)
+
+Deux études microéconomiques françaises apportent un signal défavorable ciblé, mais elles ne mesurent pas l'effet agrégé d'une hausse actuelle du SMIC.
+
+**Abowd, Kramarz & Margolis (1999)** utilisent l'Enquête Emploi longitudinale 1981–1989. Les salariés dont le salaire réel est rattrapé par la hausse du SMIC sont comparés à des salariés juste au-dessus du nouveau plancher. Pour une hausse de 1 % du SMIC réel, l'élasticité conditionnelle de la probabilité future d'emploi est estimée à −1,3 % pour les hommes et −1,0 % pour les femmes. Il s'agit d'un contraste dans le groupe déjà en emploi et directement exposé, non d'une baisse de 1,3 %/1,0 % de l'emploi total. Le tableau récapitulatif fournit des élasticités inconditionnelles beaucoup plus faibles (−0,015 pour les hommes, −0,022 pour les femmes). Les mesures de salaire horaire sont reconstruites à partir de salaires mensuels par classes et d'heures déclarées, ce qui introduit une incertitude de classement autour du seuil.
+
+**Kramarz & Philippon (2001)** étudient l'Enquête Emploi 1990–1998 et les variations du coût total employeur, après cotisations et allègements. Leur différence-de-différences compare les salariés « between », rattrapés par le changement de coût, aux salariés « marginal » juste au-dessus. Une hausse de 1 % du coût total est associée à une hausse d'environ 1,5 % de la probabilité de transition emploi-non-emploi dans le groupe directement touché. Ce groupe représente environ 3–4 % de la population active. Les effets sur les entrées depuis le non-emploi sont petits et statistiquement non significatifs. L'étude observe aussi des substitutions possibles dans la zone des allègements.
+
+**Limite essentielle de lecture :** Kramarz & Philippon n'est pas une estimation de l'effet du SMIC brut isolé. Les cotisations patronales au niveau du minimum diminuent fortement dans la période, notamment à partir de 1995 ; le traitement pertinent est le coût total du travail. Les hausses du minimum et les allègements se combinent donc.
+
+**Bilan provisoire :** signal négatif modéré sur la rétention d'emploi des salariés directement rattrapés dans les périodes étudiées ; preuve insuffisante d'un effet important sur l'emploi agrégé et sur les embauches. Les résultats ne sont pas directement transposables à 2021–2024. Audits détaillés : [Abowd, Kramarz & Margolis (1999)](../dossiers/smic-abowd-kramarz-margolis-1999-transitions-emploi.md) ; [Kramarz & Philippon (2001)](../dossiers/smic-kramarz-philippon-2001-cout-travail-emploi.md).
+
+## 22. Épisode de juin 1981 : résultat sectoriel sur l'emploi des jeunes
+
+Bazen & Skourias (1997), « Is there a negative effect of minimum wages on youth employment in France? », étudient les données sectorielles après la hausse de 10 % du SMIC en juin 1981 et rapportent un effet négatif statistiquement significatif sur l'emploi des jeunes. La publication disponible en ligne sous forme de résumé ne permet pas ici de vérifier précisément la construction du groupe témoin, les tendances préalables, les contrôles sectoriels, les amplitudes ni les tests de robustesse. Le résultat doit donc être conservé comme signal historique défavorable, mais avec une confiance limitée tant que le texte intégral et ses tableaux n'ont pas été audités.
+
+Ne pas attribuer ce résultat à Neumark & Wascher : l'étude est de Bazen & Skourias. Voir la notice bibliographique : https://doi.org/10.1016/S0014-2921(97)00004-4.
