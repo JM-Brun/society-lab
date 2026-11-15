@@ -80,6 +80,8 @@ class MonthlySmicReconstructionTests(unittest.TestCase):
         self.assertEqual(len(rows), 56)
         self.assertEqual(rows[0]["real_purchasing_power_change_pct"], "")
         self.assertEqual(rows[1]["real_purchasing_power_change_pct"], "100.000000")
+        self.assertEqual(rows[1]["smic_nominal_change_pct"], "100.000000")
+        self.assertEqual(rows[1]["ipc_inflation_pct"], "0.000000")
         self.assertEqual(rows[-1]["real_smic_index_2015_100"], "100.000000")
 
 
