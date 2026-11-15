@@ -147,3 +147,66 @@ Bunel et al. rappellent eux-mêmes que les estimations sectorielles intégrant e
 - Crépon & Desplatz (2001/2002), article INSEE : https://www.insee.fr/fr/statistiques/1376044?sommaire=1376054
 - Jamet (2005), « Allègements généraux de cotisations sociales et emploi peu qualifié : de l’impact sectoriel à l’effet macro-économique », *Revue française d’économie*, 19(3), p. 57–90.
 - Gafsi, L’Horty & Mihoubi (2005), « Vingt ans d’évolution de l’emploi peu qualifié et du coût du travail : des ruptures qui coïncident ? », *Revue française d’économie*, 19(3), p. 91–116.
+
+
+## 3. Audit quantitatif approfondi — Simonnet & Terracol (2009)
+
+**Référence :** Véronique Simonnet et Antoine Terracol, « Coût du travail et flux d’emploi : l’impact de la réforme de 2003 », *Économie et Statistique*, n°429-430, 2009, p. 107–128, DOI 10.3406/estat.2009.8065. [Article intégral, BnSP/INSEE](https://www.bnsp.insee.fr/ark:/12148/bc6p070n3rp.pdf) ; [notice Persée](https://www.persee.fr/doc/estat_0336-1454_2009_num_429_1_8065).
+
+### 3.1 Données et population
+
+- Enquête Emploi en continu, du premier trimestre 2002 au premier trimestre 2007, appariée aux fichiers CERFA identifiant les entreprises signataires d’accords RTT avant le 1er juillet 2003 ; DADS et données URSSAF servent notamment à construire la démographie des entreprises signataires/non signataires.
+- Un épisode de chômage est suivi jusqu’à une sortie vers l’emploi, une autre sortie (censure), ou 36 mois.
+- Base finale : **17 706 épisodes de chômage**, dont 6 932 se terminent par un retour à l’emploi ; 3 224 sorties vers des entreprises signataires d’un accord 35 h et 3 708 vers des entreprises non signataires.
+- L’échantillon initial comptait 21 816 épisodes ; 1 068 épisodes incohérents et 3 042 épisodes sans SIRET ont été retirés (18,83 % de l’échantillon initial).
+- Les auteurs indiquent que les caractéristiques observées des épisodes sans SIRET sont proches de celles de l’échantillon retenu, mais cela ne garantit pas l’absence de sélection sur les caractéristiques non observées.
+- « Bas diplômes » signifie jusqu’au baccalauréat inclus : 13 094 épisodes ; « hauts diplômes » : 4 612.
+
+### 3.2 Stratégie économétrique
+
+Les auteurs utilisent un modèle de durée à risques concurrents dépendants (Mixed Proportional Hazard). Les deux risques de sortie du chômage sont : emploi dans une entreprise signataire 35 h avant juillet 2003 ; emploi dans une entreprise non signataire.
+
+Le hasard de base est constant par morceaux selon plusieurs intervalles de durée. Les caractéristiques observées comprennent notamment âge, sexe, diplôme, situation familiale, chômage local, assurance chômage, exigences de recherche d’emploi et proportion locale de l’emploi dans les entreprises signataires.
+
+Un indicateur département-trimestre de part de l’emploi dans les entreprises signataires est construit à partir des DADS et des fichiers URSSAF pour contrôler la baisse mécanique de leur poids dans l’économie due aux créations et destructions d’entreprises. Les auteurs reconnaissent que cette variable démographique pourrait elle-même être endogène si la réforme affecte la survie des entreprises.
+
+**Hypothèse d’identification :** le différentiel de variation des taux de sortie vers les entreprises signataires et non signataires après les étapes de la réforme peut être interprété comme effet causal sous les hypothèses du modèle, notamment la spécification des risques concurrents et le contrôle de la démographie des entreprises.
+
+**Hétérogénéité inobservée :** la corrélation estimée entre les deux composantes d’hétérogénéité non observée atteint la borne de 1. Les auteurs réestiment donc le modèle en imposant une corrélation parfaite afin d’éviter un problème de régularité ; ils indiquent que les résultats sont très similaires. Cette solution constitue une hypothèse forte, à conserver dans l’interprétation.
+
+### 3.3 Résultats des tableaux 5 à 7
+
+Les coefficients sont des effets sur le logarithme du taux instantané de sortie du chômage ; les étoiles signalent les seuils de significativité. Ils ne sont pas des pourcentages de probabilité directement observés.
+
+| Échantillon / période | Toutes sorties | Vers entreprises signataires | Vers non-signataires |
+|---|---:|---:|---:|
+| Ensemble, 2003–2004 | −0,011 (ns) | −0,070 (ns) | 0,018 (ns) |
+| Ensemble, 2004–2005 | −0,113*** | −0,250*** | −0,060 (ns) |
+| Ensemble, après juillet 2005 | −0,088** | −0,230*** | −0,030 (ns) |
+| Bas diplômes, après juillet 2005 | −0,143*** | −0,293*** | −0,093 (ns) |
+| Hauts diplômes, après juillet 2005 | −0,082 (ns) | −0,078 (ns) | 0,137 (ns) |
+
+Les auteurs testent aussi directement la différence entre les coefficients postérieurs à juillet 2005 :
+- bas diplômes : différence −0,20 ; p = 0,014 ;
+- hauts diplômes : différence −0,215 ; p = 0,130 ;
+- ensemble : différence −0,20 ; p = 0,003.
+
+L’effet différentiel est donc statistiquement significatif pour l’ensemble et pour les moins diplômés, mais pas pour les plus diplômés. Les sorties vers les entreprises non signataires ne présentent pas de variation significative ; le ralentissement vient essentiellement des sorties vers les entreprises signataires.
+
+### 3.4 Robustesses, interprétation et limites
+
+- Le contrôle de la démographie des entreprises est une contribution importante : sans lui, le recul mécanique du poids des entreprises signataires (qui ne peuvent plus être créées après la date de signature) aurait pu être attribué à tort à la réforme.
+- Les auteurs modélisent l’hétérogénéité inobservée, mais la corrélation estimée atteint la borne et doit être contrainte à la corrélation parfaite.
+- Le contrôle démographique repose sur l’hypothèse que l’effet de la réforme sur la création et la destruction d’entreprises est négligeable par rapport à leur évolution naturelle ; cette hypothèse n’est pas directement testée.
+- L’appariement exclut 18,83 % des épisodes initiaux, notamment faute de SIRET.
+- Les entreprises signataires et non signataires ne sont pas assignées aléatoirement ; leurs secteurs, tailles, trajectoires et pratiques de rémunération peuvent différer.
+- Le modèle compare les transitions vers deux catégories d’entreprises pendant une réforme qui affecte les deux groupes différemment ; il ne dispose pas d’un groupe national totalement non traité.
+- Le texte n’établit pas de test de pré-tendances au format event-study. Les indicatrices temporelles et la période pré-réforme sont utiles, mais ne démontrent pas à elles seules des tendances parallèles.
+- Le résultat concerne la sortie du chômage vers un type d’entreprise, non l’emploi total net, les heures travaillées, la durée des contrats ou les salaires après embauche.
+- Les coefficients sont des log-hasards : ils ne doivent pas être convertis en nombre d’emplois détruits sans modèle de projection supplémentaire.
+
+**Conclusion :** sous les hypothèses du modèle, la réforme a réduit relativement les sorties du chômage vers les entreprises signataires 35 h, en particulier pour les moins diplômés. L’étude complète les données d’entreprises de Bunel et al. en observant les flux des demandeurs d’emploi, mais ne mesure pas l’effet d’une hausse isolée du SMIC et ne permet pas de chiffrer un solde d’emplois net national.
+
+## 4. Articulation avec les travaux sectoriels
+
+Les résultats de Simonnet & Terracol (2009) portent sur la réforme 2003–2005 et les transitions individuelles ; ils ne doivent pas être agrégés aux évaluations de Jamet (2005) ou Gafsi, L’Horty & Mihoubi (2004), qui portent sur les allègements de 1993–1997. Pour l’épisode 2003, le résultat de flux est cohérent avec l’asymétrie des coûts d’embauche entre entreprises 35 h et 39 h, mais il ne constitue pas une mesure du bilan macroéconomique net.
