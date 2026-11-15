@@ -279,3 +279,8 @@ Une actualisation des séries officielles est désormais disponible dans le docu
 Un dossier complémentaire distingue désormais l'indexation sur les prix, la participation aux gains salariaux, les coups de pouce, la convergence des GMR et les changements de calendrier : [Décomposer les revalorisations du SMIC (1970–2026)](smic-indexation-and-boosts-1970-2026.md). Il documente notamment le rattrapage volontariste de 1970–1982, la modération après 1983, l'épisode spécifique des 35 heures/GMR, le coup de pouce de 2012, le changement de calendrier de 2010 et les revalorisations automatiques de 2021–2026.
 
 Le rapport du groupe d'experts de 2020 chiffre un exemple de décomposition pour 1970–1971 : environ 9,8 % de hausse nominale, dont 5,3 points d'inflation, 2,4 points liés à la moitié des gains réels du SHBO et 2,2 points de coup de pouce. Il rapporte aussi un coup de pouce de 10,1 % en 1973 et de 6,9 % en 1981. Les valeurs détaillées annuelles du graphique 1970–1989 restent à extraire de la source primaire avant toute modélisation.
+
+
+## 13. Chronologie événementielle 1994–2026
+
+Voir [dossier détaillé](smic-revaluations-data-1994-2026.md) et [CSV événementiel](../data/smic-revaluations-1994-2026.csv). Cette extension permet de distinguer les revalorisations ordinaires, les déclenchements automatiques du seuil d'inflation, les coups de pouce discrétionnaires, la convergence des GMR (2003–2005) et le changement de calendrier au 1er janvier en 2010. Elle ne doit pas être lue comme une série homogène de hausses discrétionnaires.
