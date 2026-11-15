@@ -30,3 +30,7 @@ dossiers:
     dossier_path: "dossiers/smic-quantitative-update-2026.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-AEBERHARDT-GIVORD-MARBOT-2012"
+    dossier_path: "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
