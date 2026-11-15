@@ -177,3 +177,14 @@ La reconstitution événementielle est désormais disponible dans [le dossier 19
 La période est découpée en quatre régimes : coups de pouce et indexation annuelle dans les années 1990 ; coexistence des GMR et convergence liée aux 35 heures entre 1999 et 2005 ; déplacement de la date annuelle au 1er janvier à partir de 2010 ; enfin, revalorisations automatiques infra-annuelles répétées lors de la poussée inflationniste 2021–2026.
 
 **Précaution :** le taux horaire légal n'est pas le minimum mensuel garanti pour chaque salarié pendant la coexistence des GMR. Les hausses 2003–2005 sont en partie des rattrapages de convergence institutionnelle. Les relèvements automatiques de 2021–2026 ne sont pas des coups de pouce discrétionnaires. Le dossier sépare ces catégories et distingue les taux nominaux du pouvoir d'achat annuel.
+
+
+## 10. Deuxième tranche de décomposition tabulaire : 1996–2008
+
+Une seconde tranche de la décomposition officielle a été structurée à partir de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009 : [CSV 1996–2008](../data/smic-revaluations-1996-2008.csv). Elle complète la transcription du Sénat pour 1970–1993, sans fusionner les deux conventions de calcul.
+
+La tranche 1996–2008 distingue le taux horaire, la hausse observée, la moitié du gain de pouvoir d'achat du SHBO, la contribution des prix, le coup de pouce et, lorsque la période l'exige, la convergence des GMR ou l'alignement sur une GMR. Les années 2003–2005 sont codées dans des colonnes spécifiques : le rapport décrit une convergence institutionnelle exceptionnelle, qui ne doit pas être assimilée à un coup de pouce ordinaire.
+
+**Limites de transcription :** l'annexe commence en juillet 1996 ; elle ne remplace donc pas une série complète à partir de 1994. Les composantes publiées sont parfois arrondies et peuvent ne pas sommer exactement à la variation affichée. La colonne rounding_residual_pct conserve explicitement l'écart entre la variation observée et la somme des composantes renseignées (par exemple 0,11 point en 2007) au lieu de le répartir artificiellement. Les tirets du rapport sont codés 0.00 uniquement lorsqu'ils signifient l'absence de coup de pouce dans la colonne correspondante ; les cellules de convergence ne sont pas imputées à zéro hors de la période de convergence. Les revalorisations distinctes des GMR en 2000–2002 sont signalées dans les notes et ne sont pas additionnées au taux horaire du SMIC.
+
+Source primaire : Groupe d'experts SMIC, *Rapport*, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf. Le rapport distingue explicitement la convergence des minima salariaux entre 2003 et 2005 et les composantes ordinaires de revalorisation (voir également p. 6–8).

@@ -233,3 +233,5 @@ relations:
   - {"id":"REL-SMIC-1994-2026-DATASET-ABOUT","type":"REL-ABOUT","from":"DATASET-SMIC-REVALUATIONS-1994-2026","to":"DOMAIN-ECONOMY","justification":"Chronologie événementielle des revalorisations du salaire minimum et des ruptures institutionnelles françaises."}
 
   - {"id":"REL-SMIC-BOOSTS-ASSEMBLY-2021","type":"REL-TRANSCRIBES","from":"SOURCE-ASSEMBLY-2021-SMIC-BOOSTS","to":"DATASET-SMIC-REVALUATIONS-1994-2026","justification":"Source parlementaire complémentaire pour les composantes discrétionnaires de plusieurs revalorisations, notamment 1995, 1996, 1997, 1998, 2001, 2006 et 2012."}
+  - {"id":"REL-SMIC-1996-2008-TRANSCRIBES","type":"REL-TRANSCRIBES","from":"SOURCE-DARES-SMIC-ANNEX-2009","to":"DATASET-SMIC-REVALUATIONS-1996-2008","justification":"Le CSV transcrit les taux et les contributions de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009, p. 32."}
+  - {"id":"REL-SMIC-1996-2008-ABOUT","type":"REL-ABOUT","from":"DATASET-SMIC-REVALUATIONS-1996-2008","to":"DOMAIN-ECONOMY","justification":"Jeu de données historique sur les mécanismes de revalorisation du salaire minimum en France."}
