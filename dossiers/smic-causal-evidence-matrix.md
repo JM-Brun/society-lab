@@ -322,3 +322,18 @@ La DARES–Trésor reprend un résultat de rendements non linéaires : le rendem
 **Limites :** prototype calibré, règles de comportement simplifiées, résultats conditionnels aux paramètres et hypothèses, rigidité nominale structurante. Ne pas confondre simulation et évaluation ex post ; l'article ne mesure pas l'effet causal d'une hausse isolée du SMIC.
 
 Fiche : [Barlet, Blanchet & Le Barbanchon (2010)](smic-barlet-blanchet-le-barbanchon-2010-microsimulation.md).
+
+
+## 17. Fiche d'audit n° 12 — Lhommeau & Rémy (2010), mobilité salariale et allègements
+
+Sur le panel DADS 1984–2003, les auteurs estiment un modèle à effets individuels de type Mundlak sur des cellules d'entreprises proches. Ils mesurent la croissance du salaire réel et la sortie du bas salaire entre t et t+2, principalement sous 1,3 SMIC, pour les salariés restés dans la même entreprise pendant la fenêtre. Champ privé, hors apprentissage, intérim et contrats aidés.
+
+Le modèle distingue l'intensité des allègements (montant/masse salariale) et la progressivité du coût marginal. Dans le tableau 3, pour les salaires sous 1,3 SMIC, le coefficient de l'intensité est +0,502 (ET 0,101 ; p<1 %) et celui de la progressivité −12,817 (ET 1,443 ; p<1 %). L'évolution du SMIC/GMR est positive (+0,142 ; ET 0,069 ; p<5 %). Ces coefficients sont propres à la spécification et à l'échelle des variables : ce ne sont pas des élasticités.
+
+Les auteurs concluent que l'intensité des exonérations peut soutenir la progression salariale, mais que la dégressivité renchérit le coût des augmentations et freine les promotions ; l'effet négatif de progressivité domine dans le bilan estimé. En 1996, ils calculent une réduction de 2,7 points de la croissance salariale entre t et t+2 due aux allègements, ramenée à 1,8 point lorsque l'effet des hausses du SMIC est pris en compte ; le taux de croissance de référence est 13,4 %. Par rapport au barème moyen 2001–2002, le barème Fillon 2005 contribuerait à réduire la croissance des salaires sous 1,3 SMIC de 2,6 points contre 1,7 point pour le barème antérieur.
+
+**Limites :** l'échantillon est conditionné au maintien dans la même entreprise ; les personnes changeant d'employeur ou sortant de l'emploi ne sont pas suivies dans l'indicateur de carrière. L'agrégation en cellules réduit l'hétérogénéité observée. Les allègements peuvent être endogènes aux décisions d'entreprise. La période combine allègements, RTT, GMR et convergence des minima. Le papier ne mesure pas l'emploi net et n'identifie pas l'effet causal d'une hausse isolée du SMIC.
+
+**Portée pour le dossier SMIC :** preuve complémentaire sur la diffusion salariale et les trappes à bas salaires, non preuve directe sur l'emploi après revalorisation du SMIC. Les hausses du SMIC/GMR semblent atténuer le frein salarial associé aux allègements dans cette spécification.
+
+Fiche : [Lhommeau & Rémy (2010)](smic-lhommeau-remy-2010-mobilite-salariale.md).
