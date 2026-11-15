@@ -231,3 +231,10 @@ La fiche détaillée est disponible dans [l'audit sectoriel des allègements 199
 L'audit complet de Simonnet & Terracol (2009) porte sur 17 706 épisodes de chômage. Après juillet 2005, le différentiel de log-hasard de sortie vers les entreprises signataires 35 h par rapport aux non-signataires est de −0,20 (p = 0,003) pour l'ensemble de l'échantillon et de −0,20 (p = 0,014) pour les moins diplômés ; il n'est pas statistiquement significatif pour les plus diplômés. Le modèle de durée contrôle la démographie des entreprises, mais repose sur des hypothèses fortes concernant les risques concurrents et l'hétérogénéité non observée. Ce résultat concerne les transitions vers certains types d'entreprises, pas l'emploi total net.
 
 Voir [l'audit détaillé de la réforme Fillon 2003](../dossiers/smic-fillon-reform-2003-audit.md).
+
+
+### Évaluation macroéconomique agrégée — Hennion & Loisy (2006)
+
+Hennion & Loisy estiment une élasticité de long terme de l’emploi en ETP au coût réel du travail de −0,9 et chiffrent à environ 250 000 ETP l’effet de la baisse du taux apparent de cotisations patronales entre 1990 et 2003. Ce chiffre est toutefois fondé sur un taux apparent agrégé, qui ne permet pas d’isoler les exonérations ciblées sur les bas salaires. L’étude suppose les salaires exogènes, ne distingue pas les substitutions entre qualifications, traite la RTT par une indicatrice à partir de 1998 et exclut le financement macroéconomique des exonérations. Il s’agit d’une simulation toutes choses égales par ailleurs, non d’une mesure causale directe des exonérations bas salaires ni de l’effet d’une hausse isolée du SMIC.
+
+Voir [l’audit Hennion & Loisy (2006)](../dossiers/smic-hennion-loisy-2006-macro-audit.md).
