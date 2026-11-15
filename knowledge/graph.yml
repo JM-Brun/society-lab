@@ -238,3 +238,8 @@ relations:
 
   - {"id":"REL-SMIC-REAL-POWER-TRANSCRIBES","type":"REL-TRANSCRIBES","from":"SOURCE-INSEE-SMIC-POWER-2014-2025","to":"DATASET-SMIC-REAL-POWER-2014-2025","justification":"Le dataset transcrit les moyennes annuelles du SMIC et les variations officielles de pouvoir d'achat publiées par l'INSEE."}
   - {"id":"REL-SMIC-REAL-POWER-ABOUT","type":"REL-ABOUT","from":"DATASET-SMIC-REAL-POWER-2014-2025","to":"DOMAIN-ECONOMY","justification":"Série annuelle du pouvoir d'achat du salaire minimum horaire en France."}
+
+  - {"id":"REL-SMIC-CAUSAL-MATRIX-ABOUT","type":"REL-ABOUT","from":"DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX","to":"DOMAIN-ECONOMY","justification":"Matrice de synthèse des preuves empiriques françaises sur emploi, diffusion salariale, mobilité et rigidité des salaires."}
+  - {"id":"REL-SMIC-HISTORY-INCLUDES-CAUSAL-MATRIX","type":"REL-INCLUDES","from":"DOSSIER-SMIC-HISTORICAL-EPISODES","to":"DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX","justification":"La matrice explicite la portée et les limites causales des études citées dans l'historique des revalorisations."}
+  - {"id":"REL-SMIC-GAUTIER-ABOUT","type":"REL-ABOUT","from":"SOURCE-INSEE-GAUTIER-ROUX-2019","to":"DOMAIN-ECONOMY","justification":"Étude microéconomique des effets des minima nationaux et sectoriels sur la rigidité et la diffusion des salaires."}
+  - {"id":"REL-SMIC-ABOWD-ABOUT","type":"REL-ABOUT","from":"SOURCE-NBER-ABOWD-KRAMARZ-MARGOLIS-1999","to":"DOMAIN-ECONOMY","justification":"Étude longitudinale des transitions d'emploi autour des variations du salaire minimum en France et aux États-Unis."}
