@@ -411,3 +411,16 @@ Audit détaillé : [Fougère, Gautier & Le Bihan (2010)](smic-fougere-gautier-le
 **Limites :** GMR, 35 heures et allègements de cotisations sont imbriqués ; sélection des entreprises dans le calendrier de signature ; pas de test d'event-study des pré-tendances ; échantillon de salariés stables à temps plein ; rémunérations annuelles et non horaires ; validité externe limitée.
 
 **Conclusion :** preuve modérée d'un effet de diffusion salariale pendant la convergence 2003–2005, mais pas de preuve directe sur l'emploi ni sur le bien-être des ménages. Voir [l'audit complet](smic-aeberhardt-givord-marbot-2012-spillovers.md).
+
+
+## 5. Emploi : transitions individuelles et coût total employeur
+
+| Étude | Données / stratégie | Résultat emploi | Portée et limites | Confiance |
+|---|---|---|---|---|
+| Abowd, Kramarz & Margolis (1999) | Enquête Emploi 1981–1989, panel annuel à trois vagues ; salariés rattrapés par la hausse du SMIC réel comparés aux salariés juste au-dessus du nouveau plancher | Élasticité conditionnelle de la probabilité future d'emploi : −1,293 hommes, −0,972 femmes ; élasticités inconditionnelles : −0,015 et −0,022 | Signal négatif concentré sur les salariés directement exposés ; salaire horaire reconstruit à partir de salaires mensuels par classes et heures déclarées ; groupe témoin proche mais pas de test moderne de pré-tendances ; sorties observées, embauches pas au centre | Modérée pour le sous-groupe/période ; faible pour l'emploi agrégé actuel |
+| Kramarz & Philippon (2001) | Enquête Emploi 1990–1998 ; groupe « between » rattrapé par le coût minimum et groupe « marginal » juste au-dessus ; DiD entre périodes de hausse et de baisse du coût | Élasticité de sortie emploi-non-emploi autour de −1,5 pour le groupe traité ; groupe traité = 3–4 % de la population active ; entrées non significatives | Mesure le coût total employeur, pas le SMIC brut isolé ; allègements patronaux majeurs à partir de 1995 ; exclusion du secteur public et de certains contrats jeunes ; pas d'étude événementielle moderne des pré-tendances | Modérée pour les sorties du groupe traité dans le contexte 1990s |
+| Bazen & Skourias (1997) | Données sectorielles après hausse de 10 % en juin 1981 | Effet négatif statistiquement significatif sur l'emploi des jeunes (résumé éditeur) | Texte intégral non audité à ce stade ; identification, amplitude, pré-tendances et robustesse restent à vérifier | Faible à modérée, en attente du texte intégral |
+
+**Précaution transversale :** une élasticité conditionnelle du sous-groupe directement exposé n'est pas une élasticité de l'emploi total. Les estimations ne peuvent pas être additionnées entre études : périodes, populations, définitions du traitement et variables de coût diffèrent. Les résultats de Kramarz & Philippon portent sur le coût total employeur et l'effet des allègements, non sur une hausse isolée du salaire brut.
+
+Audits : [Abowd et al. (1999)](smic-abowd-kramarz-margolis-1999-transitions-emploi.md) ; [Kramarz & Philippon (2001)](smic-kramarz-philippon-2001-cout-travail-emploi.md).
