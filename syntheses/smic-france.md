@@ -261,3 +261,10 @@ Voir [la note d'accès documentaire GRECSTA](../dossiers/smic-grecsta-fillon-200
 Le modèle dynamique de microsimulation/agents de Barlet, Blanchet et Le Barbanchon (2010) suggère que le rendement des allègements sur l'emploi aurait été environ divisé par deux entre la première vague (1993–1997) et la seconde. Le mécanisme tient notamment à la moindre contrainte du SMIC sur la distribution des salaires lorsque les allègements s'étendent au-delà des rémunérations les plus proches du minimum, avec des ajustements de négociation salariale. Ce résultat est une simulation conditionnelle au calibrage et aux hypothèses du modèle, pas une estimation causale ex post. La DARES l'utilise pour construire un scénario prudent de suppression totale des allègements (400 000–800 000 emplois), qui reste une extrapolation distincte.
 
 Voir [l'audit Barlet, Blanchet & Le Barbanchon (2010)](../dossiers/smic-barlet-blanchet-le-barbanchon-2010-microsimulation.md).
+
+
+### Mobilité salariale : Lhommeau & Rémy (2010)
+
+Lhommeau & Rémy étudient les trajectoires salariales des salariés bas salaire restés dans la même entreprise, sur le panel DADS 1984–2003. Ils distinguent l'effet positif de l'intensité des allègements (surplus potentiel pour les hausses de salaire) de l'effet négatif de leur progressivité (coût marginal accru lorsqu'un salaire augmente). Dans leur estimation, le second effet domine : pour 1996, ils calculent un frein de 2,7 points sur la croissance salariale sous 1,3 SMIC imputable aux allègements, ramené à 1,8 point après prise en compte des hausses du SMIC. Ce résultat porte sur les exonérations et les trajectoires de salariés qui restent dans la même entreprise ; il ne mesure ni l'effet causal d'une hausse isolée du SMIC, ni l'emploi net, ni les parcours des personnes changeant d'employeur.
+
+Voir [l'audit Lhommeau & Rémy (2010)](../dossiers/smic-lhommeau-remy-2010-mobilite-salariale.md).
