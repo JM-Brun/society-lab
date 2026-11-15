@@ -219,3 +219,15 @@ Une matrice de lecture des principales études françaises est désormais dispon
 
 L'OCDE apporte un contrepoint au diagnostic de « trappe à bas salaires » : les trajectoires ascendantes des travailleurs à bas salaire ne sont pas plus difficiles en France que dans les pays comparés, même si le rapport identifie des risques de trappes socio-fiscales. Cette observation descriptive ne signifie pas que personne ne reste durablement au plancher.
 
+
+### Évaluations sectorielles des allègements (1993–1997)
+
+Les travaux de Jamet (2005) et de Gafsi, L’Horty et Mihoubi (2004) montrent pourquoi les estimations d'emploi peu qualifié ne doivent pas être assimilées à des créations nettes d'emploi total. Jamet estime, selon les paramètres du modèle sectoriel, environ 50 000 à 190 000 emplois peu qualifiés en ETP, avec un scénario privilégié autour de 165 000 ; le modèle n'établit pas un solde symétrique sur toutes les qualifications. Gafsi et al. estiment 118 000 à 140 000 emplois peu qualifiés, mais 41 000 à 76 000 emplois qualifiés évincés, soit un solde net de 60 000 à 80 000 emplois. Ces chiffres proviennent de modèles structurels sectoriels et non d'une expérience naturelle. Ils portent sur les allègements de cotisations de 1993–1997, pas sur l'effet causal d'une hausse isolée du SMIC.
+
+La fiche détaillée est disponible dans [l'audit sectoriel des allègements 1993–1997](../dossiers/smic-sectoral-effects-exemptions-1993-1997.md).
+
+### Flux de chômage pendant la réforme Fillon (2003–2005)
+
+L'audit complet de Simonnet & Terracol (2009) porte sur 17 706 épisodes de chômage. Après juillet 2005, le différentiel de log-hasard de sortie vers les entreprises signataires 35 h par rapport aux non-signataires est de −0,20 (p = 0,003) pour l'ensemble de l'échantillon et de −0,20 (p = 0,014) pour les moins diplômés ; il n'est pas statistiquement significatif pour les plus diplômés. Le modèle de durée contrôle la démographie des entreprises, mais repose sur des hypothèses fortes concernant les risques concurrents et l'hétérogénéité non observée. Ce résultat concerne les transitions vers certains types d'entreprises, pas l'emploi total net.
+
+Voir [l'audit détaillé de la réforme Fillon 2003](../dossiers/smic-fillon-reform-2003-audit.md).
