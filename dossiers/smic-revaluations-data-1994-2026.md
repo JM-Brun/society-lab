@@ -119,3 +119,11 @@ La série événementielle ci-dessus enregistre les changements à chaque date d
 Des écarts de précision subsistent également pour 2001, 2004, 2005, 2006 et 2007. Le cas 2006 est explicitement non résolu : l'annexe DARES affiche +3,05 %, alors que le ratio des taux horaires affichés dans le CSV (8,27 € / 8,03 €) implique environ +2,99 %. Une différence liée aux taux sous-jacents non arrondis est possible, mais doit être vérifiée avant de conclure. Les deux valeurs sont conservées avec leur provenance.
 
 Source de comparaison : rapport du Groupe d'experts SMIC / DARES, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf.
+
+## 8. Audit de cohérence du dataset
+
+Un contrôle structurel et arithmétique complémentaire est publié dans [l'audit de cohérence 1994–2026](smic-revaluations-audit-1994-2026.md). Il confirme 42 événements, 10 colonnes et une chronologie triée. Il distingue les variations publiées par les sources du ratio recalculé à partir des montants horaires affichés au centime.
+
+Une anomalie apparente limitée a été relevée pour juillet 1999 : la variation publiée de 1,24 % diffère de 0,065 point du ratio calculé entre les taux affichés (6,21 € et 6,13 €). Cet écart est conservé comme point de vérification, et non corrigé automatiquement : il peut provenir des montants non arrondis ou de la convention de calcul de la source.
+
+La taxonomie du CSV a également été normalisée : les hausses de 1995, 1997 et juillet 2012 sont désormais classées comme hausses annuelles ou mixtes avec composante discrétionnaire, plutôt que comme coups de pouce intégralement discrétionnaires.
