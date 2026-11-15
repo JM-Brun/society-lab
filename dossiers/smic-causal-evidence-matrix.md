@@ -383,3 +383,14 @@ Le modèle 5 estime que les coups de pouce se transmettent à long terme à haut
 **Limites :** séries agrégées et 156 trimestres seulement ; MCO sans groupe témoin ni choc exogène isolé ; les auteurs reconnaissent l'endogénéité possible des prix, salaires et chômage ; la rupture de 1982 peut recouvrir plusieurs changements concomitants ; décomposition des hausses 2003–2005 en composantes « fictives » liées à la convergence des minima ; aucune estimation d'emploi, d'heures, de marges, de prix de vente ou de revenu disponible. Les résultats sont des élasticités macroéconomiques conditionnelles, pas des effets causaux isolés d'un coup de pouce donné.
 
 **Portée :** étude majeure sur la diffusion agrégée des hausses et la boucle d'indexation, complémentaire de Koubi & Lhommeau (2007) qui observent la diffusion par tranche de salaire dans les grilles. Voir [l'audit complet](smic-cette-chouard-verdugo-2011-diffusion-salaire-moyen.md).
+
+
+## 4. Prix : preuve française sectorielle à intégrer
+
+| Étude | Données et méthode | Résultat | Portée | Limites / confiance |
+|---|---|---|---|---|
+| Fougère, Gautier & Le Bihan (2010) | Prix individuels Insee de repas, juillet 1994–février 2003 ; 93 816 observations traditionnelles (2 948 restaurants), 10 726 fast-food (448 restaurants) ; modèle microéconométrique de rigidité (S,s) et simulations | Une hausse permanente de 1 % du SMIC augmente à long terme le niveau des prix simulé de 0,097 % en restauration traditionnelle et 0,130 % en restauration rapide ; transmission progressive sur plus d'un an | Preuve qu'une partie du coût salarial peut être transmise aux prix dans un secteur fortement exposé | Pas de groupe témoin nationalement non exposé ; modèle structurel et équilibre partiel ; exogénéité du SMIC et covariables maintenues ; période ancienne ; baisse concomitante des cotisations patronales intégrée au coût ; aucune mesure des marges ou de l'emploi. **Confiance modérée pour la restauration de la période, faible pour l'extrapolation macroéconomique** |
+
+La preuve de transmission aux prix ne doit pas être transformée en estimation de l'inflation générale. Les élasticités de 0,097 et 0,130 concernent le niveau des prix des deux sous-secteurs simulés, pas l'IPC total. La comparaison avec les modèles linéaires agrégés du même papier révèle en outre une sensibilité importante à la spécification, notamment pour la restauration rapide.
+
+Audit détaillé : [Fougère, Gautier & Le Bihan (2010)](smic-fougere-gautier-le-bihan-2010-prix-restauration.md).
