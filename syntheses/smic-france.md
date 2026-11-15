@@ -402,3 +402,14 @@ La diffusion se poursuit pendant les deux trimestres suivants, puis est partiell
 Les effets sont plus forts dans les branches où les minima conventionnels restent proches du SMIC et où beaucoup de salariés sont concentrés près du plancher. Cela confirme que la diffusion dépend de la structure des grilles et des négociations de branche, pas seulement du niveau national du SMIC.
 
 **Limite :** l'étude suit des postes représentatifs dans les établissements de 10 salariés ou plus ; elle n'observe pas les créations/destructions d'emplois et exclut les TPE. Le modèle est économétrique, non expérimental. Il apporte une preuve modérée de diffusion salariale de court terme, mais aucune conclusion sur l'emploi. Voir [l'audit complet](../dossiers/smic-goarant-muller-2011-diffusion-acemo.md).
+
+
+## 24. Emploi des jeunes et hausses du SMIC réel (Abowd et al., 1997/2000)
+
+L'étude longitudinale d'Abowd, Kramarz, Lemieux & Margolis (Enquête Emploi 1981–1989, jeunes de moins de 31 ans) trouve un risque de sortie d'emploi plus élevé pour certains salariés dont le salaire réel est rattrapé par la hausse du SMIC réel. L'élasticité conditionnelle estimée est de −2,489 pour les jeunes hommes et −1,044 pour les jeunes femmes ; les élasticités inconditionnelles calculées par les auteurs sont beaucoup plus faibles (−0,203 et −0,108). Le groupe directement exposé représente environ 8 % des jeunes hommes et 10 % des jeunes femmes.
+
+Le résultat est particulièrement défavorable dans certaines spécifications pour les hommes de 25–30 ans (élasticité −4,89, p = 0,0009, relativement au groupe juste au-dessus). Les dispositifs d'emploi jeunes semblent amortir une partie du risque, puis la sortie d'éligibilité peut coïncider avec une hausse des sorties vers le non-emploi. Les femmes présentent des résultats moins précis et plus difficiles à interpréter.
+
+**Précautions majeures :** la mesure salariale repose sur des tranches de salaire mensuel et des heures déclarées ; l'identification compare des groupes proches sans test moderne de pré-tendances ; la période est ancienne ; l'estimation inconditionnelle suppose que les hausses du SMIC ne modifient pas les entrées en emploi, marge non identifiée directement dans le cas français. Enfin, cette étude et Abowd, Kramarz & Margolis (1999) reposent sur des données françaises très proches et ne doivent pas être comptées comme deux réplications indépendantes.
+
+**Bilan :** signal négatif crédible mais historiquement circonscrit pour la rétention des jeunes directement exposés ; preuve beaucoup plus faible d'un effet massif sur l'emploi total des jeunes ou d'une transposition à la période actuelle. Audit détaillé : [Abowd et al. (1997/2000)](../dossiers/smic-abowd-kramarz-lemieux-margolis-1997-emploi-jeunes.md).
