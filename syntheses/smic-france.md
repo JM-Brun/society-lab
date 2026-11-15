@@ -15,6 +15,7 @@ related_dossiers:
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
   - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
+  - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -390,3 +391,14 @@ Deux études microéconomiques françaises apportent un signal défavorable cibl
 Bazen & Skourias (1997), « Is there a negative effect of minimum wages on youth employment in France? », étudient les données sectorielles après la hausse de 10 % du SMIC en juin 1981 et rapportent un effet négatif statistiquement significatif sur l'emploi des jeunes. La publication disponible en ligne sous forme de résumé ne permet pas ici de vérifier précisément la construction du groupe témoin, les tendances préalables, les contrôles sectoriels, les amplitudes ni les tests de robustesse. Le résultat doit donc être conservé comme signal historique défavorable, mais avec une confiance limitée tant que le texte intégral et ses tableaux n'ont pas été audités.
 
 Ne pas attribuer ce résultat à Neumark & Wascher : l'étude est de Bazen & Skourias. Voir la notice bibliographique : https://doi.org/10.1016/S0014-2921(97)00004-4.
+
+
+## 23. Diffusion salariale trimestrielle (Goarant & Muller, 2011)
+
+L'étude ACEMO de Goarant et Muller (DARES, publiée dans *Emploi et salaires* 2011) mesure la réaction des salaires mensuels de base aux revalorisations du SMIC dans les entreprises de 10 salariés ou plus. Une hausse de 1 % du minimum est associée, au trimestre de revalorisation, à **0,38 point de progression relative supplémentaire** pour les postes entre 1 et 1,1 SMIC par rapport aux postes au-delà de 3 SMIC. L'effet décroît rapidement et devient presque nul au-delà de 2 SMIC.
+
+La diffusion se poursuit pendant les deux trimestres suivants, puis est partiellement compensée par une progression plus lente du bas de la grille et un rattrapage des catégories moins touchées. À un an, l'effet différentiel significatif n'est plus que de 0,16 point et ne concerne que les postes initialement entre 1 et 1,1 SMIC.
+
+Les effets sont plus forts dans les branches où les minima conventionnels restent proches du SMIC et où beaucoup de salariés sont concentrés près du plancher. Cela confirme que la diffusion dépend de la structure des grilles et des négociations de branche, pas seulement du niveau national du SMIC.
+
+**Limite :** l'étude suit des postes représentatifs dans les établissements de 10 salariés ou plus ; elle n'observe pas les créations/destructions d'emplois et exclut les TPE. Le modèle est économétrique, non expérimental. Il apporte une preuve modérée de diffusion salariale de court terme, mais aucune conclusion sur l'emploi. Voir [l'audit complet](../dossiers/smic-goarant-muller-2011-diffusion-acemo.md).
