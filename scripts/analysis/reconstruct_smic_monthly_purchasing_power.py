@@ -34,7 +34,7 @@ def fetch_bytes(url: str) -> bytes:
         url,
         headers={"Accept": ACCEPT, "User-Agent": "society-lab-smic-research/1.0"},
     )
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=20) as response:
         payload = response.read()
         content_type = response.headers.get("Content-Type", "")
     if not payload or ("xml" not in content_type.lower() and not payload.lstrip().startswith(b"<?xml")):
@@ -138,7 +138,7 @@ def main() -> int:
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
-    raw = {name: fetch_bytes(url) for name, url in SOURCE_URLS.items()}
+    raw = {}\n    for name, url in SOURCE_URLS.items():\n        print(f"Downloading {name}: {url}", flush=True)\n        raw[name] = fetch_bytes(url)\n        print(f"Downloaded {name}: {len(raw[name])} bytes", flush=True)
     for name, payload in raw.items():
         (args.output_dir / f"insee-{name}-{START_YEAR}-{END_YEAR}.xml").write_bytes(payload)
 
