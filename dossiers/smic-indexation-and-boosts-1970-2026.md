@@ -179,7 +179,7 @@ La période est découpée en quatre régimes : coups de pouce et indexation ann
 **Précaution :** le taux horaire légal n'est pas le minimum mensuel garanti pour chaque salarié pendant la coexistence des GMR. Les hausses 2003–2005 sont en partie des rattrapages de convergence institutionnelle. Les relèvements automatiques de 2021–2026 ne sont pas des coups de pouce discrétionnaires. Le dossier sépare ces catégories et distingue les taux nominaux du pouvoir d'achat annuel.
 
 
-## 10. Deuxième tranche de décomposition tabulaire : 1996–2008
+## 11. Deuxième tranche de décomposition tabulaire : 1996–2008
 
 Une seconde tranche de la décomposition officielle a été structurée à partir de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009 : [CSV 1996–2008](../data/smic-revaluations-1996-2008.csv). Elle complète la transcription du Sénat pour 1970–1993, sans fusionner les deux conventions de calcul.
 
@@ -188,3 +188,24 @@ La tranche 1996–2008 distingue le taux horaire, la hausse observée, la moiti�
 **Limites de transcription :** l'annexe commence en juillet 1996 ; elle ne remplace donc pas une série complète à partir de 1994. Les composantes publiées sont parfois arrondies et peuvent ne pas sommer exactement à la variation affichée. La colonne rounding_residual_pct conserve explicitement l'écart entre la variation observée et la somme des composantes renseignées (par exemple 0,11 point en 2007) au lieu de le répartir artificiellement. Les tirets du rapport sont codés 0.00 uniquement lorsqu'ils signifient l'absence de coup de pouce dans la colonne correspondante ; les cellules de convergence ne sont pas imputées à zéro hors de la période de convergence. Les revalorisations distinctes des GMR en 2000–2002 sont signalées dans les notes et ne sont pas additionnées au taux horaire du SMIC.
 
 Source primaire : Groupe d'experts SMIC, *Rapport*, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf. Le rapport distingue explicitement la convergence des minima salariaux entre 2003 et 2005 et les composantes ordinaires de revalorisation (voir également p. 6–8).
+
+
+## 12. Réconciliation des conventions entre les séries 1994–2026 et 1996–2008
+
+Les deux fichiers ne décrivent pas la même unité temporelle :
+
+- le CSV 1994–2026 enregistre chaque changement de taux à sa date d'effet (par exemple mai puis juillet 1996) ;
+- l'annexe DARES de 2009 présente des variations annuelles observées à la date de juillet, c'est-à-dire un glissement entre deux dates de juillet. Une hausse automatique intervenue en mai peut donc déjà être incluse dans le chiffre annuel de juillet.
+
+Deux exemples permettent de prévenir les doubles comptes :
+
+| Période | Série événementielle par date d'effet | Série annuelle DARES | Lecture correcte |
+|---|---|---|---|
+| 1996 | +2,0 % en mai, puis +0,5 % en juillet | +2,51 % au point de juillet | Le chiffre annuel inclut les deux événements ; 2,51 % correspond à leur composition multiplicative arrondie, pas à un coup de pouce de 2,51 % en juillet |
+| 2008 | +2,3 % en mai, puis +0,9 % en juillet | +3,2 % au point de juillet | Le chiffre annuel inclut le déclenchement automatique de mai ; ne pas ajouter 3,2 % aux deux événements |
+
+D'autres écarts de précision apparaissent dans les tableaux : 2001 (4,05 % dans l'annexe DARES, 4,1 % dans la série événementielle), 2004 (5,8 % contre 5,84 %), 2005 (5,5 % contre 5,52 %), 2006 (3,05 % dans l'annexe DARES contre 2,99 % dans la série événementielle) et 2007 (2,1 % contre 2,06 %). Les différences 2001, 2004, 2005 et 2007 sont compatibles avec des niveaux d'arrondi ou de précision différents. **Le cas 2006 reste non réconcilié** : le ratio des taux affichés 8,27 / 8,03 donne environ 2,99 %, alors que l'annexe DARES indique 3,05 %. Les taux affichés au centime peuvent masquer des valeurs sous-jacentes non arrondies ; cette explication est plausible mais non démontrée à ce stade.
+
+La colonne rounding_residual_pct du CSV 1996–2008 conserve les résidus entre les contributions imprimées et la variation annuelle publiée. Elle ne doit pas être interprétée comme une composante économique ou légale supplémentaire.
+
+**Règle d'usage :** ne jamais fusionner les deux CSV par simple addition. Pour les études d'impact, choisir une unité temporelle commune (événement à date d'effet ou glissement annuel), recalculer les variations à partir des taux non arrondis lorsque disponibles et documenter séparément les contributions légales, les décisions discrétionnaires et les effets de convergence GMR.
