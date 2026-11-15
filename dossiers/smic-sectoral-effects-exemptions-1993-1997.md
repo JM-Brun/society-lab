@@ -145,3 +145,12 @@ Les écarts ne sont pas des réplications contradictoires d’un même traitemen
 - Gafsi, L’Horty & Mihoubi (2004), EPEE 04-03R : https://www.univ-evry.fr/fileadmin/mediatheque/ueve-institutionnel/03_Recherche/laboratoires/Epee/wp/04-03R.pdf
 - Gafsi, L’Horty & Mihoubi (2004), EPEE 04-02R, faits stylisés 1982–2002 : https://www.univ-evry.fr/fileadmin/mediatheque/ueve-institutionnel/03_Recherche/laboratoires/Epee/wp/04-02R.pdf
 - Hennion & Loisy (2006), « L’impact des exonérations de cotisations patronales de Sécurité sociale sur l’emploi : une nouvelle évaluation », *Dossiers Solidarité et Santé* n°2, p. 43–64 : https://drees.solidarites-sante.gouv.fr/sites/default/files/2020-10/dss02-2006.pdf
+
+
+## 7. Contrepoint critique de la synthèse DARES (Ourliac & Nouveau, 2012)
+
+Le rapport DARES n°169 résume l’estimation Gafsi et al. à 130 000 emplois peu qualifiés, −60 000 qualifiés et +70 000 au total (tableau B). Il souligne que l’élasticité de substitution entre qualifications est recalculée par les auteurs du rapport, car elle n’est pas explicitement calculée dans l’article, et qu’elle prend une valeur extrême (−4,2). Il critique également la récupération salariale estimée pour les bas qualifiés (près des deux tiers de la baisse des cotisations), la rigidité des salaires qualifiés et le caractère extrême de plusieurs élasticités, qu’il juge peu crédibles. Ces réserves ne réfutent pas mécaniquement l’étude, mais diminuent la confiance à accorder à son chiffrage précis du solde net.
+
+Cette critique complète le constat déjà établi : les résultats Gafsi et al. intègrent des canaux macroéconomiques souvent absents des évaluations micro, mais ils sont très sensibles à la spécification structurelle et aux paramètres estimés.
+
+Référence : Ourliac & Nouveau (2012), DARES Document d’études n°169, tableau B et discussion, p. 30–31 : https://dares.travail-emploi.gouv.fr/sites/default/files/pdf/DE2012-_no169.pdf.
