@@ -110,34 +110,36 @@ def require_months(series: dict[str, float], start_year: int, end_year: int, lab
 def annual_reconstruction(smic: dict[str, float], cpi: dict[str, float]) -> list[dict[str, str]]:
     require_months(smic, START_YEAR, END_YEAR, "SMIC")
     require_months(cpi, START_YEAR, END_YEAR, "CPI")
+    annual_levels = {}
+    for year in range(START_YEAR, END_YEAR + 1):
+        months = [f"{year}-{month:02d}" for month in range(1, 13)]
+        smic_avg = sum(smic[m] for m in months) / 12
+        cpi_avg = sum(cpi[m] for m in months) / 12
+        annual_levels[year] = (smic_avg, cpi_avg, smic_avg / cpi_avg)
+
+    base = annual_levels[2015][2]
     rows = []
-    ratios = {}
+    previous_smic = previous_cpi = previous_ratio = None
     for year in range(START_YEAR, END_YEAR + 1):
-        months = [f"{year}-{month:02d}" for month in range(1, 13)]
-        smic_avg = sum(smic[m] for m in months) / 12
-        cpi_avg = sum(cpi[m] for m in months) / 12
-        ratios[year] = smic_avg / cpi_avg
-    base = ratios[2015]
-    previous = None
-    for year in range(START_YEAR, END_YEAR + 1):
-        months = [f"{year}-{month:02d}" for month in range(1, 13)]
-        smic_avg = sum(smic[m] for m in months) / 12
-        cpi_avg = sum(cpi[m] for m in months) / 12
-        ratio = ratios[year]
-        change = "" if previous is None else f"{100 * (ratio / previous - 1):.6f}"
+        smic_avg, cpi_avg, ratio = annual_levels[year]
+        nominal_change = "" if previous_smic is None else f"{100 * (smic_avg / previous_smic - 1):.6f}"
+        inflation = "" if previous_cpi is None else f"{100 * (cpi_avg / previous_cpi - 1):.6f}"
+        real_change = "" if previous_ratio is None else f"{100 * (ratio / previous_ratio - 1):.6f}"
         rows.append({
             "year": str(year),
             "smic_hourly_gross_annual_avg_eur": f"{smic_avg:.6f}",
+            "smic_nominal_change_pct": nominal_change,
             "ipc_annual_avg_base_2015_100": f"{cpi_avg:.6f}",
+            "ipc_inflation_pct": inflation,
             "smic_real_ratio": f"{ratio:.9f}",
             "real_smic_index_2015_100": f"{100 * ratio / base:.6f}",
-            "real_purchasing_power_change_pct": change,
+            "real_purchasing_power_change_pct": real_change,
             "source_smic_idbank": SMIC_ID,
             "source_cpi_idbanks": f"{CPI_1980_ID}+{CPI_2015_ID}",
             "method": "ratio of annual means: mean(monthly SMIC) / mean(monthly CPI)",
             "confidence": "reconstructed_primary_series",
         })
-        previous = ratio
+        previous_smic, previous_cpi, previous_ratio = smic_avg, cpi_avg, ratio
     return rows
 
 
@@ -198,7 +200,7 @@ def main() -> int:
         "linked_cpi_observations": len(cpi),
         "cpi_link_factor_1980_to_2015": f"{factor:.12f}",
         "cpi_link_method": "geometric mean of monthly base-2015/base-1980 ratios over 1990-01 to 1992-12",
-        "annual_method": "mean(monthly SMIC) / mean(monthly CPI); do not average monthly ratios",
+        "annual_method": "mean(monthly SMIC) / mean(monthly CPI); annual nominal SMIC growth and CPI inflation are also reported separately",
         "raw_sha256": {raw_filenames[name]: hashlib.sha256(payload).hexdigest() for name, payload in raw.items()},
     }
     (args.output_dir / "manifest.json").write_text(

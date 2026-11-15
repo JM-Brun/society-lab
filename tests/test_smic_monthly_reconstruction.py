@@ -68,6 +68,18 @@ class MonthlySmicReconstructionTests(unittest.TestCase):
         self.assertEqual(by_year["2015"]["real_smic_index_2015_100"], "100.000000")
         self.assertAlmostEqual(float(by_year["2025"]["real_smic_index_2015_100"]), 102.206279, places=6)
 
+
+    def test_committed_real_change_matches_nominal_growth_and_inflation(self):
+        path = Path(__file__).resolve().parents[1] / "data" / "smic-real-purchasing-power-1970-2025.csv"
+        with path.open(encoding="utf-8", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        for row in rows[1:]:
+            nominal = float(row["smic_nominal_change_pct"]) / 100
+            inflation = float(row["ipc_inflation_pct"]) / 100
+            expected = 100 * ((1 + nominal) / (1 + inflation) - 1)
+            actual = float(row["real_purchasing_power_change_pct"])
+            self.assertAlmostEqual(actual, expected, delta=0.0001, msg=row["year"])
+
     def test_annual_formula_uses_ratio_of_annual_means(self):
         smic = {}
         cpi = {}
@@ -80,6 +92,8 @@ class MonthlySmicReconstructionTests(unittest.TestCase):
         self.assertEqual(len(rows), 56)
         self.assertEqual(rows[0]["real_purchasing_power_change_pct"], "")
         self.assertEqual(rows[1]["real_purchasing_power_change_pct"], "100.000000")
+        self.assertEqual(rows[1]["smic_nominal_change_pct"], "100.000000")
+        self.assertEqual(rows[1]["ipc_inflation_pct"], "0.000000")
         self.assertEqual(rows[-1]["real_smic_index_2015_100"], "100.000000")
 
 
