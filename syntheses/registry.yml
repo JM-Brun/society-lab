@@ -38,3 +38,7 @@ dossiers:
     dossier_path: "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SMIC-GAUTIER-ROUX-SUAREZ-CASTILLO-2019"
+    dossier_path: "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
