@@ -150,9 +150,96 @@ La transposition à la France actuelle est limitée : structure sectorielle, niv
 - Neumark & Wascher (2007), *Minimum Wages and Employment*, IZA DP 2570, discussion de Bazen & Skourias, pagination imprimée p. 97–98 : https://www.iza.org/publications/dp/2570/minimum-wages-and-employment (copie texte consultée pour localiser la discussion : https://studylib.net/doc/18073222/minimum-wages-and-employment)
 
 
-## 9. Historique des révisions
+
+## 10. Fiche d'audit n° 2 — Abowd, Kramarz & Margolis (1999), données françaises 1981–1989
+
+**Référence primaire :** John M. Abowd, Francis Kramarz et David N. Margolis, *Minimum Wages and Employment in France and the United States*, NBER Working Paper 6996, mars 1999. [Texte intégral NBER](https://www.nber.org/system/files/working_papers/w6996/w6996.pdf).
+
+**Statut :** lecture du texte intégral NBER, notamment sections 1, 3, 4 et 5, tableaux 1 à 3 et annexes. Les résultats américains ne sont pas utilisés pour conclure sur la France. L'étude est une analyse de transitions individuelles, pas une évaluation d'une hausse unique identifiée par une expérience naturelle.
+
+### 10.1 Données, période et construction des variables
+
+- **Source française :** fichiers de recherche de l'Enquête Emploi INSEE, années 1981 à 1989.
+- **Structure :** environ 60 000 ménages enquêtés en mars pendant trois années consécutives ; un tiers des ménages est remplacé chaque année. Le suivi longitudinal dépend de l'adresse du logement, et non de la composition du ménage. Les auteurs appairent les observations individuelles d'une année à l'autre, de 1981–1982 à 1988–1989.
+- **Unité :** personne observée sur deux vagues annuelles consécutives. L'échantillon des régressions françaises du tableau 2 compte 103 893 observations appariées ; ce nombre n'est pas le nombre de personnes distinctes sur toute la période.
+- **Salaire :** le salaire mensuel habituel est déclaré par tranche (20 intervalles, de largeur variable). Les auteurs prennent le milieu de la tranche, le divisent par les heures hebdomadaires habituelles et multiplient par 12/52 pour construire un salaire horaire. La mesure est nette des cotisations salariales mais inclut l'impôt sur le revenu ; le SMIC est rendu comparable sur cette base puis déflaté par l'IPC.
+- **Emploi :** une personne est employée si elle a travaillé au moins une heure rémunérée pendant la semaine de référence de mars. Le résultat est un statut emploi/non-emploi à la vague suivante, pas un volume d'heures ni un équivalent temps plein.
+- **Dispositifs dérogatoires :** les auteurs identifient les apprentis, stagiaires et bénéficiaires de programmes aidés (dont TUC et SIVP à partir de 1985), qui peuvent être rémunérés sous le SMIC et bénéficier d'exonérations de cotisations. Ces situations sont modélisées séparément.
+
+### 10.2 Traitement, comparaison et stratégie d'identification
+
+Pour la France, le SMIC réel augmente au cours de la période. Les auteurs construisent une catégorie « entre les deux minima » : personnes employées en année *t* dont le salaire horaire réel est au moins égal au SMIC réel de *t*, mais inférieur au SMIC réel de *t+1*. Ce groupe est celui dont le salaire, inchangé en termes réels, serait rattrapé par la hausse du plancher.
+
+Le groupe de comparaison principal est constitué de personnes payées marginalement au-dessus du nouveau minimum, jusqu'à 1,15 fois le SMIC réel de *t+1*. Les auteurs testent aussi des seuils alternatifs de 1,10 et 1,20 fois le SMIC. Ils estiment des modèles logit conditionnels de la probabilité d'être employé en *t+1*, conditionnellement au fait d'être employé en *t*, avec interactions entre l'exposition au mouvement du SMIC et l'âge.
+
+Les contrôles incluent notamment année, diplôme, région (Île-de-France), âge, CDD, stagiaire, apprenti, expérience potentielle, ancienneté et salaire horaire. L'étude exploite la variation annuelle du SMIC réel et la position salariale des individus autour du seuil ; elle ne dispose pas d'un groupe géographique non traité. Le contraste repose sur l'hypothèse que les salariés « entre les deux minima » et ceux juste au-dessus auraient connu des transitions comparables en l'absence de hausse, après conditionnement sur les variables observées.
+
+**Important :** ce dispositif est qualifié par les auteurs de pseudo-expérimental. La position dans la distribution salariale n'est pas assignée au hasard. La catégorie « marginalement au-dessus » peut différer du groupe exposé par des caractéristiques non observées (stabilité de l'emploi, productivité, secteur, trajectoire de carrière).
+
+### 10.3 Résultats emploi : hétérogénéité et incertitude
+
+Pour les hommes, les élasticités conditionnelles rapportées dans le texte pour le groupe « entre les deux minima », relativement au groupe marginalement au-dessus, sont d'environ :
+- 21–25 ans : −1,4 % ;
+- 26–30 ans : −3,2 % ;
+- 31–35 ans : −4,3 %.
+
+Pour les hommes de 36 ans et plus, les auteurs ne trouvent pas de différence nette entre les groupes comparés. Le résultat agrégé cité dans le résumé est une baisse de 1,3 % de la probabilité future d'emploi pour les hommes actuellement au minimum, pour une hausse de 1 % du SMIC réel ; pour les femmes, 1,0 %. Les auteurs qualifient ces estimations françaises d'imprécises.
+
+Le tableau 2 montre pourquoi il faut conserver les erreurs-types et les p-values, et ne pas citer uniquement les élasticités :
+- Hommes 21–25 ans : interaction −15,0196, erreur-type 8,3891, p = 0,0734 ; élasticité −2,3407.
+- Hommes 26–30 ans : −33,7128, erreur-type 11,4511, p = 0,0032 ; élasticité −3,9662.
+- Hommes 31–35 ans : −34,9743, erreur-type 15,5535, p = 0,0245 ; élasticité −5,1989.
+- Hommes 36–40 ans : p = 0,7399 ; pas de différence statistiquement détectable.
+- Femmes 21–25 ans : interaction −17,6620, erreur-type 6,7599, p = 0,0090 ; élasticité −2,6942.
+- Femmes 26–30 ans : −21,6794, erreur-type 8,1511, p = 0,0078 ; élasticité −2,9713.
+- Femmes 31–35 ans : p = 0,3202 ; pas de différence statistiquement détectable.
+
+Les résultats sont donc hétérogènes selon l'âge et le sexe. Le résumé de l'article ne doit pas être transformé en une élasticité homogène de l'emploi de tous les salariés au SMIC. Les p-values sont rapportées par le papier ; des intervalles de confiance ne sont pas fournis dans les tableaux consultés et ne doivent pas être reconstitués sans vérifier la covariance et la forme exacte du paramètre transformé.
+
+### 10.4 Robustesses et tendances préalables
+
+- **Seuil du groupe témoin :** les auteurs refont les estimations avec un seuil de 1,10, 1,15 et 1,20 fois le SMIC. Ils décrivent les résultats comme globalement robustes. Le tableau 3 présente des coefficients et erreurs-types ; il ne constitue pas un test de pré-tendances.
+- **Mesure du salaire :** pour la France, le salaire horaire est construit à partir de tranches de salaire mensuel et des heures hebdomadaires habituelles. Les auteurs signalent la nature approximative de cette mesure. La comparaison avec les États-Unis mobilise en plus des variantes avec et sans pourboires, mais ces variantes américaines ne valident pas la mesure française.
+- **Hétérogénéité non observée :** les auteurs reconnaissent qu'ils ne peuvent pas contrôler aisément toute l'hétérogénéité individuelle non observée. Ils supposent que le groupe « marginalement au-dessus » capte une partie de cette hétérogénéité.
+- **Petites cellules :** les auteurs signalent que, du fait des effectifs réduits dans certaines catégories, les différences entre groupes ne sont que parfois statistiquement significatives ; l'annexe C fournit les différences et leurs erreurs-types.
+- **Tendances préalables :** le dispositif n'est pas présenté comme une étude d'événement avec coefficients de pré-traitement. Aucun test formel de tendances parallèles avant une date de hausse n'est rapporté dans les sections et tableaux examinés. La robustesse aux seuils ne remplace pas ce test.
+
+### 10.5 Heures, salaires et autres marges d'ajustement
+
+Les heures hebdomadaires habituelles sont utilisées pour construire le salaire horaire, mais **les heures ne sont pas estimées comme résultat**. De même, l'étude ne mesure pas l'effet causal sur la progression salariale, les prix, les marges ou le revenu disponible. Son résultat principal porte sur la probabilité de rester en emploi d'une année sur l'autre.
+
+### 10.6 Contrats aidés : un mécanisme institutionnel à ne pas généraliser
+
+Les auteurs indiquent que les contrats de promotion de l'emploi et les exonérations associées peuvent protéger les moins de 25 ans contre une partie de l'effet négatif apparent du SMIC. À la fin de l'éligibilité, la probabilité d'être sans emploi augmente dans certaines catégories. Ce résultat met en évidence l'interaction entre salaire minimum et dispositifs dérogatoires ; il ne permet pas de conclure que les contrats aidés ont un effet identique aujourd'hui, avec des dispositifs, règles et publics différents.
+
+### 10.7 Limites de transposition à la France actuelle
+
+1. Les données datent de 1981–1989 : institutions, structure sectorielle, formation, durée du travail, cotisations patronales, allègements et contrats aidés ont profondément changé.
+2. Le traitement est la hausse annuelle du SMIC réel dans un contexte d'indexation sur les prix et les salaires, pas une hausse discrétionnaire isolée de même ampleur que les débats contemporains.
+3. Les personnes sont suivies à l'adresse du logement ; un déménagement peut interrompre l'appariement. Les sorties du panel ne doivent pas être assimilées automatiquement à des sorties d'emploi.
+4. L'échantillon de l'analyse conditionnelle est composé de personnes employées à un moment de la période ; les auteurs préviennent qu'il ne représente pas toute la population potentiellement active.
+5. Le groupe témoin est composé de salariés proches du SMIC, donc potentiellement soumis aux mêmes chocs sectoriels et aux mêmes ajustements de grilles.
+6. Le résultat « emploi » est binaire et annuel ; il ne permet pas de distinguer précisément chômage, inactivité, changement d'employeur ou réduction des heures entre deux vagues.
+
+### 10.8 Verdict provisoire
+
+**Ce que l'étude apporte :** une analyse longitudinale française originale montrant que les salariés dont le salaire réel se trouve rattrapé par le relèvement du SMIC ont, dans certaines catégories, une probabilité de maintien en emploi plus faible que des salariés proches mais juste au-dessus du nouveau seuil. L'hétérogénéité selon l'âge et les dispositifs aidés est centrale.
+
+**Ce qu'elle n'établit pas :** un effet moyen actuel sur l'emploi total ; une baisse de 1,3 % de l'emploi pour chaque hausse de 1 % du SMIC dans toute la population ; un effet sur les heures ou les salaires ; ni une causalité définitivement isolée des trajectoires et caractéristiques non observées.
+
+**Niveau de confiance :** modéré pour le constat de différences de transitions dans cet échantillon historique ; faible à modéré pour l'interprétation causale, compte tenu du groupe témoin endogène, des petites cellules et de l'absence de test de pré-tendances de type event-study.
+
+### 10.9 Références et points de contrôle
+
+- Abowd, Kramarz & Margolis (1999), NBER WP 6996, sections 3–5, tableaux 1–3 et annexe C : https://www.nber.org/system/files/working_papers/w6996/w6996.pdf
+- NBER, notice du WP 6996 : https://www.nber.org/papers/w6996
+- À rapprocher, sans les confondre, de Abowd, Kramarz, Lemieux & Margolis (1997/2000), *Minimum Wages and Youth Employment in France and the United States*, chapitre 11, p. 427–472 : https://www.nber.org/chapters/c6813. Cette étude cible les jeunes de moins de 31 ans et rapporte une élasticité conditionnelle de non-emploi de −2,5 % pour les jeunes hommes français du groupe exposé ; ce n'est pas la même population ni le même estimand que le WP 6996.
+
+
+## 11. Historique des révisions
 
 | Date | Modification |
 |---|---|
 | 2026-11-15 | Création de la matrice des preuves, distinction des instruments et hiérarchisation des travaux de vérification. |
 | 2026-11-15 | Première fiche d'audit détaillée : Bazen & Skourias (1997), description des données, du DID sectoriel, des fenêtres et des deux critiques méthodologiques documentées par Neumark & Wascher (2007). |
+| 2026-11-15 | Deuxième fiche d'audit : lecture du NBER WP 6996 d'Abowd, Kramarz & Margolis ; données 1981–1989, construction du salaire horaire, groupe « entre les minima », estimations par âge/sexe, erreurs-types, p-values et limites d'identification. Distinction explicite du chapitre ultérieur sur les jeunes. |
