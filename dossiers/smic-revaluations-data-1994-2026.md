@@ -72,3 +72,41 @@ Le gouvernement a accordé un coup de pouce en juillet 2012 : l'augmentation de 
 La période 1994–2026 ne doit pas être racontée comme une succession uniforme de hausses du SMIC. Elle comporte quatre régimes : (1) coups de pouce et indexation annuelle dans les années 1990 ; (2) fragmentation des minima puis convergence GMR avec les 35 heures ; (3) changement de calendrier et révision des paramètres d'indexation ; (4) déclenchements automatiques infra-annuels répétés lors de la poussée inflationniste récente.
 
 Pour l'étude des effets, la prochaine étape est de relier cette chronologie aux séries de pouvoir d'achat moyen annuel, de proportion de salariés concernés, de salaires de branche, d'emploi et de coût du travail, en traitant explicitement les ruptures institutionnelles comme facteurs de confusion.
+
+
+## 7. Réconciliation des coups de pouce : 1995–2006 et divergences historiques
+
+La chronologie des taux ne suffit pas : une hausse annuelle peut combiner indexation mécanique et décision discrétionnaire. Le CSV classe désormais explicitement plusieurs épisodes mixtes.
+
+| Date | Hausse du taux | Composante discrétionnaire documentée | Source / réserve |
+|---|---:|---:|---|
+| Juillet 1995 | 4,0 % | 2,2 points | Rapport parlementaire 2021 ; hausse de 4 % confirmée par la série historique |
+| Juillet 1996 | 0,5 % (après +2 % en mai) | 0,16 point | Annexe DARES 2009 ; mai correspond au déclenchement automatique du seuil d'inflation |
+| Juillet 1997 | 4,0 % | 2,26 points | Annexe DARES 2009 |
+| Juillet 1998 | 2,0 % | 0,46 point (arrondi à 0,5 dans le rapport parlementaire) | Écart d'arrondi / convention à conserver explicitement |
+| Juillet 2001 | 4,1 % environ | 0,29 point | Rapport parlementaire ; mesure associée au minimum des salariés restés à 39 heures |
+| Juillet 2006 | 2,99 % environ | 0,3 point au-delà de la revalorisation mécanique | Rapport parlementaire ; période immédiatement postérieure à la convergence GMR |
+| Juillet 2012 | 2,0 % | 0,6 point | INSEE : 1,4 point d'inflation et 0,6 point de décision gouvernementale |
+
+Cette vérification corrige la première classification du dataset : 1995, 1996 (juillet), 1998, 2001 et 2006 ne sont pas de simples hausses ordinaires. Les colonnes du CSV précisent désormais les composantes discrétionnaires connues. Les événements de mai 1996 et mai 2008 restent classés comme déclenchements automatiques infra-annuels.
+
+### Divergences 1973 et 1981 : ne pas fusionner les chiffres
+
+Trois mesures sont présentes dans les sources :
+
+- **1973 :** le rapport du groupe d'experts de 2020 qualifie de 10,1 % le coup de pouce maximal ; le tableau du Sénat de 1994 donne 9,7 points pour le résidu discrétionnaire du glissement annuel 1973–1974.
+- **1981 :** le rapport 2020 chiffre le coup de pouce à 6,9 % ; le tableau du Sénat donne 5,2 points pour le résidu discrétionnaire de son glissement annuel 1981–1982 ; les rapports parlementaires mentionnent par ailleurs un relèvement de 10 % au 1er juin 1981. Ce dernier chiffre est une hausse du taux à une date précise et ne doit pas être traité comme identique au résidu de la décomposition annuelle.
+
+**Conclusion provisoire :** ces chiffres ne sont pas directement contradictoires tant que leurs dénominateurs, périodes de comparaison et périmètres ne sont pas alignés. Le tableau du Sénat mesure un glissement annuel à date fixe ; le rapport 2020 présente une série de coups de pouce issue d'une autre reconstruction historique ; le chiffre de 10 % en 1981 décrit un relèvement à date précise. Les trois mesures sont conservées avec leur provenance. Une réconciliation définitive exige de revenir aux décrets et aux séries mensuelles de taux, puis de recalculer la part mécanique et la part discrétionnaire sur une fenêtre commune.
+
+### Limite importante sur 2003–2006
+
+La convergence des GMR est parfois présentée comme une hausse cumulée de 17,6 % du minimum horaire le plus bas entre 2003 et 2006 ; les documents du groupe d'experts décrivent aussi une hausse de 11,4 % du pouvoir d'achat du SMIC horaire au cours du processus 2003–2005. Ces chiffres ne sont pas interchangeables : ils peuvent porter sur des périmètres de minima, des dates et des mesures de pouvoir d'achat distincts. Le dossier conserve la mesure de 11,4 % pour le SMIC horaire dans la comparaison DARES/rapports d'experts et mentionne 17,6 % comme mesure parlementaire du minimum horaire le plus bas, sans les additionner.
+
+## 8. Synthèse de réconciliation
+
+**Établi :** des coups de pouce explicites sont documentés en 1995, 1996, 1997, 1998, 2001, 2006 et 2012 ; les revalorisations automatiques infra-annuelles sont séparées de ces décisions.
+
+**À résoudre :** la divergence de mesure 1973/1981 et l'écart entre les indicateurs de convergence GMR de 11,4 % et 17,6 %.
+
+**Prochaine opération :** recalculer les contributions sur une base commune à partir des dates exactes d'entrée en vigueur et des indices légaux, en s'appuyant sur les textes réglementaires et les séries mensuelles INSEE. Ne pas utiliser les chiffres de coups de pouce historiques comme une série homogène avant cette harmonisation.
