@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
 title: "Augmenter le SMIC en France : effets, arbitrages et scénarios"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-14"
+last_reviewed: "2026-11-15"
 related_dossiers:
   - "dossiers/smic-france-tradeoffs.md"
   - "dossiers/smic-historical-episodes.md"
@@ -14,6 +14,7 @@ related_dossiers:
   - "dossiers/smic-quantitative-update-2026.md"
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
+  - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -348,3 +349,14 @@ Au 1er janvier 2023, 3,13 millions de salariés du privé non agricole, soit 17,
 **Bilan provisoire :** protection du taux horaire brut directement établie ; diffusion aux salaires voisins partielle et retardée ; compression temporaire des grilles documentée ; exposition disproportionnée des temps partiels, des TPE et des femmes établie. Les publications descriptives citées n'identifient pas les effets causaux sur l'emploi, les heures, les prix, les marges ou la pauvreté. Le bilan global de l'épisode reste donc indéterminé sur ces dimensions.
 
 Voir [l'audit Dares des bénéficiaires et de la période inflationniste 2021–2024](../dossiers/smic-dares-beneficiaires-inflation-2021-2024-audit.md).
+
+
+## 19. Diffusion salariale pendant la convergence des GMR (Aeberhardt, Givord & Marbot, 2012)
+
+L'étude INSEE de 2012 exploite la convergence différenciée des six minima GMR entre 2003 et 2005. Sur un panel DADS au 1/25e (environ 425 000 salariés et 157 000 entreprises), elle estime une diffusion salariale statistiquement significative jusqu'au septième décile pour les hommes comme pour les femmes. L'effet d'une hausse de 1 % du minimum reste inférieur à 0,2 % sur les déciles de rémunération annuelle ; il décroît et n'est plus significatif aux huitième et neuvième déciles.
+
+Ce résultat indique que le minimum peut influencer des rémunérations au-delà du plancher, jusqu'à des niveaux proches de deux SMIC. Mais le traitement est la convergence des GMR issue de la réforme des 35 heures, dans un contexte d'allègements de cotisations. L'échantillon ne couvre que des salariés du privé à temps plein et année complète ; les rémunérations sont annuelles, non horaires.
+
+Les taux de création/destruction d'emplois par groupe ne montrent pas de relation monotone claire, mais l'étude ne conduit pas d'estimation causale de l'emploi. Elle ne permet donc ni de conclure à l'absence d'effet sur l'emploi, ni de transposer directement les effets salariaux à une hausse uniforme du SMIC actuel.
+
+**Conclusion de synthèse :** preuve modérée de diffusion salariale au-delà du plancher dans cet épisode institutionnel exceptionnel ; preuve insuffisante sur l'emploi et le bien-être. Voir [l'audit complet](../dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md) et [la matrice des preuves](../dossiers/smic-causal-evidence-matrix.md).
