@@ -300,3 +300,12 @@ Pour la réforme Fillon, les trois rapports de recherche examinés concluent à 
 **Point de réconciliation :** le tableau DARES reprend Crépon & Desplatz à 260–670k (central 460k, dont 220k peu qualifiés et 240k qualifiés), soit une présentation arrondie de l’intervalle détaillé dans la fiche primaire. Le rapport DARES qualifie également les paramètres de Gafsi et al. d’extrêmes et certains résultats de peu crédibles, contrepoint critique à intégrer à la lecture de cette étude.
 
 Fiche : [Ourliac & Nouveau (2012)](smic-ourliac-nouveau-2012-synthesis-audit.md).
+
+
+## 15. Fiche d'audit n° 10 — GRECSTA (Cahuc et al., 2009) : accès documentaire incomplet
+
+La référence à une évaluation GRECSTA de la réforme Fillon est confirmée par une source institutionnelle de la Cour des comptes, qui rapporte des effets contrastés selon les entreprises et les types d'emplois, une élasticité négative de l'emploi au coût du travail, mais l'impossibilité de chiffrer les emplois créés ou sauvegardés et l'absence de résultat univoque selon le niveau de salaire. L'appel à projets DARES de 2006 confirme le périmètre attendu : emploi net, qualifications, secteurs, productivité, flux emploi-chômage et carrières salariales.
+
+**Ce n'est pas un audit économétrique du rapport.** Le texte primaire complet n'a pas été retrouvé. Échantillon, données, traitement, groupe témoin, pré-tendances, coefficients et intervalles de confiance restent inconnus. Aucun chiffre causal ne doit lui être attribué sur la seule base de sources secondaires. Il faut également distinguer ce rapport GRECSTA du rapport CEE de Bunel et al. et de l'étude CES de Simonnet & Terracol, tous trois associés au même appel à projets.
+
+Fiche de traçabilité : [GRECSTA — note d'accès documentaire](smic-grecsta-fillon-2009-source-access-note.md).
