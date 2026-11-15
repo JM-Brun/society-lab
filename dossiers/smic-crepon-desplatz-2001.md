@@ -194,3 +194,12 @@ Cette critique est une analyse contradictoire argumentée, pas une réplication 
 - L'Horty, commentaire : https://www.insee.fr/fr/statistiques/1376052?sommaire=1376054
 - Lacroix, commentaire : https://www.insee.fr/fr/statistiques/1376053?sommaire=1376054
 - Sterdyniak (2002), OFCE : https://www.ofce.fr/pdf/revue/7-81.pdf
+
+
+## 7. Mise en perspective DARES–Trésor (Ourliac & Nouveau, 2012)
+
+La synthèse DARES n°169 reprend l’intervalle à 95 % de Crépon & Desplatz comme 260 000–670 000 emplois (valeurs arrondies), avec une estimation centrale de 460 000 : 220 000 emplois peu qualifiés et 240 000 qualifiés. Elle retient un coût brut par emploi de 10 900–28 000 € de 2009. Cet intervalle correspond à la fourchette déjà décrite dans cette fiche (environ 255 000–670 000) ; il ne s’agit pas d’une réplication.
+
+La synthèse rappelle la principale critique : les entreprises les plus aidées peuvent gagner des parts de marché aux dépens d’entreprises moins aidées, de sorte que les réallocations ne se traduisent pas nécessairement par des créations nettes macroéconomiques. Elle précise toutefois que Crépon & Desplatz ont répondu à cette objection en contrôlant la concurrence intra- et intersectorielle. La question restante porte donc sur les effets de déplacement résiduels, le passage au niveau agrégé et le financement des allègements, et non sur une absence totale de contrôle de la concurrence.
+
+Référence : Ourliac & Nouveau (2012), DARES Document d’études n°169, tableaux D et commentaires, p. 31–32 : https://dares.travail-emploi.gouv.fr/sites/default/files/pdf/DE2012-_no169.pdf.
