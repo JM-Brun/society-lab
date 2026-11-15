@@ -209,3 +209,12 @@ Cette série confirme que les hausses nominales ne se traduisent pas automatique
 **Limite :** la série annuelle de pouvoir d'achat s'arrête à 2025. Le taux horaire de 12,31 € applicable depuis juin 2026 ne permet pas de calculer un pouvoir d'achat moyen annuel 2026. La série 2014–2025 ne renseigne pas non plus les heures travaillées, la durée d'emploi, les revenus du ménage ou les effets causaux sur l'emploi.
 
 Source : INSEE, *Salaire minimum interprofessionnel de croissance*, données annuelles, tableau « Pouvoir d'achat du Smic et du salaire horaire de base ouvrier et employé » : https://www.insee.fr/fr/statistiques/1375188.
+
+### Matrice des preuves sur emploi, diffusion et mobilité
+
+Une matrice de lecture des principales études françaises est désormais disponible : [Matrice des preuves causales et de mobilité](../dossiers/smic-causal-evidence-matrix.md). Elle sépare les résultats sur l'emploi (Neumark-Wascher ; Abowd-Kramarz-Margolis), la diffusion et la rigidité salariales (Aeberhardt-Givord-Marbot ; Gautier-Roux-Suarez Castillo), la mobilité (DG Trésor 2025 ; OCDE 2025) et les baisses de cotisations (Cottet 2024).
+
+**Point de méthode :** Cottet évalue une baisse de cotisations, pas une hausse du SMIC. Son résultat ne doit pas être utilisé comme estimation directe de l'effet d'une hausse du salaire minimum. De même, les estimations historiques d'Abowd et al. concernent surtout les salariés directement rémunérés au minimum et ne constituent pas une élasticité de l'emploi total.
+
+L'OCDE apporte un contrepoint au diagnostic de « trappe à bas salaires » : les trajectoires ascendantes des travailleurs à bas salaire ne sont pas plus difficiles en France que dans les pays comparés, même si le rapport identifie des risques de trappes socio-fiscales. Cette observation descriptive ne signifie pas que personne ne reste durablement au plancher.
+
