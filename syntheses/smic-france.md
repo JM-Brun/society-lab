@@ -247,3 +247,10 @@ Ourliac & Nouveau (DARES, Document d’études n°169 ; Trésor-Éco n°97) juge
 Le rapport extrapole qu’une suppression totale des allègements de 2009 pourrait détruire 550 000 à 1,1 million d’emplois sous rendements constants, ou 400 000 à 800 000 si le rendement de la deuxième vague était divisé par deux. Ces chiffres sont des scénarios fragiles, pas des estimations causales observées. Le rapport conclut à un effet faible ou globalement neutre de la réforme Fillon 2003–2005, et à des résultats contradictoires et partiels sur les éventuelles trappes à bas salaires.
 
 Voir [l’audit Ourliac & Nouveau (2012)](../dossiers/smic-ourliac-nouveau-2012-synthesis-audit.md).
+
+
+### Évaluation GRECSTA de la réforme Fillon : réserve documentaire
+
+La Cour des comptes mentionne une évaluation distincte du GRECSTA, aux côtés des travaux du CEE et du CES. Le résumé institutionnel rapporte des effets contrastés selon les entreprises et les types d'emplois, mais indique que l'étude ne permet pas de chiffrer les emplois créés ou sauvegardés. Le rapport primaire complet n'ayant pas été retrouvé, ses données, son identification et ses coefficients ne peuvent pas être audités. Il ne faut pas confondre ce travail avec Bunel et al. (CEE) ni Simonnet & Terracol (CES).
+
+Voir [la note d'accès documentaire GRECSTA](../dossiers/smic-grecsta-fillon-2009-source-access-note.md).
