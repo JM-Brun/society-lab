@@ -10,6 +10,8 @@ from __future__ import annotations
 import argparse
 import csv
 import math
+import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -34,9 +36,22 @@ def fetch_bytes(url: str) -> bytes:
         url,
         headers={"Accept": ACCEPT, "User-Agent": "society-lab-smic-research/1.0"},
     )
-    with urllib.request.urlopen(request, timeout=20) as response:
-        payload = response.read()
-        content_type = response.headers.get("Content-Type", "")
+    last_error = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                payload = response.read()
+                content_type = response.headers.get("Content-Type", "")
+            break
+        except (urllib.error.URLError, TimeoutError) as error:
+            last_error = error
+            if attempt == 3:
+                raise
+            delay = 2 ** (attempt + 1)
+            print(f"Temporary INSEE connection failure; retrying in {delay}s: {error}", flush=True)
+            time.sleep(delay)
+    else:
+        raise RuntimeError(f"Unable to download {url}") from last_error
     if not payload or ("xml" not in content_type.lower() and not payload.lstrip().startswith(b"<?xml")):
         raise ValueError(f"Unexpected response for {url}: {content_type}")
     return payload
