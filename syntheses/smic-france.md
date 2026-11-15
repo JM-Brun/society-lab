@@ -337,3 +337,14 @@ Le mécanisme est particulièrement visible en 2011 et 2021 : les hausses automa
 **Interprétation :** ces épisodes montrent qu'une hausse nominale du SMIC ne garantit pas un gain réel sur l'année. La date d'effet et le rythme de l'inflation comptent autant que le taux affiché. Ils ne démontrent toutefois pas une baisse du revenu disponible des ménages ni un effet causal négatif sur l'emploi : ces dimensions ne figurent pas dans la série horaire brute.
 
 Voir le [dossier quantitatif, section 13](../dossiers/smic-quantitative-update-2026.md#13-épisodes-de-recul-ou-de-stagnation-du-pouvoir-dachat-décomposition-nominal--inflation), et la [série annuelle avec croissance nominale et inflation](../data/smic-real-purchasing-power-1970-2025.csv).
+
+
+## 18. Épisode inflationniste 2021–2024 : protection directe et diffusion retardée
+
+La Dares documente les cinq revalorisations intervenues entre octobre 2021 et janvier 2023 : le SMIC horaire brut passe de 10,25 € en janvier 2021 à 11,27 € en janvier 2023, soit près de 10 % de hausse. Sur l'année 2022, le taux horaire progresse de 6,6 %. Entre octobre 2021 et août 2022, le SMIC augmente de 5,6 % et l'inflation de 5,4 %, tandis que le salaire mensuel de base progresse de 3,7 % entre les troisièmes trimestres 2021 et 2022 (fenêtres distinctes, à ne pas comparer comme si elles étaient identiques). Le SMB réel recule donc sur la période étudiée, alors que le taux horaire réel du SMIC est protégé.
+
+Au 1er janvier 2023, 3,13 millions de salariés du privé non agricole, soit 17,3 % du champ, bénéficient directement de la revalorisation. La proportion atteint 38,3 % parmi les salariés à temps partiel, 26,8 % dans les TPE et 12,4 % parmi les temps complets ; les femmes représentent 57,3 % des bénéficiaires. Au 1er novembre 2024, 12,4 % des salariés du champ bénéficient de la hausse de 2 %, dont 19,4 % dans les TPE contre 10,8 % dans les entreprises de 10 salariés ou plus. Ces proportions sont des photographies à des dates différentes : elles ne constituent pas une série homogène de la part durablement rémunérée au SMIC.
+
+**Bilan provisoire :** protection du taux horaire brut directement établie ; diffusion aux salaires voisins partielle et retardée ; compression temporaire des grilles documentée ; exposition disproportionnée des temps partiels, des TPE et des femmes établie. Les publications descriptives citées n'identifient pas les effets causaux sur l'emploi, les heures, les prix, les marges ou la pauvreté. Le bilan global de l'épisode reste donc indéterminé sur ces dimensions.
+
+Voir [l'audit Dares des bénéficiaires et de la période inflationniste 2021–2024](../dossiers/smic-dares-beneficiaires-inflation-2021-2024-audit.md).
