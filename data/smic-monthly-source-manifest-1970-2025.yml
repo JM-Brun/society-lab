@@ -1,0 +1,39 @@
+schema_version: 1
+dataset: smic-monthly-reconstruction-1970-2025
+retrieved_at_utc: "2026-11-15T21:47:55Z"
+observation_coverage:
+  start: "1970-01"
+  end: "2025-12"
+  monthly_observations: 672
+  annual_rows: 56
+smic:
+  idbank: "000822484"
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000822484?startPeriod=1970-01&endPeriod=2025-12"
+  observations: 672
+  raw_xml_sha256: "017a8df99fb41e76e7013770b310a109767d6b6eeabb2f8f08fb1cd134c6f05e"
+cpi_base_1980:
+  idbank: "000008964"
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000008964?startPeriod=1970-01&endPeriod=1992-12"
+  observations: 276
+  raw_xml_sha256: "11c52011a516c9a28772d7dc673f448f2d01330ea14c29f6d1c9ae74c7fc5fc1"
+cpi_base_2015:
+  idbank: "001759970"
+  url: "https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001759970?startPeriod=1990-01&endPeriod=2025-12"
+  observations: 432
+  raw_xml_sha256: "af530f085eca6190fbb3ddf8b94d2330c3fb09f1507d23bf904247a5a6c537ac"
+cpi_link:
+  method: geometric_mean_of_monthly_ratios
+  overlap: "1990-01/1992-12"
+  overlap_observations: 36
+  factor_base_1980_to_base_2015: 0.366648982859
+annualization:
+  smic: arithmetic_mean_of_12_monthly_hourly_gross_rates
+  cpi: arithmetic_mean_of_12_monthly_index_values
+  real_measure: annual_mean_smic_divided_by_annual_mean_cpi
+  annual_change: year_over_year_change_in_real_measure
+  index_base_year: 2015
+  warning: "Do not average monthly SMIC/CPI ratios; that is a different statistic."
+outputs:
+  monthly_csv: "GitHub Actions artifact smic-monthly-reconstruction-1970-2025"
+  annual_csv: "data/smic-real-purchasing-power-1970-2025.csv"
+  raw_xml: "Retained in the GitHub Actions artifact; re-downloadable from the official INSEE BDM URLs above."
