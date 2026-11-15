@@ -337,3 +337,16 @@ Les auteurs concluent que l'intensité des exonérations peut soutenir la progre
 **Portée pour le dossier SMIC :** preuve complémentaire sur la diffusion salariale et les trappes à bas salaires, non preuve directe sur l'emploi après revalorisation du SMIC. Les hausses du SMIC/GMR semblent atténuer le frein salarial associé aux allègements dans cette spécification.
 
 Fiche : [Lhommeau & Rémy (2010)](smic-lhommeau-remy-2010-mobilite-salariale.md).
+
+
+## 18. Fiche d'audit n° 13 — Aeberhardt & Sraer (2010), dynamique salariale 1994–1997
+
+Sur les DADS exhaustives 1994–1997, les auteurs comparent les salariés à temps complet rémunérés initialement entre 1,2 et 1,33 SMIC (traités) à ceux entre 1,33 et 1,5 SMIC (témoins), restés dans la même entreprise deux années consécutives. L'échantillon totalise 1 822 894 observations individuelles sur les quatre années. Résultat : les progressions salariales du groupe sous le seuil ne sont pas inférieures ; la DiD estime un différentiel relatif positif de 0,2 point en 1995 et 1996, puis 0,3 point en 1997, avec effets fixes d'entreprise.
+
+La seconde stratégie exploite le seuil de 1,33 SMIC par régression sur discontinuité, avec fenêtres de 0,30, 0,10 et 0,06 SMIC. Le petit effet positif de la spécification simple diminue quand la fenêtre se resserre et n'est plus significatif après contrôles individuels/sectoriels et effets fixes d'entreprise. Les auteurs concluent à l'absence de preuve d'une pénalité salariale à court/moyen terme au voisinage du seuil.
+
+**Limites :** la DiD suppose que l'écart entre groupes aurait évolué de façon comparable sans réforme ; le groupe témoin peut subir des effets indirects de substitution entre qualifications. Les hausses du SMIC diffusent davantage vers les salariés proches du minimum, et la correction proposée reste approximative. La RDD est locale au seuil, non généralisable aux salaires éloignés. Les temps partiels et mobilités sont exclus ; le résultat est le salaire brut, pas l'emploi net, les heures ou le revenu disponible.
+
+**Portée pour le dossier SMIC :** étude utile sur les trajectoires salariales et l'hypothèse de trappe liée aux exonérations, pas une évaluation de l'effet causal des hausses du SMIC. Elle tempère les résultats de Lhommeau & Rémy, dont le champ, la période et la méthode sont différents.
+
+Fiche : [Aeberhardt & Sraer (2010)](smic-aeberhardt-sraer-2010-dynamique-salariale.md).
