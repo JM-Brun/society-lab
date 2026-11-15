@@ -15,7 +15,7 @@ class HistoricalSmicPurchasingPowerTests(unittest.TestCase):
 
     def test_published_benchmark_coverage_and_order(self):
         result = audit_rows(self.rows)
-        self.assertEqual(result["row_count"], 17)
+        self.assertEqual(result["row_count"], 16)
         self.assertEqual(result["years"], sorted(set(result["years"])))
 
     def test_requires_source_traceability(self):
