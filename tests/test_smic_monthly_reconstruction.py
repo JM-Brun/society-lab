@@ -1,4 +1,6 @@
+import csv
 import unittest
+from pathlib import Path
 
 from scripts.analysis.reconstruct_smic_monthly_purchasing_power import (
     annual_reconstruction,
@@ -52,6 +54,19 @@ class MonthlySmicReconstructionTests(unittest.TestCase):
     def test_month_coverage_is_strict(self):
         with self.assertRaisesRegex(ValueError, "missing"):
             require_months({"1980-01": 2.0}, 1980, 1980, "SMIC")
+
+
+    def test_committed_annual_series_has_complete_coverage_and_keypoints(self):
+        path = Path(__file__).resolve().parents[1] / "data" / "smic-real-purchasing-power-1970-2025.csv"
+        with path.open(encoding="utf-8", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        self.assertEqual(len(rows), 56)
+        self.assertEqual([row["year"] for row in rows], [str(year) for year in range(1970, 2026)])
+        by_year = {row["year"]: row for row in rows}
+        self.assertEqual(by_year["1980"]["smic_hourly_gross_annual_avg_eur"], "2.102500")
+        self.assertEqual(by_year["2025"]["smic_hourly_gross_annual_avg_eur"], "11.880000")
+        self.assertEqual(by_year["2015"]["real_smic_index_2015_100"], "100.000000")
+        self.assertAlmostEqual(float(by_year["2025"]["real_smic_index_2015_100"]), 102.206279, places=6)
 
     def test_annual_formula_uses_ratio_of_annual_means(self):
         smic = {}
