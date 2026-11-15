@@ -441,3 +441,18 @@ Audits : [Abowd et al. (1999)](smic-abowd-kramarz-margolis-1999-transitions-empl
 **Limites :** TPE exclues ; unité d'observation = poste représentatif, pas salarié ; salaire de base et non assiette légale complète ; avant juillet 2005, la variable de traitement agrège SMIC et GMR ; pas d'estimation des créations/destructions d'emplois ; modèle non expérimental et pas de test d'event-study des pré-tendances.
 
 **Conclusion :** preuve modérée d'un effet d'entraînement salarial à court terme dans les entreprises couvertes par ACEMO ; preuve faible de persistance au-delà des postes les plus proches du SMIC ; aucune conclusion sur l'emploi. Voir [l'audit complet](smic-goarant-muller-2011-diffusion-acemo.md).
+
+
+## 24. Fiche d'audit n° 19 — Abowd, Kramarz, Lemieux & Margolis (1997/2000), emploi des jeunes
+
+**Données et population :** Enquête Emploi 1981–1989, panel annuel apparié ; jeunes de moins de 31 ans ; environ 60 000 ménages dans le dispositif de rotation triennal. Salaires mensuels déclarés par classes et heures hebdomadaires déclarées.
+
+**Traitement / comparaison :** jeunes salariés dont le salaire réel se trouve entre l'ancien et le nouveau SMIC réel, comparés aux salariés juste au-dessus du nouveau plancher ; séparation des contrats d'emploi jeunes autorisant des rémunérations sous le SMIC.
+
+**Résultats :** élasticité conditionnelle de la probabilité d'emploi −2,489 chez les jeunes hommes et −1,044 chez les jeunes femmes ; élasticités inconditionnelles calculées −0,203 et −0,108. Le groupe exposé représente 8 % des jeunes hommes et 10 % des jeunes femmes. Pour les hommes de 25–30 ans, une spécification donne −4,89 (p = 0,0009) relativement au groupe juste au-dessus. Les contrats d'emploi jeunes semblent amortir une partie de l'effet.
+
+**Identification et limites :** modèle logit de transitions avec contrôles observables et groupe de comparaison proche ; pas de vérification moderne des pré-tendances ; erreurs possibles de classement du salaire horaire ; période ancienne ; traitement concomitant par les contrats aidés et exonérations. L'effet inconditionnel repose sur l'hypothèse que le SMIC réel n'affecte pas les entrées en emploi, non identifiables directement avec la variation française étudiée.
+
+**Conclusion :** signal négatif sur la rétention des jeunes directement rattrapés, mais les élasticités conditionnelles ne décrivent pas l'emploi total. L'étude est très proche, par les données et la période, d'Abowd, Kramarz & Margolis (1999) : ne pas compter les deux comme réplications indépendantes. Niveau de confiance modéré pour le sous-groupe historique, faible pour une extrapolation contemporaine.
+
+**Référence intégrale :** https://blogs.cornell.edu/abowd/files/2017/10/minimum-wages-youth-1vrkt30.pdf
