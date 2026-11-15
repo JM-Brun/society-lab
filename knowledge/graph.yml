@@ -264,3 +264,6 @@ relations:
 
   - {"id":"REL-EDGE-HENNION-LOISY-2006-ABOUT-ECONOMY","type":"REL-ABOUT","from":"SOURCE-HENNION-LOISY-2006","to":"DOMAIN-ECONOMY","justification":"Évaluation macroéconomique agrégée de la relation entre taux apparent de cotisations patronales, coût réel du travail et emploi en ETP sur 1985-2003."}
   - {"id":"REL-EDGE-SMIC-MATRIX-INCLUDES-HENNION-LOISY-2006","type":"REL-INCLUDES","from":"DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX","to":"SOURCE-HENNION-LOISY-2006","justification":"La matrice compare l'estimation macroéconomique agrégée de 250 000 ETP aux évaluations sectorielles et microéconomiques des allègements."}
+
+  - {"id":"REL-EDGE-OURLIAC-NOUVEAU-2012-ABOUT-ECONOMY","type":"REL-ABOUT","from":"SOURCE-OURLIAC-NOUVEAU-2012-DARES-169","to":"DOMAIN-ECONOMY","justification":"Synthèse critique des évaluations des allègements de cotisations patronales bas salaires 1993-2009, des effets emploi et des trajectoires salariales."}
+  - {"id":"REL-EDGE-SMIC-MATRIX-INCLUDES-OURLIAC-NOUVEAU-2012","type":"REL-INCLUDES","from":"DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX","to":"SOURCE-OURLIAC-NOUVEAU-2012-DARES-169","justification":"La matrice recense la synthèse DARES-Trésor et distingue les évaluations primaires des extrapolations de suppression."}
