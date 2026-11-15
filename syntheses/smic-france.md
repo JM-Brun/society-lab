@@ -12,6 +12,7 @@ related_dossiers:
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
   - "dossiers/smic-quantitative-update-2026.md"
+  - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
@@ -337,3 +338,14 @@ Le mécanisme est particulièrement visible en 2011 et 2021 : les hausses automa
 **Interprétation :** ces épisodes montrent qu'une hausse nominale du SMIC ne garantit pas un gain réel sur l'année. La date d'effet et le rythme de l'inflation comptent autant que le taux affiché. Ils ne démontrent toutefois pas une baisse du revenu disponible des ménages ni un effet causal négatif sur l'emploi : ces dimensions ne figurent pas dans la série horaire brute.
 
 Voir le [dossier quantitatif, section 13](../dossiers/smic-quantitative-update-2026.md#13-épisodes-de-recul-ou-de-stagnation-du-pouvoir-dachat-décomposition-nominal--inflation), et la [série annuelle avec croissance nominale et inflation](../data/smic-real-purchasing-power-1970-2025.csv).
+
+
+## 18. Diffusion salariale pendant la convergence des GMR (Aeberhardt, Givord & Marbot, 2012)
+
+L'étude INSEE de 2012 exploite la convergence différenciée des six minima GMR entre 2003 et 2005. Sur un panel DADS au 1/25e (environ 425 000 salariés et 157 000 entreprises), elle estime une diffusion salariale statistiquement significative jusqu'au septième décile pour les hommes comme pour les femmes. L'effet d'une hausse de 1 % du minimum reste inférieur à 0,2 % sur les déciles de rémunération annuelle ; il décroît et n'est plus significatif aux huitième et neuvième déciles.
+
+Ce résultat est important : l'effet du minimum peut dépasser les seuls salariés au plancher et atteindre des rémunérations proches de deux SMIC. Mais le traitement est la convergence des GMR issue de la réforme des 35 heures, dans un contexte d'allègements de cotisations. L'échantillon ne couvre que des salariés du privé à temps plein et année complète ; les rémunérations sont annuelles, non horaires.
+
+Les taux de création/destruction d'emplois par groupe ne montrent pas de relation monotone claire, mais l'étude ne conduit pas d'estimation causale de l'emploi. Elle ne permet donc ni de conclure à l'absence d'effet sur l'emploi, ni de transposer directement les effets salariaux à une hausse uniforme du SMIC actuel.
+
+**Conclusion de synthèse :** preuve modérée de diffusion salariale au-delà du plancher dans cet épisode institutionnel exceptionnel ; preuve insuffisante sur l'emploi et le bien-être. Voir [l'audit complet](../dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md) et [la matrice des preuves](../dossiers/smic-causal-evidence-matrix.md).
