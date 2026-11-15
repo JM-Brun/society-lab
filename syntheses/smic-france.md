@@ -313,3 +313,16 @@ L'étude estime également que l'indexation totale de long terme des salaires su
 **Conclusion :** preuve importante d'une transmission dynamique du SMIC aux salaires moyens et d'une rétroaction institutionnelle, mais pas d'une évaluation causale complète des épisodes de revalorisation.
 
 Voir [l'audit détaillé Cette, Chouard & Verdugo (2011)](../dossiers/smic-cette-chouard-verdugo-2011-diffusion-salaire-moyen.md).
+
+
+## 16. Reconstruction mensuelle du pouvoir d'achat réel (1970–2025)
+
+Une reconstruction fondée sur 672 observations mensuelles de l'INSEE BDM permet désormais de comparer les moyennes annuelles du SMIC horaire brut et de l'IPC général raccordé. Le calcul donne une progression du ratio SMIC/IPC de **+70,89 % entre 1980 et 2025** (+175,71 % entre 1970 et 2025). Ce résultat est proche du contrôle secondaire Datapi (+71 %), mais la reconstruction repose sur les séries mensuelles INSEE et une méthode explicitée.
+
+Les années de baisse du pouvoir d'achat horaire brut reconstruit sont 2010 (−0,44 %), 2011 (−0,35 %), 2017 (−0,10 %), 2018 (−0,61 %) et 2021 (−0,09 %). En 2022, la progression est quasi nulle (+0,02 %). Les gains nominaux répétés ont donc surtout compensé l'inflation sur la moyenne annuelle pendant le choc 2021–2022.
+
+**Ce que cette série établit :** l'évolution descriptive du pouvoir d'achat du plancher horaire brut, sous une convention d'IPC général raccordé. Elle permet d'identifier des périodes de hausse, de stagnation et de baisse réelles.
+
+**Ce qu'elle n'établit pas :** l'effet causal d'une hausse du SMIC sur l'emploi, les heures, les prix, la pauvreté ou les finances publiques. Elle ne mesure pas le revenu disponible des ménages ni l'indice du premier quintile utilisé pour l'indexation légale depuis 2013. Les résultats restent distincts des taux annuels officiels TEF/INSEE, avec des écarts de l'ordre de 0,10 point au plus sur les repères comparés.
+
+Données et méthode : [dossier quantitatif 1970–2025](../dossiers/smic-quantitative-update-2026.md), [CSV annuel reconstruit](../data/smic-real-purchasing-power-1970-2025.csv), [manifeste des sources et empreintes](../data/smic-monthly-source-manifest-1970-2025.yml).
