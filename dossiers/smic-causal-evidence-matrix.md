@@ -361,3 +361,14 @@ L'étude ultérieure de Lhommeau (2005), directement consultable et fondée sur 
 **Portée :** éclairage indirect sur les interactions entre SMIC, seuils statistiques et allégements ; aucune estimation causale d'une hausse isolée du SMIC sur emploi, heures ou revenu disponible. Le résultat « pas d'aggravation de la décote » doit être lu comme une stabilité relative malgré un contexte changeant, pas comme une absence de trappe.
 
 **Niveau de preuve :** faible à modéré tant que le chapitre primaire n'est pas consulté. Voir [la note d'accès et l'audit secondaire](smic-audenis-laib-roux-2002-source-access-audit.md).
+
+
+## 20. Fiche d'audit n° 15 — Koubi & Lhommeau (2007), diffusion des hausses du SMIC dans les grilles (2000–2005)
+
+Sur l'enquête Acemo trimestrielle, les auteurs suivent des postes représentatifs de grilles salariales dans les entreprises de 10 salariés ou plus du secteur marchand non agricole. Après filtres, l'échantillon comprend 1 973 738 observations et 151 590 postes. Les salaires sont des salaires bruts de base, hors primes et compléments ; ce ne sont pas des trajectoires individuelles. Le modèle contrôle les effets temporels, la catégorie et la tranche salariale, les caractéristiques/effets fixes d'entreprise et le passage aux 35 heures. Le minimum explicatif est une moyenne pondérée du SMIC et des GMR.
+
+À un trimestre, une hausse de 1 % du minimum est associée à environ +0,39 % de salaire de base entre 1 et 1,1 SMIC, +0,20 % entre 1,1 et 1,2, +0,16 % entre 1,2 et 1,3, +0,12 % entre 1,3 et 1,4, et +0,07 % entre 1,4 et 1,5. À un an, les estimations sont plus élevées : 0,47 à 1,19 % entre 1 et 1,1 SMIC et 0,31 à 0,49 % entre 1,4 et 1,5, selon la présence d'effets fixes d'entreprise. Les auteurs demandent de lire les estimations supérieures à l'unité comme proches de l'unité compte tenu de l'incertitude. La transmission est donc décroissante avec la distance au SMIC à court terme, mais différée et plus importante sur les salaires intermédiaires.
+
+**Limites décisives :** TPE de moins de 10 salariés exclues (les auteurs indiquent que 41 % des salariés au SMIC travaillent dans ces entreprises) ; salaires de base seulement ; postes représentatifs plutôt que personnes ; cinq points annuels seulement ; base RTT/GMR incomplète ; période 2000–2005 marquée par la convergence des minima après les 35 heures ; identification non expérimentale et circularité potentielle entre SHBO et formule d'indexation du SMIC. Aucune estimation d'emploi, d'heures effectivement travaillées, de rémunération totale, de prix ou de marges.
+
+**Conclusion :** preuve microéconomique descriptive/modélisée de diffusion salariale dans les entreprises couvertes, pas évaluation causale globale du bilan d'une hausse isolée du SMIC. Voir [l'audit complet](smic-koubi-lhommeau-2007-diffusion-grilles-salariales.md).
