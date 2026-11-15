@@ -34,6 +34,6 @@ annualization:
   index_base_year: 2015
   warning: "Do not average monthly SMIC/CPI ratios; that is a different statistic."
 outputs:
-  monthly_csv: "data/smic-cpi-monthly-1970-2025.csv"
+  monthly_csv: "GitHub Actions artifact smic-monthly-reconstruction-1970-2025"
   annual_csv: "data/smic-real-purchasing-power-1970-2025.csv"
   raw_xml: "Retained in the GitHub Actions artifact; re-downloadable from the official INSEE BDM URLs above."
