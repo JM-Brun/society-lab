@@ -283,3 +283,10 @@ L’enquête doit permettre de produire une réponse documentée à quatre quest
 4. **Options :** quelles améliorations sont faisables, pour quels coûts, avec quels garde-fous et quels indicateurs d’évaluation ?
 
 Elle ne doit pas se conclure automatiquement par une recommandation d’augmentation des postes. Les options peuvent être de mieux répartir l’offre, réactiver des postes, soutenir les tuteurs, adapter les horaires, améliorer la coordination, raccourcir les délais ou, si les données le montrent, ne pas développer davantage le dispositif dans certains segments.
+
+
+## 13. Spécification de l'extraction et contrôle des données
+
+Pour éviter de confondre stocks, flux et cohortes, la demande de données est désormais accompagnée d'une spécification opérationnelle : [spécification minimale des données territoriales TIG](tig-territorial-data-specification.md). Elle précise les tables prioritaires, les unités, les dénominateurs par transition, les distinctions de capacité, les règles de confidentialité et une grille de contrôle à réception.
+
+Cette annexe est un modèle de demande, pas la description des champs effectivement présents dans TIG 360°. Les variables disponibles, leurs définitions et les possibilités d'extraction restent à confirmer avec le producteur des données. Aucune demande ni collecte n'est réputée réalisée.
