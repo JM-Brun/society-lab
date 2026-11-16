@@ -19,7 +19,7 @@ Il faut séparer trois objets qui sont souvent confondus :
 
 La hausse annoncée le 9 novembre 2026 (+1,6 % au 1er décembre) est présentée par le Gouvernement comme 1 point d'anticipation de la revalorisation automatique et 0,6 point de coup de pouce. Le Gouvernement explique que l'estimation de la composante automatique repose sur une inflation annuelle 2026 estimée à 1 % au 15 décembre, alors que la donnée définitive n'était pas encore connue. Le calcul détaillé, les indices exacts et les arrondis ne sont pas publiés dans les éléments consultés : le découpage est donc **une explication gouvernementale à auditer**, pas encore une réplication indépendante.
 
-Le Gouvernement a également cité une estimation DARES de 5 000 à 20 000 emplois supprimés pour la hausse retenue, et plus de 230 000 dans un scénario de SMIC à 1 700 € nets. Ces chiffres sont une **déclaration attribuée à des estimations de la DARES** ; ni note technique, ni modèle, ni hypothèses, ni intervalles, ni scénario contrefactuel détaillé n'ont été retrouvés dans les documents publics consultés. Ils ne doivent pas être repris comme effets observés ni comme estimations causales validées.
+Le ministre du Travail a cité oralement, lors de la conférence de presse du 9 novembre 2026, des estimations qu'il attribue à la DARES : 5 000 à 20 000 emplois supprimés pour la hausse retenue, et plus de 230 000 dans un scénario de SMIC à 1 700 € nets. La transcription officielle confirme l'attribution politique à la DARES, mais ne donne ni note technique, ni modèle, ni hypothèses, ni intervalles, ni horizon, ni scénario contrefactuel détaillé. Ces nombres doivent donc être qualifiés d'**estimations administratives rapportées par le ministre, non encore auditables à partir de la publication consultée**. Ils ne sont ni des pertes d'emplois observées ni, en l'état, des estimations causales indépendamment vérifiées.
 
 ## 1. Carte des facteurs et des mécanismes
 
@@ -82,6 +82,10 @@ Ces chiffres sont des diagnostics descriptifs, des simulations ou des recommanda
 
 **Précaution** : les 2,2 Md€ sont un contrefactuel de coût budgétaire des allègements sous un barème donné, pas le coût social total de la hausse du SMIC ni une estimation d'emplois détruits. Les 77,5 Md€ de 2026 ne sont pas directement comparables aux 75 Md€ de 2024 sans harmoniser périmètres et millésimes.
 
+### Information institutionnelle complémentaire — minima conventionnels
+
+Le ministère du Travail indique qu'au 10 novembre 2026, 64 branches (36 %), représentant 7,1 millions de salariés, comportent au moins un coefficient inférieur au SMIC ; 14 branches sont dans cette situation depuis au moins janvier 2026. Le ministère précise que 64 branches supplémentaires seraient également concernées après la revalorisation du 1er décembre. Ces données signalent un canal de diffusion important : le SMIC ne touche pas seulement les salariés payés exactement au plancher, il provoque aussi des obligations et renégociations de grilles conventionnelles. Il faudra vérifier la définition de « branche non conforme », le dénominateur des 36 %, les dates d'effet des minima et la façon dont les 64 branches supplémentaires sont projetées.
+
 ## 4. Ce que l'on sait / ce qui manque
 
 ### Établi ou fortement documenté
@@ -110,7 +114,8 @@ Ces chiffres sont des diagnostics descriptifs, des simulations ou des recommanda
 ## 6. Sources
 
 - Groupe d'experts SMIC (2025), rapport complet : https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2025
-- Gouvernement, conférence sociale du 9 novembre 2026 : https://www.info.gouv.fr/actualite/conference-sociale-hausse-du-smic-de-1-6
+- Gouvernement, transcription officielle de la conférence sociale du 9 novembre 2026 : https://www.info.gouv.fr/actualite/conference-sociale-hausse-du-smic-de-1-6
+- Ministère du Travail, état des lieux des minima conventionnels au 10 novembre 2026 : https://travail-emploi.gouv.fr/negociations-salariales-lensemble-des-branches-en-situation-de-non-conformite-sur-les-minimums-conventionnels-seront-recues-au-ministere-du-travail-et-des-solidarites
 - Cour des comptes (novembre 2026), *Contribution au rétablissement des finances publiques*, section « Maîtrise des allègements de prélèvements sociaux » : https://www.ccomptes.fr/sites/default/files/2026-11/20261109-Contribution-retablissement-finances-publiques.pdf
 - DARES : https://dares.travail-emploi.gouv.fr/
 - INSEE, séries de prix et salaires : https://www.insee.fr/
@@ -120,3 +125,12 @@ Ces chiffres sont des diagnostics descriptifs, des simulations ou des recommanda
 ## Historique
 
 - 2026-11-16 : création du dossier de cartographie des facteurs et de première lecture chiffrée des annonces 2026.
+
+
+## Addendum de vérification publique — 16 novembre 2026
+
+La source gouvernementale consultée est une transcription de conférence de presse, pas un rapport technique publié par la DARES. La formulation publique doit préserver cette distinction : le ministre attribue les fourchettes d'emplois à la DARES, mais la transcription ne permet pas d'examiner le calcul. La recherche d'une publication technique autonome reste ouverte.
+
+La transcription indique également que le Gouvernement estime à 1 point la composante automatique en anticipant l'inflation annuelle qui sera mesurée au 15 décembre 2026, puis ajoute 0,6 point de coup de pouce. La date du 15 décembre est une date future de mesure évoquée le 9 novembre ; elle ne doit pas être reformulée comme une donnée déjà observée.
+
+Le ministère du Travail apporte une donnée complémentaire sur les branches : 64 branches (36 %), représentant 7,1 millions de salariés, avaient au moins un coefficient inférieur au SMIC au 10 novembre 2026 ; 64 autres branches devaient être concernées après la hausse du 1er décembre. Cette information doit être exploitée pour mesurer les effets de diffusion dans les grilles, mais ne signifie pas que 7,1 millions de salariés sont tous rémunérés au SMIC.
