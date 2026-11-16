@@ -82,3 +82,22 @@ Un cordon peut protéger les institutions sans faire disparaître les idées. Un
 - Wagner & Meyer (2016), *The Radical Right as Niche Parties?* : https://doi.org/10.1177/0032321716639065
 - Krause, Cohen & Abou-Chadi (2023), *Does accommodation work?* : https://doi.org/10.1017/psrm.2022.8
 - de Leeuw & Bourne (2020), *Explaining Citizen Attitudes to Strategies of Democratic Defense in Europe* : https://doi.org/10.1093/ijpor/edz042
+
+## Comparaison historique Belgique–Autriche–France
+
+La comparaison distingue trois instruments non équivalents : non-coalition durable en Belgique, participation gouvernementale répétée du FPÖ en Autriche, barrage électoral intermittent en France.
+
+- **Belgique** : le Vlaams Belang est resté hors des exécutifs pendant plus de trente ans selon Biard, malgré une force électorale importante et des pressions sur la norme. Le cordon protège l'accès exécutif ; il ne prouve pas une réduction de l'adhésion.
+- **Autriche** : l'entrée du FPÖ au gouvernement en 2000 a coïncidé avec une crise et une scission, mais l'étude historique souligne aussi l'inexpérience et les conflits internes. Son retour ultérieur montre que l'inclusion ne neutralise pas durablement le soutien. La coalition a aussi permis des inflexions concrètes de politique sociale.
+- **France** : le front républicain a varié selon les scrutins. Le rapport CEVIPOF/IPSOS de novembre 2025 décrit un affaiblissement en 2022 puis une réactivation en 2024.
+
+| Résultat | Belgique | Autriche | France |
+|---|---|---|---|
+| Accès exécutif | Blocage durable du Vlaams Belang pendant la période documentée | Participation du FPÖ à plusieurs coalitions | Barrage électoral ponctuel |
+| Influence politique | Indirecte, à documenter | Directe et sectorielle en coalition | Indirecte sur programmes et priorités |
+| Effet électoral | Force électorale maintenue | Recul après certains épisodes, puis retour | Dépend des reports et de la configuration |
+| Contre-pouvoirs | Norme de coalition | Cour constitutionnelle et indépendance judiciaire | Parlement, justice et coordination électorale |
+
+**Conclusion :** les trois cas ne permettent pas de classer causalement les stratégies. Ils montrent qu'une barrière à l'accès au pouvoir, une participation gouvernementale et un barrage électoral produisent des effets distincts. L'évaluation doit suivre cinq dimensions : accès, influence sur les politiques, normalisation programmatique, attitudes citoyennes et qualité des contre-pouvoirs.
+
+**Limites :** comparaison historique non expérimentale ; stratégies endogènes à la menace électorale ; systèmes institutionnels différents ; absence de contrefactuel commun.
