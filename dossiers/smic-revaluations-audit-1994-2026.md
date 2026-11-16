@@ -21,13 +21,14 @@ Les pourcentages du CSV sont les variations publiées ou documentées par les so
 
 ## Écarts de pourcentage à examiner
 
-Le tableau ci-dessous liste les écarts supérieurs à 0,06 point entre le pourcentage de source et le ratio calculé à partir des montants horaires arrondis du CSV.
+Le tableau ci-dessous liste les écarts d'au moins 0,06 point entre le pourcentage publié par la source et le ratio calculé à partir des montants horaires arrondis du CSV.
 
 | Date | Variation documentée (%) | Ratio des taux affichés (%) | Écart (point) |
 |---|---:|---:|---:|
 | 1999-07-01 | 1.24 | 1.305 | -0.065 |
+| 2006-07-01 | 3.05 | 2.99 | +0.060 |
 
-Cet écart est expliqué par le passage francs/euros : 40,22 F à 40,72 F correspond à +1,24 %, tandis que le ratio de 6,13 € à 6,21 € est affecté par l'arrondi des deux montants convertis. Le contrôle confirme l'intérêt de conserver les taux dans leur unité source, ou les valeurs non arrondies, lorsque l'on recalcule des variations historiques.
+L'écart de 1999 est expliqué par le passage francs/euros : 40,22 F à 40,72 F correspond à +1,24 %, tandis que le ratio de 6,13 € à 6,21 € est affecté par l'arrondi des deux montants convertis. Pour 2006, l'annexe du rapport du groupe d'experts de juin 2009 publie +3,05 % ; le ratio 8,27/8,03 donne +2,99 %. Le CSV conserve le pourcentage publié, sans inventer un taux non arrondi absent de la source. Le contrôle confirme l'intérêt de conserver les taux dans leur unité source, ou les valeurs non arrondies, lorsque l'on recalcule des variations historiques.
 
 ## Taxonomie retenue
 
