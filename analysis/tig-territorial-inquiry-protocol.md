@@ -290,3 +290,10 @@ Elle ne doit pas se conclure automatiquement par une recommandation d’augmenta
 Pour éviter de confondre stocks, flux et cohortes, la demande de données est désormais accompagnée d'une spécification opérationnelle : [spécification minimale des données territoriales TIG](tig-territorial-data-specification.md). Elle précise les tables prioritaires, les unités, les dénominateurs par transition, les distinctions de capacité, les règles de confidentialité et une grille de contrôle à réception.
 
 Cette annexe est un modèle de demande, pas la description des champs effectivement présents dans TIG 360°. Les variables disponibles, leurs définitions et les possibilités d'extraction restent à confirmer avec le producteur des données. Aucune demande ni collecte n'est réputée réalisée.
+
+
+## 14. Cadrage par les statistiques publiques récentes
+
+Les séries nationales récentes sont utiles pour formuler les questions d'entretien, mais elles ne remplacent pas l'extraction territoriale : le RSJ 2025 compte les condamnations dont le TIG est la peine/mesure principale (14 488 en 2024), tandis que les indicateurs transitoires de milieu ouvert recensent des mesures suivies à une date (18 430 TIG au 1er janvier 2026) et distinguent les obligations de TIG (4 022), avec un risque de double compte si les catégories sont additionnées. La ventilation régionale des personnes suivies en milieu ouvert (8 666 en Pays de la Loire au 1er janvier 2026) ne mesure pas les TIG.
+
+En conséquence, les entretiens doivent demander explicitement quelles données départementales existent sur les prononcés, la transmission, l'affectation, les délais, les places actives et mobilisables, les démarrages et les achèvements. Les références et limites détaillées sont consignées dans le [dossier TIG](../dossiers/tig-peines-alternatives-incarceration.md#actualisation-statistique--séries-récentes-et-précautions-dinterprétation-16-novembre-2026) et sa [synthèse](../syntheses/tig-france.md).
