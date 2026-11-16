@@ -75,3 +75,60 @@ Cette échelle qualifie la nature de la preuve, pas l'importance sociale ou éco
 - DARES, *Les allègements de cotisations sociales patronales sur les bas salaires* : https://dares.travail-emploi.gouv.fr/publications/les-allegements-de-cotisations-sociales-patronales-sur-les-bas-salaires-en
 - Fougère, D., Gautier, E. & Le Bihan, H. (2010), *Restaurant Prices and the Minimum Wage* : https://doi.org/10.1111/j.1538-4616.2010.00310.x
 - Groupe d'experts SMIC (2024) : https://www.strategie-plan.gouv.fr/publications/groupe-dexperts-smic-rapport-2024
+
+
+## 7. Audit approfondi de l'étude jeunesse Abowd et al. (1997)
+
+Le working paper NBER 6111 (version de mai 1997), intitulé *Minimum Wages and Youth Employment in France and the United States*, est accessible dans une version PDF publique hébergée par Cornell. Il faut le distinguer de l'étude Bazen & Skourias (1997), qui porte sur des données sectorielles et l'épisode de juin 1981.
+
+### Données et population
+
+- Enquête Emploi de l'INSEE, vagues 1981–1989, appariements annuels 1981–82 à 1988–89.
+- Population étudiée : jeunes de moins de 31 ans ; échantillons des régressions françaises de 30 804 jeunes hommes et 26 434 jeunes femmes.
+- Les ménages sont suivis sur trois vagues sous réserve de ne pas déménager.
+- Le salaire mensuel est observé par classes (20 intervalles, de largeur variable) ; le salaire horaire est approché en tenant compte des heures habituelles déclarées.
+- Les auteurs isolent notamment les salariés dont le salaire réel à la date t se situe entre le SMIC réel de t et celui de t+1, c'est-à-dire ceux que la hausse réelle fait passer sous le nouveau plancher. Le groupe de comparaison comprend notamment les salariés juste au-dessus du minimum.
+
+### Résultats et dénominateurs
+
+Le tableau 9 donne, pour une hausse de 1 % du SMIC réel :
+
+| Population française | Élasticité conditionnelle de la probabilité d'emploi | Élasticité inconditionnelle |
+|---|---:|---:|
+| Jeunes hommes | −2,489 | −0,203 |
+| Jeunes femmes | −1,044 | −0,108 |
+
+La mesure conditionnelle compare les salariés directement exposés aux salariés « marginalement au-dessus » du SMIC. Les auteurs indiquent que les personnes dans la zone « entre les deux minima » représentent environ 8 % des jeunes hommes et 10 % des jeunes femmes. Les élasticités inconditionnelles sont beaucoup plus faibles. Le tableau 3 estime, pour les hommes de 25 à 30 ans, une élasticité de −4,8928 (p = 0,0009) dans la catégorie rattrapée ; le texte décrit un recul relatif de la probabilité de conserver son emploi d'environ 4,6 % par point de hausse du SMIC réel par rapport au groupe marginalement au-dessus. Les résultats par âge sont hétérogènes : ce coefficient ne décrit pas tous les jeunes.
+
+### Identification et limites
+
+La stratégie exploite les mouvements annuels du SMIC réel et la position salariale individuelle par rapport aux deux minima successifs. Les modèles logit contrôlent notamment l'année, l'éducation, la région, l'âge, l'expérience, l'ancienneté et le salaire horaire. Les auteurs utilisent aussi la catégorie juste au-dessus du minimum pour tenir partiellement compte de l'hétérogénéité du marché du travail et des comportements d'offre.
+
+Cela reste une analyse observationnelle longitudinale, pas une expérience randomisée. Les limites importantes sont :
+
+1. salaire mensuel regroupé en classes et heures déclarées, donc classement imparfait autour du seuil ;
+2. panel conditionné au maintien dans le logement, avec attrition possible en cas de déménagement ;
+3. groupe de comparaison proche mais non aléatoire ; les tendances préalables ne sont pas testées selon les standards modernes d'event study ;
+4. les contrats aidés et dispositifs jeunes modifient l'exposition et peuvent amortir les sorties, notamment avant 25 ans ;
+5. l'élasticité inconditionnelle est construite à partir des transitions observées et d'hypothèses sur les entrées ; elle ne constitue pas une estimation moderne de l'effet sur le taux d'emploi agrégé des jeunes.
+
+### Interprétation retenue
+
+Le résultat de −2,489 est une élasticité conditionnelle de la probabilité future d'emploi pour les jeunes hommes directement concernés, non une baisse de 2,489 % de l'emploi total des jeunes. L'estimation est qualifiée d'imprécise par les auteurs eux-mêmes dans le résumé. L'écart avec l'élasticité inconditionnelle (−0,203) est substantiel et doit être mis au premier plan.
+
+Ce travail et Abowd, Kramarz & Margolis (1999) utilisent des données françaises qui se recouvrent largement dans le temps et une logique empirique proche. Ils ne constituent donc pas deux réplications indépendantes. Leur convergence renforce l'intérêt du signal historique, mais ne permet pas de multiplier les effets ni d'en déduire une perte agrégée.
+
+## 8. Statut documentaire de Bazen & Skourias (1997)
+
+L'accès au résumé éditeur et à la notice RePEc confirme le titre, la publication dans *European Economic Review*, volume 41 (1997), pages 723–732, et la conclusion qualitative : après la hausse de 10 % du SMIC de juin 1981, l'analyse de données sectorielles trouve un effet négatif statistiquement significatif sur l'emploi des jeunes.
+
+En revanche, aucun texte intégral libre ni tableau d'estimation exploitable n'a été retrouvé dans les sources consultées. Il est donc impossible, à ce stade, de vérifier le coefficient, l'erreur-type, le nombre de secteurs, la définition précise des jeunes, la période exacte, les contrôles ou les tests de robustesse. Toute formulation laissant entendre que le texte intégral a été audité doit être corrigée : seule la notice et le résumé ont été vérifiés.
+
+**Conséquence pour le classement :** conserver Bazen & Skourias comme résultat sectoriel publié, mais ne pas le traiter comme une estimation dont l'ampleur est connue. Il ne faut pas l'utiliser pour calculer des emplois détruits ni le confondre avec le résultat microéconomique d'Abowd et al.
+
+### Sources consultées pour cet audit
+
+- Abowd, Kramarz, Lemieux & Margolis (1997), NBER WP 6111, PDF intégral : https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/4/7616/files/2017/10/minimum-wages-youth-1vrkt30.pdf
+- Notice NBER : https://www.nber.org/papers/w6111
+- Bazen & Skourias (1997), résumé éditeur : https://www.sciencedirect.com/science/article/pii/S0014292197000044
+- Notice RePEc : https://ideas.repec.org/a/eee/eecrev/v41y1997i3-5p723-732.html
