@@ -36,19 +36,21 @@ Le tableau 3 du rapport du Sénat de 1994 reprend une décomposition analogue et
 
 Le 1er juin 1981 est une date d'effet atypique : le glissement annuel se termine au 1er juin, non au 1er juillet. Le relèvement de 10 % souvent cité pour juin 1981 correspond au passage immédiat de 15,20 F au 1er mars à 16,72 F au 1er juin (+10 %). Ce n'est ni le glissement annuel de 19,4 %, ni le résidu discrétionnaire de 5,2 %.
 
-### 2.2 Groupe d'experts 2009
+### 2.2 Groupe d'experts 2009 : distinguer les deux rapports
 
-Le rapport de décembre 2009 décrit la règle alors applicable à une revalorisation au 1er juillet : prix de mai à mai et pouvoir d'achat du SHBO de mars à mars. Pour la nouvelle revalorisation au 1er janvier à partir de 2010, les fenêtres deviennent novembre à novembre pour les prix et septembre à septembre pour le SHBO. La transition de janvier 2010 est particulière : les périodes déjà prises en compte en juillet 2009 sont retranchées ; le rapport utilise donc mai-novembre 2009 pour les prix et mars-septembre 2009 pour le SHBO.
+Le rapport de **juin 2009** contient le graphique 2 de décomposition historique sur 1970–2008, attribué à la Direction générale du travail. Il précise que les évolutions du graphique sont mesurées **de juillet à juillet** ; il distingue inflation, moitié du gain de pouvoir d'achat du SHBO, coups de pouce et convergence des GMR. L'annexe 1 fournit en outre une table des taux et des composantes pour juillet 1996–juillet 2008. C'est cette même publication qui fonde le CSV de décomposition 1996–2008.
 
-Son graphique historique de décomposition 1970–2008 est explicitement mesuré de juillet à juillet et attribué à la Direction générale du travail. Le rapport ne publie toutefois pas, dans son texte, la table complète des données historiques ni les fenêtres exactes de chaque indice pour les épisodes 1973 et 1981. Il ne suffit donc pas à convertir mécaniquement ses barres en la convention détaillée du tableau INSEE de 1992.
+Le rapport de **décembre 2009** n'est pas la source du graphique historique : il documente surtout la règle applicable à l'époque et le changement de calendrier. Pour une revalorisation au 1er juillet, il retient les prix de mai à mai et le pouvoir d'achat du SHBO de mars à mars. À compter de janvier 2010, les fenêtres deviennent novembre à novembre pour les prix et septembre à septembre pour le SHBO. La transition de janvier 2010 est particulière : les périodes déjà prises en compte en juillet 2009 sont retranchées ; le rapport utilise donc mai-novembre 2009 pour les prix et mars-septembre 2009 pour le SHBO.
 
-Le rapport de juin 2009 apporte, lui, une annexe événementielle depuis juillet 1996 et une décomposition annuelle 1996–2008. Elle montre pourquoi les unités doivent rester séparées : en 1996, le taux a augmenté de 2 % en mai puis de 0,5 % en juillet, tandis que le glissement au point de juillet est de 2,51 % ; en 2008, +2,3 % en mai puis +0,9 % en juillet correspondent à +3,2 % au point de juillet. Les variations annuelles incluent les événements infra-annuels.
+Ces fenêtres de 2009 ne doivent pas être rétroprojetées automatiquement sur les épisodes des années 1970 et 1980. Le graphique de juin 2009 établit le glissement total juillet-juillet, mais ne publie pas les séries mensuelles ni le détail des mois de référence utilisés pour chacune des composantes historiques.
 
 ### 2.3 Groupe d'experts 2020 : divergence à conserver
 
-Le rapport 2020, dans son graphique 2 sur 1970–1989, cite un coup de pouce maximal de 10,1 % en 1973 et de 6,9 % en 1981. Il reprend le mécanisme général de double garantie (prix et moitié du gain réel du salaire horaire), mais ne fournit pas les séries mensuelles sous-jacentes ni, pour ces deux valeurs, une fiche de calcul indiquant les mois de référence, le dénominateur et le traitement des hausses intermédiaires.
+Le rapport 2020, dans son graphique 2 sur 1970–1989, cite un coup de pouce maximal de **10,1 % en 1973** et de **6,9 % en 1981**. Le graphique est attribué à la Direction générale du travail et reprend les périodes annuelles 1970–1971 à 1988–1989. Le rapport de juin 2009 confirme que la série historique de la DGT est construite en glissements juillet-juillet. On connaît donc la fenêtre du taux total, mais pas les mois exacts des indices de prix et de SHBO ni la formule opérationnelle employée pour isoler le coup de pouce.
 
-Ces valeurs ne sont donc pas directement réconciliables avec les 9,7 % et 5,2 % du tableau INSEE/Sénat tant que les fenêtres et la définition opérationnelle ne sont pas alignées. Le CSV historique conserve les valeurs du tableau du Sénat ; les chiffres 10,1 % et 6,9 % sont conservés comme estimations publiées par le rapport 2020, pas comme corrections du CSV.
+L'exemple de lecture du graphique 2020 présente une décomposition empilée : pour 1970–1971, environ 9,8 % au total, répartis entre 5,3 % d'inflation, 2,4 % de demi-gain réel du SHBO et 2,2 % de coup de pouce. Cette présentation ne fournit pas l'équation de calcul du résidu. À l'inverse, l'INSEE 1992 définit explicitement le coup de pouce de façon multiplicative : (1 + c/100) = (1 + s/100) / (1 + m/100). Cette différence de convention est une explication possible des écarts, mais elle ne suffit pas à les résoudre sans les séries sources.
+
+Les valeurs 10,1 % et 6,9 % du rapport 2020 ne sont donc pas directement substituables aux 9,7 % et 5,2 % du tableau INSEE/Sénat. Le CSV 1970–1993 conserve les valeurs du tableau du Sénat ; les valeurs du rapport 2020 restent documentées comme une autre reconstruction publiée, sans correction arbitraire du CSV.
 
 ### 2.4 Contrôle du taux horaire de juillet 1978
 
@@ -98,12 +100,12 @@ La décision est discrétionnaire quant au calendrier, mais elle ne constitue pa
 
 ## 7. Annonce de décembre 2026 : statut hors série réalisée
 
-Le 9 novembre 2026, le Gouvernement a annoncé une hausse de 1,6 % au 1er décembre, présentée comme comprenant un coup de pouce de 0,6 point et une composante automatique estimée à environ 1 point. À la date de ce contrôle (16 novembre), cette annonce n'est pas encore intégrée au CSV événementiel des taux effectifs : le taux horaire brut et le texte réglementaire d'application doivent être vérifiés après publication. Ne pas anticiper un taux en euros ni modifier la série historique avant cette vérification.
+Le 9 novembre 2026, le Gouvernement a annoncé une hausse totale de 1,6 % au 1er décembre. La transcription officielle qualifie cette décision de « coup de pouce » ; le communiqué de Bercy du 13 novembre la décrit comme supérieure à la revalorisation légale. Les sources primaires consultées ne publient toutefois pas de décomposition chiffrée entre part automatique et part discrétionnaire : le partage « 1,0 + 0,6 point » ne doit donc pas être enregistré comme une ventilation officielle vérifiée. À la date de ce contrôle (16 novembre), l'annonce reste hors du CSV événementiel des taux effectifs : le taux horaire brut et le texte réglementaire d'application doivent être vérifiés après publication.
 
 ## 8. Limites et contrôles encore nécessaires
 
 - Les valeurs du CSV événementiel sont des montants légaux à des dates d'effet ; les taux de variation publiés et les ratios calculés à partir de montants arrondis peuvent différer.
-- Le cas 2006 reste non réconcilié : le rapport DARES de juin 2009 donne +3,05 %, tandis que le ratio des taux affichés 8,27/8,03 donne +2,99 %. Aucun ajustement n'est fait sans taux réglementaires non arrondis.
+- Le CSV retient désormais +3,05 % en 2006, valeur publiée dans l'annexe du rapport du groupe d'experts de juin 2009. Le ratio des taux affichés 8,27/8,03 donne environ +2,99 % ; le rapport ne fournit pas les taux sous-jacents non arrondis permettant de reproduire exactement l'écart. La correction porte donc sur le pourcentage documenté, pas sur le taux légal de 8,27 €.
 - Les rapports 2009 et 2020 ne fournissent pas les séries mensuelles complètes qui permettraient d'harmoniser les coups de pouce de 1973 et 1981.
 - Les moyennes annuelles ne doivent pas être utilisées comme taux légal à une date ni comme indicateur du revenu annuel.
 - Les évolutions descriptives du taux, des bénéficiaires ou des salaires ne démontrent pas l'effet causal des hausses sur l'emploi, les prix, les marges ou la pauvreté.
