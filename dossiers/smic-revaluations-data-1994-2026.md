@@ -127,3 +127,15 @@ Un contrôle structurel et arithmétique complémentaire est publié dans [l'aud
 Un écart apparent de 0,065 point pour juillet 1999 a été résolu en revenant aux montants sources en francs : 40,22 F puis 40,72 F donnent +1,24 %. Le ratio calculé sur les montants convertis et arrondis en euros (6,13 € puis 6,21 €) diffère légèrement en raison des arrondis.
 
 La taxonomie du CSV a également été normalisée : les hausses de 1995, 1997 et juillet 2012 sont désormais classées comme hausses annuelles ou mixtes avec composante discrétionnaire, plutôt que comme coups de pouce intégralement discrétionnaires.
+
+## 9. Série des moyennes annuelles du taux horaire
+
+Une série séparée des moyennes annuelles est maintenant publiée : [CSV 1994–2026](../data/smic-annual-averages-1994-2026.csv). Les valeurs 1994–2025 proviennent des tableaux annuels INSEE ; 2026 est seulement une moyenne partielle janvier-octobre calculée sur les taux mensuels observés. Cette série ne doit pas être fusionnée avec les événements de taux ni avec les glissements juillet-juillet.
+
+## 10. Reclassement de l'événement du 1er novembre 2024
+
+Le 1er novembre 2024 est désormais classé comme anticipation de la revalorisation annuelle automatique de janvier 2025, et non comme déclenchement infra-annuel automatique. Le groupe d'experts estimait la formule légale à environ 1,95 % sur la base des données d'octobre ; le Gouvernement a appliqué +2 % deux mois plus tôt. Le rapport précise qu'il n'y a pas eu de coup de pouce entre janvier 2012 et novembre 2024 et qu'aucune hausse supplémentaire n'était attendue en janvier 2025 si les indices provisoires étaient confirmés.
+
+## 11. Annonce du 1er décembre 2026
+
+L'annonce gouvernementale du 9 novembre 2026 (+1,6 % au 1er décembre, dont 0,6 point de coup de pouce annoncé) reste hors du CSV événementiel tant que le taux légal effectif et le texte réglementaire ne sont pas publiés et vérifiés. Le CSV s'arrête donc aux événements effectifs du 1er juin 2026.
