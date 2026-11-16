@@ -456,3 +456,16 @@ Le rapport du Groupe d'experts sur le SMIC de novembre 2025 apporte un état des
 L'OCDE (Barreto et al., 2025) documente la concentration des salaires près du minimum et les mécanismes de trappes socio-fiscales, mais observe que la mobilité salariale ascendante des travailleurs à bas salaire n'est pas plus difficile en France que dans les pays comparés. Ces résultats sont descriptifs/comparatifs et ne mesurent pas l'effet causal d'une hausse récente du SMIC sur les jeunes.
 
 **Bilan :** la preuve française récente est plus riche sur les allègements et les trajectoires de bas salaires que sur l'effet causal isolé des hausses du SMIC brut. Une étude contemporaine ciblant les jeunes, les entrants, les contrats courts et les heures reste nécessaire. Voir [l'état de l'audit](../dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md).
+
+
+## 27. Arguments fallacieux et poncifs du débat
+
+Un dossier transversal classe les arguments récurrents : faux dans leur formulation générale, trompeurs/incomplets, poncifs non démontrés ou questions empiriques ouvertes. Il examine notamment « toute hausse détruit des emplois », « aucune hausse n'en détruit », « le SMIC cause l'inflation », « le SMIC réduit automatiquement la pauvreté », « les entreprises n'ont qu'à prendre sur leurs marges » et « les hausses de 1981 ont à elles seules causé le tournant de 1983 ». Chaque argument est reformulé en proposition testable et associé aux preuves et contrôles à exiger.
+
+Voir [Arguments fallacieux et poncifs](../dossiers/smic-arguments-fallacieux-poncifs-debat.md).
+
+## 28. Comparaison historique des épisodes positifs, négatifs et mitigés
+
+Le dossier comparatif distingue 1968–1975, 1981–1983, les années 1980, 2003–2005 et 2021–2024. Il sépare hausses automatiques et coups de pouce, SMIC brut et coût employeur, effets directs et agrégés. Bilan provisoire : 1968–1975 est favorable au rattrapage du pouvoir d'achat, sans preuve causale complète sur l'emploi ; 1981–1983 est macroéconomiquement mitigé et ne peut être réduit au seul SMIC ; les données des années 1980 signalent des risques de sortie d'emploi pour certains groupes directement exposés ; 2003–2005 montre l'importance des allègements compensateurs ; 2021–2024 protège le pouvoir d'achat au plancher mais accentue compression salariale et coûts socio-fiscaux, tandis que l'effet causal sur l'emploi reste insuffisamment établi.
+
+Voir [Bilan comparé des épisodes historiques](../dossiers/smic-episodes-historiques-bilan-positif-negatif.md).
