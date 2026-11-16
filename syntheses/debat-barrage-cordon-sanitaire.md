@@ -53,3 +53,32 @@ Cette synthèse repose sur une première sélection de travaux et n'est pas une 
 - https://doi.org/10.1057/s41253-024-00272-1
 - https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/FF_IPSOS_frontrepublicain_nov2025.pdf
 - https://doi.org/10.1080/14782804.2025.2549800
+
+## Évaluation sur le long terme
+
+Les travaux longitudinaux permettent de distinguer la protection de l'accès au pouvoir et la réduction de l'influence idéologique.
+
+- **Belgique** : Biard (2021) décrit plus de trente ans de non-participation exécutive du Vlaams Belang, mais aussi des pressions croissantes sur le cordon. Le résultat institutionnel est réel ; la durabilité de la norme n'est pas automatique.
+- **Europe occidentale, 1980–2014** : Wagner et Meyer (2016), sur 525 manifestes de 68 partis dans 17 pays, observent un déplacement des partis traditionnels vers la droite sur les enjeux libéraux-autoritaires, tandis que la droite radicale ne modère pas ses positions. Cela documente une normalisation possible au niveau du système partisan, sans démontrer que le cordon en est la cause.
+- **108 contextes électoraux, 1976–2017** : Krause, Cohen et Abou-Chadi (2023) ne trouvent pas que l'accommodation des positions de la droite radicale réduise son soutien électoral ; les transferts de voix peuvent même lui être favorables. La convergence programmatique ne constitue donc pas un substitut fiable au barrage institutionnel.
+- **27 pays, ESS 2002–2010** : de Leeuw et Bourne (2020) trouvent un soutien majoritaire à l'interdiction des partis extrémistes. Il s'agit d'une mesure de légitimité sociale, pas d'une démonstration d'efficacité à long terme.
+
+### Verdict par horizon
+
+| Horizon | État des preuves |
+|---|---|
+| Court terme : accès au pouvoir | Preuves relativement solides dans certains cas historiques |
+| 2–5 ans : transferts et discours | Preuves comparatives, mais causalité et hétérogénéité importantes |
+| 5–10 ans : normalisation programmatique | Tendances longitudinales documentées ; attribution au cordon non établie |
+| 10–20 ans : résilience démocratique | Lacune majeure ; données directes insuffisantes |
+
+### Conclusion opérationnelle
+
+Un cordon peut protéger les institutions sans faire disparaître les idées. Une démocratie ne devrait donc pas choisir entre débat et barrage : elle doit maintenir le débat contradictoire sur les propositions, tout en appliquant des règles institutionnelles cohérentes et explicites. Elle doit aussi éviter de reprendre automatiquement les cadrages qu'elle prétend combattre. Enfin, l'évaluation doit suivre les attitudes, les programmes, les médias et les institutions sur plusieurs cycles électoraux, pas seulement le résultat du scrutin suivant.
+
+### Sources ajoutées
+
+- Biard (2021), *Challenging the Cordon Sanitaire in Belgium: A Diachronic Analysis* : https://doi.org/10.4324/9781003104643-8
+- Wagner & Meyer (2016), *The Radical Right as Niche Parties?* : https://doi.org/10.1177/0032321716639065
+- Krause, Cohen & Abou-Chadi (2023), *Does accommodation work?* : https://doi.org/10.1017/psrm.2022.8
+- de Leeuw & Bourne (2020), *Explaining Citizen Attitudes to Strategies of Democratic Defense in Europe* : https://doi.org/10.1093/ijpor/edz042
