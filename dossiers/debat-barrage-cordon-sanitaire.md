@@ -263,3 +263,65 @@ Chaque indicateur doit être défini avant l'analyse, normalisé dans le temps e
 Le cordon sanitaire peut constituer une barrière institutionnelle durable, comme le montre le cas belge, mais il n'est ni une politique de persuasion ni une garantie de recul idéologique. La reprise des thèmes du challenger par les partis établis peut transformer le système partisan sans coalition formelle. L'accommodation ne paraît pas être un remède électoral fiable. La stratégie démocratique doit donc combiner cohérence institutionnelle, débat contradictoire sur les propositions, refus de la normalisation automatique et politiques publiques capables de répondre aux causes sociales des votes de protestation.
 
 La question décisive pour la suite n'est plus seulement « le cordon tient-il ? », mais « que devient le système politique autour du cordon après trois, cinq ou dix cycles électoraux ? »
+
+## 16. Comparaison historique approfondie : Belgique, Autriche et France
+
+### 16.1 Des instruments différents, pas une expérience contrôlée
+
+- **Belgique** : norme durable de non-coalition envers le Vlaams Belang, avec variations locales et pressions croissantes.
+- **Autriche** : participation répétée du FPÖ à des coalitions avec l'ÖVP, entrecoupée de périodes d'opposition.
+- **France** : barrage électoral intermittent par consignes et désistements, particulièrement visible en 2002, 2017 et 2024.
+
+La comparaison porte sur les mécanismes et les résultats, non sur un classement causal simple des pays.
+
+### 16.2 Autriche : l'inclusion gouvernementale n'est pas une vaccination durable
+
+L'étude historique de Fallend sur la coalition de centre droit de 2000–2007 conclut que l'ostracisation n'avait pas modéré le FPÖ ni empêché son succès. L'entrée au gouvernement a coïncidé avec un quasi-effondrement électoral, des tensions internes et une scission en 2005. Les auteurs soulignent cependant l'inexpérience gouvernementale et les conflits internes ; le retour ultérieur du FPÖ interdit de parler de neutralisation durable.
+
+L'analyse longitudinale des programmes sociaux du FPÖ (1983–2013) montre que sa politique sociale est structurée par la définition des groupes jugés légitimes à recevoir les prestations. La coalition 2000–2005 a combiné des mesures populaires et des réformes impopulaires, notamment sur les retraites. L'influence d'un partenaire minoritaire peut donc être sectorielle et concrète.
+
+L'étude sur la constitutionnalité des politiques en Autriche (1980–2021) rappelle que l'évaluation doit intégrer les tribunaux et l'indépendance judiciaire. L'accès au gouvernement n'est pas une capacité illimitée à transformer les règles : les contre-pouvoirs et la configuration des majorités comptent.
+
+### 16.3 France : un barrage électoral puissant mais intermittent
+
+Les législatives de 2024 montrent qu'une coordination rapide des partis et candidats peut modifier la structure du second tour et empêcher une majorité RN, sans empêcher celui-ci d'obtenir un nombre record de sièges. Le rapport CEVIPOF/IPSOS de novembre 2025 décrit une trajectoire où le front républicain, puissant en 2015 et 2017, s'affaiblit en 2022 puis se réactive en 2024 sous l'effet de la menace perçue d'une majorité RN.
+
+Le barrage dépend du contexte : position relative des blocs, adversaire commun, crédibilité de l'alternative, consignes partisanes et acceptation des reports par les électeurs. Le soutien déclaré au principe du barrage ne doit pas être assimilé au comportement effectif dans l'isoloir.
+
+### 16.4 Matrice des résultats à ne pas confondre
+
+| Dimension | Belgique | Autriche | France |
+|---|---|---|---|
+| Accès exécutif | Vlaams Belang maintenu hors des exécutifs pendant la période étudiée par Biard ; norme sous pression | FPÖ plusieurs fois en coalition ; accès réel mais intermittent | Pas de cordon permanent ; barrage électoral ponctuel |
+| Influence sur les politiques | Indirecte possible par reprises de thèmes et votes parlementaires | Influence directe et sectorielle en coalition, notamment sociale | Indirecte sur les programmes et priorités des partis concurrents |
+| Trajectoire électorale | Force électorale élevée malgré la non-coalition | Recul après certaines expériences, puis retour | Progression du RN malgré des barrages ponctuels |
+| Contre-pouvoirs | Norme de coalition et pluralisme fédéral | Cour constitutionnelle et institutions de contrôle | Parlement, justice constitutionnelle et règles électorales |
+| Limite principale | Séparer l'effet du cordon des facteurs historiques et régionaux | Séparer l'effet du gouvernement, des crises internes et de la conjoncture | Construire le contrefactuel des seconds tours sans désistement |
+
+### 16.5 Conclusions étayées et non établies
+
+**Conclusions étayées :**
+1. Une norme de non-coalition peut bloquer durablement l'accès exécutif sans supprimer la force électorale du parti concerné.
+2. L'incorporation au gouvernement peut provoquer des coûts organisationnels et électoraux, sans garantir une disparition durable.
+3. La participation à une coalition peut permettre une influence sectorielle, même pour un partenaire minoritaire.
+4. Le barrage électoral français peut modifier la distribution des sièges à court terme ; il ne mesure pas une baisse des préférences RN.
+5. Les contre-pouvoirs et la constitutionnalité des politiques doivent être évalués indépendamment des résultats électoraux.
+
+**Conclusions non établies :** le cordon belge réduit à lui seul le vote ou l'adhésion ; l'entrée au gouvernement modère nécessairement un parti ; les désistements réduisent durablement la normalisation idéologique ; une stratégie unique est transposable d'un pays à l'autre.
+
+### 16.6 Protocole longitudinal commun
+
+Pour chaque pays et chaque cycle, suivre séparément :
+- **Accès** : sièges, coalitions, soutien externe, postes exécutifs locaux et nationaux.
+- **Influence** : accords de coalition, amendements adoptés, votes pivots, politiques mises en œuvre.
+- **Normalisation** : positions et saillance dans les manifestes (Manifesto Project), proximité idéologique (CHES), reprises lexicales et cadrages médiatiques.
+- **Opinion** : soutien électoral, attitudes, tolérance politique, confiance et distance sociale (ESS, EVS, Eurobaromètre, enquêtes nationales).
+- **Démocratie** : indépendance judiciaire, libertés publiques, respect des résultats, pluralisme médiatique et contraintes sur les contre-pouvoirs.
+
+Les séries électorales doivent tenir compte des ruptures institutionnelles et des changements de partis. Les programmes ne remplacent pas les données d'opinion ; les décisions judiciaires ne résument pas la qualité démocratique.
+
+### 16.7 Conclusion comparative révisée
+
+Aucun des trois cas ne valide une solution universelle. La Belgique illustre la capacité d'une norme institutionnelle à bloquer durablement l'accès exécutif ; l'Autriche montre que l'exercice du pouvoir peut fragiliser un parti sans le neutraliser et lui permettre une influence sectorielle ; la France démontre la puissance mais aussi l'intermittence d'une coordination électorale.
+
+La stratégie la plus robuste à tester combine débat contradictoire, règles explicites de coopération institutionnelle, coordination électorale lorsque les enjeux le justifient, protection effective des contre-pouvoirs et réponse aux causes sociales du vote. Son succès doit être jugé sur plusieurs cycles et dimensions.
