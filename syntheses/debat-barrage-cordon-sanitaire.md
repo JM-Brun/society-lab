@@ -119,3 +119,18 @@ De Jonge et Gaufman (2022) documentent, dans la presse néerlandaise, comment l'
 **Conclusion provisoire :** la vraie alternative n'est pas « silence ou débat sans conditions ». Il faut distinguer la discussion publique d'une idée et la mise à disposition d'une tribune qui lui confère portée, crédibilité ou respectabilité. La question empirique est de savoir quand une confrontation rigoureuse informe et corrige, et quand elle amplifie malgré elle.
 
 Les effets à mesurer sont l'accord avec l'idée, l'exactitude factuelle, la perception de sa popularité, la respectabilité du locuteur, la mémorisation de la réfutation, la confiance institutionnelle et la circulation secondaire. Les effets à long terme restent insuffisamment établis.
+
+
+## Mise à jour : réfutation, réactance et déplateformisation
+
+**Constat 1 — La réfutation ne produit pas généralement un effet boomerang.** La revue de Porter et Wood (2024) conclut que les corrections factuelles améliorent habituellement l'exactitude des croyances et que les effets de retour de flamme sont extrêmement rares. Les effets peuvent s'atténuer et ne se traduisent pas nécessairement en changement d'attitudes ou de comportements.
+
+**Constat 2 — La qualité et le moment de la correction comptent.** Wood et ses collègues (2024) montrent qu'un débriefing tardif et générique peut laisser persister les effets d'une exposition à la désinformation ; une correction rapide, explicite et informative est plus efficace.
+
+**Constat 3 — La réactance est un mécanisme plausible, pas une preuve de renforcement idéologique.** Une méta-analyse (33 études) trouve qu'un langage menaçant la liberté augmente colère, pensées négatives et réactance. Cela justifie d'étudier la légitimité et la transparence des décisions d'exclusion, mais pas d'affirmer qu'un cordon renforce mécaniquement l'idée ciblée.
+
+**Constat 4 — La déplateformisation peut déplacer sans annuler la réduction de portée.** La fermeture de Parler a déplacé l'activité vers d'autres réseaux marginaux ; le retrait de créateurs de YouTube a augmenté leur audience sur BitChute, mais réduit leur audience et leurs revenus totaux estimés. Les unités d'analyse sont différentes.
+
+**Conclusion opérationnelle :** réfuter une affirmation n'oblige pas à offrir une tribune à son promoteur. La décision de débattre avec une personne, de corriger une idée, de relayer un contenu ou de limiter sa diffusion doit être prise séparément. Toute stratégie doit être évaluée sur ses effets nets, ses publics, sa temporalité et sa légitimité procédurale.
+
+**Incertitudes majeures :** effets à long terme ; effets sur les personnes déjà convaincues ; comparaison directe entre débat avec le promoteur et critique sans amplification ; transposition des résultats numériques au débat télévisé, scolaire ou universitaire.
