@@ -510,3 +510,12 @@ La Cour des comptes estime par ailleurs que, sans le gel du barème applicable e
 | Date | Modification |
 |---|---|
 | 2026-11-16 | Ajout de la cartographie des facteurs, des mécanismes de transmission, de l'annonce de décembre 2026 et des limites des estimations d'emploi citées par le Gouvernement. |
+
+
+## Complément documentaire — diffusion aux minima conventionnels (16 novembre 2026)
+
+La transcription officielle de la conférence sociale du 9 novembre précise que les estimations de 5 000 à 20 000 emplois supprimés pour la hausse retenue, et de plus de 230 000 dans un scénario de SMIC à 1 700 € nets, sont des chiffres que le ministre attribue à la DARES. La transcription ne publie pas la note technique permettant de les auditer : ils restent des estimations rapportées par le Gouvernement, non des pertes observées ni des résultats causaux indépendamment vérifiés.
+
+Le ministère du Travail indique par ailleurs qu'au 10 novembre 2026, 64 branches (36 %), représentant 7,1 millions de salariés, avaient au moins un coefficient inférieur au SMIC ; 64 branches supplémentaires seraient concernées après la hausse du 1er décembre. Cette donnée montre pourquoi le suivi des minima conventionnels et des négociations de branche est essentiel pour étudier la diffusion salariale au-delà des seuls salariés directement au SMIC. Elle ne signifie pas que 7,1 millions de salariés sont rémunérés au SMIC.
+
+Voir le dossier spécialisé : [Facteurs déterminants du SMIC : règles, mécanismes et effets](../dossiers/smic-facteurs-mecanismes-transmission-2026.md).
