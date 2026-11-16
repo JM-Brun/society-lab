@@ -5,7 +5,8 @@
 - **Dernière revue** : 2026-11-16
 - **Périmètre** : Belgique (Wallonie/Flandre), Allemagne, France ; comparaisons européennes complémentaires
 - **Domaines** : politique et démocratie ; institutions et gouvernance ; sécurité, justice et libertés
-- **Question** : Dans quelles conditions le débat contradictoire, la réfutation, la démarcation médiatique, l'exclusion des coalitions ou l'intervention juridique contribuent-ils à préserver le pluralisme démocratique et à limiter la normalisation d'acteurs ou de discours antidémocratiques, et avec quels effets indésirables ?
+- **Question centrale révisée** : dans quelles conditions faut-il refuser une tribune ou une amplification à une idée ou à son promoteur, et dans quelles conditions faut-il accepter de la discuter, de la vérifier et de la réfuter publiquement ?
+- **Priorité** : stratégies de traitement des idées dans les médias, débats publics, institutions éducatives et espaces numériques. Les cordons électoraux sont secondaires.
 
 ## 1. Synthèse exécutive
 
@@ -325,3 +326,75 @@ Les séries électorales doivent tenir compte des ruptures institutionnelles et 
 Aucun des trois cas ne valide une solution universelle. La Belgique illustre la capacité d'une norme institutionnelle à bloquer durablement l'accès exécutif ; l'Autriche montre que l'exercice du pouvoir peut fragiliser un parti sans le neutraliser et lui permettre une influence sectorielle ; la France démontre la puissance mais aussi l'intermittence d'une coordination électorale.
 
 La stratégie la plus robuste à tester combine débat contradictoire, règles explicites de coopération institutionnelle, coordination électorale lorsque les enjeux le justifient, protection effective des contre-pouvoirs et réponse aux causes sociales du vote. Son succès doit être jugé sur plusieurs cycles et dimensions.
+
+## 17. Recentrage du dossier : faut-il boycotter les idées ou les discuter ?
+
+### 17.1 Question centrale
+
+Le cœur de cette recherche n'est pas de comparer principalement les tactiques électorales des partis. Il est d'étudier ce que les citoyens, médias, chercheurs, institutions éducatives et responsables publics doivent faire lorsqu'une idée controversée, discriminatoire, mensongère ou hostile aux principes démocratiques apparaît dans l'espace public.
+
+**Question de recherche principale :** dans quelles conditions faut-il refuser de donner une tribune à une idée ou à son promoteur, et dans quelles conditions faut-il au contraire l'exposer à un débat contradictoire, à une vérification et à une réfutation publiques ?
+
+Il faut séparer quatre objets :
+1. **L'idée** : proposition, affirmation factuelle, valeur ou programme.
+2. **Le locuteur** : personne, organisation, parti ou mouvement qui la porte.
+3. **La tribune** : média, débat, réseau social, école, université, institution ou événement qui lui donne accès à une audience.
+4. **La circulation** : citation, extrait viral, reprise journalistique, recommandation algorithmique ou discussion critique.
+
+Le « boycott des idées » est donc une expression à préciser. Refuser de relayer une idée n'est pas la même chose que refuser d'inviter son promoteur ; refuser une tribune n'est pas interdire l'étude ou la critique de cette idée.
+
+### 17.2 Trois stratégies de communication à comparer
+
+| Stratégie | Définition opérationnelle | Mécanisme recherché | Risque ou limite |
+|---|---|---|---|
+| Démarcation / non-plateformisation | Ne pas offrir d'exposition directe ou de légitimité institutionnelle au promoteur ou au message | Réduire la portée, la répétition et le signal de respectabilité | Laisser l'idée sans réfutation accessible ; nourrir un récit de censure ; déplacer la diffusion vers des espaces fermés |
+| Confrontation contradictoire | Donner un accès encadré à la discussion, avec questions précises, preuves, vérification et contradiction | Rendre les affirmations testables et visibles dans leurs faiblesses | Amplifier malgré tout le message ; créer une fausse équivalence ; laisser une affirmation frappante dominer la correction |
+| Accommodation / banalisation | Reprendre le cadrage ou offrir une tribune peu critique, sans examen rigoureux | Répondre à une demande d'audience ou de visibilité | Accroître la familiarité, la perception de popularité et la légitimité du discours |
+
+Ces catégories décrivent des pratiques, pas des verdicts moraux. La même émission peut confronter une personne sur un point et banaliser son cadrage sur un autre.
+
+### 17.3 Résultat expérimental important : l'exposition n'est pas neutre
+
+Bolet et Foos (2025), dans le *British Journal of Political Science*, utilisent des expériences d'enquête fondées sur des interviews réelles d'activistes d'extrême droite au Royaume-Uni et en Australie. L'exposition à des interviews non contestées augmente l'accord avec les affirmations extrêmes et la perception que davantage de personnes dans la population les approuvent. Dans l'expérience britannique, le questionnement critique détériore l'image du locuteur et atténue les effets sur les attitudes, mais ne fait pas disparaître l'adhésion aux affirmations ; la perception de leur diffusion sociale reste également affectée, quoique moins fortement.
+
+**Portée exacte :** ce résultat concerne des extraits d'interviews d'activistes d'extrême droite, dans deux pays anglophones, avec des résultats mesurés à court terme. Il ne prouve pas que tout débat contradictoire est inefficace, ni que l'exclusion médiatique est toujours préférable. Les auteurs n'observent pas les effets à long terme dans cette expérience.
+
+### 17.4 Les médias : distinguer ignorer, confronter et accommoder
+
+De Jonge et Gaufman (2022), à partir d'une analyse de discours de la presse néerlandaise avant les élections de 2021, décrivent trois modalités : démarcation, confrontation et accommodation. Leur étude montre comment la reprise de thèmes, de formulations et de cadrages peut déplacer les frontières de ce qui est perçu comme normal. Elle est utile pour comprendre les mécanismes discursifs, mais ne constitue pas une expérience causale mesurant l'effet individuel sur les lecteurs.
+
+Völker (2026), à partir de 21 entretiens avec des journalistes allemands, décrit les contraintes qui fragilisent le cordon médiatique : stratégies des acteurs, pression externe, perception de la demande du public, ressources et incitations institutionnelles. Cette étude renseigne les pratiques professionnelles et leurs déterminants ; elle ne mesure pas directement les effets d'audience.
+
+### 17.5 Hypothèses à tester, sans présumer de la réponse
+
+- **H1 — Effet d'exposition :** une exposition non critique peut augmenter la familiarité, l'accord avec certains énoncés et la perception de leur popularité.
+- **H2 — Effet de confrontation :** la contradiction factuelle et normative peut diminuer la crédibilité du locuteur, sans nécessairement annuler l'effet de normalisation du message.
+- **H3 — Effet de démarcation :** le refus de tribune peut limiter l'amplification par les médias concernés, mais son effet dépend de la circulation alternative et de la confiance dans l'institution qui exclut.
+- **H4 — Effet de déplacement :** l'exclusion d'une tribune peut déplacer la diffusion vers des réseaux moins contradictoires, sans que cet effet soit automatique.
+- **H5 — Hétérogénéité :** les effets varient selon le public, ses connaissances initiales, son degré d'adhésion, la crédibilité du locuteur, le format et la répétition.
+- **H6 — Effets différés :** les effets sur les attitudes, les normes sociales et la confiance peuvent diverger à court et long terme.
+
+### 17.6 Comment comparer rigoureusement les stratégies
+
+Les résultats doivent être mesurés séparément :
+- accord avec l'affirmation après exposition ;
+- exactitude des croyances factuelles ;
+- perception de la proportion de personnes qui adhèrent à l'idée ;
+- perception de respectabilité du locuteur ;
+- mémorisation du message et de sa réfutation ;
+- confiance dans le média ou l'institution ;
+- volonté de discuter avec des personnes en désaccord ;
+- circulation secondaire et reprises hors de la tribune initiale ;
+- effets différés, lorsque des données longitudinales existent.
+
+Les expériences randomisées sont utiles pour isoler l'effet d'une exposition ou d'un format précis. Les analyses de contenu et entretiens décrivent les mécanismes et les pratiques. Les enquêtes longitudinales sont nécessaires pour examiner la persistance. Aucune méthode isolée ne répond à toutes les dimensions.
+
+### 17.7 Principe méthodologique à retenir
+
+Ne pas confondre :
+- **discuter une idée** et **offrir une tribune sans contrôle** ;
+- **refuser de promouvoir un message** et **interdire de le critiquer** ;
+- **réfuter une affirmation** et **humilier son locuteur** ;
+- **donner la parole à plusieurs positions** et **fabriquer une fausse symétrie entre une affirmation étayée et une affirmation réfutée**.
+
+Le dossier doit désormais prioriser la comparaison entre démarcation, confrontation et accommodation dans les médias, les débats publics, l'éducation et les espaces numériques. Les cas de cordon sanitaire électoral (Belgique, Allemagne, France, Autriche) restent des études secondaires utiles lorsqu'ils éclairent les normes de coopération et les signaux de légitimité, mais ils ne constituent plus le cœur de la question.
