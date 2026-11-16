@@ -398,3 +398,64 @@ Ne pas confondre :
 - **donner la parole à plusieurs positions** et **fabriquer une fausse symétrie entre une affirmation étayée et une affirmation réfutée**.
 
 Le dossier doit désormais prioriser la comparaison entre démarcation, confrontation et accommodation dans les médias, les débats publics, l'éducation et les espaces numériques. Les cas de cordon sanitaire électoral (Belgique, Allemagne, France, Autriche) restent des études secondaires utiles lorsqu'ils éclairent les normes de coopération et les signaux de légitimité, mais ils ne constituent plus le cœur de la question.
+
+
+## 18. Nouveaux résultats : réfutation, réactance et déplateformisation
+
+### 18.1 Le « backfire effect » ne justifie pas, à lui seul, le silence
+
+Porter et Wood (2024), dans leur revue *Factual corrections: Concerns and current evidence*, concluent que les corrections factuelles améliorent généralement l'exactitude des croyances, dans des contextes nationaux et politiques variés. Les effets de retour de flamme — une correction qui augmenterait la croyance erronée — sont extrêmement rares et pourraient parfois relever de problèmes de conception expérimentale. Les effets correctifs ne sont toutefois pas permanents : ils peuvent s'atténuer et se traduisent souvent peu dans les attitudes ou les comportements.
+
+**Conséquence pour le dossier :** l'argument « réfuter renforce toujours l'idée » doit être écarté comme règle générale. La question pertinente devient celle de la qualité, du moment, de la visibilité et de la crédibilité de la correction. Il faut aussi distinguer correction d'une affirmation factuelle et débat sur une valeur ou une proposition normative.
+
+Wood et ses collègues (2024) ajoutent un point opérationnel : un débriefing standard, vague et tardif ne neutralise pas toujours les effets d'une exposition à une désinformation politique. Une correction plus efficace est précoce, informative et demande au public de reconnaître explicitement qu'il a été exposé à une information fausse. Cela suggère qu'une réfutation doit être conçue comme une partie du dispositif de diffusion, pas comme une note corrective reléguée après coup.
+
+### 18.2 La réactance existe, mais ne prouve pas un effet boomerang politique
+
+La méta-analyse de *Human Communication Research* (publication en ligne 2025, volume 2026), fondée sur 28 articles, 33 études et 146 tailles d'effet, observe qu'un langage fortement menaçant pour la liberté augmente en moyenne la colère, les cognitions négatives et la réactance psychologique.
+
+Il faut cependant respecter la chaîne causale : **restriction perçue comme coercitive → réactance psychologique → éventuelle résistance au message ou à l'autorité**. Cette méta-analyse n'établit pas qu'une interdiction de tribune renforce nécessairement l'adhésion à l'idée censurée. La légitimité perçue de la règle, sa cohérence, sa transparence et la possibilité de contester la décision sont des variables à mesurer.
+
+### 18.3 Déplateformiser : distinguer déplacement et réduction de portée
+
+Deux études permettent d'éviter les conclusions simplistes :
+
+- L'étude de PNAS Nexus sur la fermeture de Parler (2023) observe une migration vers d'autres réseaux marginaux. Chez les utilisateurs actifs de Parler, la probabilité d'activité quotidienne sur d'autres plateformes augmente de 10,9 points sur ordinateur et 15,9 points sur mobile. La fermeture isolée n'a pas réduit l'activité globale sur les réseaux marginaux.
+- Klinenberg (publication en ligne 2023, volume 2024) suit 79 créateurs d'extrême droite retirés de YouTube. Leur audience sur BitChute augmente de 50 % et leurs revenus hebdomadaires en bitcoin de 30 %, mais cette hausse ne compense qu'une partie des pertes sur YouTube : l'effet net estimé est une baisse de leur audience et de leurs revenus totaux.
+
+Ces résultats ne se contredisent pas : l'un mesure l'activité des utilisateurs sur un ensemble de plateformes marginales après fermeture d'un réseau ; l'autre mesure l'audience et les revenus de créateurs individuels après leur retrait d'une plateforme dominante. Ils montrent que le déplacement est réel, mais qu'il n'annule pas nécessairement la réduction de portée.
+
+### 18.4 Implications pour une stratégie de débat
+
+1. Ne pas invoquer un « effet boomerang » supposé pour renoncer à toute réfutation.
+2. Corriger les affirmations factuelles avec des preuves, une explication causale alternative et une correction visible, précoce et crédible.
+3. Ne pas confondre réfuter un message et lui offrir une tribune longue, prestigieuse ou non contradictoire.
+4. Évaluer la non-plateformisation par son effet net sur la portée, les revenus, la capacité de mobilisation et le déplacement vers d'autres réseaux.
+5. Prévoir une procédure transparente et contestable pour limiter la réactance liée à une décision perçue comme arbitraire.
+6. Mesurer séparément les effets sur les personnes déjà convaincues, les publics hésitants et les observateurs peu exposés.
+
+### 18.5 Matrice de décision à tester
+
+| Situation | Réponse à privilégier | Risque à surveiller |
+|---|---|---|
+| Affirmation factuelle fausse, intérêt public élevé | Correction explicite, preuves accessibles, explication alternative | Répétition inutile du mythe, correction peu visible |
+| Idée controversée mais discutable dans le cadre démocratique | Débat contradictoire avec règles de preuve et temps équilibré selon la qualité des arguments | Fausse équivalence entre preuves robustes et assertions réfutées |
+| Promoteur recherchant une audience ou une légitimation médiatique | Décider séparément de l'invitation, de la citation et de la critique ; privilégier l'analyse du contenu sans amplification gratuite | Effet de notoriété ou déplacement vers des espaces moins contradictoires |
+| Contenus enfreignant les règles ou menaçant directement des personnes | Modération proportionnée, motivée et susceptible de recours | Décision opaque, incohérente ou perçue comme arbitraire |
+| Public déjà fortement adhérent | Ne pas présumer qu'une confrontation publique le convaincra ; proposer des corrections crédibles et des espaces de discussion adaptés | Renforcement identitaire, défiance, fermeture au dialogue |
+
+Cette matrice est une hypothèse opérationnelle à tester, pas une prescription universelle. Les règles doivent être adaptées au cadre (média, université, école, réseau social, institution publique) et au statut de l'acteur.
+
+### 18.6 Hypothèses supplémentaires
+
+- **H7 — Rareté du backfire :** les corrections documentées améliorent en moyenne l'exactitude des croyances ; les effets inverses sont minoritaires et conditionnels.
+- **H8 — Qualité de la correction :** une réfutation précoce, explicite, informative et crédible réduit davantage les effets persistants qu'une correction tardive ou générique.
+- **H9 — Réactance procédurale :** une exclusion perçue comme arbitraire augmente colère et résistance, sans nécessairement accroître l'adhésion à l'idée censurée.
+- **H10 — Effet net du retrait :** la déplateformisation réduit parfois l'audience totale malgré une migration partielle ; son effet dépend du poids de la plateforme dominante et de l'existence de substituts.
+- **H11 — Hétérogénéité des unités :** fermeture d'une plateforme, retrait d'un compte, refus d'une invitation et critique d'une idée produisent des effets différents et ne doivent pas être regroupés sous une même variable « censure ».
+
+### 18.7 Limites et suite de l'enquête
+
+Les études de correction portent principalement sur des affirmations factuelles ; elles ne tranchent pas les conflits de valeurs. Les travaux de déplateformisation mesurent des audiences, des revenus ou des déplacements d'activité, mais pas nécessairement la persuasion politique. La méta-analyse sur la réactance porte sur la communication persuasive, non sur les cordons médiatiques en tant que tels.
+
+La prochaine étape est donc de construire un protocole comparatif qui sépare les quatre interventions suivantes : (a) débat avec le promoteur, (b) analyse critique sans lui donner la tribune, (c) correction après exposition, (d) retrait ou limitation de diffusion. Pour chacune, mesurer portée nette, croyances, attitudes, confiance, mobilisation et effets différés.
