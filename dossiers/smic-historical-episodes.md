@@ -298,3 +298,11 @@ Une matrice dédiée a été créée : [Matrice des preuves — effets historiqu
 L'OCDE (2025) ajoute un contrepoint utile au récit de « trappe » : malgré une forte proximité du minimum et des risques socio-fiscaux, les trajectoires ascendantes des travailleurs à bas salaire ne sont pas plus difficiles en France que dans les pays comparés. Cela ne démontre pas l'absence de stagnation pour certains profils ; cela oblige à distinguer mobilité individuelle, part des emplois à bas salaire et incitations socio-fiscales.
 
 La matrice reste une revue structurée, non une méta-analyse. Les lectures intégrales des articles historiques, des annexes et des tests de robustesse restent prioritaires.
+
+## 15. Réconciliation des séries de revalorisation (16 novembre 2026)
+
+La chronologie 1994–2026 est désormais accompagnée d'une série distincte de moyennes annuelles et d'un dossier de réconciliation des unités. Le taux légal à date, le glissement juillet-juillet, la moyenne annuelle et les GMR ne doivent pas être fusionnés. Le dossier explique notamment le changement de calendrier en 2010, les cinq générations de GMR, la convergence de 2003–2005, le reclassement de novembre 2024 et le statut encore annoncé de la hausse de décembre 2026.
+
+Les coups de pouce de 1973 et 1981 restent documentés avec deux conventions non harmonisées : 9,7 % et 5,2 % dans la décomposition INSEE/Sénat ; 10,1 % et 6,9 % dans le graphique du rapport 2020. Les fenêtres d'indices et les données sous-jacentes du graphique 2020 ne sont pas publiées avec assez de précision pour justifier une correction du CSV.
+
+Voir [Réconciliation des séries du SMIC, 1994–2026](smic-series-reconciliation-1994-2026.md) et [moyennes annuelles](../data/smic-annual-averages-1994-2026.csv).
