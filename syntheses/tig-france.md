@@ -3,7 +3,7 @@ id: "SYNTHESIS-SECURITY-TIG-FRANCE"
 title: "Travaux d’intérêt général en France : efficacité, sous-recours et conditions de déploiement"
 domain: "security-justice"
 status: "provisional"
-last_reviewed: "2026-11-14"
+last_reviewed: "2026-11-16"
 related_dossiers:
   - "dossiers/tig-peines-alternatives-incarceration.md"
   - "analysis/tig-research-next-steps.md"
@@ -128,3 +128,16 @@ L'enquête pilote doit couvrir la Loire-Atlantique en distinguant Nantes Métrop
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Première synthèse transversale ; statut provisoire dans l'attente des validations empiriques et territoriales. |
+
+
+## Actualisation statistique — novembre 2026
+
+Les statistiques officielles confirment un usage relativement faible du TIG, mais imposent de distinguer les unités. Le RSJ 2025 dénombre 14 488 condamnations ayant un TIG comme peine/mesure principale en 2024. Les indicateurs transitoires de milieu ouvert recensent 18 430 mesures TIG suivies au 1er janvier 2026, et 4 022 obligations de TIG dans une ligne séparée ; le ministère précise que ces obligations sont comptées à la fois dans la mesure principale et dans la catégorie obligation. Il ne faut donc ni additionner ces lignes, ni comparer directement ce stock de suivi à un flux annuel de condamnations.
+
+La Cour des comptes estime que les prononcés ont baissé de 21 % entre 2014 et 2023 (environ 4,4 à 2,7 TIG pour 100 condamnations correctionnelles) et que 22 126 mesures étaient suivies fin 2023. Ces constats renforcent le diagnostic de sous-mobilisation, mais n'établissent pas à eux seuls une pénurie de postes ni une cause territoriale particulière.
+
+Les Pays de la Loire comptaient 8 666 personnes suivies en milieu ouvert au 1er janvier 2026. Ce chiffre régional ne porte pas spécifiquement sur les TIG et ne peut pas être utilisé comme dénominateur ou proxy du nombre de TIG en Loire-Atlantique. Les statistiques publiques consultées ne donnent pas encore les délais, capacités de postes ou taux d'achèvement au niveau départemental. L'enquête territoriale doit combler cette lacune par des données de flux et de cohortes.
+
+**Conclusion actualisée :** le sous-recours est documenté au niveau national ; les mécanismes locaux qui le produisent restent à établir. Les statistiques de prononcé, de suivi en milieu ouvert et de capacité d'accueil doivent rester séparées jusqu'à obtention de définitions et d'unités compatibles.
+
+Sources principales : [RSJ 2025, chapitre 11](https://www.justice.gouv.fr/sites/default/files/2026-01/RSJ2025%20chapitre%2011.pdf) ; [Indicateurs transitoires de milieu ouvert, T4 2025](https://www.justice.gouv.fr/sites/default/files/2026-04/STMO_transitoire_20260101.pdf) ; [Cour des comptes, rapport TIG/DDSE, mars 2025](https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf).
