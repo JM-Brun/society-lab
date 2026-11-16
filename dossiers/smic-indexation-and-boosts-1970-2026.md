@@ -167,7 +167,7 @@ Le rapport du groupe d'experts est une source institutionnelle de synthèse ; so
 
 Une transcription du tableau 3 du rapport d'information du Sénat n° 504 (1993–1994) est maintenant disponible : [dossier méthodologique](smic-revaluations-data-1970-1993.md) et [CSV](../data/smic-revaluations-1970-1993.csv). La série distingue hausse observée, prix, moitié du TSH réel, obligation légale et coup de pouce.
 
-**Réserve importante :** les chiffres du Sénat pour 1973 et 1981 (respectivement 9,7 % et 5,2 % de coup de pouce selon sa convention) diffèrent de ceux cités par le rapport du groupe d'experts 2020 (10,1 % et 6,9 %). Les séries sont conservées séparément jusqu'à réconciliation des dates, fenêtres d'indices et définitions. Le CSV ne mesure ni les moyennes annuelles ni les effets causaux sur l'emploi.
+**Réserve importante :** les chiffres INSEE/Sénat pour 1973 et 1981 (respectivement 9,7 % et 5,2 % de coup de pouce résiduel selon la formule multiplicative INSEE) diffèrent de ceux du graphique DGT repris par le rapport 2020 (10,1 % et 6,9 %). Le rapport du groupe d'experts de juin 2009 précise que le graphique historique DGT est mesuré de juillet à juillet, mais ne publie pas les fenêtres mensuelles exactes des indices ni l'équation de calcul du coup de pouce. Le rapport de décembre 2009 décrit, pour sa part, les fenêtres contemporaines de mai à mai et mars à mars, puis la transition de janvier 2010 ; elles ne peuvent être rétroprojetées sur 1973/1981. Les deux conventions restent séparées. Le CSV ne mesure ni les moyennes annuelles ni les effets causaux sur l'emploi.
 
 
 ## 10. Extension de la chronologie : 1994–2026
@@ -238,3 +238,12 @@ Sources complémentaires :
 - Groupe d'experts SMIC, rapport décembre 2009 : https://www.tresor.economie.gouv.fr/Articles/284b121f-b187-4280-b327-05f18064c3fa/files/bbaf996b-d48f-49bb-bc6c-d44fdf15a3d1
 - Groupe d'experts SMIC, rapport 2020 : https://travail-emploi.gouv.fr/sites/travail-emploi/files/files-spip/pdf/smic_rapport_2020.pdf
 - Groupe d'experts SMIC, rapport 2024 : https://www.strategie-plan.gouv.fr/files/files/Publications/2024/SMIC/FS-2025-SMIC-RAPPORT-2024-12f%C3%A9v25.pdf
+
+
+## 12. Réconciliation documentaire des rapports de 2009 et 2020
+
+Le rapport du groupe d'experts de **juin 2009** contient le graphique 2 historique 1970–2008 (source : Direction générale du travail), dont les variations totales sont explicitement mesurées de juillet à juillet. Son annexe 1 détaille les taux et contributions de juillet 1996 à juillet 2008. Le rapport de **décembre 2009** est distinct : il précise les fenêtres contemporaines de la règle annuelle (prix mai-mai, pouvoir d'achat du SHBO mars-mars) et la nouvelle fenêtre applicable à janvier 2010 (prix novembre-novembre, SHBO septembre-septembre), avec une transition spécifique pour janvier 2010.
+
+Le rapport **2020** reprend une décomposition DGT sur 1970–1989 et cite 10,1 % en 1973 et 6,9 % en 1981. Le glissement total juillet-juillet est documenté par le rapport de juin 2009, mais les mois de référence des indices et l'équation exacte de calcul du résidu ne sont pas publiés. L'exemple 1970–1971 du graphique 2020 est présenté comme une somme de composantes empilées (9,8 % environ, ventilés en 5,3 % de prix, 2,4 % de demi-gain réel SHBO et 2,2 % de coup de pouce), tandis que l'INSEE 1992 définit explicitement un résidu multiplicatif. Cela peut contribuer à la divergence, sans permettre de la résoudre définitivement.
+
+Pour 1973, l'INSEE/Sénat donne 9,7 % ; le rapport 2020 donne 10,1 %. Pour 1981, l'INSEE/Sénat donne 5,2 % ; le rapport 2020 donne 6,9 %. Le +10 % souvent cité en juin 1981 est le relèvement ponctuel du taux du 1er mars au 1er juin, et non le glissement annuel ni le coup de pouce résiduel. Ne pas remplacer les valeurs du CSV 1970–1993 tant que les séries et conventions ne sont pas alignées.
