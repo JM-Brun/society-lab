@@ -5,7 +5,7 @@
 - **Périmètre :** France, comparaisons européennes et ouvertures internationales
 - **Période prioritaire :** 2015-2025
 - **Statut :** recherche en cours
-- **Dernière revue :** 13 novembre 2026 (revue P1 des coûts)
+- **Dernière revue :** 16 novembre 2026 (actualisation des séries statistiques publiques)
 
 ## Question de recherche
 
@@ -419,3 +419,41 @@ La synthèse sénatoriale agrège 16 % de TIG non exécutés ou ayant débouché
 **Conséquence pour le suivi :** conserver une série nationale SSER/DACG (cohorte 2020, 36 mois, délai conditionnel à l'exécution) et une série d'enquête Cour (neuf SPIP, TIG terminés 2023-2024) distinctes ; suivre les cinq étapes de délai sans les agréger. Les claims de délai et d'issue ont été mis à jour ou scindés en conséquence.
 
 Source : Cour des comptes, rapport de mars 2025, p. 46-47 et annexe 5, p. 151 : https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf.
+
+
+## Actualisation statistique — séries récentes et précautions d'interprétation (16 novembre 2026)
+
+### Trois sources administratives qui ne décrivent pas le même objet
+
+Les publications officielles récentes permettent de mettre à jour le cadrage statistique, mais ne fournissent pas une série homogène unique.
+
+| Source | Valeur publiée | Unité / champ | Usage correct |
+|---|---:|---|---|
+| Références statistiques Justice 2025, tableau des peines et mesures principales prononcées en 2024 | 14 488 | Condamnations ayant pour peine/mesure principale un TIG | Mesurer les prononcés de TIG comme peine/mesure principale en 2024 |
+| Indicateurs transitoires de milieu ouvert, T4 2025 (avril 2026) | 18 430 au 1er janvier 2026 | Mesures suivies en milieu ouvert, catégorie « travail d'intérêt général » | Repère de suivi à une date, pas flux annuel de prononcés |
+| Même publication | 4 022 au 1er janvier 2026 | Mesures « obligation de TIG » | Catégorie distincte ; la note précise qu'une obligation TIG est comptée à la fois dans la mesure principale et comme obligation |
+
+Le tableau du RSJ 2025 compte 14 488 condamnations avec TIG comme peine/mesure principale en 2024 (9 007 pour infraction unique ; 5 481 pour infractions multiples). Ce chiffre ne doit pas être présenté comme le total de toutes les obligations de TIG ou de toutes les mesures exécutées au cours de l'année.
+
+Le tableau transitoire du ministère dénombre 18 430 mesures « travail d'intérêt général » suivies au 1er janvier 2026, auxquelles il affiche séparément 4 022 « obligations de TIG ». La note méthodologique indique explicitement que les mesures assorties d'une obligation de TIG sont comptabilisées à la fois au titre de la mesure principale et au titre de l'obligation. Additionner les deux catégories produirait donc un double compte ; les comparer directement aux condamnations annuelles serait également erroné.
+
+### Tendance historique et signal de capacité
+
+La Cour des comptes (mars 2025) indique que le nombre de peines de TIG prononcées a diminué de 21 % entre 2014 et 2023, passant d'environ 4,4 à 2,7 TIG pour 100 condamnations des tribunaux correctionnels. Elle distingue deux évolutions : hausse de 23 % des peines autonomes de TIG entre 2019 et 2023 et baisse de plus de 75 % des mesures de TIG dans le cadre d'un sursis, dans le contexte de la réforme du sursis probatoire. Elle relève aussi 22 126 mesures suivies fin 2023, après un pic de 38 529 en 2014. Ces chiffres décrivent une évolution de l'activité et des catégories juridiques ; ils ne prouvent pas à eux seuls une pénurie de postes ou une défaillance locale.
+
+### Ce que les données territoriales disponibles ne permettent pas encore
+
+Les indicateurs transitoires publient une ventilation régionale des personnes suivies en milieu ouvert. Au 1er janvier 2026, les Pays de la Loire comptent 8 666 personnes suivies en milieu ouvert. Ce total concerne l'ensemble du milieu ouvert : il ne constitue pas un nombre de TIG et ne permet pas d'estimer la part des TIG en Loire-Atlantique ou dans la métropole nantaise.
+
+À ce stade, les sources publiques repérées ne fournissent donc pas de ventilation départementale des prononcés, des délais d'affectation, des places actives ou des achèvements TIG. Cette lacune justifie la demande territoriale prévue dans [le protocole d'enquête](../analysis/tig-territorial-inquiry-protocol.md) et sa [spécification de données](../analysis/tig-territorial-data-specification.md).
+
+### Sources primaires
+
+- Ministère de la Justice, *Références statistiques Justice 2025*, chapitre 11, tableau 2 « Les peines et mesures principales prononcées dans les condamnations en 2024 » : https://www.justice.gouv.fr/sites/default/files/2026-01/RSJ2025%20chapitre%2011.pdf
+- Ministère de la Justice, *Indicateurs transitoires de milieu ouvert*, T4 2025, avril 2026, tableaux 1 et 2 et note méthodologique : https://www.justice.gouv.fr/sites/default/files/2026-04/STMO_transitoire_20260101.pdf
+- Cour des comptes, *Évaluation de deux peines alternatives à l'incarcération : le travail d'intérêt général et la détention à domicile sous surveillance électronique*, mars 2025, chapitre I : https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf
+- Ministère de la Justice, Neerunjun, *Un prononcé du travail d'intérêt général en baisse depuis 2015*, Infostat Justice n°15, juillet 2024 : https://www.justice.gouv.fr/documentation/etudes-et-statistiques/prononce-du-travail-dinteret-general-baisse-2015
+
+### Conclusion de cette actualisation
+
+La faiblesse relative du recours au TIG est confirmée par les séries de prononcés et par le constat de la Cour des comptes. En revanche, les données publiques agrégées consultées ne permettent pas de localiser le goulot d'étranglement en Loire-Atlantique ni de départager défaut de prescription, délais administratifs, offre de postes, capacité de tutorat et abandons en cours d'exécution. La priorité empirique reste donc la reconstitution de la chaîne par cohorte et par transition, avec des dénominateurs explicites.
