@@ -70,7 +70,7 @@ Le CSV 1970–1993 conserve 10,85 F au 1er juillet 1978. Le tableau 2 du rapport
 
 ## 4. GMR et transition des 35 heures : ne pas confondre les minima
 
-Les lois Aubry ont instauré des garanties mensuelles pour éviter une baisse de rémunération mensuelle lors du passage de 39 à 35 heures. Les GMR étaient des montants mensuels, définis selon la date de passage aux 35 heures, et indexés différemment du SMIC horaire. Le rapport du Sénat 2004–2005 identifie cinq générations :
+Les lois Aubry ont instauré des garanties mensuelles pour éviter une baisse de rémunération mensuelle lors du passage de 39 à 35 heures. Les GMR étaient des montants mensuels, définis selon la date de passage aux 35 heures, et indexés différemment du SMIC horaire. Cinq GMR ont coexisté avec le SMIC horaire, soit six niveaux de minimum au total ; « six minima » ne signifie donc pas six GMR. Le rapport du Sénat 2004–2005 identifie cinq générations :
 
 - GMR 1 : passage avant le 1er juillet 1999 ;
 - GMR 2 : passage avant le 1er juillet 2000 ;
