@@ -101,3 +101,21 @@ La comparaison distingue trois instruments non équivalents : non-coalition dura
 **Conclusion :** les trois cas ne permettent pas de classer causalement les stratégies. Ils montrent qu'une barrière à l'accès au pouvoir, une participation gouvernementale et un barrage électoral produisent des effets distincts. L'évaluation doit suivre cinq dimensions : accès, influence sur les politiques, normalisation programmatique, attitudes citoyennes et qualité des contre-pouvoirs.
 
 **Limites :** comparaison historique non expérimentale ; stratégies endogènes à la menace électorale ; systèmes institutionnels différents ; absence de contrefactuel commun.
+
+## Recentrage : boycotter les idées ou accepter le débat ?
+
+La question principale porte sur le traitement des idées dans l'espace public, et non d'abord sur les coalitions électorales. Il faut comparer trois stratégies :
+
+1. **Démarcation / non-plateformisation** : ne pas offrir de tribune ni d'amplification directe à un message ou à son promoteur.
+2. **Confrontation contradictoire** : examiner les affirmations, demander les preuves, vérifier les faits et exposer les contre-arguments.
+3. **Accommodation / banalisation** : reprendre les cadrages ou offrir une visibilité peu critique, ce qui peut contribuer à rendre un discours familier et socialement acceptable.
+
+Il faut surtout distinguer le boycott d'une idée, le refus d'inviter son promoteur, le refus de relayer le message et l'interdiction de l'étudier ou de le critiquer. Ce ne sont pas les mêmes actes.
+
+**Preuve expérimentale à retenir :** Bolet et Foos (2025) trouvent, dans des expériences d'enquête au Royaume-Uni et en Australie, que l'exposition à des interviews non contestées d'activistes d'extrême droite augmente l'accord avec des affirmations extrêmes et la perception de leur popularité. Une interview critique atténue certains effets et détériore l'image du locuteur, mais ne les annule pas. La portée est circonscrite à ces messages, ces publics et des mesures de court terme.
+
+De Jonge et Gaufman (2022) documentent, dans la presse néerlandaise, comment l'accommodation médiatique peut contribuer à déplacer les frontières du discours considéré comme normal. Völker (2026), à partir de 21 entretiens avec des journalistes allemands, analyse les contraintes professionnelles et institutionnelles qui fragilisent le cordon médiatique. Ces travaux éclairent des mécanismes différents et ne doivent pas être présentés comme des preuves causales équivalentes.
+
+**Conclusion provisoire :** la vraie alternative n'est pas « silence ou débat sans conditions ». Il faut distinguer la discussion publique d'une idée et la mise à disposition d'une tribune qui lui confère portée, crédibilité ou respectabilité. La question empirique est de savoir quand une confrontation rigoureuse informe et corrige, et quand elle amplifie malgré elle.
+
+Les effets à mesurer sont l'accord avec l'idée, l'exactitude factuelle, la perception de sa popularité, la respectabilité du locuteur, la mémorisation de la réfutation, la confiance institutionnelle et la circulation secondaire. Les effets à long terme restent insuffisamment établis.
