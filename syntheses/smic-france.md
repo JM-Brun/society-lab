@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
 title: "Augmenter le SMIC en France : effets, arbitrages et scénarios"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-15"
+last_reviewed: "2026-11-16"
 related_dossiers:
   - "dossiers/smic-france-tradeoffs.md"
   - "dossiers/smic-historical-episodes.md"
@@ -18,6 +18,7 @@ related_dossiers:
   - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
   - "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
+  - "dossiers/smic-contre-productivite-mesure-episodes.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -469,3 +470,22 @@ Voir [Arguments fallacieux et poncifs](../dossiers/smic-arguments-fallacieux-pon
 Le dossier comparatif distingue 1968–1975, 1981–1983, les années 1980, 2003–2005 et 2021–2024. Il sépare hausses automatiques et coups de pouce, SMIC brut et coût employeur, effets directs et agrégés. Bilan provisoire : 1968–1975 est favorable au rattrapage du pouvoir d'achat, sans preuve causale complète sur l'emploi ; 1981–1983 est macroéconomiquement mitigé et ne peut être réduit au seul SMIC ; les données des années 1980 signalent des risques de sortie d'emploi pour certains groupes directement exposés ; 2003–2005 montre l'importance des allègements compensateurs ; 2021–2024 protège le pouvoir d'achat au plancher mais accentue compression salariale et coûts socio-fiscaux, tandis que l'effet causal sur l'emploi reste insuffisamment établi.
 
 Voir [Bilan comparé des épisodes historiques](../dossiers/smic-episodes-historiques-bilan-positif-negatif.md).
+
+
+## 29. Qualification de la contre-productivité et audit des preuves jeunesse (16 novembre 2026)
+
+Un nouveau dossier compare les épisodes historiques selon l'objectif évalué, la population concernée, l'ampleur effectivement mesurée et le niveau de preuve : [Mesurer la contre-productivité des revalorisations du SMIC](../dossiers/smic-contre-productivite-mesure-episodes.md).
+
+L'audit du working paper d'Abowd, Kramarz, Lemieux & Margolis (1997) est désormais fondé sur le PDF intégral. Sur les données longitudinales de l'Enquête Emploi 1981–1989, les auteurs estiment, pour une hausse de 1 % du SMIC réel, des élasticités conditionnelles de la probabilité future d'emploi de −2,489 pour les jeunes hommes et −1,044 pour les jeunes femmes directement rattrapés. Les élasticités inconditionnelles sont beaucoup plus faibles : −0,203 et −0,108. Le groupe « entre les deux minima » représente environ 8 % des jeunes hommes et 10 % des jeunes femmes. L'estimation est qualifiée d'imprécise par les auteurs ; les résultats sont observationnels, reposent sur un classement salarial imparfait et ne mesurent pas une baisse équivalente de l'emploi total des jeunes.
+
+Le coefficient de −4,8928 pour les hommes de 25–30 ans dans une spécification détaillée (p = 0,0009) constitue un résultat de sous-groupe, pas un effet moyen applicable à tous les jeunes. Les dispositifs d'emploi aidé et l'éligibilité jusqu'à 25 ans modifient également l'exposition.
+
+**Bazen & Skourias (1997) reste distinct :** seul le résumé éditeur et la notice bibliographique sont vérifiés. Ils rapportent un effet sectoriel négatif significatif après la hausse de juin 1981, mais le coefficient et les tableaux ne sont pas disponibles dans les sources consultées. Ce résultat ne doit donc pas être chiffré.
+
+**Conclusion actualisée :** les données historiques renforcent le constat d'un risque de rétention d'emploi pour certains jeunes directement exposés, surtout les hommes dans certaines tranches d'âge. Elles ne permettent toujours pas d'établir un nombre d'emplois détruits à l'échelle agrégée, ni de transposer ces élasticités aux hausses de 2021–2024.
+
+### Historique des révisions
+
+| Date | Modification |
+|---|---|
+| 2026-11-16 | Ajout de la grille de contre-productivité par objectif, audit du PDF Abowd et al. (1997), distinction explicite entre ce résultat et Bazen & Skourias (1997). |
