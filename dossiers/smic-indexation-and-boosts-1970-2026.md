@@ -204,7 +204,7 @@ Deux exemples permettent de prévenir les doubles comptes :
 | 1996 | +2,0 % en mai, puis +0,5 % en juillet | +2,51 % au point de juillet | Le chiffre annuel inclut les deux événements ; 2,51 % correspond à leur composition multiplicative arrondie, pas à un coup de pouce de 2,51 % en juillet |
 | 2008 | +2,3 % en mai, puis +0,9 % en juillet | +3,2 % au point de juillet | Le chiffre annuel inclut le déclenchement automatique de mai ; ne pas ajouter 3,2 % aux deux événements |
 
-D'autres écarts de précision apparaissent dans les tableaux : 2001 (4,05 % dans l'annexe DARES, 4,1 % dans la série événementielle), 2004 (5,8 % contre 5,84 %), 2005 (5,5 % contre 5,52 %), 2006 (3,05 % dans l'annexe DARES contre 2,99 % dans la série événementielle) et 2007 (2,1 % contre 2,06 %). Les différences 2001, 2004, 2005 et 2007 sont compatibles avec des niveaux d'arrondi ou de précision différents. **Le cas 2006 reste non réconcilié** : le ratio des taux affichés 8,27 / 8,03 donne environ 2,99 %, alors que l'annexe DARES indique 3,05 %. Les taux affichés au centime peuvent masquer des valeurs sous-jacentes non arrondies ; cette explication est plausible mais non démontrée à ce stade.
+Les variations annuelles du CSV événementiel ont été alignées sur les valeurs publiées par l'annexe du rapport du groupe d'experts de juin 2009 : 4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007 (le tableau de l'annexe arrondit ce dernier chiffre à 2,1 %, tandis que le texte principal donne 2,05 %). Les ratios calculés à partir des taux horaires affichés au centime restent des contrôles secondaires. En 2006, 8,27 / 8,03 donne environ 2,99 %, mais la valeur publiée de 3,05 % est conservée dans le CSV ; les taux sous-jacents non arrondis qui permettraient de reproduire exactement le pourcentage ne sont pas fournis.
 
 La colonne rounding_residual_pct du CSV 1996–2008 conserve les résidus entre les contributions imprimées et la variation annuelle publiée. Elle ne doit pas être interprétée comme une composante économique ou légale supplémentaire.
 
@@ -221,7 +221,7 @@ L'annexe INSEE « L'évolution du SMIC de 1970 à 1991 » (publiée dans *Les sa
 
 Le +10 % souvent cité pour juin 1981 est le relèvement ponctuel du taux entre le 1er mars (15,20 F) et le 1er juin (16,72 F). Il ne correspond ni au glissement annuel de 19,4 %, ni au résidu de 5,2 %.
 
-Le rapport du groupe d'experts de 2020 donne, dans son graphique historique, 10,1 % pour 1973 et 6,9 % pour 1981. Le rapport ne publie pas les données mensuelles, les fenêtres d'indices ni le dénominateur exact qui permettraient de reproduire ces deux nombres selon la convention INSEE/Sénat. Le rapport de décembre 2009 précise les fenêtres de la règle contemporaine (prix mai-mai et SHBO mars-mars pour juillet ; novembre-novembre et septembre-septembre pour janvier 2010) et présente un graphique juillet-juillet attribué à la DGT, mais ne donne pas la table historique détaillée nécessaire à l'harmonisation.
+Le rapport du groupe d'experts de 2020 donne, dans son graphique historique, 10,1 % pour 1973 et 6,9 % pour 1981. Le rapport de juin 2009 confirme que la série DGT de décomposition historique est mesurée de juillet à juillet, mais ne publie pas les données mensuelles, les fenêtres d'indices exactes ni l'équation du résidu qui permettraient de reproduire ces deux nombres selon la convention INSEE/Sénat. Le rapport de décembre 2009 ne contient pas ce graphique historique : il précise les fenêtres contemporaines de la règle (prix mai-mai et SHBO mars-mars pour juillet ; novembre-novembre et septembre-septembre pour janvier 2010).
 
 **Décision documentaire :** conserver 9,7 % et 5,2 % dans le CSV comme transcription du tableau du Sénat, annoter 10,1 % et 6,9 % comme valeurs publiées par le rapport 2020, et ne pas remplacer l'une par l'autre avant obtention des séries sous-jacentes et calcul sur une fenêtre commune.
 
@@ -240,7 +240,7 @@ Sources complémentaires :
 - Groupe d'experts SMIC, rapport 2024 : https://www.strategie-plan.gouv.fr/files/files/Publications/2024/SMIC/FS-2025-SMIC-RAPPORT-2024-12f%C3%A9v25.pdf
 
 
-## 12. Réconciliation documentaire des rapports de 2009 et 2020
+## 16. Réconciliation documentaire des rapports de 2009 et 2020
 
 Le rapport du groupe d'experts de **juin 2009** contient le graphique 2 historique 1970–2008 (source : Direction générale du travail), dont les variations totales sont explicitement mesurées de juillet à juillet. Son annexe 1 détaille les taux et contributions de juillet 1996 à juillet 2008. Le rapport de **décembre 2009** est distinct : il précise les fenêtres contemporaines de la règle annuelle (prix mai-mai, pouvoir d'achat du SHBO mars-mars) et la nouvelle fenêtre applicable à janvier 2010 (prix novembre-novembre, SHBO septembre-septembre), avec une transition spécifique pour janvier 2010.
 
