@@ -2,7 +2,7 @@
 
 - **Identifiant :** DOSSIER-SMIC-INDEXATION-DECOMPOSITION
 - **Dossier parent :** [Historique des revalorisations du SMIC](smic-historical-episodes.md)
-- **Date de revue :** 14 novembre 2026
+- **Date de revue :** 16 novembre 2026
 - **Statut :** cadre historique documenté ; décomposition annuelle exhaustive encore à calculer.
 - **Champ :** France hors Mayotte, sauf mention contraire.
 
@@ -209,3 +209,32 @@ D'autres écarts de précision apparaissent dans les tableaux : 2001 (4,05 % dan
 La colonne rounding_residual_pct du CSV 1996–2008 conserve les résidus entre les contributions imprimées et la variation annuelle publiée. Elle ne doit pas être interprétée comme une composante économique ou légale supplémentaire.
 
 **Règle d'usage :** ne jamais fusionner les deux CSV par simple addition. Pour les études d'impact, choisir une unité temporelle commune (événement à date d'effet ou glissement annuel), recalculer les variations à partir des taux non arrondis lorsque disponibles et documenter séparément les contributions légales, les décisions discrétionnaires et les effets de convergence GMR.
+
+## 13. Réconciliation primaire des coups de pouce de 1973 et 1981
+
+L'annexe INSEE « L'évolution du SMIC de 1970 à 1991 » (publiée dans *Les salaires en 1990*) explicite le calcul du coup de pouce comme résidu multiplicatif entre le glissement observé du SMIC de juillet à juillet et la hausse imposée par l'obligation légale. Les fenêtres utilisées sont : prix d'avril à avril et de mai à mai ; TSH d'avril à avril, déflaté des prix. Le Sénat reprend cette convention dans son tableau 3 de 1994 : prix de mai à mai, moitié du TSH réel d'avril à avril, obligation légale, puis résidu discrétionnaire.
+
+| Épisode | INSEE/Sénat : glissement observé | Obligation légale | Résidu « coup de pouce » |
+|---|---:|---:|---:|
+| Juillet 1973 | 20,9 % | 10,2 % | 9,7 % |
+| 1er juin 1981 | 19,4 % | 13,5 % | 5,2 % |
+
+Le +10 % souvent cité pour juin 1981 est le relèvement ponctuel du taux entre le 1er mars (15,20 F) et le 1er juin (16,72 F). Il ne correspond ni au glissement annuel de 19,4 %, ni au résidu de 5,2 %.
+
+Le rapport du groupe d'experts de 2020 donne, dans son graphique historique, 10,1 % pour 1973 et 6,9 % pour 1981. Le rapport ne publie pas les données mensuelles, les fenêtres d'indices ni le dénominateur exact qui permettraient de reproduire ces deux nombres selon la convention INSEE/Sénat. Le rapport de décembre 2009 précise les fenêtres de la règle contemporaine (prix mai-mai et SHBO mars-mars pour juillet ; novembre-novembre et septembre-septembre pour janvier 2010) et présente un graphique juillet-juillet attribué à la DGT, mais ne donne pas la table historique détaillée nécessaire à l'harmonisation.
+
+**Décision documentaire :** conserver 9,7 % et 5,2 % dans le CSV comme transcription du tableau du Sénat, annoter 10,1 % et 6,9 % comme valeurs publiées par le rapport 2020, et ne pas remplacer l'une par l'autre avant obtention des séries sous-jacentes et calcul sur une fenêtre commune.
+
+## 14. Contrôle du taux de juillet 1978
+
+Le taux horaire légal du 1er juillet 1978 est de 10,85 F dans le tableau chronologique du Sénat (tableau 2) et dans l'INSEE 1992. Le tableau 3 du même rapport du Sénat imprime 10,65 F pour cette date, alors que les autres tableaux et la série chronologique confirment 10,85 F. La valeur du CSV reste 10,85 F ; seule la note a été corrigée.
+
+## 15. Requalification de novembre 2024
+
+Le rapport du groupe d'experts de novembre 2024 confirme qu'il n'y a pas eu de coup de pouce entre janvier 2012 et le 1er novembre 2024. La hausse de 2 % du 1er novembre 2024 anticipe la revalorisation annuelle attendue au 1er janvier 2025 : l'estimation automatique provisoire était de 1,95 % sur la base des données d'octobre. Le choix du Gouvernement est discrétionnaire quant au calendrier, mais le rapport ne le classe pas comme coup de pouce au sens d'une hausse au-delà de la formule légale.
+
+Sources complémentaires :
+- INSEE 1992, annexe 1, tableau 2 et définition du coup de pouce : https://www.bnsp.insee.fr/ark:/12148/bc6p06z40qt.pdf
+- Groupe d'experts SMIC, rapport décembre 2009 : https://www.tresor.economie.gouv.fr/Articles/284b121f-b187-4280-b327-05f18064c3fa/files/bbaf996b-d48f-49bb-bc6c-d44fdf15a3d1
+- Groupe d'experts SMIC, rapport 2020 : https://travail-emploi.gouv.fr/sites/travail-emploi/files/files-spip/pdf/smic_rapport_2020.pdf
+- Groupe d'experts SMIC, rapport 2024 : https://www.strategie-plan.gouv.fr/files/files/Publications/2024/SMIC/FS-2025-SMIC-RAPPORT-2024-12f%C3%A9v25.pdf
