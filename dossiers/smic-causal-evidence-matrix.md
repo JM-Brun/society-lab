@@ -488,3 +488,28 @@ Audits : [Abowd et al. (1999)](smic-abowd-kramarz-margolis-1999-transitions-empl
 **Limites :** seuil de 1,1 SMIC, non égal au SMIC légal ; les statuts de chômage et de non-observation ne couvrent pas tous les cas ; 22 % de l'échantillon général n'est plus observé en 2019 ; progression salariale nominale ; classification descriptive, sans contrefactuel ni identification causale des revalorisations.
 
 **Conclusion :** preuve élevée sur la diversité des trajectoires et les transitions observées ; aucune preuve causale que les hausses du SMIC produisent ces trajectoires. Voir [l'audit complet](smic-tresor-2025-wage-trajectories-audit.md).
+
+
+## 25. Fiche d'audit n° 20 — Cottet (2020/2024), allègements patronaux au niveau du SMIC
+
+**Période / données :** réformes 1995–1996 ; DADS Postes exhaustives appariées employeurs-salariés (principalement 1995–1999), DADS Panel pour les séries historiques, déclarations fiscales des entreprises ; coûts reconstruits avec TAXIPP.
+
+**Traitement / comparaison :** différence-de-différences entre emplois de 1–1,1 SMIC (traités) et 1,3–1,5 SMIC (contrôle), avec variante traitant tous les salaires sous 1,3 SMIC. Au niveau entreprise, exposition calculée par le changement de coût mécanique en appliquant les barèmes 1997 à la structure salariale 1995.
+
+**Résultats version 2020 :** postes de 1–1,3 SMIC +20 % entre 1995 et 1998 ; progression relative des emplois de 1–1,1 SMIC d'environ 10 points dès 1996, puis 10 points supplémentaires en 1998. Le surplus vient surtout de la rétention, les embauches et destructions augmentant ensemble. Les entreprises recevant un gain de trésorerie augmentent temporairement l'emploi global, y compris au-dessus du SMIC ; les entreprises sans gain direct réagissent davantage au coût relatif des emplois bas salaire.
+
+**Identification :** pré-coefficients et tests de tendances préalables pour les DiD ; effets fixes entreprise/année et secteur×année au niveau firme ; contrôles de taille. Limites : fenêtre pré-traitement courte, décomposition des flux moins complète avant 1995, réformes concomitantes de cotisations, restrictions d'échantillon, possible mobilité entre tranches salariales.
+
+**Conclusion :** preuve modérée que les allègements ont augmenté la rétention et les emplois à bas salaire dans ce contexte historique, avec hétérogénéité des firmes et possible concentration sous les seuils d'exonération. Ce n'est pas une estimation d'une hausse du SMIC brut. Une hausse du coût minimum n'est pas nécessairement le miroir exact d'une baisse des cotisations (asymétrie et hystérèse possibles).
+
+**Version 2024 :** le résumé CESifo annonce +13 points de postes au SMIC et +4 % de croissance des entreprises recevant un gain de trésorerie sur deux ans ; ces valeurs sont propres à la version ultérieure, non auditée intégralement ici.
+
+## 26. Fiche d'audit n° 21 — État des études récentes sur emploi des jeunes
+
+**Bazen & Skourias (1997) :** l'éditeur confirme un effet négatif significatif sur l'emploi des jeunes après la hausse de 10 % de juin 1981, sur données sectorielles. Le texte intégral est inaccessible dans cette passe ; stratégie d'identification, amplitude et robustesse non auditées. Niveau de confiance limité.
+
+**Groupe d'experts SMIC (2025) :** simulation d'équilibre partiel sur BTS 2023, salariés du privé de 18 à 64 ans, 0,7–4,2 SMIC. Hypothèses d'élasticité de demande au coût du travail de −0,6 à −0,9 au SMIC et décroissante jusqu'à 2 SMIC ; simulation de 1,3 à 1,9 million d'emplois créés ou sauvegardés par les allègements. Il ne s'agit pas d'une estimation causale nouvelle ni d'un résultat spécifique aux jeunes.
+
+**OCDE (Barreto et al., 2025) :** étude comparative de la concentration des bas salaires, des mécanismes socio-fiscaux et des trajectoires ; mobilité salariale ascendante pas plus difficile en France que dans les pays comparés. Pas d'identification d'une hausse spécifique du SMIC.
+
+**Conclusion :** le corpus ne contient pas encore d'étude française récente isolant causalement les effets des hausses 2021–2025 du SMIC sur les jeunes. Priorité : données d'entreprise/secteur, exposition différentielle, entrants, sorties, heures, contrats et effets séparés des exonérations.
