@@ -207,3 +207,59 @@ Priorités :
 4. distinguer les effets de court terme et de long terme ;
 5. ajouter des cas de comparaison hors des trois pays (Pays-Bas, Autriche, Italie, pays nordiques) sans perdre la comparabilité ;
 6. documenter séparément les effets sur les électeurs, les militants, les groupes ciblés et les institutions.
+
+## 12. Évaluation longitudinale : ce qui change avec le temps
+
+### 12.1 Le résultat institutionnel peut être durable sans être un succès idéologique
+
+Benjamin Biard (2021), dans « Challenging the Cordon Sanitaire in Belgium: A Diachronic Analysis », documente plus de trente ans de non-participation exécutive du Vlaams Belang au moment de l'étude. L'analyse repose sur 36 entretiens avec des élus et responsables de partis et sur des archives médiatiques. Elle établit que la force électorale du parti n'a pas été convertie en pouvoir exécutif, tout en montrant des pressions croissantes sur la norme : votes parlementaires ponctuels, alliances locales, tentatives de coalition et contestations internes. Le cordon a donc obtenu un résultat institutionnel majeur, mais sa durabilité dépend d'une discipline politique qui n'est jamais acquise.
+
+### 12.2 La normalisation peut se produire au niveau du système partisan
+
+Wagner et Meyer (2016) analysent 525 manifestes de 68 partis dans 17 pays d'Europe occidentale, sur la période 1980–2014. Ils observent que les partis traditionnels de gauche et de droite ont accru l'attention portée aux enjeux libéraux-autoritaires et se sont déplacés vers la droite sur cette dimension, tandis que les partis de droite radicale n'ont pas modéré leur positionnement et ont même accentué leur caractère de niche. Cette étude ne prouve pas que les cordons sanitaires causent cette évolution ; elle documente cependant une transformation idéologique de long terme compatible avec le risque de normalisation par accommodation.
+
+### 12.3 L'accommodation n'est pas une stratégie électorale fiable
+
+Krause, Cohen et Abou-Chadi (2023) analysent plus de 350 stratégies de partis établis dans 108 contextes électoraux entre 1976 et 2017, complétées par des données individuelles de transferts de voix. Ils ne trouvent pas d'élément convaincant montrant que l'adoption des positions de la droite radicale réduit son soutien. Les transferts bruts vers la droite radicale peuvent dépasser les transferts en sens inverse ; l'association accommodation + cordon ne constitue pas une protection systématique. Cela invite à distinguer la démarcation institutionnelle de la convergence idéologique.
+
+### 12.4 L'interdiction peut être socialement légitime, mais son effet réel reste une autre question
+
+de Leeuw et Bourne (2020) étudient les attitudes de 195 405 répondants dans 27 pays via l'ESS 2002–2010. Ils observent un soutien majoritaire à l'interdiction de partis extrémistes. Ce résultat contredit l'idée d'une réaction de rejet nécessairement majoritaire, mais il ne permet pas de conclure qu'une interdiction réduit durablement l'extrémisme ou améliore la résilience démocratique. Il s'agit d'une mesure juridique beaucoup plus forte qu'un cordon de coalition.
+
+### 12.5 Tableau de l'évaluation temporelle
+
+| Horizon | Résultat observé ou attendu | Niveau de preuve actuel | Ce qu'il ne faut pas conclure |
+|---|---|---|---|
+| 0–2 ans | Empêcher une coalition ou modifier l'accès au pouvoir | Assez documenté dans le cas belge et les désistements français | Que l'adhésion aux idées a diminué |
+| 2–5 ans | Déplacement des discours, transferts électoraux, fatigue de la norme | Études électorales et corpus de programmes ; causalité limitée | Que la convergence est causée uniquement par le cordon |
+| 5–10 ans | Recomposition des programmes et de la compétition partisane | Séries de manifestes 1980–2014 | Que le cordon est responsable du virage idéologique |
+| 10–20 ans | Résilience démocratique, qualité des contre-pouvoirs et transmission des normes | Preuves directes encore insuffisantes | Qu'un cordon durable garantit une démocratie résiliente |
+
+**Bilan provisoire :** les preuves les plus solides portent sur l'accès au pouvoir et les stratégies électorales ; les preuves de normalisation idéologique existent au niveau des systèmes partisans, mais le lien causal direct avec le cordon reste à établir. Les effets sur les citoyens, la qualité démocratique et la résilience à 10–20 ans sont encore sous-documentés.
+
+## 13. Modèle causal longitudinal à tester
+
+1. Succès électoral ou médiatique d'un parti challenger → pression sur les partis établis.
+2. Réponse des partis établis : exclusion de coalition, confrontation, silence stratégique ou accommodation programmatique.
+3. Ces réponses produisent des effets distincts : accès institutionnel, visibilité, saillance des thèmes, transferts électoraux et acceptabilité sociale.
+4. Les effets se cumulent sur plusieurs cycles ; les acteurs apprennent, s'adaptent et modifient les normes de coalition.
+5. Les crises économiques, migratoires, sécuritaires, médiatiques et institutionnelles peuvent modifier simultanément les stratégies et les résultats.
+
+Le modèle doit être estimé en distinguant les niveaux individuels, organisationnels, médiatiques et institutionnels, avec des variables retardées et des contrôles de contexte. Il faut traiter explicitement la causalité inverse : un cordon plus fort peut être une réaction à un mouvement déjà puissant.
+
+## 14. Indicateurs longitudinaux à construire
+
+- **Cohérence du cordon** : proportion de votes communs, accords de soutien, coalitions locales, dérogations et déclarations de rupture, par cycle électoral.
+- **Accès institutionnel** : participation aux exécutifs, postes de responsabilité, présidences de commission, capacité à faire adopter des propositions.
+- **Normalisation programmatique** : similarité textuelle des manifestes et discours, reprise de thèmes et de cadrages, évolution de la saillance.
+- **Opinion publique** : attitudes envers les droits des minorités, la démocratie libérale, la distance sociale, la tolérance politique et l'acceptabilité des thèmes.
+- **Écosystème médiatique** : fréquence, durée, format, contradiction, cadrage et circulation inter-plateformes.
+- **Résilience démocratique** : indépendance judiciaire, liberté de la presse, contrôle parlementaire, droits fondamentaux, confiance et acceptation de l'alternance.
+
+Chaque indicateur doit être défini avant l'analyse, normalisé dans le temps et accompagné d'une mesure d'incertitude. Les scores composites ne doivent pas masquer les arbitrages entre dimensions.
+
+## 15. Conclusion longitudinale révisée
+
+Le cordon sanitaire peut constituer une barrière institutionnelle durable, comme le montre le cas belge, mais il n'est ni une politique de persuasion ni une garantie de recul idéologique. La reprise des thèmes du challenger par les partis établis peut transformer le système partisan sans coalition formelle. L'accommodation ne paraît pas être un remède électoral fiable. La stratégie démocratique doit donc combiner cohérence institutionnelle, débat contradictoire sur les propositions, refus de la normalisation automatique et politiques publiques capables de répondre aux causes sociales des votes de protestation.
+
+La question décisive pour la suite n'est plus seulement « le cordon tient-il ? », mais « que devient le système politique autour du cordon après trois, cinq ou dix cycles électoraux ? »
