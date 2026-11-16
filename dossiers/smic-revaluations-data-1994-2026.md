@@ -43,7 +43,7 @@ Le gouvernement a accordé un coup de pouce en juillet 2012 : l'augmentation de 
 
 - 1995 : +4,0 % au 1er juillet ; 1997 : +4,0 %, dont 2,26 points de coup de pouce selon l'annexe DARES 2009.
 - 1996 : +2,0 % au 1er mai après franchissement du seuil d'inflation, puis +0,5 % au 1er juillet.
-- 2003, 2004, 2005 : +5,27 %, +5,84 %, +5,52 % au SMIC horaire, dans le cadre de la convergence GMR.
+- 2003, 2004, 2005 : +5,27 %, +5,8 %, +5,5 % selon les variations annuelles publiées par la DARES, dans le cadre de la convergence GMR. Les ratios des taux affichés au centime peuvent être légèrement différents.
 - 2008 : +2,3 % au 1er mai, puis +0,9 % au 1er juillet.
 - 2012 : +2,0 % au 1er juillet, dont +0,6 point de coup de pouce gouvernemental.
 - 2010 : première revalorisation annuelle au 1er janvier.
@@ -84,11 +84,11 @@ La chronologie des taux ne suffit pas : une hausse annuelle peut combiner indexa
 | Juillet 1996 | 0,5 % (après +2 % en mai) | 0,16 point | Annexe DARES 2009 ; mai correspond au déclenchement automatique du seuil d'inflation |
 | Juillet 1997 | 4,0 % | 2,26 points | Annexe DARES 2009 |
 | Juillet 1998 | 2,0 % | 0,46 point (arrondi à 0,5 dans le rapport parlementaire) | Écart d'arrondi / convention à conserver explicitement |
-| Juillet 2001 | 4,1 % environ | 0,29 point | Rapport parlementaire ; mesure associée au minimum des salariés restés à 39 heures |
-| Juillet 2006 | 2,99 % environ | 0,3 point au-delà de la revalorisation mécanique | Rapport parlementaire ; période immédiatement postérieure à la convergence GMR |
+| Juillet 2001 | 4,05 % | 0,29 point | Annexe DARES 2009 ; mesure associée au minimum des salariés restés à 39 heures |
+| Juillet 2006 | 3,05 % | 0,3 point au-delà de la revalorisation mécanique | Annexe DARES 2009 ; le ratio des taux affichés au centime donne 2,99 %, sans que les taux sous-jacents non arrondis soient publiés |
 | Juillet 2012 | 2,0 % | 0,6 point | INSEE : 1,4 point d'inflation et 0,6 point de décision gouvernementale |
 
-Cette vérification corrige la première classification du dataset : 1995, 1996 (juillet), 1998, 2001 et 2006 ne sont pas de simples hausses ordinaires. Les colonnes du CSV précisent désormais les composantes discrétionnaires connues. Les événements de mai 1996 et mai 2008 restent classés comme déclenchements automatiques infra-annuels.
+Cette vérification corrige la première classification du dataset : 1995, 1996 (juillet), 1998, 2001 et 2006 ne sont pas de simples hausses ordinaires. Pour les variations annuelles 2001–2007, le CSV retient les pourcentages publiés dans l'annexe DARES de juin 2009 (4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007, ce dernier chiffre étant donné dans le texte principal alors que le tableau arrondit à 2,1 %). Les colonnes du CSV précisent désormais les composantes discrétionnaires connues. Les événements de mai 1996 et mai 2008 restent classés comme déclenchements automatiques infra-annuels.
 
 ### Divergences 1973 et 1981 : ne pas fusionner les chiffres
 
@@ -116,7 +116,7 @@ La convergence des GMR est parfois présentée comme une hausse cumulée de 17,6
 
 La série événementielle ci-dessus enregistre les changements à chaque date d'effet. Elle ne doit pas être comparée directement aux variations annuelles de l'annexe 1 du rapport du Groupe d'experts SMIC de juin 2009, qui présente des glissements annuels à date de juillet. Ainsi, en 1996, la série événementielle sépare le déclenchement automatique de mai (+2,0 %) et la revalorisation de juillet (+0,5 %), tandis que le tableau annuel DARES affiche +2,51 % au point de juillet. En 2008, la série événementielle sépare mai (+2,3 %) et juillet (+0,9 %), tandis que le tableau annuel DARES affiche +3,2 % au point de juillet. Ces chiffres annuels incluent les deux événements ; ils ne doivent pas être ajoutés aux lignes événementielles.
 
-Des écarts de précision subsistent également pour 2001, 2004, 2005, 2006 et 2007. Le cas 2006 est explicitement non résolu : l'annexe DARES affiche +3,05 %, alors que le ratio des taux horaires affichés dans le CSV (8,27 € / 8,03 €) implique environ +2,99 %. Une différence liée aux taux sous-jacents non arrondis est possible, mais doit être vérifiée avant de conclure. Les deux valeurs sont conservées avec leur provenance.
+Les taux horaires affichés au centime ne reproduisent pas toujours les variations annuelles publiées. Pour 2001, 2004, 2005 et 2007, les différences avec les ratios des taux affichés sont faibles et compatibles avec l'arrondi et la précision des tableaux. Pour 2006, l'annexe DARES publie +3,05 %, alors que 8,27/8,03 implique environ +2,99 %. Le CSV retient le +3,05 % publié ; la valeur sous-jacente non arrondie qui permettrait de reproduire exactement ce pourcentage n'est pas fournie.
 
 Source de comparaison : rapport du Groupe d'experts SMIC / DARES, juin 2009, annexe 1, p. 32, « Évolution du SMIC depuis juillet 1996 » : https://dares.travail-emploi.gouv.fr/sites/default/files/d8fa752e7f09a16b5f95c0ff7b482262/Smic_rapport_2009%20%28juin%29.pdf.
 
@@ -138,4 +138,4 @@ Le 1er novembre 2024 est désormais classé comme anticipation de la revalorisat
 
 ## 11. Annonce du 1er décembre 2026
 
-L'annonce gouvernementale du 9 novembre 2026 (+1,6 % au 1er décembre, dont 0,6 point de coup de pouce annoncé) reste hors du CSV événementiel tant que le taux légal effectif et le texte réglementaire ne sont pas publiés et vérifiés. Le CSV s'arrête donc aux événements effectifs du 1er juin 2026.
+L'annonce gouvernementale du 9 novembre 2026 (+1,6 % au 1er décembre) est présentée comme un coup de pouce supérieur à la revalorisation légale. Les sources primaires consultées ne donnent pas de ventilation officielle chiffrée entre composante automatique et discrétionnaire ; la répartition 1,0 + 0,6 point reste à vérifier. L'annonce reste hors du CSV événementiel tant que le taux légal effectif et le texte réglementaire ne sont pas publiés et vérifiés. Le CSV s'arrête donc aux événements effectifs du 1er juin 2026.
