@@ -5,6 +5,7 @@ domain: "economy-employment"
 status: "provisional"
 last_reviewed: "2026-11-16"
 related_dossiers:
+  - "dossiers/smic-facteurs-mecanismes-transmission-2026.md"
   - "dossiers/smic-france-tradeoffs.md"
   - "dossiers/smic-historical-episodes.md"
   - "dossiers/smic-indexation-decomposition.md"
