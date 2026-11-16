@@ -50,3 +50,7 @@ dossiers:
     dossier_path: "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE"
+    dossier_path: "dossiers/debat-barrage-cordon-sanitaire.md"
+    synthesis_id: "SYNTHESIS-POLITICS-DEBATE-BARRAGE"
+    synthesis_path: "syntheses/debat-barrage-cordon-sanitaire.md"
