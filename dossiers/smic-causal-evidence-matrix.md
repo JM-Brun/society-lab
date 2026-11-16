@@ -513,3 +513,12 @@ Audits : [Abowd et al. (1999)](smic-abowd-kramarz-margolis-1999-transitions-empl
 **OCDE (Barreto et al., 2025) :** étude comparative de la concentration des bas salaires, des mécanismes socio-fiscaux et des trajectoires ; mobilité salariale ascendante pas plus difficile en France que dans les pays comparés. Pas d'identification d'une hausse spécifique du SMIC.
 
 **Conclusion :** le corpus ne contient pas encore d'étude française récente isolant causalement les effets des hausses 2021–2025 du SMIC sur les jeunes. Priorité : données d'entreprise/secteur, exposition différentielle, entrants, sorties, heures, contrats et effets séparés des exonérations.
+
+
+## 25. Audit des arguments et comparaison historique
+
+Deux dossiers transversaux complètent la matrice :
+- [Arguments fallacieux et poncifs](smic-arguments-fallacieux-poncifs-debat.md) : 12 arguments examinés, statut, reformulation honnête et contrôle empirique requis.
+- [Épisodes historiques : bilans positifs, négatifs et mitigés](smic-episodes-historiques-bilan-positif-negatif.md) : comparaison 1968–1975, 1981–1983, années 1980, 2003–2005 et 2021–2024.
+
+**Règle de classement :** un épisode n'est contre-productif que relativement à un objectif explicite et à un contrefactuel crédible. Un gain de salaire réel peut coexister avec un risque de sortie d'emploi pour un sous-groupe, une hausse de prix sectorielle ou un coût budgétaire. Les effets ne doivent pas être agrégés en une note unique sans pondération normative explicite.
