@@ -489,3 +489,24 @@ Le coefficient de −4,8928 pour les hommes de 25–30 ans dans une spécificati
 | Date | Modification |
 |---|---|
 | 2026-11-16 | Ajout de la grille de contre-productivité par objectif, audit du PDF Abowd et al. (1997), distinction explicite entre ce résultat et Bazen & Skourias (1997). |
+
+
+## Actualisation du 16 novembre 2026 — facteurs et annonce de décembre
+
+Un dossier dédié distingue désormais les paramètres légaux, les décisions politiques et les mécanismes de transmission : [Facteurs déterminants du SMIC : règles, mécanismes et effets](../dossiers/smic-facteurs-mecanismes-transmission-2026.md).
+
+Trois éléments doivent rester séparés :
+
+1. **Formule légale** : inflation des ménages du premier quintile hors tabac et moitié du gain de pouvoir d'achat du SHBOE.
+2. **Décision annoncée le 9 novembre 2026** : +1,6 % au 1er décembre, présentés par le Gouvernement comme 1 point d'anticipation automatique et 0,6 point de coup de pouce. Le point automatique repose sur une estimation gouvernementale d'inflation annuelle de 1 % ; la réplication indépendante du calcul exact reste à faire.
+3. **Effets économiques** : le niveau du SMIC relativement à la distribution salariale, la part de salariés concernés, la productivité, la conjoncture, les allègements, les transferts socio-fiscaux, les prix et les marges déterminent la transmission aux salariés, entreprises et finances publiques.
+
+**Nouvelle réserve importante :** lors de la conférence sociale, le Gouvernement a cité des estimations DARES de 5 000 à 20 000 emplois supprimés pour la hausse retenue et de plus de 230 000 dans un scénario de SMIC à 1 700 € nets. En l'absence de note technique publique retrouvée (modèle, horizon, population, hypothèses et intervalles), ces chiffres sont enregistrés comme déclarations attribuées à la DARES, et non comme effets observés ou estimations causales validées.
+
+La Cour des comptes estime par ailleurs que, sans le gel du barème applicable en 2026, la hausse du SMIC de 2,41 % au 1er juin aurait accru mécaniquement le coût des allègements généraux de 2,2 Md€ en 2026, net des retours fiscaux. Ce contrefactuel budgétaire ne mesure ni le coût social total de la hausse ni un nombre d'emplois détruits. Le rapport distingue aussi effets de barème, effets volume et transformations institutionnelles.
+
+**Conclusion actualisée :** les facteurs et canaux sont maintenant cartographiés, mais la justification quantitative complète de la hausse de décembre n'est pas encore reproductible. Les priorités sont l'obtention de la note DARES, la réplication de la composante automatique et la réconciliation des périmètres d'allègements. Le bilan net global reste non identifié.
+
+| Date | Modification |
+|---|---|
+| 2026-11-16 | Ajout de la cartographie des facteurs, des mécanismes de transmission, de l'annonce de décembre 2026 et des limites des estimations d'emploi citées par le Gouvernement. |
