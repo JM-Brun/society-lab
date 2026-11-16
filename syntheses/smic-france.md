@@ -10,6 +10,7 @@ related_dossiers:
   - "dossiers/smic-historical-episodes.md"
   - "dossiers/smic-indexation-decomposition.md"
   - "dossiers/smic-policy-scenarios.md"
+  - "dossiers/smic-series-reconciliation-1994-2026.md"
   - "dossiers/smic-economists-literature-review.md"
   - "dossiers/smic-quantitative-evidence.md"
   - "dossiers/smic-quantitative-update-2026.md"
@@ -520,3 +521,13 @@ La transcription officielle de la conférence sociale du 9 novembre précise que
 Le ministère du Travail indique par ailleurs qu'au 10 novembre 2026, 64 branches (36 %), représentant 7,1 millions de salariés, avaient au moins un coefficient inférieur au SMIC ; 64 branches supplémentaires seraient concernées après la hausse du 1er décembre. Cette donnée montre pourquoi le suivi des minima conventionnels et des négociations de branche est essentiel pour étudier la diffusion salariale au-delà des seuls salariés directement au SMIC. Elle ne signifie pas que 7,1 millions de salariés sont rémunérés au SMIC.
 
 Voir le dossier spécialisé : [Facteurs déterminants du SMIC : règles, mécanismes et effets](../dossiers/smic-facteurs-mecanismes-transmission-2026.md).
+
+## 30. Réconciliation des séries historiques (16 novembre 2026)
+
+La chronologie 1994–2026 est maintenant distinguée de la série des moyennes annuelles du taux horaire. Le nouveau dossier décrit les ruptures de calendrier, les GMR et les 35 heures, les glissements annuels, les moyennes annuelles et les revalorisations automatiques ou discrétionnaires. Le CSV des événements reste limité aux changements effectifs jusqu'au 1er juin 2026 ; l'annonce de +1,6 % au 1er décembre est conservée séparément en attente du texte réglementaire.
+
+La revalorisation du 1er novembre 2024 est reclassée comme anticipation de la revalorisation annuelle automatique de janvier 2025, et non comme déclenchement infra-annuel automatique ni comme coup de pouce. Le groupe d'experts estimait la hausse automatique à environ 1,95 % ; il indique explicitement qu'aucun coup de pouce n'a été accordé entre janvier 2012 et novembre 2024.
+
+Pour 1973 et 1981, le tableau INSEE/Sénat donne respectivement 9,7 % et 5,2 % de résidu discrétionnaire ; le graphique du rapport 2020 donne 10,1 % et 6,9 %. Les fenêtres d'indices et les séries mensuelles du graphique 2020 ne permettent pas encore d'harmoniser ces mesures. Les deux valeurs sont conservées avec leur provenance, sans correction arbitraire.
+
+Voir [Réconciliation des séries du SMIC, 1994–2026](../dossiers/smic-series-reconciliation-1994-2026.md) et [moyennes annuelles 1994–2026](../data/smic-annual-averages-1994-2026.csv).
