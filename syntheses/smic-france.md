@@ -500,7 +500,7 @@ Un dossier dédié distingue désormais les paramètres légaux, les décisions 
 Trois éléments doivent rester séparés :
 
 1. **Formule légale** : inflation des ménages du premier quintile hors tabac et moitié du gain de pouvoir d'achat du SHBOE.
-2. **Décision annoncée le 9 novembre 2026** : +1,6 % au 1er décembre, présentés par le Gouvernement comme 1 point d'anticipation automatique et 0,6 point de coup de pouce. Le point automatique repose sur une estimation gouvernementale d'inflation annuelle de 1 % ; la réplication indépendante du calcul exact reste à faire.
+2. **Décision annoncée le 9 novembre 2026** : +1,6 % au 1er décembre, qualifiés de « coup de pouce » et présentés par Bercy comme supérieurs à la revalorisation légale. Les sources primaires consultées ne publient pas de ventilation officielle entre part automatique et part discrétionnaire ; le partage 1,0 + 0,6 point reste à vérifier et ne doit pas être traité comme une donnée confirmée.
 3. **Effets économiques** : le niveau du SMIC relativement à la distribution salariale, la part de salariés concernés, la productivité, la conjoncture, les allègements, les transferts socio-fiscaux, les prix et les marges déterminent la transmission aux salariés, entreprises et finances publiques.
 
 **Nouvelle réserve importante :** lors de la conférence sociale, le Gouvernement a cité des estimations DARES de 5 000 à 20 000 emplois supprimés pour la hausse retenue et de plus de 230 000 dans un scénario de SMIC à 1 700 € nets. En l'absence de note technique publique retrouvée (modèle, horizon, population, hypothèses et intervalles), ces chiffres sont enregistrés comme déclarations attribuées à la DARES, et non comme effets observés ou estimations causales validées.
@@ -528,6 +528,9 @@ La chronologie 1994–2026 est maintenant distinguée de la série des moyennes 
 
 La revalorisation du 1er novembre 2024 est reclassée comme anticipation de la revalorisation annuelle automatique de janvier 2025, et non comme déclenchement infra-annuel automatique ni comme coup de pouce. Le groupe d'experts estimait la hausse automatique à environ 1,95 % ; il indique explicitement qu'aucun coup de pouce n'a été accordé entre janvier 2012 et novembre 2024.
 
-Pour 1973 et 1981, le tableau INSEE/Sénat donne respectivement 9,7 % et 5,2 % de résidu discrétionnaire ; le graphique du rapport 2020 donne 10,1 % et 6,9 %. Les fenêtres d'indices et les séries mensuelles du graphique 2020 ne permettent pas encore d'harmoniser ces mesures. Les deux valeurs sont conservées avec leur provenance, sans correction arbitraire.
+Pour 1973 et 1981, le tableau INSEE/Sénat donne respectivement 9,7 % et 5,2 % de résidu discrétionnaire selon une formule multiplicative explicitée en 1992. Le graphique DGT du rapport 2020 donne 10,1 % et 6,9 % ; le rapport de juin 2009 confirme que cette série est mesurée de juillet à juillet, mais ne fournit pas les fenêtres mensuelles ni l'équation détaillée. Le rapport de décembre 2009 décrit les fenêtres de la règle contemporaine (mai-mai et mars-mars) et le changement de calendrier de 2010, pas la série historique. Les deux conventions sont conservées séparément.
 
 Voir [Réconciliation des séries du SMIC, 1994–2026](../dossiers/smic-series-reconciliation-1994-2026.md) et [moyennes annuelles 1994–2026](../data/smic-annual-averages-1994-2026.csv).
+
+
+**Précision sur les pourcentages 2001–2007 :** la chronologie événementielle retient désormais les variations annuelles publiées dans l'annexe DARES de juin 2009 (4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007, ce dernier chiffre étant donné dans le texte principal et arrondi à 2,1 % dans le tableau). Le ratio des taux horaires affichés au centime reste un contrôle, pas une source de remplacement.
