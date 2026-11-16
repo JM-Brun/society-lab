@@ -2,7 +2,7 @@
 
 - **Dataset audité :** [CSV événementiel](../data/smic-revaluations-1994-2026.csv)
 - **Périmètre :** 42 lignes d'événements, du 1er juillet 1994 au 1er juin 2026.
-- **Date de contrôle :** 15 novembre 2026.
+- **Date de contrôle :** 16 novembre 2026.
 - **Nature du contrôle :** cohérence interne des taux, dates, variations publiées et catégories ; ce contrôle ne remplace pas la vérification de chaque valeur dans le texte réglementaire ou la série source.
 
 ## Synthèse
@@ -37,6 +37,7 @@ Cet écart est expliqué par le passage francs/euros : 40,22 F à 40,72 F corres
 - `gmr_convergence` : convergence des garanties mensuelles de rémunération après la réforme des 35 heures.
 - `calendar_change` : événement lié au déplacement de la date annuelle de revalorisation.
 - Les hausses mixtes ne sont pas étiquetées comme un coup de pouce intégral : seule la fraction discrétionnaire documentée doit être interprétée comme telle.
+- `anticipated_annual_automatic` : revalorisation annuelle automatique appliquée en avance sur son calendrier normal ; le déplacement de date ne constitue pas, à lui seul, un coup de pouce.
 
 ## Limites et suite
 
@@ -48,3 +49,17 @@ Cet écart est expliqué par le passage francs/euros : 40,22 F à 40,72 F corres
 ## Conclusion opérationnelle
 
 Le dataset est exploitable comme chronologie événementielle provisoire, à condition de conserver ses conventions, ses sources et ses limites. Il ne doit pas encore être utilisé comme variable causale brute dans une régression : les ruptures institutionnelles, les dates infra-annuelles, les minima GMR et les changements de formule nécessitent une préparation distincte.
+
+## Contrôle complémentaire du 16 novembre 2026
+
+### Reclassement du 1er novembre 2024
+
+Le 1er novembre 2024 est reclassé de `automatic_inflation_trigger` à `anticipated_annual_automatic`. Le rapport du groupe d'experts du 28 novembre 2024 indique explicitement que le Gouvernement a avancé de deux mois la hausse annuelle attendue en janvier 2025 ; l'estimation provisoire de la formule automatique était de 1,95 %, proche des 2 % appliqués. Il précise qu'aucun coup de pouce n'a été accordé entre janvier 2012 et novembre 2024. La correction porte sur la nature de l'événement, pas sur le taux de 11,88 € ni sur la hausse de 2 %.
+
+### Annonce de décembre 2026
+
+L'annonce de +1,6 % au 1er décembre 2026 est enregistrée dans le dossier, mais exclue du CSV des événements effectifs au 16 novembre. Le taux horaire légal et le texte réglementaire doivent être vérifiés avant ajout. Le nombre d'événements effectifs reste donc 42.
+
+### Couverture des moyennes annuelles
+
+Le nouveau fichier annuel couvre les moyennes officielles 1994–2025 et une moyenne partielle janvier-octobre 2026. Il s'agit d'un objet séparé du CSV événementiel. Les écarts entre taux horaires arrondis, glissements annuels publiés et moyennes annuelles sont conservés et expliqués, non effacés par recalcul mécanique.
