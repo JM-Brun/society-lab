@@ -47,3 +47,15 @@ Le cas belge n'est pas une expérience naturelle parfaite : les régions diffèr
 - **Lacune majeure :** les données disponibles ne permettent pas encore de conclure que le no-platforming améliore l'apprentissage, diminue la polarisation ou réduit l'adhésion aux idées visées. Les données de fréquence des annulations sont elles-mêmes incomplètes.
 
 **Mise à jour de la conclusion :** le meilleur modèle de lutte intellectuelle ne se limite pas à la réfutation. Il combine prévention, correction factuelle, explication alternative, contextualisation du niveau de preuve et limitation raisonnée des formats d'amplification. Le refus de tribune reste une décision institutionnelle à justifier au cas par cas, et non une stratégie dont la supériorité générale serait démontrée.
+
+
+## Mise à jour approfondie — résultats politiques et durabilité (2026-11-17)
+
+- **Cohérence multi-arènes :** Shuttleworth, Brown & Mondon (2025) montrent que la non-coalition peut coexister avec des convergences discursives et programmatiques. Le suivi doit inclure discours, programmes, votes et politiques, pas seulement les coalitions.
+- **Signaux de coalition :** Vanagt et al. (2025), expériences dans quatre contextes (N=5 594), observent un déplacement des clivages affectifs : tolérance accrue chez certains électeurs de centre droit, antipathie accrue chez les électeurs de centre gauche. Cela ne signifie pas que la coopération réduit globalement la polarisation.
+- **Coalition vs coopération ponctuelle :** Gross, Juen & Stecker (2026) trouvent que les électeurs allemands rejettent largement une coalition avec l'AfD, mais acceptent plus souvent certaines coopérations parlementaires limitées. Ces deux objets doivent être séparés.
+- **Fragilité locale :** Miyauchi (2025) documente quatre communes belges où le cordon a été rompu en 2024. Ces cas éclairent la vulnérabilité d'une norme, pas son effet moyen.
+- **Coût de gouvernement :** Riera & Pastor (2022) observent des pertes électorales possibles pour des partis populistes partenaires juniors de coalition. Cela ne démontre pas que le cordon réduit le soutien idéologique.
+- **Prévention :** Simchon et al. (2026) trouvent, dans 33 expériences (N=37 025), une amélioration du discernement sans hausse systématique de la méfiance générale. Maertens et al. (2025) observent une persistance d'un mois pour certains formats avec rappels ; Nygren & Efimova (2025), en contexte scolaire, ne trouvent pas d'effet global à trois mois. La durabilité dépend donc des formats, publics et mesures.
+
+La [matrice de preuves multi-arènes](../dossiers/matrice-preuves-cordon-sanitaire.md) classe ces études par méthode, résultat et limite. Elle confirme que l'on ne peut pas résumer l'efficacité d'un cordon par le seul score électoral ou la seule absence de coalition.
