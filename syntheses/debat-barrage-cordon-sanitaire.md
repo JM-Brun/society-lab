@@ -220,3 +220,35 @@ Deux études quasi expérimentales invitent à ne pas généraliser à partir d'
 Ces résultats sont compatibles : le premier concerne la fermeture d'un service et la substitution entre plateformes ; le second concerne le retrait de comptes à forte capacité de diffusion et la circulation sur le réseau qui les hébergeait. L'évaluation doit donc distinguer la portée sur la plateforme ciblée, la migration, la consommation sur l'ensemble de l'écosystème et les effets comportementaux.
 
 **Conséquence opérationnelle :** ne pas juger une mesure uniquement par la baisse de contenu sur le service qui l'applique. Mesurer simultanément la portée évitée, les relais et migrations, la diffusion secondaire, les usages passifs et les éventuels effets hors ligne. La déplateformisation peut être efficace sur un indicateur et un périmètre tout en laissant subsister, ou déplacer, une partie du phénomène.
+
+## Approfondissement : les mécanismes éditoriaux de normalisation
+
+La recherche ne porte pas uniquement sur l'exposition à un discours non contesté. Elle étudie aussi la façon dont les médias sélectionnent, cadrent, hiérarchisent et mettent en scène les propos d'acteurs radicaux.
+
+### Le cadrage journalistique construit les frontières du dicible
+
+Ekström, Patrona et Thornborrow (2022) analysent des cas en Suède, Grèce, France et Royaume-Uni. Leur analyse qualitative montre que les cadrages de propos racistes ou antidémocratiques contribuent à construire les frontières entre ce qui est présenté comme acceptable et inacceptable. Selon le traitement, le scandale peut délégitimer le propos, mais il peut aussi contribuer à banaliser le cadrage politique qui le porte. Ce résultat est particulièrement pertinent pour notre question : la frontière démocratique ne dépend pas seulement de la présence d'une contradiction explicite, mais aussi de la manière dont le sujet est nommé et contextualisé.
+
+Leur étude de 2020 sur les interviews des Démocrates de Suède examine plus directement les mécanismes de normalisation dans le format de l'interview. Elle apporte une analyse des procédés discursifs, sans mesurer expérimentalement leur effet sur les publics.
+
+### La couverture médiatique peut être une cause partielle de la visibilité politique
+
+Murphy et Devine (2020) étudient la relation entre la couverture de UKIP et son soutien dans les enquêtes d'opinion entre 2004 et 2017. Leur modèle temporel est davantage compatible avec une influence de la couverture médiatique sur le soutien ultérieur qu'avec l'idée que la couverture ne ferait que refléter mécaniquement un soutien déjà acquis. Les auteurs ne prétendent pas que les médias créent seuls le soutien politique : les événements, les enjeux européens et les dynamiques politiques interviennent également. Il s'agit de séries temporelles agrégées, pas d'une expérience individuelle.
+
+### La couverture des actes extrémistes : ni invisibilisation ni banalisation
+
+Richards, Smith et Barton (2024) étudient 683 articles portant sur 72 incidents impliquant des acteurs d'extrême droite en Australie entre 2010 et 2022. Leur approche mixte montre l'intérêt d'analyser les mots employés, les catégories d'acteurs, les faits judiciaires et le contexte idéologique. Elle identifie des cadrages qui peuvent contribuer à neutraliser ou minimiser la portée politique d'activités extrémistes, mais souligne aussi que ces tendances ne sont pas uniformes. Les auteurs précisent que leur travail ne permet pas de conclure que les journalistes seraient systématiquement favorables à ces acteurs.
+
+### Mise à jour de la conclusion médiatique
+
+La littérature convergente invite à ne pas réduire la question à « faut-il inviter ou ne pas inviter ? ». Il faut aussi demander : pourquoi cet acteur est-il invité, sur quel sujet, dans quel format, avec quelle contextualisation, quelle place donnée aux faits vérifiés, quelle hiérarchie éditoriale et quelle circulation secondaire des extraits ?
+
+Une pratique journalistique plus robuste peut combiner :
+1. un critère explicite d'intérêt public, plutôt que la recherche artificielle d'un équilibre entre positions ;
+2. une contextualisation des actes, des affiliations et des propositions ;
+3. la correction factuelle des affirmations fausses, sans nécessairement transformer l'entretien en affrontement permanent ;
+4. des formats d'analyse séparés de l'interview, qui permettent de vérifier les affirmations et d'expliquer les mécanismes ;
+5. une attention à la proportion de couverture et à la réutilisation des séquences ;
+6. une démarcation claire des organisations ou projets explicitement antidémocratiques, sans assimiler automatiquement tous leurs électeurs à leurs dirigeants.
+
+Cette combinaison constitue une recommandation éditoriale informée par plusieurs types de travaux ; elle n'a pas encore été validée comme un paquet d'intervention unique par un essai comparatif.
