@@ -1,0 +1,19 @@
+id: CLAIM-ACADEMIC-SPEECH-RESTRICTION-MOTIVES-2025
+statement: "Dans les expériences d'enquête étudiantes allemandes étudiées, les préférences de restriction de la parole académique peuvent être motivées à la fois par des préoccupations prosociales liées au préjudice et par une discrimination selon le point de vue."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["Allemagne"]
+  period: "Trois expériences d'enquête publiées en 2025"
+  conditions: "Vignettes variant l'orientation idéologique, le statut académique, les recommandations et le préjudice social."
+domain_ids: ["DOMAIN-EDUCATION", "DOMAIN-INSTITUTIONS", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-DIEHL-ETAL-2025-ACADEMIC-FREEDOM"]
+supporting_evidence:
+  - "Les expériences examinent des motifs prosociaux et des préférences discriminatoires selon le point de vue."
+limitations:
+  - "Mesure des préférences déclarées dans des scénarios hypothétiques, non les effets réels d'une annulation ou d'un refus de tribune."
+  - "Contexte universitaire allemand ; transposition à d'autres institutions à établir."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; ne pas assimiler les demandes de restriction aux décisions institutionnelles effectives."
+last_reviewed: "2026-11-17"
