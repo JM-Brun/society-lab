@@ -225,6 +225,21 @@ Un lien Markdown vers la synthèse des stratégies de réponse aux idées antid�
 
 La PR #87, consacrée à l'audit Bazen & Skourias et à l'intégration de l'audit Cottet 2024, doit rester ouverte jusqu'à ce que ses changements scientifiques et les contrôles automatisés soient vérifiés. La correction de syntaxe du registre ne suffit pas à elle seule à considérer la PR comme validée.
 
+**Résultat du chantier de fiabilisation sur la branche de consolidation :** la CI est passée au vert le 17 novembre 2026 (exécution [44057887088](https://github.com/JM-Brun/society-lab/actions/runs/44057887088)). Les contrôles des registres et du graphe, des correspondances dossiers/synthèses, de la fraîcheur documentaire, des 50 tests unitaires et des schémas JSON ont réussi.
+
+Les corrections techniques associées comprennent :
+- séparation des entrées concaténées dans les registres YAML ;
+- harmonisation des types d'études, des types de sources et des statuts d'affirmations ;
+- prise en charge de la précision réelle des dates bibliographiques (année, année-mois ou date complète), sans inventer de jour ;
+- ajout des domaines et tags effectivement utilisés, et d'un registre de concepts contrôlé par la CI ;
+- enregistrement des dossiers spécialisés et du jeu de données des moyennes annuelles du SMIC ;
+- réconciliation des identifiants du graphe et ajout des affirmations/hypothèses documentées qui lui manquaient ;
+- ajout des métadonnées et sections communes aux synthèses du cordon sanitaire et des stratégies de réponse ;
+- réorientation d'un ancien « protocole expérimental » vers une revue documentaire des expériences déjà publiées ;
+- correction de deux tests historiques du SMIC : résidu 2007 recalculé à 0,060 point à partir de 2,05 − 0,79 − 1,20 ; note 1978 conservée intégralement dans le CSV et explicitement sourcée.
+
+Cette réussite concerne la branche de consolidation et sa PR #88 ; elle ne signifie pas que toutes les lacunes scientifiques décrites dans cet audit sont résolues. La PR #87 reste une contribution distincte à relire et à intégrer après actualisation de sa branche sur la base des corrections communes.
+
 Autres points de maintenance :
 - Vérifier les correspondances entre dossiers, synthèses et registres.
 - Contrôler les identifiants historiques avant tout renommage : un identifiant ancien peut être référencé dans plusieurs registres ou dans le graphe.
