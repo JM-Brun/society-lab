@@ -1,0 +1,19 @@
+id: CLAIM-FALSE-BALANCE-DISTORTS-CONSENSUS-PERCEPTION-2016
+statement: "Présenter artificiellement deux positions comme équivalentes peut déformer la perception du niveau de consensus parmi les experts."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["États-Unis"]
+  period: "Expériences publiées en 2016"
+  conditions: "Expériences comparant présentation équilibrée de deux experts et information sur la répartition réelle du consensus."
+domain_ids: ["DOMAIN-MEDIA", "DOMAIN-SCIENCE"]
+source_ids: ["SOURCE-KOEHLER-2016-FALSE-BALANCE"]
+supporting_evidence:
+  - "Les expériences montrent que le format de présentation influence les perceptions du consensus expert."
+limitations:
+  - "Stimuli et jugements de consensus dans un cadre expérimental circonscrit."
+  - "Ne constitue pas une preuve que tout débat contradictoire produit un faux équilibre."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; la qualité d'une contradiction doit refléter l'asymétrie réelle des preuves."
+last_reviewed: "2026-11-17"
