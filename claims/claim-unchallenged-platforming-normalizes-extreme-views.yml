@@ -1,7 +1,7 @@
 id: CLAIM-UNCHALLENGED-PLATFORMING-NORMALIZES-EXTREME-VIEWS
 statement: "Dans les contextes expérimentaux étudiés, l'exposition non contestée à des prises de parole de militants d'extrême droite peut accroître l'adhésion à certaines positions et leur normalisation sociale perçue."
 claim_type: causal
-status: partially_supported
+status: under_review
 scope:
   geography: ["Royaume-Uni", "Australie"]
   population: "Participants adultes aux expériences population-based"
@@ -18,9 +18,7 @@ limitations:
   - "Pas de condition d'analyse indépendante sans promoteur."
   - "Pas de suivi à long terme permettant d'établir la persistance."
   - "Ne permet pas de conclure à un effet universel de toute tribune ou de tout débat."
-confidence:
-  probability: 0.75
-  rationale: "Confiance modérée à élevée dans l'existence d'un effet dans les conditions expérimentales rapportées ; confiance nettement plus faible pour une généralisation à d'autres formats et contextes."
+
 provenance:
   - origin: ai_suggested
     note: "Fiche de travail créée à partir de la revue ciblée ; vérification des tableaux et tailles d'effet à poursuivre."
