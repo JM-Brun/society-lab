@@ -204,3 +204,15 @@ La stratégie la plus défendable n'est donc ni le silence systématique ni l'in
 3. Distinguer l'audience directe, les extraits viraux, la couverture secondaire et les migrations inter-plateformes.
 4. Mesurer séparément croyances, normes descriptives, respectabilité du promoteur, polarisation affective et confiance dans les médias.
 5. Répliquer les résultats hors des contextes australien, britannique et américain, notamment en France et dans d'autres environnements médiatiques européens.
+
+
+### Un contrepoint important sur la déplateformisation : Parler et Twitter
+
+Deux études quasi expérimentales invitent à ne pas généraliser à partir d'un seul événement.
+
+- **Horta Ribeiro et al. (2023)** étudient la mise hors ligne de Parler. Les utilisateurs actifs se reportent vers d'autres plateformes marginales ; l'activité totale mesurée sur l'ensemble de ces plateformes ne diminue pas significativement.
+- **McCabe et al. (2024)** étudient le retrait d'environ 70 000 comptes diffuseurs de désinformation sur Twitter après le 6 janvier 2021. La circulation de désinformation diminue sur Twitter, y compris parmi les abonnés des comptes retirés. Les auteurs précisent toutefois que les événements concomitants empêchent d'identifier précisément l'ampleur causale.
+
+Ces résultats sont compatibles : le premier concerne la fermeture d'un service et la substitution entre plateformes ; le second concerne le retrait de comptes à forte capacité de diffusion et la circulation sur le réseau qui les hébergeait. L'évaluation doit donc distinguer la portée sur la plateforme ciblée, la migration, la consommation sur l'ensemble de l'écosystème et les effets comportementaux.
+
+**Conséquence opérationnelle :** ne pas juger une mesure uniquement par la baisse de contenu sur le service qui l'applique. Mesurer simultanément la portée évitée, les relais et migrations, la diffusion secondaire, les usages passifs et les éventuels effets hors ligne. La déplateformisation peut être efficace sur un indicateur et un périmètre tout en laissant subsister, ou déplacer, une partie du phénomène.
