@@ -144,3 +144,10 @@ Voir la [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) : ell
 ## Mise à jour — réfutation, prévention et no-platforming
 
 La [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) intègre désormais une méta-analyse de 33 expériences de pré-bunking, six expériences comparant correction et explication alternative, des travaux sur le faux équilibre et trois expériences d'enquête sur les motifs de restriction de la liberté académique. Ces travaux affinent la stratégie sans démontrer une supériorité générale du refus de tribune.
+
+
+## Nouveau chantier expérimental comparatif (17 novembre 2026)
+
+Une lacune importante est désormais documentée dans un [protocole expérimental autonome](protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) et sa [synthèse dédiée](../syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md). Il compare cinq interventions (discours non contesté, débat contradictoire, analyse sans promoteur, pédagogie, explication alternative) et ajoute un témoin sans exposition.
+
+Les suivis sont prévus immédiatement, à une semaine et à un mois. Les critères incluent l'exactitude, la normalisation, le transfert de compétence critique, la réactance et la tolérance à la contradiction. Il s'agit d'un protocole à préenregistrer, pas d'une expérience déjà menée. Le classement des stratégies reste ouvert.
