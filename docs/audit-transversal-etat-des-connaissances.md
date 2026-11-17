@@ -219,7 +219,7 @@ Exemples de chaînes à développer :
 
 ## 7. État technique et maintenance
 
-L'audit du dépôt a identifié deux erreurs de structure : une entrée concaténée dans research/studies/registry.yml et une entrée concaténée dans sources/registry.yml. Ces séparations ont été corrigées dans la branche de consolidation ; la correction du registre des études a également été portée sur la branche de la PR #87. Les contrôles suivants doivent encore confirmer la validité de l'ensemble des registres.
+L'audit du dépôt a identifié des entrées concaténées dans quatre registres YAML : claims/registry.yml, hypotheses/registry.yml, research/studies/registry.yml et sources/registry.yml. Les séparations ont été corrigées dans la branche de consolidation. Les corrections des registres claims et hypotheses étaient déjà présentes dans la branche de la PR #87 ; celle du registre des études y a également été portée. Les contrôles suivants doivent encore confirmer la cohérence sémantique de l'ensemble des registres et du graphe. Les contrôles suivants doivent encore confirmer la validité de l'ensemble des registres.
 
 Un lien Markdown vers la synthèse des stratégies de réponse aux idées antidémocratiques dans le README était mal formé. Il doit être corrigé dans la même série de maintenance.
 
