@@ -1,7 +1,7 @@
 id: CLAIM-CAUSAL-ALTERNATIVE-IMPROVES-CORRECTION
 statement: "Dans certains paradigmes expérimentaux de désinformation, fournir une explication causale alternative cohérente réduit davantage l'influence persistante de l'information erronée qu'un simple démenti."
 claim_type: causal
-status: partially_supported
+status: under_review
 scope:
   geography: ["États-Unis", "International"]
   population: "Participants à des expériences de psychologie cognitive et politique"
@@ -19,9 +19,7 @@ limitations:
   - "Ne démontre pas que toute alternative explicative est supérieure à toute correction factuelle."
   - "Ne compare pas les formats de débat ni la présence du promoteur."
   - "La mémoire de la correction et l'utilisation inférentielle sont des résultats distincts."
-confidence:
-  probability: 0.7
-  rationale: "Confiance modérée dans un bénéfice de l'alternative explicative dans certains paradigmes ; généralisation à des débats politiques réels encore incertaine."
+
 provenance:
   - origin: ai_suggested
     note: "Fiche provisoire fondée sur une revue ciblée ; extraction des effets chiffrés et réplication à vérifier."
