@@ -1,0 +1,27 @@
+id: CLAIM-UNCHALLENGED-PLATFORMING-NORMALIZES-EXTREME-VIEWS
+statement: "Dans les contextes expérimentaux étudiés, l'exposition non contestée à des prises de parole de militants d'extrême droite peut accroître l'adhésion à certaines positions et leur normalisation sociale perçue."
+claim_type: causal
+status: partially_supported
+scope:
+  geography: ["Royaume-Uni", "Australie"]
+  population: "Participants adultes aux expériences population-based"
+  period: "Expériences publiées en 2025"
+  conditions: "Extraits audio d'entretiens non contestés ; résultats circonscrits aux stimuli et mesures étudiés."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA"]
+source_ids: ["SOURCE-BOLET-FOOS-2025-MEDIA-PLATFORMING"]
+supporting_evidence:
+  - "Deux expériences trouvent des hausses de l'adhésion à certaines positions et de la perception de leur soutien social après exposition non contestée."
+counter_evidence:
+  - "L'entretien contradictoire atténue certains effets personnels dans le volet britannique."
+best_counterargument: "Les effets mesurés peuvent dépendre des thèmes, des intervenants, du média et du public ; une interview critique peut réduire l'adhésion et offrir au public des éléments de réfutation."
+limitations:
+  - "Pas de condition d'analyse indépendante sans promoteur."
+  - "Pas de suivi à long terme permettant d'établir la persistance."
+  - "Ne permet pas de conclure à un effet universel de toute tribune ou de tout débat."
+confidence:
+  probability: 0.75
+  rationale: "Confiance modérée à élevée dans l'existence d'un effet dans les conditions expérimentales rapportées ; confiance nettement plus faible pour une généralisation à d'autres formats et contextes."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche de travail créée à partir de la revue ciblée ; vérification des tableaux et tailles d'effet à poursuivre."
+last_reviewed: "2026-11-17"
