@@ -80,3 +80,14 @@ Les flèches ne doivent pas être interprétées comme une causalité démontré
 ## 6. Limites de cette matrice
 
 La sélection est ciblée et non exhaustive. Les études diffèrent par leurs unités d'analyse, leurs populations, leurs pays, leurs temporalités et leurs résultats. Les expériences d'enquête identifient des effets de scénarios ou de stimuli, pas les conséquences d'une politique institutionnelle de plusieurs années. Les études de cas éclairent les mécanismes mais ne fournissent pas toujours de contrefactuel. Une revue systématique complète devra documenter les bases interrogées, les chaînes de recherche, les critères d'inclusion, les doublons, le risque de biais et les données extraites.
+
+## 7. Complément — médias, interviews et déplateformisation (17 novembre 2026)
+
+| Étude | Méthode / terrain | Résultat utile | Portée et limite |
+|---|---|---|---|
+| Thompson & Sengul (2025), *The Platforming is the Point*, DOI [10.1177/20570473251334840](https://doi.org/10.1177/20570473251334840) | Revue critique et deux études de cas d'interviews aux États-Unis | Une interview adversariale peut malgré tout fournir visibilité, audience et séquences réutilisables ; recommandations de proportionnalité et d'intérêt public | Analyse qualitative et normative, pas estimation causale moyenne |
+| *Deplatforming did not decrease Parler users’ activity on fringe social media* (2023), [PNAS Nexus](https://pmc.ncbi.nlm.nih.gov/articles/PMC10029837/) | Panels longitudinaux (N=112 705) et différences-de-différences (N=996) | Après la mise hors ligne de Parler, les utilisateurs actifs se reportent vers d'autres plateformes marginales ; pas de baisse de l'activité totale sur ces plateformes | Retrait d'une plateforme entière aux États-Unis ; ne mesure pas directement persuasion ou dommages hors ligne |
+
+### Lecture complémentaire
+
+Ces travaux renforcent deux précautions sans trancher le débat général. Premièrement, une interview contradictoire peut corriger certains effets de persuasion tout en offrant une visibilité exploitable : le résultat d'audience ne se déduit pas des seules attitudes mesurées. Deuxièmement, la déplateformisation doit être évaluée à l'échelle de l'écosystème et non du seul service qui bannit. Ces études ne comparent pas directement les trois options centrales (interview contradictoire, analyse indépendante sans promoteur, absence de tribune).
