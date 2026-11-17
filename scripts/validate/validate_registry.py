@@ -19,6 +19,7 @@ REGISTRIES = [
     ("hypotheses/registry.yml", "hypotheses", "HYPOTHESIS", "schemas/hypothesis.schema.json"),
     ("forecasts/registry.yml", "forecasts", "FORECAST", "schemas/forecast.schema.json"),
     ("dossiers/registry.yml", "dossiers", "DOSSIER", "schemas/dossier.schema.json"),
+    ("knowledge/concepts/registry.yml", "concepts", "CONCEPT", "schemas/concept.schema.json"),
 ]
 
 
