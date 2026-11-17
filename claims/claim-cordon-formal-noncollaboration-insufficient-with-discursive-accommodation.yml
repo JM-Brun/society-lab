@@ -1,0 +1,21 @@
+id: CLAIM-CORDON-FORMAL-NONCOLLABORATION-INSUFFICIENT-WITH-DISCURSIVE-ACCOMMODATION
+statement: "Un engagement formel de non-coalition peut coexister avec une normalisation discursive de thèmes et cadrages de la droite radicale par les partis établis ; le seul indicateur de non-collaboration ne suffit donc pas à mesurer la cohérence d'un cordon."
+claim_type: interpretive
+status: under_review
+scope:
+  geography: ["France", "Allemagne", "Royaume-Uni"]
+  population: "Partis établis, partis de droite radicale et espaces de débat public"
+  period: "Études de cas contemporaines"
+  conditions: "Analyse comparative de discours, politiques et pratiques de coopération."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-SHUTTLEWORTH-BROWN-MONDON-2025-PRETENCE-CORDON"]
+supporting_evidence:
+  - "L'étude compare les cas français, allemand et britannique et identifie des convergences discursives et programmatiques malgré les engagements formels de non-coalition."
+limitations:
+  - "Analyse comparative et discursive ; ne fournit pas une estimation causale de l'effet de cette congruence sur le vote."
+  - "Les frontières entre mainstream et droite radicale sont disputées et historiquement situées."
+best_counterargument: "Des convergences programmatiques peuvent résulter de contraintes électorales ou de réponses à des problèmes publics, sans signifier une alliance idéologique complète."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; interprétation des auteurs, à confronter aux cas et aux données primaires."
+last_reviewed: "2026-11-17"
