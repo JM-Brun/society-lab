@@ -161,3 +161,8 @@ Les travaux récents invitent à évaluer la cohérence entre médias, partis, P
 ## Front commun et cohésion sociale
 
 Les travaux de Kollberg & Bantel (2026) ajoutent un coût potentiel à surveiller : une rhétorique coordonnée négative peut renforcer la polarisation affective envers le parti radical et ses électeurs. Il faut préserver la distinction entre démarcation normative, critique des dirigeants et stigmatisation des électeurs.
+
+
+## Méthode et état du chantier
+
+Un [protocole de revue systématique de portée](../dossiers/protocole-revue-systematique-cordon-sanitaire.md) définit les recherches à exécuter, les critères d'inclusion, l'extraction et l'évaluation du risque de biais. La revue n'est pas encore exécutée ; les résultats actuels relèvent d'une revue ciblée.
