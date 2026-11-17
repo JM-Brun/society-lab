@@ -151,3 +151,8 @@ La [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) intègre d
 Une lacune importante est désormais documentée dans un [protocole expérimental autonome](protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) et sa [synthèse dédiée](../syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md). Il compare cinq interventions (discours non contesté, débat contradictoire, analyse sans promoteur, pédagogie, explication alternative) et ajoute un témoin sans exposition.
 
 Les suivis sont prévus immédiatement, à une semaine et à un mois. Les critères incluent l'exactitude, la normalisation, le transfert de compétence critique, la réactance et la tolérance à la contradiction. Il s'agit d'un protocole à préenregistrer, pas d'une expérience déjà menée. Le classement des stratégies reste ouvert.
+
+
+## Mise à jour — le cordon est multi-arènes (2026-11-17)
+
+Les travaux récents invitent à évaluer la cohérence entre médias, partis, Parlement et gouvernement, et pas seulement les accords de coalition. Les signaux de coopération peuvent déplacer les clivages affectifs ; les citoyens distinguent coalition et coopération ponctuelle ; les convergences discursives des partis établis peuvent affaiblir la démarcation formelle. La [matrice de preuves multi-arènes](../dossiers/matrice-preuves-cordon-sanitaire.md) détaille ces résultats et leurs limites.
