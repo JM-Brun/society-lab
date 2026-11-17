@@ -83,3 +83,27 @@ Le plan à six bras compare des stratégies complètes ; il ne permet pas d'isol
 - Porter & Wood (2020) : https://pmc.ncbi.nlm.nih.gov/articles/PMC7447737/
 - Walter & Murphy (2018) : https://pmc.ncbi.nlm.nih.gov/articles/PMC5673564/
 - Udry & Barber (2024) : https://doi.org/10.1016/j.copsyc.2023.101736
+
+
+## Mise à jour de la revue ciblée (17 novembre 2026)
+
+### Résultats ajoutés
+
+- **Bolet & Foos (2025)** constitue la comparaison directe la plus proche : entretien non contesté vs entretien critique, à partir d'entretiens réels en Australie et au Royaume-Uni. L'entretien critique réduit l'effet sur l'adhésion personnelle dans l'expérience britannique, mais un effet résiduel de normalisation sociale demeure. L'étude ne teste pas l'analyse indépendante sans promoteur et ne mesure pas les effets à long terme en raison du débriefing éthique immédiat. https://doi.org/10.1017/S0007123425000195
+- **Nyhan & Reifler (2015)** : une explication causale alternative peut être plus efficace qu'un simple démenti pour réduire l'influence d'une fausse information. https://doi.org/10.1017/S175577391500012X
+- **Buczel et al. (2025)** : deux expériences (N=441) montrent qu'une alternative explicative améliore la correction initiale, mais que l'utilisation inférentielle de la fausse information peut réaugmenter au cours de sept jours. https://doi.org/10.1177/17470218251336232
+- **Maertens et al. (2021)** : trois expériences longitudinales sur l'inoculation (*Bad News*) indiquent un effet de résistance observable jusqu'à trois mois dans l'une des expériences. https://doi.org/10.1037/xap0000315
+- **Six expériences préenregistrées sur le bypassing versus correction** suggèrent que renforcer une croyance alternative peut parfois davantage modifier attitudes et intentions qu'une simple négation. https://doi.org/10.1037/xge0001687
+
+### Modifications à apporter au protocole
+
+1. Faire de B vs C le contraste central : débat contradictoire avec promoteur versus analyse critique indépendante sans promoteur.
+2. Séparer explicitement persuasion personnelle et normalisation sociale ; une intervention peut agir différemment sur ces deux dimensions.
+3. Ajouter une tâche de raisonnement inférentiel pour mesurer si une information erronée continue d'être utilisée après que le participant a reconnu sa fausseté.
+4. Renforcer le bras E : l'alternative doit restaurer une explication causale cohérente, et non se limiter à une contre-affirmation.
+5. Mesurer le transfert sur des exemples nouveaux, politiquement variés et provenant de camps différents.
+6. Garder J7 et J30 ; envisager J90 dans une extension longitudinale.
+
+### Conclusion actualisée
+
+La revue ciblée confirme la pertinence du projet mais ne permet toujours pas de classer les stratégies. La lacune précise est la comparaison contrôlée B vs C, avec suivi de la normalisation, de l'utilisation inférentielle des informations corrigées et du transfert critique. Il s'agit d'une revue ciblée et non d'une revue systématique exhaustive.
