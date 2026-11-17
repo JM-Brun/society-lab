@@ -1,0 +1,19 @@
+id: CLAIM-COALITION-SIGNALS-CORDON-NOT-SYSTEMATIC-CONTEXT-2025
+statement: "Dans les expériences comparatives menées en Allemagne, Flandre, Espagne et Autriche, l'existence d'un cordon piloté par les élites ne modère pas systématiquement les effets des signaux de coopération avec la droite radicale."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["Allemagne", "Flandre", "Espagne", "Autriche"]
+  period: "Étude publiée en 2025"
+  conditions: "Expériences d'enquête sur les signaux de coalition ; N=5 594."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-COALITION-SIGNALS-FOUR-COUNTRIES-2025"]
+supporting_evidence:
+  - "Les auteurs ne trouvent pas d'indication que le cordon piloté par les élites modère systématiquement les effets des signaux de coalition."
+limitations:
+  - "Les scénarios expérimentaux ne sont pas des coalitions réelles."
+  - "L'absence de modération systématique n'implique pas que les normes de cordon n'aient aucun effet dans la durée."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; ne pas interpréter l'absence d'interaction détectée comme une preuve d'absence d'effet."
+last_reviewed: "2026-11-17"
