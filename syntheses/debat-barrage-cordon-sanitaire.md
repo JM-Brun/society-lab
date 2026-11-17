@@ -252,3 +252,33 @@ Une pratique journalistique plus robuste peut combiner :
 6. une démarcation claire des organisations ou projets explicitement antidémocratiques, sans assimiler automatiquement tous leurs électeurs à leurs dirigeants.
 
 Cette combinaison constitue une recommandation éditoriale informée par plusieurs types de travaux ; elle n'a pas encore été validée comme un paquet d'intervention unique par un essai comparatif.
+
+
+## Volet médias — analyse indépendante ou interview contradictoire ? (17 novembre 2026)
+
+### Ce que les preuves permettent de dire
+
+Les données ne justifient pas une opposition simpliste entre « répéter une fausse idée la renforce toujours » et « il ne faut jamais donner la parole ». Trois résultats doivent être distingués :
+
+1. **La contradiction en présence du promoteur peut réduire la normalisation sans nécessairement l'annuler.** Bolet & Foos (2025) observent que l'interview contradictoire atténue certains effets d'une interview non contestée, mais l'étude ne teste pas une analyse indépendante sans promoteur.
+2. **Une explication alternative peut être plus efficace qu'une simple négation.** Six expériences préenregistrées de Granados Samayoa et Albarracín (2025) indiquent que le « bypassing » — renforcer une croyance alternative qui conduit à une conclusion opposée — modifie généralement davantage les attitudes et intentions qu'une simple correction par négation. Cet avantage dépend toutefois de la formation initiale des attitudes et n'a pas été testé sur des interviews d'acteurs extrémistes.
+3. **Répéter une affirmation fausse dans une correction ne provoque pas systématiquement un effet boomerang.** Ecker et al. (2020), trois expériences et N=1 718, trouvent globalement peu d'éléments en faveur d'un effet de familiarité-boomerang, y compris pour des affirmations nouvelles. Il reste possible que la correction soit oubliée, que la fausse information continue d'influencer le raisonnement ou que la répétition contribue à sa circulation.
+
+Horvath et al. (2024), sur une affirmation de campagne britannique et N=1 841, montrent qu'un fact-check cohérent intégrant une explication causale alternative corrige les croyances à court terme, mais que l'effet n'est plus détectable environ une semaine plus tard. L'attribution à un fact-checker indépendant ou à un journal partisan ne produit pas de différence statistiquement significative. Brashier et al. (2021), dans deux expériences (N=2 683), constatent que corriger après la lecture améliore davantage le discernement à une semaine que signaler la véracité avant ou pendant la lecture.
+
+### Conclusion provisoire
+
+**L'analyse indépendante est une option éditoriale plausible, mais sa supériorité sur l'interview contradictoire n'est pas démontrée directement.** Les résultats disponibles soutiennent plutôt une règle de conception : rendre l'information vérifiable, fournir un récit causal alternatif, éviter la simple négation, contextualiser la source et mesurer séparément la correction des croyances et la visibilité donnée au promoteur.
+
+L'argument « il est beaucoup plus difficile de débunker une idée une fois qu'elle a été exprimée » est trop général. Il confond familiarité, croyance, mémorisation, influence inférentielle et amplification. Les travaux expérimentaux recensés ne montrent pas que toute répétition d'une affirmation fausse entraîne un effet boomerang ; ils montrent plutôt que la correction peut être efficace mais fragile dans le temps. La question de la tribune accordée à un acteur extrémiste relève en outre d'un mécanisme supplémentaire : l'accroissement de sa visibilité, de sa respectabilité perçue ou de la popularité sociale de ses idées.
+
+### Ce qui manque pour trancher
+
+Aucune étude recensée ne compare directement, à contenu et durée équivalents, une interview contradictoire où le promoteur parle, une analyse indépendante sans sa voix ni son image, une correction avec explication alternative et un témoin sans exposition. Le protocole expérimental à six bras décrit dans le dossier doit donc être conservé, avec plusieurs sujets et promoteurs, des mesures séparées et un suivi à 7 et 30 jours.
+
+### Sources ajoutées
+
+- Granados Samayoa & Albarracín (2025), https://doi.org/10.1037/xge0001687
+- Horvath et al. (2024), https://doi.org/10.37016/mr-2020-132
+- Ecker, Lewandowsky & Chadwick (2020), https://doi.org/10.1186/s41235-020-00241-6
+- Brashier et al. (2021), https://doi.org/10.1073/pnas.2020043118
