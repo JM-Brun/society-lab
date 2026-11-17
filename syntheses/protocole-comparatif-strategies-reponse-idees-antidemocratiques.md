@@ -112,3 +112,8 @@ La revue ciblée confirme la pertinence du projet mais ne permet toujours pas de
 ## Matrice de preuves
 
 La [matrice de preuves comparative](../dossiers/matrice-preuves-strategies-reponse.md) classe les études selon leur proximité avec la question, leurs interventions, leurs résultats, leur temporalité et leurs limites. Elle confirme que Bolet & Foos est la comparaison la plus directement pertinente, mais ne résout pas le contraste débat avec promoteur vs analyse indépendante sans promoteur.
+
+
+## Phase 2 : isoler les mécanismes
+
+Le dossier propose une phase 2 factorielle 2 × 2 qui croise présence du promoteur (oui/non) et contenu correctif (oui/non), avec un cinquième bras sans exposition si les moyens le permettent. Ce plan distingue l'effet principal de la présence, celui de la correction et leur interaction. Il complète, sans la remplacer, la phase 1 à six bras qui compare des stratégies éditoriales complètes. La puissance doit être calculée pour l'interaction ; les mesures d'adhésion, de normalisation, de mémoire et d'usage inférentiel restent distinctes.
