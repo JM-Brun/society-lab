@@ -76,3 +76,11 @@ Ces résultats montrent que les marges d'ajustement dépendent du contexte, de l
 ## 5. Prochaine priorité de recherche
 
 Rechercher des données et travaux français récents exploitant l'exposition sectorielle/entreprise aux hausses 2021–2024, avec résultats spécifiques aux moins de 26 ans, peu diplômés, contrats courts et entrants. Évaluer séparément le rôle des exonérations et celui des hausses de salaire brut. Ne pas confondre corrélations descriptives DARES avec effets causaux.
+
+## Complément d'audit intégré depuis les PR #87 et #89 (17 novembre 2026)
+
+La revue secondaire de Neumark & Wascher (2007, pp. 131–132) précise que Bazen & Skourias utilisent 32 secteurs, les jeunes de 15 à 24 ans, et une variable de résultat correspondant à la part des jeunes dans l'emploi sectoriel. L'exposition est mesurée par la proportion de salariés du secteur rémunérés sous le niveau du SMIC de juin 1981. Les comparaisons portent notamment sur octobre 1980–octobre 1981, mars 1981–mars 1982 et mars 1980–mars 1984.
+
+Deux critiques de spécification doivent rester attachées au résultat : l'échelle de la variable dépendante (variation d'une part) ne correspond pas à celle du contrôle (croissance en pourcentage de l'emploi sectoriel total) ; la mesure d'exposition de juin 1981 est réutilisée pour une fenêtre longue qui couvre d'autres hausses du SMIC. Le rapport IMK (2008, p. 23) formule une lecture plus réservée : faible robustesse des spécifications 1981 et absence de contrôle des politiques du marché du travail sur la fenêtre longue. La baisse descriptive de la part des jeunes de 14,6 % à 12,9 % entre mars 1980 et mars 1984 ne constitue pas une estimation causale.
+
+Le texte intégral original, les coefficients, erreurs-types, intervalles de confiance et tests de pré-tendances ne sont toujours pas disponibles dans le corpus vérifiable. La confiance causale reste donc faible ; aucun nombre d'emplois détruits ne peut être calculé.

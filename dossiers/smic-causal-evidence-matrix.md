@@ -540,3 +540,14 @@ La fiche détaillée est dans [smic-bazen-skourias-1997-audit-etudes-recentes.md
 | OCDE (2025) | Bas salaires, mobilité, fiscalité et coût employeur | Compression du bas de distribution, mobilité interentreprises plus faible, risques de sortie et mécanismes de trappe | Comparaison descriptive et simulations socio-fiscales, pas estimation causale d'une hausse donnée |
 
 **Règle de lecture renforcée :** aucune étude sur une baisse de cotisations patronales (Cottet, Bunel et al.) ne doit être comptée comme estimation de l'effet du SMIC brut. Les études de trajectoires et les modèles structurels ne sont pas des évaluations causales ex post. Les résultats des années 1980 ne sont pas extrapolables mécaniquement à 2021–2025.
+
+
+## Complément — crédit d'embauche « zéro charges » (Cahuc, Carcillo & Le Barbanchon, 2019)
+
+Cette étude évalue une aide temporaire et non anticipée aux **nouvelles embauches** sous 1,6 SMIC dans les entreprises de moins de 10 ETP, annoncée en décembre 2008 et identifiée principalement sur 2009. La différence-de-différences compare les entreprises de 6 à moins de 10 ETP à celles de 10 à moins de 14 ETP ; une stratégie instrumentale sur cellules zone d'emploi × secteur apporte un contrôle complémentaire.
+
+**Résultats :** environ +0,8 point de croissance de l'emploi et +0,9 point d'heures dans les entreprises traitées ; l'effet est concentré sur les emplois éligibles. L'élasticité d'environ −4 [−6 ; −2] concerne le coût des seuls nouveaux entrants subventionnés ; l'élasticité recalculée pour une variation du coût de tous les salariés est proche de −1 [−1,5 ; −0,5].
+
+**Limite décisive :** ce crédit d'embauche local, temporaire et déployé pendant la crise de 2008–2009 n'est ni une hausse du SMIC brut, ni un allègement permanent général, ni une étude spécifique aux jeunes. Il informe le canal des aides à l'embauche, pas l'effet causal global des revalorisations du SMIC.
+
+Audit détaillé : [Cahuc, Carcillo & Le Barbanchon (2019)](smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md). Source primaire : https://docs.iza.org/dp11248.pdf ; publication : https://doi.org/10.1093/restud/rdy011.

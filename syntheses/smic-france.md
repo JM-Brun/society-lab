@@ -16,6 +16,7 @@ related_dossiers:
   - "dossiers/smic-quantitative-update-2026.md"
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
+  - "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
   - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
   - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
@@ -545,3 +546,12 @@ Les travaux français complémentaires ne mesurent pas tous le même traitement 
 **Conclusion actualisée :** le signal négatif de 1981 demeure ciblé, historiquement intéressant mais insuffisamment audité dans son texte original et contesté sur des choix de spécification. Les évaluations plus récentes confirment l'importance des coûts employeurs, allègements, transitions et hétérogénéités, mais ne permettent toujours pas d'identifier un effet causal global récent du SMIC sur l'emploi des jeunes.
 
 Sources principales : Bazen & Skourias (1997), https://doi.org/10.1016/S0014-2921(97)00004-4 ; Neumark & Wascher (2007), https://www.academia.edu/42158819/Neumark ; Simonnet & Terracol (2009), https://www.persee.fr/doc/estat_0336-1454_2009_num_429_1_8065 ; Bunel et al. (2009), https://www.persee.fr/doc/estat_0336-1454_2009_num_429_1_8064 ; Cottet (2024), https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or ; Gorry (2013), https://doi.org/10.1016/j.euroecorev.2013.08.004 ; DG Trésor (2025), https://www.tresor.economie.gouv.fr/Articles/06d82898-9d76-4539-8b29-53ba0f35e393 ; OCDE (2025), https://doi.org/10.1787/82539f44-en.
+
+
+## Crédit d'embauche « zéro charges » — preuve distincte du SMIC brut (17 novembre 2026)
+
+Cahuc, Carcillo & Le Barbanchon (2019) évaluent le crédit temporaire annoncé en décembre 2008 pour les nouvelles embauches à bas salaire dans les entreprises de moins de dix ETP. La DiD autour du seuil de dix salariés estime environ +0,8 point de croissance de l'emploi et +0,9 point d'heures en 2009, avec un effet concentré sur les postes éligibles. L'élasticité de −4 [−6 ; −2] concerne le coût des seuls nouveaux entrants subventionnés ; elle est proche de −1 [−1,5 ; −0,5] lorsque le coût de tous les salariés varie.
+
+Cette étude constitue une preuve sur une aide temporaire aux embauches marginales en période de crise. Elle ne mesure ni l'effet d'une hausse du SMIC brut, ni celui d'un allègement permanent général, et ne fournit pas de résultat spécifique aux jeunes. Elle ne change donc pas la conclusion générale : le corpus ne permet toujours pas d'identifier un effet causal net unique des revalorisations récentes du SMIC sur l'emploi agrégé.
+
+Voir la [matrice causale](../dossiers/smic-causal-evidence-matrix.md) et l'[audit détaillé](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md).

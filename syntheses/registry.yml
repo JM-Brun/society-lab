@@ -79,3 +79,7 @@ dossiers:
     dossier_path: "dossiers/un-commun-accord-assemblee-citoyenne.md"
     synthesis_id: "SYNTHESIS-POLITICS-UN-COMMUN-ACCORD"
     synthesis_path: "syntheses/un-commun-accord-assemblee-citoyenne.md"
+  - dossier_id: "DOSSIER-SMIC-CAHUC-CARCILLO-LEBARBANCHON-2019-HIRING-CREDIT"
+    dossier_path: "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
+    synthesis_path: "syntheses/smic-france.md"
