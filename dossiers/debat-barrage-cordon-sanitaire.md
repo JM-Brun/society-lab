@@ -466,3 +466,8 @@ La prochaine étape est donc de construire un protocole comparatif qui sépare l
 Une étude dédiée a été créée pour distinguer cordon politique, cordon médiatique francophone et front républicain, puis évaluer les preuves sur l'exposition non critique, la répétition et les corrections : [dossier spécialisé](cordon-sanitaire-belgique-efficacite.md) et [synthèse](../syntheses/cordon-sanitaire-belgique-efficacite.md).
 
 Point de vigilance ajouté : l'étude comparative de De Jonge (2021) est suggestive mais ne permet pas d'isoler causalement l'effet propre du cordon sanitaire ; les résultats expérimentaux de Bolet & Foos (2025) portent sur des interviews non contestées d'activistes d'extrême droite au Royaume-Uni et en Australie, non sur une évaluation directe du modèle belge.
+
+
+## Mise à jour — stratégies de réfutation et liberté académique (2026-11-17)
+
+Le dossier spécialisé a été enrichi par les travaux sur le pré-bunking (Simchon et al., 2026), les explications alternatives au simple démenti (Granados Samayoa & Albarracín, 2025), le faux équilibre médiatique (Koehler, 2016) et les restrictions de la liberté académique (Diehl et al., 2025). Voir [dossier spécialisé](cordon-sanitaire-belgique-efficacite.md) et [synthèse](../syntheses/cordon-sanitaire-belgique-efficacite.md). Point central : les données soutiennent la prévention et les réponses explicatives, mais ne mesurent pas encore l'effet causal global du no-platforming.
