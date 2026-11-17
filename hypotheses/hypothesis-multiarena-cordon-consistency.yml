@@ -1,0 +1,15 @@
+id: HYPOTHESIS-MULTIARENA-CORDON-CONSISTENCY
+statement: "Un cordon sanitaire est plus susceptible de limiter la normalisation lorsqu'il est cohérent entre les arènes médiatique, partisane, parlementaire et gouvernementale, et lorsqu'il s'accompagne d'une contestation argumentée des propositions plutôt que d'un simple silence."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-INSTITUTIONS"]
+mechanism: "La cohérence entre arènes réduit les signaux contradictoires de légitimité et d'accès au pouvoir ; l'examen argumenté maintient la contestabilité publique des idées sans accorder nécessairement une tribune d'amplification à leur promoteur."
+scope_conditions:
+  - "Distinguer règles médiatiques, coopération parlementaire, coalitions gouvernementales et coordination électorale."
+  - "Évaluer les effets sur l'adhésion, les normes sociales, les programmes des partis établis et l'accès aux fonctions."
+  - "Tenir compte des systèmes de partis, des institutions, des médias et de l'histoire des clivages."
+alternative_explanations:
+  - "La force de l'offre politique radicale et ses réseaux sociaux peuvent expliquer une part majeure des différences entre territoires."
+  - "Une démarcation trop rigide ou perçue comme arbitraire peut susciter de la réactance ou un récit de persécution."
+  - "La convergence discursive peut précéder ou accompagner la rupture formelle du cordon."
+status: under_examination
+confidence_rationale: "Hypothèse de synthèse appuyée par des études comparatives et des expériences de signaux de coalition, mais pas encore testée par une comparaison causale multi-arènes."
+reviewed_at: "2026-11-17"
