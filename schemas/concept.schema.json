@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/concept.schema.json",
+  "title": "Society Lab Concept",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "label", "definition", "domain_ids"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CONCEPT-[A-Z0-9][A-Z0-9-]*$"},
+    "label": {"type": "string", "minLength": 1},
+    "definition": {"type": "string", "minLength": 10},
+    "domain_ids": {"type": "array", "items": {"type": "string", "pattern": "^DOMAIN-[A-Z0-9-]+$"}, "minItems": 1, "uniqueItems": true},
+    "tags": {"type": "array", "items": {"type": "string", "pattern": "^TAG-[A-Z0-9-]+$"}, "uniqueItems": true},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "notes": {"type": "string"}
+  }
+}
