@@ -490,3 +490,8 @@ Une revue complémentaire montre que le cordon doit être évalué dans plusieur
 ## Mise à jour — effets affectifs du front commun
 
 Kollberg & Bantel (2026) montrent que les messages négatifs coordonnés de tous les partis établis contre l'AfD augmentent davantage la polarisation affective que les messages d'un seul parti, avec un débordement vers les électeurs. Ce résultat ne disqualifie pas la démarcation démocratique, mais impose de distinguer critique des dirigeants, rejet d'un programme, qualification de comportements antidémocratiques et hostilité envers les électeurs. Voir la [matrice multi-arènes](matrice-preuves-cordon-sanitaire.md).
+
+
+## Méthode de la prochaine revue
+
+Pour éviter de mélanger les effets institutionnels, médiatiques et cognitifs, un [protocole de revue systématique de portée](protocole-revue-systematique-cordon-sanitaire.md) a été ajouté. Il organise la recherche en trois volets (institutions/compétition politique, médias/plateformisation, prévention/correction), définit les critères d'inclusion, les bases, les chaînes de recherche, l'extraction et l'évaluation du risque de biais. Il s'agit d'un protocole à exécuter, pas d'une revue déjà achevée.
