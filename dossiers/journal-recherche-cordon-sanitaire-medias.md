@@ -76,3 +76,30 @@ La première passe confirme qu'il existe une littérature plus large sur la norm
 ### Limite de la recherche
 
 Le citation chasing a été effectué à partir de la bibliographie de Thompson & Sengul (2025), et non par exploration exhaustive de toutes les bibliographies croisées. Le volet B reste une revue ciblée en cours.
+
+
+## Recherche complémentaire — corrections, bypassing et comparaison des formats (17 novembre 2026)
+
+### Requêtes exécutées
+
+- `bypassing misinformation interview correction alternative explanation experiment media platforming extremist`
+- `journalism fact checking without repeating false claim misinformation correction experiment repetition source exposure`
+- `media framing extremist interview counter speech no platforming experimental study audience effects`
+- `Granados Albarracin 2025 bypassing correcting misinformation six experiments results`
+- `Can corrections spread misinformation to new audiences authors 2020 three experiments N 1718`
+- `Timing matters when correcting fake news 2021 PNAS authors 2683`
+
+### Études intégrées
+
+1. **Granados Samayoa & Albarracín (2025)**, *Bypassing Versus Correcting Misinformation: Efficacy and Fundamental Processes*, DOI https://doi.org/10.1037/xge0001687. Six expériences préenregistrées : le renforcement de croyances alternatives aux implications opposées surpasse généralement la simple négation après exposition à une information trompeuse. L'avantage dépend du fait que les participants aient ou non déjà formé une attitude. Limite : échantillons américains et stimuli fictifs brefs ; aucune comparaison avec une interview contradictoire ou un promoteur extrémiste.
+2. **Horvath et al. (2024)**, *Correcting campaign misinformation: Experimental evidence from a two-wave panel study*, DOI https://doi.org/10.37016/mr-2020-132. N=1 841 au Royaume-Uni : un fact-check cohérent réduit immédiatement la croyance erronée, mais l'effet n'est plus détectable environ une semaine plus tard. L'attribution à une organisation indépendante, au Guardian ou au Telegraph ne donne pas de différence statistiquement significative. Ce n'est pas un test du format d'interview.
+3. **Ecker, Lewandowsky & Chadwick (2020)**, *Can corrections spread misinformation to new audiences?*, DOI https://doi.org/10.1186/s41235-020-00241-6. Trois expériences, N=1 718 : les résultats globaux ne soutiennent pas un effet boomerang de familiarité lorsque des corrections répètent des affirmations nouvelles. Cela n'exclut ni l'oubli de la correction, ni l'influence persistante de l'information initiale, ni l'amplification de l'acteur qui la promeut.
+4. **Brashier, Pennycook, Berinsky & Rand (2021)**, *Timing matters when correcting fake news*, DOI https://doi.org/10.1073/pnas.2020043118. Deux expériences, N=2 683 : la correction après lecture améliore davantage le discernement à une semaine que les étiquettes de véracité avant ou pendant l'exposition. Le format journalistique n'est pas comparé.
+
+### Résultat négatif de recherche : comparaison directe non trouvée
+
+Les recherches exploratoires ciblées n'ont pas identifié d'essai comparant directement, à contenu et durée équivalents, une interview contradictoire avec promoteur et une analyse indépendante sans sa voix ni son image. La preuve disponible est indirecte et doit rester présentée comme telle. Cette absence dans la recherche exploratoire ne prouve pas qu'aucune étude n'existe : il faut poursuivre le citation chasing et les recherches dans les bases bibliographiques spécialisées.
+
+### Conséquence pour le protocole
+
+Maintenir les six bras A–F. Ajouter une manipulation distincte de l'exposition visuelle/sonore au promoteur, ou prévoir une phase factorielle, afin de distinguer l'effet du contenu argumentatif de celui de la présence et de la notoriété du locuteur. Conserver les mesures de normalisation sociale, respectabilité du promoteur, croyance, mémorisation de la correction, transfert critique, réactance et intention de partage, avec suivis à 7 et 30 jours. Prévoir un contrôle de la diffusion secondaire et de l'exposition antérieure.
