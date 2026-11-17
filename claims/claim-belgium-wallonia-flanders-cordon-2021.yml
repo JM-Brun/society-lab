@@ -1,0 +1,20 @@
+id: CLAIM-BELGIUM-WALLONIA-FLANDERS-CORDON-2021
+statement: "La différence de trajectoire de la droite radicale entre Wallonie et Flandre est associée à des environnements partisans et médiatiques distincts ; le cordon plus cohérent en Wallonie constitue un facteur explicatif plausible, sans effet causal isolé."
+claim_type: interpretive
+status: under_review
+scope:
+  geography: ["Belgique", "Wallonie", "Flandre"]
+  period: "Trajectoires étudiées jusqu'en 2021"
+  conditions: "Comparaison qualitative des environnements politiques et médiatiques régionaux."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-BELGIUM-CORDON-WALLONIA-FLANDERS-2021"]
+supporting_evidence:
+  - "De Jonge décrit un environnement politique et médiatique plus hostile à la droite radicale en Wallonie et plus accommodant en Flandre."
+limitations:
+  - "Étude qualitative, non expérimentale."
+  - "Différences d'histoire, d'offre partisane, de réseaux militants et de clivages confondantes."
+  - "Ne permet pas d'isoler l'effet causal propre du cordon médiatique ou politique."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; synthèse fidèle à la portée qualitative de l'étude."
+last_reviewed: "2026-11-17"
