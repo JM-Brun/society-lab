@@ -83,3 +83,8 @@ dossiers:
     dossier_path: "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+
+  - dossier_id: "DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"
+    dossier_path: "dossiers/antoine-foucher-pacte-intergenerationnel.md"
+    synthesis_id: "SYNTHESIS-ECONOMY-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"
+    synthesis_path: "syntheses/antoine-foucher-pacte-intergenerationnel.md"
