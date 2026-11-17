@@ -184,3 +184,7 @@ Prochaines opérations :
 - RoB 2 : https://www.riskofbias.info/welcome/rob-2-0-tool
 - ROBINS-I : https://www.riskofbias.info/welcome/home/current-version-of-robins-i
 - AMSTAR 2 : https://amstar.ca/Amstar-2.php
+
+## 13. Journal d'exécution — première passe du volet B
+
+La première recherche exploratoire sur les médias, tribunes et la plateformisation est consignée dans le [journal de recherche](journal-recherche-cordon-sanitaire-medias.md). Elle ajoute deux études à la cartographie : une analyse qualitative des interviews médiatiques et une étude quasi expérimentale des migrations après déplateformisation. Cette passe ne constitue pas un tri systématique : les bases bibliographiques prévues, le dédoublonnage global et le diagramme PRISMA restent à réaliser.
