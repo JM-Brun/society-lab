@@ -3,7 +3,7 @@
 - **Identifiant :** DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX
 - **Dossier parent :** [Historique des revalorisations du SMIC](smic-historical-episodes.md)
 - **Statut :** revue structurée des principales preuves françaises ; lecture intégrale des annexes et réplications encore nécessaires
-- **Date de revue :** 15 novembre 2026
+- **Date de revue :** 17 novembre 2026
 - **Question :** que sait-on réellement des effets du SMIC sur l'emploi, les salaires, les trajectoires et la diffusion salariale ?
 
 > **Règle de lecture :** un résultat sur les salaires n'est pas un résultat sur l'emploi ; une estimation sur les salariés directement au minimum ne vaut pas pour toute la population ; une simulation n'est pas une évaluation causale ex post.
@@ -12,7 +12,8 @@
 
 | Étude | Objet et méthode | Résultat rapporté | Ce que cela permet d'affirmer | Limite / niveau de preuve |
 |---|---|---|---|---|
-| **Bazen & Skourias (1997)** (et non Neumark & Wascher) | Hausses du SMIC 1981–1984 ; données sectorielles françaises et emploi des 15–24 ans | Signal négatif statistiquement significatif sur la part des jeunes dans l'emploi des secteurs les plus exposés | Un épisode historique est compatible avec une dégradation relative de l'emploi des jeunes dans les secteurs les plus contraints | DID sectoriel ; deux critiques de spécification documentées par Neumark & Wascher (2007), pré-tendances et tableaux encore à vérifier. **Preuve ciblée, confiance faible à modérée** |
+| **Bazen & Skourias (1997)** (et non Neumark & Wascher) | 32 secteurs ; jeunes de 15–24 ans ; exposition = part des salariés sous le SMIC de juin 1981 ; DID sectorielle sur 1981–1984 | Part de l'emploi jeune en baisse relative dans les secteurs plus exposés ; résultats négatifs significatifs sur les premières différences (oct. 1980–oct. 1981 ; mars 1981–mars 1982), plus importants sur mars 1980–mars 1984 | Signal historique sectoriel défavorable, mais ne mesure ni l'effet sur l'emploi total des jeunes ni celui de la seule hausse de juin 1981 | Texte original toujours non obtenu ; détails reconstitués par Neumark & Wascher (2007). Critiques : échelles incohérentes entre variation de part jeune et croissance totale sectorielle ; mesure d'exposition de juin 1981 inadéquate pour la fenêtre 1980–1984. Coefficients, SE et pré-tendances non vérifiés. **Confiance faible à modérée sur le signe, faible sur la robustesse** |
+| Benhayoun (1994) | Séries temporelles françaises 1975–1991 ; révision de la série d'emploi des jeunes et tests de robustesse | L'effet négatif du SMIC devient beaucoup moins robuste avec la série révisée ; l'OCDE résume l'étude comme ne trouvant pas d'effet négatif significatif | Les résultats agrégés historiques sont sensibles à la révision des séries et à la spécification | Étude antérieure à Bazen & Skourias, donc pas une réfutation de leur DID sectorielle ; endogénéité possible du SMIC et sensibilité du modèle. **Contrepoint historique, confiance limitée** |
 | Abowd, Kramarz & Margolis (1999) | Données longitudinales individuelles ; transitions emploi/non-emploi, France 1981–1989 | Contrastes conditionnels négatifs dans plusieurs classes d'âge ; résumé du papier : −1,3 % pour les hommes et −1,0 % pour les femmes au minimum pour +1 % de SMIC réel | Les salariés proches du plancher peuvent présenter des transitions d'emploi plus défavorables dans certains groupes | Groupe témoin endogène, petites cellules et estimations françaises imprécises ; pas d'effet moyen sur l'emploi total. **Preuve microéconomique historique, confiance modérée à faible** |
 | Abowd, Kramarz, Lemieux & Margolis (1997/2000), jeunes | Enquête Emploi 1982–1989 ; jeunes de 30 ans ou moins ; logit conditionnel de maintien en emploi | Élasticité conditionnelle pondérée : −2,489 hommes et −1,044 femmes ; élasticité dite inconditionnelle : −0,203 et −0,108. Effets hétérogènes par âge, contrats aidés protecteurs | Distinguer fortement les salariés directement rattrapés par la hausse de l'ensemble des jeunes ; le contexte des contrats aidés est déterminant | Groupe témoin proche du seuil, hétérogénéité non observée, petites cellules, pas de pré-tendances ; estimation inconditionnelle dépend d'une hypothèse supplémentaire. **Preuve historique ciblée, confiance faible à modérée** |
 | Aeberhardt, Givord & Marbot (2012) | Convergence différenciée des six minima (SMIC horaire et cinq GMR) après les 35 heures ; panel DADS 1/25e, régressions de quantiles inconditionnels (RIF-Logit) | Diffusion significative jusqu'au 7e décile pour les hommes et les femmes ; effet inférieur à 0,2 % sur les déciles pour 1 % de hausse du minimum | La convergence des minima peut déplacer la distribution salariale au-delà des salariés directement au plancher, jusqu'à environ 2 SMIC | Salariés privés à temps plein et année complète ; traitement lié aux GMR/35 heures et aux allègements ; statistiques d'emploi descriptives seulement, pas d'effet causal estimé. **Preuve de diffusion, confiance modérée** |
@@ -502,11 +503,11 @@ Audits : [Abowd et al. (1999)](smic-abowd-kramarz-margolis-1999-transitions-empl
 
 **Conclusion :** preuve modérée que les allègements ont augmenté la rétention et les emplois à bas salaire dans ce contexte historique, avec hétérogénéité des firmes et possible concentration sous les seuils d'exonération. Ce n'est pas une estimation d'une hausse du SMIC brut. Une hausse du coût minimum n'est pas nécessairement le miroir exact d'une baisse des cotisations (asymétrie et hystérèse possibles).
 
-**Version 2024 :** le résumé CESifo annonce +13 points de postes au SMIC et +4 % de croissance des entreprises recevant un gain de trésorerie sur deux ans ; ces valeurs sont propres à la version ultérieure, non auditée intégralement ici.
+**Version intégrale 2024 auditée :** le PDF CESifo confirme +13 points de postes au minimum dans les entreprises auparavant peu ou pas utilisatrices de SMIC, et environ +4 % de croissance temporaire des firmes bénéficiant d'un gain de trésorerie. Ces mesures ne sont ni des emplois nets créés à l'échelle nationale ni des effets de hausse du SMIC brut. Le détail des données, tests de pré-tendances, erreurs-types, attrition, hétérogénéité par taille et limites de mesure est documenté dans [l'audit Cottet](smic-cottet-2020-2024-allegements-emploi.md).
 
 ## 26. Fiche d'audit n° 21 — État des études récentes sur emploi des jeunes
 
-**Bazen & Skourias (1997) :** l'éditeur confirme un effet négatif significatif sur l'emploi des jeunes après la hausse de 10 % de juin 1981, sur données sectorielles. Le texte intégral est inaccessible dans cette passe ; stratégie d'identification, amplitude et robustesse non auditées. Niveau de confiance limité.
+**Bazen & Skourias (1997) :** le texte intégral reste introuvable. Une revue secondaire (Neumark & Wascher, 2007, pp. 131–132) précise toutefois : jeunes de 15–24 ans, 32 secteurs, part de l'emploi jeune par secteur, intensité mesurée par la proportion de salariés sous le minimum de juin 1981, comparaisons octobre 1980–octobre 1981, mars 1981–mars 1982 et mars 1980–mars 1984. Les estimations sont rapportées négatives et significatives sur les premières différences. Deux critiques de spécification portent sur l'échelle des variables et sur l'utilisation du seul seuil de juin 1981 pour une fenêtre 1980–1984. Coefficients, erreurs-types, tableaux et pré-tendances restent invérifiables. Le résultat n'est pas l'effet isolé de la seule hausse de juin 1981. Voir [l'audit détaillé](smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md).
 
 **Groupe d'experts SMIC (2025) :** simulation d'équilibre partiel sur BTS 2023, salariés du privé de 18 à 64 ans, 0,7–4,2 SMIC. Hypothèses d'élasticité de demande au coût du travail de −0,6 à −0,9 au SMIC et décroissante jusqu'à 2 SMIC ; simulation de 1,3 à 1,9 million d'emplois créés ou sauvegardés par les allègements. Il ne s'agit pas d'une estimation causale nouvelle ni d'un résultat spécifique aux jeunes.
 
@@ -522,3 +523,33 @@ Deux dossiers transversaux complètent la matrice :
 - [Épisodes historiques : bilans positifs, négatifs et mitigés](smic-episodes-historiques-bilan-positif-negatif.md) : comparaison 1968–1975, 1981–1983, années 1980, 2003–2005 et 2021–2024.
 
 **Règle de classement :** un épisode n'est contre-productif que relativement à un objectif explicite et à un contrefactuel crédible. Un gain de salaire réel peut coexister avec un risque de sortie d'emploi pour un sous-groupe, une hausse de prix sectorielle ou un coût budgétaire. Les effets ne doivent pas être agrégés en une note unique sans pondération normative explicite.
+
+
+## 27. Complément du 17 novembre 2026 — révision des audits jeunesse et allègements
+
+### Bazen & Skourias (1997) : statut révisé, texte primaire toujours absent
+
+L'audit secondaire Neumark & Wascher (2007) permet de documenter la population (15–24 ans), les 32 secteurs, la part de l'emploi jeune dans l'emploi sectoriel, l'intensité d'exposition fondée sur la part des salariés sous le niveau du SMIC de juin 1981, ainsi que les fenêtres temporelles. Il rapporte des signes négatifs significatifs pour octobre 1980–octobre 1981 et mars 1981–mars 1982, avec des résultats plus importants pour mars 1980–mars 1984.
+
+Les deux réserves méthodologiques de la revue sont importantes : variables de résultat et de contrôle construites sur des échelles non cohérentes ; mesure de l'exposition de juin 1981 utilisée pour expliquer une période longue comprenant plusieurs hausses, dont 17 % de la hausse relative avant juin 1981. Le texte original, les coefficients, erreurs-types, intervalles et tests de pré-tendances ne sont toujours pas disponibles. Le niveau de preuve est donc supérieur à celui d'une simple notice, mais reste limité.
+
+### Benhayoun (1994) : contrepoint à ne pas surinterpréter
+
+Le résumé éditeur rapporte que la révision de la série d'emploi des jeunes rend la relation négative avec le SMIC beaucoup moins robuste. L'OCDE (1998) résume l'étude comme une analyse temporelle 1975–1991 sans effet négatif significatif robuste, sensible à la spécification et potentiellement affectée par l'endogénéité du SMIC. Cette étude précède Bazen & Skourias et ne constitue pas un test direct de leur identification sectorielle.
+
+### Cottet (2024) : le texte intégral CESifo est désormais audité
+
+L'audit complet de la version CESifo Working Paper 11076 confirme que les allègements de 1995–1996 ont modifié la distribution des postes au bas de l'échelle, avec un rôle important de la rétention, et que les entreprises déjà intensives en SMIC utilisent une partie du gain de trésorerie pour accroître temporairement leur emploi global. Les chiffres de +13 points et +4 % ont des dénominateurs et des niveaux d'analyse différents ; ils ne doivent pas être additionnés ni traduits en créations nettes nationales. Les résultats de court terme sont sensibles à la taille et à l'attrition, et ne sont pas symétriques d'une hausse du SMIC brut.
+
+### Albertini, Poirier & Terriau (2025) : modèle structurel, texte intégral non récupéré
+
+Le résumé RePEc de *Payroll Tax Reductions on Low Wages and Minimum Wage in France* décrit un modèle de recherche-appariement en cycle de vie, avec hétérogénéité des travailleurs, embauches, séparations et interactions socio-fiscales endogènes. Les auteurs annoncent que réduire les allègements bas salaires ou augmenter le SMIC réduit l'emploi et le surplus fiscal dans leur modèle, avec une ampleur dépendant de l'indexation des barèmes d'allègements et des autres dispositifs. Ils proposent une reconfiguration des allègements autour du SMIC.
+
+Le PDF hébergé par GATE/RePEc n'a pas pu être récupéré lors de cette passe (erreur d'accès 502). Les paramètres, calibrage, moments d'identification, scénarios, intervalles de sensibilité et résultats chiffrés ne sont donc pas audités. Il s'agit d'un résultat de modèle structurel, non d'une expérience naturelle ni d'une estimation ex post d'une hausse observée. Il ne doit pas être agrégé aux estimations causales de Cottet ou aux études historiques.
+
+Sources :
+- Neumark & Wascher (2007), pp. 131–132 : https://doi.org/10.1561/0700000015
+- Benhayoun (1994), résumé éditeur : https://doi.org/10.1108/01437729410059350
+- OCDE, *Perspectives de l'emploi 1998* : https://www.oecd.org/content/dam/oecd/fr/publications/reports/1998/06/oecd-employment-outlook-1998_g1gh2155/empl_outlook-1998-fr.pdf
+- Cottet (2024), texte intégral : https://www.ifo.de/DocDL/cesifo1_wp11076.pdf
+- Albertini, Poirier & Terriau (2025), notice RePEc : https://econpapers.repec.org/paper/gatwpaper/2501.htm
