@@ -214,3 +214,28 @@ La page d'accueil annonce également un reportage sur la deuxième session (15 o
 - Constituer une revue de littérature sur les mini-publics, les assemblées citoyennes et leurs effets, en privilégiant méta-analyses, évaluations comparatives et études de cas bien documentées.
 - Créer des dossiers thématiques séparés pour les six dilemmes uniquement lorsque les ressources et besoins de recherche le justifient.
 - Réviser cette analyse à chaque session et à la publication des recommandations finales.
+
+
+## 15. Mise à jour de l'inventaire audiovisuel (17 novembre 2026)
+
+Une recherche complémentaire a permis d'identifier une quatrième ressource audiovisuelle, distincte des trois auditions déjà visibles sur la page d'accueil :
+
+| Date de publication indiquée | Intervenant | Titre | URL | Statut |
+|---|---|---|---|---|
+| 23 septembre 2026 | Jean-Marc Jancovici | Les limites physiques de notre monde : intervention à la première session | https://www.youtube.com/watch?v=3dSBJRtZKYY | Vidéo attribuée à la chaîne officielle « Un commun accord » ; métadonnées retrouvées via un index documentaire tiers ; contenu non visionné ni transcrit |
+
+L'index documentaire ObsAnt décrit cette ressource comme une intervention de Jean-Marc Jancovici devant les 150 citoyens lors de la première session au CNAM des 19 et 20 septembre 2026. Une page vidéo indexée reprend le titre, l'éditeur « Un commun accord », la date de publication du 23 septembre et le contexte. Cela permet d'ajouter une ressource candidate au corpus, mais pas de considérer l'inventaire comme exhaustif ni de tirer une conclusion sur le contenu de l'intervention.
+
+**Conséquence méthodologique :** l'ancien inventaire de trois auditions visibles sur la page d'accueil doit être compris comme un minimum de trois auditions officielles mises en avant, auquel s'ajoute au moins une vidéo de session repérée séparément. Il faut maintenir deux inventaires distincts : (a) auditions présentées dans la vidéothèque officielle ; (b) replays de sessions publiés sur la chaîne. La page « Voir toutes les auditions » et la playlist YouTube fournie restent non extractibles automatiquement dans cette recherche.
+
+La page d'accueil officielle consultée le 17 novembre affiche toujours comme actualité la plus récente le programme annoncé le 4 novembre pour le troisième week-end des 7 et 8 novembre. Elle ne fournit donc pas, dans les éléments accessibles, de compte rendu postérieur de cette session. Le compte rendu, les supports présentés et les éventuelles productions intermédiaires restent à obtenir. La page officielle annonce par ailleurs une cible de 500 000 soutiens avant le 11 décembre : cette campagne de soutien public doit être distinguée de la composition du panel tiré au sort et ne constitue pas un indicateur de représentativité de l'assemblée.
+
+### Sources complémentaires
+
+- Vidéo de session, Jean-Marc Jancovici, publiée le 23 septembre 2026 : https://www.youtube.com/watch?v=3dSBJRtZKYY
+- Index documentaire ObsAnt, inventaire des vidéos associées à Un commun accord : https://obsant.eu/videos/?rch=un
+- Page officielle consultée le 17 novembre 2026 : https://www.uncommunaccord.fr/ (actualités, auditions, objectif de 500 000 soutiens)
+
+### Limites d'accès
+
+La vidéothèque officielle et la page « Les 150 citoyens » sont toujours bloquées par les restrictions d'accès automatisé du site. La découverte de cette quatrième vidéo repose sur des métadonnées indexées par un tiers ; elle ne vaut ni consultation de la vidéo, ni vérification de sa transcription, ni validation indépendante de son contenu.
