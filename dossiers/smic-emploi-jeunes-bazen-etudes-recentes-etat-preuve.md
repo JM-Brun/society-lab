@@ -4,13 +4,24 @@
 
 Référence : Stephen Bazen et Nicolas Skourias, « Is there a negative effect of minimum wages on youth employment in France? », *European Economic Review*, vol. 41, nos 3–5, avril 1997, p. 723–732, DOI https://doi.org/10.1016/S0014-2921(97)00004-4.
 
-Le résumé éditeur confirme que les auteurs utilisent des données sectorielles après la hausse de 10 % du SMIC de juin 1981 et trouvent un effet statistiquement significatif négatif sur l'emploi des jeunes. La page ScienceDirect ne donne pas accès au texte intégral sans droits ; RePEc signale également un accès éditeur restreint. Les recherches de cette passe n'ont pas permis de localiser une copie intégrale ouverte vérifiable.
+Le résumé éditeur confirme un résultat négatif statistiquement significatif sur l'emploi des jeunes après les hausses du SMIC du début des années 1980. La page ScienceDirect et RePEc ne donnent pas accès au texte intégral dans les sources consultées. **Le PDF original de Bazen & Skourias n'a donc toujours pas été obtenu.**
 
-**Ce qui reste inconnu et ne doit pas être inventé :** nombre de secteurs et période exacte, définition de l'emploi jeune, variables de contrôle, construction du groupe témoin, équation estimée, amplitude de l'effet, erreurs-types, tests de sensibilité et éventuelles tendances préalables. Le résultat reste un signal historique, non une estimation auditée. Il ne doit pas être compté comme preuve de haute confiance.
+Une revue secondaire détaillée, Neumark & Wascher (2007, pp. 131–132), permet toutefois de reconstituer plusieurs éléments qui étaient jusque-là inconnus : l'étude porte sur les 15–24 ans, répartit l'échantillon en 32 secteurs, mesure la part des jeunes dans l'emploi de chaque secteur et construit l'exposition par la proportion de salariés du secteur payés sous le niveau du SMIC fixé en juin 1981. Les auteurs utilisent une approche de différences de différences en contrôlant la croissance globale de l'emploi sectoriel. Ils rapportent des estimations négatives et significatives pour les premières différences octobre 1980–octobre 1981 et mars 1981–mars 1982 ; les estimations deviennent plus importantes avec une différence longue mars 1980–mars 1984.
 
-Sources consultées :
-- ScienceDirect : https://www.sciencedirect.com/science/article/pii/S0014292197000044
-- RePEc : https://ideas.repec.org/a/eee/eecrev/v41y1997i3-5p723-732.html
+Cette reconstitution reste **un audit secondaire**, et non une vérification des tableaux originaux. Les éléments suivants demeurent non vérifiés : source primaire et taille exacte des observations par secteur, nomenclature sectorielle, équation complète, coefficients, erreurs-types, intervalles de confiance, pondérations, contrôles détaillés, tests placebo et pré-tendances. Neumark & Wascher ne rapportent pas de test formel de pré-tendances dans leur discussion.
+
+**Deux critiques de spécification sont explicitement formulées par Neumark & Wascher (2007) :**
+1. Bazen & Skourias expliquent la variation de la part des jeunes par le pourcentage de variation de l'emploi total du secteur. Les deux variables ne sont pas construites sur une échelle cohérente ; la sensibilité des taux de croissance à leur base et les différences de taille des secteurs peuvent affecter la comparaison.
+2. Pour la différence longue 1980–1984, l'exposition est mesurée par la part des travailleurs sous le minimum de juin 1981, alors qu'il aurait été plus cohérent de mesurer l'exposition à l'ensemble des hausses de 1980–1984. La revue indique que 17 % de la hausse relative considérée avait eu lieu avant juin 1981. Les secteurs qui ajustaient plus lentement leur emploi aux hausses antérieures pouvaient donc apparaître artificiellement plus exposés en juin 1981, puis connaître une baisse ultérieure sans que leur ajustement total soit supérieur.
+
+Il faut également éviter de réduire l'étude à un effet isolé de la seule hausse de 10 % de juin 1981 : la fenêtre longue couvre plusieurs hausses entre 1980 et 1984. La hausse de juin 1981 sert notamment à construire la mesure d'exposition.
+
+**Conclusion documentaire :** nous connaissons désormais la population, les 32 secteurs, la variable d'exposition, les fenêtres temporelles et les deux principales critiques publiées. Mais, faute de texte intégral, l'amplitude et la précision statistique restent inconnues. Le résultat reste un signal historique sectoriel, de confiance faible à modérée sur le signe et faible sur sa robustesse ; il ne permet aucun calcul d'emplois détruits.
+
+Sources :
+- Résumé éditeur : https://www.sciencedirect.com/science/article/pii/S0014292197000044
+- Notice RePEc : https://ideas.repec.org/a/eee/eecrev/v41y1997i3-5p723-732.html
+- Neumark, D. & Wascher, W. (2007), *Minimum Wages and Employment*, Foundations and Trends in Microeconomics, 3(1–2), 1–182, DOI : https://doi.org/10.1561/0700000015 ; discussion de Bazen & Skourias, pp. 131–132 : https://www.academia.edu/48033213/Minimum_Wages_and_Employment
 
 ## 2. Ce que les évaluations récentes françaises permettent réellement d'affirmer
 
@@ -75,4 +86,52 @@ Ces résultats montrent que les marges d'ajustement dépendent du contexte, de l
 
 ## 5. Prochaine priorité de recherche
 
-Rechercher des données et travaux français récents exploitant l'exposition sectorielle/entreprise aux hausses 2021–2024, avec résultats spécifiques aux moins de 26 ans, peu diplômés, contrats courts et entrants. Évaluer séparément le rôle des exonérations et celui des hausses de salaire brut. Ne pas confondre corrélations descriptives DARES avec effets causaux.
+1. Obtenir le texte intégral de Bazen & Skourias par accès institutionnel, prêt entre bibliothèques ou demande aux auteurs ; vérifier les tableaux, erreurs-types, pondérations et spécifications.
+2. Si les données sectorielles historiques sont identifiables, reconstruire une mesure d'exposition couvrant toutes les hausses 1980–1984 et tester des spécifications cohérentes des variables dépendantes et de contrôle.
+3. Rechercher une identification française contemporaine (2021–2025) fondée sur l'exposition différentielle des entreprises ou secteurs, en suivant séparément jeunes, entrants, sorties, heures et contrats.
+4. Séparer strictement hausses du SMIC brut, modifications des cotisations patronales, contrats aidés et chocs conjoncturels.
+5. Ne pas transformer les statistiques descriptives DARES sur la part des jeunes au SMIC en effets causaux.
+
+
+## 6. Complément du 17 novembre 2026 — critique secondaire de Bazen & Skourias et contrepoint Benhayoun
+
+### 6.1 Ce que la revue Neumark & Wascher (2007) ajoute
+
+La lecture ciblée de Neumark & Wascher (2007, *Minimum Wages and Employment*, pp. 131–132) permet de préciser le protocole sectoriel de Bazen & Skourias sans prétendre avoir consulté l'article original :
+
+| Élément | Information rapportée par la revue secondaire | Statut |
+|---|---|---|
+| Population | Jeunes de 15 à 24 ans | Vérifié dans la revue, non dans l'original |
+| Unités | 32 secteurs | Vérifié dans la revue, nomenclature non retrouvée |
+| Variable de résultat | Part de l'emploi sectoriel occupée par les jeunes | Vérifié dans la revue |
+| Intensité de traitement | Part des salariés du secteur sous le niveau du SMIC de juin 1981 | Vérifié dans la revue |
+| Comparaison | Secteurs plus ou moins exposés ; contrôle de la croissance globale de l'emploi sectoriel | Vérifié dans la revue |
+| Fenêtres courtes | Octobre 1980–octobre 1981 ; mars 1981–mars 1982 | Vérifié dans la revue |
+| Fenêtre longue | Mars 1980–mars 1984 | Vérifié dans la revue |
+| Signe / significativité | Coefficients négatifs et statistiquement significatifs dans les premières différences ; effets plus importants dans la différence longue | Résumé de la revue |
+| Amplitude / erreurs-types | Non données dans la discussion secondaire consultée | Non vérifié |
+| Pré-tendances / placebo | Aucun test formel n'est décrit dans la discussion consultée | Non vérifié dans l'original |
+
+La variable de contrôle sectorielle et l'indicateur d'exposition sont deux objets différents : la première cherche à neutraliser la croissance générale du secteur ; le second mesure l'intensité de la contrainte salariale. Cette stratégie compare donc des secteurs plus ou moins touchés par un même changement national, pas des secteurs traités et totalement non traités au sens d'une expérience naturelle classique.
+
+### 6.2 Benhayoun (1994) : un contrepoint antérieur, pas une réplication de Bazen & Skourias
+
+Gilbert Benhayoun, « The Impact of Minimum Wages on Youth Employment in France Revisited: A Note on the Robustness of the Relationship », *International Journal of Manpower*, 15(2–3), 1994, p. 82–85, DOI https://doi.org/10.1108/01437729410059350.
+
+Le résumé éditeur indique que Benhayoun voulait actualiser des travaux antérieurs, mais que la série d'emploi des jeunes avait été révisée de manière non négligeable. Avec cette série révisée, l'effet du SMIC sur l'emploi des jeunes se révèle beaucoup moins robuste que précédemment. L'OCDE (*Perspectives de l'emploi* 1998, tableau 2.B.1) résume son étude comme une analyse de séries temporelles 1975–1991 ne trouvant pas d'effet négatif significatif, avec des résultats sensibles à la spécification et un possible problème d'endogénéité du SMIC.
+
+Cette étude précède Bazen & Skourias (1997) : elle ne peut donc pas être une réfutation directe de leur résultat sectoriel. Elle constitue néanmoins un avertissement empirique important contre les conclusions trop fermes tirées des séries temporelles agrégées sur l'emploi des jeunes.
+
+### 6.3 Niveau de confiance révisé
+
+- **Signe du résultat sectoriel rapporté par Bazen & Skourias :** confiance faible à modérée, car confirmé par le résumé éditeur et une revue académique secondaire.
+- **Amplitude et précision :** non évaluables sans le texte original et ses tableaux.
+- **Identification causale :** fragile à modérée au mieux ; l'exposition sectorielle est informative, mais les deux critiques de spécification affectent l'interprétation de la différence longue.
+- **Généralisation à l'ensemble des jeunes ou à l'économie :** non justifiée.
+- **Transposition aux hausses contemporaines :** non justifiée.
+
+**Conclusion opérationnelle :** conserver Bazen & Skourias comme un signal historique sectoriel défavorable, maintenant mieux décrit mais toujours non audité à la source primaire. Ne pas lui attribuer de coefficient, d'erreur-type ou de nombre d'emplois perdus. Croiser ce résultat avec les travaux individuels d'Abowd et les études plus récentes sur les allègements, sans les traiter comme des estimations du même paramètre.
+
+Sources complémentaires :
+- Benhayoun (1994), résumé éditeur : https://www.emerald.com/ijm/article-abstract/15/2-3/82/136588/The-Impact-of-Minimum-Wages-on-Youth-Employment-in?redirectedFrom=fulltext
+- OCDE, *Perspectives de l'emploi 1998*, tableau 2.B.1 : https://www.oecd.org/content/dam/oecd/fr/publications/reports/1998/06/oecd-employment-outlook-1998_g1gh2155/empl_outlook-1998-fr.pdf
