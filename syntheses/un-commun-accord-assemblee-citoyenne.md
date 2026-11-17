@@ -129,3 +129,20 @@ Ces sources institutionnelles documentent la présentation du projet. Elles ne r
 |---|---|---|
 | 2026-11-17 | Création de la synthèse provisoire | Première ingestion des pages officielles et cadrage des vérifications restantes |
 | 2026-11-17 | Ajout d'une première revue scientifique, de la charte des financeurs et de la politique de confidentialité | Trois études de synthèse/expérimentales et nouveaux documents primaires ; inventaire audiovisuel toujours partiel |
+
+
+## 13. Actualisation du suivi au 17 novembre 2026
+
+L'inventaire audiovisuel s'élargit : une vidéo supplémentaire de Jean-Marc Jancovici, publiée le 23 septembre 2026 et consacrée aux limites physiques du monde lors de la première session, a été identifiée sur la chaîne attribuée à Un commun accord. Son URL et ses métadonnées sont enregistrées dans le dossier et le registre des sources. La vidéo n'a pas encore été visionnée ni transcrite ; elle ne peut donc pas encore être mobilisée comme preuve sur le fond.
+
+Le troisième week-end (7–8 novembre) est désormais passé, mais la page d'accueil consultée le 17 novembre met toujours en avant le programme annoncé le 4 novembre, sans compte rendu post-session accessible. Il faut obtenir les résultats effectifs, les documents présentés et les productions intermédiaires avant d'évaluer le pluralisme ou la qualité de cette session.
+
+Enfin, l'objectif affiché de 500 000 soutiens avant le 11 décembre relève de la mobilisation publique. Il ne doit pas être confondu avec le recrutement aléatoire du panel, la représentativité du mini-public ou l'adhésion de la population aux conclusions à venir.
+
+| Travail | État actualisé |
+|---|---|
+| Inventaire vidéo | Au moins quatre ressources identifiées, mais playlist et vidéothèque non exhaustives ; contenus non visionnés dans cette étape |
+| Troisième week-end | Session passée ; compte rendu post-session non repéré sur la page d'accueil accessible |
+| Panel et recrutement | Données détaillées de contact, acceptation, présence et attrition toujours manquantes |
+| Évaluation du processus | Impossible de conclure à ce stade sur pluralisme réel, qualité délibérative ou effets politiques |
+
