@@ -63,12 +63,13 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 - [Synthèse SMIC — France](syntheses/smic-france.md)
 - [Synthèse Parcoursup — égalité des chances](syntheses/parcoursup-education.md)
 - [Synthèse débat, barrage et cordon sanitaire](syntheses/debat-barrage-cordon-sanitaire.md)
-- [Synthèse documentaire des stratégies de réponse(syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md)
+- [Synthèse documentaire des stratégies de réponse aux idées antidémocratiques](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md)
 - [Modèle réutilisable de synthèse](templates/subject-synthesis.md)
 
 ## Documents fondateurs
 
 - [Charte éditoriale et méthode de synthèse](docs/editorial-charter.md)
+- [Audit transversal de l'état des connaissances et des synthèses](docs/audit-transversal-etat-des-connaissances.md) — bilan comparatif des dossiers, preuves, synthèses, graphes et priorités de consolidation.
 - [Charte fondatrice](CHARTER.md)
 - [Méthodologie](METHODOLOGY.md)
 - [Architecture](docs/architecture.md)
