@@ -27,7 +27,7 @@ Cette échelle qualifie la nature de la preuve, pas l'importance sociale ou éco
 
 | Épisode / étude | Objectif où un coût est possible | Ampleur documentée | Type de preuve | Conclusion autorisée |
 |---|---|---|---|---|
-| 1981, Bazen & Skourias (1997) | Emploi des jeunes | Effet négatif statistiquement significatif annoncé par le résumé éditeur ; coefficient, intervalle et dénominateur non vérifiés dans le texte intégral | C — signal publié, audit incomplet | Signal défavorable pour l'emploi des jeunes ; ampleur inconnue à ce stade. Ne pas chiffrer les emplois détruits |
+| 1981–1984, Bazen & Skourias (1997) | Part des 15–24 ans dans l'emploi sectoriel | Neumark & Wascher rapportent des effets négatifs significatifs sur deux fenêtres courtes ; IMK (2008) juge les résultats 1981 peu robustes et critique l'absence de contrôle des politiques du marché du travail sur la fenêtre longue | C — signal sectoriel publié, texte original inaccessible, lectures secondaires divergentes | Confiance causale faible ; aucun coefficient/SE vérifié, aucun emploi détruit quantifiable. Ne pas extrapoler à l'emploi agrégé ou contemporain |
 | Années 1980, Abowd, Kramarz & Margolis (1999) | Maintien en emploi des salariés directement rattrapés | Élasticités conditionnelles de probabilité future d'emploi : −1,293 hommes et −0,972 femmes ; élasticités inconditionnelles : −0,015 et −0,022 | B/C — analyse longitudinale avec groupe proche, limites de mesure et de pré-tendances | Risque concentré sur les salariés exposés ; les valeurs conditionnelles ne mesurent pas l'emploi total |
 | Jeunes, Abowd, Kramarz, Lemieux & Margolis (1997/2000) | Maintien en emploi des jeunes exposés | Élasticités conditionnelles : −2,489 jeunes hommes et −1,044 jeunes femmes ; inconditionnelles calculées : −0,203 et −0,108 | B/C — même environnement de données et période proche de l'étude précédente | Signal plus marqué chez certains jeunes hommes ; ne pas compter comme réplication indépendante ni extrapoler à aujourd'hui |
 | Années 1990, Kramarz & Philippon (2001) | Sortie emploi → non-emploi | Environ +1,5 % de probabilité de sortie pour +1 % de coût minimum dans le groupe exposé selon la spécification rapportée ; groupe traité de 3–4 % de la population active | B — différences-de-différences, mais contexte d'allègements et tests modernes incomplets | Signal défavorable sur les sorties du groupe exposé ; traitement = coût employeur, pas SMIC brut isolé |
@@ -68,6 +68,8 @@ Cette échelle qualifie la nature de la preuve, pas l'importance sociale ou éco
 ## 6. Sources primaires et rapports
 
 - Bazen, S. & Skourias, N. (1997), *Is there a negative effect of minimum wages on youth employment in France?* https://doi.org/10.1016/S0014-2921(97)00004-4
+- Neumark & Wascher (2007), discussion de Bazen & Skourias, IZA DP 2570 : https://www.iza.org/publications/dp/2570/minimum-wages-and-employment
+- IMK Report n°31 (2008), p. 23 : https://www.boeckler.de/pdf/p_imk_report_31_2008.pdf
 - Abowd, J. et al. (1997/2000), *Minimum Wages and Youth Employment in France and the United States* : https://blogs.cornell.edu/abowd/files/2017/10/minimum-wages-youth-1vrkt30.pdf
 - Abowd, J., Kramarz, F. & Margolis, D. (1999), NBER WP 6996 : https://www.nber.org/system/files/working_papers/w6996/w6996.pdf
 - Kramarz, F. & Philippon, T. (2001), IZA DP 219 : https://docs.iza.org/dp219.pdf
