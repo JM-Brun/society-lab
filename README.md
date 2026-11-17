@@ -49,6 +49,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif ; voir aussi la [synthèse Parcoursup](syntheses/parcoursup-education.md).
 - [Politique et démocratie](knowledge/domains/politics.md) — page thématique sur les partis, les élections, le pluralisme et les conditions de la vie démocratique.
 - [Débat, barrage et cordon sanitaire](dossiers/debat-barrage-cordon-sanitaire.md) — comparaison Belgique–Allemagne–France des stratégies de débat, de non-coalition, de démarcation médiatique et de barrage électoral ; voir aussi la [synthèse dédiée](syntheses/debat-barrage-cordon-sanitaire.md).
+- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — protocole expérimental proposé comparant débat, analyse sans promoteur, pédagogie, explication alternative, exposition non contestée et témoin ; voir la [synthèse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
 
 ## Synthèses des sujets
 
@@ -58,6 +59,7 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 - [Synthèse SMIC — France](syntheses/smic-france.md)
 - [Synthèse Parcoursup — égalité des chances](syntheses/parcoursup-education.md)
 - [Synthèse débat, barrage et cordon sanitaire](syntheses/debat-barrage-cordon-sanitaire.md)
+- [Synthèse du protocole comparatif des stratégies de réponse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md)
 - [Modèle réutilisable de synthèse](templates/subject-synthesis.md)
 
 ## Documents fondateurs
