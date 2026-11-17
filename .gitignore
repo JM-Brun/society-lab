@@ -1,0 +1,37 @@
+# Local environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+
+# Local configuration, agent settings and credentials
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+.claude/*.local.json
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+.aws/credentials
+.ssh/
+.netrc
+.npmrc
+.pypirc
+.docker/config.json
+
+# Generated site/build artifacts
+_site/
+.quarto/
