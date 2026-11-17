@@ -2,9 +2,9 @@
 
 **Comprendre les grands enjeux de société par la recherche, les preuves et la pensée systémique.**
 
-Society Lab est un laboratoire public indépendant de connaissance, de recherche et d'analyse des transformations politiques, économiques, sociales, environnementales et technologiques, avec l'Europe comme périmètre principal.
+Society Lab est un projet documentaire indépendant de compilation critique, de mise en relation des connaissances et de synthèse des transformations politiques, économiques, sociales, environnementales et technologiques. Il étudie les recherches et débats déjà existants ; il ne conduit pas ses propres expériences.
 
-## Trois approches complémentaires
+## Finalité et méthode éditoriale\n\nSociety Lab rassemble des études scientifiques, sociologiques et politiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques, des rapports et des débats argumentés. Le but est d'en tirer des bilans compréhensibles, sourcés, non partisans et proportionnés au niveau réel des preuves. Non partisan ne signifie pas fausse équivalence : les arguments sont présentés loyalement, mais leur poids dépend de leur documentation et de leur robustesse. Voir la [charte éditoriale et méthode de synthèse](docs/editorial-charter.md).\n\n## Trois approches complémentaires
 
 - **Knowledge** — structurer les concepts, institutions, mécanismes et connaissances.
 - **Research** — examiner les publications, données, méthodes et résultats.
@@ -49,7 +49,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif ; voir aussi la [synthèse Parcoursup](syntheses/parcoursup-education.md).
 - [Politique et démocratie](knowledge/domains/politics.md) — page thématique sur les partis, les élections, le pluralisme et les conditions de la vie démocratique.
 - [Débat, barrage et cordon sanitaire](dossiers/debat-barrage-cordon-sanitaire.md) — comparaison Belgique–Allemagne–France des stratégies de débat, de non-coalition, de démarcation médiatique et de barrage électoral ; voir le [protocole de revue systématique](dossiers/protocole-revue-systematique-cordon-sanitaire.md), la [matrice de preuves multi-arènes](dossiers/matrice-preuves-cordon-sanitaire.md), le [dossier spécialisé sur le modèle belge](dossiers/cordon-sanitaire-belgique-efficacite.md) et la [synthèse dédiée](syntheses/debat-barrage-cordon-sanitaire.md).
-- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — protocole expérimental proposé comparant débat, analyse sans promoteur, pédagogie, explication alternative, exposition non contestée et témoin ; voir la [matrice de preuves](dossiers/matrice-preuves-strategies-reponse.md) et la [synthèse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
+- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — cartographie documentaire des travaux existants sur la contradiction, l'analyse indépendante, la pédagogie, les explications alternatives et l'exposition médiatique ; aucune expérimentation n'est prévue par Society Lab.
 
 ## Synthèses des sujets
 
