@@ -1,0 +1,22 @@
+id: CLAIM-COALITION-SIGNALS-SHIFT-AFFECT-2025
+statement: "Dans quatre contextes européens étudiés, les signaux de coopération entre partis établis et droite radicale modifient les attitudes affectives et la tolérance politique, mais les effets déplacent en partie les clivages plutôt qu'ils ne les réduisent."
+claim_type: causal
+status: under_review
+scope:
+  geography: ["Allemagne", "Flandre", "Espagne", "Autriche"]
+  population: "Participants aux expériences d'enquête (N=5 594)"
+  period: "Publication 2025"
+  conditions: "Scénarios expérimentaux de signaux de coalition."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-VANAGT-ETAL-2025-COALITION-SIGNALS"]
+supporting_evidence:
+  - "Les signaux de coopération diminuent l'antipathie entre électeurs de droite radicale et de centre droit, et augmentent la tolérance de ces derniers envers la droite radicale."
+  - "Ils augmentent simultanément l'antipathie des électeurs de centre gauche envers le centre droit."
+limitations:
+  - "Scénarios hypothétiques et effets immédiats ; ne mesurent pas les conséquences d'une coalition réelle."
+  - "Les résultats concernent les signaux de coalition, non le cordon médiatique."
+  - "Ne permettent pas de conclure qu'un cordon protège ou échoue uniformément dans tous les contextes."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire issue de l'abstract et des résultats accessibles ; extraction intégrale et vérification des modèles à poursuivre."
+last_reviewed: "2026-11-17"
