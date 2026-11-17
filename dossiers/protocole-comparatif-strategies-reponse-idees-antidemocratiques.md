@@ -302,3 +302,6 @@ Une augmentation de la distance affective envers un parti qui attaque les instit
 ### 15.3 Extension expérimentale éventuelle
 
 Ne pas ajouter un nouveau facteur au plan principal à six bras, déjà exigeant. Prévoir une expérience complémentaire sur le cadrage de la démarcation : critique factuelle et institutionnelle du parti, rhétorique négative coordonnée des élites, ou message distinguant explicitement dirigeants, organisation et électeurs. Mesurer les effets sur les normes démocratiques et sur l'antipathie envers les électeurs. Le résultat de Kollberg & Bantel motive cette expérience mais ne préjuge pas du meilleur cadrage.
+
+
+La distinction entre frontière normative et stigmatisation des électeurs est formalisée dans l'hypothèse [HYPOTHESIS-BOUNDARY-NORM-WITHOUT-VOTER-STIGMA](../hypotheses/hypothesis-boundary-norm-without-voter-stigma.yml). Elle reste non testée et ne doit pas être traitée comme un résultat.
