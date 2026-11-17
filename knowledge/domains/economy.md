@@ -24,3 +24,8 @@ Ce domaine étudie les mécanismes de production, de rémunération, d'emploi, d
 Les agrégats macroéconomiques ne décrivent pas nécessairement les effets vécus par chaque entreprise ou ménage. Distinguer salaires bruts, nets, coût employeur, revenu disponible, productivité horaire et niveau de vie. Les associations statistiques ne démontrent pas à elles seules les effets causaux des politiques.
 
 Pour chaque résultat, préciser la question, la période, la population, les données, la méthode d'identification ou les hypothèses du modèle. Ne pas transposer directement une estimation historique à une réforme actuelle. Une simulation interne sert à explorer des conséquences mécaniques ou des scénarios explicitement paramétrés ; elle ne remplace pas une étude empirique existante.
+
+## Autres dossiers
+
+- [Pour que nos enfants vivent mieux que nous — examen critique de la thèse d’Antoine Foucher](../../dossiers/antoine-foucher-pacte-intergenerationnel.md) — distinction entre faits, interprétations, hypothèses causales et arbitrages normatifs.
+- [Synthèse — Le pacte intergénérationnel d’Antoine Foucher](../../syntheses/antoine-foucher-pacte-intergenerationnel.md) — synthèse provisoire et programme de vérification empirique.
