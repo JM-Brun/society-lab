@@ -135,3 +135,20 @@ Cette étude précède Bazen & Skourias (1997) : elle ne peut donc pas être une
 Sources complémentaires :
 - Benhayoun (1994), résumé éditeur : https://www.emerald.com/ijm/article-abstract/15/2-3/82/136588/The-Impact-of-Minimum-Wages-on-Youth-Employment-in?redirectedFrom=fulltext
 - OCDE, *Perspectives de l'emploi 1998*, tableau 2.B.1 : https://www.oecd.org/content/dam/oecd/fr/publications/reports/1998/06/oecd-employment-outlook-1998_g1gh2155/empl_outlook-1998-fr.pdf
+
+
+## 7. Complément du 17 novembre 2026 — Cahuc, Carcillo & Le Barbanchon (2019), crédit d'embauche « zéro charges »
+
+Le texte intégral de l'IZA Discussion Paper 11248 (92 pages), publié ensuite dans *Review of Economic Studies* (2019), a été audité. Le programme annoncé en décembre 2008 exonère temporairement les nouvelles embauches à bas salaire dans les entreprises de moins de dix salariés ; il ne réduit pas les cotisations sur les salariés déjà présents.
+
+- **Identification :** DiD autour du seuil de dix ETP, entreprises de 6 à moins de 10 salariés traitées contre 10 à moins de 14 ; vérification par une stratégie IV sur cellules zone d'emploi × secteur, instrumentée par la part pré-2009 de travailleurs à bas salaire.
+- **Pré-tendances :** évolutions parallèles des taux de croissance de l'emploi entre 2006 et 2008 ; placebos 2007 et 2008 non significatifs.
+- **Résultat principal :** +0,8 point de croissance de l'emploi des firmes traitées en 2009 (SE environ 0,002), avec une hausse comparable des heures. L'effet se concentre sur les emplois éligibles sous 1,6 SMIC : +1,1 point de croissance de l'emploi éligible ; pas d'effet significatif sur l'emploi non éligible.
+- **Flux :** les embauches éligibles augmentent ; les séparations des emplois éligibles ne montrent pas d'augmentation significative. Le taux global de séparation est plus ambigu dans la spécification restreinte 2008–2009.
+- **Robustesse :** placebos temporels, variations de bande autour de dix salariés, pondérations et stratégie IV de signe convergent ; erreurs-types robustes et regroupées à plusieurs niveaux.
+- **Limites :** dispositif temporaire et inattendu en pleine crise, ciblé sur les nouvelles embauches et les entreprises proches du seuil ; exclusions de champ, entreprises nouvelles non incluses dans la DiD principale, quelques autres règles changent autour de dix salariés. Pas d'analyse spécifique aux jeunes.
+- **Modèle :** l'élasticité de l'emploi au coût induit par cette aide marginale aux nouvelles embauches est estimée autour de −4 (IC 95 % approximatif [−6 ; −2]), alors que l'élasticité à une variation uniforme du coût de tous les salariés est autour de −1 (IC approximatif [−1,5 ; −0,5]). Ces valeurs sont spécifiques au modèle et au dispositif ; elles ne sont pas des élasticités du SMIC.
+
+**Conclusion :** preuve quasi expérimentale modérée à assez élevée d'un effet positif sur l'emploi et les heures des petites entreprises éligibles en 2009. Le résultat montre l'intérêt potentiel d'une aide ciblée sur les embauches marginales, mais ne peut être assimilé à une hausse du SMIC brut ni à un allègement permanent général. Voir [l'audit complet](smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md).
+
+Source primaire : https://docs.iza.org/dp11248.pdf ; publication : https://doi.org/10.1093/restud/rdy011.
