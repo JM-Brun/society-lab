@@ -36,3 +36,24 @@
 ## Prochaine étape
 
 Lire les textes intégraux des deux études de déplateformisation récentes, effectuer le citation chasing à partir de Bolet & Foos et Thompson & Sengul, puis chercher spécifiquement des essais comparant l'analyse indépendante sans promoteur à l'interview contradictoire.
+
+
+## Recherche complémentaire — déplateformisation (17 novembre 2026)
+
+### Requête exécutée
+
+`McCabe Ferrari Green 2024 Post-January 6th deplatforming reduced the reach of misinformation on Twitter Nature 630 132 140 findings`
+
+### Résultat ajouté
+
+- **McCabe, Ferrari, Green, Lazer & Esterling (2024)**, *Post-January 6th deplatforming reduced the reach of misinformation on Twitter*, Nature 630, 132–140. DOI : https://doi.org/10.1038/s41586-024-07524-8.
+- Panel de plus de 500 000 utilisateurs actifs ; retrait d'environ 70 000 comptes ; réduction de la circulation de désinformation sur Twitter par les comptes retirés et leurs abonnés.
+- Limite majeure explicitement reconnue par les auteurs : la concomitance avec les événements du 6 janvier empêche d'identifier précisément l'ampleur causale.
+
+### Correction bibliographique
+
+La fiche de l'étude Parler a été complétée avec les quatre auteurs exacts (Horta Ribeiro, Hosseinmardi, West et Watts), le DOI de l'article et la date de publication. La page PubMed signale également un erratum publié en mai 2023 ; vérifier son contenu avant une éventuelle extraction quantitative plus détaillée.
+
+### Lecture croisée
+
+L'étude Parler et l'étude Twitter ne justifient pas un verdict binaire sur la déplateformisation. Elles portent sur des unités différentes (plateforme entière contre comptes fortement diffuseurs), des résultats différents (activité multi-plateformes contre circulation de désinformation sur Twitter) et des contextes distincts. Elles sont donc présentées comme complémentaires plutôt que contradictoires.
