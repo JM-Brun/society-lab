@@ -14,7 +14,7 @@ Ce domaine étudie les systèmes politiques, la représentation, les élections,
 ## Dossiers
 
 - [Débat, barrage et cordon sanitaire](../../dossiers/debat-barrage-cordon-sanitaire.md) — comparaison des stratégies politiques et médiatiques ; voir la [synthèse de référence](../../syntheses/debat-barrage-cordon-sanitaire.md), la [matrice de preuves multi-arènes](../../dossiers/matrice-preuves-cordon-sanitaire.md), le [protocole de revue systématique](../../dossiers/protocole-revue-systematique-cordon-sanitaire.md) et le [journal de recherche médias](../../dossiers/journal-recherche-cordon-sanitaire-medias.md).
-- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](../../dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — comparaison expérimentale proposée des effets du débat contradictoire, de l'analyse sans promoteur, de la pédagogie et des explications alternatives ; voir aussi la [matrice de preuves](../../dossiers/matrice-preuves-strategies-reponse.md).
+- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](../../dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — revue documentaire des études existantes sur le débat contradictoire, l'analyse indépendante, la correction, l'éducation aux médias et les explications alternatives ; aucune expérience propre à Society Lab n'est prévue.
 
 ## Précautions analytiques
 
