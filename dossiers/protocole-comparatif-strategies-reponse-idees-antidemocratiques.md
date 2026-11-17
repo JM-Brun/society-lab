@@ -238,11 +238,11 @@ Une étude publiée en ligne en juillet 2026 sur une intervention vidéo de 20 m
 **Verdict de revue :** la lacune est confirmée, mais elle doit être formulée avec précision : il n'existe pas, dans les études directement pertinentes retrouvées ici, de comparaison contrôlée entre une interview contradictoire et une analyse indépendante sans présence du promoteur, avec mesures de normalisation, de raisonnement inférentiel et de transfert à un mois. Cette conclusion reste une revue ciblée, non une revue systématique exhaustive.
 
 
-## 12. Phase 2 recommandée — plan factoriel pour isoler la présence du promoteur
+## 14. Phase 2 recommandée — plan factoriel pour isoler la présence du promoteur
 
 Le plan à six bras de la phase principale compare des stratégies éditoriales complètes. Il ne permet pas d'attribuer sans ambiguïté les différences à la présence du promoteur, au format de l'échange ou à la présence d'une correction. Une phase 2 plus ciblée peut isoler deux facteurs sans passer à un plan complet à 16 conditions.
 
-### 12.1 Plan factoriel 2 × 2
+### 14.1 Plan factoriel 2 × 2
 
 Deux facteurs sont randomisés :
 
@@ -258,7 +258,7 @@ Deux facteurs sont randomisés :
 
 Ajouter si possible un cinquième bras **sans exposition** pour mesurer le niveau de référence. Le bras P0C0 est un contrôle actif exposé aux affirmations, pas un groupe témoin sans exposition.
 
-### 12.2 Ce que ce plan identifie
+### 14.2 Ce que ce plan identifie
 
 - **Effet principal P** : différence moyenne associée à la présence du promoteur, à contenu et correction contrôlés.
 - **Effet principal C** : différence moyenne associée à la présence d'une correction.
@@ -267,7 +267,7 @@ Ajouter si possible un cinquième bras **sans exposition** pour mesurer le nivea
 
 La présentation neutre du bras P0 doit conserver les mêmes affirmations, ordre, durée et éléments factuels que P1. Le traitement de la personne (nom, image, voix, réputation) doit être prétesté et ne pas introduire d'autres différences non contrôlées. La correction doit être écrite à l'avance et identique sur le fond dans P1C1 et P0C1.
 
-### 12.3 Limites et précautions
+### 14.3 Limites et précautions
 
 - Le facteur « présence du promoteur » comprend nécessairement une différence de source et de mise en scène ; il ne peut être réduit à une variable psychologique pure.
 - Une correction dans une interview interactive peut différer d'une analyse enregistrée en termes de rythme et de crédibilité. Privilégier un script standardisé plutôt qu'une interaction improvisée.
@@ -275,7 +275,7 @@ La présentation neutre du bras P0 doit conserver les mêmes affirmations, ordre
 - Le bras sans correction ne doit être retenu que si le comité d'éthique estime le risque minimal et si le débriefing est immédiat et complet.
 - Le plan ne teste pas encore séparément la pédagogie et l'explication alternative ; ces composants peuvent faire l'objet d'une seconde randomisation ou d'une expérience dédiée, sans présumer qu'ils se cumulent.
 
-### 12.4 Critères d'analyse préenregistrés
+### 14.4 Critères d'analyse préenregistrés
 
 Le critère principal de l'interaction doit être fixé avant la collecte. Rapporter les effets principaux et l'interaction avec tailles d'effet et intervalles de confiance. Mesurer séparément adhésion personnelle, normalisation sociale, crédibilité de la source, compréhension de la correction, mémoire de la correction et usage inférentiel des affirmations. La puissance doit être calculée pour l'interaction, souvent plus exigeante que celle des effets principaux.
 
