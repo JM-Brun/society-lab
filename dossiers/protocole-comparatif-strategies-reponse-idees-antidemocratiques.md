@@ -280,3 +280,25 @@ La présentation neutre du bras P0 doit conserver les mêmes affirmations, ordre
 Le critère principal de l'interaction doit être fixé avant la collecte. Rapporter les effets principaux et l'interaction avec tailles d'effet et intervalles de confiance. Mesurer séparément adhésion personnelle, normalisation sociale, crédibilité de la source, compréhension de la correction, mémoire de la correction et usage inférentiel des affirmations. La puissance doit être calculée pour l'interaction, souvent plus exigeante que celle des effets principaux.
 
 **Recommandation :** conserver la phase 1 à six bras comme comparaison pragmatique de stratégies, puis utiliser ce plan factoriel ciblé si l'objectif prioritaire devient l'identification du mécanisme « présence du promoteur × correction ». Il évite un factoriel complet à 16 bras tout en répondant plus directement à la lacune identifiée.
+
+
+## 15. Mesurer les effets de la démarcation sur les électeurs, pas seulement sur les idées
+
+Les travaux de Kollberg & Bantel (2026) montrent que des messages négatifs coordonnés des partis établis peuvent augmenter la polarisation affective envers l'AfD, y compris envers ses électeurs. Cette dimension doit être distinguée de la correction factuelle, de l'adhésion idéologique et de la protection institutionnelle.
+
+### 15.1 Mesures secondaires à ajouter
+
+- Évaluation affective du parti et de ses dirigeants (thermomètre 0–100).
+- Évaluation affective des électeurs du parti (thermomètre distinct).
+- Distance sociale et acceptation de relations ordinaires avec des électeurs du parti.
+- Tolérance envers leurs droits politiques et civiques, y compris lorsqu'on désapprouve leurs idées.
+- Perception de la frontière normative : le participant juge-t-il le parti compatible avec les règles démocratiques ? Sur quels comportements précis fonde-t-il ce jugement ?
+- Capacité à distinguer électeurs, militants, dirigeants, programme et actes institutionnels.
+
+### 15.2 Précaution interprétative
+
+Une augmentation de la distance affective envers un parti qui attaque les institutions démocratiques n'est pas automatiquement un échec démocratique. Mais une hostilité qui se généralise à tous ses électeurs, indépendamment de leurs actes, peut avoir un coût de cohésion et de tolérance. Les deux effets doivent être observés séparément et aucun indice agrégé ne doit les masquer.
+
+### 15.3 Extension expérimentale éventuelle
+
+Ne pas ajouter un nouveau facteur au plan principal à six bras, déjà exigeant. Prévoir une expérience complémentaire sur le cadrage de la démarcation : critique factuelle et institutionnelle du parti, rhétorique négative coordonnée des élites, ou message distinguant explicitement dirigeants, organisation et électeurs. Mesurer les effets sur les normes démocratiques et sur l'antipathie envers les électeurs. Le résultat de Kollberg & Bantel motive cette expérience mais ne préjuge pas du meilleur cadrage.
