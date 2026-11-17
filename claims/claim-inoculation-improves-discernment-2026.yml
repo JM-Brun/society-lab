@@ -1,0 +1,19 @@
+id: CLAIM-INOCULATION-IMPROVES-DISCERNMENT-2026
+statement: "Dans les expériences agrégées, les interventions d'inoculation améliorent le discernement entre informations fiables et trompeuses sans augmenter systématiquement une tendance générale à la méfiance."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["International"]
+  period: "33 expériences issues de 13 articles ; publication 2026"
+  conditions: "Méta-analyse bayésienne hiérarchique fondée sur la théorie de détection du signal ; N=37 025."
+domain_ids: ["DOMAIN-EDUCATION", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-SIMCHON-ETAL-2026-INOCULATION-META"]
+supporting_evidence:
+  - "La méta-analyse trouve une amélioration du discernement entre contenus fiables et trompeurs, sans déplacement systématique du biais de réponse."
+limitations:
+  - "Mesure le discernement informationnel, non l'adhésion idéologique ou le vote."
+  - "La durabilité dépend du format et du renforcement ; les résultats scolaires à trois mois ne sont pas systématiquement positifs."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; les résultats de Maertens 2025 et Nygren & Efimova 2025 sont reliés comme qualifications."
+last_reviewed: "2026-11-17"
