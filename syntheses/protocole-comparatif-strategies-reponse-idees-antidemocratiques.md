@@ -107,3 +107,8 @@ Le plan à six bras compare des stratégies complètes ; il ne permet pas d'isol
 ### Conclusion actualisée
 
 La revue ciblée confirme la pertinence du projet mais ne permet toujours pas de classer les stratégies. La lacune précise est la comparaison contrôlée B vs C, avec suivi de la normalisation, de l'utilisation inférentielle des informations corrigées et du transfert critique. Il s'agit d'une revue ciblée et non d'une revue systématique exhaustive.
+
+
+## Matrice de preuves
+
+La [matrice de preuves comparative](../dossiers/matrice-preuves-strategies-reponse.md) classe les études selon leur proximité avec la question, leurs interventions, leurs résultats, leur temporalité et leurs limites. Elle confirme que Bolet & Foos est la comparaison la plus directement pertinente, mais ne résout pas le contraste débat avec promoteur vs analyse indépendante sans promoteur.
