@@ -1,0 +1,19 @@
+id: CLAIM-REPETITION-ILLUSORY-TRUTH-EFFECT-2026
+statement: "La répétition d'une affirmation augmente en moyenne sa familiarité et sa probabilité d'être jugée vraie, y compris lorsqu'elle est fausse, avec un effet moyen faible à modéré et une forte hétérogénéité."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["International"]
+  period: "Méta-analyse publiée en 2026"
+  conditions: "182 études, 366 tailles d'effet et 31 184 participants."
+domain_ids: ["DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-YE-ETAL-2026-ILLUSORY-TRUTH-META"]
+supporting_evidence:
+  - "La méta-analyse rapporte un effet moyen après correction des effets de petites études (g=0,37)."
+limitations:
+  - "Effets hétérogènes selon le type d'assertion, la tâche et les indices de véracité."
+  - "La répétition n'est pas équivalente à toute exposition initiale ; les effets de correction et de contextualisation doivent être distingués."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire fondée sur les résultats méta-analytiques référencés dans le dossier."
+last_reviewed: "2026-11-17"
