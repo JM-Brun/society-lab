@@ -103,3 +103,23 @@ Ces travaux renforcent deux précautions sans trancher le débat général. Prem
 ### Interprétation
 
 Ces résultats ne se contredisent pas nécessairement : ils portent sur des interventions, des unités et des résultats différents. Le retrait de Parler comme plateforme a déplacé une partie de l'activité vers d'autres services marginaux sans réduire l'activité totale mesurée dans cet écosystème. Le retrait de comptes fortement diffuseurs sur Twitter a réduit la circulation de désinformation sur Twitter, y compris chez leurs abonnés. La conclusion correcte n'est donc ni « la déplateformisation marche toujours », ni « elle ne marche jamais » : son effet dépend de la cible, de la concentration des relais, de la substituabilité des plateformes, du réseau d'abonnés et de l'indicateur retenu.
+
+## 9. Citation chasing — travaux complémentaires sur les pratiques journalistiques
+
+| Étude | Corpus / méthode | Apport à la question | Limite principale |
+|---|---|---|---|
+| Richards, Smith & Barton (2024), [DOI 10.1080/17539153.2024.2304907](https://doi.org/10.1080/17539153.2024.2304907) | 683 articles, 72 incidents australiens (2010–2022), articles de presse et documents judiciaires | Montre comment certains cadrages peuvent contextualiser les activités extrémistes, mais aussi les banaliser ou neutraliser leur portée politique ; les effets discursifs ne sont pas uniformes | Corpus limité aux incidents ayant donné lieu à une procédure juridique ; pas de mesure directe de réception |
+| Ekström, Patrona & Thornborrow (2022), [DOI 10.1177/14648849211001779](https://doi.org/10.1177/14648849211001779) | Analyse qualitative de cas en Suède, Grèce, France et Royaume-Uni | Les cadrages journalistiques de propos racistes ou antidémocratiques construisent des frontières du dicible et peuvent contribuer à normaliser des discours | Analyse du cadrage, pas estimation des effets sur les publics |
+| Ekström, Patrona & Thornborrow (2020), [DOI 10.1080/10350330.2020.1762984](https://doi.org/10.1080/10350330.2020.1762984) | Analyse discursive des interviews d'actualité des Démocrates de Suède | Documente les mécanismes de normalisation dans le format même de l'interview | Étude qualitative nationale, sans mesure causale de réception |
+| Murphy & Devine (2020), [DOI 10.1017/S0007123418000145](https://doi.org/10.1017/S0007123418000145) | Séries temporelles mensuelles UKIP, janvier 2004-avril 2017 | La couverture médiatique peut précéder et contribuer au soutien mesuré à UKIP ; le soutien antérieur ne suffit pas à expliquer les volumes de couverture | Données agrégées et modèle temporel ; ne mesure pas l'effet individuel d'une interview |
+
+### Ce que cette littérature permet de préciser
+
+Le mécanisme d'amplification ne se limite pas au fait de laisser un invité parler sans contradiction. Il peut aussi passer par :
+- le choix de traiter une provocation comme un événement politique majeur ;
+- la répétition de cadrages sans en examiner les présupposés ;
+- le cadrage d'un acteur comme simple « controversé » plutôt que l'explicitation de ses actes et de son projet ;
+- la présentation de propos racistes ou antidémocratiques comme une controverse ordinaire entre deux opinions équivalentes ;
+- la transformation d'une interview conflictuelle en séquence médiatique autonome, réutilisable par l'interviewé.
+
+Ces mécanismes sont documentés par des analyses qualitatives et des études de contenu ; ils ne doivent pas être confondus avec des effets expérimentaux sur les attitudes individuelles.
