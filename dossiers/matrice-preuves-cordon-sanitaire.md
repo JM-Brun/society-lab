@@ -1,5 +1,7 @@
 # Matrice de preuves — cordon sanitaire, coopération politique et normalisation
 
+- **ID** : DOSSIER-MATRIX-CORDON-SANITAIRE-EVIDENCE
+
 - **Dossier parent** : [Débat, barrage et cordon sanitaire](debat-barrage-cordon-sanitaire.md)
 - **Dossier spécialisé** : [Cordon sanitaire belge : que démontre réellement son efficacité ?](cordon-sanitaire-belgique-efficacite.md)
 - **Date de mise à jour** : 2026-11-17
