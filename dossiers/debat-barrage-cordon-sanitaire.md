@@ -480,3 +480,8 @@ La lacune prioritaire est désormais traitée dans un dossier méthodologique au
 Le protocole compare cinq interventions — discours non contesté, débat contradictoire, analyse critique sans présence du promoteur, pédagogie des mécanismes de manipulation et explication alternative crédible — avec un sixième bras témoin sans exposition. Les mesures sont prévues avant intervention, immédiatement après, à une semaine et à un mois.
 
 Les résultats ne seront pas réduits à la seule adhésion au message : exactitude des croyances, normalisation perçue, mémorisation, transfert de la compétence critique, réactance, confiance et tolérance à la contradiction seront distingués. Le protocole est proposé et non exécuté ; aucune supériorité entre stratégies n'est actuellement établie.
+
+
+## Mise à jour — cohérence du cordon et signaux de coalition (2026-11-17)
+
+Une revue complémentaire montre que le cordon doit être évalué dans plusieurs arènes. La non-coalition peut coexister avec des convergences discursives (Shuttleworth, Brown & Mondon, 2025) ; les signaux de coopération déplacent les attitudes affectives selon les électorats (Vanagt et al., 2025) ; les citoyens distinguent coalition gouvernementale et coopération parlementaire ponctuelle (Gross, Juen & Stecker, 2026). En Belgique, quatre ruptures locales en 2024 illustrent la vulnérabilité de la norme (Miyauchi, 2025). Voir la [matrice de preuves multi-arènes](matrice-preuves-cordon-sanitaire.md).
