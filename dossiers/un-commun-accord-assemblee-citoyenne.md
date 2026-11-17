@@ -8,7 +8,7 @@ question: "Dans quelles conditions le dispositif Un commun accord peut-il produi
 geographic_scope: ["France", "Europe"]
 temporal_scope: "Initiative 2026-2027 ; littérature de référence sur les assemblées citoyennes et dispositifs délibératifs antérieurs."
 claim_ids: []
-study_ids: []
+study_ids: ["STUDY-VAN-DER-DOES-JACQUET-2023-SPILLOVER", "STUDY-DEMOCRATIC-INNOVATIONS-META-ANALYSIS-2024", "STUDY-GERMANN-2025-REPRESENTATIVENESS-LEGITIMACY"]
 hypothesis_ids: []
 concept_ids: ["CONCEPT-DELIBERATIVE-DEMOCRACY", "CONCEPT-MINI-PUBLIC", "CONCEPT-CITIZEN-SORTITION", "CONCEPT-DELIBERATIVE-QUALITY", "CONCEPT-POLITICAL-LEGITIMACY"]
 last_reviewed: "2026-11-17"
@@ -135,7 +135,57 @@ La page d'accueil répertorie notamment des auditions introductives sur la biodi
 
 Playlist fournie : https://www.youtube.com/playlist?list=PLLJ27GPJhHgo. L'accès automatisé à la playlist a échoué lors de la première tentative ; aucun inventaire exhaustif ni résumé de vidéo n'est revendiqué. La prochaine étape consiste à récupérer les métadonnées et transcriptions accessibles, puis à vérifier chaque extraction sur la vidéo.
 
-## 9. Questions de recherche prioritaires
+## 9. Premiers résultats de la revue scientifique
+
+Trois références empiriques structurent désormais l'évaluation, sans constituer une note globale sur Un commun accord.
+
+### Effets sur les participants
+
+Une méta-analyse de 100 études quantitatives (1980-2020) conclut que les mini-publics peuvent modifier les attitudes des participants envers les politiques publiques et améliorer en moyenne leurs attitudes politiques, leurs connaissances, leur efficacité politique interne et leurs capacités de raisonnement. Les preuves relatives à l'engagement civique restent plus limitées. Cela justifie de mesurer les apprentissages et les évolutions d'opinion des 150 participants, idéalement avant/après et avec des instruments transparents. Cela ne démontre pas que ces effets se produiront dans cette assemblée particulière ni qu'ils se diffuseront au reste de la population.
+
+### Effets sur le grand public
+
+La revue systématique de van der Does et Jacquet identifie 60 études empiriques sur les effets de débordement des mini-publics. Elle conclut que les preuves relatives à la plupart des effets sur les non-participants restent provisoires, car la base empirique est limitée. Il faut donc distinguer l'effet sur les citoyens tirés au sort, la visibilité médiatique, la participation numérique, la connaissance du grand public et une éventuelle influence sur le débat national. Ces dimensions ne sont pas substituables.
+
+### Représentativité et légitimité perçue
+
+L'étude expérimentale de Micha Germann (2025, N=1 308) indique que l'implication d'un mini-public peut accroître la légitimité perçue d'un processus, mais que des biais même modestes dans sa composition réduisent ce gain, et que des biais plus importants peuvent l'annuler. C'est une raison supplémentaire de demander les taux de contact, de refus, d'acceptation, de présence et d'attrition, et de comparer le panel effectivement présent à la population de référence. Le résultat porte sur des perceptions dans un scénario expérimental ; il ne mesure pas directement la légitimité d'Un commun accord.
+
+### Ce que cette littérature ne permet pas de conclure
+
+Ces travaux ne permettent pas de conclure que toute assemblée tirée au sort est représentative, neutre ou efficace. Ils identifient des effets possibles et des conditions à mesurer. La qualité d'un dispositif dépend aussi de l'information fournie, de la sélection des experts, de la facilitation, de la règle de décision et du lien avec les institutions.
+
+## 10. Gouvernance, financement et données personnelles : précisions documentaires
+
+### Charte des financeurs
+
+La charte des financeurs initiaux énonce quatre engagements : ne pas intervenir dans le choix de l'équipe salariée, les choix éditoriaux et la sélection des thèmes, le choix des participants, ni chercher à orienter les débats. Elle précise également que les financeurs conservent leur liberté de jugement et de parole sur les propositions, et que l'équipe s'engage à les tenir informés et à répondre à leurs questions. Il faut donc décrire exactement le périmètre de l'engagement : la charte ne signifie pas que les financeurs renoncent à toute expression publique sur les résultats. Son existence documente un garde-fou formel, pas son respect effectif ni l'ensemble des flux financiers.
+
+### Gouvernance et responsabilité de traitement
+
+La page « Qui sommes-nous ? » indique que The Shift Project héberge administrativement l'initiative et que l'équipe revendique une autonomie opérationnelle. La politique de confidentialité précise que The Shift Project est responsable de la plateforme et des traitements de données qui y sont décrits. Cette seconde fonction doit être documentée séparément de l'hébergement administratif. Elle implique un enjeu de gouvernance des données, notamment pour la plateforme publique.
+
+### Données collectées et données sensibles
+
+La politique de confidentialité indique que la plateforme peut collecter notamment l'adresse électronique, l'âge, la commune, le genre, le métier, les réponses aux sondages, des messages destinés aux 150 citoyens et, le cas échéant, des enregistrements vocaux. Elle mentionne le traitement de données susceptibles de révéler des opinions politiques ou philosophiques avec consentement explicite, des opérations de pondération/redressement, ainsi que des destinataires/prestataires dont Silex, Google (notamment pour l'analyse IA éventuelle) et Brevo. Elle décrit des durées de conservation différenciées et des transferts éventuels hors EEE pour certains services Google.
+
+Ce sont les traitements décrits par la notice, non un audit technique. Il reste à vérifier les contrats de sous-traitance, les lieux d'hébergement, les éventuels transferts, les analyses d'impact nécessaires, la séparation entre données identifiantes et réponses, les règles d'accès et la gouvernance des messages transmis à l'assemblée. Les données d'opinion politique et philosophique sont particulièrement sensibles au regard du RGPD ; leur collecte appelle une transparence forte sur la finalité et les garanties.
+
+## 11. Corpus audiovisuel : inventaire partiel vérifiable
+
+La page d'accueil officielle présente explicitement au moins trois auditions avec titre, intervenant, date et durée :
+
+| Date | Intervenant | Sujet | Durée | État |
+|---|---|---|---:|---|
+| 20 septembre 2026 | Patrice Geoffron | Introduction à l'économie | 1:06:25 | Répertoriée sur la page d'accueil ; contenu non analysé ici |
+| 20 septembre 2026 | Selma Mahfouz | Introduction aux finances publiques | 42:15 | Répertoriée sur la page d'accueil ; contenu non analysé ici |
+| 21 octobre 2026 | Marc-André Selosse | Introduction à la biodiversité | 1:19:20 | Répertoriée sur la page d'accueil ; contenu non analysé ici |
+
+Cet inventaire est un minimum confirmé par la page d'accueil, pas l'inventaire exhaustif de la vidéothèque ni de la playlist YouTube fournie. La playlist YouTube n'a pas pu être récupérée automatiquement. Aucune transcription ni analyse de contenu n'est revendiquée. Chaque audition doit être traitée comme une source autonome, avec transcription horodatée, intervenant, discipline, intérêts déclarés, questions/réponses et perspective représentée.
+
+La page d'accueil annonce également un reportage sur la deuxième session (15 octobre 2026), un reportage sur les retours des citoyens à propos de la canicule (3 novembre 2026) et un programme du troisième week-end (article du 4 novembre, session annoncée les 7 et 8 novembre). Ces contenus éditoriaux renseignent sur la communication de l'organisateur et sur certains aspects du déroulement, mais ne remplacent pas les comptes rendus complets ni les observations indépendantes. Au 17 novembre 2026, les 7 et 8 novembre sont passés : le programme annoncé doit être remplacé dans le suivi par un compte rendu de ce qui s'est effectivement tenu.
+
+## 12. Questions de recherche prioritaires
 
 1. Quel est le protocole complet de tirage au sort et de constitution du panel ?
 2. Quels sont les taux de réponse, d'acceptation, de présence et d'attrition ?
@@ -148,15 +198,15 @@ Playlist fournie : https://www.youtube.com/playlist?list=PLLJ27GPJhHgo. L'accès
 9. Quel est le budget réalisé, quelle est sa ventilation et quels contrôles sont prévus ?
 10. Quel suivi sera assuré après février 2027 et quelle réponse les décideurs apporteront-ils aux propositions ?
 
-## 10. Sources initiales
+## 13. Sources initiales
 
 - Un commun accord, site officiel, page d'accueil et FAQ, consultés le 17 novembre 2026 : https://www.uncommunaccord.fr/
 - Un commun accord, « Qui sommes-nous ? », consulté le 17 novembre 2026 : https://www.uncommunaccord.fr/qui-sommes-nous
-- Un commun accord, « Les soutiens », consulté le 17 novembre 2026 : https://www.uncommunaccord.fr/soutiens
+- Un commun accord, « Les soutiens », consulté le 17 novembre 2026 : https://www.uncommunaccord.fr/soutiens\n- Un commun accord, « Charte des financeurs » : https://www.uncommunaccord.fr/charte_financeurs.pdf\n- Un commun accord, « Politique de confidentialité » : https://www.uncommunaccord.fr/politique-de-confidentialite\n- van der Does, R. & Jacquet, V. (2023), « Small-Scale Deliberation and Mass Democracy », Political Studies, https://doi.org/10.1177/00323217211007278\n- Méta-analyse des effets des innovations démocratiques sur les participants (2024), https://doi.org/10.1111/1475-6765.12722\n- Germann, M. (2025), « Mini-Publics, (Lack of) Representativeness, and Legitimacy Beliefs », https://doi.org/10.1017/S0007123424000322
 - Un commun accord, page LinkedIn : https://www.linkedin.com/company/un-commun-accord/
 - Un commun accord, playlist YouTube fournie : https://www.youtube.com/playlist?list=PLLJ27GPJhHgo
 
-## 11. Prochaines étapes
+## 14. Prochaines étapes
 
 - Inventorier intégralement les auditions et la playlist, avec transcriptions et minutage.
 - Récupérer les documents de méthode, charte des financeurs et documents de gouvernance.
