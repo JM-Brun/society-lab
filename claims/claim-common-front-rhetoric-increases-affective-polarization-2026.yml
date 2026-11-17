@@ -1,0 +1,22 @@
+id: CLAIM-COMMON-FRONT-RHETORIC-INCREASES-AFFECTIVE-POLARIZATION-2026
+statement: "Dans l'expérience allemande étudiée, les messages négatifs coordonnés des partis établis contre l'AfD augmentent davantage la polarisation affective envers l'AfD que les messages émanant d'un seul parti."
+claim_type: causal
+status: under_review
+scope:
+  geography: ["Allemagne"]
+  population: "Électeurs des partis établis ; échantillon représentatif expérimental n≈3 100"
+  period: "Publication en ligne 2025, volume 2026"
+  conditions: "Messages négatifs réels identifiés dans les discours parlementaires ; source du message randomisée."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-KOLLBERG-BANTEL-2026-COMMON-FRONT-RHETORIC"]
+supporting_evidence:
+  - "L'expérience trouve que les messages coordonnés de l'ensemble des partis établis augmentent plus l'antipathie envers l'AfD que les messages d'un seul parti."
+  - "Les effets affectifs débordent des élites de l'AfD vers ses électeurs."
+limitations:
+  - "Mesure l'antipathie et la polarisation affective, non la croyance dans les propositions, la tolérance juridique ou le vote."
+  - "Une hausse de la distance affective peut signaler une frontière normative contre un acteur antidémocratique, mais peut aussi nuire à la cohésion sociale."
+  - "Étude située dans le contexte allemand ; généralisation à la France ou à la Belgique à établir."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire fondée sur l'article en accès ouvert ; extraction des annexes et analyses de robustesse à poursuivre."
+last_reviewed: "2026-11-17"
