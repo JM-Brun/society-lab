@@ -333,3 +333,8 @@ Ce résultat complique l'évaluation d'un « front républicain » rhétorique. 
 - la tolérance envers les droits politiques et civiques des personnes qui votent pour ce parti.
 
 L'étude ne démontre pas que toute démarcation est néfaste : elle montre que la façon de communiquer la démarcation a des effets affectifs mesurables. Le protocole devrait mesurer séparément la capacité à tracer une frontière démocratique et la généralisation de l'hostilité aux électeurs.
+
+
+## Protocole de revue
+
+La suite de l'enquête est cadrée dans un [protocole de revue systématique de portée](protocole-revue-systematique-cordon-sanitaire.md). Il sépare les preuves institutionnelles, médiatiques et cognitives afin de ne pas agréger des résultats qui ne sont pas comparables. La revue reste à exécuter ; aucun diagramme PRISMA ni décompte de sélection n'est revendiqué à ce stade.
