@@ -4,7 +4,9 @@
 
 Society Lab est un projet documentaire indépendant de compilation critique, de mise en relation des connaissances et de synthèse des transformations politiques, économiques, sociales, environnementales et technologiques. Il étudie les recherches et débats déjà existants ; il ne conduit pas ses propres expériences.
 
-## Finalité et méthode éditoriale\n\nSociety Lab rassemble des études scientifiques, sociologiques et politiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques, des rapports et des débats argumentés. Le but est d'en tirer des bilans compréhensibles, sourcés, non partisans et proportionnés au niveau réel des preuves. Non partisan ne signifie pas fausse équivalence : les arguments sont présentés loyalement, mais leur poids dépend de leur documentation et de leur robustesse. Voir la [charte éditoriale et méthode de synthèse](docs/editorial-charter.md).\n\n## Trois approches complémentaires
+## Finalité et méthode éditoriale
+
+Society Lab rassemble des études scientifiques, sociologiques et politiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques, des rapports et des débats argumentés. Le but est d'en tirer des bilans compréhensibles, sourcés, non partisans et proportionnés au niveau réel des preuves. Non partisan ne signifie pas fausse équivalence : les arguments sont présentés loyalement, mais leur poids dépend de leur documentation et de leur robustesse. Voir la [charte éditoriale et méthode de synthèse](docs/editorial-charter.md).\n\n## Trois approches complémentaires
 
 - **Knowledge** — structurer les concepts, institutions, mécanismes et connaissances.
 - **Research** — examiner les publications, données, méthodes et résultats.
