@@ -76,3 +76,33 @@ Ces résultats montrent que les marges d'ajustement dépendent du contexte, de l
 ## 5. Prochaine priorité de recherche
 
 Rechercher des données et travaux français récents exploitant l'exposition sectorielle/entreprise aux hausses 2021–2024, avec résultats spécifiques aux moins de 26 ans, peu diplômés, contrats courts et entrants. Évaluer séparément le rôle des exonérations et celui des hausses de salaire brut. Ne pas confondre corrélations descriptives DARES avec effets causaux.
+
+
+## 6. Actualisation du 17 novembre 2026 — audit croisé et nouvelle étude sur le coût employeur
+
+### 6.1 Bazen & Skourias (1997) : informations supplémentaires, texte intégral toujours inaccessible
+
+Le texte original n'a pas été retrouvé en accès libre vérifiable. La notice RePEc précise que le texte est réservé aux abonnés ScienceDirect ; le catalogue EconBiz signale des fonds de bibliothèque ZBW, mais ne fournit pas de copie consultable. L'audit peut néanmoins être précisé grâce à deux lectures secondaires :
+- Neumark & Wascher (2007, p. 97–98) décrivent 32 secteurs, les 15–24 ans, la part des jeunes dans l'emploi sectoriel et une mesure d'exposition fondée sur la proportion de salariés payés sous le SMIC de juin 1981. Ils rapportent des coefficients négatifs et significatifs pour octobre 1980–octobre 1981 et mars 1981–mars 1982, plus importants sur la fenêtre longue mars 1980–mars 1984.
+- Le rapport IMK n°31 (2008, p. 23) rapporte une baisse descriptive de la part des jeunes dans l'emploi total de 14,6 % à 12,9 % entre mars 1980 et mars 1984, mais juge les spécifications de 1981 peu robustes et souligne que les politiques du marché du travail ne sont pas contrôlées sur la fenêtre longue.
+
+Les deux lectures ne permettent pas de réconcilier les résultats sans les tableaux originaux. Les critiques de Neumark & Wascher portent sur la cohérence du contrôle par la croissance en pourcentage de l'emploi sectoriel et sur l'utilisation de la seule exposition à la hausse de juin 1981 pour expliquer les ajustements de 1980–1984. Les tendances préalables, coefficients, erreurs-types, intervalles de confiance et tests de robustesse originaux restent invérifiables. **Conclusion : signal historique intéressant, mais confiance causale faible ; aucun chiffre d'emplois détruits ne peut en être tiré.**
+
+### 6.2 Cahuc, Carcillo & Le Barbanchon (2019) : preuve quasi-expérimentale sur une aide à l'embauche
+
+L'étude *The Effectiveness of Hiring Credits* exploite le dispositif « zéro charges » de 2009, réservé aux nouveaux embauchés de moins de 1,6 SMIC dans les entreprises de moins de 10 ETP. Le coût d'un nouvel emploi au SMIC est réduit jusqu'à 12 %. Les auteurs comparent les entreprises de 6–10 ETP à celles de 10–14 ETP et complètent cette stratégie par une variable instrumentale.
+
+Ils trouvent +0,8 point de croissance de l'emploi des entreprises traitées en 2009 (erreur-type 0,2 point), avec une évolution similaire des heures. Les placebo temporels 2007–2008, les tests de seuil et les variantes de bande passante renforcent l'identification. L'élasticité de −4 [−6 ; −2] est propre au coût des nouveaux entrants subventionnés ; l'élasticité recalculée pour une variation du coût de l'ensemble des salariés est d'environ −1 [−1,5 ; −0,5].
+
+**Ce n'est pas un effet du SMIC brut** : le dispositif est temporaire, non anticipé, ciblé sur les nouveaux entrants et les petites entreprises en période de crise. Il ne fournit pas de résultat propre aux jeunes. L'audit complet est dans [le dossier spécialisé](smic-cahuc-carcillo-le-barbanchon-2019-zero-charges.md).
+
+### 6.3 Autres éléments français récents à distinguer
+
+- **Bozio & Wasmer (France Stratégie, 2024)** mobilisent les travaux de Cottet sur les allègements Juppé de 1995–1996. Les entreprises très exposées à la baisse du coût de leur masse salariale augmentent l'emploi à plusieurs niveaux de salaire (effet d'échelle), tandis que les entreprises moins exposées réagissent davantage dans la tranche directement subventionnée (effet de coût relatif). Le rapport discute également des élasticités par âge pour les simulations, mais celles-ci ne sont pas de nouvelles estimations causales françaises des hausses du SMIC.
+- **Groupe d'experts SMIC (2025)** : la fourchette de 1,3 à 1,9 million d'emplois attribuée aux allègements résulte d'une simulation d'équilibre partiel et d'élasticités imposées ; elle ne constitue ni un comptage d'emplois créés ni un effet causal propre aux jeunes.
+- **Benyamina & Stutzmann (Trésor, 2025)** : les trajectoires 2013–2019 montrent une mobilité salariale hétérogène parmi les personnes sous 1,1 SMIC, mais sans contrefactuel permettant d'attribuer ces trajectoires aux hausses du SMIC.
+- **DARES (2016)** : les salariés rémunérés sur la base du SMIC en 2013 sont plus souvent jeunes et femmes, et plus fréquemment en CDD ou à temps partiel ; il s'agit d'une description de population, pas d'une évaluation causale.
+
+### 6.4 Conclusion actualisée
+
+Le corpus français récent documente mieux les effets des allègements, des aides à l'embauche et les trajectoires salariales que l'effet causal isolé des hausses du SMIC brut. Aucune des études ajoutées ici ne permet d'estimer directement l'effet des revalorisations 2021–2025 sur l'emploi des jeunes. Il faut conserver séparément : hausse du salaire minimum légal, variation du coût total employeur, crédit d'embauche, allègements généraux, contrats aidés et conjoncture.
