@@ -164,6 +164,8 @@ La conclusion devra être formulée par population, type de contenu, résultat e
 
 ## 11. Sources scientifiques initiales
 
+Voir aussi la [matrice de preuves comparative](matrice-preuves-strategies-reponse.md), qui distingue preuve directe, preuves adjacentes, résultats et limites.
+
 1. **Bolet, D. & Foos, F. (2025)**, *Media Platforming and the Normalisation of Extreme Right Views*, British Journal of Political Science. Expériences au Royaume-Uni et en Australie ; exposition non contestée et entretien critique. https://www.cambridge.org/core/journals/british-journal-of-political-science/article/media-platforming-and-the-normalisation-of-extreme-right-views/747E769DA6CE4365E0151B55FDF4DEFA
 2. **Brashier, N. M. et al. (2021)**, *Timing matters when correcting fake news*, PNAS. Deux expériences, N=2 683 ; mesures à une semaine. https://doi.org/10.1073/pnas.2020043118
 3. **Berger, L. M. et al. (2025)**, *Debunking “fake news” on social media: Immediate and short-term effects of fact-checking and media literacy interventions*, Journal of Public Economics, 245, 105345. https://doi.org/10.1016/j.jpubeco.2025.105345
