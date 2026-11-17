@@ -5,7 +5,7 @@ domain: "politics"
 status: "provisional"
 last_reviewed: "2026-11-17"
 owner: ""
-related_dossiers: ["DOSSIER-UN-COMMUN-ACCORD-DELIBERATIVE-ASSEMBLY"]
+related_dossiers: ["dossiers/un-commun-accord-assemblee-citoyenne.md"]
 related_claims: []
 related_studies: []
 related_datasets: []
