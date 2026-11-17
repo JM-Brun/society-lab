@@ -1,0 +1,15 @@
+id: HYPOTHESIS-INDEPENDENT-CRITIQUE-VS-CHALLENGED-INTERVIEW
+statement: "À contenu factuel, durée et qualité d'information comparables, une analyse critique indépendante sans présence du promoteur pourrait réduire davantage la normalisation sociale qu'un entretien contradictoire, sans nécessairement produire une meilleure compréhension ou une confiance plus élevée."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA"]
+mechanism: "La suppression de l'exposition directe au promoteur pourrait limiter sa visibilité, sa mémorisation et la perception de sa légitimité ; l'entretien contradictoire pourrait toutefois rendre les objections plus saillantes et améliorer la compréhension."
+scope_conditions:
+  - "Même affirmation et même dossier de preuves dans les deux conditions."
+  - "Comparaison de formats contrôlés, sans assimiler une expérience en ligne à une élection ou à un débat télévisé réel."
+  - "Mesures séparées d'adhésion personnelle, de normalisation sociale, de compréhension, de confiance et de réactance."
+alternative_explanations:
+  - "La présence d'un contradicteur peut renforcer la crédibilité de la correction et faciliter l'apprentissage."
+  - "Une analyse indépendante peut être perçue comme unilatérale et susciter davantage de défiance."
+  - "Les effets peuvent varier selon les croyances initiales, le sujet et la confiance institutionnelle."
+status: under_examination
+confidence_rationale: "Hypothèse de recherche non tranchée. Bolet & Foos (2025) ne comportent pas de condition d'analyse indépendante sans promoteur ; le protocole comparatif proposé est nécessaire pour l'évaluer."
+reviewed_at: "2026-11-17"
