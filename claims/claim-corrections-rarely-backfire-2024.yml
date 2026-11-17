@@ -1,0 +1,20 @@
+id: CLAIM-CORRECTIONS-RARELY-BACKFIRE-2024
+statement: "Les corrections factuelles améliorent généralement l'exactitude des croyances et les effets de retour de flamme sont extrêmement rares dans la littérature examinée."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["International"]
+  period: "Revue publiée en 2024"
+  conditions: "Synthèse des recherches expérimentales sur les corrections factuelles."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-PORTER-WOOD-2024-FACTUAL-CORRECTIONS"]
+supporting_evidence:
+  - "La revue conclut que les corrections factuelles améliorent habituellement l'exactitude des croyances."
+limitations:
+  - "Les corrections ne suppriment pas toujours l'influence persistante et leurs effets peuvent s'atténuer."
+  - "Les changements d'attitudes et de comportements sont moins constants que les changements de croyances factuelles."
+  - "Ne permet pas d'inférer qu'une correction publique est toujours préférable à tout autre format."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire fondée sur la revue de Porter & Wood."
+last_reviewed: "2026-11-17"
