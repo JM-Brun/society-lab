@@ -3,7 +3,9 @@
 - **ID** : SYNTHESIS-POLITICS-DEBATE-BARRAGE
 - **Dossier associé** : [DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE](../dossiers/debat-barrage-cordon-sanitaire.md)
 - **Dernière mise à jour** : 2026-11-17
-- **Statut** : synthèse intermédiaire ; comparaison Belgique–Allemagne–France
+- **Statut** : synthèse de référence en construction ; synthèse multi-arènes, volet médias enrichi le 17 novembre 2026
+- **Périmètre** : idées et discours, visibilité médiatique, déplateformisation, cordon partisan, coopération parlementaire, front électoral et effets institutionnels
+- **Niveau d'achèvement** : revue ciblée documentée ; revue systématique de portée encore à exécuter
 
 ## Question
 
@@ -19,6 +21,8 @@ Dans quelles conditions faut-il privilégier le débat contradictoire, la réfut
 6. Le barrage institutionnel peut être compatible avec le débat public : on peut réfuter les idées et refuser une coalition.
 7. L'exclusion peut produire des effets secondaires (réactance, sentiment de persécution, déplacement vers des espaces moins contradictoires), mais ils ne sont ni automatiques ni uniformes.
 8. Les partis établis peuvent maintenir un cordon de coalition tout en reprenant des thèmes ou cadrages du parti exclu : la cohérence discursive doit donc être évaluée.
+9. Les interviews non contestées peuvent accroître à court terme l'adhésion à certaines affirmations extrêmes et leur popularité perçue ; la contradiction atténue certains effets sans neutraliser automatiquement la normalisation sociale.
+10. Les effets de la déplateformisation dépendent de la cible et du périmètre : la fermeture de Parler a déplacé l'activité, tandis que le retrait de comptes diffuseurs a réduit la circulation de désinformation sur Twitter.
 
 ## Comparaison rapide
 
