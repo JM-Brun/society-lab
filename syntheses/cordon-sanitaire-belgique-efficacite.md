@@ -59,3 +59,6 @@ Le cas belge n'est pas une expérience naturelle parfaite : les régions diffèr
 - **Prévention :** Simchon et al. (2026) trouvent, dans 33 expériences (N=37 025), une amélioration du discernement sans hausse systématique de la méfiance générale. Maertens et al. (2025) observent une persistance d'un mois pour certains formats avec rappels ; Nygren & Efimova (2025), en contexte scolaire, ne trouvent pas d'effet global à trois mois. La durabilité dépend donc des formats, publics et mesures.
 
 La [matrice de preuves multi-arènes](../dossiers/matrice-preuves-cordon-sanitaire.md) classe ces études par méthode, résultat et limite. Elle confirme que l'on ne peut pas résumer l'efficacité d'un cordon par le seul score électoral ou la seule absence de coalition.
+
+
+- **Front commun rhétorique :** Kollberg & Bantel (2026) observent, dans une expérience allemande (n≈3 100), que les messages négatifs coordonnés des partis établis augmentent davantage la polarisation affective envers l'AfD que les messages d'un seul parti. L'effet déborde vers les électeurs du parti. Il faut donc distinguer démarcation normative, critique des dirigeants et stigmatisation des électeurs.
