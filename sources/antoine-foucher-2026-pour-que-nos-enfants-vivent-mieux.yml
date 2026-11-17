@@ -1,0 +1,20 @@
+id: "SOURCE-ANTOINE-FOUCHER-2026-POUR-QUE-NOS-ENFANTS-VIVENT-MIEUX"
+title: "Pour que nos enfants vivent mieux que nous"
+author: "Antoine Foucher"
+organization: "Éditions de l’Aube"
+source_type: "book"
+language: "fr"
+url: "https://editionsdelaube.fr/catalogue_de_livres/pour-que-nos-enfants-vivent-mieux-que-nous/"
+publication_date: "2026-09-04"
+isbn: "978-2-8159-7433-2"
+domains: ["DOMAIN-ECONOMY", "DOMAIN-FINANCE", "DOMAIN-EDUCATION", "DOMAIN-SOCIETY", "DOMAIN-ENERGY", "DOMAIN-GEOPOLITICS"]
+tags: ["TAG-EVIDENCE-SECONDARY", "TAG-ISSUE-TRADEOFFS", "TAG-LEVEL-NATIONAL"]
+temporal_scope: "Diagnostic historique et contemporain ; propositions prospectives"
+methodology: "Essai de diagnostic socio-économique et de propositions de politique publique ; la méthode détaillée et les références de chaque chiffre doivent être contrôlées dans le livre."
+limitations:
+  - "Texte intégral non consulté lors de la première ingestion ; les arguments sont reconstruits à partir de la présentation éditoriale et de recensions/entretiens."
+  - "Les données et citations attribuées au livre doivent être vérifiées dans l'édition originale et dans leurs sources statistiques primaires."
+  - "La présentation de l'éditeur est une source sur la thèse de l'ouvrage, pas une validation indépendante."
+  - "La notice officielle indique 208 pages, tandis que plusieurs fiches de libraires indiquent 144 pages ; pagination à contrôler."
+access_status: "open"
+notes: "Parution annoncée le 4 septembre 2026. Ancien directeur de cabinet de la ministre du Travail (2017-2020), Antoine Foucher dirige le cabinet Quintet selon la biographie de l'éditeur."
