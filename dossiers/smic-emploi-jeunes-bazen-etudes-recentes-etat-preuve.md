@@ -4,13 +4,20 @@
 
 Référence : Stephen Bazen et Nicolas Skourias, « Is there a negative effect of minimum wages on youth employment in France? », *European Economic Review*, vol. 41, nos 3–5, avril 1997, p. 723–732, DOI https://doi.org/10.1016/S0014-2921(97)00004-4.
 
-Le résumé éditeur confirme que les auteurs utilisent des données sectorielles après la hausse de 10 % du SMIC de juin 1981 et trouvent un effet statistiquement significatif négatif sur l'emploi des jeunes. La page ScienceDirect ne donne pas accès au texte intégral sans droits ; RePEc signale également un accès éditeur restreint. Les recherches de cette passe n'ont pas permis de localiser une copie intégrale ouverte vérifiable.
+L'abstract accessible de l'article confirme l'analyse sectorielle après la hausse de 10 % du SMIC de juin 1981 et rapporte un effet statistiquement significatif négatif sur l'emploi des jeunes. Le texte original n'a pas été obtenu : RePEc indique que le texte intégral est réservé aux abonnés ScienceDirect ; EconBiz signale des fonds de bibliothèque ZBW, mais aucune copie ouverte consultable. Les recherches de cette passe n'ont pas permis de localiser un PDF intégral vérifiable.
 
-**Ce qui reste inconnu et ne doit pas être inventé :** nombre de secteurs et période exacte, définition de l'emploi jeune, variables de contrôle, construction du groupe témoin, équation estimée, amplitude de l'effet, erreurs-types, tests de sensibilité et éventuelles tendances préalables. Le résultat reste un signal historique, non une estimation auditée. Il ne doit pas être compté comme preuve de haute confiance.
+Les informations de méthode connues proviennent de revues secondaires, et non d'une lecture de l'article : Neumark & Wascher (2007) décrivent 32 secteurs, des jeunes de 15 à 24 ans, l'Enquête Emploi française 1980–1984, une variable de résultat égale à la part des jeunes dans l'emploi sectoriel et une exposition mesurée par la proportion de salariés sous le SMIC de juin 1981. Les secteurs moins exposés constituent le groupe de comparaison ; il n'existe pas de secteur totalement non traité. Ils rapportent des estimations négatives et significatives pour octobre 1980–octobre 1981 et mars 1981–mars 1982, plus fortes sur une fenêtre longue.
+
+Le rapport IMK n°31 (2008, p. 23) apporte une lecture plus réservée : il juge les résultats 1981 peu robustes et indique que les politiques du marché du travail ne sont pas contrôlées sur la fenêtre 1980–1984. Il rapporte une baisse descriptive de la part des jeunes dans l'emploi total de 14,6 % à 12,9 % entre mars 1980 et mars 1984 ; cette évolution n'est pas une estimation causale.
+
+**Ce qui reste inconnu et ne doit pas être inventé :** nomenclature et effectifs exacts des 32 secteurs, spécification complète, coefficient, erreur-type, intervalle de confiance, p-value exacte, détails des contrôles, tests de pré-tendance et tableaux de robustesse. Le résultat reste un signal historique à confiance causale faible, non une estimation dont l'ampleur est connue.
 
 Sources consultées :
-- ScienceDirect : https://www.sciencedirect.com/science/article/pii/S0014292197000044
-- RePEc : https://ideas.repec.org/a/eee/eecrev/v41y1997i3-5p723-732.html
+- Article et abstract : https://www.sciencedirect.com/science/article/pii/S0014292197000044
+- RePEc, notice et restriction d'accès : https://ideas.repec.org/a/eee/eecrev/v41y1997i3-5p723-732.html
+- Neumark & Wascher (2007), IZA DP 2570, p. 97–98 : https://www.iza.org/publications/dp/2570/minimum-wages-and-employment
+- IMK Report n°31 (2008), p. 23 : https://www.boeckler.de/pdf/p_imk_report_31_2008.pdf
+- Catalogue EconBiz / fonds ZBW : https://www.econbiz.de/Record/is-there-a-negative-effect-of-minimum-wages-on-youth-employment-in-france-bazen-stephen/10001224883
 
 ## 2. Ce que les évaluations récentes françaises permettent réellement d'affirmer
 
