@@ -409,3 +409,6 @@ relations:
   - {"id":"REL-CLAIM-ABOUT-ILLUSORY-TRUTH","type":"REL-ABOUT","from":"CLAIM-REPETITION-ILLUSORY-TRUTH-EFFECT-2026","to":"DOMAIN-MEDIA","justification":"Mécanisme de répétition et de familiarité dans la circulation médiatique."}
   - {"id":"REL-CLAIM-ABOUT-BELGIUM-CORDON","type":"REL-ABOUT","from":"CLAIM-BELGIUM-CORDON-CONTRIBUTION-NOT-ISOLATED-2021","to":"DOMAIN-INSTITUTIONS","justification":"Lien entre normes de coopération politique, règles médiatiques et accès institutionnel."}
   - {"id":"REL-CLAIM-ABOUT-CORRECTION-FAMILIARITY","type":"REL-ABOUT","from":"CLAIM-CORRECTION-NOVEL-MISINFORMATION-NO-GENERAL-FAMILIARITY-BACKFIRE-2020","to":"DOMAIN-SOCIETY","justification":"Effets cognitifs et sociaux de la correction d'une information nouvelle."}
+
+  - {"id":"REL-EXISTING-DOSSIER-INCLUDES-BELGIUM-EFFICACY-2026","type":"REL-INCLUDES","from":"DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE","to":"DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE","justification":"Dossier spécialisé vérifiant les définitions belges et l'argument empirique sur l'efficacité du cordon et du debunking."}
+  - {"id":"REL-EXISTING-SYNTHESIS-LINKS-BELGIUM-EFFICACY-2026","type":"REL-SUMMARIZED-BY","from":"DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE","to":"SYNTHESIS-CORDON-SANITAIRE-BELGIQUE-EFFICACITE","justification":"Synthèse autonome des constats et limites."}
