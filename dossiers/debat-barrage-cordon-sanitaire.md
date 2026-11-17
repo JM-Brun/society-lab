@@ -458,7 +458,7 @@ Cette matrice est une hypothèse opérationnelle à tester, pas une prescription
 
 Les études de correction portent principalement sur des affirmations factuelles ; elles ne tranchent pas les conflits de valeurs. Les travaux de déplateformisation mesurent des audiences, des revenus ou des déplacements d'activité, mais pas nécessairement la persuasion politique. La méta-analyse sur la réactance porte sur la communication persuasive, non sur les cordons médiatiques en tant que tels.
 
-La prochaine étape est donc de construire un protocole comparatif qui sépare les quatre interventions suivantes : (a) débat avec le promoteur, (b) analyse critique sans lui donner la tribune, (c) correction après exposition, (d) retrait ou limitation de diffusion. Pour chacune, mesurer portée nette, croyances, attitudes, confiance, mobilisation et effets différés.
+La prochaine étape est de poursuivre la revue documentaire en comparant les études existantes sur quatre interventions : (a) débat avec le promoteur, (b) analyse critique indépendante, (c) correction après exposition, (d) retrait ou limitation de diffusion. Pour chacune, relever les résultats effectivement mesurés — portée, croyances, attitudes, confiance, mobilisation et effets différés — sans proposer de collecte expérimentale propre à Society Lab.
 
 
 ## Complément de recherche — vérification de l'argument « faire comme la Belgique » (2026-11-17)
@@ -473,11 +473,11 @@ Point de vigilance ajouté : l'étude comparative de De Jonge (2021) est suggest
 Le dossier spécialisé a été enrichi par les travaux sur le pré-bunking (Simchon et al., 2026), les explications alternatives au simple démenti (Granados Samayoa & Albarracín, 2025), le faux équilibre médiatique (Koehler, 2016) et les restrictions de la liberté académique (Diehl et al., 2025). Voir [dossier spécialisé](cordon-sanitaire-belgique-efficacite.md) et [synthèse](../syntheses/cordon-sanitaire-belgique-efficacite.md). Point central : les données soutiennent la prévention et les réponses explicatives, mais ne mesurent pas encore l'effet causal global du no-platforming.
 
 
-## Nouveau chantier — comparaison expérimentale directe des stratégies
+## Chantier documentaire — comparaison des stratégies
 
-La lacune prioritaire est désormais traitée dans un dossier méthodologique autonome : [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](protocole-comparatif-strategies-reponse-idees-antidemocratiques.md), accompagné de sa [synthèse](../syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
+La lacune prioritaire est suivie dans une revue documentaire structurée : [Revue documentaire des stratégies de réponse aux idées antidémocratiques](protocole-comparatif-strategies-reponse-idees-antidemocratiques.md), accompagnée de sa [synthèse](../syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
 
-Le protocole compare cinq interventions — discours non contesté, débat contradictoire, analyse critique sans présence du promoteur, pédagogie des mécanismes de manipulation et explication alternative crédible — avec un sixième bras témoin sans exposition. Les mesures sont prévues avant intervention, immédiatement après, à une semaine et à un mois.
+La revue cartographie les travaux publiés sur l'exposition non contestée, le débat contradictoire, l'analyse critique indépendante, la pédagogie des mécanismes de manipulation, les explications alternatives et la non-plateformisation. Elle compare les résultats réellement disponibles, leurs méthodes, leurs limites et leurs niveaux de généralisation. Society Lab ne prévoit pas de conduire une expérience originale.
 
 Les résultats ne seront pas réduits à la seule adhésion au message : exactitude des croyances, normalisation perçue, mémorisation, transfert de la compétence critique, réactance, confiance et tolérance à la contradiction seront distingués. Le protocole est proposé et non exécuté ; aucune supériorité entre stratégies n'est actuellement établie.
 
