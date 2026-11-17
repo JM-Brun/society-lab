@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
 title: "Augmenter le SMIC en France : effets, arbitrages et scénarios"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-16"
+last_reviewed: "2026-11-17"
 related_dossiers:
   - "dossiers/smic-facteurs-mecanismes-transmission-2026.md"
   - "dossiers/smic-france-tradeoffs.md"
@@ -393,9 +393,11 @@ Deux études microéconomiques françaises apportent un signal défavorable cibl
 
 ## 22. Épisode de juin 1981 : résultat sectoriel sur l'emploi des jeunes
 
-Bazen & Skourias (1997), « Is there a negative effect of minimum wages on youth employment in France? », étudient les données sectorielles après la hausse de 10 % du SMIC en juin 1981 et rapportent un effet négatif statistiquement significatif sur l'emploi des jeunes. La publication disponible en ligne sous forme de résumé ne permet pas ici de vérifier précisément la construction du groupe témoin, les tendances préalables, les contrôles sectoriels, les amplitudes ni les tests de robustesse. Le résultat doit donc être conservé comme signal historique défavorable, mais avec une confiance limitée tant que le texte intégral et ses tableaux n'ont pas été audités.
+Bazen & Skourias (1997), « Is there a negative effect of minimum wages on youth employment in France? », étudient les hausses du SMIC de 1981–1984 à partir de 32 secteurs et des jeunes de 15–24 ans. Une revue secondaire détaillée (Neumark & Wascher, 2007, pp. 131–132) précise que le résultat est la part de l'emploi sectoriel occupée par les jeunes, et que l'exposition est mesurée par la proportion de salariés du secteur sous le niveau du SMIC de juin 1981. Les comparaisons portent notamment sur octobre 1980–octobre 1981, mars 1981–mars 1982 et mars 1980–mars 1984 ; les estimations sont rapportées négatives et significatives sur les premières différences.
 
-Ne pas attribuer ce résultat à Neumark & Wascher : l'étude est de Bazen & Skourias. Voir la notice bibliographique : https://doi.org/10.1016/S0014-2921(97)00004-4.
+Le texte intégral original reste introuvable. Les coefficients, erreurs-types, intervalles, nomenclature des secteurs et tests formels de pré-tendances ne sont donc pas vérifiés. Neumark & Wascher signalent deux fragilités : échelles non cohérentes entre variation de la part des jeunes et croissance totale sectorielle ; mesure d'exposition de juin 1981 utilisée pour une fenêtre 1980–1984 comprenant d'autres hausses, dont 17 % de la hausse relative avant juin 1981. Il ne faut donc pas réduire le résultat à l'effet isolé de la seule hausse de 10 % de juin 1981 ni calculer des emplois détruits.
+
+Ne pas attribuer ce résultat à Neumark & Wascher : l'étude est de Bazen & Skourias ; Neumark & Wascher fournissent une critique secondaire. Voir [l'audit documentaire détaillé](../dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md), la notice bibliographique https://doi.org/10.1016/S0014-2921(97)00004-4 et la revue Neumark & Wascher (2007), DOI https://doi.org/10.1561/0700000015.
 
 
 ## 23. Diffusion salariale trimestrielle (Goarant & Muller, 2011)
@@ -448,15 +450,19 @@ Sophie Cottet étudie les réformes d'allègements patronaux de 1995–1996, qui
 
 La décomposition suggère que le phénomène vient surtout d'une meilleure rétention des postes, et non d'une hausse nette des embauches : les embauches et les destructions augmentent en parallèle. L'effet varie selon la structure initiale de la main-d'œuvre. Les entreprises sans gain de trésorerie ex ante réagissent davantage au coût relatif du travail ; les entreprises déjà très utilisatrices de salariés au SMIC bénéficient d'un gain de trésorerie, augmentent temporairement leur emploi global et leurs profits, sans accroître nécessairement leurs postes au SMIC.
 
-**Limite d'interprétation :** ce sont les effets d'une baisse de cotisations patronales, pas ceux d'une hausse du SMIC brut. L'interprétation en miroir suppose une symétrie qui n'est pas garantie. Les résultats 2024 (version CESifo) annoncent +13 points d'emplois au SMIC et +4 % de croissance temporaire pour les entreprises bénéficiant du gain de trésorerie ; ces chiffres appartiennent à la version ultérieure et ne sont pas confondus avec les estimations de la version intégrale 2020. Audit : [Cottet (2020/2024)](../dossiers/smic-cottet-2020-2024-allegements-emploi.md).
+**Limite d'interprétation :** ce sont les effets d'une baisse de cotisations patronales, pas ceux d'une hausse du SMIC brut. L'interprétation en miroir suppose une symétrie qui n'est pas garantie. Le PDF intégral CESifo 2024 a maintenant été audité : il rapporte +13 points de postes au minimum dans les entreprises auparavant peu ou pas utilisatrices de SMIC et environ +4 % de croissance temporaire des entreprises bénéficiant d'un gain de trésorerie. Ces résultats sont relatifs à des groupes et des unités d'analyse distincts ; ils ne doivent pas être additionnés ni interprétés comme des créations nettes d'emplois nationales. L'étude met aussi en évidence l'importance de la rétention, de la taille initiale, de l'attrition et des formes d'emploi à temps partiel. Audit détaillé : [Cottet (2020/2024)](../dossiers/smic-cottet-2020-2024-allegements-emploi.md).
 
 ## 26. État de la preuve récente sur l'emploi des jeunes et les allègements
 
-Le texte intégral de Bazen & Skourias (1997) n'a pas pu être obtenu : l'éditeur et RePEc indiquent un accès restreint. Le résumé confirme un effet sectoriel négatif significatif après la hausse de 10 % de juin 1981, mais les données, le groupe témoin, l'amplitude, les erreurs-types et les robustesses ne sont pas vérifiés. Ce résultat reste un signal historique de faible à moyenne confiance, sans coefficient à citer.
+Le texte intégral de Bazen & Skourias (1997) n'a toujours pas été obtenu. Une revue secondaire détaillée (Neumark & Wascher, 2007) permet toutefois de vérifier la population (15–24 ans), les 32 secteurs, la variable de résultat, l'intensité d'exposition et les fenêtres temporelles. Elle rapporte un effet négatif significatif dans les premières différences, mais signale deux fragilités de spécification. Les coefficients, erreurs-types et tests de pré-tendances demeurent non vérifiables. Le résultat reste un signal historique sectoriel, non une estimation de l'effet sur l'emploi total des jeunes.
 
-Le rapport du Groupe d'experts sur le SMIC de novembre 2025 apporte un état des lieux contemporain, mais ne produit pas une estimation causale nouvelle de la hausse du SMIC sur l'emploi des jeunes. Son modèle d'équilibre partiel, appliqué à la distribution salariale administrative BTS 2023, estime que les allègements créent ou sauvegardent 1,3 à 1,9 million d'emplois selon une élasticité de demande au coût du travail de −0,6 à −0,9 au SMIC. Cette fourchette dépend des hypothèses imposées ; elle n'est pas le résultat d'une expérience naturelle. Le rapport souligne également que les effets emploi sont plus forts près du SMIC et beaucoup plus faibles au-delà de 2 SMIC.
+Benhayoun (1994) fournit un contrepoint antérieur sur les séries temporelles : après révision de la série d'emploi des jeunes, la relation négative avec le SMIC devient beaucoup moins robuste. L'OCDE (1998) résume cette étude comme ne trouvant pas d'effet négatif significatif robuste, avec sensibilité à la spécification et possible endogénéité du SMIC. Elle ne teste pas directement Bazen & Skourias, publié trois ans plus tard.
+
+Le rapport du Groupe d'experts sur le SMIC de novembre 2025 apporte un état des lieux contemporain, mais ne produit pas une estimation causale nouvelle de la hausse du SMIC sur l'emploi des jeunes. Son modèle d'équilibre partiel, appliqué à la distribution salariale administrative BTS 2023, estime que les allègements créent ou sauvegardent 1,3 à 1,9 million d'emplois selon une élasticité de demande au coût du travail de −0,6 à −0,9 au SMIC. Cette fourchette dépend des hypothèses imposées ; elle n'est pas le résultat d'une expérience naturelle et n'est pas spécifique aux jeunes.
 
 L'OCDE (Barreto et al., 2025) documente la concentration des salaires près du minimum et les mécanismes de trappes socio-fiscales, mais observe que la mobilité salariale ascendante des travailleurs à bas salaire n'est pas plus difficile en France que dans les pays comparés. Ces résultats sont descriptifs/comparatifs et ne mesurent pas l'effet causal d'une hausse récente du SMIC sur les jeunes.
+
+Albertini, Poirier & Terriau (2025) proposent un modèle structurel de recherche-appariement en cycle de vie, qui conclut dans ses simulations qu'une hausse du SMIC réduit l'emploi et le surplus fiscal, avec une forte dépendance à l'indexation des allègements et du système socio-fiscal. Le texte intégral n'a pas été récupéré dans cette passe : les paramètres, le calibrage et les tests de sensibilité ne sont pas audités. Ce résultat doit rester classé comme simulation structurelle, pas comme estimation causale observée.
 
 **Bilan :** la preuve française récente est plus riche sur les allègements et les trajectoires de bas salaires que sur l'effet causal isolé des hausses du SMIC brut. Une étude contemporaine ciblant les jeunes, les entrants, les contrats courts et les heures reste nécessaire. Voir [l'état de l'audit](../dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md).
 
@@ -534,3 +540,38 @@ Voir [Réconciliation des séries du SMIC, 1994–2026](../dossiers/smic-series-
 
 
 **Précision sur les pourcentages 2001–2007 :** la chronologie événementielle retient désormais les variations annuelles publiées dans l'annexe DARES de juin 2009 (4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007, ce dernier chiffre étant donné dans le texte principal et arrondi à 2,1 % dans le tableau). Le ratio des taux horaires affichés au centime reste un contrôle, pas une source de remplacement.
+
+## 31. Complément de recherche : audit secondaire de Bazen & Skourias et version intégrale Cottet (17 novembre 2026)
+
+### Bazen & Skourias (1997) : ce que nous savons désormais
+
+Le texte original reste inaccessible, mais Neumark & Wascher (2007, pp. 131–132) décrivent une étude sur 32 secteurs et les jeunes de 15–24 ans. Le résultat étudié est la part de l'emploi sectoriel occupée par les jeunes ; l'exposition est la part des salariés du secteur rémunérés sous le niveau du SMIC de juin 1981. Les auteurs rapportent des estimations négatives et significatives sur les premières différences octobre 1980–octobre 1981 et mars 1981–mars 1982, et des résultats plus importants sur mars 1980–mars 1984.
+
+Deux réserves affectent l'identification : incohérence d'échelle entre la variation de la part des jeunes et le contrôle de croissance de l'emploi total sectoriel ; mesure d'exposition de juin 1981 utilisée pour une fenêtre longue qui couvre d'autres hausses de 1980–1984. Les coefficients, erreurs-types, intervalles, pondérations et pré-tendances ne sont toujours pas vérifiables. Le résultat ne doit pas être attribué à la seule hausse de 10 % de juin 1981 ni converti en emplois détruits.
+
+Benhayoun (1994) constitue un contrepoint sur les séries temporelles françaises : la relation négative devient beaucoup moins robuste après révision de la série d'emploi des jeunes. Cette étude antérieure ne réfute pas directement Bazen & Skourias, mais confirme la sensibilité des résultats agrégés à la mesure et à la spécification.
+
+### Cottet (2024) : audit du PDF intégral
+
+Le texte intégral CESifo Working Paper 11076 est désormais audité. Il distingue l'effet de coût relatif sur les postes à bas salaire et le gain de trésorerie des entreprises déjà intensives en SMIC. Les résultats de +13 points de postes au minimum et +4 % de croissance temporaire des entreprises bénéficiaires portent sur des groupes et des niveaux d'analyse différents. Les effets sont hétérogènes, sensibles à la taille et à l'attrition, et ne constituent pas une estimation de l'effet d'une hausse du SMIC brut. La rétention joue un rôle important ; les postes à temps partiel et à temps partiel annuel progressent davantage.
+
+### Actualisation du niveau de preuve
+
+- **Jeunes et hausse du SMIC en 1981–1984 :** signal sectoriel négatif mieux documenté, mais toujours incomplet et contesté sur la spécification.
+- **Séries temporelles agrégées :** résultats sensibles aux révisions et à la spécification (Benhayoun, 1994).
+- **Allègements patronaux :** preuve plus détaillée d'effets hétérogènes sur les postes et les entreprises dans le contexte historique 1995–1999 (Cottet, 2024).
+- **Hausses du SMIC brut 2021–2025 et emploi des jeunes :** pas d'identification causale française récente établie dans le corpus consulté.
+- **Modèle structurel 2025 :** signal de scénario dépendant des hypothèses, texte intégral non audité ; ne pas le traiter comme une estimation causale.
+
+**Conclusion :** le corpus s'enrichit sur les mécanismes et les épisodes historiques, mais ne permet toujours pas de conclure à un effet net des revalorisations récentes sur l'emploi des jeunes ou sur l'emploi agrégé. La priorité demeure une étude française contemporaine séparant hausse du SMIC brut, coût employeur net d'allègements, embauches, séparations, heures et composition des contrats.
+
+Sources principales :
+- Bazen & Skourias (1997), résumé : https://www.sciencedirect.com/science/article/pii/S0014292197000044
+- Neumark & Wascher (2007), revue secondaire : https://doi.org/10.1561/0700000015
+- Benhayoun (1994), résumé : https://doi.org/10.1108/01437729410059350
+- Cottet (2024), PDF intégral : https://www.ifo.de/DocDL/cesifo1_wp11076.pdf
+- Albertini, Poirier & Terriau (2025), notice : https://econpapers.repec.org/paper/gatwpaper/2501.htm
+
+| Date | Modification |
+|---|---|
+| 2026-11-17 | Audit secondaire détaillé de Bazen & Skourias ; ajout du contrepoint Benhayoun ; audit du PDF CESifo 2024 de Cottet ; qualification du modèle structurel Albertini et al. (2025). |
