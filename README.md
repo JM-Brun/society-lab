@@ -6,7 +6,9 @@ Society Lab est un projet documentaire indépendant de compilation critique, de 
 
 ## Finalité et méthode éditoriale
 
-Society Lab rassemble des études scientifiques, sociologiques et politiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques, des rapports et des débats argumentés. Le but est d'en tirer des bilans compréhensibles, sourcés, non partisans et proportionnés au niveau réel des preuves. Non partisan ne signifie pas fausse équivalence : les arguments sont présentés loyalement, mais leur poids dépend de leur documentation et de leur robustesse. Voir la [charte éditoriale et méthode de synthèse](docs/editorial-charter.md).\n\n## Trois approches complémentaires
+Society Lab rassemble des études scientifiques, sociologiques et politiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques, des rapports et des débats argumentés. Le but est d'en tirer des bilans compréhensibles, sourcés, non partisans et proportionnés au niveau réel des preuves. Non partisan ne signifie pas fausse équivalence : les arguments sont présentés loyalement, mais leur poids dépend de leur documentation et de leur robustesse. Voir la [charte éditoriale et méthode de synthèse](docs/editorial-charter.md).
+
+## Trois approches complémentaires
 
 - **Knowledge** — structurer les concepts, institutions, mécanismes et connaissances.
 - **Research** — examiner les publications, données, méthodes et résultats.
@@ -61,11 +63,12 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 - [Synthèse SMIC — France](syntheses/smic-france.md)
 - [Synthèse Parcoursup — égalité des chances](syntheses/parcoursup-education.md)
 - [Synthèse débat, barrage et cordon sanitaire](syntheses/debat-barrage-cordon-sanitaire.md)
-- [Synthèse du protocole comparatif des stratégies de réponse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md)
+- [Synthèse documentaire des stratégies de réponse(syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md)
 - [Modèle réutilisable de synthèse](templates/subject-synthesis.md)
 
 ## Documents fondateurs
 
+- [Charte éditoriale et méthode de synthèse](docs/editorial-charter.md)
 - [Charte fondatrice](CHARTER.md)
 - [Méthodologie](METHODOLOGY.md)
 - [Architecture](docs/architecture.md)
