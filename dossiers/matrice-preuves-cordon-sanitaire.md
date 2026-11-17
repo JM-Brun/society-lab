@@ -91,3 +91,15 @@ La sélection est ciblée et non exhaustive. Les études diffèrent par leurs un
 ### Lecture complémentaire
 
 Ces travaux renforcent deux précautions sans trancher le débat général. Premièrement, une interview contradictoire peut corriger certains effets de persuasion tout en offrant une visibilité exploitable : le résultat d'audience ne se déduit pas des seules attitudes mesurées. Deuxièmement, la déplateformisation doit être évaluée à l'échelle de l'écosystème et non du seul service qui bannit. Ces études ne comparent pas directement les trois options centrales (interview contradictoire, analyse indépendante sans promoteur, absence de tribune).
+
+
+## 8. Contrepoint essentiel — effets différenciés des interventions de déplateformisation
+
+| Étude | Intervention et données | Résultat | Limite causale / de portée |
+|---|---|---|---|
+| Horta Ribeiro et al. (2023), *Deplatforming did not decrease Parler users’ activity on fringe social media*, DOI [10.1093/pnasnexus/pgad035](https://doi.org/10.1093/pnasnexus/pgad035) | Mise hors ligne de Parler ; panels Nielsen (N=112 705), différences-de-différences sur 996 utilisateurs actifs | Hausse de l'activité quotidienne sur d'autres plateformes marginales (+10,9 points sur ordinateur ; +15,9 sur mobile) ; pas de baisse significative de l'activité totale sur les plateformes marginales | Événement isolé et écosystème américain ; activité mesurée par visites, pas par persuasion ou dommages hors ligne |
+| McCabe et al. (2024), *Post-January 6th deplatforming reduced the reach of misinformation on Twitter*, Nature, DOI [10.1038/s41586-024-07524-8](https://doi.org/10.1038/s41586-024-07524-8) | Retrait d'environ 70 000 comptes ; panel de plus de 500 000 utilisateurs et dessins quasi expérimentaux | Réduction de la circulation de désinformation sur Twitter par les comptes retirés et leurs abonnés ; certains diffuseurs non retirés quittent aussi la plateforme | Les événements concomitants au 6 janvier empêchent d'identifier précisément l'ampleur causale ; portée mesurée sur Twitter |
+
+### Interprétation
+
+Ces résultats ne se contredisent pas nécessairement : ils portent sur des interventions, des unités et des résultats différents. Le retrait de Parler comme plateforme a déplacé une partie de l'activité vers d'autres services marginaux sans réduire l'activité totale mesurée dans cet écosystème. Le retrait de comptes fortement diffuseurs sur Twitter a réduit la circulation de désinformation sur Twitter, y compris chez leurs abonnés. La conclusion correcte n'est donc ni « la déplateformisation marche toujours », ni « elle ne marche jamais » : son effet dépend de la cible, de la concentration des relais, de la substituabilité des plateformes, du réseau d'abonnés et de l'indicateur retenu.
