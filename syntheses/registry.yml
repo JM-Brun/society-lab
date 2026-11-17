@@ -74,3 +74,8 @@ dossiers:
     dossier_path: "dossiers/protocole-revue-systematique-cordon-sanitaire.md"
     synthesis_id: "SYNTHESIS-POLITICS-DEBATE-BARRAGE"
     synthesis_path: "syntheses/debat-barrage-cordon-sanitaire.md"
+
+  - dossier_id: "DOSSIER-UN-COMMUN-ACCORD-DELIBERATIVE-ASSEMBLY"
+    dossier_path: "dossiers/un-commun-accord-assemblee-citoyenne.md"
+    synthesis_id: "SYNTHESIS-POLITICS-UN-COMMUN-ACCORD"
+    synthesis_path: "syntheses/un-commun-accord-assemblee-citoyenne.md"

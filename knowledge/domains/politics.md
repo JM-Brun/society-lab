@@ -19,3 +19,5 @@ Ce domaine étudie les systèmes politiques, la représentation, les élections,
 ## Précautions analytiques
 
 Ne pas assimiler vote, opinion, visibilité médiatique, légitimité et accès au pouvoir. Une corrélation entre stratégie politique et résultat électoral ne démontre pas un effet causal. Distinguer les effets de court terme des transformations idéologiques de long terme, ainsi que les faits empiriques des arbitrages normatifs.
+
+- [Un commun accord : initiative citoyenne et assemblée délibérative](../../dossiers/un-commun-accord-assemblee-citoyenne.md) — étude du panel tiré au sort, de l'information, de la délibération, des garanties annoncées et des effets à évaluer ; voir la [synthèse provisoire](../../syntheses/un-commun-accord-assemblee-citoyenne.md).
