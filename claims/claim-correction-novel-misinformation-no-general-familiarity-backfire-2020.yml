@@ -1,0 +1,19 @@
+id: CLAIM-CORRECTION-NOVEL-MISINFORMATION-NO-GENERAL-FAMILIARITY-BACKFIRE-2020
+statement: "Dans trois expériences sur des informations entièrement nouvelles, la correction n'a pas produit de preuve globale d'un effet de familiarité qui aurait renforcé les croyances erronées."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["International"]
+  period: "Études publiées en 2020"
+  conditions: "Trois expériences sur la correction d'informations non rencontrées auparavant."
+domain_ids: ["DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-ECKER-ETAL-2020-FAMILIARITY-BACKFIRE"]
+supporting_evidence:
+  - "Les auteurs ne trouvent pas de preuve globale que la correction d'informations nouvelles renforce les croyances erronées par familiarisation."
+limitations:
+  - "Résultat circonscrit aux stimuli et protocoles étudiés."
+  - "Ne réfute pas l'effet de vérité illusoire lié à la répétition dans d'autres contextes."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; ne pas généraliser à toute correction ni à toute répétition."
+last_reviewed: "2026-11-17"
