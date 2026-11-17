@@ -188,3 +188,49 @@ Ces références soutiennent la pertinence des mécanismes et des mesures, pas u
 8. Mise à jour de la synthèse et du graphe de connaissances selon les résultats.
 
 **Conclusion provisoire :** ce protocole peut combler une lacune réelle, mais il ne faut pas le présenter comme une démonstration déjà acquise. Sa contribution sera de comparer des stratégies à contenu contrôlé, de mesurer leurs effets différés et de traiter la compétence critique et le pluralisme comme des résultats à part entière.
+
+
+## 13. Revue ciblée complémentaire — état au 17 novembre 2026
+
+### 13.1 Comparaison directe la plus proche : Bolet & Foos (2025)
+
+L'article publié dans le *British Journal of Political Science* est la comparaison la plus directement pertinente retrouvée à ce stade. Il s'appuie sur des entretiens réels avec des militants d'extrême droite, adaptés en expériences audio au Royaume-Uni et en Australie. Le plan compare notamment entretien non contesté, entretien contradictoire (dans l'expérience britannique) et contenu placebo.
+
+Résultats rapportés : l'entretien non contesté augmente l'accord avec les affirmations extrêmes (effets de l'ordre de 3 à 5 points de pourcentage, d≈0,16–0,18) et la proportion de personnes estimant que d'autres citoyens y adhèrent. Dans l'expérience britannique, la confrontation journalistique ramène l'effet moyen sur l'adhésion personnelle vers le niveau du placebo, mais laisse un effet résiduel sur les normes descriptives perçues (environ +2 points). La crédibilité de l'intervenant se dégrade dans la condition critique. Ces résultats ne démontrent pas que l'analyse sans promoteur serait meilleure : cette condition n'existe pas dans l'étude.
+
+**Limites décisives pour notre question :** pas de condition « analyse critique indépendante sans promoteur » ; les auteurs indiquent que le débriefing éthique immédiat les a conduits à ne pas mesurer la durabilité des effets ; un seul contexte national teste la condition d'entretien contradictoire. Le papier établit donc une preuve directe sur exposition non contestée versus entretien critique, mais pas sur le contraste central B vs C de notre protocole.
+
+Référence : Bolet, D. & Foos, F. (2025), *Media Platforming and the Normalisation of Extreme Right Views*, BJPS 55, e103. https://doi.org/10.1017/S0007123425000195
+
+### 13.2 Explication alternative : résultats encourageants, mais durabilité incertaine
+
+- Nyhan & Reifler (2015), *Displacing Misinformation about Events: An Experimental Test of Causal Corrections*, montrent qu'une explication causale alternative peut être plus efficace qu'un simple démenti pour réduire l'influence d'une information fausse dans un scénario événementiel. https://doi.org/10.1017/S175577391500012 యొక్క
+- Buczel et al. (publication 2025 ; mise en ligne avril 2025), deux expériences N=441, montrent qu'une explication alternative réduit le continued influence effect ; l'ajout d'un avertissement ou d'une inoculation renforce l'effet initial, mais la dépendance à l'information erronée dans le raisonnement augmente de nouveau au cours de sept jours, malgré le souvenir de la correction. Il faut donc distinguer mémoire de la correction, croyance explicite et utilisation inférentielle de l'information. https://doi.org/10.1177/17470218251336232
+- *Bypassing Versus Correcting Misinformation: Efficacy and Fundamental Processes* (six expériences préenregistrées) indique que renforcer une croyance alternative sans répéter directement la négation peut parfois davantage modifier attitudes et intentions qu'une correction par simple négation. Ce résultat porte sur des croyances et intentions liées à des informations erronées ; il ne teste pas la présence d'un promoteur extrémiste. https://doi.org/10.1037/xge0001687
+- Une étude de 2026 sur les event models propose que la correction durable doit restaurer une explication causale cohérente, plutôt que simplement retirer une proposition fausse. Il s'agit d'un cadre théorique récent à tester, pas d'une preuve expérimentale comparative sur les stratégies médiatiques. https://doi.org/10.1177/17456916261475284
+
+### 13.3 Éducation aux mécanismes : un signal de durabilité
+
+Maertens et al. (2021), trois expériences longitudinales (N=151, 194 et 170), évaluent le jeu d'inoculation *Bad News*. Dans la première expérience, l'effet sur l'évaluation de titres utilisant des techniques de désinformation reste observable jusqu'à trois mois. C'est un argument pour mesurer un transfert durable des compétences, mais l'intervention et le résultat diffèrent de notre question de plateformisation politique. https://doi.org/10.1037/xap0000315
+
+Une étude publiée en ligne en juillet 2026 sur une intervention vidéo de 20 minutes auprès d'étudiants universitaires indique une amélioration de la détection et une hausse des réponses correctives fondées sur des preuves. La population étudiante et l'absence, dans les informations bibliographiques actuellement consultées, d'un suivi comparable à un mois limitent son usage pour dimensionner notre protocole. https://doi.org/10.1080/09523987.2026.2704125
+
+### 13.4 Ce que la revue permet réellement d'affirmer
+
+1. **Comparaison directe disponible mais partielle** : non contesté vs interview critique a été testé ; analyse critique sans présence du promoteur reste non comparée directement dans cette étude.
+2. **Normalisation distincte de la persuasion** : les perceptions de ce que les autres pensent peuvent persister même lorsque l'effet sur l'adhésion personnelle est neutralisé. Deux critères primaires distincts sont nécessaires.
+3. **La stratégie alternative doit être causale et intégrative** : ne pas se limiter à « voici pourquoi c'est faux » ; tester si l'explication concurrente comble effectivement le besoin explicatif.
+4. **La durabilité ne se déduit pas de l'effet immédiat** : des effets initiaux de correction ou d'inoculation peuvent s'éroder, voire laisser persister une utilisation inférentielle de l'information erronée.
+5. **Le transfert est mesurable** : les interventions d'inoculation fournissent un précédent pour tester la reconnaissance de techniques nouvelles, mais ne permettent pas de conclure à une immunité générale.
+
+### 13.5 Révisions proposées au protocole
+
+- Faire de la différence B vs C le contraste central préenregistré, tout en conservant A vs F, B vs A, C vs A, D vs C et E vs C comme contrastes secondaires hiérarchisés.
+- Définir deux familles de critères co-primaires : (i) adhésion et exactitude des croyances individuelles ; (ii) normes descriptives perçues et acceptabilité sociale. Préspécifier la gestion de la multiplicité.
+- Pour E, distinguer une réfutation simple d'une explication alternative causale qui répond à la question « si ce récit est faux, qu'est-ce qui explique les faits observés ? ».
+- Ajouter une mesure de raisonnement inférentiel : même si le participant se souvient de la correction et déclare ne plus croire l'affirmation, l'utilise-t-il encore pour expliquer un événement ou anticiper une conséquence ?
+- Ajouter une mesure de compétence transférable inspirée des tâches d'inoculation : reconnaître les procédés sur des exemples nouveaux et politiquement variés, y compris lorsque les messages proviennent d'un camp auquel le participant est favorable.
+- Conserver T0, J7 et J30 ; envisager J90 pour une sous-étude de durabilité si les ressources et l'éthique le permettent.
+- Prévoir un débriefing éthique immédiat ; pour préserver la mesure de suivi, le contenu du débriefing doit être identique et documenté dans tous les bras, et les mesures différées ne doivent pas être interprétées comme l'effet d'une exposition non corrigée.
+
+**Verdict de revue :** la lacune est confirmée, mais elle doit être formulée avec précision : il n'existe pas, dans les études directement pertinentes retrouvées ici, de comparaison contrôlée entre une interview contradictoire et une analyse indépendante sans présence du promoteur, avec mesures de normalisation, de raisonnement inférentiel et de transfert à un mois. Cette conclusion reste une revue ciblée, non une revue systématique exhaustive.
