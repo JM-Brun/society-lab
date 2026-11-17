@@ -238,7 +238,9 @@ Les corrections techniques associées comprennent :
 - réorientation d'un ancien « protocole expérimental » vers une revue documentaire des expériences déjà publiées ;
 - correction de deux tests historiques du SMIC : résidu 2007 recalculé à 0,060 point à partir de 2,05 − 0,79 − 1,20 ; note 1978 conservée intégralement dans le CSV et explicitement sourcée.
 
-Cette réussite concerne la branche de consolidation et sa PR #88 ; elle ne signifie pas que toutes les lacunes scientifiques décrites dans cet audit sont résolues. La PR #87 reste une contribution distincte à relire et à intégrer après actualisation de sa branche sur la base des corrections communes.
+Cette réussite concerne la branche de consolidation fusionnée dans main par la PR #88 (commit de fusion 202ca77). Elle fiabilise le socle technique commun, mais ne résout pas les lacunes scientifiques décrites dans cet audit.
+
+**État actualisé de la PR #87 au 17 novembre 2026 :** la PR est toujours ouverte. Sa branche research/smic-bazen-cottet-audit-2026-11-17 est encore fondée sur l'ancien état de main (base observée : cae764c). Sa dernière exécution CI connue, sur le commit f2f1036, échoue dès la validation des registres et du graphe : de nombreuses références de dossiers, concepts, domaines, claims et relations ajoutées par la consolidation commune sont absentes de cette branche. Il ne s'agit donc pas d'une preuve que les ajouts scientifiques propres à la PR #87 sont erronés ; c'est d'abord un problème d'intégration de sa branche avec le socle désormais fusionné. La PR doit être actualisée, puis ses éventuels conflits et erreurs propres vérifiés avant toute fusion. La mise à jour automatique de branche n'étant pas disponible dans le flux d'outils utilisé ici, aucune réécriture de son historique n'est effectuée à l'aveugle.
 
 Autres points de maintenance :
 - Vérifier les correspondances entre dossiers, synthèses et registres.
@@ -252,8 +254,8 @@ Autres points de maintenance :
 
 | Priorité | Chantier | Livrable attendu | Condition de clôture |
 |---|---|---|---|
-| P0 | Fiabilité technique | Registres valides, liens corrigés, CI verte | Tous les contrôles pertinents passent sur la branche proposée |
-| P0 | PR #87 | Audit SMIC intégré et vérifié | Diff relu, registres valides, CI verte, limites documentées |
+| P0 | Fiabilité technique commune | Socle fusionné dans main via PR #88 | CI verte sur la branche de consolidation ; maintenir les contrôles |
+| P0 | PR #87 | Audit SMIC intégré et vérifié | Actualiser la branche sur main, relire les conflits et le diff, puis obtenir une CI verte avant fusion |
 | P1 | Référentiel de synthèse | Modèle et grille de contrôle communs | Les synthèses principales respectent le standard sans perte de contenu |
 | P1 | TIG | Matrice harmonisée des preuves, coûts et exécution | Populations, périodes, définitions et limites vérifiées |
 | P1 | SMIC | Bilan par acteur, mécanisme et horizon | Résultats réconciliés, doubles comptes évités, simulations qualifiées |
@@ -290,6 +292,7 @@ Ce tableau est une photographie qualitative au 17 novembre 2026. Il doit être m
 | Date | Modification | Motif |
 |---|---|---|
 | 2026-11-17 | Création de l'audit transversal | Première comparaison des dossiers, synthèses, registres, graphe et feuille de route |
+| 2026-11-17 | Mise à jour après fusion de la PR #88 | État réel de la PR #87 et distinction entre échec d'intégration de branche et validité des ajouts scientifiques |
 
 ---
 
