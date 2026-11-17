@@ -146,3 +146,14 @@ Enfin, l'objectif affiché de 500 000 soutiens avant le 11 décembre relève de 
 | Panel et recrutement | Données détaillées de contact, acceptation, présence et attrition toujours manquantes |
 | Évaluation du processus | Impossible de conclure à ce stade sur pluralisme réel, qualité délibérative ou effets politiques |
 
+
+
+## 14. Ce que révèle la troisième session (7–8 novembre 2026)
+
+Un compte rendu attribué à l'organisateur et republié le 10 novembre rapporte que les 150 citoyens ont été répartis en trois groupes de 50, chacun travaillant sur deux dilemmes attribués par tirage au sort. Pour chaque dilemme, trois experts auraient présenté les faits et enjeux, puis deux approches différentes. Les citoyens auraient également reçu une synthèse de la consultation en ligne et certaines contributions écrites ou vocales.
+
+Le compte rendu rapporte 17 696 contributeurs et 51 859 messages pour cette consultation préparatoire, dont près de 500 contributions vocales. Ces données sont distinctes des 92 000 avis et 48 000 propositions annoncés pour la phase antérieure de sélection des thèmes. Elles sont des chiffres déclarés par l'organisateur et ne permettent pas d'inférer une représentativité des contributeurs.
+
+Cette information documente mieux le déroulement concret du processus, mais ne remplace pas les supports remis, la liste complète des experts, les transcriptions, les observations des échanges et les productions des groupes. La conclusion sur le pluralisme et la qualité délibérative reste donc ouverte.
+
+Source : [compte rendu du troisième week-end, 10 novembre 2026](${reportUrl}).
