@@ -1,0 +1,19 @@
+id: CLAIM-BYPASSING-CAN-OUTPERFORM-SIMPLE-NEGATION-2025
+statement: "Dans certaines expériences préenregistrées, renforcer une explication alternative sans répéter directement la fausse affirmation peut davantage modifier certaines attitudes et intentions qu'une simple négation."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["États-Unis"]
+  period: "Publication 2025"
+  conditions: "Six expériences préenregistrées comparant bypassing et correction directe."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-GRANADOS-ALBARRACIN-2025-BYPASSING"]
+supporting_evidence:
+  - "Les auteurs trouvent un avantage de certaines alternatives sur des attitudes et intentions dans les paradigmes testés."
+limitations:
+  - "L'avantage dépend des résultats mesurés et ne se retrouve pas uniformément avec des informations réelles."
+  - "Ne teste pas directement les formats de débat ou le cordon médiatique."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; distinguer croyance, attitude et intention."
+last_reviewed: "2026-11-17"
