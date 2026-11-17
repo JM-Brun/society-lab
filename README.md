@@ -49,7 +49,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif ; voir aussi la [synthèse Parcoursup](syntheses/parcoursup-education.md).
 - [Politique et démocratie](knowledge/domains/politics.md) — page thématique sur les partis, les élections, le pluralisme et les conditions de la vie démocratique.
 - [Débat, barrage et cordon sanitaire](dossiers/debat-barrage-cordon-sanitaire.md) — comparaison Belgique–Allemagne–France des stratégies de débat, de non-coalition, de démarcation médiatique et de barrage électoral ; voir aussi la [synthèse dédiée](syntheses/debat-barrage-cordon-sanitaire.md).
-- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — protocole expérimental proposé comparant débat, analyse sans promoteur, pédagogie, explication alternative, exposition non contestée et témoin ; voir la [synthèse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
+- [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — protocole expérimental proposé comparant débat, analyse sans promoteur, pédagogie, explication alternative, exposition non contestée et témoin ; voir la [matrice de preuves](dossiers/matrice-preuves-strategies-reponse.md) et la [synthèse](syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
 
 ## Synthèses des sujets
 
