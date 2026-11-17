@@ -320,3 +320,16 @@ Maertens et al. (2025), dans cinq expériences longitudinales préenregistrées 
 Le cordon doit être évalué comme un système multi-arènes : médias, compétition partisane, Parlement, gouvernement, opinion publique et espaces numériques. Un dispositif peut réussir à empêcher une coalition tout en échouant à empêcher la normalisation discursive ; une critique médiatique peut réduire la persuasion sans effacer les normes sociales ; une intervention pédagogique peut améliorer le discernement sans modifier les attitudes politiques.
 
 La question opérationnelle n'est donc pas « cordon ou débat ? », mais : quelles règles d'accès, de coopération et de discussion poursuivent quels objectifs, avec quels effets mesurables et quels coûts démocratiques ?
+
+
+### 21.8 Un front commun peut renforcer la frontière normative et l'antipathie
+
+Kollberg & Bantel (publication en ligne en septembre 2025, volume 2026) combinent une analyse de quatre années de débats au Bundestag allemand avec une expérience d'enquête sur un échantillon représentatif d'électeurs des partis établis (n≈3 100). Les messages négatifs coordonnés de l'ensemble des partis établis contre l'AfD augmentent davantage la polarisation affective que les messages d'un seul parti. Les effets débordent aussi vers l'évaluation des électeurs de l'AfD, pas seulement de ses dirigeants.
+
+Ce résultat complique l'évaluation d'un « front républicain » rhétorique. Une frontière collective peut signaler qu'un parti est considéré comme hors des normes démocratiques et limiter sa légitimation ; mais la rhétorique négative peut aussi augmenter l'antipathie envers ses électeurs et fragiliser la cohésion sociale. Il faut donc distinguer :
+- la démarcation normative à l'égard d'un programme ou d'un comportement antidémocratique ;
+- la critique des dirigeants et des stratégies ;
+- la stigmatisation globale des électeurs ;
+- la tolérance envers les droits politiques et civiques des personnes qui votent pour ce parti.
+
+L'étude ne démontre pas que toute démarcation est néfaste : elle montre que la façon de communiquer la démarcation a des effets affectifs mesurables. Le protocole devrait mesurer séparément la capacité à tracer une frontière démocratique et la généralisation de l'hostilité aux électeurs.
