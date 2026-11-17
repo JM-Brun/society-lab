@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
 title: "Augmenter le SMIC en France : effets, arbitrages et scénarios"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-16"
+last_reviewed: "2026-11-17"
 related_dossiers:
   - "dossiers/smic-facteurs-mecanismes-transmission-2026.md"
   - "dossiers/smic-france-tradeoffs.md"
@@ -21,6 +21,8 @@ related_dossiers:
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
   - "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
   - "dossiers/smic-contre-productivite-mesure-episodes.md"
+  - "dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md"
+  - "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-zero-charges.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -534,3 +536,35 @@ Voir [Réconciliation des séries du SMIC, 1994–2026](../dossiers/smic-series-
 
 
 **Précision sur les pourcentages 2001–2007 :** la chronologie événementielle retient désormais les variations annuelles publiées dans l'annexe DARES de juin 2009 (4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007, ce dernier chiffre étant donné dans le texte principal et arrondi à 2,1 % dans le tableau). Le ratio des taux horaires affichés au centime reste un contrôle, pas une source de remplacement.
+
+## 31. Audit croisé de Bazen & Skourias et nouvelles preuves sur les allègements (17 novembre 2026)
+
+### Bazen & Skourias (1997) : le texte intégral reste introuvable
+
+Les recherches supplémentaires n'ont pas permis d'obtenir une copie intégrale libre et vérifiable de l'article. RePEc confirme que le texte est réservé aux abonnés ScienceDirect ; EconBiz signale des fonds de bibliothèque ZBW, sans donner accès au contenu.
+
+L'audit peut toutefois être précisé à partir de deux sources secondaires. Neumark & Wascher (2007, p. 97–98) décrivent une analyse sur 32 secteurs, les 15–24 ans, la part des jeunes dans l'emploi sectoriel et une exposition mesurée par la proportion de salariés payés sous le SMIC de juin 1981. Ils rapportent des estimations négatives significatives pour octobre 1980–octobre 1981 et mars 1981–mars 1982, plus fortes sur la fenêtre longue. Ils soulèvent deux problèmes de spécification : le contrôle par la croissance en pourcentage de l'emploi total du secteur, dont le dénominateur varie fortement, et l'utilisation de l'exposition à la seule hausse de juin 1981 pour expliquer l'ensemble des ajustements 1980–1984.
+
+Le rapport IMK n°31 (2008, p. 23) fournit une lecture plus sceptique : la part descriptive des jeunes dans l'emploi total passe de 14,6 % en mars 1980 à 12,9 % en mars 1984, mais les différentes spécifications montreraient peu de résultats robustes pour 1981 ; la fenêtre 1980–1984 ne contrôlerait pas les politiques du marché du travail. Cette divergence entre revues ne peut être résolue sans les tableaux originaux. Aucun coefficient, erreur-type, intervalle de confiance ou test de pré-tendance n'est donc repris comme vérifié.
+
+**Verdict :** conserver Bazen & Skourias comme signal historique sectoriel, mais classer la preuve causale comme faible. La baisse descriptive de 1,7 point de part des jeunes n'est pas une mesure d'emplois détruits et ne doit pas être attribuée au SMIC seul.
+
+### Une preuve récente sur le coût employeur, mais pas sur une hausse du SMIC : Cahuc et al. (2019)
+
+L'étude de Cahuc, Carcillo & Le Barbanchon exploite le crédit d'embauche « zéro charges » de 2009, réservé aux nouveaux salariés sous 1,6 SMIC dans les entreprises de moins de 10 ETP. Le crédit réduit jusqu'à 12 % le coût d'un nouvel emploi payé au SMIC. La comparaison entre entreprises de 6–10 et de 10–14 ETP donne une hausse de 0,8 point de la croissance de l'emploi des entreprises traitées en 2009 (erreur-type de 0,2 point), avec une évolution proche des heures. Les placebo 2007–2008 et les tests de seuil et de bande passante soutiennent l'identification.
+
+L'élasticité de −4 [−6 ; −2] concerne le coût des seuls nouveaux entrants subventionnés. Les auteurs la ramènent à environ −1 [−1,5 ; −0,5] lorsqu'on considère une variation du coût salarial de l'ensemble des salariés. Ce résultat est solide dans son champ étroit, mais ne doit pas être présenté comme l'élasticité d'une hausse générale du SMIC. Il ne fournit pas non plus d'estimation spécifique aux jeunes. Voir [l'audit détaillé](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-zero-charges.md).
+
+### Ce que les travaux 2024–2025 ajoutent — et n'ajoutent pas
+
+Le rapport Bozio–Wasmer (France Stratégie, 2024) approfondit les mécanismes des allègements, notamment à partir de Cottet : effets de coût relatif sur les postes bas salaire et effets d'échelle sur l'emploi global des entreprises très exposées. Il propose aussi des élasticités différenciées selon l'âge pour des simulations, mais ce ne sont pas de nouvelles estimations causales des hausses du SMIC. Le rapport du Groupe d'experts 2025 simule 1,3 à 1,9 million d'emplois associés aux allègements sous des hypothèses d'élasticité ; ce n'est pas un comptage ex post ni un effet propre aux jeunes. Les trajectoires du Trésor 2025 et les données DARES décrivent les mobilités et les profils de salariés au SMIC, sans identifier l'effet causal d'une revalorisation donnée.
+
+**Conclusion actualisée :** les données françaises récentes sont plus riches sur les allègements, les crédits d'embauche et les trajectoires de bas salaires que sur l'effet isolé des hausses du SMIC brut. Aucune des sources ajoutées ne permet d'établir l'effet causal des revalorisations 2021–2025 sur l'emploi des jeunes. Il faut donc maintenir séparés SMIC brut, coût total employeur, exonérations, aides à l'embauche, contrats aidés et conjoncture.
+
+Dossiers : [état de la preuve jeunesse](../dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md), [audit « zéro charges »](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-zero-charges.md), [matrice des preuves causales](../dossiers/smic-causal-evidence-matrix.md).
+
+### Historique des révisions
+
+| Date | Modification |
+|---|---|
+| 2026-11-17 | Audit croisé de Bazen & Skourias à partir de Neumark–Wascher et du rapport IMK ; ajout de l'audit du crédit « zéro charges » ; séparation renforcée entre hausses du SMIC et variations ciblées du coût employeur. |
