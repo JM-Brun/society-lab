@@ -57,3 +57,22 @@ La fiche de l'étude Parler a été complétée avec les quatre auteurs exacts (
 ### Lecture croisée
 
 L'étude Parler et l'étude Twitter ne justifient pas un verdict binaire sur la déplateformisation. Elles portent sur des unités différentes (plateforme entière contre comptes fortement diffuseurs), des résultats différents (activité multi-plateformes contre circulation de désinformation sur Twitter) et des contextes distincts. Elles sont donc présentées comme complémentaires plutôt que contradictoires.
+
+## Citation chasing depuis Thompson & Sengul (2025) — 17 novembre 2026
+
+La bibliographie et les renvois de l'article ont permis d'identifier quatre travaux complémentaires. Ils ont été vérifiés par recherche bibliographique et ajoutés au registre.
+
+| Référence | Requête exacte | Décision |
+|---|---|---|
+| Richards, Smith & Barton (2024), *Holding to account or amplifying extremist hate?* | `"Holding to account or amplifying extremist hate" 683 articles 72 incidents` | Inclure : analyse mixte de couverture de presse, sans inférence directe sur la réception |
+| Ekström, Patrona & Thornborrow (2022), *Reporting the unsayable* | `"Reporting the unsayable" Ekström Patrona Thornborrow 2022` | Inclure : analyse qualitative comparative de cadrages, France comprise |
+| Ekström, Patrona & Thornborrow (2020), *The normalization of the populist radical right in news interviews* | `"The normalization of the populist radical right in news interviews" Swedish democrats` | Inclure : étude de cas discursive du format interview |
+| Murphy & Devine (2020), *Does Media Coverage Drive Public Support for UKIP?* | `"Does Media Coverage Drive Public Support for UKIP" Murphy Devine` | Inclure : séries temporelles agrégées, à distinguer d'une expérience individuelle |
+
+### Résultat du citation chasing
+
+La première passe confirme qu'il existe une littérature plus large sur la normalisation par les cadrages, les formats d'interview et la couverture médiatique, mais qu'elle repose souvent sur l'analyse du discours, de contenu ou des séries temporelles. Elle ne remplace pas la comparaison expérimentale encore manquante entre interview contradictoire, analyse indépendante sans promoteur et absence de tribune.
+
+### Limite de la recherche
+
+Le citation chasing a été effectué à partir de la bibliographie de Thompson & Sengul (2025), et non par exploration exhaustive de toutes les bibliographies croisées. Le volet B reste une revue ciblée en cours.
