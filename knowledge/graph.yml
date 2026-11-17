@@ -466,3 +466,5 @@ relations:
   - {"id":"REL-EXPERIMENT-PROTOCOL-INCLUDES-COMMON-FRONT-CLAIM","type":"REL-INCLUDES","from":"DOSSIER-EXPERIMENT-STRATEGIES-COUNTERING-ANTIDEMOCRATIC-IDEAS","to":"CLAIM-COMMON-FRONT-RHETORIC-INCREASES-AFFECTIVE-POLARIZATION-2026","justification":"Le protocole ajoute des mesures secondaires de polarisation affective, distance sociale et tolérance envers les électeurs, distinctes de l'adhésion aux idées."}
 
   - {"id":"REL-CORDON-DOSSIER-INCLUDES-SYSTEMATIC-REVIEW-PROTOCOL","type":"REL-INCLUDES","from":"DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE","to":"DOSSIER-PROTOCOL-SYSTEMATIC-REVIEW-CORDON","justification":"Protocole reproductible pour passer de la revue ciblée à une revue systématique de portée en trois volets."}
+
+  - {"id":"REL-PROTOCOL-INCLUDES-BOUNDARY-NORM-HYPOTHESIS","type":"REL-INCLUDES","from":"DOSSIER-EXPERIMENT-STRATEGIES-COUNTERING-ANTIDEMOCRATIC-IDEAS","to":"HYPOTHESIS-BOUNDARY-NORM-WITHOUT-VOTER-STIGMA","justification":"Hypothèse à tester : une démarcation fondée sur des actes vérifiables peut signaler une frontière démocratique sans généraliser l'hostilité aux électeurs."}
