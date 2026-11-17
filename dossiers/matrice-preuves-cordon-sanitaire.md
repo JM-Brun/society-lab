@@ -123,3 +123,36 @@ Le mécanisme d'amplification ne se limite pas au fait de laisser un invité par
 - la transformation d'une interview conflictuelle en séquence médiatique autonome, réutilisable par l'interviewé.
 
 Ces mécanismes sont documentés par des analyses qualitatives et des études de contenu ; ils ne doivent pas être confondus avec des effets expérimentaux sur les attitudes individuelles.
+
+
+## 2. Volet complémentaire — analyse indépendante, correction et exposition au promoteur (17 novembre 2026)
+
+| Étude | Niveau de preuve | Terrain / méthode | Résultat principal | Ce que l'étude ne démontre pas |
+|---|---|---|---|---|
+| Granados Samayoa & Albarracín (2025), *Bypassing Versus Correcting Misinformation*, DOI [10.1037/xge0001687](https://doi.org/10.1037/xge0001687) | Six expériences préenregistrées | Échantillons en ligne américains ; titres fictifs ; attitudes et intentions | Le renforcement d'une croyance alternative aux implications opposées (« bypassing ») dépasse généralement la simple négation après exposition à une information trompeuse. L'avantage disparaît lorsque les participants ont déjà formé une attitude immédiate, probablement par ancrage | Ne compare pas interview contradictoire et analyse journalistique indépendante ; ne porte pas sur des personnalités extrémistes ou des discours complexes |
+| Horvath et al. (2024), *Correcting campaign misinformation*, DOI [10.37016/mr-2020-132](https://doi.org/10.37016/mr-2020-132) | Expérience de panel à deux vagues | Royaume-Uni, campagne de 2017 ; N=1 841 ; fact-check attribué à une source indépendante, au Guardian ou au Telegraph | Une correction cohérente, avec explication causale alternative, réduit immédiatement la croyance erronée ; l'effet n'est plus détectable au suivi d'environ une semaine. Pas de différence statistiquement significative entre les trois attributions de source | Un seul cas politique ; pas de comparaison avec une interview contradictoire ou une absence de promoteur ; la persistance nécessite des rappels ou répétitions à tester |
+| Ecker, Lewandowsky & Chadwick (2020), *Can corrections spread misinformation to new audiences?*, DOI [10.1186/s41235-020-00241-6](https://doi.org/10.1186/s41235-020-00241-6) | Trois expériences, N=1 718 | Affirmations fictives nouvelles ; conditions sans exposition, affirmation seule et correction seule ou après exposition | Les résultats globaux ne montrent pas de familiarité-boomerang : une correction qui répète une affirmation inédite ne produit généralement pas davantage de croyance erronée que le contrôle sans exposition | Ne prouve pas que répéter une affirmation soit toujours sans coût ; ne mesure ni la diffusion organique, ni l'amplification d'un acteur, ni les effets sur des slogans identitaires complexes |
+| Brashier, Pennycook, Berinsky & Rand (2021), *Timing matters when correcting fake news*, DOI [10.1073/pnas.2020043118](https://doi.org/10.1073/pnas.2020043118) | Deux expériences, N=2 683 | Titres vrais et faux ; étiquettes de véracité avant, pendant ou après lecture ; suivi à une semaine | Les corrections après lecture améliorent davantage le discernement ultérieur que les étiquettes avant ou pendant l'exposition | Compare le moment de la correction, pas les formats journalistiques ni la présence du promoteur |
+
+### Lecture transversale et niveau de certitude
+
+- **Résultat relativement robuste :** une explication alternative substantielle est souvent préférable à une simple négation pour modifier les attitudes et intentions façonnées par une information trompeuse. Le terme « bypassing » désigne ici le renforcement d'une croyance alternative ; il ne signifie pas nécessairement taire ou ignorer le mythe.
+- **Résultat important contre une intuition trop simple :** la répétition d'une fausse affirmation dans une correction ne provoque pas systématiquement un effet boomerang de familiarité. Les expériences d'Ecker et al. trouvent globalement peu d'éléments en faveur de ce risque, même pour des affirmations nouvelles.
+- **Risque distinct :** l'absence d'effet boomerang moyen n'empêche pas la correction de s'effacer avec le temps, ni l'information initiale de continuer à influencer certains raisonnements. Familiarité, mémorisation, croyance et amplification médiatique sont des mécanismes différents.
+- **Limite décisive :** aucune de ces études ne compare directement une interview contradictoire avec une analyse critique indépendante qui n'expose ni la voix, ni l'image, ni la mise en scène du promoteur. Elles justifient des hypothèses de conception, pas un verdict comparatif définitif.
+
+### Hypothèses opérationnelles à tester
+
+1. Une analyse indépendante centrée sur les faits, les mécanismes et une explication causale alternative pourrait conserver l'effet correctif tout en réduisant la visibilité et la respectabilité du promoteur.
+2. Une interview contradictoire pourrait être plus efficace pour rendre visibles les contradictions et tester publiquement la maîtrise argumentative, mais laisser davantage de place à la mise en scène, à la répétition et à la normalisation sociale.
+3. L'écart entre les deux formats pourrait dépendre du degré de familiarité préalable du public, de la notoriété du promoteur, de la qualité de la contradiction, du format (extrait court ou entretien long) et de la présence d'un récit alternatif.
+4. Les effets doivent être mesurés séparément : croyance dans l'affirmation, adhésion idéologique, perception de popularité, respectabilité du promoteur, mémorisation de la correction, transfert critique et intention de partage.
+
+### Comparaison directe manquante
+
+À ce stade, la littérature recensée fournit :
+- des expériences sur l'exposition non contestée et contradictoire à des acteurs d'extrême droite (Bolet & Foos, 2025) ;
+- des expériences sur les corrections, leur timing et les explications alternatives (Ecker et al., 2020 ; Brashier et al., 2021 ; Horvath et al., 2024 ; Granados Samayoa & Albarracín, 2025) ;
+- des analyses qualitatives de cadrage journalistique (Thompson & Sengul, 2025 ; Ekström et al., 2020, 2022).
+
+Mais elle ne fournit pas encore un essai contrôlé qui croise explicitement le format « interview contradictoire » et le format « analyse indépendante sans promoteur » sur les mêmes contenus, avec des mesures de normalisation et un suivi différé. Cette lacune doit rester visible dans la conclusion et guider le protocole à six bras.
