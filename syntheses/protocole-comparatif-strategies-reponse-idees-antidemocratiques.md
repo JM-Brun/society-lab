@@ -117,3 +117,8 @@ La [matrice de preuves comparative](../dossiers/matrice-preuves-strategies-repon
 ## Phase 2 : isoler les mécanismes
 
 Le dossier propose une phase 2 factorielle 2 × 2 qui croise présence du promoteur (oui/non) et contenu correctif (oui/non), avec un cinquième bras sans exposition si les moyens le permettent. Ce plan distingue l'effet principal de la présence, celui de la correction et leur interaction. Il complète, sans la remplacer, la phase 1 à six bras qui compare des stratégies éditoriales complètes. La puissance doit être calculée pour l'interaction ; les mesures d'adhésion, de normalisation, de mémoire et d'usage inférentiel restent distinctes.
+
+
+## Mesures de cohésion et de tolérance
+
+Le protocole prévoit désormais une extension secondaire pour distinguer la frontière normative envers un parti ou ses dirigeants de l'hostilité envers ses électeurs. Les travaux de Kollberg & Bantel (2026) suggèrent que les messages coordonnés de front commun peuvent accroître la polarisation affective, y compris envers les électeurs. Le plan principal n'ajoute pas de nouveaux bras ; une expérience dédiée pourra comparer différents cadrages de la démarcation.
