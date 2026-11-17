@@ -1,0 +1,21 @@
+id: CLAIM-EXPOSURE-UNCHECKED-EXTREME-INTERVIEWS-ATTITUDES-NORMS-2025
+statement: "Dans les expériences de Bolet & Foos, l'exposition à des interviews non contestées d'activistes d'extrême droite augmente à court terme l'accord avec certaines positions et leur popularité sociale perçue."
+claim_type: causal
+status: under_review
+scope:
+  geography: ["Royaume-Uni", "Australie"]
+  period: "Expériences publiées en 2025 à partir d'interviews diffusées en 2018"
+  conditions: "Extraits audio d'entretiens réels ; comparaison avec contrôle et, au Royaume-Uni, entretien contradictoire."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-BOLET-FOOS-2025-MEDIA-PLATFORMING"]
+supporting_evidence:
+  - "Les auteurs observent une hausse de 3 à 5 points de l'accord avec les positions présentées et une hausse de la popularité perçue."
+  - "La contradiction journalistique atténue certains effets sans supprimer entièrement la normalisation sociale."
+limitations:
+  - "Effets à court terme sur des stimuli et contextes circonscrits."
+  - "Ne compare pas l'interview contradictoire à une analyse indépendante sans promoteur."
+  - "Ne permet pas de conclure que toute exposition ou tout débat produit les mêmes effets."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire fondée sur l'article en accès ouvert ; voir les tailles d'effet et limites dans le dossier."
+last_reviewed: "2026-11-17"
