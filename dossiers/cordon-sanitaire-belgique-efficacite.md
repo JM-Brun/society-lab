@@ -273,3 +273,50 @@ Précautions :
 13. UK Department for Education (2024), « Rapid Evidence Review on Harassment and Censorship ». https://assets.publishing.service.gov.uk/media/65fd7b5565ca2f001b7da8c5/Rapid_Evidence_Review_on_Harassment_and_Censorship.pdf — données descriptives et limites de mesure du no-platforming dans l'enseignement supérieur anglais.
 14. Victor Tadros (2022), « The Rights and Wrongs of No-Platforming », *The Cambridge Law Journal*. https://doi.org/10.1111/1468-2230.12729 — analyse normative des droits et conditions de justification.
 15. « A liberal defense of no-platforming » (2024), *International Journal of Constitutional Law*. https://doi.org/10.1093/icon/moae049 — défense du no-platforming non violent comme exercice de liberté d'expression, sous réserve de mise en balance des droits.
+
+
+## 21. Mise à jour approfondie — le cordon doit être évalué dans plusieurs arènes (2026-11-17)
+
+Une nouvelle série de travaux oblige à élargir l'évaluation au-delà de la seule question de la non-coalition.
+
+### 21.1 Les partis peuvent exclure formellement et normaliser discursivement
+
+Shuttleworth, Brown & Mondon (2025), à partir des cas français, allemand et britannique, soutiennent qu'un engagement de non-coalition peut coexister avec l'adoption par les partis établis de thèmes, de cadrages ou de politiques associés à la droite radicale. Leur argument est important pour l'évaluation : un cordon ne peut être considéré comme cohérent sur la seule base des déclarations de non-alliance. Il faut observer aussi les programmes, les discours, les votes et les politiques mises en œuvre.
+
+Il s'agit d'une analyse comparative et critique, non d'une estimation expérimentale de l'effet causal de la convergence discursive sur les votes. Elle formule néanmoins une hypothèse vérifiable : la non-coopération formelle peut être contredite par une accommodation idéologique ou programmatique.
+
+### 21.2 Les signaux de coalition déplacent les clivages affectifs
+
+Vanagt et al. (2025) analysent des expériences d'enquête en Allemagne, en Flandre, en Espagne et en Autriche (N=5 594). Les signaux d'ouverture à une coopération entre centre droit et droite radicale diminuent l'antipathie entre les électeurs de ces deux familles, et augmentent la tolérance des électeurs de centre droit envers la droite radicale. Mais ils accroissent simultanément l'antipathie des électeurs de centre gauche envers le centre droit. Les auteurs ne trouvent pas que l'existence d'un cordon dirigé par les élites modère systématiquement ces effets.
+
+Cela suggère que la coopération peut déplacer la polarisation plutôt que l'apaiser. Il faut toutefois distinguer affect partisan, tolérance politique, approbation d'une coalition et adhésion aux idées : ces variables ne sont pas équivalentes.
+
+### 21.3 Les citoyens distinguent coalition et coopération ponctuelle
+
+Gross, Juen & Stecker (2026) étudient les réactions des électeurs allemands à des scénarios de coopération entre CDU/CSU et AfD au Parlement. Les répondants rejettent très largement une coalition, mais beaucoup tolèrent une coopération sur des sujets précis, sous certaines conditions. Cette distinction est fondamentale : un cordon politique peut interdire l'accès à l'exécutif sans nécessairement interdire chaque vote commun ou chaque accord parlementaire.
+
+Le dossier doit donc coder séparément coalition gouvernementale, soutien parlementaire ponctuel, négociation législative, accord programmatique et signal symbolique de légitimation.
+
+### 21.4 Le cordon belge est une norme durable, mais vulnérable localement
+
+Miyauchi (2025) analyse quatre communes belges où le cordon a été rompu aux élections locales de 2024, soit par majorité absolue du Vlaams Belang, soit par formation d'une coalition. L'étude ne mesure pas l'effet moyen du cordon, puisqu'elle sélectionne des cas de rupture ; elle documente néanmoins les mécanismes par lesquels une norme nationale peut être fragilisée au niveau local lorsque les configurations électorales changent.
+
+Cela invite à traiter le cordon comme une institution informelle dont la stabilité dépend de la coordination des partis, de leur discipline interne, des règles de coalition et des incitations locales.
+
+### 21.5 L'exclusion gouvernementale et le coût électoral de gouverner
+
+Riera & Pastor (2022) trouvent que les partis populistes participant à des coalitions comme partenaires juniors peuvent subir des pertes électorales, notamment lorsque leur idéologie est plus extrême, que la coalition dispose d'une majorité et que les conflits internes sont faibles. Cette étude renseigne le coût potentiel de la participation au gouvernement ; elle ne prouve pas que l'exclusion soit la meilleure stratégie, ni qu'elle réduise l'adhésion idéologique. L'inclusion peut affaiblir électoralement un parti tout en lui donnant accès à des politiques publiques, à des postes et à des ressources institutionnelles : ces résultats doivent être évalués séparément.
+
+### 21.6 Le pré-bunking n'est pas une solution durable par défaut
+
+Simchon et al. (2026) réanalysent 33 expériences d'inoculation (13 articles, N=37 025) à l'aide de la théorie de détection du signal et d'un modèle bayésien hiérarchique. Ils trouvent une amélioration du discernement entre informations fiables et trompeuses, sans déplacement systématique vers une méfiance générale. C'est une preuve agrégée importante en faveur de l'inoculation, mais elle porte sur le discernement informationnel, pas sur le vote, la normalisation d'un parti ou le cordon sanitaire.
+
+Maertens et al. (2025), dans cinq expériences longitudinales préenregistrées (N=11 759), observent que des interventions textuelles et vidéo peuvent conserver une efficacité pendant un mois, tandis que les interventions ludiques semblent décroître plus vite ; des rappels qui renforcent la mémoire peuvent prolonger la résistance. À l'inverse, Nygren & Efimova (2025), auprès de 459 élèves suédois suivis trois mois, ne trouvent pas d'amélioration significative du discernement global après le jeu Bad News, un atelier de fact-checking ou des interventions disciplinaires brèves. Ces résultats ne sont pas contradictoires : ils portent sur des populations, formats, mesures et horizons différents.
+
+**Conséquence :** il faut mesurer le transfert et la durabilité dans le protocole, prévoir des rappels éventuels, et éviter de transformer une moyenne méta-analytique en promesse d'efficacité durable pour chaque intervention.
+
+### 21.7 Conclusion révisée
+
+Le cordon doit être évalué comme un système multi-arènes : médias, compétition partisane, Parlement, gouvernement, opinion publique et espaces numériques. Un dispositif peut réussir à empêcher une coalition tout en échouant à empêcher la normalisation discursive ; une critique médiatique peut réduire la persuasion sans effacer les normes sociales ; une intervention pédagogique peut améliorer le discernement sans modifier les attitudes politiques.
+
+La question opérationnelle n'est donc pas « cordon ou débat ? », mais : quelles règles d'accès, de coopération et de discussion poursuivent quels objectifs, avec quels effets mesurables et quels coûts démocratiques ?
