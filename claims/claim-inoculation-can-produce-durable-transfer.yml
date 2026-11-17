@@ -1,0 +1,26 @@
+id: CLAIM-INOCULATION-CAN-PRODUCE-DURABLE-TRANSFER
+statement: "Certaines interventions d'inoculation contre les techniques de désinformation peuvent améliorer durablement la résistance à des procédés de manipulation dans des tâches de transfert."
+claim_type: causal
+status: partially_supported
+scope:
+  geography: ["International"]
+  population: "Participants à trois expériences longitudinales sur l'intervention Bad News"
+  period: "Suivis jusqu'à trois mois dans la première expérience"
+  conditions: "Résistance à des techniques de manipulation et discernement dans des tâches expérimentales."
+domain_ids: ["DOMAIN-EDUCATION", "DOMAIN-MEDIA"]
+source_ids: ["SOURCE-MAERTENS-2021-LONG-TERM-INOCULATION"]
+supporting_evidence:
+  - "Trois expériences longitudinales évaluent la durabilité des effets d'inoculation ; un effet est observé jusqu'à trois mois dans la première expérience."
+counter_evidence:
+  - "Les résultats portent sur des tâches et techniques spécifiques et ne garantissent pas une résistance générale à toute désinformation."
+best_counterargument: "Un gain dans une tâche de reconnaissance de techniques ne garantit ni une meilleure exactitude sur des controverses réelles, ni un transfert uniforme entre domaines."
+limitations:
+  - "Ne compare pas les stratégies de débat, d'analyse indépendante et de non-plateformisation."
+  - "Le transfert dépend du contenu des interventions et des tâches d'évaluation."
+confidence:
+  probability: 0.65
+  rationale: "Confiance modérée dans un transfert durable dans le cadre étudié ; généralisation à des contextes politiques variés à établir."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire à vérifier sur les résultats et les mesures des trois expériences."
+last_reviewed: "2026-11-17"
