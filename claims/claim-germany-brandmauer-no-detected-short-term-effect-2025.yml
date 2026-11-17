@@ -1,0 +1,19 @@
+id: CLAIM-GERMANY-BRANDMAUER-NO-DETECTED-SHORT-TERM-EFFECT-2025
+statement: "Dans l'expérience d'enquête allemande étudiée autour de l'élection fédérale de 2025, les signaux de préservation ou de rupture de la Brandmauer n'ont pas produit d'effet significatif détectable sur les attitudes déclarées mesurées."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["Allemagne"]
+  period: "Élection fédérale 2025"
+  conditions: "Expérience d'enquête variant l'incertitude sur la préservation ou la rupture de la Brandmauer."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-GERMANY-BRANDMAUER-FAHEY-ALARIAN-2025"]
+supporting_evidence:
+  - "L'étude ne détecte pas d'effet significatif sur les variables déclarées testées."
+limitations:
+  - "Un effet non détecté ne démontre pas une absence absolue d'effet."
+  - "Mesure des réactions déclarées à court terme, pas les effets institutionnels ou cumulatifs d'une norme réelle."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; vérifier les outcomes et intervalles de confiance dans l'article et ses annexes."
+last_reviewed: "2026-11-17"
