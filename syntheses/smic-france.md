@@ -22,6 +22,7 @@ related_dossiers:
   - "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
   - "dossiers/smic-contre-productivite-mesure-episodes.md"
   - "dossiers/smic-bazen-skourias-1997-audit-etudes-recentes.md"
+  - "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
