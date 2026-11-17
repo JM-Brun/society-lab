@@ -166,3 +166,41 @@ Les travaux de Kollberg & Bantel (2026) ajoutent un coût potentiel à surveille
 ## Méthode et état du chantier
 
 Un [protocole de revue systématique de portée](../dossiers/protocole-revue-systematique-cordon-sanitaire.md) définit les recherches à exécuter, les critères d'inclusion, l'extraction et l'évaluation du risque de biais. La revue n'est pas encore exécutée ; les résultats actuels relèvent d'une revue ciblée.
+
+## Volet médias : visibilité, contradiction et non-plateformisation (mise à jour du 17 novembre 2026)
+
+### Ce que les expériences établissent le mieux
+
+Bolet & Foos (2025) constituent, à ce stade, la preuve directe la plus forte du dossier sur les effets d'une interview d'acteurs d'extrême droite. Deux expériences d'enquête fondées sur des interviews réelles en Australie et au Royaume-Uni montrent que l'exposition non contestée augmente l'accord avec certaines affirmations extrêmes et la perception de leur soutien dans la population. Dans le volet britannique, une interview critique réduit l'effet sur l'adhésion et dégrade l'image du locuteur ; elle ne supprime toutefois pas complètement l'effet sur la perception de la popularité de ces idées. L'étude ne compare pas directement l'interview contradictoire à une analyse journalistique indépendante sans le promoteur, ni à une politique durable de refus de tribune. Elle ne permet donc pas de désigner une stratégie médiatique universellement supérieure.
+
+### Ce que les travaux qualitatifs ajoutent — et n'ajoutent pas
+
+Thompson & Sengul (2025) analysent de manière critique deux interviews très médiatisées aux États-Unis et mobilisent la littérature sur « l'oxygène de l'amplification ». Leur argument est que même une interview adversariale peut fournir à un acteur une audience, des séquences réutilisables et une visibilité disproportionnée. Ils recommandent notamment de justifier l'exposition par l'intérêt public, d'éviter la couverture disproportionnée et de ne pas confondre neutralité avec absence de jugement journalistique. Ce travail est utile pour identifier des mécanismes et des dilemmes professionnels ; ses deux études de cas ne mesurent pas un effet causal moyen et ne réfutent pas l'expérience de Bolet & Foos. Les deux approches portent sur des résultats et des méthodes différents.
+
+### La déplateformisation : réduire une voie de diffusion n'est pas nécessairement réduire l'écosystème
+
+L'étude sur la mise hors ligne de Parler en 2021 trouve que les utilisateurs actifs se reportent vers d'autres plateformes marginales ; l'activité globale sur ces plateformes alternatives ne diminue pas. L'analyse en différences-de-différences estime une hausse de la probabilité d'activité quotidienne sur d'autres plateformes chez les utilisateurs concernés. Ce résultat met en garde contre l'évaluation d'une mesure à partir de la seule plateforme qui l'applique : il faut mesurer la portée nette, les migrations, les audiences et les relais. Il ne signifie pas que toute modération est inefficace : l'étude porte sur le retrait d'une plateforme entière, dans un écosystème particulier, et non sur la suppression de chaque compte ou sur le refus d'une tribune médiatique.
+
+### Distinctions pratiques
+
+| Intervention | Cible immédiate | Question empirique principale |
+|---|---|---|
+| Refus d'invitation / non-plateformisation | Accès à une tribune et audience additionnelle | Réduit-il la portée totale, ou déplace-t-il l'audience ? |
+| Interview contradictoire | Contenu et crédibilité du message pendant l'exposition | La contradiction corrige-t-elle les croyances sans amplifier la visibilité ? |
+| Analyse indépendante sans promoteur | Compréhension du sujet sans exposition directe au discours-source | Permet-elle une meilleure compréhension avec moins de normalisation ? |
+| Déplateformisation numérique | Accès à un service et distribution algorithmique | Réduit-elle la portée nette, la mobilisation ou les dommages, après migration ? |
+| Démarcation discursive des médias | Signaux de légitimité et cadrage | Les choix éditoriaux rendent-ils visibles les enjeux sans banaliser les cadrages ? |
+
+### Conclusion provisoire du volet médias
+
+La preuve expérimentale soutient la prudence face à l'exposition non contestée : elle peut accroître l'adhésion à certaines propositions et leur popularité perçue. La contradiction journalistique semble atténuer certains effets, mais elle ne neutralise pas automatiquement la normalisation sociale. Les travaux qualitatifs rappellent que l'interview peut aussi offrir une audience et une matière de communication au promoteur. Enfin, les recherches sur la déplateformisation montrent qu'une restriction locale peut déplacer l'activité vers d'autres espaces.
+
+La stratégie la plus défendable n'est donc ni le silence systématique ni l'invitation systématique au débat. Elle consiste à proportionner la visibilité à l'intérêt public, à préférer lorsque c'est possible l'analyse et la vérification indépendantes, à ne pas laisser des affirmations graves sans contextualisation, et à mesurer la portée nette plutôt que la seule exposition sur un canal. Cette recommandation est une conclusion de prudence et de conception éditoriale ; la supériorité de l'analyse sans promoteur reste une question ouverte.
+
+### Lacunes prioritaires
+
+1. Comparer directement, sur les mêmes sujets et publics, interview contradictoire, analyse indépendante sans promoteur, et absence de tribune.
+2. Mesurer les effets différés (au-delà de quelques jours), les comportements de partage et la mémorisation des arguments.
+3. Distinguer l'audience directe, les extraits viraux, la couverture secondaire et les migrations inter-plateformes.
+4. Mesurer séparément croyances, normes descriptives, respectabilité du promoteur, polarisation affective et confiance dans les médias.
+5. Répliquer les résultats hors des contextes australien, britannique et américain, notamment en France et dans d'autres environnements médiatiques européens.
