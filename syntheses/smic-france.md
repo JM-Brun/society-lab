@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
 title: "Augmenter le SMIC en France : effets, arbitrages et scénarios"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-16"
+last_reviewed: "2026-11-17"
 related_dossiers:
   - "dossiers/smic-facteurs-mecanismes-transmission-2026.md"
   - "dossiers/smic-france-tradeoffs.md"
@@ -21,6 +21,7 @@ related_dossiers:
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
   - "dossiers/smic-tresor-2025-wage-trajectories-audit.md"
   - "dossiers/smic-contre-productivite-mesure-episodes.md"
+  - "dossiers/smic-bazen-skourias-1997-audit-etudes-recentes.md"
 geographic_scope: ["France", "Europe", "Pays de la Loire", "Loire-Atlantique"]
 temporal_scope: "Données et études selon leurs périodes propres ; scénarios prospectifs à expliciter"
 confidence: "moderate"
@@ -534,3 +535,13 @@ Voir [Réconciliation des séries du SMIC, 1994–2026](../dossiers/smic-series-
 
 
 **Précision sur les pourcentages 2001–2007 :** la chronologie événementielle retient désormais les variations annuelles publiées dans l'annexe DARES de juin 2009 (4,05 % en 2001 ; 5,8 % en 2004 ; 5,5 % en 2005 ; 3,05 % en 2006 ; 2,05 % en 2007, ce dernier chiffre étant donné dans le texte principal et arrondi à 2,1 % dans le tableau). Le ratio des taux horaires affichés au centime reste un contrôle, pas une source de remplacement.
+
+## Complément du 17 novembre 2026 — preuves sur l'emploi des jeunes et l'épisode de 1981
+
+L'audit détaillé est conservé dans `dossiers/smic-bazen-skourias-1997-audit-etudes-recentes.md` et la matrice causale est complétée. **Le texte intégral de Bazen & Skourias (1997) n'a pas été retrouvé** : le résumé éditeur confirme un effet négatif statistiquement significatif après la hausse de 10 % de juin 1981, et Neumark & Wascher (2007) rapportent une analyse de 32 secteurs sur les jeunes de 15–24 ans. La revue critique la cohérence des dénominateurs et la mesure de l'exposition sur la fenêtre 1980–1984. Coefficients, erreurs-types, tableaux originaux et pré-tendances restent non vérifiés ; aucun nombre d'emplois détruits ne peut en être déduit.
+
+Les travaux français complémentaires ne mesurent pas tous le même traitement : Simonnet & Terracol (2009) et Bunel, Gilles & L'Horty (2009) étudient la réforme composite de convergence SMIC/GMR et d'allègements ; Cottet (2020/2024) évalue des baisses de cotisations patronales de 1995–1996 ; Gorry (2013) propose une simulation structurelle ; DG Trésor (2025) et OCDE (2025) décrivent les trajectoires et mécanismes récents sans isoler causalement les revalorisations. Ces résultats ne doivent pas être fusionnés en une élasticité unique ni extrapolés directement aux hausses 2021–2025.
+
+**Conclusion actualisée :** le signal négatif de 1981 demeure ciblé, historiquement intéressant mais insuffisamment audité dans son texte original et contesté sur des choix de spécification. Les évaluations plus récentes confirment l'importance des coûts employeurs, allègements, transitions et hétérogénéités, mais ne permettent toujours pas d'identifier un effet causal global récent du SMIC sur l'emploi des jeunes.
+
+Sources principales : Bazen & Skourias (1997), https://doi.org/10.1016/S0014-2921(97)00004-4 ; Neumark & Wascher (2007), https://www.academia.edu/42158819/Neumark ; Simonnet & Terracol (2009), https://www.persee.fr/doc/estat_0336-1454_2009_num_429_1_8065 ; Bunel et al. (2009), https://www.persee.fr/doc/estat_0336-1454_2009_num_429_1_8064 ; Cottet (2024), https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or ; Gorry (2013), https://doi.org/10.1016/j.euroecorev.2013.08.004 ; DG Trésor (2025), https://www.tresor.economie.gouv.fr/Articles/06d82898-9d76-4539-8b29-53ba0f35e393 ; OCDE (2025), https://doi.org/10.1787/82539f44-en.
