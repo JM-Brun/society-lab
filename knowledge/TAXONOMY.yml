@@ -62,3 +62,15 @@ domains:
     slug: technology
     label: Technologie et transformations sociales
     description: Numérique, IA, automatisation et transformations du travail.
+  - id: DOMAIN-MEDIA
+    slug: media
+    label: Médias et information
+    description: Médias, journalisme, plateformes, circulation de l'information et espaces publics.
+  - id: DOMAIN-SOCIETY
+    slug: society
+    label: Société et dynamiques sociales
+    description: Structures sociales, comportements collectifs, normes, inégalités et relations entre groupes.
+  - id: DOMAIN-SCIENCE
+    slug: science
+    label: Sciences et production des connaissances
+    description: Production, évaluation, diffusion et controverses des connaissances scientifiques.
