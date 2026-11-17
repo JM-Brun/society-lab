@@ -139,3 +139,8 @@ Les effets à mesurer sont l'accord avec l'idée, l'exactitude factuelle, la per
 ## Complément — cordon sanitaire belge et débunkage
 
 Voir la [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) : elle clarifie les différences entre non-coalition, cordon médiatique et front républicain, et conclut que l'efficacité du modèle belge est plausible mais non isolée causalement. Les recherches sur la répétition et la correction ne justifient pas une interdiction générale de toute expression.
+
+
+## Mise à jour — réfutation, prévention et no-platforming
+
+La [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) intègre désormais une méta-analyse de 33 expériences de pré-bunking, six expériences comparant correction et explication alternative, des travaux sur le faux équilibre et trois expériences d'enquête sur les motifs de restriction de la liberté académique. Ces travaux affinent la stratégie sans démontrer une supériorité générale du refus de tribune.
