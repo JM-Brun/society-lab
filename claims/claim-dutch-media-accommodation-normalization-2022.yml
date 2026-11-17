@@ -1,0 +1,19 @@
+id: CLAIM-DUTCH-MEDIA-ACCOMMODATION-NORMALIZATION-2022
+statement: "L'analyse de la couverture médiatique néerlandaise avant les élections de 2021 décrit des mécanismes d'accommodation et de normalisation du discours de droite radicale, sans identifier causalement leurs effets sur les attitudes des lecteurs."
+claim_type: interpretive
+status: under_review
+scope:
+  geography: ["Pays-Bas"]
+  period: "Campagne des élections générales de 2021"
+  conditions: "Analyse discursive de la couverture de presse du Forum voor Democratie et de son dirigeant."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-DE-JONGE-GAUFMAN-2022-MEDIA-NORMALIZATION"]
+supporting_evidence:
+  - "L'étude examine les pratiques de cadrage et d'accommodation médiatiques dans la couverture du parti."
+limitations:
+  - "Étude qualitative, sans estimation causale sur les lecteurs."
+  - "La transposition à d'autres systèmes médiatiques doit être vérifiée."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire, interprétation qualitative et non effet expérimental."
+last_reviewed: "2026-11-17"
