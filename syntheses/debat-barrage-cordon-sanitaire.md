@@ -134,3 +134,8 @@ Les effets à mesurer sont l'accord avec l'idée, l'exactitude factuelle, la per
 **Conclusion opérationnelle :** réfuter une affirmation n'oblige pas à offrir une tribune à son promoteur. La décision de débattre avec une personne, de corriger une idée, de relayer un contenu ou de limiter sa diffusion doit être prise séparément. Toute stratégie doit être évaluée sur ses effets nets, ses publics, sa temporalité et sa légitimité procédurale.
 
 **Incertitudes majeures :** effets à long terme ; effets sur les personnes déjà convaincues ; comparaison directe entre débat avec le promoteur et critique sans amplification ; transposition des résultats numériques au débat télévisé, scolaire ou universitaire.
+
+
+## Complément — cordon sanitaire belge et débunkage
+
+Voir la [synthèse spécialisée](cordon-sanitaire-belgique-efficacite.md) : elle clarifie les différences entre non-coalition, cordon médiatique et front républicain, et conclut que l'efficacité du modèle belge est plausible mais non isolée causalement. Les recherches sur la répétition et la correction ne justifient pas une interdiction générale de toute expression.
