@@ -540,3 +540,10 @@ La fiche détaillée est dans [smic-bazen-skourias-1997-audit-etudes-recentes.md
 | OCDE (2025) | Bas salaires, mobilité, fiscalité et coût employeur | Compression du bas de distribution, mobilité interentreprises plus faible, risques de sortie et mécanismes de trappe | Comparaison descriptive et simulations socio-fiscales, pas estimation causale d'une hausse donnée |
 
 **Règle de lecture renforcée :** aucune étude sur une baisse de cotisations patronales (Cottet, Bunel et al.) ne doit être comptée comme estimation de l'effet du SMIC brut. Les études de trajectoires et les modèles structurels ne sont pas des évaluations causales ex post. Les résultats des années 1980 ne sont pas extrapolables mécaniquement à 2021–2025.
+
+## Ajout — crédit d'embauche temporaire (17 novembre 2026)
+
+| Étude | Objet et méthode | Résultat rapporté | Ce que cela permet d'affirmer | Limite / niveau de preuve |
+|---|---|---|---|---|
+| **Cahuc, Carcillo & Le Barbanchon (2019)** | Crédit « zéro charges » temporaire pour les nouvelles embauches sous 1,6 SMIC dans les entreprises de moins de 10 ETP ; DiD autour du seuil de 10 ETP, DADS et fichiers administratifs | Environ +0,8 point de croissance de l'emploi et hausse comparable des heures dans les entreprises traitées en 2009 | Une subvention temporaire ciblée sur les embauches marginales peut accroître localement l'emploi et les heures dans les petites entreprises | Effet local, contexte de crise, traitement limité aux nouveaux entrants ; ne mesure ni une hausse du SMIC brut ni un allègement général. Étude non spécifique aux jeunes. **Preuve quasi-expérimentale ciblée ; validité externe limitée** |
+
