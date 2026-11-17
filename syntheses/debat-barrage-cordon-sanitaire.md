@@ -2,7 +2,7 @@
 
 - **ID** : SYNTHESIS-POLITICS-DEBATE-BARRAGE
 - **Dossier associé** : [DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE](../dossiers/debat-barrage-cordon-sanitaire.md)
-- **Dernière mise à jour** : 2026-11-16
+- **Dernière mise à jour** : 2026-11-17
 - **Statut** : synthèse intermédiaire ; comparaison Belgique–Allemagne–France
 
 ## Question
