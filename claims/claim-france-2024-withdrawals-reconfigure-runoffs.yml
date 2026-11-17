@@ -1,0 +1,19 @@
+id: CLAIM-FRANCE-2024-WITHDRAWALS-RECONFIGURE-RUNOFFS
+statement: "Les désistements de candidats entre les deux tours des législatives françaises de 2024 ont modifié la configuration de nombreuses circonscriptions et réduit le nombre de triangulaires, sans que leur effet causal précis sur les sièges puisse être déduit des seuls entretiens de candidats."
+claim_type: descriptive
+status: under_review
+scope:
+  geography: ["France"]
+  period: "Élections législatives 2024"
+  conditions: "Retraits de candidatures entre les deux tours et coordination électorale."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-FRANCE-CANDIDATE-WITHDRAWAL-2024"]
+supporting_evidence:
+  - "L'étude qualitative de 29 entretiens documente les motifs des candidats qui se sont retirés."
+limitations:
+  - "Les entretiens documentent les motifs, pas l'effet causal des retraits sur le nombre de sièges."
+  - "Les reports de voix et les configurations locales varient selon les circonscriptions."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; chiffres de triangulaires et de sièges à documenter avec sources électorales distinctes."
+last_reviewed: "2026-11-17"
