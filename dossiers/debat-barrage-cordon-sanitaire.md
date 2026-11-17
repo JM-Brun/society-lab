@@ -459,3 +459,10 @@ Cette matrice est une hypothèse opérationnelle à tester, pas une prescription
 Les études de correction portent principalement sur des affirmations factuelles ; elles ne tranchent pas les conflits de valeurs. Les travaux de déplateformisation mesurent des audiences, des revenus ou des déplacements d'activité, mais pas nécessairement la persuasion politique. La méta-analyse sur la réactance porte sur la communication persuasive, non sur les cordons médiatiques en tant que tels.
 
 La prochaine étape est donc de construire un protocole comparatif qui sépare les quatre interventions suivantes : (a) débat avec le promoteur, (b) analyse critique sans lui donner la tribune, (c) correction après exposition, (d) retrait ou limitation de diffusion. Pour chacune, mesurer portée nette, croyances, attitudes, confiance, mobilisation et effets différés.
+
+
+## Complément de recherche — vérification de l'argument « faire comme la Belgique » (2026-11-17)
+
+Une étude dédiée a été créée pour distinguer cordon politique, cordon médiatique francophone et front républicain, puis évaluer les preuves sur l'exposition non critique, la répétition et les corrections : [dossier spécialisé](cordon-sanitaire-belgique-efficacite.md) et [synthèse](../syntheses/cordon-sanitaire-belgique-efficacite.md).
+
+Point de vigilance ajouté : l'étude comparative de De Jonge (2021) est suggestive mais ne permet pas d'isoler causalement l'effet propre du cordon sanitaire ; les résultats expérimentaux de Bolet & Foos (2025) portent sur des interviews non contestées d'activistes d'extrême droite au Royaume-Uni et en Australie, non sur une évaluation directe du modèle belge.
