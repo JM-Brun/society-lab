@@ -1,0 +1,15 @@
+id: HYPOTHESIS-BOUNDARY-NORM-WITHOUT-VOTER-STIGMA
+statement: "Un message qui condamne explicitement les comportements et propositions incompatibles avec les règles démocratiques tout en distinguant dirigeants, organisation et électeurs peut renforcer la perception d'une frontière démocratique sans accroître autant l'antipathie envers les électeurs qu'une rhétorique négative collective."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-SOCIETY", "DOMAIN-MEDIA"]
+mechanism: "Le cadrage centré sur des actes vérifiables et des règles démocratiques fournit un signal normatif clair ; la distinction explicite entre responsables et électeurs limite la généralisation de l'hostilité à l'ensemble du groupe social."
+scope_conditions:
+  - "Les messages doivent citer des comportements ou propositions précis, vérifiables et pertinents pour les règles démocratiques."
+  - "Les conditions doivent être équivalentes en durée, source, intensité et information factuelle."
+  - "Les effets sur la frontière normative et sur l'antipathie envers les électeurs doivent être mesurés séparément."
+alternative_explanations:
+  - "La distinction explicite peut être perçue comme artificielle ou condescendante et ne pas réduire l'antipathie."
+  - "La rhétorique négative peut renforcer la mobilisation normative sans nuire à la tolérance envers les électeurs."
+  - "Les effets peuvent dépendre de l'identité partisane, de la confiance institutionnelle et de la gravité des actes considérés."
+status: under_examination
+confidence_rationale: "Hypothèse nouvelle motivée par les résultats de Kollberg & Bantel (2026), non encore testée directement."
+reviewed_at: "2026-11-17"
