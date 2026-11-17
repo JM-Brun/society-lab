@@ -37,3 +37,9 @@ tags:
   - {id: TAG-LEVEL-LOCAL, group: scale, label: Local}
   - {id: TAG-TIME-SHORT-TERM, group: horizon, label: Court terme}
   - {id: TAG-TIME-LONG-TERM, group: horizon, label: Long terme}
+  - {id: TAG-METHOD-CASE-STUDY, group: method, label: Étude de cas}
+  - {id: TAG-METHOD-EXPERIMENTAL, group: method, label: Expérimental}
+  - {id: TAG-METHOD-HISTORICAL, group: method, label: Historique}
+  - {id: TAG-METHOD-NORMATIVE, group: method, label: Normatif}
+  - {id: TAG-METHOD-OBSERVATIONAL, group: method, label: Observationnel}
+  - {id: TAG-METHOD-REVIEW, group: method, label: Revue de littérature}

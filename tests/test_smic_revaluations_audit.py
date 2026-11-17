@@ -17,7 +17,8 @@ class SmicHistoricalAuditTests(unittest.TestCase):
         self.assertEqual(result["row_count"], 24)
         self.assertEqual(result["first_period"], "1970-1971")
         self.assertEqual(result["last_period"], "1993-1994")
-        row_1978 = next(row for row in csv.DictReader(path.open(encoding="utf-8", newline="")) if row["period"] == "1978-1979")
+        with path.open(encoding="utf-8", newline="") as stream:
+            row_1978 = next(row for row in csv.DictReader(stream) if row["period"] == "1978-1979")
         self.assertEqual(row_1978["smic_hourly_francs"], "10.85")
         self.assertIn("tableau 2", row_1978["notes"])
 

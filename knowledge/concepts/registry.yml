@@ -1,0 +1,4 @@
+version: 1
+description: "Registre des concepts réutilisables du graphe de connaissances."
+concepts:
+  - {"id":"CONCEPT-CAUSAL-ALTERNATIVE-EXPLANATION","label":"Explication causale alternative","definition":"Explication qui propose un mécanisme causal de remplacement ou de complément à une explication initiale, notamment pour corriger une information erronée sans se limiter à nier cette information.","domain_ids":["DOMAIN-POLITICS","DOMAIN-MEDIA","DOMAIN-SCIENCE"],"tags":["TAG-METHOD-EXPERIMENTAL","TAG-METHOD-REVIEW"],"aliases":["alternative causal explanation","explication alternative"]}

@@ -61,7 +61,9 @@
 
 ## M5 — Validation inter-domaines
 
-Le dossier éducation / Parcoursup constitue désormais le premier cas d'application du modèle. La validation inter-domaines portera sur les autres secteurs pour vérifier que la taxonomie et les schémas restent génériques.
+Les dossiers Parcoursup, TIG, SMIC et cordon sanitaire constituent déjà plusieurs cas d'application dans les domaines éducation, sécurité/justice, économie et politique. Ils permettent de tester le caractère générique de la taxonomie et des schémas ; cette validation reste à formaliser par une comparaison explicite des objets, relations et méthodes réutilisables.
+
+Le bilan transversal et les lacunes à traiter sont suivis dans [l'audit de l'état des connaissances](audit-transversal-etat-des-connaissances.md).
 - [ ] Finances publiques et dette.
 - [ ] Immigration et intégration.
 - [ ] IA et transformations du travail.
@@ -97,6 +99,21 @@ Le dossier éducation / Parcoursup constitue désormais le premier cas d'applica
 - [ ] Évaluer les prévisions uniquement après leur échéance et conserver les versions initiales.
 
 **Sortie :** un historique auditable de prévisions et de leurs résolutions, sans objectif artificiel de volume.
+
+## M9 — Consolidation transversale des connaissances et synthèses
+
+- [x] Réaliser un premier audit comparatif des dossiers, synthèses, registres, graphe et feuille de route.
+- [x] Identifier les priorités de consolidation propres aux sujets TIG, SMIC, cordon sanitaire, réponses aux idées antidémocratiques et Parcoursup.
+- [ ] Mettre à jour le tableau de suivi après chaque révision scientifique substantielle.
+- [ ] Harmoniser les synthèses principales à partir du modèle commun, sans supprimer les informations déjà documentées.
+- [ ] Vérifier les affirmations importantes à partir des textes intégraux, tableaux et données lorsque disponibles.
+- [ ] Renforcer les relations du graphe entre études, affirmations, mécanismes, contradictions et conclusions.
+- [ ] Produire des bilans par sujet qui distinguent explicitement établi, probable, débattu et inconnu.
+- [ ] Publier des pages pédagogiques reliant chaque synthèse aux dossiers, études et sources.
+
+**Document de suivi :** [audit transversal de l'état des connaissances](audit-transversal-etat-des-connaissances.md).
+
+**Sortie :** des synthèses autonomes, traçables, comparables et révisables, dont le degré de maturité est explicite.
 
 ## Definition of Done
 
