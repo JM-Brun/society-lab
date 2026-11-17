@@ -156,3 +156,8 @@ Les suivis sont prévus immédiatement, à une semaine et à un mois. Les critè
 ## Mise à jour — le cordon est multi-arènes (2026-11-17)
 
 Les travaux récents invitent à évaluer la cohérence entre médias, partis, Parlement et gouvernement, et pas seulement les accords de coalition. Les signaux de coopération peuvent déplacer les clivages affectifs ; les citoyens distinguent coalition et coopération ponctuelle ; les convergences discursives des partis établis peuvent affaiblir la démarcation formelle. La [matrice de preuves multi-arènes](../dossiers/matrice-preuves-cordon-sanitaire.md) détaille ces résultats et leurs limites.
+
+
+## Front commun et cohésion sociale
+
+Les travaux de Kollberg & Bantel (2026) ajoutent un coût potentiel à surveiller : une rhétorique coordonnée négative peut renforcer la polarisation affective envers le parti radical et ses électeurs. Il faut préserver la distinction entre démarcation normative, critique des dirigeants et stigmatisation des électeurs.
