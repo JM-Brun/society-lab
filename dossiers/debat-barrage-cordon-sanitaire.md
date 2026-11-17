@@ -471,3 +471,12 @@ Point de vigilance ajouté : l'étude comparative de De Jonge (2021) est suggest
 ## Mise à jour — stratégies de réfutation et liberté académique (2026-11-17)
 
 Le dossier spécialisé a été enrichi par les travaux sur le pré-bunking (Simchon et al., 2026), les explications alternatives au simple démenti (Granados Samayoa & Albarracín, 2025), le faux équilibre médiatique (Koehler, 2016) et les restrictions de la liberté académique (Diehl et al., 2025). Voir [dossier spécialisé](cordon-sanitaire-belgique-efficacite.md) et [synthèse](../syntheses/cordon-sanitaire-belgique-efficacite.md). Point central : les données soutiennent la prévention et les réponses explicatives, mais ne mesurent pas encore l'effet causal global du no-platforming.
+
+
+## Nouveau chantier — comparaison expérimentale directe des stratégies
+
+La lacune prioritaire est désormais traitée dans un dossier méthodologique autonome : [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](protocole-comparatif-strategies-reponse-idees-antidemocratiques.md), accompagné de sa [synthèse](../syntheses/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md).
+
+Le protocole compare cinq interventions — discours non contesté, débat contradictoire, analyse critique sans présence du promoteur, pédagogie des mécanismes de manipulation et explication alternative crédible — avec un sixième bras témoin sans exposition. Les mesures sont prévues avant intervention, immédiatement après, à une semaine et à un mois.
+
+Les résultats ne seront pas réduits à la seule adhésion au message : exactitude des croyances, normalisation perçue, mémorisation, transfert de la compétence critique, réactance, confiance et tolérance à la contradiction seront distingués. Le protocole est proposé et non exécuté ; aucune supériorité entre stratégies n'est actuellement établie.
