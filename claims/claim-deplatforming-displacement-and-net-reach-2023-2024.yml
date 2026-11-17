@@ -1,0 +1,20 @@
+id: CLAIM-DEPLATFORMING-DISPLACEMENT-AND-NET-REACH-2023-2024
+statement: "La déplateformisation peut déplacer une partie de l'activité ou de l'audience vers des espaces alternatifs sans nécessairement annuler la réduction de portée nette sur la plateforme dominante."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["États-Unis"]
+  period: "Fermeture de Parler en 2021 et retraits de créateurs de YouTube étudiés jusqu'en 2024"
+  conditions: "Fermeture d'une plateforme entière et retrait de créateurs individuels ; unités d'analyse distinctes."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-HORTA-RIBEIRO-ETAL-2023-PARLER-DEPLATFORMING", "SOURCE-KLINENBERG-2024-DEPLATFORMING-CREATORS"]
+supporting_evidence:
+  - "Après la fermeture de Parler, l'activité des utilisateurs actifs se déplace vers d'autres réseaux marginaux."
+  - "Après retrait de YouTube, l'audience des créateurs augmente sur BitChute, mais cette hausse ne compense qu'une partie de la perte d'audience totale."
+limitations:
+  - "Fermeture de plateforme et retrait de créateurs ne sont pas la même intervention."
+  - "Les résultats portent sur l'activité et l'audience, pas directement sur l'adhésion idéologique ou la violence."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche de synthèse provisoire ; conserver les unités d'analyse séparées."
+last_reviewed: "2026-11-17"
