@@ -161,3 +161,115 @@ Le choix n'est donc pas entre « laisser tout dire sans filtre » et « boycotte
 - Étudier la durée des effets et la possibilité de correction différée.
 - Comparer médias audiovisuels, réseaux sociaux, universités et institutions publiques.
 - Évaluer si les règles de non-tribune sont transparentes, cohérentes, proportionnées et contestables.
+
+
+## 13. Nouvelle comparaison : corriger, contourner ou construire une explication alternative
+
+Granados Samayoa & Albarracín (2025), « Bypassing Versus Correcting Misinformation: Efficacy and Fundamental Processes », *Journal of Experimental Psychology: General*, DOI : https://doi.org/10.1037/xge0001687.
+
+Six expériences préenregistrées comparent la correction directe par négation à une réponse alternative qui introduit des croyances compatibles avec les faits mais dont les implications évaluatives s'opposent à celles de la désinformation. Dans plusieurs expériences, cette stratégie de « bypassing » modifie davantage les attitudes et intentions que la simple négation. Le mécanisme dépend du moment où les personnes forment leurs attitudes : lorsque l'attitude est construite dès la première exposition, l'avantage disparaît probablement en raison d'un effet d'ancrage. Dans la dernière expérience avec des informations réelles, l'avantage apparaît sur l'évaluation de l'objet, mais pas sur les attitudes de politique publique ou les intentions.
+
+**Implication :** une réfutation ne devrait pas se limiter à dire « c'est faux ». Elle doit aussi proposer une explication alternative crédible, concrète et capable de répondre au problème initial. Mais il ne faut pas généraliser : l'étude porte sur des affirmations de désinformation et des stimuli expérimentaux, pas sur des idéologies complexes ni sur des débats télévisés.
+
+## 14. Pré-bunking : une base empirique qui se consolide
+
+Simchon et al. (2026), « A signal detection theory meta-analysis of psychological inoculation against misinformation », *Current Opinion in Psychology*, DOI : https://doi.org/10.1016/j.copsyc.2025.102194.
+
+Méta-analyse de 33 expériences d'inoculation (N = 37 025). Elle montre une amélioration robuste de la capacité à distinguer contenus fiables et trompeurs, sans augmentation systématique d'un biais général de méfiance. Les formats étudiés comprennent notamment vidéos et interventions ludiques.
+
+La conclusion est importante pour une politique d'éducation critique : apprendre à reconnaître des techniques précises de manipulation (fausse dichotomie, polarisation, faux experts, langage émotionnel) peut améliorer le discernement sans rendre les publics uniformément suspicieux.
+
+Limite : le discernement face à des contenus trompeurs n'est pas la même chose que l'adhésion à une idéologie ou le vote ; les effets à long terme et leur maintien face à des expositions répétées restent à documenter.
+
+Une revue systématique sur le pré-bunking climatique publiée en 2026 examine 13 articles : les stratégies d'inoculation et les messages sur le consensus scientifique paraissent prometteurs, mais seuls deux travaux utilisent des dispositifs longitudinaux. La répétition de la désinformation peut réduire la protection obtenue. Cela confirme que l'efficacité à court terme ne doit pas être confondue avec une immunité durable.
+
+## 15. Les corrections ne sont pas toutes équivalentes
+
+La littérature suggère de distinguer au moins quatre réponses :
+- **Négation simple** : « c'est faux » ; utile pour signaler l'erreur, mais souvent insuffisante pour reconstruire une explication.
+- **Correction explicative** : préciser ce qui est faux, donner le fait exact, citer les preuves et expliquer le mécanisme.
+- **Explication de remplacement / bypassing** : construire un récit causal ou une solution alternative qui répond au besoin explicatif ou politique auquel l'affirmation trompeuse répondait.
+- **Pré-bunking** : enseigner avant l'exposition les techniques de manipulation et les critères de vérification.
+
+L'étude de Granados Samayoa & Albarracín indique que les alternatives peuvent mieux modifier certaines attitudes que la simple négation. La méta-analyse de Simchon et al. soutient le pré-bunking pour améliorer le discernement. Ces stratégies sont complémentaires : le bypassing ne remplace pas toujours la correction factuelle, notamment quand il faut établir explicitement qu'une affirmation est fausse.
+
+## 16. Faux équilibre : la contradiction doit respecter le poids des preuves
+
+Koehler (2016), « Can journalistic “false balance” distort public perception of consensus in expert opinion? », *Journal of Experimental Psychology: Applied*, DOI : https://doi.org/10.1037/xap0000073.
+
+Des expériences montrent que présenter des commentaires opposés de deux experts peut brouiller la perception du niveau réel de consensus, même lorsque les participants disposent aussi du décompte complet des experts de chaque côté. La mise en scène d'un désaccord bilatéral réduit la capacité à distinguer les sujets où le consensus est fort de ceux où il ne l'est pas.
+
+**Conséquence :** un débat contradictoire n'est pas automatiquement une bonne contradiction. Lorsque les preuves sont très asymétriques, mettre deux intervenants en miroir peut fabriquer une symétrie artificielle. Il faut représenter le niveau de consensus, la qualité des preuves et les incertitudes.
+
+## 17. Universités et no-platforming : ce que l'on sait, et ce qui manque
+
+Il faut éviter de transférer directement les résultats sur les interviews télévisées à la vie universitaire. Le contexte, les missions et les critères d'accès à la parole y sont différents.
+
+Diehl et al. (2025), « Students’ motives for restricting academic freedom: Viewpoint discrimination and prosocial concerns », *PNAS*, DOI : https://doi.org/10.1073/pnas.2503804122.
+
+Cette collaboration contradictoire entre chercheurs ayant des positions initiales divergentes présente trois expériences d'enquête auprès d'étudiants allemands. Les vignettes expérimentales font varier l'orientation idéologique, le statut académique du propos (recherche professorale ou opinion journalistique), les recommandations politiques et les préoccupations de préjudice social. Les auteurs trouvent une préférence plus forte pour restreindre les prises de parole conservatrices dans les scénarios testés. Les préoccupations de préjudice social expliquent une part substantielle de l'écart, mais ne l'épuisent pas ; une composante de discrimination selon le point de vue demeure.
+
+**Limite majeure :** il s'agit de préférences déclarées dans des scénarios hypothétiques, pas d'une mesure de l'effet réel d'une conférence, d'une annulation ou d'une interdiction sur l'apprentissage, la polarisation ou la sécurité des étudiants. L'étude ne démontre donc ni que le no-platforming fonctionne, ni qu'il échoue comme stratégie de lutte contre les idées.
+
+Une revue rapide du gouvernement britannique sur le harcèlement et la censure universitaire signale que les données sur la fréquence du no-platforming sont incomplètes. Les chiffres de l'Office for Students cités dans cette revue recensent 193 refus de conférenciers sur 19 407 événements en 2020–2021, mais les données peuvent sous-estimer les désinvitations et ne renseignent pas sur leur efficacité. Il faut les utiliser comme données descriptives limitées, non comme preuve d'impact.
+
+La littérature normative est elle-même pluraliste : certains auteurs défendent le no-platforming non violent comme une forme de liberté d'expression et de mobilisation ; d'autres insistent sur le droit à une tribune, la liberté académique, la cohérence des critères et le risque d'exclusion injustifiée. Ces arguments philosophiques clarifient les valeurs en conflit, mais ne remplacent pas l'évaluation empirique des effets.
+
+## 18. Mise à jour du jugement comparatif
+
+| Stratégie | Effet plausible le mieux étayé | Ce qui reste incertain |
+|---|---|---|
+| Pré-bunking / inoculation | Améliore le discernement face aux manipulations | Durabilité et transfert aux idéologies politiques complexes |
+| Débunking explicatif | Réduit généralement la croyance et l'influence de fausses affirmations | Influence résiduelle, changement de comportement et confiance |
+| Explication alternative / bypassing | Peut mieux modifier certaines attitudes que la simple négation | Généralisation aux croyances politiques profondes et aux comportements réels |
+| Débat contradictoire | Peut exposer les arguments et réduire l'image du promoteur si le questionnement est exigeant | Risque de normalisation, de fausse équivalence et d'amplification |
+| Refus de tribune / no-platforming | Peut limiter l'accès à une audience institutionnelle et l'amplification directe | Effets causaux sur l'adhésion, la polarisation, l'audience déplacée et la confiance |
+| Cordon politique | Peut empêcher une coalition ou une légitimation institutionnelle | Effet propre sur les idées, l'électorat et les stratégies de long terme |
+
+## 19. Protocole empirique à construire
+
+Le test le plus informatif ne devrait pas comparer « parole libre » et « censure » en bloc. Il faut comparer des traitements précis, en tenant constants le message, le public et le contexte :
+
+A. Interview non contestée du promoteur.
+B. Interview contradictoire structurée, avec vérification des faits et temps de réponse équilibré mais non symétrique aux preuves.
+C. Présentation de l'argument par un tiers, suivie d'une réfutation factuelle et d'une explication alternative, sans présence du promoteur.
+D. Présentation pédagogique des mécanismes et arguments, sans répétition inutile des formulations trompeuses (pré-bunking).
+E. Groupe témoin sans exposition au message, lorsque cela est éthiquement et méthodologiquement approprié.
+
+Mesures immédiates et différées :
+- croyance dans les affirmations factuelles ;
+- adhésion aux valeurs ou propositions normatives ;
+- perception de la popularité sociale de l'idée ;
+- crédibilité et notoriété du promoteur ;
+- mémorisation de l'affirmation et de la correction ;
+- confiance dans les médias, les chercheurs et les institutions ;
+- polarisation affective et ouverture à la discussion ;
+- intention de partager, de voter ou de soutenir une action ;
+- persistance à une semaine, un mois et davantage.
+
+Modérateurs :
+- familiarité antérieure avec le message ;
+- publics convaincus, hésitants et non exposés ;
+- source perçue comme proche ou opposée ;
+- répétition et intensité émotionnelle ;
+- gravité du dommage potentiel ;
+- niveau de consensus scientifique ou factuel ;
+- format et taille de l'audience.
+
+Précautions :
+- pré-enregistrement des hypothèses et critères d'analyse ;
+- échantillons suffisamment puissants et diversité idéologique ;
+- débriefing et correction immédiats pour toute exposition expérimentale à de fausses affirmations ;
+- distinguer attitudes, croyances, intentions et comportements ;
+- ne pas confondre absence de tribune et absence de circulation du message.
+
+## 20. Références complémentaires
+
+8. Granados Samayoa, J. A. & Albarracín, D. (2025), « Bypassing Versus Correcting Misinformation: Efficacy and Fundamental Processes », *Journal of Experimental Psychology: General*. https://doi.org/10.1037/xge0001687 — six expériences préenregistrées.
+9. Simchon, A., Zipori, T., Teitelbaum, L., Lewandowsky, S. & van der Linden, S. (2026), « A signal detection theory meta-analysis of psychological inoculation against misinformation », *Current Opinion in Psychology*. https://doi.org/10.1016/j.copsyc.2025.102194 — 33 expériences, N = 37 025.
+10. Koehler, D. J. (2016), « Can journalistic “false balance” distort public perception of consensus in expert opinion? », *Journal of Experimental Psychology: Applied*. https://doi.org/10.1037/xap0000073 — expériences sur la perception du consensus.
+11. Diehl, C., Revers, M., Traunmüller, R., Weidmann, N. B. & Wuttke, A. (2025), « Students’ motives for restricting academic freedom: Viewpoint discrimination and prosocial concerns », *PNAS*. https://doi.org/10.1073/pnas.2503804122 — trois expériences d'enquête auprès d'étudiants allemands.
+12. La Selva, G., Monacis, L. & van der Linden, S. (2026), « Prebunking interventions against climate misinformation: A systematic review on effectiveness and implementation », *Journal of Environmental Psychology*. https://doi.org/10.1016/j.jenvp.2026.103029 — revue de 13 articles, seulement deux études longitudinales.
+13. UK Department for Education (2024), « Rapid Evidence Review on Harassment and Censorship ». https://assets.publishing.service.gov.uk/media/65fd7b5565ca2f001b7da8c5/Rapid_Evidence_Review_on_Harassment_and_Censorship.pdf — données descriptives et limites de mesure du no-platforming dans l'enseignement supérieur anglais.
+14. Victor Tadros (2022), « The Rights and Wrongs of No-Platforming », *The Cambridge Law Journal*. https://doi.org/10.1111/1468-2230.12729 — analyse normative des droits et conditions de justification.
+15. « A liberal defense of no-platforming » (2024), *International Journal of Constitutional Law*. https://doi.org/10.1093/icon/moae049 — défense du no-platforming non violent comme exercice de liberté d'expression, sous réserve de mise en balance des droits.
