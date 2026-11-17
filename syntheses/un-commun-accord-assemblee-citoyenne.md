@@ -40,6 +40,8 @@ L'initiative annonce six week-ends de travail à Paris entre septembre 2026 et f
 | Six dilemmes ont été retenus | Déclaré par l'organisateur | Site officiel | Processus de sélection et cadrage à documenter |
 | Le recrutement est confié à Toluna Harris Interactive / Le Terrain | Déclaré par l'organisateur | FAQ et présentation | Taux de contact, refus, attrition et pondérations manquants |
 | Quatre garants sont annoncés | Déclaré par l'organisateur | Page « Qui sommes-nous ? » | Mandat, moyens et avis éventuels à examiner |
+| Une charte des financeurs initiaux est publiée | Document primaire consulté | Charte PDF | Engagements écrits, mais respect et périmètre complet à vérifier |
+| The Shift Project est responsable de traitement de la plateforme | Déclaré dans la politique de confidentialité | Notice RGPD | Mise en œuvre technique et contrats de sous-traitance non audités |
 | Le budget prévisionnel annoncé est de 3 M€ | Déclaré par l'organisateur | FAQ | Budget réalisé et pièces financières non audités |
 
 ## 4. Ce que montrent les preuves
@@ -54,7 +56,7 @@ La revue de littérature sur les mini-publics et assemblées citoyennes reste à
 
 ### Points de convergence
 
-Aucun résultat de la littérature n'est encore synthétisé dans cette version. Il serait prématuré de généraliser à partir de la seule présentation du dispositif.
+La littérature justifie de mesurer séparément les effets sur les participants, les effets sur les non-participants et la légitimité perçue. Elle ne permet pas de déduire la représentativité ou l'efficacité d'un dispositif de la seule existence d'un tirage au sort. Une méta-analyse de 100 études quantitatives (1980-2020) trouve que les mini-publics peuvent améliorer les connaissances, l'efficacité politique interne, les capacités de raisonnement et certaines attitudes politiques des participants ; les résultats sur l'engagement civique sont plus limités. Une revue systématique de 60 études conclut que la plupart des preuves sur les effets de débordement vers les non-participants restent provisoires. Enfin, une expérience préenregistrée (N=1 308) indique que des biais même modestes dans la composition d'un mini-public peuvent réduire le gain de légitimité perçue ; des biais plus importants peuvent l'annuler. Ce dernier résultat porte sur des perceptions expérimentales et non sur l'évaluation directe d'Un commun accord.
 
 ## 5. Débat contradictoire
 
@@ -76,7 +78,9 @@ Aucun résultat de la littérature n'est encore synthétisé dans cette version.
 - **Gouvernance :** portée réelle des garanties d'indépendance, transparence des rôles et traitement des alertes.
 - **Financement :** budget exécuté, financeurs, conventions, charte et contrôle.
 - **Effets :** recommandations finales, réponse des responsables politiques, mise en œuvre et effets mesurables.
-- **Corpus audiovisuel :** inventaire et transcription de la playlist YouTube non achevés.
+- **Corpus audiovisuel :** la page d'accueil répertorie au moins trois auditions (Patrice Geoffron, Selma Mahfouz, Marc-André Selosse) avec dates et durées ; leurs contenus n'ont pas été analysés. L'inventaire exhaustif de la playlist YouTube reste bloqué par les limites d'accès automatisé.
+- **Données personnelles :** la notice mentionne la collecte possible de données sociodémographiques, de contributions, de messages et de données sensibles révélant des opinions politiques ou philosophiques, ainsi que des prestataires et traitements associés. La conformité opérationnelle et la sécurité n'ont pas été auditées.
+- **Financement :** la charte des financeurs initiaux interdit plusieurs formes d'intervention dans le processus, tout en prévoyant information des financeurs et liberté de parole sur les propositions ; les flux financiers complets et le respect de la charte restent à vérifier.
 
 ## 7. Conclusion raisonnée
 
@@ -109,6 +113,11 @@ Le panel vise la diversité de la population française. Les six dilemmes peuven
 - Un commun accord, site officiel et FAQ, consultés le 17 novembre 2026 : https://www.uncommunaccord.fr/
 - Un commun accord, « Qui sommes-nous ? » : https://www.uncommunaccord.fr/qui-sommes-nous
 - Un commun accord, « Les soutiens » : https://www.uncommunaccord.fr/soutiens
+- Un commun accord, « Charte des financeurs » : https://www.uncommunaccord.fr/charte_financeurs.pdf
+- Un commun accord, « Politique de confidentialité » : https://www.uncommunaccord.fr/politique-de-confidentialite
+- van der Does & Jacquet (2023), revue systématique des effets de débordement : https://doi.org/10.1177/00323217211007278
+- Méta-analyse des effets des innovations démocratiques sur les participants (2024) : https://doi.org/10.1111/1475-6765.12722
+- Germann (2025), représentativité et légitimité perçue : https://doi.org/10.1017/S0007123424000322
 - Un commun accord, page LinkedIn : https://www.linkedin.com/company/un-commun-accord/
 - Un commun accord, playlist YouTube : https://www.youtube.com/playlist?list=PLLJ27GPJhHgo
 
@@ -119,3 +128,4 @@ Ces sources institutionnelles documentent la présentation du projet. Elles ne r
 | Date | Modification | Motif / nouvelle preuve |
 |---|---|---|
 | 2026-11-17 | Création de la synthèse provisoire | Première ingestion des pages officielles et cadrage des vérifications restantes |
+| 2026-11-17 | Ajout d'une première revue scientifique, de la charte des financeurs et de la politique de confidentialité | Trois études de synthèse/expérimentales et nouveaux documents primaires ; inventaire audiovisuel toujours partiel |
