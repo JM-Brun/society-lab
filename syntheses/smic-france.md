@@ -16,6 +16,9 @@ related_dossiers:
   - "dossiers/smic-quantitative-update-2026.md"
   - "dossiers/smic-social-partners-evidence.md"
   - "dossiers/smic-causal-evidence-matrix.md"
+  - "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
+  - "dossiers/smic-cottet-2020-2024-allegements-emploi.md"
+  - "dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md"
   - "dossiers/smic-aeberhardt-givord-marbot-2012-spillovers.md"
   - "dossiers/smic-goarant-muller-2011-diffusion-acemo.md"
   - "dossiers/smic-gautier-roux-suarez-castillo-2019-wage-rigidity.md"
@@ -462,6 +465,8 @@ Le rapport du Groupe d'experts sur le SMIC de novembre 2025 apporte un état des
 
 L'OCDE (Barreto et al., 2025) documente la concentration des salaires près du minimum et les mécanismes de trappes socio-fiscales, mais observe que la mobilité salariale ascendante des travailleurs à bas salaire n'est pas plus difficile en France que dans les pays comparés. Ces résultats sont descriptifs/comparatifs et ne mesurent pas l'effet causal d'une hausse récente du SMIC sur les jeunes.
 
+Cahuc, Carcillo & Le Barbanchon (2019) évaluent le crédit temporaire « zéro charges » annoncé en décembre 2008 pour les nouvelles embauches à bas salaire dans les entreprises de moins de dix salariés. La DiD autour du seuil de dix ETP estime +0,8 point de croissance d'emploi des firmes traitées en 2009, avec une hausse comparable des heures et un effet concentré sur les emplois éligibles sous 1,6 SMIC. Les placebos 2007–2008 et une stratégie IV complémentaire soutiennent l'identification. Mais il s'agit d'une aide temporaire, inattendue et ciblée sur les embauches marginales, en pleine crise ; le résultat ne mesure ni une hausse du SMIC ni un allègement permanent général. L'étude n'est pas spécifique aux jeunes. Voir [l'audit complet](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md).
+
 Albertini, Poirier & Terriau (2025) proposent un modèle structurel de recherche-appariement en cycle de vie, qui conclut dans ses simulations qu'une hausse du SMIC réduit l'emploi et le surplus fiscal, avec une forte dépendance à l'indexation des allègements et du système socio-fiscal. Le texte intégral n'a pas été récupéré dans cette passe : les paramètres, le calibrage et les tests de sensibilité ne sont pas audités. Ce résultat doit rester classé comme simulation structurelle, pas comme estimation causale observée.
 
 **Bilan :** la preuve française récente est plus riche sur les allègements et les trajectoires de bas salaires que sur l'effet causal isolé des hausses du SMIC brut. Une étude contemporaine ciblant les jeunes, les entrants, les contrats courts et les heures reste nécessaire. Voir [l'état de l'audit](../dossiers/smic-emploi-jeunes-bazen-etudes-recentes-etat-preuve.md).
@@ -575,3 +580,16 @@ Sources principales :
 | Date | Modification |
 |---|---|
 | 2026-11-17 | Audit secondaire détaillé de Bazen & Skourias ; ajout du contrepoint Benhayoun ; audit du PDF CESifo 2024 de Cottet ; qualification du modèle structurel Albertini et al. (2025). |
+
+
+## 32. Crédit d'embauche « zéro charges » : preuve sur une baisse ciblée du coût des nouvelles embauches (17 novembre 2026)
+
+Cahuc, Carcillo & Le Barbanchon (2019) évaluent le programme français annoncé le 4 décembre 2008, qui réduit temporairement les cotisations sur les nouvelles embauches à bas salaire dans les entreprises de moins de dix salariés. Le traitement porte sur les nouveaux postes éligibles, jusqu'à 1,6 SMIC, et non sur les salariés déjà présents.
+
+La comparaison en différences de différences entre entreprises de 6 à moins de 10 ETP et de 10 à moins de 14 ETP estime une hausse d'environ **0,8 point de la croissance de l'emploi** des entreprises traitées en 2009, avec une progression comparable des heures. L'effet se concentre sur les emplois éligibles sous 1,6 SMIC (+1,1 point). Les placebos 2007 et 2008 ne révèlent pas de divergence préalable ; une stratégie IV sur cellules zone d'emploi × secteur produit un signe convergent.
+
+L'interprétation reste locale : entreprises proches du seuil de dix salariés, dispositif temporaire et inattendu, période de récession, champ administratif incomplet et absence des nouvelles entreprises dans la DiD principale. L'étude n'est pas spécifique aux jeunes. Son élasticité élevée au coût induit par l'aide (environ −4) concerne une subvention des embauches marginales ; l'élasticité à une variation uniforme du coût de tous les salariés est beaucoup plus faible (environ −1). Ces coefficients ne sont donc pas transposables au SMIC.
+
+**Conclusion :** cette étude renforce la preuve qu'une aide ciblée sur les nouvelles embauches peut produire des effets d'emploi dans un contexte particulier. Elle montre aussi que les effets d'un crédit d'embauche, d'un allègement général et d'une hausse du SMIC brut ne sont pas interchangeables. Voir [l'audit détaillé](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md).
+
+Source primaire : https://docs.iza.org/dp11248.pdf ; publication : https://doi.org/10.1093/restud/rdy011.
