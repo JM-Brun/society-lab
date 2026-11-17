@@ -239,3 +239,51 @@ La page d'accueil officielle consultée le 17 novembre affiche toujours comme ac
 ### Limites d'accès
 
 La vidéothèque officielle et la page « Les 150 citoyens » sont toujours bloquées par les restrictions d'accès automatisé du site. La découverte de cette quatrième vidéo repose sur des métadonnées indexées par un tiers ; elle ne vaut ni consultation de la vidéo, ni vérification de sa transcription, ni validation indépendante de son contenu.
+
+
+## 16. Troisième session des 7–8 novembre : compte rendu retrouvé (mise à jour du 17 novembre)
+
+Un compte rendu publié le 10 novembre et attribué à Un commun accord, republié par Savoir Animal, apporte des informations sur le déroulement effectif de la troisième session. Il doit être traité comme une **source de communication de l'organisateur**, et non comme une évaluation indépendante.
+
+### Organisation du travail rapportée
+
+- Les 150 citoyens ont été répartis en trois groupes de 50.
+- Chaque citoyen a été affecté à deux dilemmes par tirage au sort : un dilemme travaillé le samedi, l'autre le dimanche.
+- L'objectif annoncé de cette étape était de comprendre les enjeux, objectifs en tension et points de débat, avant de commencer à formuler des propositions collectives.
+- Un système de « chaises musicales » aurait ensuite permis aux groupes de découvrir les travaux des autres groupes.
+
+### Consultation numérique : deux phases à ne pas confondre
+
+Le compte rendu rapporte que, pour nourrir cette session, **17 696 personnes ont déposé 51 859 messages** sur la plateforme, dont près de 500 contributions vocales. Les thèmes les plus commentés sont l'alimentation (10 157 contributions), l'intelligence artificielle (9 492) et l'eau (8 950). Une synthèse et certaines contributions écrites ou vocales auraient été présentées en plénière puis transmises aux citoyens.
+
+Ces chiffres sont différents des volumes antérieurement rapportés par la FAQ pour la phase de sélection des dilemmes : 92 000 personnes ayant donné leur avis sur une liste de propositions et 48 000 propositions de nouvelles thématiques. Il s'agit de deux opérations distinctes, avec des unités et des dénominateurs différents. Il ne faut ni les additionner ni les présenter comme une série temporelle comparable sans documentation méthodologique.
+
+Les 17 696 contributeurs en ligne constituent un public auto-sélectionné, pas un échantillon représentatif. Pour interpréter les messages, il faudrait connaître les règles d'unicité des comptes, la modération, les modalités de collecte, les éventuels doublons, la distribution sociodémographique et le degré d'influence réel de ces contributions sur les travaux des citoyens.
+
+### Auditions contradictoires rapportées
+
+Le compte rendu indique que chaque dilemme a été introduit par trois experts : un premier intervenant chargé de présenter les faits et enjeux, puis deux intervenants présentant des avis ou approches différents. Pour le dilemme sur les carburants fossiles et la liberté de déplacement, il cite :
+
+- **Aurélien Bigo**, chercheur spécialiste des transports, pour cadrer les enjeux ;
+- **Christian Gollier**, économiste, défendant notamment une taxe carbone dont les recettes seraient redistribuées aux ménages modestes ;
+- **Diane Strauss**, directrice France de Transport & Environment, défendant le développement d'alternatives aux véhicules thermiques, notamment le leasing social, et évoquant des limitations de vols face à l'absence d'alternative viable dans l'aérien.
+
+Le compte rendu indique que les intervenants convergeaient sur l'importance de l'électrification des transports et de la prise en compte des inégalités sociales et territoriales. Cette présentation est utile pour identifier les intervenants et les positions rapportées, mais elle ne permet pas encore d'évaluer la qualité des arguments, l'équilibre des temps de parole, les questions des citoyens ou la façon dont les désaccords ont été restitués.
+
+### Conséquences pour l'évaluation
+
+Cette session semble marquer le passage d'une phase d'acculturation générale vers un travail structuré par dilemme et par groupe. Plusieurs questions nouvelles deviennent prioritaires :
+
+1. Quelle procédure a servi à affecter les citoyens aux trois groupes et aux deux dilemmes ? Le tirage au sort garantit-il un équilibre des effectifs et comment les contraintes individuelles ont-elles été prises en compte ?
+2. Quels experts ont été entendus sur chacun des six dilemmes, avec quelles qualifications, intérêts déclarés, durées et supports ?
+3. Les deux positions dites « contradictoires » représentent-elles un éventail suffisamment large des options crédibles, ou un cadrage binaire trop étroit ?
+4. Les citoyens ont-ils pu interroger les experts, demander des compléments et accéder à des sources contradictoires ?
+5. Quels documents écrits et quelles synthèses de consultation ont été remis aux participants ?
+6. Comment les messages en ligne ont-ils été sélectionnés pour la plénière et transmis aux groupes ?
+7. Quelles traces des travaux de groupe, désaccords et propositions intermédiaires seront publiées ?
+
+**Conclusion provisoire :** le compte rendu réduit l'incertitude sur le format réel de la troisième session, mais ne permet pas encore d'établir que le pluralisme annoncé a été réalisé dans les faits, ni que les contributions numériques représentent les préférences de la population.
+
+### Source
+
+- Compte rendu attribué à Un commun accord, republié par Savoir Animal, 10 novembre 2026 : https://savoir-animal.fr/3e-session-un-commun-accord-150-citoyens-confrontent-points-de-vue-sur-grands-dilemmes/
