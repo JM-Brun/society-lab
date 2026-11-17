@@ -26,9 +26,10 @@ class SmicDecomposition1996To2008Tests(unittest.TestCase):
 
     def test_residuals_are_recomputed_not_forced_to_zero(self):
         result = audit_rows(self.rows)
-        self.assertEqual(result["max_abs_residual_pp"], Decimal("0.110"))
+        self.assertEqual(result["max_abs_residual_pp"], Decimal("0.060"))
         row_2007 = next(row for row in self.rows if row["effective_date"] == "2007-07-01")
-        self.assertEqual(row_2007["rounding_residual_pct"], "0.110")
+        self.assertEqual(row_2007["observed_change_pct"], "2.05")
+        self.assertEqual(row_2007["rounding_residual_pct"], "0.060")
 
     def test_1996_and_2008_annual_rows_include_may_changes(self):
         row_1996 = next(row for row in self.rows if row["effective_date"] == "1996-07-01")
