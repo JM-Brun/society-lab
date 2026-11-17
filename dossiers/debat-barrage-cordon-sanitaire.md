@@ -485,3 +485,8 @@ Les résultats ne seront pas réduits à la seule adhésion au message : exactit
 ## Mise à jour — cohérence du cordon et signaux de coalition (2026-11-17)
 
 Une revue complémentaire montre que le cordon doit être évalué dans plusieurs arènes. La non-coalition peut coexister avec des convergences discursives (Shuttleworth, Brown & Mondon, 2025) ; les signaux de coopération déplacent les attitudes affectives selon les électorats (Vanagt et al., 2025) ; les citoyens distinguent coalition gouvernementale et coopération parlementaire ponctuelle (Gross, Juen & Stecker, 2026). En Belgique, quatre ruptures locales en 2024 illustrent la vulnérabilité de la norme (Miyauchi, 2025). Voir la [matrice de preuves multi-arènes](matrice-preuves-cordon-sanitaire.md).
+
+
+## Mise à jour — effets affectifs du front commun
+
+Kollberg & Bantel (2026) montrent que les messages négatifs coordonnés de tous les partis établis contre l'AfD augmentent davantage la polarisation affective que les messages d'un seul parti, avec un débordement vers les électeurs. Ce résultat ne disqualifie pas la démarcation démocratique, mais impose de distinguer critique des dirigeants, rejet d'un programme, qualification de comportements antidémocratiques et hostilité envers les électeurs. Voir la [matrice multi-arènes](matrice-preuves-cordon-sanitaire.md).
