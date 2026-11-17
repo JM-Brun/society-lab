@@ -2,7 +2,7 @@
 
 - **ID** : DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE
 - **Statut** : recherche en cours
-- **Dernière revue** : 2026-11-16
+- **Dernière revue** : 2026-11-17
 - **Périmètre** : Belgique (Wallonie/Flandre), Allemagne, France ; comparaisons européennes complémentaires
 - **Domaines** : politique et démocratie ; institutions et gouvernance ; sécurité, justice et libertés
 - **Question centrale révisée** : dans quelles conditions faut-il refuser une tribune ou une amplification à une idée ou à son promoteur, et dans quelles conditions faut-il accepter de la discuter, de la vérifier et de la réfuter publiquement ?
