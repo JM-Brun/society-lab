@@ -88,3 +88,9 @@ Ces chiffres sont à attribuer à la version 2024 et non à la version 2020. Le 
 - Texte intégral 2020 : https://shs.hal.science/halshs-03010943/preview/WP_202072_.pdf
 - Version CESifo 2024 : https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or
 - Version de recherche ultérieure : https://sites.google.com/view/sophie-cottet/research
+
+## Complément d'audit de la version intégrale CESifo 2024 (intégration PR #87, 17 novembre 2026)
+
+La version intégrale CESifo Working Paper 11076 distingue les résultats au niveau des postes et au niveau des entreprises. Les estimations d'une hausse relative d'environ 13 points de la part des postes au minimum et d'environ 4 % de croissance temporaire des entreprises bénéficiaires portent sur des unités et des groupes différents : elles ne doivent pas être additionnées ni présentées comme des créations nettes d'emplois nationales.
+
+La décomposition met en évidence un rôle important de la rétention ; embauches et destructions de postes peuvent progresser simultanément. Les effets dépendent de l'intensité initiale d'emploi au SMIC, de la taille, de l'attrition et de la contrainte de financement. Les postes à temps partiel et à temps partiel annualisé réagissent différemment. Il s'agit d'une baisse de cotisations patronales en 1995–1996, pas d'une hausse du SMIC brut ; une symétrie mécanique entre baisse du coût employeur et hausse du SMIC n'est pas garantie.
