@@ -522,3 +522,21 @@ Deux dossiers transversaux complètent la matrice :
 - [Épisodes historiques : bilans positifs, négatifs et mitigés](smic-episodes-historiques-bilan-positif-negatif.md) : comparaison 1968–1975, 1981–1983, années 1980, 2003–2005 et 2021–2024.
 
 **Règle de classement :** un épisode n'est contre-productif que relativement à un objectif explicite et à un contrefactuel crédible. Un gain de salaire réel peut coexister avec un risque de sortie d'emploi pour un sous-groupe, une hausse de prix sectorielle ou un coût budgétaire. Les effets ne doivent pas être agrégés en une note unique sans pondération normative explicite.
+
+
+## Complément du 17 novembre 2026 — audit Bazen & Skourias et études françaises récentes
+
+La fiche détaillée est dans [smic-bazen-skourias-1997-audit-etudes-recentes.md](smic-bazen-skourias-1997-audit-etudes-recentes.md). Le texte intégral de Bazen & Skourias (1997) reste inaccessible dans les sources consultées : le résumé éditeur confirme un résultat négatif significatif après la hausse de 10 % de juin 1981, tandis que Neumark & Wascher (2007) rapportent 32 secteurs, les jeunes de 15–24 ans, une exposition sectorielle et deux critiques de spécification. Les coefficients et erreurs-types originaux ne sont pas vérifiés.
+
+| Étude | Instrument / population | Résultat audité | Statut de preuve et limite |
+|---|---|---|---|
+| Bazen & Skourias (1997) | SMIC légal ; jeunes 15–24 ans ; 32 secteurs (description secondaire) | Part relative des jeunes en baisse dans les secteurs plus exposés ; significativité rapportée | DID sectoriel rapporté par Neumark & Wascher ; texte intégral, coefficient, SE et pré-tendances non vérifiés ; critiques sur dénominateurs et exposition des hausses 1980–84. Confiance faible à modérée |
+| Benhayoun (1994) | Réanalyse séries d'emploi des jeunes révisées | Relation négative nettement moins robuste | Résumé éditeur seulement ; ampleur et spécifications non auditées |
+| Simonnet & Terracol (2009) | Convergence SMIC/GMR + allègements + régime 35 h ; transitions chômage-emploi | Ralentissement des sorties vers les entreprises à 35 h ; compensation apparente pour les non-signataires | Évaluation quasi-expérimentale d'une réforme composite, pas effet isolé du SMIC |
+| Bunel, Gilles & L'Horty (2009) | Allègements et convergence 2003–05 | Effet emploi total ambigu selon 35 h / 39 h ; salaires en hausse | Évaluation de réforme composite, pas hausse pure du SMIC |
+| Cottet (2020/2024) | Baisse de cotisations 1995–96 | Plus de postes au voisinage du minimum surtout par rétention ; effets de trésorerie hétérogènes selon firmes | Données administratives et DID ; étudie les exonérations, pas le SMIC légal |
+| Gorry (2013) | SMIC et chômage des jeunes dans un modèle de recherche | Hausse 2007–09 associée dans le modèle à +0,8 point de chômage de long terme et +2,8 points pour les 15–24 ans diplômés du secondaire | Simulation structurelle, pas effet observé ni quasi-expérience |
+| DG Trésor (2025) | Trajectoires de salariés <1,1 SMIC, 2013–19 | Mobilité salariale ascendante fréquente mais hétérogène | Descriptif longitudinal, pas effet causal des hausses |
+| OCDE (2025) | Bas salaires, mobilité, fiscalité et coût employeur | Compression du bas de distribution, mobilité interentreprises plus faible, risques de sortie et mécanismes de trappe | Comparaison descriptive et simulations socio-fiscales, pas estimation causale d'une hausse donnée |
+
+**Règle de lecture renforcée :** aucune étude sur une baisse de cotisations patronales (Cottet, Bunel et al.) ne doit être comptée comme estimation de l'effet du SMIC brut. Les études de trajectoires et les modèles structurels ne sont pas des évaluations causales ex post. Les résultats des années 1980 ne sont pas extrapolables mécaniquement à 2021–2025.
