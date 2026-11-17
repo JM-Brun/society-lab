@@ -1,0 +1,19 @@
+id: CLAIM-REACTANCE-FREEDOM-THREATENING-LANGUAGE-2026
+statement: "Les formulations persuasives qui menacent explicitement la liberté de choix augmentent en moyenne la colère, les cognitions négatives et la réactance psychologique, mais cela ne démontre pas qu'un cordon sanitaire renforce nécessairement l'adhésion aux idées visées."
+claim_type: empirical
+status: under_review
+scope:
+  geography: ["International"]
+  period: "Méta-analyse publiée en ligne en 2025 et dans le volume 2026"
+  conditions: "28 articles, 33 études et 146 tailles d'effet sur les effets des messages menaçant la liberté."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-MEDIA", "DOMAIN-SOCIETY"]
+source_ids: ["SOURCE-REACTANCE-META-2026"]
+supporting_evidence:
+  - "La méta-analyse observe des effets moyens de langage menaçant la liberté sur la colère, les cognitions négatives et la réactance."
+limitations:
+  - "Étudie des messages persuasifs, pas directement les politiques de non-plateformisation ou les cordons institutionnels."
+  - "La réactance ne se traduit pas automatiquement en adhésion accrue à l'idée censurée."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; ne pas généraliser la réactance psychologique à un effet boomerang politique."
+last_reviewed: "2026-11-17"
