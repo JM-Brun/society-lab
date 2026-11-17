@@ -1,7 +1,7 @@
 id: CLAIM-INOCULATION-CAN-PRODUCE-DURABLE-TRANSFER
 statement: "Certaines interventions d'inoculation contre les techniques de désinformation peuvent améliorer durablement la résistance à des procédés de manipulation dans des tâches de transfert."
 claim_type: causal
-status: partially_supported
+status: under_review
 scope:
   geography: ["International"]
   population: "Participants à trois expériences longitudinales sur l'intervention Bad News"
@@ -17,9 +17,7 @@ best_counterargument: "Un gain dans une tâche de reconnaissance de techniques n
 limitations:
   - "Ne compare pas les stratégies de débat, d'analyse indépendante et de non-plateformisation."
   - "Le transfert dépend du contenu des interventions et des tâches d'évaluation."
-confidence:
-  probability: 0.65
-  rationale: "Confiance modérée dans un transfert durable dans le cadre étudié ; généralisation à des contextes politiques variés à établir."
+
 provenance:
   - origin: ai_suggested
     note: "Fiche provisoire à vérifier sur les résultats et les mesures des trois expériences."
