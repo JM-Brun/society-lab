@@ -1,0 +1,19 @@
+id: CLAIM-BELGIUM-CORDON-CONTRIBUTION-NOT-ISOLATED-2021
+statement: "Le cordon politique et médiatique fait partie des facteurs plausibles expliquant la faible implantation historique de la droite radicale en Wallonie, mais son effet causal propre n'est pas isolé par l'étude comparative."
+claim_type: interpretive
+status: under_review
+scope:
+  geography: ["Belgique", "Wallonie", "Flandre"]
+  period: "Étude publiée en 2021 sur les trajectoires régionales"
+  conditions: "Étude qualitative comparative et entretiens avec acteurs politiques et médiatiques."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-BELGIUM-CORDON-WALLONIA-FLANDERS-2021"]
+supporting_evidence:
+  - "L'étude décrit un environnement plus hostile aux partis de droite radicale en Wallonie et une plus grande accommodation en Flandre."
+limitations:
+  - "Les régions diffèrent aussi par leur histoire, leur offre partisane et leurs réseaux militants."
+  - "Ne permet pas d'isoler l'effet causal du cordon médiatique ou politique."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche distincte du claim descriptif sur les différences régionales ; explicite la limite d'identification causale."
+last_reviewed: "2026-11-17"
