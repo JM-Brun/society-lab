@@ -1,0 +1,20 @@
+id: CLAIM-BELGIUM-CORDON-THREE-DECADES-INSTITUTIONAL-ACCESS
+statement: "Pendant plus de trois décennies, le cordon sanitaire a empêché le Vlaams Belang et son prédécesseur de participer aux exécutifs belges, mais des ruptures locales observées en 2024 montrent que cette exclusion institutionnelle n'est ni automatique ni irréversible."
+claim_type: descriptive
+status: under_review
+scope:
+  geography: ["Belgique", "Flandre"]
+  period: "Des années 1990 aux élections locales de 2024"
+  conditions: "Historique de non-participation exécutive et ruptures locales."
+domain_ids: ["DOMAIN-POLITICS", "DOMAIN-INSTITUTIONS"]
+source_ids: ["SOURCE-BIARD-2021-DIACHRONIC-CORDON", "SOURCE-BELGIUM-CORDON-MIYAUCHI-2025"]
+supporting_evidence:
+  - "Biard décrit l'absence de participation exécutive du Vlaams Belang sur plusieurs décennies."
+  - "Miyauchi documente quatre communes où le cordon a été rompu lors des élections locales de 2024."
+limitations:
+  - "La non-participation à l'exécutif ne mesure pas l'influence sur l'agenda ou les politiques."
+  - "Les quatre cas locaux de rupture ne représentent pas l'ensemble du territoire belge."
+provenance:
+  - origin: ai_suggested
+    note: "Fiche provisoire ; préciser les niveaux de pouvoir et les exceptions au fur et à mesure de l'extraction des chapitres et des cas locaux."
+last_reviewed: "2026-11-17"
