@@ -78,6 +78,10 @@ La vérification visuelle du PDF original du Sénat a résolu l'écart apparent 
 
 Il ne s'agissait donc pas d'une divergence entre les deux tableaux, mais d'une erreur de lecture OCR. La valeur du CSV (10,85 F) était correcte ; sa note a été corrigée pour expliciter le contrôle et conserver la trace de l'erreur de transcription. Le registre dataset a été rectifié en conséquence. Les deux tableaux concordent sur ce point. Cette vérification porte sur le montant horaire, pas sur l'ensemble des composantes de la décomposition ni sur la réconciliation des écarts avec d'autres publications.
 
+Un contrôle complémentaire a depuis été réalisé sur les 24 lignes du CSV. Il a révélé que les libellés de la colonne `period` étaient décalés d'un an par rapport aux dates d'observation : la première ligne est désormais `1969-1970` (observation du 1er juillet 1970) et la dernière `1992-1993` (observation du 1er juillet 1993). Chaque ligne possède maintenant un localisateur vers sa ligne du tableau 3 (p. imprimée 166 / page PDF 158). Le validateur contrôle la cohérence entre période et date ainsi que la présence du localisateur.
+
+L'écart arithmétique de 1970 reste ouvert : 11,1 % de variation observée contre environ 10,81 % issus d'une combinaison multiplicative exploratoire des composantes publiées (8,0 % et 2,6 %). Les valeurs sont conservées et cet écart doit être expliqué à partir des revalorisations détaillées du tableau 2. Voir `docs/smic-1970-1993-arithmetic-audit-2026-11.md`.
+
 ### Contrat d'extraction à appliquer
 
 Pour chaque ligne, au minimum :
