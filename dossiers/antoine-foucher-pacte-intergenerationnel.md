@@ -296,3 +296,11 @@ Un article d'Hippolyte d'Albis et Ikpidi Badji, publié par l'Insee en 2017, uti
 6. Comparer les résultats par génération, décile de revenu, décile de patrimoine, sexe, statut d'emploi et territoire.
 
 **Sources statistiques ajoutées :** Insee n° 2117 (2026), Insee données patrimoine (2026), COR (février 2026), Insee n° 2093 (2026), Insee comptes publics 2025 (2026), Insee COFOG 1995-2024, d'Albis et Badji (2017).
+
+
+## 14. Prolongements suivis dans GitHub Issues
+
+- [#103 — Comparer le niveau de vie des générations à âge identique](https://github.com/JM-Brun/society-lab/issues/103) : pseudo-panel revenus, patrimoine net, logement et transferts.
+- [#104 — Tester l'hypothèse d'éviction des investissements par les dépenses de retraite](https://github.com/JM-Brun/society-lab/issues/104) : séries COFOG, décomposition budgétaire et scénarios contrefactuels.
+
+Ces deux chantiers sont séparés afin de ne pas confondre le diagnostic distributif intergénérationnel avec l'analyse de l'allocation budgétaire.
