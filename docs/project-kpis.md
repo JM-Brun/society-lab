@@ -125,7 +125,7 @@ Le calculateur en lecture seule est prototypé dans `scripts/validate/calculate_
 | Indicateur | Faisabilité présumée | Vérification requise |
 |---|---|---|
 | Source-to-Knowledge | Bonne | Références typées, couverture du registre, exclusions et relations réellement exploitables |
-| Evidence Verification | Conditionnelle | Schéma Claim, valeurs de statut, distinction entre revue et conclusion épistémique |
+| Claim Conclusion Coverage | Bonne | Champ canonique `status`, statuts conclusifs et exclusion des claims superseded |
 | Synthesis Coverage | Bonne | Rapprochement du registre indépendant des dossiers, unicité des associations et existence des deux fichiers |
 | Cross-domain Integration | Partielle | Domaines des objets, typologie des relations et justification/provenance |
 | Knowledge Graph Connectivity | Partielle | Règles d'éligibilité et relations attendues par type d'objet |
