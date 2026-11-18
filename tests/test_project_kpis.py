@@ -4,8 +4,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
-    build_known_ids, calculate_claim_conclusion_coverage,
+    build_known_ids, build_report, calculate_claim_conclusion_coverage,
     calculate_source_coverage, calculate_synthesis_coverage, inspect_relations,
+    load_project_data,
 )
 
 class ProjectKpiTests(unittest.TestCase):
@@ -114,6 +115,18 @@ class ProjectKpiTests(unittest.TestCase):
             )
         self.assertEqual(result["numerator"], 0)
         self.assertEqual(result["uncovered_dossier_ids"], ["DOSSIER-A"])
+
+    def test_current_repository_snapshot_matches_documented_kpi_baseline(self):
+        report = build_report(load_project_data())
+        metrics = {metric["metric_id"]: metric for metric in report["metrics"]}
+        self.assertEqual(metrics["source_to_knowledge_coverage"]["numerator"], 169)
+        self.assertEqual(metrics["source_to_knowledge_coverage"]["denominator"], 220)
+        self.assertEqual(metrics["source_to_knowledge_coverage"]["unknown_count"], 0)
+        self.assertEqual(metrics["claim_conclusion_coverage"]["numerator"], 28)
+        self.assertEqual(metrics["claim_conclusion_coverage"]["denominator"], 80)
+        self.assertEqual(metrics["synthesis_coverage"]["numerator"], 25)
+        self.assertEqual(metrics["synthesis_coverage"]["denominator"], 25)
+        self.assertEqual(metrics["synthesis_coverage"]["unknown_count"], 0)
 
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
