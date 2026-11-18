@@ -49,6 +49,21 @@ Ne pas ajouter mécaniquement tous ces champs à chaque arête si le schéma act
 
 Les relations causales réciproques doivent être décomposées en deux canaux directionnels et, si nécessaire, en une boucle temporelle. Une arête symétrique « influence mutuelle » masquerait le sens et la séquence des mécanismes.
 
+
+### 3.1. Fiches de mécanismes : contrat minimal et garde-fous
+
+L'audit du dépôt au 18 novembre 2026 a confirmé que le type `MECHANISM` est autorisé dans les relations, mais qu'aucun registre canonique de fiches de mécanismes n'est encore présent dans `knowledge/`. Le schéma [`mechanism.schema.json`](../schemas/mechanism.schema.json) propose un contrat minimal pour ces fiches : identifiant stable, description, domaines, étapes, direction, conditions de portée, acteurs, indicateurs, horizon, études/claims favorables ou critiques, explications alternatives, limites, statut et date de revue.
+
+Ce schéma est une **proposition de structure**, pas une validation automatique du contenu ni une preuve de causalité. Les statuts distinguent notamment :
+- `candidate` : piste de mécanisme à examiner ;
+- `theoretical` : chaîne cohérente sur le plan théorique, sans validation empirique suffisante ;
+- `descriptive` : canal observé ou décrit, sans identification causale ;
+- `supported_in_scope` : mécanisme soutenu dans un périmètre précis ;
+- `mixed_evidence` / `challenged` : résultats hétérogènes ou éléments critiques ;
+- `rejected_in_scope` / `retired` : mécanisme rejeté dans le périmètre étudié ou fiche retirée.
+
+**Ne pas créer de registre de mécanismes ni de nœuds `MECHANISM` dans le graphe avant d'avoir ajouté le contrôle de schéma, défini l'emplacement canonique du registre et vérifié les références croisées.** Une fiche de mécanisme ne doit pas être créée pour chaque flèche d'un schéma conceptuel : elle doit décrire un canal explicatif réutilisable, suffisamment distinct et documenté.
+
 ## 4. Exemple pilote : l'économie comme système d'interactions
 
 Le domaine économique est un bon terrain pilote parce que plusieurs dossiers existants étudient des parties différentes d'un même système : salaire minimum, formation, transition énergétique, finances publiques, emploi, productivité et trajectoires intergénérationnelles.
