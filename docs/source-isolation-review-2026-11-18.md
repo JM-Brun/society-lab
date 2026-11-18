@@ -47,11 +47,11 @@ Une vérification du contenu des dossiers, au-delà des seuls champs `source_ids
 |---|---|---|
 | `DOSSIER-SMIC-HISTORICAL-EPISODES` | `SOURCE-NEUMARK-WASCHER-FRANCE-YOUTH-1997` | L'étude est décrite et citée pour l'épisode de juin 1981 ; résultat limité à l'emploi des jeunes. |
 | `DOSSIER-SMIC-HISTORICAL-EPISODES` | `SOURCE-ABOWD-KRAMARZ-MARGOLIS-NBER-1999` | Résultats sur les trajectoires d'emploi et référence NBER WP 6996 ; dépendance avec le travail de 1997/2000 explicitement signalée. |
-| `DOSSIER-SMIC-DARES-BENEFICIAIRES-INFLATION-2021-2024` | `SOURCE-DARES-INFLATION-SALAIRES-2023` | Publication primaire listée en tête du dossier et résultats descriptifs repris. |
+| Fichier `dossiers/smic-dares-beneficiaires-inflation-2021-2024-audit.md` (non enregistré) | `SOURCE-DARES-INFLATION-SALAIRES-2023` | Publication primaire listée en tête du fichier et résultats descriptifs repris ; aucune arête créée car ce fichier n'est pas un nœud canonique du registre. |
 | `DOSSIER-SMIC-HISTORICAL-EPISODES` | `SOURCE-DARES-INFLATION-SALAIRES-2023` | Publication citée pour l'épisode inflationniste 2021–2023. |
 | `DOSSIER-SMIC-HISTORICAL-EPISODES` | `SOURCE-DARES-SMIC-REVAL-2026` | Publication du 15 octobre 2026 explicitement citée pour compléter la chronologie des bénéficiaires directs. |
 
-Ces cinq liens sont documentaires. Ils ne convertissent pas les résultats descriptifs DARES en effets causaux et ne transforment pas les études historiques en loi générale.
+Les quatre arêtes créées sont documentaires. La référence au fichier DARES non enregistré reste un constat de traçabilité documentaire, pas une relation de graphe. Ces liens ne convertissent pas les résultats descriptifs DARES en effets causaux et ne transforment pas les études historiques en loi générale.
 
 ## Sources toujours sans relation justifiée après la seconde passe
 
