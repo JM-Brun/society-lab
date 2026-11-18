@@ -52,7 +52,7 @@ Le rapport négaWatt indique une baisse de 53 % de la consommation finale entre 
 
 ### SNBC 3
 
-Le projet de SNBC 3 chiffre la consommation finale énergétique à 1 510 TWh en 2023, contre 1 756 TWh en 2012. Son scénario de référence vise 1 469 TWh en 2030 et 1 178 TWh en 2050, soit respectivement −19 % et −43 % par rapport à 2012. Le document précise que la réindustrialisation ajoute environ 50 TWh de consommation sur le territoire, auxquels s'ajoutent les besoins des centres de données.
+Le projet de SNBC 3 chiffre la consommation finale énergétique à 1 510 TWh en 2023, contre 1 756 TWh en 2012. Son scénario de référence vise 1 469 TWh en 2030 et 1 178 TWh en 2050 dans le périmètre total ; cela correspond arithmétiquement à environ −16 % et −33 % par rapport à 2012. Dans le périmètre DEE, les valeurs sont 1 423 TWh et 1 006 TWh, soit environ −19 % et −43 %. Le texte du rapport associe les baisses de −19 % et −43 % à la phrase présentant les deux périmètres, sans rendre cette correspondance suffisamment explicite : nous conservons les valeurs brutes et signalons cette ambiguïté plutôt que de reprendre les pourcentages sans contrôle. Le document précise que la réindustrialisation ajoute environ 50 TWh de consommation sur le territoire, auxquels s'ajoutent les besoins des centres de données.
 
 Le document souligne lui-même que des leviers complémentaires seront nécessaires pour sécuriser les objectifs, notamment à l'horizon 2030. Il s'agit donc d'une trajectoire de référence conditionnelle, et non d'un résultat garanti.
 
