@@ -14,6 +14,40 @@ limitations:
   - "Étude qualitative, non expérimentale."
   - "Différences d'histoire, d'offre partisane, de réseaux militants et de clivages confondantes."
   - "Ne permet pas d'isoler l'effet causal propre du cordon médiatique ou politique."
+source_verifications:
+  - source_id: SOURCE-BELGIUM-CORDON-WALLONIA-FLANDERS-2021
+    locator: "Article, p. 599, introduction and research design; section 'Background' begins p. 599."
+    status: source_checked
+    checked_at: "2026-11-18"
+    review_note: "Version of record consultée sur Cambridge Core et PDF éditeur déposé dans le dépôt institutionnel de l'Université de Groningen. L'article qualifie explicitement sa démarche d'étude de cas comparative qualitative."
+    extraction:
+      element_type: method_description
+      extracted_content: "Étude de cas comparative qualitative ; matériaux primaires et secondaires, dont 18 entretiens semi-directifs avec des professionnels des médias et des responsables politiques."
+      extraction_method: manual
+      extracted_at: "2026-11-18"
+      extracted_by: "Society Lab"
+  - source_id: SOURCE-BELGIUM-CORDON-WALLONIA-FLANDERS-2021
+    locator: "Article, pp. 599–600 (présentation du résultat et des facteurs contextuels) ; pp. 607–610 (section 'The media landscape') ; pp. 612–614 (comparaison et conclusion)."
+    status: source_checked
+    checked_at: "2026-11-18"
+    review_note: "Vérifie l'interprétation de l'autrice : environnement plus hostile en Wallonie et plus accommodant en Flandre, en lien avec les réponses des partis établis et des médias. Il s'agit de l'argument interprétatif de l'article, non d'une estimation causale isolant l'effet du cordon."
+    extraction:
+      element_type: author_interpretation
+      extracted_content: "L'autrice relie les trajectoires régionales aux différences historiques et à la manière dont les partis établis et les médias ferment ou ouvrent des opportunités aux partis de droite radicale."
+      extraction_method: manual
+      extracted_at: "2026-11-18"
+      extracted_by: "Society Lab"
+  - source_id: SOURCE-BELGIUM-CORDON-WALLONIA-FLANDERS-2021
+    locator: "Article, pp. 601–603 (sections 'Demand for PRRPs in Belgium' et 'Supply of PRRPs in Belgium') ; pp. 603–606 (section 'The party system')."
+    status: source_checked
+    checked_at: "2026-11-18"
+    review_note: "Contrôle des explications alternatives : demande électorale, structure de l'offre et capacités organisationnelles, fragmentation partisane, clivages et rôle du PS. Ces éléments empêchent de réduire la comparaison au seul cordon sanitaire."
+    extraction:
+      element_type: paraphrase
+      extracted_content: "L'article examine les limites des explications par la demande et l'offre partisanes avant d'introduire les structures de compétition, les clivages et les stratégies des partis établis."
+      extraction_method: manual
+      extracted_at: "2026-11-18"
+      extracted_by: "Society Lab"
 provenance:
   - origin: ai_suggested
     note: "Fiche provisoire ; synthèse fidèle à la portée qualitative de l'étude."
