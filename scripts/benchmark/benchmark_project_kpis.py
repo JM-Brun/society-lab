@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import statistics
 import sys
 import time
@@ -142,7 +143,7 @@ def main():
             "total_median_seconds": round(statistics.median(parse_samples) + statistics.median(calculate_samples), 6),
         })
 
-    print(json.dumps({
+    report = {
         "benchmark": "society_lab_project_kpis",
         "python": sys.version.split()[0],
         "platform": sys.platform,
@@ -150,7 +151,29 @@ def main():
         "results": results,
         "scope": "YAML load and KPI calculations measured separately; synthetic x10/x100 snapshots preserve record shapes and valid graph endpoints; excludes GitHub Actions setup and other validators.",
         "note": "Informational benchmark only; timings vary by runner and are not CI thresholds.",
-    }, ensure_ascii=False, indent=2))
+    }
+    rendered = json.dumps(report, ensure_ascii=False, indent=2)
+    print(rendered)
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        lines = [
+            "### Project KPI benchmark (informational)",
+            "",
+            "| Échelle | Sources | Claims | Dossiers | Relations | Chargement YAML médian | Calcul KPI médian | Total estimé |",
+            "|---:|---:|---:|---:|---:|---:|---:|---:|",
+        ]
+        for item in results:
+            lines.append(
+                f"| ×{item['scale']} | {item['sources']} | {item['claims']} | "
+                f"{item['dossiers']} | {item['relations']} | "
+                f"{item['yaml_load_median_seconds']:.6f} s | "
+                f"{item['calculation_median_seconds']:.6f} s | "
+                f"{item['total_median_seconds']:.6f} s |"
+            )
+        lines.extend(["", f"Python {report['python']} · {args.repeats} répétitions.",
+                      "", report["scope"], "", report["note"]])
+        with open(summary_path, "a", encoding="utf-8") as summary:
+            summary.write("\\n".join(lines) + "\\n")
 
 
 if __name__ == "__main__":
