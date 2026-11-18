@@ -39,6 +39,9 @@ jobs:
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
 
+      - name: Validate issue-to-dossier mappings
+        run: python scripts/validate/validate_issue_domain_map.py
+
       - name: Report subject synthesis freshness
         run: python scripts/validate/check_synthesis_freshness.py
 
