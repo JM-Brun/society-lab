@@ -62,6 +62,15 @@
 | `scripts/analysis/*.py`, `analysis/*.md`, `research/analysis/*.md`, `data/*` | Tests unitaires ciblés pour les scripts d'analyse ; fichiers de données et protocoles versionnés. | Inventaire ne signifie pas validation systématique de chaque jeu de données, transformation ou résultat ; documenter les tests propres à chaque pipeline. |
 | `docs/*.md`, `templates/*`, configuration et workflows | Documentation et CI ; schémas JSON syntaxiquement vérifiés dans le workflow. | La présence d'une documentation ou d'un workflow ne garantit pas l'alignement entre tous les contrats et toutes les implémentations. |
 
+## Écarts de couverture observés à qualifier
+
+Sur le même instantané, la comparaison des chemins de fichiers avec le registre de synthèses donne :
+
+- `dossiers/` : **60 fichiers Markdown**, dont **25 chemins** explicitement associés à une entrée de `syntheses/registry.yml` ; **35 fichiers** restent hors de cette correspondance.
+- `syntheses/` : **12 fichiers Markdown**, dont **11 chemins distincts** référencés par le registre ; **1 fichier** n'est pas référencé.
+- Les 25 chemins de dossiers déclarés existent tous. Les 11 chemins de synthèses déclarés existent tous.
+- Ces écarts ne sont **pas encore des erreurs** : plusieurs fichiers de `dossiers/` peuvent être des notes d'étude, matrices de preuves ou audits intermédiaires plutôt que des dossiers principaux ; le fichier de synthèse non référencé peut être historique ou en attente de rattachement. Il faut qualifier leur rôle avant de rendre la couverture bloquante.
+- `sources/` contient deux fiches YAML autonomes : `SOURCE-SENAT-1994-SMIC-DECOMPOSITION` est également présent dans le registre canonique ; `SOURCE-SHIFT-PROJECT-CORPUS` est une fiche de regroupement documentaire explicitement décrite comme point d'entrée, pas une source détaillée ordinaire.
 ## Décisions de renforcement — sans nouveau registre ni schéma
 
 1. Ajouter un **contrôle de couverture des fichiers** calculé à partir de l'arbre du dépôt : fichiers de fiches attendus ↔ chemins déclarés dans les registres existants ; signaler les fichiers orphelins et les entrées qui pointent vers des chemins absents.
