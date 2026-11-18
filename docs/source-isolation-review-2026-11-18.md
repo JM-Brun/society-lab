@@ -74,3 +74,9 @@ Quatre sources demeurent isolées à l'issue de cette revue :
 
 Aucune relation supplémentaire ne doit être créée pour les quatre sources ci-dessus tant qu'une mobilisation documentaire précise n'est pas établie.
 
+### Précision de registre — dossier DARES détaillé
+
+Le fichier `dossiers/smic-dares-beneficiaires-inflation-2021-2024-audit.md` existe et cite explicitement la source DARES 2023, mais il ne possède pas d'entrée dans `dossiers/registry.yml`. Il n'est donc pas un nœud canonique auquel le graphe puisse référencer une relation. La relation vers ce fichier a été retirée de la PR complémentaire ; le lien vers `DOSSIER-SMIC-HISTORICAL-EPISODES`, qui est bien enregistré et cite également la source, est conservé.
+
+**Travail restant distinct :** décider si ce fichier d'audit DARES doit être promu en dossier canonique (entrée registre, métadonnées, synthèse et mapping d'issue éventuel) ou rester un document de travail rattaché au dossier historique. Ne pas créer de nœud ad hoc ni de relation vers un document non enregistré.
+
