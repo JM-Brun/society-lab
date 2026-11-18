@@ -84,3 +84,10 @@ Aucune intégration CI n'est ajoutée à ce stade. Il faut d'abord exécuter les
 5. Le calculateur reste en lecture seule ; la CI n'est pas modifiée avant validation et benchmark.
 
 **Limite :** les résultats sont un instantané du dépôt au 18 novembre 2026. Toute évolution du schéma, du périmètre ou des relations peut modifier les valeurs et doit être signalée dans les rapports ultérieurs.
+
+
+## Addendum — intégration CI postérieure à l'audit initial
+
+L'état décrit dans la section « Prototype et tests » ci-dessus correspond à la situation antérieure à l'intégration du benchmark dans la CI. Depuis, le workflow `.github/workflows/validate.yml` exécute `scripts/benchmark/benchmark_project_kpis.py --repeats 3 --scales 1 10 100` dans une étape informative, après le benchmark de validation des schémas de registre. Cette étape ne définit aucun seuil bloquant et ne fait pas échouer la CI sur la valeur d'un KPI.
+
+Exécution de référence sur `main` : [run 44364791315](https://github.com/JM-Brun/society-lab/actions/runs/44364791315), terminé avec succès. Les temps mesurés doivent être lus dans le résumé Actions avant de décider si le benchmark doit rester dans chaque exécution du workflow ou être déplacé vers un déclenchement manuel/périodique. Aucun chiffre de durée n'est repris ici faute de mesure vérifiée dans cet audit.
