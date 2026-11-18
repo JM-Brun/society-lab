@@ -1,6 +1,6 @@
 # Gouvernance des issues
 
-**Statut :** convention versionnée, contrôle automatisé en lecture seule.  
+**Statut :** convention versionnée, audit mécanique en lecture seule et revue sémantique humaine documentée.  
 **Référence canonique des labels :** [governance/issue-labels.json](../governance/issue-labels.json).  
 **Issue de suivi :** [#123 — taxonomie et métadonnées de pilotage](https://github.com/JM-Brun/society-lab/issues/123).
 
@@ -46,7 +46,7 @@ Le workflow issue-governance.yml lance un audit hebdomadaire, à la demande et l
 
 Il publie un rapport dans le résumé GitHub Actions. Il est volontairement non destructif : aucune attribution automatique de meta ou de priorité, aucune fermeture et aucune modification d'issue. Les issues de pull request ne sont pas traitées comme des issues ordinaires.
 
-## Limites connues
+## Revue sémantique périodique\n\nLa grille, les seuils et le format des comptes rendus sont définis dans [governance/backlog-review.md](../governance/backlog-review.md). La première revue datée est conservée dans [governance/backlog-reviews/2026-11-18.md](../governance/backlog-reviews/2026-11-18.md). La cadence proposée est une revue légère mensuelle et une revue complète trimestrielle. Les alertes ne modifient jamais seules les labels ou l'état des issues. Le champ GitHub `updated_at` n'est pas un indicateur fiable de progrès après un reclassement massif ; les événements substantiels et dates de revue doivent être utilisés.\n\n## Limites connues
 
 L'automatisation ne peut pas déterminer de façon fiable si meta est justifié, si une priorité est proportionnée, si une issue est obsolète ou si deux demandes sont des doublons. Ces points nécessitent une revue humaine contextualisée. Le contrôle actuel ne constitue pas une synchronisation des définitions de labels vers l'API GitHub ; la synchronisation contrôlée reste une étape distincte.
 
@@ -59,8 +59,8 @@ Les travaux qui dépassent le premier lot sont suivis séparément :
 - [#126 — Revue sémantique périodique du backlog](https://github.com/JM-Brun/society-lab/issues/126) : justification de meta et des priorités, qualité des objectifs/livrables/critères, fraîcheur, doublons et décisions humaines.
 - [#127 — Vue de backlog multidimensionnelle](https://github.com/JM-Brun/society-lab/issues/127) : priorité, nature, domaine et dépendances à partir des sources canoniques et identifiants stables.
 
-État au 18 novembre 2026 : la PR #124 est fusionnée. La synchronisation contrôlée (#125) est implémentée dans la [PR #128](https://github.com/JM-Brun/society-lab/pull/128), actuellement ouverte ; la revue humaine (#126) et la vue de backlog (#127) restent à réaliser. Ordre recommandé : valider et fusionner #125 ; établir ensuite la revue humaine (#126) ; construire la vue de backlog (#127). Les trois chantiers restent distincts pour rendre leurs critères d'acceptation, risques et validations indépendamment vérifiables.
+État au 18 novembre 2026 : les PR #124 et #128 sont fusionnées. La correction de robustesse du retry est proposée dans la [PR #129](https://github.com/JM-Brun/society-lab/pull/129). La grille et la première revue humaine de #126 sont documentées ; les décisions sur les alertes de priorité restent à confirmer. La vue multidimensionnelle #127 reste à réaliser. Les trois chantiers restent distincts pour rendre leurs critères d'acceptation, risques et validations indépendamment vérifiables.
 
 ## État de validation du lot initial
 
-Le commit `eaf2e6f2dcca0bb96d079dbc15e7346c473d46bb` a passé le job `validate`, y compris l'audit des labels, la validation des registres, des synthèses, de leur fraîcheur, les tests unitaires et les schémas JSON. La PR #124 reste soumise à revue et décision de fusion ; un succès CI ne vaut pas approbation de revue.
+La PR #124 a été fusionnée après validation CI. La PR #128 a également été fusionnée ; la PR #129 ajoute un test du chemin de reprise réseau et reste en attente de revue. Un succès CI ne vaut pas approbation de revue.

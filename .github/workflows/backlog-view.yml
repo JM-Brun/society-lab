@@ -1,0 +1,33 @@
+name: Generate multidimensional backlog view
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 6 * * 1"
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install YAML dependency
+        run: python -m pip install --disable-pip-version-check PyYAML
+      - name: Generate backlog view
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BACKLOG_OUTPUT: backlog-view.md
+        run: python scripts/report/generate_backlog_view.py
+      - name: Upload generated view
+        uses: actions/upload-artifact@v4
+        with:
+          name: society-lab-backlog-view
+          path: backlog-view.md
+          retention-days: 30
