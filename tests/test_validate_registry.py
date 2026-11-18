@@ -152,5 +152,35 @@ class IngestionBatchSchemaTests(unittest.TestCase):
         self.assertEqual(list(validator.iter_errors(template)), [])
 
 
+
+class ClaimExtractionSchemaTests(unittest.TestCase):
+    def setUp(self):
+        root = Path(__file__).resolve().parents[1]
+        self.schema = json.loads((root / "schemas" / "claim.schema.json").read_text(encoding="utf-8"))
+        self.validator = Draft202012Validator(self.schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+        self.claim = {
+            "id": "CLAIM-EXAMPLE",
+            "statement": "Un exemple de proposition vérifiable.",
+            "claim_type": "descriptive",
+            "status": "under_review",
+            "source_verifications": [{
+                "source_id": "SOURCE-EXAMPLE", "status": "source_checked",
+                "locator": "Tableau 2, ligne 4",
+                "extraction": {"element_type": "table_value", "value": 12.5, "unit": "%",
+                               "denominator": "Ensemble des répondants", "extraction_method": "manual",
+                               "extracted_at": "2026-11-18"}
+            }]
+        }
+
+    def test_accepts_structured_extraction_without_requiring_migration(self):
+        self.assertEqual(list(self.validator.iter_errors(self.claim)), [])
+
+    def test_rejects_unknown_extraction_method(self):
+        self.claim["source_verifications"][0]["extraction"]["extraction_method"] = "guessed"
+        self.assertTrue(list(self.validator.iter_errors(self.claim)))
+
+    def test_rejects_invalid_artifact_hash(self):
+        self.claim["source_verifications"][0]["extraction"]["artifact_sha256"] = "not-a-sha256"
+        self.assertTrue(list(self.validator.iter_errors(self.claim)))
 if __name__ == "__main__":
     unittest.main()
