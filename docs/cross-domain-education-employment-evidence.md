@@ -55,6 +55,21 @@ Priorités documentaires, dans l'ordre :
 
 Ne pas fusionner des agrégats Parcoursup par formation avec des panels individuels de salariés comme s'ils décrivaient une même cohorte.
 
+## 5 bis. Sources longitudinales et de compétences identifiées (revue du 18 novembre 2026)
+
+Quatre dispositifs complémentaires permettent désormais de préciser le protocole de recherche :
+
+| Dispositif | Ce qu'il apporte | Unité / temporalité | Limite à ne pas oublier |
+|---|---|---|---|
+| **Céreq Génération 2021 apparié à la Base Tous salariés** | Perspective la plus prometteuse pour relier parcours de formation et trajectoires salariées ; le Céreq confirme que l'appariement expérimental a été réalisé en 2025-2026. | Individus de la Génération 2021 rapprochés de données administratives ; résultats et variables appariées encore à documenter. | La page publique ne fournit ni taux d'appariement, ni dictionnaire final, ni résultats. Accès et biais de sélection à vérifier. |
+| **InserJeunes, sortants 2023** | Mesure l'insertion après les formations professionnelles scolaires et l'apprentissage, par formation, métier ou établissement, avec des observations jusqu'à 18-24 mois selon les indicateurs. | Indicateurs administratifs par formation/établissement ; CAP à BTS dans le champ du dispositif. | Ne représente pas tous les diplômés ; indicateurs agrégés et emploi salarié observé ne décrivent pas une trajectoire complète ni la qualité de l'emploi. |
+| **PIAAC 2023** | Mesure directement certaines compétences adultes (littératie, numératie, résolution adaptative de problèmes), au-delà du seul diplôme. | Enquête transversale d'adultes ; microdonnées et documentation technique disponibles. | Pas de suivi longitudinal ; respecter pondérations et valeurs plausibles ; compétences mesurées non exhaustives. |
+| **Panel Tous salariés (Insee)** | Suit annuellement les emplois, employeurs et rémunérations ; utile pour les mobilités salariales et les transitions entre employeurs. | Panel depuis 1976 ; environ 1/8 de la population salariée depuis 2002 ; champ constant possible depuis 1988 sous filtres. | Ne couvre pas directement les non-salariés ; ruptures DADS/DSN (privé 2017, public 2022) ; accès détaillé à vérifier. |
+
+**Conséquence méthodologique :** ces sources sont complémentaires mais non interchangeables. InserJeunes fournit une mesure d'insertion ciblée et plutôt agrégée ; PIAAC mesure des compétences à un instant donné ; le Panel Tous salariés observe des trajectoires salariées ; l'appariement Céreq–BTS pourrait relier les parcours de formation à ces trajectoires, sous réserve de la documentation et de l'accès. Il faut éviter de présenter l'appariement comme une base ouverte ou comme une preuve déjà publiée.
+
+Sources principales : [Céreq — appariement Génération 2021/BTS](https://projets.cereq.fr/fiche-1163), [DEPP — InserJeunes](https://www.education.gouv.fr/depp/inserjeunes-l-insertion-des-jeunes-apres-une-formation-en-voie-professionnelle-307956), [OCDE — données et méthodologie PIAAC](https://www.oecd.org/fr/about/programmes/piaac/piaac-data.html), [Insee — Panel Tous salariés](https://www.insee.fr/fr/metadonnees/source/serie/s1047).
+
 ## 6. Décision pour le graphe de connaissances
 
 **Aucune nouvelle arête causale n'est ajoutée à ce stade.** Les registres documentent des associations entre origine sociale et acquis/diplômes, des constats descriptifs sur les bas salaires, les compétences et la mobilité, ainsi que des hypothèses déjà enregistrées sur la compression salariale et les incitations.
