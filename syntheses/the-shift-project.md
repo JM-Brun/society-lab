@@ -37,6 +37,10 @@ The Shift Project constitue un acteur important du débat français sur la plani
 
 La règle d'analyse à retenir est de ne pas traiter « le Shift » comme une autorité globale : évaluer chaque rapport, chaque modèle et chaque proposition selon ses sources, ses hypothèses, ses incertitudes, ses effets distributifs et les critiques contradictoires disponibles.
 
+## Approfondissement du PREF 2026
+
+Le rapport technique d'avril 2026 a été examiné dans un dossier séparé. Il apporte une analyse des conditions de réussite de vingt chantiers et des variantes de trajectoires sous incertitude. Ses points forts sont la lecture systémique et l'attention aux conditions de mise en œuvre ; les principales questions d'audit concernent le cadrage par le PTEF, la non-exhaustivité des chantiers, la définition des variantes et l'intégration transversale des coûts, des inégalités et des finances publiques. Voir le [dossier d'audit](pref-2026-audit-robustesse-scenarios.md) et la [synthèse PREF](pref-2026.md).
+
 ## Travaux prioritaires
 
 - Décomposer le PREF 2026 en 20 chantiers et auditer chacun.
