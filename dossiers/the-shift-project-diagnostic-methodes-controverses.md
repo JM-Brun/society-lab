@@ -99,7 +99,7 @@ Cette exigence s'applique au Shift comme à ses contradicteurs et aux scénarios
 
 ## 8. Étude de cas : le Plan robuste pour l'économie française
 
-Le rapport « Réussir la transition dans l'incertitude : la méthode Shift en 20 chantiers », publié le 14 avril 2026, constitue le premier volet du Plan robuste pour l'économie française. Le rapport final annoncé compte 341 pages et sa synthèse 28 pages. Le Shift indique que le travail a été financé par plus de 30 000 donateurs lors d'une campagne participative et porté par des bénévoles et des professionnels.
+Le rapport « Réussir la transition dans l'incertitude : la méthode Shift en 20 chantiers », publié le 14 avril 2026, constitue le premier volet du Plan robuste pour l'économie française. Le rapport final annoncé compte 341 pages et sa synthèse 28 pages. Le rapport remercie plus de 36 000 donateurs de la campagne participative « Décarbonons la France ». La page de lancement du PREF annonce plus de 36 000 contributions et plus de 4,5 millions d'euros collectés ; ces deux formulations (donateurs et contributions) ne doivent pas être confondues. Le travail a également été porté par des bénévoles et des professionnels.
 
 Ce rapport mérite une analyse dédiée : architecture des 20 chantiers, hypothèses physiques, priorisation, cohérence macroéconomique, coûts et financements, calendrier, besoins de compétences, effets distributifs, gouvernance de la mise en œuvre et indicateurs de suivi.
 
