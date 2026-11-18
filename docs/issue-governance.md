@@ -28,7 +28,7 @@ Le JSON canonique contient les descriptions, couleurs, règles et invariants. Le
 
 ## Création et maintenance
 
-Le modèle templates/issue-task.md demande objectif, contexte, périmètre, dépendances, plan, livrables, critères d'acceptation, priorité proposée, nature et état réel. Le label internal est proposé par défaut ; la priorité reste à confirmer humainement.
+Le modèle GitHub .github/ISSUE_TEMPLATE/task.md demande objectif, contexte, périmètre, dépendances, plan, livrables, critères d'acceptation, priorité proposée, nature et état réel. Le label internal est proposé par défaut ; la priorité reste à confirmer humainement.
 
 Lorsqu'un label est créé, modifié ou déprécié :
 1. modifier le fichier canonique dans une PR ;
