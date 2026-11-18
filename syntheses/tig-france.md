@@ -148,3 +148,10 @@ Sources principales : [RSJ 2025, chapitre 11](https://www.justice.gouv.fr/sites/
 Le TIG est aussi un cas d'étude de capacité institutionnelle et de coûts transférés. Son coût ne se limite pas aux dépenses comptabilisées par l'administration pénitentiaire : les organismes d'accueil mobilisent du temps de tutorat, des équipements et de la coordination. Ces ressources doivent être intégrées à une analyse de coût complet, sans les confondre avec un coût social net.
 
 Le lien avec l'emploi et l'insertion demande de distinguer l'activité effectuée pendant la mesure, l'acquisition éventuelle de compétences et la situation professionnelle ultérieure. Il faut aussi examiner le risque de substitution à un emploi rémunéré sans le présumer. L'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md) précise les questions et les limites à conserver.
+
+
+## Liens avec les autres domaines
+
+Le TIG est aussi un cas d'étude de capacité institutionnelle et de coûts transférés. Son coût ne se limite pas aux dépenses comptabilisées par l'administration pénitentiaire : les organismes d'accueil mobilisent du temps de tutorat, des équipements et de la coordination. Ces ressources doivent être intégrées à une analyse de coût complet, sans les confondre avec un coût social net.
+
+Le lien avec l'emploi et l'insertion demande de distinguer l'activité effectuée pendant la mesure, l'acquisition éventuelle de compétences et la situation professionnelle ultérieure. Il faut aussi examiner le risque de substitution à un emploi rémunéré sans le présumer. L'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md) précise les questions et les limites à conserver.
