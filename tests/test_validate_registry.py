@@ -1,6 +1,10 @@
+import json
 import sys
 import unittest
 from pathlib import Path
+
+import yaml
+from jsonschema import Draft202012Validator
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
@@ -137,6 +141,15 @@ class IngestionBatchValidationTests(unittest.TestCase):
         errors = []
         validate_batch_manifest(batch, "batch.yml", {"SOURCE-A"}, errors)
         self.assertTrue(any("closed batch cannot contain deferred" in error for error in errors))
+
+
+class IngestionBatchSchemaTests(unittest.TestCase):
+    def test_ingestion_batch_template_matches_schema(self):
+        root = Path(__file__).resolve().parents[1]
+        schema = json.loads((root / "schemas" / "ingestion-batch.schema.json").read_text(encoding="utf-8"))
+        template = yaml.safe_load((root / "templates" / "ingestion-batch.yml").read_text(encoding="utf-8"))
+        validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+        self.assertEqual(list(validator.iter_errors(template)), [])
 
 
 if __name__ == "__main__":
