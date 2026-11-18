@@ -52,7 +52,7 @@ Les relations causales réciproques doivent être décomposées en deux canaux d
 
 ### 3.1. Fiches de mécanismes : contrat minimal et garde-fous
 
-L'audit du dépôt au 18 novembre 2026 a confirmé que le type `MECHANISM` est autorisé dans les relations, mais qu'aucun registre canonique de fiches de mécanismes n'est encore présent dans `knowledge/`. Le schéma [`mechanism.schema.json`](../schemas/mechanism.schema.json) propose un contrat minimal pour ces fiches : identifiant stable, description, domaines, étapes, direction, conditions de portée, acteurs, indicateurs, horizon, études/claims favorables ou critiques, explications alternatives, limites, statut et date de revue.
+L'audit initial du dépôt au 18 novembre 2026 avait confirmé que le type `MECHANISM` était autorisé dans les relations, sans registre canonique. Un registre vide a depuis été créé dans `knowledge/mechanisms/registry.yml` et raccordé au validateur. Le schéma [`mechanism.schema.json`](../schemas/mechanism.schema.json) propose un contrat minimal pour ces fiches : identifiant stable, description, domaines, étapes, direction, conditions de portée, acteurs, indicateurs, horizon, études/claims favorables ou critiques, explications alternatives, limites, statut et date de revue.
 
 Ce schéma est une **proposition de structure**, pas une validation automatique du contenu ni une preuve de causalité. Les statuts distinguent notamment :
 - `candidate` : piste de mécanisme à examiner ;
