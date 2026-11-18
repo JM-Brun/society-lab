@@ -91,3 +91,7 @@ dossiers:
     dossier_path: "dossiers/pref-2026-audit-robustesse-scenarios.md"
     synthesis_id: "SYNTHESIS-PREF-2026-AUDIT"
     synthesis_path: "syntheses/pref-2026.md"
+  - dossier_id: "DOSSIER-ENERGY-SCENARIOS-COMPARISON-2026"
+    dossier_path: "dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md"
+    synthesis_id: "SYNTHESIS-ENERGY-SCENARIOS-2026"
+    synthesis_path: "syntheses/comparaison-scenarios-transition-2026.md"
