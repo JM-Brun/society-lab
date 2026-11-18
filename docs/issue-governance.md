@@ -59,7 +59,7 @@ Les travaux qui dépassent le premier lot sont suivis séparément :
 - [#126 — Revue sémantique périodique du backlog](https://github.com/JM-Brun/society-lab/issues/126) : justification de meta et des priorités, qualité des objectifs/livrables/critères, fraîcheur, doublons et décisions humaines.
 - [#127 — Vue de backlog multidimensionnelle](https://github.com/JM-Brun/society-lab/issues/127) : priorité, nature, domaine et dépendances à partir des sources canoniques et identifiants stables.
 
-Ordre recommandé : fusionner et stabiliser le lot #124 ; implémenter ensuite la synchronisation contrôlée (#125) ; établir la revue humaine (#126) ; construire la vue de backlog (#127). Les trois chantiers restent distincts pour rendre leurs critères d'acceptation, risques et validations indépendamment vérifiables.
+État au 18 novembre 2026 : la PR #124 est fusionnée. La synchronisation contrôlée (#125) est implémentée dans la [PR #128](https://github.com/JM-Brun/society-lab/pull/128), actuellement ouverte ; la revue humaine (#126) et la vue de backlog (#127) restent à réaliser. Ordre recommandé : valider et fusionner #125 ; établir ensuite la revue humaine (#126) ; construire la vue de backlog (#127). Les trois chantiers restent distincts pour rendre leurs critères d'acceptation, risques et validations indépendamment vérifiables.
 
 ## État de validation du lot initial
 
