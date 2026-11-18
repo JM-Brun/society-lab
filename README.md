@@ -45,6 +45,10 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 ## Premier dossier de recherche
 
+- [The Shift Project : diagnostic, méthodes, propositions et controverses](dossiers/the-shift-project-diagnostic-methodes-controverses.md) — dossier critique sur le think tank, son cadre de la double contrainte carbone, ses méthodes, son financement, ses propositions et les controverses documentées ; voir aussi la [synthèse](syntheses/the-shift-project.md).
+
+## Dossiers de recherche
+
 - [Éducation](knowledge/domains/education.md) — page thématique reliant les connaissances, sources, études, données, affirmations, hypothèses et priorités de recherche.
 - [Sécurité, justice et libertés](knowledge/domains/security.md) — page thématique sur les politiques de sécurité, l'exécution des peines, l'efficacité pénale et les libertés.
 - [Économie, emploi et productivité](knowledge/domains/economy.md) — page thématique sur les salaires, le marché du travail, les entreprises et la productivité.
