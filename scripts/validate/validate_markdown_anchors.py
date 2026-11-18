@@ -8,11 +8,11 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
-LINK_RE = re.compile(r'!?(?:\\[[^\\]]*\\])\\(\\s*(?:<([^>]+)>|([^\\s)]+))(?:\\s+[\"\'][^)]*[\"\'])?\\s*\\)')
+LINK_RE = re.compile(r'!?(?:\[[^\]]*\])\(\s*(?:<([^>]+)>|([^\s)]+))(?:\s+[\"\'][^)]*[\"\'])?\s*\)')
 FENCE = chr(96)
-FENCED_CODE_RE = re.compile(r'^\\s*(?:' + re.escape(FENCE) + r'{3,}|~{3,}).*?^\\s*(?:' + re.escape(FENCE) + r'{3,}|~{3,})\\s*$', re.MULTILINE | re.DOTALL)
-ATX = re.compile(r'^ {0,3}#{1,6}\\s+(.+?)\\s*#*\\s*$')
-INLINE_LINK = re.compile(r'!?(?:\\[([^\\]]*)\\])\\([^)]*\\)')
+FENCED_CODE_RE = re.compile(r'^\s*(?:' + re.escape(FENCE) + r'{3,}|~{3,}).*?^\s*(?:' + re.escape(FENCE) + r'{3,}|~{3,})\s*$', re.MULTILINE | re.DOTALL)
+ATX = re.compile(r'^ {0,3}#{1,6}\s+(.+?)\s*#*\s*$')
+INLINE_LINK = re.compile(r'!?(?:\[([^\]]*)\])\([^)]*\)')
 HTML_TAG = re.compile(r'<[^>]+>')
 CODE = re.compile(re.escape(FENCE) + r'+[^' + re.escape(FENCE) + r']*' + re.escape(FENCE) + r'+')
 
