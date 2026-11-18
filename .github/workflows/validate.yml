@@ -36,11 +36,8 @@ jobs:
       - name: Validate registries and identifiers
         run: python scripts/validate/validate_registry.py
 
-      - name: Benchmark registry schema validation (informational)
-        run: python scripts/benchmark/benchmark_registry_schema_validation.py --repeats 3 --scales 1 10 100
-
-      - name: Benchmark project KPI calculation (informational)
-        run: python scripts/benchmark/benchmark_project_kpis.py --repeats 3 --scales 1 10 100
+      - name: Report project KPIs (read-only)
+        run: python scripts/validate/calculate_project_kpis.py --format markdown
 
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
