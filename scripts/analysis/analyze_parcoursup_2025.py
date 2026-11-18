@@ -8,9 +8,11 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 from collections import defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 from statistics import median
 
@@ -177,7 +179,40 @@ def write_csv(path: Path, records: list[dict]) -> None:
         writer.writerows(records)
 
 
-def run(input_path: Path, output_dir: Path) -> dict:
+
+def inspect_source_file(path: Path) -> dict:
+    """Return reproducibility metadata without changing the original CSV."""
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        sample = handle.read(8192)
+        handle.seek(0)
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=";,\t")
+        except csv.Error:
+            dialect = csv.excel
+        reader = csv.reader(handle, dialect=dialect)
+        columns = next(reader, [])
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        prefix = handle.read(3)
+        handle.seek(0)
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return {
+        "file_size_bytes": path.stat().st_size,
+        "sha256": digest.hexdigest(),
+        "decoder": "utf-8-sig",
+        "utf8_bom": prefix == b"\xef\xbb\xbf",
+        "delimiter": dialect.delimiter,
+        "column_count": len(columns),
+        "columns": columns,
+    }
+
+def run(
+    input_path: Path,
+    output_dir: Path,
+    source_url: str | None = None,
+    downloaded_at_utc: str | None = None,
+) -> dict:
     rows = load_rows(input_path)
     output_dir.mkdir(parents=True, exist_ok=True)
     for label, column in GROUPS.items():
@@ -201,6 +236,10 @@ def run(input_path: Path, output_dir: Path) -> dict:
     manifest = {
         "dataset": "Parcoursup 2025 — fr-esr-parcoursup",
         "source_file": input_path.name,
+        "source_url": source_url,
+        "downloaded_at_utc": downloaded_at_utc,
+        "processed_at_utc": datetime.now(timezone.utc).isoformat(),
+        "source_file_metadata": inspect_source_file(input_path),
         "records": len(rows),
         "missing_values_by_variable": {key: sum(row[key] is None for row in rows) for key in NUMERIC_FIELDS},
         "unit_of_observation": "formation / établissement",
@@ -234,8 +273,17 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", required=True, type=Path, help="Official source CSV")
     parser.add_argument("--output-dir", required=True, type=Path)
+    parser.add_argument("--source-url", help="Canonical URL used to download the source CSV")
+    parser.add_argument(
+        "--downloaded-at-utc",
+        help="Actual source download timestamp in ISO 8601 UTC; never inferred by the script",
+    )
     args = parser.parse_args()
-    print(json.dumps(run(args.input, args.output_dir), ensure_ascii=False, indent=2))
+    print(json.dumps(
+        run(args.input, args.output_dir, args.source_url, args.downloaded_at_utc),
+        ensure_ascii=False,
+        indent=2,
+    ))
 
 
 if __name__ == "__main__":
