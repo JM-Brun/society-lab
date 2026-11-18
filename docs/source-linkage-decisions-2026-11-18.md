@@ -8,7 +8,7 @@
 |---|---|---|
 | `SOURCE-PRI-EU-NONCUSTODIAL-COMPARATIVE-2025` | `source_ids` de `STUDY-PRI-EU-NONCUSTODIAL-COMPARATIVE-2025` | `REL-CITES` étude → source |
 | `SOURCE-WERMINK-COMMUNITY-SERVICE-RETRIBUTION-2023` | `source_ids` de `STUDY-WERMINK-NETHERLANDS-COMMUNITY-SERVICE-IV-2023` | `REL-CITES` étude → source |
-| `SOURCE-FO-POUVOIR-ACHAT-2026` | Bibliographie de `dossiers/smic-social-partners-evidence.md`, fichier de travail non enregistré dans `dossiers/registry.yml` | **Aucun lien ajouté** : l'objet documentaire n'existe pas comme nœud du graphe. Décider séparément de l'enregistrer ou de documenter son rattachement |
+| `SOURCE-FO-POUVOIR-ACHAT-2026` | Bibliographie de `dossiers/smic-social-partners-evidence.md`, qui déclare explicitement `DOSSIER-SMIC-FRANCE-TRADEOFFS` comme dossier parent | `REL-INCLUDES` depuis le dossier parent ; lien contextuel sur une mesure ponctuelle d'épargne, pas preuve sur le SMIC |
 | `SOURCE-UK-DFE-2024-HARASSMENT-CENSORSHIP` | Dossier `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE`, données descriptives sur les refus de conférenciers et limites de mesure | `REL-INCLUDES` dossier → source |
 | `SOURCE-TADROS-2022-RIGHTS-NOPLATFORMING` | Même dossier, analyse normative des droits et conditions de justification | `REL-INCLUDES` dossier → source |
 | `SOURCE-LIBERAL-DEFENSE-NOPLATFORMING-2024` | Même dossier, argumentation normative en faveur du no-platforming non violent | `REL-INCLUDES` dossier → source |
@@ -84,12 +84,12 @@ Ces sources sont reliées par `REL-INCLUDES` du dossier vers la source.
 ## 3. Bilan des relations et des KPIs
 
 - 36 relations `REL-CITES` ajoutées entre 34 sources distinctes et les études qui les déclarent.
-- 14 relations `REL-INCLUDES` ajoutées entre 14 sources et des dossiers enregistrés.
-- **50 relations nouvelles**, 48 sources supplémentaires couvertes.
-- Le graphe passe de 633 à **683 relations**.
-- Les trois sources restant sans couverture documentaire sont : `SOURCE-FO-POUVOIR-ACHAT-2026` (citation dans un fichier non enregistré), `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026` (aucune contribution précise retrouvée).
+- 15 relations `REL-INCLUDES` ajoutées entre 15 sources et des dossiers enregistrés.
+- **51 relations nouvelles**, 49 sources supplémentaires couvertes.
+- Le graphe passe de 633 à **684 relations**.
+- Les deux sources restant sans couverture documentaire sont `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026` ; aucun usage documentaire précis n'a été retrouvé.
 
-Calcul attendu à partir du périmètre initial : source coverage **217/220 = 98,6 %**. La CI doit confirmer ce résultat et l'absence d'anomalies. Ce taux n'est pas une cible de qualité scientifique ; il décrit uniquement la traçabilité documentaire du registre.
+Calcul attendu à partir du périmètre initial : source coverage **218/220 = 99,1 %**. La CI doit confirmer ce résultat et l'absence d'anomalies. Ce taux n'est pas une cible de qualité scientifique ; il décrit uniquement la traçabilité documentaire du registre.
 
 Les deux autres KPIs ne sont pas modifiés par ces relations :
 - claims avec conclusion documentée : **28/80 = 35,0 %** ;
