@@ -125,4 +125,4 @@ La bonne méthode n'est pas de chercher un vainqueur global, mais d'identifier l
 
 ## Limites de cette version
 
-La matrice qualitative est désormais prolongée par un dossier quantitatif autonome. Celui-ci donne les premiers ordres de grandeur, mais ne constitue pas une harmonisation statistique complète. L'actualisation RTE 2026 et la nouvelle saison ADEME étant encore en cours de publication, les conclusions sur ces versions restent provisoires.
+La matrice qualitative est désormais prolongée par un dossier quantitatif autonome. Celui-ci donne les premiers ordres de grandeur, mais ne constitue pas une harmonisation statistique complète. L'actualisation RTE 2026 est encore en cours de consultation. En revanche, le portail ADEME expose déjà des jeux de données Saison 2 mis à jour le 14 octobre 2026 ; leur contenu doit être extrait avant de conclure sur cette nouvelle version.
