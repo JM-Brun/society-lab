@@ -129,3 +129,17 @@ La documentation Insee indique que les données HVP 2023-2024 sont mises à disp
 Le plan de sondage HVP 2023-2024 combine des ménages réinterrogés issus des vagues précédentes et un échantillon entrant. La collecte s'effectue au niveau du ménage, tandis que le suivi longitudinal est réalisé au niveau des individus. Il faut donc identifier les identifiants longitudinaux et les pondérations adaptées avant de construire des trajectoires ; la simple juxtaposition des ménages de chaque vague ne suffit pas.
 
 **Plan opérationnel :** commencer par vérifier le catalogue Quetelet-Progedo, les fichiers disponibles, dictionnaires, pondérations et règles de chaînage ; établir ensuite une table de correspondance des variables de patrimoine net, âge, cohorte, logement et transferts. Si le niveau de détail des FPR est insuffisant, documenter une demande CASD. En attendant, les tableaux publics permettent de cadrer les hypothèses, mais pas de produire une estimation microéconomique propre.
+
+
+### Repères complémentaires de patrimoine brut moyen à âge fixe (euros 2024)
+
+La figure Insee 2b publie des moyennes par âge exact en 2015, 2021 et 2024. Quelques âges repères :
+
+| Âge de la personne de référence | 2015 | 2024 | Variation réelle 2015-2024 |
+|---:|---:|---:|---:|
+| 25 ans | 140 000 € | 155 500 € | +11,1 % |
+| 30 ans | 182 600 € | 211 300 € | +15,7 % |
+| 35 ans | 244 600 € | 263 700 € | +7,8 % |
+| 38 ans | 278 100 € | 294 700 € | +6,0 % |
+
+Ces évolutions sont calculées à âge identique et en euros 2024, mais elles portent sur le **patrimoine brut moyen**. Elles ne prouvent pas que la cohorte née en 1999 possède un patrimoine supérieur à celle née en 1990 dans des conditions comparables : les ménages observés à chaque âge diffèrent par leur composition, leur statut d'activité, leur structure familiale et leur sélection statistique. La moyenne est en outre sensible aux patrimoines très élevés. Le résultat ne remplace donc pas une comparaison des médianes et déciles de patrimoine net, du taux de propriété, du capital restant dû et de l'accès aux transmissions. Il constitue néanmoins un premier test descriptif à âge fixe et invite à ne pas présupposer une baisse générale du patrimoine moyen des jeunes adultes.
