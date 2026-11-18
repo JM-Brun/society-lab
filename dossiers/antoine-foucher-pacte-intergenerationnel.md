@@ -23,7 +23,12 @@ source_ids:
   - "SOURCE-COUR-COMPTES-INDUSTRIE-TERRITOIRES-2026"
   - "SOURCE-OECD-ECONOMIC-SURVEY-FRANCE-2026"
   - "SOURCE-BANQUE-FRANCE-PRODUCTIVITY-POSTCOVID-2023"
-study_ids: []
+  - "SOURCE-INSEE-LEVEL-BY-AGE-1996-2024"
+  - "SOURCE-INSEE-INTERGEN-TRANSMISSIONS-2024"
+  - "SOURCE-INSEE-PATRIMOINE-NET-ENDETTEMENT-2024"
+  - "SOURCE-INSEE-HVP-ACCESS-2023-2024"
+  - "SOURCE-INSEE-HVP-METHODOLOGY-2023-2024"
+study_ids: ["STUDY-FOUCHER-GENERATIONAL-COMPARISON-2026"]
 claim_ids: []
 hypothesis_ids: []
 concept_ids:
@@ -353,3 +358,27 @@ L'OCDE indique que les dépenses publiques consacrées aux établissements d'ens
 Ces résultats renforcent l'intérêt du diagnostic de Foucher sur les capacités productives, mais empêchent d'en reprendre les formulations les plus générales sans décomposition. La France n'a pas simplement « cessé de produire » : elle a connu des gains de productivité, une transformation des prix relatifs, une baisse de l'emploi industriel et des fragilités sectorielles. De même, les difficultés scolaires ne se résument pas à une insuffisance de crédits.
 
 La question empirique devient donc : quels investissements supplémentaires, dans quels segments, avec quelle gouvernance et quels résultats mesurables permettraient d'améliorer la productivité, les compétences et la résilience productive ?
+
+
+## 16. Comparaison générationnelle à âge identique : premiers résultats
+
+L'étude de référence de d'Albis et Badji (2017), fondée sur un pseudo-panel Budget de famille 1979-2011 et une modélisation âge-période-cohorte, conclut que le niveau de vie augmente fortement avec l'âge entre 25 et 64 ans. La consommation estimée des 50-54 ans est supérieure de 35 % à celle des 25-29 ans. Les auteurs concluent également qu'aucune génération née entre 1901 et 1979 n'a été désavantagée par rapport à ses aînées selon les indicateurs et méthodes retenus. Ce résultat est un contrepoint empirique important à une thèse générale d'inversion du progrès intergénérationnel.
+
+Il ne clôt toutefois pas la question contemporaine : les données s'arrêtent en 2011, les cohortes nées après 1979 ne sont pas observées sur l'ensemble de leur vie adulte et l'étude ne couvre pas de manière exhaustive le patrimoine net, les héritages, les donations, le logement et les services publics. Les restrictions d'identification des modèles âge-période-cohorte doivent être explicitées.
+
+Les tableaux Insee 2026 donnent des niveaux de vie médians par âge en euros 2024 constants pour 1996-2024. En 2024, ils indiquent notamment 25 860 € pour les 18-29 ans, 27 610 € pour les 30-39 ans, 29 590 € pour les 50-64 ans et 27 340 € pour les 65-74 ans. Ce sont des coupes transversales : elles ne comparent pas les cohortes au même âge. L'Insee signale en outre une rénovation de la chaîne ERFS à partir de 2020, qui doit être prise en compte dans les comparaisons temporelles.
+
+Début 2024, le patrimoine brut médian est de 26 100 € pour les ménages dont la personne de référence a moins de 30 ans et de 245 000 € pour ceux de 60 à 69 ans. Cette différence mêle cycle de vie, cohorte, endettement et transmissions. L'enquête Histoire de vie et Patrimoine 2023-2024 documente aussi les actifs, dettes, donations, héritages et aides ; ses tableaux de transmissions doivent être exploités pour compléter la comparaison.
+
+**Conclusion provisoire :** les données examinées ne permettent pas d'affirmer que les générations récentes vivent globalement moins bien que leurs parents au même âge. Le résultat historique disponible va plutôt dans le sens d'une progression, mais il est antérieur aux cohortes et tensions les plus récentes. Les difficultés de logement, de patrimoine net et d'accès aux transmissions restent des dimensions prioritaires à tester séparément. Le protocole et les limites sont détaillés dans [l'étude dédiée](../research/foucher-comparaison-generationnelle.md).
+
+
+## 17. Transmissions, patrimoine net et dette : approfondissement HVP 2023-2024
+
+Les tableaux détaillés de l'Insee publiés le 7 avril 2026 indiquent que 41 % des ménages ont déjà hérité et 20 % ont déjà reçu une donation déclarée. Le patrimoine brut médian est de 306 600 € pour les ménages ayant hérité et de 435 900 € pour ceux ayant reçu une donation, contre 205 100 € pour l'ensemble des ménages. Ces écarts ne mesurent pas l'effet causal des transmissions : les ménages ayant hérité sont plus âgés (60 % ont une personne de référence d'au moins 60 ans, contre 40 % de l'ensemble), et l'accumulation au cours du cycle de vie, l'origine sociale, les revenus et la situation familiale interviennent également.
+
+La distinction brut/net est essentielle : début 2024, le patrimoine brut médian de l'ensemble des ménages atteint 205 100 €, mais le patrimoine net médian est de 148 100 €. L'Insee publie des séries de patrimoine brut moyen par âge pour 2015, 2021 et 2024. À 25 ans, cette moyenne est estimée à 140 000 € en 2015, 159 000 € en 2021 et 155 500 € en 2024, en euros 2024. Cette comparaison à âge identique entre vagues est utile, mais elle ne fournit pas encore les médianes et distributions nettes par cohorte ; les petits effectifs et la composition des ménages doivent être examinés.
+
+L'enquête HVP 2023-2024 compte 11 940 ménages répondants en France hors Mayotte. Elle couvre actifs, dettes, transmissions et éléments biographiques ; les revenus sont appariés aux données fiscales et sociales de 2022. Les résultats agrégés sont déclaratifs et ne sont pas calés sur les masses de la comptabilité nationale. Les définitions de l'Insee (ménage concerné dès qu'un membre a reçu une transmission, champ restreint pour les donations déclarées, valeurs le plus souvent à la date de transmission) sont conservées dans l'étude dédiée.
+
+**Conséquence pour le diagnostic :** les transmissions contribuent probablement à reproduire les inégalités patrimoniales, mais les chiffres agrégés ne permettent pas encore d'isoler leur contribution nette des autres facteurs. Le test décisif reste une comparaison à âge, origine sociale, structure familiale et patrimoine parental comparables, avec patrimoine net, logement et endettement.

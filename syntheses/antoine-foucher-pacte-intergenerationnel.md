@@ -6,7 +6,7 @@ status: "draft"
 last_reviewed: "2026-11-18"
 related_dossiers: ["dossiers/antoine-foucher-pacte-intergenerationnel.md"]
 related_claims: []
-related_studies: []
+related_studies: ["STUDY-FOUCHER-GENERATIONAL-COMPARISON-2026"]
 related_datasets: []
 geographic_scope: ["France", "Europe"]
 temporal_scope: "Long terme historique et période contemporaine jusqu'en 2026"
@@ -163,3 +163,22 @@ La productivité française a connu un décrochage depuis la pandémie, mais la 
 Enfin, les dépenses publiques d'éducation représentaient 4,7 % du PIB en France en 2022, contre 4,3 % en moyenne OCDE, alors que les résultats PISA ont reculé. Cela ne prouve pas que les ressources sont suffisantes, mais oblige à analyser leur répartition et leur efficience plutôt que de conclure à un simple sous-financement global.
 
 **Bilan :** les thèses de Foucher sur l'affaiblissement productif et éducatif méritent une analyse approfondie, mais les indicateurs mobilisés ne valident pas automatiquement les explications qu'il privilégie. Il faut rechercher les mécanismes précis et les investissements qui produisent effectivement des résultats.
+
+
+## 13. Comparaison des générations à âge identique : état des preuves
+
+L'étude de d'Albis et Badji (2017), construite sur les enquêtes Budget de famille 1979-2011, conclut que la consommation augmente fortement avec l'âge entre 25 et 64 ans et qu'aucune cohorte née entre 1901 et 1979 n'a été désavantagée par rapport à ses aînées selon les indicateurs et méthodes retenus. C'est un résultat empirique important qui ne confirme pas une inversion générale du progrès intergénérationnel sur la période étudiée. Il ne permet toutefois pas d'exclure un retournement après 2011 ni une dégradation sur certaines dimensions non couvertes.
+
+Les niveaux de vie médians par âge publiés par l'Insee pour 2024 (en euros constants) sont de 25 860 € pour les 18-29 ans, 27 610 € pour les 30-39 ans, 29 590 € pour les 50-64 ans et 27 340 € pour les 65-74 ans. Ces chiffres sont transversaux, non des trajectoires de cohortes. De même, le patrimoine brut médian de 26 100 € sous 30 ans contre 245 000 € à 60-69 ans début 2024 ne démontre pas un déclassement générationnel : il faut tenir compte du cycle de vie, des dettes et des transmissions.
+
+**Conclusion révisée :** le déclassement générationnel global n'est pas établi par les données actuellement mobilisées. La comparaison doit être poursuivie sur les cohortes postérieures à 1979 et sur le patrimoine net, le logement, l'endettement, les transferts familiaux et les services publics. Le protocole complet est documenté dans [l'étude dédiée](../research/foucher-comparaison-generationnelle.md).
+
+
+
+## 14. Transmissions et patrimoine net : une inégalité documentée, un effet causal non isolé
+
+L'enquête HVP 2023-2024 indique que 41 % des ménages ont déjà hérité et 20 % ont déjà reçu une donation déclarée. Le patrimoine brut médian atteint 306 600 € pour les ménages ayant hérité et 435 900 € pour ceux ayant reçu une donation, contre 205 100 € pour l'ensemble. Mais les ménages ayant hérité sont plus âgés : 60 % ont une personne de référence d'au moins 60 ans, contre 40 % de l'ensemble. Ces écarts ne peuvent donc pas être interprétés comme l'effet causal des héritages ou donations.
+
+Le patrimoine net médian de l'ensemble des ménages (148 100 €) est nettement inférieur au patrimoine brut médian (205 100 €). Les comparaisons intergénérationnelles doivent donc déduire les emprunts et distinguer patrimoine immobilier, financier et professionnel. Une série Insee compare le patrimoine brut moyen à âge identique entre 2015, 2021 et 2024 ; elle constitue un premier repère, mais ne donne pas encore une comparaison complète des distributions de patrimoine net par cohorte.
+
+**Bilan :** les transmissions sont un mécanisme plausible de reproduction des inégalités patrimoniales, mais leur contribution nette reste à mesurer en contrôlant l'âge, l'origine sociale, la structure familiale, les revenus et le patrimoine parental. La conclusion générale sur le déclassement générationnel demeure ouverte.
