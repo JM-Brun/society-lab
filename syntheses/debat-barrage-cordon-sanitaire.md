@@ -62,6 +62,8 @@ Dans quelles conditions faut-il privilégier le débat contradictoire, la réfut
 1. La question est interdisciplinaire : philosophie politique, sociologie, science politique, psychologie sociale et sciences de l'information.
 2. Il faut distinguer idées, discours, acteurs, audiences, accès aux médias, accès au pouvoir et effets sur les institutions.
 3. Belgique : la comparaison Wallonie–Flandre suggère que les réactions des partis traditionnels et des médias participent aux différences de trajectoire, mais l'étude qualitative ne permet pas d'isoler l'effet causal propre du cordon.
+
+   Le contraste doit être interprété avec une précaution supplémentaire : la norme de non-coalition existait aussi en Flandre, sans empêcher la percée du Vlaams Blok. Il est donc erroné d'attribuer la différence régionale au seul cordon politique. L'hypothèse porte sur une combinaison de démarcation politique et médiatique, d'offre partisane, de réseaux militants et de trajectoires historiques ; De Jonge (2021), fondé notamment sur 18 entretiens, ne permet pas d'en isoler les contributions causales.
 4. Allemagne : les études expérimentales récentes ne détectent pas d'effet immédiat robuste des signaux de préservation ou de rupture de la Brandmauer sur plusieurs attitudes. Cela n'établit pas l'absence d'effets institutionnels ou de long terme.
 5. France : les désistements de 2024 ont profondément modifié les configurations de second tour et contribué à empêcher une majorité RN ; cela ne mesure pas une baisse des convictions RN ni une transformation idéologique.
 6. Le barrage institutionnel peut être compatible avec le débat public : on peut réfuter les idées et refuser une coalition.
@@ -76,6 +78,8 @@ Dans quelles conditions faut-il privilégier le débat contradictoire, la réfut
 |---|---|---|---|
 | Wallonie | Cordon politique et médiatique | Environnement moins favorable à la droite radicale | Facteurs historiques et offre politique confondants |
 | Flandre | Médias plus accommodants, non-coalition nationale | Parti radical puissant malgré l'exclusion gouvernementale | Effets distincts des médias et des réseaux à isoler |
+
+Cette comparaison empêche une lecture monocausale : la non-coalition seule n'a pas suffi en Flandre. Le modèle belge francophone doit être traité comme une configuration institutionnelle et médiatique située, non comme une recette dont l'effet causal net serait établi.
 | Allemagne | Brandmauer | Norme institutionnelle, effets expérimentaux d'attitude faibles ou hétérogènes | Court terme, mesures déclaratives |
 | France | Front républicain, désistements | Recomposition des seconds tours et des sièges en 2024 | Contrefactuel et effets idéologiques non établis |
 

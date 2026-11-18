@@ -87,7 +87,7 @@ Les catégories décrivent la fonction observée dans le contenu, pas un nouveau
 
 `syntheses/cordon-sanitaire-belgique-efficacite.md` est une synthèse textuelle complète, mais sans frontmatter YAML conforme au contrat actuellement imposé aux synthèses canoniques. Son contenu porte sur le sous-sujet belge du dossier cordon sanitaire. Le registre relie déjà le dossier canonique `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE` à `syntheses/debat-barrage-cordon-sanitaire.md`.
 
-**Décision proposée :** traiter le fichier comme une synthèse thématique historique/de travail à réconcilier avec la synthèse canonique. Ne pas l'ajouter tel quel au registre : cela créerait une seconde synthèse canonique pour le même dossier, avec un identifiant et un contrat de métadonnées différents. Vérifier les apports uniques, les fusionner si nécessaire dans la synthèse canonique, puis archiver ou supprimer le fichier redondant dans une PR distincte.
+**Décision exécutée dans la PR #144 :** le fichier n'a pas été ajouté au registre. La comparaison a confirmé un fort recouvrement avec la synthèse canonique. Le seul complément de fond retenu — la non-coalition existait aussi en Flandre sans empêcher la percée du Vlaams Blok, ce qui interdit d'attribuer le contraste au seul cordon politique — a été intégré à `syntheses/debat-barrage-cordon-sanitaire.md`. Le fichier dédié est désormais une note d'archive concise pointant vers la synthèse canonique et le dossier spécialisé ; son contenu détaillé reste accessible dans l'historique Git.
 
 ## Doublons et dépendances de preuve à traiter
 
