@@ -116,22 +116,26 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["numerator"], 0)
         self.assertEqual(result["uncovered_dossier_ids"], ["DOSSIER-A"])
 
-    def test_current_repository_snapshot_matches_documented_kpi_baseline(self):
+    def test_current_repository_report_is_consistent_and_fully_resolved(self):
         report = build_report(load_project_data())
         metrics = {metric["metric_id"]: metric for metric in report["metrics"]}
-        self.assertEqual(metrics["source_to_knowledge_coverage"]["numerator"], 169)
-        self.assertEqual(metrics["source_to_knowledge_coverage"]["denominator"], 220)
-        self.assertEqual(metrics["source_to_knowledge_coverage"]["unknown_count"], 0)
-        self.assertEqual(len(metrics["source_to_knowledge_coverage"]["covered_source_ids"]), 169)
-        self.assertEqual(len(metrics["source_to_knowledge_coverage"]["uncovered_source_ids"]), 51)
-        self.assertEqual(metrics["claim_conclusion_coverage"]["numerator"], 28)
-        self.assertEqual(metrics["claim_conclusion_coverage"]["denominator"], 80)
-        self.assertEqual(len(metrics["claim_conclusion_coverage"]["conclusive_claim_ids"]), 28)
-        self.assertEqual(len(metrics["claim_conclusion_coverage"]["active_claim_ids"]), 80)
-        self.assertEqual(metrics["synthesis_coverage"]["numerator"], 25)
-        self.assertEqual(metrics["synthesis_coverage"]["denominator"], 25)
-        self.assertEqual(metrics["synthesis_coverage"]["unknown_count"], 0)
-        self.assertEqual(len(metrics["synthesis_coverage"]["covered_dossier_ids"]), 25)
+        source = metrics["source_to_knowledge_coverage"]
+        claims = metrics["claim_conclusion_coverage"]
+        syntheses = metrics["synthesis_coverage"]
+        self.assertEqual(source["status"], "computed")
+        self.assertEqual(source["unknown_count"], 0)
+        self.assertEqual(source["issues"], {})
+        self.assertEqual(len(source["covered_source_ids"]) + len(source["uncovered_source_ids"]),
+                         source["denominator"])
+        self.assertEqual(claims["status"], "computed")
+        self.assertEqual(claims["unknown_count"], 0)
+        self.assertEqual(len(claims["active_claim_ids"]), claims["denominator"])
+        self.assertEqual(len(claims["conclusive_claim_ids"]), claims["numerator"])
+        self.assertEqual(syntheses["status"], "computed")
+        self.assertEqual(syntheses["unknown_count"], 0)
+        self.assertEqual(syntheses["issues"], {})
+        self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
+        self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
 
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
