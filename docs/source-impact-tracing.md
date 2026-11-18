@@ -1,0 +1,36 @@
+# Traçage d’impact des modifications de sources
+
+Le script `scripts/analysis/trace_knowledge_impact.py` aide à identifier les objets du dépôt à revoir lorsqu'une source canonique change (nouvelle version, erratum, retrait, rétractation ou correction).
+
+## Utilisation
+
+Depuis la racine du dépôt :
+
+```bash
+python scripts/analysis/trace_knowledge_impact.py --source-id SOURCE-EXAMPLE
+python scripts/analysis/trace_knowledge_impact.py --source-id SOURCE-EXAMPLE --format json
+```
+
+Le script retourne les études et jeux de données qui référencent directement la source, les claims qui la référencent directement ou via une étude/un dataset, les hypothèses liées aux études, les dossiers qui référencent ces objets et les synthèses associées dans `syntheses/registry.yml`.
+
+## Règles de propagation
+
+- Seules les références typées explicites sont suivies : `source_ids`, les `source_verifications[*].source_id`, `study_ids`, `dataset_ids`, `supporting_study_ids`, `challenging_study_ids`, `claim_ids`, `hypothesis_ids` et `concept_ids`.
+- Les tags, domaines, cooccurrences et voisinages génériques du graphe ne créent pas de dépendance.
+- Les arêtes incidentes au sous-graphe concerné sont affichées comme contexte, mais ne sont pas parcourues transitivement : une relation documentaire ou une proximité ne suffit pas à établir une dépendance épistémique.
+- Le registre des synthèses relie les dossiers aux chemins et identifiants de synthèse ; ces liens sont restitués sans modifier les documents.
+
+## Interprétation
+
+Le rapport est une **liste de revue**, pas un verdict automatique. Un changement de source peut ne pas affecter un claim si le passage concerné reste inchangé ; inversement, un effet peut exister même si une référence explicite manque. Le script ne réécrit aucun registre, ne change aucun statut et ne déprécie aucune connaissance.
+
+Pour chaque objet listé, le responsable de recherche doit vérifier le localisateur dans la version de source concernée et consigner une décision : inchangé, à recontrôler, corrigé, ou déprécié. Les corrections doivent ensuite être apportées dans les fiches canoniques et les synthèses concernées, puis leurs relations vérifiées.
+
+## Limites actuelles
+
+- Les références implicites dans le texte libre ne sont pas détectées.
+- Les analyses reproductibles, prévisions, débats et pages éditoriales ne sont pas encore intégrés comme types de dépendances autonomes.
+- Les liens dossier → synthèse proviennent du registre de correspondance ; la fraîcheur du contenu est contrôlée séparément par `check_synthesis_freshness.py`.
+- Le script est conçu pour un corpus versionné dans Git ; il ne remplace pas un journal d’événements de source ni un système de notification.
+
+Les tests unitaires utilisent un graphe synthétique pour vérifier la propagation explicite, la présence des synthèses et l’absence de propagation via les domaines.
