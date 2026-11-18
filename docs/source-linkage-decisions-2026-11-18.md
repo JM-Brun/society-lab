@@ -20,7 +20,7 @@
 | `SOURCE-OECD-PIAAC-DATA-METHODOLOGY-2023` | `source_ids` de `STUDY-PIAAC-2023-FRANCE-COMPETENCES` et dataset associé | `REL-CITES` étude → source |
 | `SOURCE-INSEE-PANEL-TOUS-SALARIES-METADATA-2026` | `source_ids` de `STUDY-CEREQ-GENERATION-2021-BTS-MATCHING` et `STUDY-INSEE-PANEL-TOUS-SALARIES-TRAJECTORIES` | Deux relations `REL-CITES`, une par étude |
 
-**Résultat :** 12 des 13 sources acquièrent une relation justifiée. La source FO reste volontairement non reliée jusqu'à résolution de la question du document non enregistré.
+**Résultat :** les 13 sources acquièrent une relation justifiée. Pour FO, le lien passe par le dossier parent explicitement déclaré dans le fichier de travail ; le fichier de travail lui-même n'est pas transformé en nœud du graphe.
 
 ## 2. Décisions sur les 38 sources `REL-ABOUT` uniquement
 
