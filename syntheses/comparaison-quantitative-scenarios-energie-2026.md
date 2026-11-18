@@ -19,7 +19,7 @@ Les données déjà extraites montrent une plage ADEME d'environ 790 à 1 287 TW
 
 Question : que peut-on comparer quantitativement entre PREF, RTE, ADEME, négaWatt et SNBC 3 sans confondre énergie finale totale, consommation électrique, énergie primaire et conventions de comptabilité ?
 
-Périmètre : publications disponibles au 18 novembre 2026 ; horizon principal 2050. Les données ADEME sont celles de la saison 1 mise à jour en 2024. Les nouvelles publications RTE et ADEME engagées en 2026 ne sont pas encore considérées comme des résultats finaux dans cette comparaison.
+Périmètre : publications disponibles au 18 novembre 2026 ; horizon principal 2050. Les chiffres quantitatifs repris dans les tableaux ci-dessous sont ceux de la saison 1 ADEME mise à jour en 2024. Toutefois, le portail open data ADEME expose désormais des jeux explicitement tagués « Saison 2 », mis à jour le 14 octobre 2026 ; ils n'ont pas encore été extraits et harmonisés dans cette version. La comparaison chiffrée doit donc être considérée comme provisoire et non comme le dernier état de la prospective ADEME.
 
 ## 3. Principaux constats
 
@@ -40,10 +40,10 @@ La forte sobriété du scénario ADEME S1 et de négaWatt peut être confrontée
 
 ## 6. Incertitudes et limites
 
-Les valeurs ADEME sont approximatives et les totaux par secteur et par vecteur ne coïncident pas, notamment en raison des usages non énergétiques et des puits technologiques. Les chiffres négaWatt sont issus d'un bilan avec conventions PCS et un périmètre particulier. La SNBC 3 présente deux périmètres de consommation finale ; une ambiguïté de rédaction apparaît dans l'association des pourcentages de réduction aux valeurs de ces périmètres. Le document source de juin 2026 est le projet publié avant adoption. Les chiffres RTE sont issus de l'étude 2021-2022 et devront être actualisés par les résultats de la reconduction 2026. Le volet quantitatif du PREF reste à approfondir.
+Les valeurs ADEME de Saison 1 sont approximatives et les totaux par secteur et par vecteur ne coïncident pas, notamment en raison des usages non énergétiques et des puits technologiques. Les jeux de données Saison 2 sont disponibles dans le catalogue depuis octobre 2026, mais leurs enregistrements doivent être récupérés et documentés avant toute mise à jour des chiffres comparatifs. Les chiffres négaWatt sont issus d'un bilan avec conventions PCS et un périmètre particulier. La SNBC 3 présente deux périmètres de consommation finale ; une ambiguïté de rédaction apparaît dans l'association des pourcentages de réduction aux valeurs de ces périmètres. Le document source de juin 2026 est le projet publié avant adoption. Les chiffres RTE sont issus de l'étude 2021-2022 et devront être actualisés par les résultats de la reconduction 2026. Le volet quantitatif du PREF reste à approfondir.
 
 ## 7. Conclusion raisonnée
 
 Le résultat robuste à ce stade n'est pas un classement des scénarios, mais la mise en évidence de trois objets à comparer séparément : demande énergétique finale, demande d'électricité et besoins de transformation/ressources. L'énergie finale peut baisser tandis que l'électricité augmente ; les choix d'hydrogène déplacent des consommations vers l'amont ; et les conventions de périmètre peuvent expliquer une partie substantielle des écarts apparents.
 
-La prochaine étape consiste à exploiter les fichiers open data ADEME et RTE, puis à extraire les tableaux PREF et SNBC 3 dans une matrice de données normalisée, en conservant systématiquement les données originales et les métadonnées de périmètre.
+La prochaine étape prioritaire consiste à récupérer les jeux ADEME Saison 2 déjà publiés, puis à extraire les données RTE et les tableaux PREF dans une matrice normalisée, en conservant systématiquement les données originales et les métadonnées de périmètre.
