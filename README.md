@@ -51,8 +51,8 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 - [Éducation](knowledge/domains/education.md) — page thématique reliant les connaissances, sources, études, données, affirmations, hypothèses et priorités de recherche.
 - [Sécurité, justice et libertés](knowledge/domains/security.md) — page thématique sur les politiques de sécurité, l'exécution des peines, l'efficacité pénale et les libertés.
-- [Économie, emploi et productivité](knowledge/domains/economy.md)
-- [Énergie et ressources](knowledge/domains/energy.md) — page thématique sur les salaires, le marché du travail, les entreprises et la productivité.
+- [Économie, emploi et productivité](knowledge/domains/economy.md) — page thématique sur les salaires, le marché du travail, les entreprises et la productivité.
+- [Énergie et ressources](knowledge/domains/energy.md) — page thématique sur les systèmes énergétiques, les ressources, les infrastructures et les dépendances.
 - [Travaux d'intérêt général : efficacité pénale, coûts et freins au déploiement en France](dossiers/tig-peines-alternatives-incarceration.md) — dossier de recherche sur le recours au TIG en France, les comparaisons européennes, la récidive, la dissuasion et les conditions d'exécution ; voir aussi la [synthèse TIG](syntheses/tig-france.md).
 - [Augmenter le SMIC en France : pouvoir d'achat, emploi, salaires et finances publiques](dossiers/smic-france-tradeoffs.md) — dossier contradictoire sur le salaire minimum, son indexation, ses effets économiques et ses interactions socio-fiscales ; [revue des travaux économiques](dossiers/smic-economists-literature-review.md), [synthèse quantitative des résultats](dossiers/smic-quantitative-evidence.md), [positions des partenaires sociaux](dossiers/smic-social-partners-evidence.md) et [synthèse générale du sujet](syntheses/smic-france.md).
 - [Parcoursup et l'égalité des chances dans le système éducatif français](dossiers/parcoursup-education-equity.md) — dossier pilote en cours, avec registres de preuves et protocole quantitatif ; voir aussi la [synthèse Parcoursup](syntheses/parcoursup-education.md).
