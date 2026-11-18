@@ -1,7 +1,7 @@
 # Éducation — thème de recherche
 
 > **Périmètre :** système éducatif, formation des compétences, orientation, enseignement supérieur, recherche et égalité des chances.  
-> **État au 13 novembre 2026 :** base documentaire initiale structurée ; revue des preuves et analyses empiriques encore incomplètes.
+> **État au 18 novembre 2026 :** base documentaire initiale structurée ; revue des preuves et analyses empiriques encore incomplètes.
 
 Cette page est le point d'entrée thématique du domaine `DOMAIN-EDUCATION`. Elle rassemble les objets du dépôt, explicite les relations principales et identifie les lacunes à combler. Elle ne constitue pas une synthèse de résultats validés.
 
