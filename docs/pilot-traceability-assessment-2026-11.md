@@ -34,7 +34,7 @@ L'examen des schémas `source`, `study`, `dataset` et `claim`, du protocole d'in
 
 ### État observé
 
-La claim est explicitement interprétative et `under_review`. Elle mentionne une étude qualitative et ses limites, dont l'impossibilité d'isoler l'effet causal propre du cordon. Elle ne contient toutefois pas de `source_verifications` ni de localisateur vers les passages, pages ou éléments d'entretien soutenant les propositions.
+La claim est explicitement interprétative et `under_review`. Elle mentionne une étude qualitative et ses limites, dont l'impossibilité d'isoler l'effet causal propre du cordon. Une première série de `source_verifications` a été ajoutée après consultation de la version de référence : méthode (p. 599), interprétation comparative (pp. 599–600 et 607–614) et explications concurrentes (pp. 601–606). Ces localisateurs vérifient l'argument publié par l'autrice ; ils ne constituent pas une vérification indépendante des entretiens, dont les matériaux ne sont pas publiquement reproduits dans l'article.
 
 Le dossier rapporte que l'étude de De Jonge (2021) mobilise une comparaison qualitative, des sources historiques et secondaires et 18 entretiens semi-directifs. Le dossier distingue aussi les facteurs concurrents (histoire, offre partisane, réseaux militants, clivages sociaux). Ces éléments sont un bon test de séparation entre :
 - ce que l'autrice rapporte ;
@@ -55,7 +55,7 @@ Pour chaque proposition structurante, consigner séparément :
 
 **Critère de réussite :** un lecteur peut remonter d'une phrase de synthèse à la proposition de la claim, puis à la page/section de l'article, en distinguant résultat rapporté et interprétation éditoriale.
 
-**Limite actuelle :** les localisateurs ne sont pas présents dans la claim consultée. Ne pas les inventer ni promouvoir la claim au statut `supported` sur la seule base du résumé actuel.
+**Limite actuelle :** les passages de l'article sont maintenant localisés et contrôlés, mais les entretiens sous-jacents ne sont pas accessibles pour une vérification indépendante. Le statut `under_review` est maintenu ; ne pas le promouvoir à `supported` sur la seule base de cette étude qualitative.
 
 ## 3. Pilote quantitatif : décomposition historique du SMIC, 1970–1993
 
@@ -105,7 +105,7 @@ Le schéma de claim actuel couvre déjà une partie importante des besoins quant
 ## 5. Plan d'exécution révisé
 
 1. **Anomalie 1978 résolue :** les tableaux 2 et 3 donnent tous deux 10,85 F ; conserver le localisateur visuel et la trace de l'erreur OCR. La confrontation INSEE reste utile comme contrôle externe, mais n'est plus nécessaire pour arbitrer entre ces deux tableaux.
-2. **Compléter le pilote qualitatif** en retrouvant les localisateurs de l'article de De Jonge et en attribuant correctement les voix.
+2. **Pilote qualitatif partiellement complété :** localisateurs et premières extractions contrôlés dans l'article de De Jonge ; reste à vérifier la granularité des passages de la section médias, l'appendice d'entretiens et l'attribution précise des citations/voix avant d'élargir la claim.
 3. **Renseigner les vérifications existantes** dans les claims pilotes uniquement après contrôle des documents originaux.
 4. **Évaluer les champs de provenance source** et les conditions d'obligation selon les types de sources.
 5. **Tester les validateurs** sur des exemples positifs et négatifs : localisateur absent, valeur sans unité, période incohérente, extraction IA non vérifiée, source inconnue.
