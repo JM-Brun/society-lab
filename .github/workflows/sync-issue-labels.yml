@@ -1,0 +1,42 @@
+name: Synchronize canonical issue labels
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Créer/mettre à jour les labels GitHub (sinon dry-run)"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: canonical-issue-label-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Dry-run — report drift
+        if: ${{ !inputs.apply }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/validate/sync_issue_labels.py
+      - name: Apply canonical metadata (explicit opt-in)
+        if: ${{ inputs.apply }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          ALLOW_LABEL_SYNC: "true"
+        run: python scripts/validate/sync_issue_labels.py --apply
