@@ -149,16 +149,89 @@ def calculate_claim_conclusion_coverage(claims):
         "definition_version": 1,
     }
 
+
+def calculate_synthesis_coverage(dossiers, entries, root: Path):
+    """Measure active dossier coverage; shared synthesis files are intentional."""
+    active_statuses = {"scoping", "researching", "draft", "under_review", "published"}
+    active = [d for d in dossiers if isinstance(d, dict) and d.get("status") != "archived"]
+    dossier_ids = {d.get("id") for d in active if isinstance(d.get("id"), str)}
+    by_dossier = {}
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        by_dossier.setdefault(entry.get("dossier_id"), []).append(entry)
+
+    covered, uncovered, issues = set(), [], {}
+    def issue(key, value):
+        issues.setdefault(key, []).append(value)
+
+    for dossier in active:
+        dossier_id = dossier.get("id", "<missing dossier id>")
+        status = dossier.get("status")
+        if status not in active_statuses:
+            issue("unknown_dossier_status", str(dossier_id))
+        matches = by_dossier.get(dossier_id, [])
+        if len(matches) != 1:
+            uncovered.append(str(dossier_id))
+            issue("missing_or_duplicate_mapping", str(dossier_id))
+            continue
+        entry = matches[0]
+        dossier_path = entry.get("dossier_path")
+        synthesis_path = entry.get("synthesis_path")
+        synthesis_id = entry.get("synthesis_id")
+        if not isinstance(dossier_path, str) or not (root / dossier_path).is_file():
+            uncovered.append(str(dossier_id))
+            issue("missing_dossier_file", str(dossier_id))
+            continue
+        if not isinstance(synthesis_id, str) or not synthesis_id:
+            uncovered.append(str(dossier_id))
+            issue("missing_synthesis_id", str(dossier_id))
+            continue
+        if not isinstance(synthesis_path, str) or not (root / synthesis_path).is_file():
+            uncovered.append(str(dossier_id))
+            issue("missing_synthesis_file", str(dossier_id))
+            continue
+        covered.add(dossier_id)
+
+    unknown_mappings = sorted(
+        str(entry.get("dossier_id")) for entry in entries
+        if isinstance(entry, dict) and entry.get("dossier_id") not in dossier_ids
+    )
+    if unknown_mappings:
+        issue("mapping_without_active_dossier", unknown_mappings)
+
+    denominator, numerator = len(active), len(covered)
+    unique_paths = {e.get("synthesis_path") for e in entries
+                    if isinstance(e, dict) and isinstance(e.get("synthesis_path"), str)}
+    return {
+        "metric_id": "synthesis_coverage",
+        "status": "computed" if denominator else "not_computable",
+        "numerator": numerator if denominator else None,
+        "denominator": denominator if denominator else None,
+        "value": 100 * numerator / denominator if denominator else None,
+        "unit": "%",
+        "scope": "Dossiers non archivés ; synthèse comptée si l'association est unique et les deux fichiers existent.",
+        "excluded_count": len(dossiers) - denominator,
+        "unknown_count": sum(len(v) for v in issues.values()),
+        "issues": issues,
+        "uncovered_dossier_ids": sorted(set(uncovered)),
+        "unique_synthesis_count": len(unique_paths),
+        "definition_version": 1,
+    }
+
 def build_report(data):
     known, duplicate_nodes = build_known_ids(data)
     source = calculate_source_coverage(data["registries"]["sources"], data["relations"], known)
     if duplicate_nodes:
         source["issues"]["duplicate_node_ids"] = sorted(duplicate_nodes)
         source["unknown_count"] += len(duplicate_nodes)
+    synthesis = calculate_synthesis_coverage(
+        data["registries"]["dossiers"], data["synthesis_entries"], ROOT
+    )
     return {
         "definition_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "metrics": [source, calculate_claim_conclusion_coverage(data["registries"]["claims"])],
+        "metrics": [source, calculate_claim_conclusion_coverage(data["registries"]["claims"]), synthesis],
         "diagnostics": {"known_node_count": len(known), "relation_count": len(data["relations"]),
                         "duplicate_node_ids": sorted(duplicate_nodes)},
     }
@@ -176,9 +249,13 @@ def render_markdown(report):
         if "uncovered_source_ids" in metric:
             lines.append(f"Sources sans relation retenue ({len(metric['uncovered_source_ids'])}) :")
             lines.extend(f"- {item}" for item in metric["uncovered_source_ids"])
-        else:
+        elif "status_counts" in metric:
             lines.append(f"Claims exclus (superseded) : {metric['excluded_count']}")
             lines.append(f"Statuts : {json.dumps(metric['status_counts'], ensure_ascii=False, sort_keys=True)}")
+        else:
+            lines.append(f"Dossiers sans synthèse valide ({len(metric['uncovered_dossier_ids'])}) :")
+            lines.extend(f"- {item}" for item in metric["uncovered_dossier_ids"])
+            lines.append(f"Fichiers de synthèse distincts : {metric['unique_synthesis_count']}")
         lines.append(f"Anomalies : {json.dumps(metric['issues'], ensure_ascii=False, sort_keys=True)}")
     lines.extend(["", f"Relations : {report['diagnostics']['relation_count']} ; "
                   f"nœuds indexés : {report['diagnostics']['known_node_count']}."])
