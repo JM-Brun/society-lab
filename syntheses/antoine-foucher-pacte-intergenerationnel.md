@@ -173,3 +173,12 @@ Les niveaux de vie médians par âge publiés par l'Insee pour 2024 (en euros co
 
 **Conclusion révisée :** le déclassement générationnel global n'est pas établi par les données actuellement mobilisées. La comparaison doit être poursuivie sur les cohortes postérieures à 1979 et sur le patrimoine net, le logement, l'endettement, les transferts familiaux et les services publics. Le protocole complet est documenté dans [l'étude dédiée](../research/foucher-comparaison-generationnelle.md).
 
+
+
+## 14. Transmissions et patrimoine net : une inégalité documentée, un effet causal non isolé
+
+L'enquête HVP 2023-2024 indique que 41 % des ménages ont déjà hérité et 20 % ont déjà reçu une donation déclarée. Le patrimoine brut médian atteint 306 600 € pour les ménages ayant hérité et 435 900 € pour ceux ayant reçu une donation, contre 205 100 € pour l'ensemble. Mais les ménages ayant hérité sont plus âgés : 60 % ont une personne de référence d'au moins 60 ans, contre 40 % de l'ensemble. Ces écarts ne peuvent donc pas être interprétés comme l'effet causal des héritages ou donations.
+
+Le patrimoine net médian de l'ensemble des ménages (148 100 €) est nettement inférieur au patrimoine brut médian (205 100 €). Les comparaisons intergénérationnelles doivent donc déduire les emprunts et distinguer patrimoine immobilier, financier et professionnel. Une série Insee compare le patrimoine brut moyen à âge identique entre 2015, 2021 et 2024 ; elle constitue un premier repère, mais ne donne pas encore une comparaison complète des distributions de patrimoine net par cohorte.
+
+**Bilan :** les transmissions sont un mécanisme plausible de reproduction des inégalités patrimoniales, mais leur contribution nette reste à mesurer en contrôlant l'âge, l'origine sociale, la structure familiale, les revenus et le patrimoine parental. La conclusion générale sur le déclassement générationnel demeure ouverte.
