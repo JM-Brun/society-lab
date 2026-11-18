@@ -173,7 +173,7 @@ def main():
         lines.extend(["", f"Python {report['python']} · {args.repeats} répétitions.",
                       "", report["scope"], "", report["note"]])
         with open(summary_path, "a", encoding="utf-8") as summary:
-            summary.write("\\n".join(lines) + "\\n")
+            summary.write("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":
