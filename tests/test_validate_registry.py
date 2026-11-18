@@ -191,10 +191,10 @@ class ClaimExtractionSchemaTests(unittest.TestCase):
         new_bachelors = claims["CLAIM-PARCOURSUP-2026-NEW-BACHELORS-OFFER"]
         extraction = new_bachelors["source_verifications"][0]["extraction"]
         self.assertEqual(extraction["value"], 93.7)
-        self.assertIn("néo-bacheliers", extraction["population"])
+        self.assertIn("néo-bacheliers", extraction["population"].casefold())
 
         lyceens = claims["CLAIM-PARCOURSUP-2026-LYCEENS-OFFER"]
-        self.assertIn("Lycéens", lyceens["scope"]["population"])
+        self.assertIn("lycéens", lyceens["scope"]["population"].casefold())
         self.assertTrue(any("91,4 %" in limitation and "91,5 %" in limitation
                             for limitation in lyceens["limitations"]))
         self.assertEqual(lyceens["status"], "under_review")
