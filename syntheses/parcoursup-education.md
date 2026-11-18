@@ -3,7 +3,7 @@ id: "SYNTHESIS-EDUCATION-PARCOURSUP-EQUITY"
 title: "Parcoursup et l'égalité des chances dans le système éducatif français"
 domain: "education"
 status: "provisional"
-last_reviewed: "2026-11-14"
+last_reviewed: "2026-11-18"
 related_dossiers:
   - "dossiers/parcoursup-education-equity.md"
 geographic_scope: ["France", "comparaisons UE et OCDE à développer"]
@@ -109,3 +109,10 @@ Ces propositions restent des hypothèses de recherche, pas des conclusions causa
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Première synthèse de cadrage ; aucun résultat quantitatif non exécuté n'est présenté comme acquis. |
+
+
+## Liens avec les autres domaines
+
+La chaîne éducative se prolonge au-delà de l'admission : conditions matérielles d'études, réussite, diplomation, insertion, qualité de l'emploi et trajectoires salariales. Le rapprochement avec les dossiers SMIC et Antoine Foucher permet de formuler des questions sur les compétences, la mobilité et la transmission intergénérationnelle, mais les indicateurs actuels d'admission ne suffisent pas à établir ces effets.
+
+La transition énergétique pose une autre question transversale : les formations et reconversions disponibles correspondent-elles aux besoins sectoriels et territoriaux des trajectoires étudiées ? Voir l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md). Ces questions ne sont pas des conclusions sur l'effet propre de Parcoursup.
