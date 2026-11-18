@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "purpose": "Canonical vocabulary for GitHub issue labels in Society Lab. This file governs meanings and usage; GitHub remains the operational store.",
+  "axes": {
+    "scope": {"internal": {"color":"ededed","description":"Travail interne du dépôt : recherche, maintenance, documentation, données ou gouvernance.","rule":"Apply to repository work. It does not mean that scientific content is confidential."}},
+    "governance": {"meta": {"color":"ededed","description":"Gouvernance, architecture, méthode, qualité transversale, taxonomie, audit ou coordination.","rule":"Use only when the issue pilots or changes shared project processes; importance alone is insufficient."}},
+    "priority": {
+      "priority:high":{"color":"b60205","description":"Bloquant ou structurant : dépendances majeures, socle commun ou échéance proche.","rule":"Use sparingly and record the dependency, risk or deadline in the issue."},
+      "priority:medium":{"color":"fbca04","description":"Important, mais réalisable selon les dépendances et capacités disponibles.","rule":"Default only after explicit triage; do not infer it automatically."},
+      "priority:low":{"color":"0e8a16","description":"Amélioration utile non bloquante, sans échéance ni dépendance immédiate.","rule":"Use when delay has limited impact."}
+    },
+    "nature": {
+      "research":{"color":"1d76db","description":"Recherche, revue de littérature, analyse ou évaluation."},
+      "data":{"color":"0052cc","description":"Données, indicateurs, jeux de données, calculs ou traitements."},
+      "documentation":{"color":"0075ca","description":"Documentation, guides, synthèses ou clarification éditoriale."},
+      "enhancement":{"color":"a2eeef","description":"Amélioration ou nouvelle capacité du projet."},
+      "knowledge-graph":{"color":"5319e7","description":"Concepts, relations, ontologie ou graphe de connaissances."}
+    }
+  },
+  "policy":{"required_for_open_internal_issues":["internal"],"exactly_one_priority":true,"meta_requires_human_review":true,"priority_requires_human_triage":true,"preserve_unlisted_existing_labels":true,"never_auto_close_or_reprioritize":true}
+}
