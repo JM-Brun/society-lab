@@ -40,7 +40,7 @@ issues:
   - issue: 29
     kind: research
     dossier_ids: [DOSSIER-SMIC-FRANCE-TRADEOFFS]
-    depends_on: [25, 26, 27]
+    depends_on: []
   - issue: 36
     kind: research
     dossier_ids: [DOSSIER-SMIC-HISTORICAL-EPISODES]
@@ -48,7 +48,7 @@ issues:
   - issue: 82
     kind: research
     dossier_ids: [DOSSIER-SMIC-FRANCE-TRADEOFFS]
-    depends_on: [25, 26, 27, 28, 29, 36, 84]
+    depends_on: [25, 26, 27, 28, 29, 36]
   - issue: 83
     kind: research
     dossier_ids: [DOSSIER-SMIC-HISTORICAL-EPISODES, DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX]
@@ -80,7 +80,7 @@ issues:
   - issue: 112
     kind: meta
     dossier_ids: []
-    depends_on: [114, 120]
+    depends_on: []
   - issue: 114
     kind: meta
     dossier_ids: []
@@ -88,7 +88,7 @@ issues:
   - issue: 120
     kind: meta
     dossier_ids: []
-    depends_on: [114]
+    depends_on: []
   - issue: 123
     kind: meta
     dossier_ids: []
