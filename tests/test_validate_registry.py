@@ -182,5 +182,43 @@ class ClaimExtractionSchemaTests(unittest.TestCase):
     def test_rejects_invalid_artifact_hash(self):
         self.claim["source_verifications"][0]["extraction"]["artifact_sha256"] = "not-a-sha256"
         self.assertTrue(list(self.validator.iter_errors(self.claim)))
+
+    def test_real_pilot_claims_preserve_population_and_reported_values(self):
+        root = Path(__file__).resolve().parents[1]
+        registry = yaml.safe_load((root / "claims" / "registry.yml").read_text(encoding="utf-8"))
+        claims = {claim["id"]: claim for claim in registry["claims"]}
+
+        new_bachelors = claims["CLAIM-PARCOURSUP-2026-NEW-BACHELORS-OFFER"]
+        extraction = new_bachelors["source_verifications"][0]["extraction"]
+        self.assertEqual(extraction["value"], 93.7)
+        self.assertIn("néo-bacheliers", extraction["population"])
+
+        lyceens = claims["CLAIM-PARCOURSUP-2026-LYCEENS-OFFER"]
+        self.assertIn("Lycéens", lyceens["scope"]["population"])
+        self.assertTrue(any("91,4 %" in limitation and "91,5 %" in limitation
+                            for limitation in lyceens["limitations"]))
+        self.assertEqual(lyceens["status"], "under_review")
+
+        tig = claims["CLAIM-TIG-EXECUTION-DELAY-2025"]
+        tig_extraction = tig["source_verifications"][0]["extraction"]
+        self.assertEqual(tig_extraction["value"], 16.7)
+        self.assertEqual(tig_extraction["unit"], "mois")
+        self.assertIn("exécutés dans les trois ans", tig_extraction["population"])
+        self.assertIn("effectif non indiqué", tig_extraction["denominator"])
+        self.assertEqual(tig["status"], "under_review")
+
+    def test_extraction_content_is_bounded_and_rejects_unknown_fields(self):
+        extraction = self.claim["source_verifications"][0]["extraction"]
+        extraction["extracted_content"] = "x" * 501
+        self.assertTrue(list(self.validator.iter_errors(self.claim)))
+
+        extraction.pop("extracted_content")
+        extraction["invented_confidence_score"] = 0.99
+        self.assertTrue(list(self.validator.iter_errors(self.claim)))
+
+    def test_unknown_denominator_can_be_explicit_without_fabricating_count(self):
+        extraction = self.claim["source_verifications"][0]["extraction"]
+        extraction["denominator"] = "Effectif exact non publié dans le tableau consulté."
+        self.assertEqual(list(self.validator.iter_errors(self.claim)), [])
 if __name__ == "__main__":
     unittest.main()
