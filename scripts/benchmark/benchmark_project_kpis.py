@@ -53,7 +53,9 @@ def scaled_snapshot(base, multiplier):
                 clone = dict(record)
                 identifier = record.get("id")
                 if isinstance(identifier, str):
-                    clone["id"] = f"{identifier}__BENCH_{copy_index}"
+                    new_id = f"{identifier}__BENCH_{copy_index}"
+                    id_map[(copy_index, identifier)] = new_id
+                    clone["id"] = new_id
                 target.append(clone)
 
     relations = []
