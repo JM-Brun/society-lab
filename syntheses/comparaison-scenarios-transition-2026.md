@@ -7,6 +7,7 @@ confidence: "moderate"
 last_reviewed: "2026-11-18"
 related_dossiers:
   - "dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md"
+  - "dossiers/comparaison-quantitative-scenarios-energie-2026.md"
 ---
 
 ## 1. Synthèse exécutive
@@ -17,7 +18,7 @@ Le PREF, RTE, l'ADEME, négaWatt et la SNBC 3 sont complémentaires, mais ne ré
 
 Question : quelles différences de méthode, de périmètre et de priorités distinguent ces cinq travaux, et quelles comparaisons sont pertinentes ?
 
-Périmètre : publications disponibles au 18 novembre 2026. RTE 2026 est encore en consultation et l'ADEME prépare une nouvelle saison de scénarios annoncée pour fin 2026.
+Périmètre : publications disponibles au 18 novembre 2026. RTE 2026 est encore en consultation. Le portail open data ADEME expose désormais plusieurs jeux explicitement tagués « Saison 2 », mis à jour le 14 octobre 2026 ; leur contenu quantitatif doit encore être ingéré et comparé aux séries de la Saison 1.
 
 ## 3. Principaux constats
 
@@ -29,7 +30,7 @@ Périmètre : publications disponibles au 18 novembre 2026. RTE 2026 est encore 
 
 ## 4. Ce que montrent les preuves
 
-Les documents officiels confirment des différences de périmètre et de méthode. RTE a lancé en 2025 l'actualisation de ses Futurs énergétiques 2050, avec une consultation publique en avril 2026 et une publication des résultats actualisés annoncée pour fin 2026. L'ADEME présente quatre scénarios de neutralité carbone, mis à jour en 2024, et annonce une saison 2 en 2026. Le scénario négaWatt 2022 construit une trajectoire à partir des flux de demande et des ressources mobilisables. La SNBC 3 a été adoptée en juillet 2026.
+Les documents officiels confirment des différences de périmètre et de méthode. RTE a lancé en 2025 l'actualisation de ses Futurs énergétiques 2050, avec une consultation publique en avril 2026 et une publication des résultats actualisés annoncée pour fin 2026. L'ADEME a publié une première saison de quatre scénarios mise à jour en 2024 ; son portail open data expose désormais des jeux Saison 2 mis à jour en octobre 2026, notamment sur l'énergie, l'électricité, les émissions, les importations fossiles et les puits de carbone. Le scénario négaWatt 2022 construit une trajectoire à partir des flux de demande et des ressources mobilisables. La SNBC 3 a été adoptée en juillet 2026.
 
 ## 5. Débat contradictoire
 
@@ -37,9 +38,9 @@ La comparaison ne doit pas chercher un vainqueur global. Les scénarios reposent
 
 ## 6. Incertitudes et limites
 
-Cette première matrice est qualitative. Elle n'harmonise pas encore les données chiffrées, les hypothèses macroéconomiques, les coûts, les ressources et les besoins d'emploi. Les publications RTE et ADEME attendues fin 2026 pourront modifier la comparaison.
+La matrice qualitative est désormais complétée par un premier volet quantitatif distinct. Celui-ci donne des ordres de grandeur, mais ne constitue pas encore une harmonisation complète : les périmètres ADEME, négaWatt et SNBC 3 diffèrent, et les valeurs RTE portent sur l'électricité. Les séries ADEME Saison 2 déjà présentes dans l'open data et les résultats actualisés de RTE modifieront potentiellement la comparaison ; leur ingestion et leur harmonisation constituent un chantier distinct.
 
 ## 7. Conclusion raisonnée
 
-La confrontation des cinq travaux doit identifier les convergences robustes, les divergences d'hypothèses, les arbitrages de société et les points incertains. La prochaine étape est une comparaison quantitative harmonisée, avec un registre explicite des définitions, années, périmètres et sources.
+La confrontation des cinq travaux doit identifier les convergences robustes, les divergences d'hypothèses, les arbitrages de société et les points incertains. Le dossier quantitatif associé fournit un premier rapprochement et explicite les écarts de périmètre. La suite consiste à exploiter les fichiers open data et à harmoniser les définitions, années, secteurs et vecteurs avant de comparer les coûts, ressources et emplois.
 
