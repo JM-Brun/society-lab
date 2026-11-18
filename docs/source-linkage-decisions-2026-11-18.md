@@ -89,7 +89,7 @@ Ces sources sont reliées par `REL-INCLUDES` du dossier vers la source.
 - Le graphe passe de 633 à **684 relations**.
 - Les deux sources restant sans couverture documentaire sont `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026` ; aucun usage documentaire précis n'a été retrouvé.
 
-Calcul attendu à partir du périmètre initial : source coverage **218/220 = 99,1 %**. La CI doit confirmer ce résultat et l'absence d'anomalies. Ce taux n'est pas une cible de qualité scientifique ; il décrit uniquement la traçabilité documentaire du registre.
+La CI de la PR #158 a confirmé source coverage **218/220 = 99,1 %**, claims **28/80 = 35,0 %** et synthèses **25/25 = 100 %**. Aucun endpoint inconnu ni relation invalide n'a été signalé. Ce taux n'est pas une cible de qualité scientifique ; il décrit uniquement la traçabilité documentaire du registre. Run : [44378799392](https://github.com/JM-Brun/society-lab/actions/runs/44378799392).
 
 Les deux autres KPIs ne sont pas modifiés par ces relations :
 - claims avec conclusion documentée : **28/80 = 35,0 %** ;
