@@ -9,7 +9,17 @@ Depuis la racine du dépôt :
 ```bash
 python scripts/analysis/trace_knowledge_impact.py --source-id SOURCE-EXAMPLE
 python scripts/analysis/trace_knowledge_impact.py --source-id SOURCE-EXAMPLE --format json
+
+# Pilote TIG : rapport Cour des comptes 2025
+python scripts/analysis/trace_knowledge_impact.py \
+  --source-id SOURCE-COUR-DES-COMPTES-PEINES-ALTERNATIVES-2025
+
+# Pilote Parcoursup : bilan ministériel 2026
+python scripts/analysis/trace_knowledge_impact.py \
+  --source-id SOURCE-PARCOURSUP-BILAN-2026
 ```
+
+Le test d'intégration du pilote TIG vérifie dans les registres réels que la source Cour des comptes rejoint notamment le claim `CLAIM-TIG-EXECUTION-DELAY-2025`, le dossier TIG et sa synthèse `syntheses/tig-france.md`. Ce test complète les tests unitaires synthétiques : il vérifie un chemin réellement présent, mais ne démontre pas l'exhaustivité de toutes les dépendances du dépôt.
 
 Le script retourne les études et jeux de données qui référencent directement la source, les claims qui la référencent directement ou via une étude/un dataset, les hypothèses liées aux études, les dossiers qui référencent ces objets et les synthèses associées dans `syntheses/registry.yml`.
 
