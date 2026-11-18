@@ -198,7 +198,8 @@ def inspect_source_file(path: Path) -> dict:
     return {
         "file_size_bytes": path.stat().st_size,
         "sha256": digest.hexdigest(),
-        "encoding": "utf-8-sig",
+        "decoder": "utf-8-sig",
+        "utf8_bom": path.read_bytes().startswith(b"\\xef\\xbb\\xbf"),
         "delimiter": dialect.delimiter,
         "column_count": len(columns),
         "columns": columns,
