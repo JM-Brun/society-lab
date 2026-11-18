@@ -36,7 +36,7 @@ Les sources institutionnelles documentent la mission, le périmètre sectoriel, 
 
 La controverse sur le streaming montre l'intérêt de confronter les publications, les critiques externes et les réponses de l'organisation. L'erreur de conversion reconnue doit être distinguée des désaccords méthodologiques sur les intensités énergétiques des centres de données et des réseaux.
 
-Le premier volet du PREF 2026 a été approfondi dans un dossier spécifique : [audit de la robustesse et des scénarios](pref-2026-audit-robustesse-scenarios.md).
+Le premier volet du PREF 2026 a été approfondi dans un dossier spécifique : [audit de la robustesse et des scénarios](../dossiers/pref-2026-audit-robustesse-scenarios.md).
 
 ## 5. Débat contradictoire
 
