@@ -6,7 +6,7 @@ status: "draft"
 last_reviewed: "2026-11-18"
 related_dossiers: ["dossiers/antoine-foucher-pacte-intergenerationnel.md"]
 related_claims: []
-related_studies: []
+related_studies: ["STUDY-FOUCHER-GENERATIONAL-COMPARISON-2026"]
 related_datasets: []
 geographic_scope: ["France", "Europe"]
 temporal_scope: "Long terme historique et période contemporaine jusqu'en 2026"
