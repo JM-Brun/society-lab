@@ -43,6 +43,7 @@ def load_project_data(root: Path = ROOT) -> dict[str, Any]:
         "territories": read_yaml(root, "knowledge/TERRITORIES.yml").get("territories", []),
         "synthesis_entries": read_yaml(root, "syntheses/registry.yml").get("dossiers", []),
         "relations": read_yaml(root, "knowledge/graph.yml").get("relations", []),
+        "relation_definitions": read_yaml(root, "knowledge/RELATION_TYPES.yml").get("relations", []),
     }
 
 def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
@@ -65,7 +66,7 @@ def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
             known.add(identifier)
     return known, duplicates
 
-def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str]):
+def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str], known_relation_types=None):
     valid, diagnostics = [], {key: [] for key in (
         "missing_ids", "duplicate_ids", "duplicate_triples", "empty_justifications",
         "unknown_endpoints", "unknown_relation_types")}
@@ -92,15 +93,16 @@ def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str]):
             diagnostics["empty_justifications"].append(str(edge_id)); invalid = True
         if source not in known_ids or target not in known_ids:
             diagnostics["unknown_endpoints"].append(str(edge_id)); invalid = True
-        if not isinstance(kind, str) or not kind:
+        if (not isinstance(kind, str) or not kind
+                or (known_relation_types is not None and kind not in known_relation_types)):
             diagnostics["unknown_relation_types"].append(str(edge_id)); invalid = True
         if not invalid:
             valid.append(edge)
     return valid, diagnostics
 
-def calculate_source_coverage(sources, relations, known_ids):
+def calculate_source_coverage(sources, relations, known_ids, known_relation_types=None):
     source_ids = {r["id"] for r in sources if isinstance(r, dict) and isinstance(r.get("id"), str)}
-    valid_edges, diagnostics = inspect_relations(relations, known_ids)
+    valid_edges, diagnostics = inspect_relations(relations, known_ids, known_relation_types)
     covered = {node for edge in valid_edges if edge.get("type") in RELATION_TYPES
                for node in (edge.get("from"), edge.get("to")) if node in source_ids}
     uncovered = sorted(source_ids - covered)
@@ -154,7 +156,7 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
     """Measure active dossier coverage; shared synthesis files are intentional."""
     active_statuses = {"scoping", "researching", "draft", "under_review", "published"}
     active = [d for d in dossiers if isinstance(d, dict) and d.get("status") != "archived"]
-    dossier_ids = {d.get("id") for d in active if isinstance(d.get("id"), str)}
+    dossier_ids = {d.get("id") for d in dossiers if isinstance(d, dict) and isinstance(d.get("id"), str)}
     by_dossier = {}
     for entry in entries:
         if not isinstance(entry, dict):
