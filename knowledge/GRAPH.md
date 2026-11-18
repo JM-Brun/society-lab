@@ -46,9 +46,16 @@ DOSSIER-FUTURE-OF-WORK -> REL-INCLUDES -> CLAIM-JOB-POLARISATION
 
 Les identifiants ci-dessus illustrent une forme, ils ne déclarent pas l'existence de ces objets.
 
-
 ## Territoires et relations entre échelles
 
 Les territoires sont des entités référentielles décrites dans [TERRITORIES.yml](TERRITORIES.yml). Ils ne sont ni des domaines thématiques ni des organisations. Les objets de recherche peuvent concerner plusieurs territoires ; leurs fiches doivent conserver les périmètres exacts plutôt que d'inférer une localisation à partir d'un tag.
 
 La hiérarchie géographique ne suffit pas à représenter les interdépendances. Les relations entre échelles (transmission d'une politique, flux économiques, dépendance énergétique, diffusion d'une innovation, externalité environnementale, comparaison, coopération ou rétroaction) doivent être décrites séparément, avec direction, mécanisme, période, preuve et limites. Une relation contextuelle n'est pas automatiquement une relation causale.
+
+## Lecture transversale entre domaines
+
+Le graphe doit aussi permettre d'examiner les mécanismes communs et les interactions entre domaines (par exemple économie, éducation, énergie, institutions et sécurité), sans créer un registre parallèle. La lecture transversale est une interprétation construite à partir des objets et relations canoniques.
+
+Il faut distinguer proximité thématique, mécanisme commun, contexte/condition, association empirique, influence causale documentée, rétroaction, arbitrage/transfert et comparaison. Un tag partagé ou une intuition ne suffit pas à créer une relation d'influence. Les relations directionnelles et leurs éventuelles boucles temporelles doivent être explicites ; les relations causales doivent préciser mécanisme, portée, temporalité, conditions, preuves et explications alternatives.
+
+Le [cadre de lecture transversale](../docs/cross-domain-knowledge-framework.md) définit la méthode, les métadonnées attendues, un premier terrain économique et la procédure d'actualisation. Le suivi des livrables est tenu dans [l'issue #112](https://github.com/JM-Brun/society-lab/issues/112).
