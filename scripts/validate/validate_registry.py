@@ -51,6 +51,66 @@ def validate_schema_and_records(relative, records, label, errors):
         errors.append(f"Invalid schema {relative}: {exc}")
 
 
+def validate_cross_references(all_records, node_ids, errors):
+    """Check both top-level references and nested claim source-verification links."""
+    reference_fields = {
+        "source_ids": "SOURCE",
+        "study_ids": "STUDY",
+        "dataset_ids": "DATASET",
+        "hypothesis_ids": "HYPOTHESIS",
+        "claim_ids": "CLAIM",
+        "concept_ids": "CONCEPT",
+        "supporting_study_ids": "STUDY",
+        "challenging_study_ids": "STUDY",
+    }
+    for prefix, records in all_records.items():
+        for record in records:
+            record_id = record.get("id", f"{prefix} record")
+            for field, target_type in reference_fields.items():
+                for target in record.get(field, []) or []:
+                    if target not in node_ids.get(target_type, set()):
+                        errors.append(f"{record_id}: unresolved {field} reference {target}")
+            for verification in record.get("source_verifications", []) or []:
+                target = verification.get("source_id") if isinstance(verification, dict) else None
+                if target and target not in node_ids.get("SOURCE", set()):
+                    errors.append(f"{record_id}: unresolved source_verifications.source_id reference {target}")
+
+
+def validate_graph_edges(edges, relation_by_id, node_type_by_id, errors):
+    """Validate graph semantics that are not covered by JSON/YAML parsing alone."""
+    seen_triples = {}
+    for edge in edges:
+        edge_id = edge.get("id", "<missing edge id>")
+        if not isinstance(edge_id, str) or not ID_RE.fullmatch(edge_id) or not edge_id.startswith("REL-"):
+            errors.append(f"Invalid graph edge identifier: {edge_id!r}")
+
+        justification = edge.get("justification")
+        if not isinstance(justification, str) or not justification.strip():
+            errors.append(f"{edge_id}: missing non-empty relation justification")
+
+        triple = (edge.get("type"), edge.get("from"), edge.get("to"))
+        if triple in seen_triples:
+            errors.append(
+                f"{edge_id}: duplicate relation triple {triple!r}; "
+                f"already declared as {seen_triples[triple]}"
+            )
+        else:
+            seen_triples[triple] = edge_id
+
+        definition = relation_by_id.get(edge.get("type"))
+        if definition is None:
+            errors.append(f"{edge_id}: unknown relation type {edge.get('type')!r}")
+            continue
+        for endpoint in ("from", "to"):
+            target = edge.get(endpoint)
+            actual_type = node_type_by_id.get(target)
+            allowed = definition.get(endpoint, [])
+            if actual_type is None:
+                errors.append(f"{edge_id}: unresolved {endpoint} node {target!r}")
+            elif actual_type not in allowed:
+                errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
+
+
 def main():
     errors = []
     taxonomy = load_yaml("knowledge/TAXONOMY.yml")
@@ -96,18 +156,7 @@ def main():
                 if tag_id not in tags:
                     errors.append(f"{record.get('id')}: unknown tag {tag_id}")
 
-    # Cross-reference checks for the typed links embedded in records.
-    reference_fields = {
-        "source_ids": "SOURCE", "study_ids": "STUDY", "dataset_ids": "DATASET",
-        "hypothesis_ids": "HYPOTHESIS", "claim_ids": "CLAIM",
-        "supporting_study_ids": "STUDY", "challenging_study_ids": "STUDY",
-    }
-    for prefix, records in all_records.items():
-        for record in records:
-            for field, target_type in reference_fields.items():
-                for target in record.get(field, []) or []:
-                    if target not in node_ids.get(target_type, set()):
-                        errors.append(f"{record.get('id')}: unresolved {field} reference {target}")
+    validate_cross_references(all_records, node_ids, errors)
 
     # Synthesis documents are first-class graph nodes, sourced from the synthesis registry.
     synthesis_registry = load_yaml("syntheses/registry.yml")
@@ -122,30 +171,14 @@ def main():
     node_ids["SYNTHESIS"] = synthesis_ids
     node_type_by_id.update({identifier: "SYNTHESIS" for identifier in synthesis_ids})
 
-    # Check graph edge identifiers, endpoint existence, relation type and endpoint types.
     graph = load_yaml("knowledge/graph.yml")
     edges = graph.get("relations", [])
     unique_ids(edges, "knowledge/graph.yml", errors)
     relation_by_id = {item["id"]: item for item in relation_defs}
-    for edge in edges:
-        edge_id = edge.get("id")
-        if not isinstance(edge_id, str) or not ID_RE.fullmatch(edge_id) or not edge_id.startswith("REL-"):
-            errors.append(f"Invalid graph edge identifier: {edge_id!r}")
-        definition = relation_by_id.get(edge.get("type"))
-        if definition is None:
-            errors.append(f"{edge_id}: unknown relation type {edge.get('type')!r}")
-            continue
-        for endpoint in ("from", "to"):
-            target = edge.get(endpoint)
-            actual_type = node_type_by_id.get(target)
-            allowed = definition.get(endpoint, [])
-            if actual_type is None:
-                errors.append(f"{edge_id}: unresolved {endpoint} node {target!r}")
-            elif actual_type not in allowed:
-                errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
+    validate_graph_edges(edges, relation_by_id, node_type_by_id, errors)
 
     if errors:
-        print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
+        print("\\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
         return 1
     print("Society Lab schemas, records, references and knowledge graph: OK")
     return 0
