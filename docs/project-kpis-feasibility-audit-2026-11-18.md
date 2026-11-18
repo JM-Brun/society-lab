@@ -73,7 +73,7 @@ Les tests unitaires de `tests/test_project_kpis.py` couvrent notamment :
 - synthèses partagées, dossiers archivés et fichiers de synthèse manquants ;
 - identifiants de synthèse répétés dans le registre de correspondance.
 
-Aucune intégration CI n'est ajoutée à ce stade. Il faut d'abord exécuter les tests sur le dépôt, vérifier les sorties du calculateur, puis mesurer son coût sur le corpus actuel et des charges ×10/×100. L'ajout à la CI ne sera envisagé qu'après ces mesures.
+Au moment de l'audit initial, aucune intégration CI n'était ajoutée. Après validation et mesure, le calcul ordinaire des KPIs a été intégré en lecture seule dans la CI ; les deux benchmarks synthétiques ont été déplacés vers une exécution périodique.
 
 ## Décisions
 
@@ -81,16 +81,16 @@ Aucune intégration CI n'est ajoutée à ce stade. Il faut d'abord exécuter les
 2. Le KPI 4 reste un diagnostic tant que l'éligibilité des objets n'est pas définie.
 3. Aucun score composite ni cible arbitraire n'est créé.
 4. Les ratios décrivent la structuration et la maintenance documentaires ; ils ne certifient pas la vérité scientifique.
-5. Le calculateur reste en lecture seule ; la CI n'est pas modifiée avant validation et benchmark.
+5. Le calculateur reste en lecture seule ; le calcul ordinaire des KPIs est affiché dans la CI, tandis que les benchmarks synthétiques sont exécutés périodiquement.
 
 **Limite :** les résultats sont un instantané du dépôt au 18 novembre 2026. Toute évolution du schéma, du périmètre ou des relations peut modifier les valeurs et doit être signalée dans les rapports ultérieurs.
 
 
 ## Addendum — intégration CI postérieure à l'audit initial
 
-L'état décrit dans la section « Prototype et tests » ci-dessus correspond à la situation antérieure à l'intégration du benchmark dans la CI. Depuis, le workflow `.github/workflows/validate.yml` exécute `scripts/benchmark/benchmark_project_kpis.py --repeats 3 --scales 1 10 100` dans une étape informative, après le benchmark de validation des schémas de registre. Cette étape ne définit aucun seuil bloquant et ne fait pas échouer la CI sur la valeur d'un KPI.
+Après mesure, le workflow `.github/workflows/validate.yml` exécute `scripts/validate/calculate_project_kpis.py --format markdown` pour afficher les trois KPIs calculés sur les données courantes. Les benchmarks synthétiques de validation des schémas et de calcul KPI sont désormais dans `.github/workflows/benchmarks.yml`, déclenché chaque semaine et manuellement.
 
-Exécution de référence sur `main` : [run 44364791315](https://github.com/JM-Brun/society-lab/actions/runs/44364791315), terminé avec succès. Les temps mesurés doivent être lus dans le résumé Actions avant de décider si le benchmark doit rester dans chaque exécution du workflow ou être déplacé vers un déclenchement manuel/périodique. Aucun chiffre de durée n'est repris ici faute de mesure vérifiée dans cet audit.
+Les mesures et la décision de déplacement sont détaillées dans la section suivante. La CI de la PR #158 confirme également les valeurs courantes des trois KPIs : 218/220, 28/80 et 25/25 ; les benchmarks synthétiques ne sont plus exécutés à chaque PR.
 
 
 ## Mesure des durées Actions — 18 novembre 2026

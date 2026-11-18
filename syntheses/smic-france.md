@@ -345,7 +345,7 @@ Le mécanisme est particulièrement visible en 2011 et 2021 : les hausses automa
 
 **Interprétation :** ces épisodes montrent qu'une hausse nominale du SMIC ne garantit pas un gain réel sur l'année. La date d'effet et le rythme de l'inflation comptent autant que le taux affiché. Ils ne démontrent toutefois pas une baisse du revenu disponible des ménages ni un effet causal négatif sur l'emploi : ces dimensions ne figurent pas dans la série horaire brute.
 
-Voir le [dossier quantitatif, section 13](../dossiers/smic-quantitative-update-2026.md#13-épisodes-de-recul-ou-de-stagnation-du-pouvoir-dachat-décomposition-nominal--inflation), et la [série annuelle avec croissance nominale et inflation](../data/smic-real-purchasing-power-1970-2025.csv).
+Voir le [dossier quantitatif, section 13](../dossiers/smic-quantitative-update-2026.md#13-épisodes-de-recul-ou-de-stagnation-du-pouvoir-dachat-décomposition-nominal-inflation), et la [série annuelle avec croissance nominale et inflation](../data/smic-real-purchasing-power-1970-2025.csv).
 
 
 ## 18. Épisode inflationniste 2021–2024 : protection directe et diffusion retardée

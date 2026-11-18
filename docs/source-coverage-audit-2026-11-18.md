@@ -195,7 +195,7 @@ Ces 11 sources justifient `REL-INCLUDES` depuis le dossier concerné.
 
 - **51 relations justifiées** : 36 relations `REL-CITES` depuis les études et 15 relations `REL-INCLUDES` depuis les dossiers enregistrés.
 - **49 sources distinctes** acquièrent une relation documentaire ; les deux sources restant sans couverture sont `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026`.
-- Projection arithmétique : **218/220 (99,1 %)**, à confirmer par la CI de la PR de mise à jour du graphe.
+- Résultat confirmé par la CI de la PR #158 : **218/220 (99,1 %)**. Les deux sources restantes sont conservées en contexte, sans relation artificielle.
 - Le fichier `dossiers/smic-social-partners-evidence.md` reste un document de travail non enregistré ; son lien parent explicite justifie le rattachement de sa source au dossier SMIC enregistré, sans créer de nœud artificiel pour le fichier.
 - Les liens dataset ne sont pas créés automatiquement à partir de `source_ids` : `REL-TRANSCRIBES` ne doit être utilisé que lorsqu'une source est effectivement transformée ou transcrite dans le dataset, pas lorsqu'elle fournit seulement une notice ou des métadonnées.
 - Aucune cible de connectivité globale n'est définie.
