@@ -72,7 +72,7 @@ class ProjectKpiTests(unittest.TestCase):
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
                 "domains": [{"id": "DOMAIN-A"}], "territories": [{"id": "TERRITORY-A"}],
-                "synthesis_entries": [{"synthesis_id": "SYNTHESIS-A"}]}
+                "synthesis_entries": [{"synthesis_id": "SYNTHESIS-A"}, {"synthesis_id": "SYNTHESIS-A"}]}
         known, duplicates = build_known_ids(data)
         self.assertEqual(known, {"SOURCE-A", "DOMAIN-A", "TERRITORY-A", "SYNTHESIS-A"})
         self.assertEqual(duplicates, [])
