@@ -42,6 +42,9 @@ jobs:
       - name: Validate local Markdown link targets
         run: python scripts/validate/validate_markdown_links.py --strict
 
+      - name: Report local Markdown fragment targets (advisory)
+        run: python scripts/validate/validate_markdown_anchors.py
+
       - name: Validate issue-to-dossier mappings
         run: python scripts/validate/validate_issue_domain_map.py
 

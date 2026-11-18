@@ -122,3 +122,12 @@ Ne supprimer aucune fiche avant comparaison du contenu, des citations, des ident
 - À terme, valider les documents de travail par des contrôles adaptés (liens locaux, références, provenance, dates, statut), sans leur imposer le schéma des dossiers/synthèses.
 - Pour les datasets, la source de vérité reste le registre Dataset et les fichiers de données associés ; une note Markdown n'est pas le dataset lui-même.
 - Le prochain chantier est une réconciliation de contenu et de liens pour les trois groupes de doublons, puis la vérification que les études/datasets/claims canoniques référencent ces audits comme pièces de travail ou documentation, sans ajouter de registre ad hoc.
+
+
+## Contrôle exploratoire des fragments Markdown (18 novembre 2026)
+
+Un second contrôle, distinct du validateur strict des chemins locaux, est ajouté dans `scripts/validate/validate_markdown_anchors.py`. Il repère les fragments `#...` des liens locaux vers des fichiers Markdown et compare les cibles aux ancres produites par les titres ATX (`#` à `######`), en tenant compte des accents, de la ponctuation courante et des titres dupliqués.
+
+Le contrôle est exécuté dans la CI en mode **strictement informatif** : il ne bloque pas les PR. Cette prudence est nécessaire car l'algorithme reproduit seulement les cas usuels du slugger GitHub ; les ancres HTML explicites, titres Setext, extensions Markdown, tableaux complexes et autres particularités du moteur de rendu ne sont pas couverts. Les fragments de fichiers non-Markdown restent hors périmètre. Les chemins inexistants et les sorties du dépôt restent traités par `validate_markdown_links.py --strict`.
+
+Cinq tests unitaires couvrent les accents/ponctuation, les doublons de titres, les blocs de code, les liens inter-fichiers, les ancres de page courante et la détection d'un fragment absent. Le premier rapport CI servira à mesurer les alertes et faux positifs avant toute décision de rendre ce contrôle bloquant ou d'étendre son périmètre.
