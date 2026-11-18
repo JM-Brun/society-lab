@@ -3,7 +3,7 @@ id: "DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"
 title: "Pour que nos enfants vivent mieux que nous — examen critique de la thèse d’Antoine Foucher"
 domain_ids: ["DOMAIN-ECONOMY", "DOMAIN-FINANCE", "DOMAIN-EDUCATION", "DOMAIN-ENERGY", "DOMAIN-GEOPOLITICS", "DOMAIN-SOCIETY"]
 status: "researching"
-last_reviewed: "2026-11-17"
+last_reviewed: "2026-11-18"
 geographic_scope: ["France", "Europe", "International"]
 temporal_scope: "Comparaisons historiques depuis le XIXe siècle selon les indicateurs ; analyse contemporaine principalement 2000-2026 ; propositions prospectives à horizon 2035-2045."
 question: "Dans quelle mesure le diagnostic d’Antoine Foucher sur le déclassement économique et générationnel de la France est-il étayé, quelles hypothèses causales relient les choix de dépenses publiques à ce déclassement, et quelles conséquences distributives et macroéconomiques auraient ses propositions ?"
@@ -239,3 +239,60 @@ Son point de vigilance majeur est le passage du constat de déclassement à une 
 | Date | Modification | Motif |
 |---|---|---|
 | 2026-11-17 | Création du dossier critique initial | Ingestion de la présentation éditoriale, d'une analyse de livre et de débats de presse ; texte intégral non consulté |
+
+
+## 13. Premier audit empirique — données disponibles au 18 novembre 2026
+
+Cette section ajoute des éléments statistiques primaires. Elle ne prétend pas encore reconstituer les séries longues ni identifier des effets causaux.
+
+### 13.1 Niveau de vie : retraités et actifs ne se comparent pas par la seule pension
+
+Selon l'Insee, en 2024 :
+- le niveau de vie médian des retraités en logement ordinaire atteint 26 830 € annuels par unité de consommation, contre 26 740 € pour l'ensemble de la population ;
+- il progresse de 3,5 % en euros constants pour les retraités, contre 1,8 % pour l'ensemble ;
+- le taux de pauvreté des retraités est de 10,4 %, au même niveau que celui des actifs de 18 ans ou plus ;
+- le taux de pauvreté global reste à 15,4 %, son niveau le plus élevé depuis le début de la série en 1996.
+
+**Interprétation prudente :** ces données ne prouvent pas que les retraités sont « favorisés » dans leur ensemble, ni que les jeunes vivent moins bien. Elles montrent que le niveau de vie après redistribution, mesuré par unité de consommation, est une métrique différente du montant des pensions. Elles masquent aussi les écarts internes, les coûts de logement, le patrimoine et les trajectoires de carrière. Source : Insee, *Niveau de vie et pauvreté en 2024*, n° 2117, juillet 2026.
+
+### 13.2 Patrimoine : l'âge et la génération ne doivent pas être confondus
+
+L'enquête Histoire de vie et Patrimoine de l'Insee donne, début 2024, un patrimoine brut médian de 26 100 € pour les ménages dont la personne de référence a moins de 30 ans, contre 245 000 € pour les 60-69 ans. Cet écart transversal est attendu en partie du fait de l'accumulation patrimoniale au cours du cycle de vie.
+
+**Ce que ce chiffre ne permet pas de conclure :** il ne mesure pas l'appauvrissement d'une génération par rapport à la génération précédente au même âge. Il faut un suivi longitudinal ou des pseudo-panels de cohortes, en distinguant patrimoine brut/net, héritages, donations, endettement et accès à la propriété. Les inégalités au sein de chaque tranche d'âge sont également considérables.
+
+### 13.3 Dépenses publiques : les retraites pèsent, mais la ventilation ne démontre pas l'éviction
+
+L'Insee indique que les dépenses publiques de 2024 ont augmenté de 4,0 %, contre +3,3 % pour le PIB en valeur, et représentent environ 57 % du PIB. La protection sociale hors santé contribue le plus à la hausse des dépenses (+2,2 points de contribution), dont 1,4 point pour les retraites. L'enseignement contribue également à la hausse (+0,4 point) et la santé (+0,7 point). En 2024, les dépenses d'enseignement s'élèvent à 149 Md€, dont 12 Md€ d'investissement ; les dépenses de protection sociale à 693 Md€, dont 4 Md€ d'investissement selon la ventilation par nature publiée.
+
+**Interprétation prudente :** ces chiffres confirment le poids budgétaire de la protection sociale et des retraites, mais ne prouvent pas que ces dépenses ont causé un manque d'investissement. Ils ne disent pas non plus que la protection sociale serait improductive : la ventilation COFOG classe les dépenses par fonction et nature comptable, elle n'évalue pas leurs rendements sociaux. Il faut analyser les recettes, la dette, les transferts entre administrations, les dépenses fiscales, les effets macroéconomiques et les investissements publics et privés.
+
+### 13.4 Finances publiques : éviter le raccourci « dépense élevée = investissement sacrifié »
+
+En 2025, les dépenses publiques représentent 57,3 % du PIB, les recettes 52,2 %, le déficit 5,1 % et la dette brute 115,7 % du PIB (comptes provisoires). En 2024, les dépenses étaient de 57,0 % du PIB et le déficit de 5,8 %. Ces données documentent une contrainte budgétaire forte, mais ne permettent pas à elles seules d'attribuer cette contrainte aux retraites plutôt qu'aux recettes, à la conjoncture, aux intérêts, aux crises ou aux autres postes.
+
+### 13.5 Résultats de recherche antérieurs à actualiser
+
+Un article d'Hippolyte d'Albis et Ikpidi Badji, publié par l'Insee en 2017, utilise un pseudo-panel de l'enquête Budget de famille de 1979 à 2011 pour distinguer effets d'âge et effets de génération sur le niveau de vie et la consommation. C'est une référence méthodologique centrale pour éviter de comparer directement des jeunes et des retraités observés à une date donnée. Sa période s'arrête toutefois en 2011 : il faut actualiser l'exercice avec les données les plus récentes.
+
+### 13.6 Matrice provisoire des affirmations
+
+| Proposition examinée | État des preuves à ce stade | Conclusion provisoire |
+|---|---|---|
+| Les retraités ont globalement un niveau de vie supérieur aux actifs | Non soutenu par la comparaison médiane 2024 après redistribution ; forte hétérogénéité | Reformuler et désagréger par décile, patrimoine, logement et cohorte |
+| Les retraités détiennent davantage de patrimoine que les jeunes | Oui en coupe transversale, mais effet d'âge important | Ne pas présenter comme preuve d'un transfert injuste entre générations |
+| Les retraites pèsent fortement dans les dépenses publiques | Confirmé par la ventilation Insee 2024 | Fait budgétaire descriptif |
+| Les retraites évinceraient l'investissement d'avenir | Non établi par les comptes descriptifs | Hypothèse causale à tester par scénarios et séries longues |
+| La France sous-investit dans l'éducation | Non tranché par les chiffres ci-dessus | Comparer dépenses, ressources par élève, résultats et inégalités, à périmètre constant |
+| Les jeunes vivent moins bien que leurs parents | Non tranché par les données transversales mobilisées | Construire des comparaisons de cohortes à âge identique et multidimensionnelles |
+
+### 13.7 Protocole d'analyse à poursuivre
+
+1. Construire un pseudo-panel de cohortes (par année de naissance ou classes quinquennales) sur revenu disponible, consommation, patrimoine net et logement.
+2. Comparer les cohortes à âges identiques, en euros constants et unités de consommation ; publier médianes et déciles.
+3. Ajouter les transferts en nature (santé, éducation, services publics) et les transferts privés (aides, donations, héritages) dans des modules séparés.
+4. Reconstituer les dépenses publiques COFOG depuis 1995 et les dépenses de retraite depuis 1975 ou la première année homogène disponible ; distinguer prestations, fonctionnement, investissement matériel et immatériel.
+5. Tester plusieurs contrefactuels budgétaires : recettes inchangées avec réallocation, prélèvements différents, dette différente, et effets macroéconomiques secondaires.
+6. Comparer les résultats par génération, décile de revenu, décile de patrimoine, sexe, statut d'emploi et territoire.
+
+**Sources statistiques ajoutées :** Insee n° 2117 (2026), Insee données patrimoine (2026), COR (février 2026), Insee n° 2093 (2026), Insee comptes publics 2025 (2026), Insee COFOG 1995-2024, d'Albis et Badji (2017).
