@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  issues: read
 
 jobs:
   validate:
@@ -25,6 +26,12 @@ jobs:
 
       - name: Install validation dependencies
         run: python -m pip install --disable-pip-version-check PyYAML jsonschema
+
+      - name: Audit open issue labels (read-only)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/validate/audit_issue_labels.py
 
       - name: Validate registries and identifiers
         run: python scripts/validate/validate_registry.py
