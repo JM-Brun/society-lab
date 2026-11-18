@@ -39,6 +39,9 @@ jobs:
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
 
+      - name: Validate local Markdown link targets
+        run: python scripts/validate/validate_markdown_links.py --strict
+
       - name: Validate issue-to-dossier mappings
         run: python scripts/validate/validate_issue_domain_map.py
 
