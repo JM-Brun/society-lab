@@ -26,8 +26,8 @@ La première version doit distinguer quatre indicateurs de pilotage prioritaires
 | Source-to-Knowledge Coverage | Mesurer l'exploitation documentaire des sources | Sources éligibles reliées à au moins un objet de connaissance / sources éligibles | Principal |
 | Claim Conclusion Coverage | Suivre la vérification documentée des claims | Claims éligibles avec statut de vérification explicite / claims éligibles | Principal |
 | Synthesis Coverage | Vérifier que les dossiers principaux disposent d'une synthèse | Dossiers principaux éligibles avec synthèse enregistrée / dossiers principaux éligibles | Principal |
-| Cross-domain Integration Coverage | Mesurer les mises en relation réellement transversales | Relations inter-domaines justifiées et éligibles, rapportées au périmètre suivi ; voir définition ci-dessous | Principal, après audit |
-| Knowledge Graph Connectivity | Détecter les objets isolés ou insuffisamment reliés | Objets éligibles ayant au moins une relation pertinente et justifiée / objets éligibles | Diagnostic |
+| Knowledge Graph Connectivity | Détecter les objets isolés ou insuffisamment reliés | Objets éligibles ayant au moins une relation pertinente et justifiée / objets éligibles | Diagnostic, après définition des règles d'éligibilité |
+| Cross-domain Integration | Décrire les mises en relation réellement transversales | Comptes de relations inter-domaines justifiées et de couples de domaines ; pas de ratio global sans dénominateur défendable | Diagnostic |
 | Synthesis Freshness | Repérer les synthèses potentiellement à réviser | Synthèses signalées comme en retard / synthèses suivies | Diagnostic |
 
 Les indicateurs principaux ne constituent pas un classement de performance scientifique. Ils signalent des dimensions de couverture et de maintenance.
