@@ -36,6 +36,9 @@ jobs:
       - name: Validate registries and identifiers
         run: python scripts/validate/validate_registry.py
 
+      - name: Benchmark registry schema validation (informational)
+        run: python scripts/benchmark/benchmark_registry_schema_validation.py --repeats 3 --scales 1 10 100
+
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
 
