@@ -231,3 +231,17 @@ L'architecture cite notamment les objets Institution/ORG, Method/METHOD et Analy
 
 Les contrôles CI doivent être exécutés sur la tête finale de la PR avant de considérer ces changements comme validés.
 
+## 10. Formalisation des lots d'ingestion
+
+Le contrat des lots est maintenant matérialisé :
+- schéma JSON dédié : `schemas/ingestion-batch.schema.json` ;
+- modèle réutilisable : `templates/ingestion-batch.yml` ;
+- règles de stockage et de conservation : `sources/batches/README.md` ;
+- procédure opérationnelle : section « Contrat opérationnel des lots » de `docs/ingestion-protocol.md`.
+
+Le validateur examine les manifestes YAML déposés dans `sources/batches/` lorsqu'ils existent. Il contrôle le schéma, l'unicité des identifiants de lots et de candidates, la résolution des sources sélectionnées, les cibles des doublons, les cycles de doublons, l'unicité d'une source sélectionnée dans un lot et l'absence de candidates reportées dans un lot clos.
+
+Le modèle est testé contre son schéma. Des tests unitaires couvrent également les références de sources, les doublons et les états de clôture.
+
+**Limite assumée :** aucun manifeste réel n'a été ajouté artificiellement, car l'historique des collectes antérieures n'est pas suffisamment consigné pour reconstruire leurs critères et décisions sans spéculation. Le contrat est prêt ; il doit maintenant être utilisé lors des prochaines ingestions et, si des traces fiables existent, appliqué rétrospectivement par lots documentés.
+
