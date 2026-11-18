@@ -111,6 +111,25 @@ class IngestionBatchValidationTests(unittest.TestCase):
         validate_batch_manifest(batch, "batch.yml", {"SOURCE-A"}, errors)
         self.assertTrue(any("duplicate candidate_id" in error for error in errors))
 
+
+    def test_rejects_duplicate_selected_source(self):
+        batch = {**self.batch, "candidates": [
+            {"candidate_id": "CANDIDATE-A", "decision": "selected", "source_id": "SOURCE-A"},
+            {"candidate_id": "CANDIDATE-B", "decision": "selected", "source_id": "SOURCE-A"},
+        ]}
+        errors = []
+        validate_batch_manifest(batch, "batch.yml", {"SOURCE-A"}, errors)
+        self.assertTrue(any("selected more than once" in error for error in errors))
+
+    def test_rejects_duplicate_reference_cycles(self):
+        batch = {**self.batch, "candidates": [
+            {"candidate_id": "CANDIDATE-A", "decision": "duplicate", "duplicate_of": "CANDIDATE-B"},
+            {"candidate_id": "CANDIDATE-B", "decision": "duplicate", "duplicate_of": "CANDIDATE-A"},
+        ]}
+        errors = []
+        validate_batch_manifest(batch, "batch.yml", {"SOURCE-A"}, errors)
+        self.assertTrue(any("duplicate_of cycle" in error for error in errors))
+
     def test_closed_batch_cannot_keep_deferred_candidates(self):
         batch = {**self.batch, "status": "closed", "candidates": [
             {"candidate_id": "CANDIDATE-A", "decision": "deferred"},
