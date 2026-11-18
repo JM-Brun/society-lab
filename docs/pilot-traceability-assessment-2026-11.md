@@ -69,14 +69,14 @@ Pour chaque proposition structurante, consigner séparément :
 
 Le CSV conserve une référence source et une URL à chaque ligne, une méthode de transcription, un niveau de confiance et des notes. Le registre dataset décrit l'unité d'observation, les variables, la période, les transformations et les limites. C'est un cas pertinent pour vérifier les valeurs, les unités, les périodes, les dénominateurs et la distinction entre résultat rapporté et calcul dérivé.
 
-### Anomalie documentaire à résoudre avant validation
+### Vérification documentaire de juillet 1978 — anomalie résolue
 
-Les notes ne sont pas cohérentes entre les artefacts au sujet du taux horaire de juillet 1978 :
-- la fiche source `sources/smic-senate-1994-decomposition.yml` signale une divergence interne entre tableaux 2 et 3 ;
-- le registre `research/datasets/registry.yml` décrit une attribution des valeurs aux tableaux ;
-- la note de la ligne 1978–1979 dans le CSV décrit l'attribution inverse et indique retenir 10,85 F.
+La vérification visuelle du PDF original du Sénat a résolu l'écart apparent :
+- le tableau 2, page imprimée 157 (page PDF 157), indique 10,85 F au 1er juillet 1978 ;
+- le tableau 3, page imprimée 166 (page PDF 158), indique également 10,85 F pour juillet 1978 ;
+- la lecture textuelle/OCR du tableau 3 pouvait faire lire 10,65 F, mais l'image de la page montre 10,85 F.
 
-Il s'agit d'une contradiction documentaire interne explicite. **Aucune valeur ne doit être corrigée par intuition.** Il faut retourner au PDF original, relever précisément les pages/tableaux, confronter la série INSEE contemporaine et consigner la décision de réconciliation dans les trois artefacts concernés. Le niveau `high` actuellement inscrit dans le CSV ne remplace pas cette vérification localisée.
+Il ne s'agissait donc pas d'une divergence entre les deux tableaux, mais d'une erreur de lecture OCR. La valeur du CSV (10,85 F) était correcte ; sa note a été corrigée pour expliciter le contrôle et conserver la trace de l'erreur de transcription. Le registre dataset a été rectifié en conséquence. Les deux tableaux concordent sur ce point. Cette vérification porte sur le montant horaire, pas sur l'ensemble des composantes de la décomposition ni sur la réconciliation des écarts avec d'autres publications.
 
 ### Contrat d'extraction à appliquer
 
@@ -104,7 +104,7 @@ Le schéma de claim actuel couvre déjà une partie importante des besoins quant
 
 ## 5. Plan d'exécution révisé
 
-1. **Résoudre l'anomalie 1978** à partir du rapport sénatorial original et des sources de contrôle ; ne pas modifier la donnée avant vérification.
+1. **Anomalie 1978 résolue :** les tableaux 2 et 3 donnent tous deux 10,85 F ; conserver le localisateur visuel et la trace de l'erreur OCR. La confrontation INSEE reste utile comme contrôle externe, mais n'est plus nécessaire pour arbitrer entre ces deux tableaux.
 2. **Compléter le pilote qualitatif** en retrouvant les localisateurs de l'article de De Jonge et en attribuant correctement les voix.
 3. **Renseigner les vérifications existantes** dans les claims pilotes uniquement après contrôle des documents originaux.
 4. **Évaluer les champs de provenance source** et les conditions d'obligation selon les types de sources.
