@@ -24,9 +24,9 @@ Formule opérationnelle initiale :
 
 `sources ayant au moins une relation typée de contribution documentaire / sources du registre`
 
-Résultat de référence : **165 / 220 = 75 %**. Les relations `REL-ABOUT` seules sont exclues : elles signalent un thème, pas une contribution documentaire. Les relations comptées doivent avoir une justification non vide et des extrémités valides ; le prototype devra contrôler ces conditions et produire la liste des 55 sources sans relation retenue.
+Résultat exploratoire : **165 / 220 = 75 %** selon le type de relation. Ce chiffre est un résultat provisoire : le comptage initial a filtré les types de relation, mais n'a pas encore audité individuellement la non-vacuité des justifications ni la validité de toutes les extrémités. Les relations `REL-ABOUT` seules sont exclues : elles signalent un thème, pas une contribution documentaire. Le prototype devra contrôler ces conditions avant de publier le ratio définitif et produire la liste des sources sans relation retenue.
 
-Cette mesure porte sur la présence d'un lien documentaire structuré, pas sur la qualité de la source ni sur la force probante du lien.
+Cette mesure porte sur la présence d'un lien documentaire structuré, pas sur la qualité de la source ni sur la force probante du lien. Le 75 % ne doit pas encore être utilisé comme valeur certifiée tant que les contrôles de justification et d'intégrité des extrémités ne sont pas exécutés.
 
 ### 2. Claims avec conclusion documentée — calculable
 
