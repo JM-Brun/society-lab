@@ -61,9 +61,10 @@ Ne pas coder la taxonomie dans le calcul avant d'avoir audité le schéma Claim 
 **Question :** les dossiers principaux éligibles disposent-ils d'une synthèse autonome référencée ?
 
 - **Numérateur :** dossiers principaux dont l'association à une synthèse existe dans le registre canonique et dont le fichier cible est présent.
-- **Dénominateur :** dossiers principaux déclarés éligibles dans le périmètre du registre.
-- **Source initiale :** `syntheses/registry.yml`, à confronter au registre des dossiers et aux fichiers réels.
-- **Garde-fou :** ne pas compter deux fois un dossier, ni considérer une simple entrée de registre comme suffisante si le fichier cible est absent.
+- **Dénominateur :** dossiers actifs du registre canonique `dossiers/registry.yml` ; les statuts `scoping`, `researching`, `draft`, `under_review` et `published` sont actifs, `archived` est exclu.
+- **Numérateur :** dossiers actifs associés exactement une fois à une synthèse dont le fichier et le fichier du dossier existent.
+- **Source :** `syntheses/registry.yml`, rapproché du registre indépendant `dossiers/registry.yml`.
+- **Garde-fou :** plusieurs dossiers peuvent partager une synthèse ; compter chaque dossier une fois et dédupliquer les chemins de synthèse uniquement pour les diagnostics.
 
 Un contrôle complémentaire de structure peut vérifier la présence des rubriques attendues dans les synthèses : constats, preuves, controverses, limites, conclusions opérationnelles et travaux restants. Ce contrôle mesure la présence des sections, pas leur qualité rédactionnelle ni leur exhaustivité scientifique.
 
@@ -120,13 +121,13 @@ Réutiliser le contrôle existant `scripts/validate/check_synthesis_freshness.py
 
 ## 5. Faisabilité et audit préalable obligatoire
 
-Aucun indicateur ne doit être implémenté sur la seule base de cette spécification. Avant le calcul, auditer les registres, schémas et valeurs réelles.
+Le calculateur en lecture seule est prototypé dans `scripts/validate/calculate_project_kpis.py`. Avant toute intégration CI, vérifier ses sorties et mesurer son coût. Les trois premiers indicateurs ont désormais un dénominateur défendable sur l'instantané audité ; le quatrième reste un diagnostic.
 
 | Indicateur | Faisabilité présumée | Vérification requise |
 |---|---|---|
 | Source-to-Knowledge | Bonne | Références typées, couverture du registre, exclusions et relations réellement exploitables |
 | Evidence Verification | Conditionnelle | Schéma Claim, valeurs de statut, distinction entre revue et conclusion épistémique |
-| Synthesis Coverage | Très bonne | Exhaustivité du registre, unicité des dossiers, existence des chemins et périmètre éligible |
+| Synthesis Coverage | Bonne | Rapprochement du registre indépendant des dossiers, unicité des associations et existence des deux fichiers |
 | Cross-domain Integration | Partielle | Domaines des objets, typologie des relations et justification/provenance |
 | Knowledge Graph Connectivity | Partielle | Règles d'éligibilité et relations attendues par type d'objet |
 | Synthesis Freshness | Déjà partiellement disponible | Comprendre exactement les règles et limites du script existant |
@@ -267,17 +268,19 @@ La spécification ne sera considérée comme implémentée que lorsque :
 
 ## 12. Résultat de l'audit de faisabilité du 18 novembre 2026
 
-L'audit concret est consigné dans [`project-kpis-feasibility-audit-2026-11-18.md`](project-kpis-feasibility-audit-2026-11-18.md). Il conduit à ajuster le tableau de bord initial :
+L'audit concret et sa méthode sont consignés dans [`project-kpis-feasibility-audit-2026-11-18.md`](project-kpis-feasibility-audit-2026-11-18.md).
 
-| KPI retenu après audit | Définition opérationnelle | État |
-|---|---|---|
-| Couverture documentaire des sources | Sources du registre ayant au moins une relation typée de contribution documentaire justifiée / sources du registre | Calculable ; instantané 165/220 (75 %) |
-| Claims avec conclusion documentée | Claims actifs dont le statut est `supported`, `partially_supported`, `contested`, `not_supported` ou `insufficient_evidence` / claims actifs non superseded | Calculable ; instantané 28/80 (35 %) |
-| Couverture des synthèses | Dossiers actifs éligibles disposant d'une synthèse existante / dossiers actifs éligibles | Non calculable honnêtement en pourcentage sans inventaire indépendant des dossiers éligibles |
-| Connectivité du graphe | Objets éligibles ayant au moins une relation attendue et justifiée / objets éligibles | Diagnostic seulement ; règles d'éligibilité par type manquantes |
+| KPI retenu après audit | Définition opérationnelle | Instantané vérifié |
+|---|---|---:|
+| Couverture documentaire des sources | Sources avec au moins une relation documentaire typée, justifiée et dont les deux endpoints existent / sources du registre | 169/220 (76,8 %) |
+| Claims avec conclusion documentée | Claims actifs avec un statut conclusif / claims actifs non superseded | 28/80 (35 %) |
+| Couverture des synthèses | Dossiers actifs ayant une association unique et deux fichiers existants / dossiers actifs | 25/25 (100 %) |
+| Connectivité du graphe | Objets éligibles ayant au moins une relation attendue et justifiée / objets éligibles | Diagnostic ; règles d'éligibilité par type manquantes |
+
+**Contrôle du graphe :** 633 relations analysées ; aucune justification vide, aucun identifiant ou triplet de relation dupliqué et aucun endpoint inconnu. Le contrôle des endpoints indexe les sources, claims, dossiers, études, jeux de données, hypothèses, concepts, domaines, territoires et identifiants de synthèse. Les relations `REL-ABOUT` seules restent exclues du KPI de couverture documentaire.
+
+**Couverture des synthèses :** le registre `dossiers/registry.yml` fournit le dénominateur indépendant. Les 25 dossiers actifs sont présents exactement une fois dans `syntheses/registry.yml` ; les 11 fichiers de synthèse distincts existent. Le partage d'une synthèse entre plusieurs dossiers est intentionnel.
 
 **Correction de schéma :** le champ d'état des claims est `status`, pas `review_status`. Les vérifications documentaires par source sont enregistrées séparément dans `source_verifications` et ne doivent pas être confondues avec le statut épistémique du claim.
 
-**Règle de comptage des sources :** une relation `REL-ABOUT` seule indique un rattachement thématique et ne suffit pas à compter une source comme exploitée. La mesure de couverture documentaire retient les relations typées de contribution listées dans le rapport d'audit, avec justification et extrémités valides.
-
-En conséquence, le tableau de bord initial ne doit pas présenter les quatre ratios comme déjà tous calculables. Les deux premiers peuvent être prototypés immédiatement ; les deux autres restent conditionnés à la définition d'un dénominateur ou de règles d'éligibilité défendables.
+Le calculateur en lecture seule et ses tests sont maintenant ajoutés. L'intégration CI reste différée jusqu'à l'exécution des tests, la vérification du rapport réel et le benchmark sur corpus courant, ×10 et ×100. Aucun score composite ni objectif arbitraire n'est introduit.
