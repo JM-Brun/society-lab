@@ -41,3 +41,14 @@ Le dossier TIG relie la justice pénale à plusieurs enjeux économiques et inst
 - **Territoires** : disponibilité des organismes d'accueil, accessibilité et disparités locales.
 
 Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md). Les liens sont des questions d'analyse ; ils ne présument ni d'un effet causal sur la récidive ni d'un effet positif ou négatif sur l'emploi.
+
+
+## Liens transversaux
+
+Le dossier TIG relie la justice pénale à plusieurs enjeux économiques et institutionnels :
+- **Finances publiques** : distinguer coût administratif, coût complet pour les organismes d'accueil et coût social du dispositif.
+- **Capacité institutionnelle** : ressources des SPIP, disponibilité des postes, tutorat, coordination et délais d'exécution.
+- **Emploi et insertion** : examiner les trajectoires après la mesure et prévenir toute confusion entre activité d'intérêt général et emploi rémunéré.
+- **Territoires** : disponibilité des organismes d'accueil, accessibilité et disparités locales.
+
+Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md). Les liens sont des questions d'analyse ; ils ne présument ni d'un effet causal sur la récidive ni d'un effet positif ou négatif sur l'emploi.
