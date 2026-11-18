@@ -243,12 +243,12 @@ La spécification ne sera considérée comme implémentée que lorsque :
 
 ## 10. Ordre de réalisation recommandé
 
-1. Auditer les données et les règles de calcul de Synthesis Coverage et Synthesis Freshness : ce sont les points d'entrée les plus simples.
-2. Auditer les schémas Claim et Source pour déterminer si Evidence Verification et Source-to-Knowledge sont calculables sans migration.
-3. Construire les diagnostics du graphe et la mesure inter-domaines, sans pourcentage tant que le dénominateur n'est pas défendable.
-4. Développer le prototype en lecture seule et ses tests.
-5. Mesurer le coût marginal et la scalabilité.
-6. Intégrer à la CI seulement après validation des résultats et de la performance.
+1. Exécuter le calculateur et les tests sur l'instantané complet du dépôt ; vérifier les trois ratios et les listes d'anomalies.
+2. Mesurer le coût du calcul sur le corpus courant, puis sur des charges ×10 et ×100, en séparant parsing et calcul si utile.
+3. Examiner les 51 sources sans relation documentaire retenue ; distinguer les sources de contexte des omissions d'intégration, sans ajouter de liens artificiels.
+4. Maintenir les définitions des statuts de claims et l'éligibilité des dossiers à partir des schémas canoniques.
+5. Définir, si cela apporte une information utile, des règles d'éligibilité par type d'objet pour les diagnostics de connectivité.
+6. Ajouter le calcul en CI seulement après validation des sorties et du coût marginal ; ne pas créer de seuil de KPI bloquant.
 
 ## 11. Références internes
 
@@ -263,7 +263,7 @@ La spécification ne sera considérée comme implémentée que lorsque :
 
 ---
 
-**Décision de méthode :** cette spécification documente les indicateurs candidats et leur méthode d'adoption. Elle n'affirme pas que les KPIs sont déjà calculables, ne crée pas encore de calculateur et ne modifie pas la CI. La première livraison technique doit être un audit de faisabilité reproductible, puis un prototype testé en lecture seule.
+**Décision de méthode :** l'audit de faisabilité est documenté et un calculateur en lecture seule ainsi que ses tests sont ajoutés dans la branche de travail. Ils ne sont pas encore intégrés à la CI : les résultats automatisés et le coût doivent d'abord être vérifiés.
 
 
 ## 12. Résultat de l'audit de faisabilité du 18 novembre 2026
