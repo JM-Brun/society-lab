@@ -5,7 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
     build_known_ids, calculate_claim_conclusion_coverage,
-    calculate_source_coverage, inspect_relations,
+    calculate_source_coverage, calculate_synthesis_coverage, inspect_relations,
 )
 
 class ProjectKpiTests(unittest.TestCase):
@@ -68,6 +68,44 @@ class ProjectKpiTests(unittest.TestCase):
         result = calculate_claim_conclusion_coverage([{"id": "CLAIM-A", "status": "superseded"}])
         self.assertEqual(result["status"], "not_computable")
         self.assertIsNone(result["value"])
+
+    def test_synthesis_coverage_uses_active_dossier_registry_and_allows_shared_files(self):
+        with __import__("tempfile").TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "dossiers").mkdir()
+            (root / "syntheses").mkdir()
+            (root / "dossiers" / "a.md").write_text("# A", encoding="utf-8")
+            (root / "dossiers" / "b.md").write_text("# B", encoding="utf-8")
+            (root / "syntheses" / "shared.md").write_text("# Shared", encoding="utf-8")
+            dossiers = [
+                {"id": "DOSSIER-A", "status": "researching"},
+                {"id": "DOSSIER-B", "status": "published"},
+                {"id": "DOSSIER-C", "status": "archived"},
+            ]
+            entries = [
+                {"dossier_id": "DOSSIER-A", "dossier_path": "dossiers/a.md",
+                 "synthesis_id": "SYNTHESIS-SHARED", "synthesis_path": "syntheses/shared.md"},
+                {"dossier_id": "DOSSIER-B", "dossier_path": "dossiers/b.md",
+                 "synthesis_id": "SYNTHESIS-SHARED", "synthesis_path": "syntheses/shared.md"},
+            ]
+            result = calculate_synthesis_coverage(dossiers, entries, root)
+        self.assertEqual((result["numerator"], result["denominator"]), (2, 2))
+        self.assertEqual(result["unique_synthesis_count"], 1)
+        self.assertEqual(result["excluded_count"], 1)
+
+    def test_synthesis_coverage_flags_missing_synthesis_file(self):
+        with __import__("tempfile").TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "dossiers").mkdir()
+            (root / "dossiers" / "a.md").write_text("# A", encoding="utf-8")
+            result = calculate_synthesis_coverage(
+                [{"id": "DOSSIER-A", "status": "researching"}],
+                [{"dossier_id": "DOSSIER-A", "dossier_path": "dossiers/a.md",
+                  "synthesis_id": "SYNTHESIS-A", "synthesis_path": "syntheses/missing.md"}],
+                root,
+            )
+        self.assertEqual(result["numerator"], 0)
+        self.assertEqual(result["uncovered_dossier_ids"], ["DOSSIER-A"])
 
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
