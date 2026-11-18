@@ -1,6 +1,6 @@
 # Comparer les trajectoires françaises de transition : PREF, RTE, ADEME, négaWatt et SNBC 3
 
-> Dossier comparatif initial — 18 novembre 2026. Les documents comparés n'ont pas le même objet, la même échelle ni le même statut. Cette première matrice est qualitative ; elle ne remplace pas une harmonisation des données et des hypothèses quantitatives.
+> Dossier comparatif initial — 18 novembre 2026. Les documents comparés n'ont pas le même objet, la même échelle ni le même statut. Cette matrice de cadrage est complétée par le dossier [Comparaison quantitative des trajectoires énergétiques](comparaison-quantitative-scenarios-energie-2026.md), qui commence à rapprocher les valeurs publiées tout en explicitant leurs périmètres.
 
 ## Question
 
@@ -125,4 +125,4 @@ La bonne méthode n'est pas de chercher un vainqueur global, mais d'identifier l
 
 ## Limites de cette version
 
-La matrice est une première comparaison de cadrage fondée sur les publications officielles accessibles. Elle ne contient pas encore de rapprochement quantitatif des trajectoires, ni de vérification des hypothèses chiffrées communes. L'actualisation RTE 2026 et la nouvelle saison ADEME étant encore en cours de publication, les conclusions sur ces versions restent provisoires.
+La matrice qualitative est désormais prolongée par un dossier quantitatif autonome. Celui-ci donne les premiers ordres de grandeur, mais ne constitue pas une harmonisation statistique complète. L'actualisation RTE 2026 et la nouvelle saison ADEME étant encore en cours de publication, les conclusions sur ces versions restent provisoires.
