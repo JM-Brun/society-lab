@@ -51,6 +51,149 @@ def validate_schema_and_records(relative, records, label, errors):
         errors.append(f"Invalid schema {relative}: {exc}")
 
 
+def validate_cross_references(all_records, node_ids, errors):
+    """Check both top-level references and nested claim source-verification links."""
+    reference_fields = {
+        "source_ids": "SOURCE",
+        "study_ids": "STUDY",
+        "dataset_ids": "DATASET",
+        "hypothesis_ids": "HYPOTHESIS",
+        "claim_ids": "CLAIM",
+        "concept_ids": "CONCEPT",
+        "supporting_study_ids": "STUDY",
+        "challenging_study_ids": "STUDY",
+    }
+    for prefix, records in all_records.items():
+        for record in records:
+            record_id = record.get("id", f"{prefix} record")
+            for field, target_type in reference_fields.items():
+                for target in record.get(field, []) or []:
+                    if target not in node_ids.get(target_type, set()):
+                        errors.append(f"{record_id}: unresolved {field} reference {target}")
+            for verification in record.get("source_verifications", []) or []:
+                target = verification.get("source_id") if isinstance(verification, dict) else None
+                if target and target not in node_ids.get("SOURCE", set()):
+                    errors.append(f"{record_id}: unresolved source_verifications.source_id reference {target}")
+
+
+def validate_graph_edges(edges, relation_by_id, node_type_by_id, errors):
+    """Validate graph semantics that are not covered by JSON/YAML parsing alone."""
+    seen_triples = {}
+    for edge in edges:
+        edge_id = edge.get("id", "<missing edge id>")
+        if not isinstance(edge_id, str) or not ID_RE.fullmatch(edge_id) or not edge_id.startswith("REL-"):
+            errors.append(f"Invalid graph edge identifier: {edge_id!r}")
+
+        justification = edge.get("justification")
+        if not isinstance(justification, str) or not justification.strip():
+            errors.append(f"{edge_id}: missing non-empty relation justification")
+
+        triple = (edge.get("type"), edge.get("from"), edge.get("to"))
+        if triple in seen_triples:
+            errors.append(
+                f"{edge_id}: duplicate relation triple {triple!r}; "
+                f"already declared as {seen_triples[triple]}"
+            )
+        else:
+            seen_triples[triple] = edge_id
+
+        definition = relation_by_id.get(edge.get("type"))
+        if definition is None:
+            errors.append(f"{edge_id}: unknown relation type {edge.get('type')!r}")
+            continue
+        for endpoint in ("from", "to"):
+            target = edge.get(endpoint)
+            actual_type = node_type_by_id.get(target)
+            allowed = definition.get(endpoint, [])
+            if actual_type is None:
+                errors.append(f"{edge_id}: unresolved {endpoint} node {target!r}")
+            elif actual_type not in allowed:
+                errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
+
+
+
+def validate_batch_manifest(batch, label, source_ids, errors):
+    """Check batch-local candidate identities and links to canonical sources."""
+    candidates = batch.get("candidates", []) or []
+    if not isinstance(candidates, list):
+        return
+    valid_candidates = [candidate for candidate in candidates if isinstance(candidate, dict)]
+    candidate_ids = [candidate.get("candidate_id") for candidate in valid_candidates]
+    if len(candidate_ids) != len(set(candidate_ids)):
+        errors.append(f"{label}: duplicate candidate_id in batch")
+    known_candidates = {value for value in candidate_ids if isinstance(value, str)}
+    duplicate_links = {}
+    selected_sources = set()
+
+    for candidate in valid_candidates:
+        candidate_id = candidate.get("candidate_id", "<missing candidate_id>")
+        source_id = candidate.get("source_id")
+        if source_id and source_id not in source_ids:
+            errors.append(f"{label} {candidate_id}: unresolved source_id {source_id}")
+        if candidate.get("decision") == "selected" and source_id:
+            if source_id in selected_sources:
+                errors.append(f"{label}: source_id {source_id} selected more than once in the same batch")
+            selected_sources.add(source_id)
+
+        duplicate_of = candidate.get("duplicate_of")
+        if duplicate_of:
+            if duplicate_of == candidate_id:
+                errors.append(f"{label} {candidate_id}: candidate cannot be a duplicate of itself")
+            elif duplicate_of not in known_candidates and duplicate_of not in source_ids:
+                errors.append(f"{label} {candidate_id}: unresolved duplicate_of {duplicate_of}")
+            elif duplicate_of in known_candidates:
+                duplicate_links[candidate_id] = duplicate_of
+
+        if batch.get("status") == "closed" and candidate.get("decision") == "deferred":
+            errors.append(f"{label} {candidate_id}: closed batch cannot contain deferred candidates")
+
+    for candidate_id in duplicate_links:
+        visited = set()
+        current = candidate_id
+        while current in duplicate_links:
+            if current in visited:
+                errors.append(f"{label}: duplicate_of cycle involving {candidate_id}")
+                break
+            visited.add(current)
+            current = duplicate_links[current]
+
+
+def validate_batch_manifests(source_ids, errors):
+    """Validate every committed source-ingestion batch manifest, if any exist."""
+    import json
+
+    directory = ROOT / "sources" / "batches"
+    schema_path = ROOT / "schemas" / "ingestion-batch.schema.json"
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        Draft202012Validator.check_schema(schema)
+        validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    except Exception as exc:
+        errors.append(f"Invalid schema schemas/ingestion-batch.schema.json: {exc}")
+        return
+
+    seen_batch_ids = set()
+    for path in sorted([*directory.glob("*.yml"), *directory.glob("*.yaml")]):
+        label = path.relative_to(ROOT).as_posix()
+        try:
+            with path.open(encoding="utf-8") as stream:
+                batch = yaml.safe_load(stream) or {}
+        except Exception as exc:
+            errors.append(f"{label}: invalid YAML: {exc}")
+            continue
+        if not isinstance(batch, dict):
+            errors.append(f"{label}: batch manifest must be a mapping")
+            continue
+        batch_id = batch.get("batch_id")
+        if batch_id:
+            if batch_id in seen_batch_ids:
+                errors.append(f"{label}: duplicate batch_id {batch_id}")
+            seen_batch_ids.add(batch_id)
+        for error in validator.iter_errors(batch):
+            location = ".".join(str(part) for part in error.absolute_path)
+            errors.append(f"{label} {location}: {error.message}")
+        validate_batch_manifest(batch, label, source_ids, errors)
+
 def main():
     errors = []
     taxonomy = load_yaml("knowledge/TAXONOMY.yml")
@@ -96,18 +239,8 @@ def main():
                 if tag_id not in tags:
                     errors.append(f"{record.get('id')}: unknown tag {tag_id}")
 
-    # Cross-reference checks for the typed links embedded in records.
-    reference_fields = {
-        "source_ids": "SOURCE", "study_ids": "STUDY", "dataset_ids": "DATASET",
-        "hypothesis_ids": "HYPOTHESIS", "claim_ids": "CLAIM",
-        "supporting_study_ids": "STUDY", "challenging_study_ids": "STUDY",
-    }
-    for prefix, records in all_records.items():
-        for record in records:
-            for field, target_type in reference_fields.items():
-                for target in record.get(field, []) or []:
-                    if target not in node_ids.get(target_type, set()):
-                        errors.append(f"{record.get('id')}: unresolved {field} reference {target}")
+    validate_cross_references(all_records, node_ids, errors)
+    validate_batch_manifests(node_ids.get('SOURCE', set()), errors)
 
     # Synthesis documents are first-class graph nodes, sourced from the synthesis registry.
     synthesis_registry = load_yaml("syntheses/registry.yml")
@@ -122,27 +255,11 @@ def main():
     node_ids["SYNTHESIS"] = synthesis_ids
     node_type_by_id.update({identifier: "SYNTHESIS" for identifier in synthesis_ids})
 
-    # Check graph edge identifiers, endpoint existence, relation type and endpoint types.
     graph = load_yaml("knowledge/graph.yml")
     edges = graph.get("relations", [])
     unique_ids(edges, "knowledge/graph.yml", errors)
     relation_by_id = {item["id"]: item for item in relation_defs}
-    for edge in edges:
-        edge_id = edge.get("id")
-        if not isinstance(edge_id, str) or not ID_RE.fullmatch(edge_id) or not edge_id.startswith("REL-"):
-            errors.append(f"Invalid graph edge identifier: {edge_id!r}")
-        definition = relation_by_id.get(edge.get("type"))
-        if definition is None:
-            errors.append(f"{edge_id}: unknown relation type {edge.get('type')!r}")
-            continue
-        for endpoint in ("from", "to"):
-            target = edge.get(endpoint)
-            actual_type = node_type_by_id.get(target)
-            allowed = definition.get(endpoint, [])
-            if actual_type is None:
-                errors.append(f"{edge_id}: unresolved {endpoint} node {target!r}")
-            elif actual_type not in allowed:
-                errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
+    validate_graph_edges(edges, relation_by_id, node_type_by_id, errors)
 
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)

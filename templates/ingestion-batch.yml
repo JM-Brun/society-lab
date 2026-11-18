@@ -1,0 +1,20 @@
+# Copy this file into sources/batches/ and replace every example value.
+# A batch is a trace of discovery/screening decisions, not a scientific assessment.
+batch_id: BATCH-EXAMPLE-REPLACE-ME
+created_at: "2026-11-18T00:00:00Z"
+origin:
+  kind: manual_search
+  description: "À remplacer par l'origine précise de la recherche."
+  query: "À remplacer par la requête ou le périmètre exploré."
+selection_criteria:
+  include:
+    - "À remplacer par un critère d'inclusion vérifiable."
+  exclude:
+    - "À remplacer par un critère d'exclusion vérifiable."
+status: open
+candidates:
+  - candidate_id: CANDIDATE-EXAMPLE-001
+    title: "Titre à renseigner"
+    discovered_at: "2026-11-18T00:00:00Z"
+    decision: deferred
+    decision_reason: "À compléter : information manquante ou action nécessaire avant décision."
