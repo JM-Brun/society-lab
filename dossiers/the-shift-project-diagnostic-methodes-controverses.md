@@ -117,7 +117,11 @@ La présente ingestion ne prétend pas avoir audité les 341 pages ni validé ch
 | Indépendance à l'égard des financeurs | Affirmation institutionnelle | À examiner par la gouvernance, les flux et les pratiques |
 | Pertinence de ses recommandations | Question empirique et normative | Ne peut être tranchée globalement ; examen par mesure et secteur |
 
-## 10. Programme de recherche Society Lab
+## 10. Approfondissement : audit du PREF 2026
+
+Le rapport intégral *Réussir la transition dans l'incertitude : la méthode Shift en 20 chantiers* a fait l'objet d'un audit documentaire distinct. Celui-ci examine les deux volets méthodologiques, les vingt chantiers, les variantes de réussite, les prismes énergie-carbone/cuivre/emploi-formation, ainsi que les questions de périmètre, de probabilités, de coûts et d'effets distributifs. Voir le [dossier d'audit du PREF 2026](pref-2026-audit-robustesse-scenarios.md) et sa [synthèse](../syntheses/pref-2026.md).
+
+## 11. Programme de recherche Society Lab
 
 1. Auditer le PREF 2026 chantier par chantier, avec un registre des propositions, hypothèses, indicateurs et coûts.
 2. Comparer les scénarios du Shift avec ceux de l'ADEME, de négaWatt, de RTE et de la Commission européenne, en harmonisant les périmètres.
