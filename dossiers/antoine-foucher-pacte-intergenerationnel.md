@@ -25,6 +25,7 @@ source_ids:
   - "SOURCE-BANQUE-FRANCE-PRODUCTIVITY-POSTCOVID-2023"
   - "SOURCE-INSEE-LEVEL-BY-AGE-1996-2024"
   - "SOURCE-INSEE-INTERGEN-TRANSMISSIONS-2024"
+  - "SOURCE-INSEE-PATRIMOINE-NET-ENDETTEMENT-2024"
 study_ids: ["STUDY-FOUCHER-GENERATIONAL-COMPARISON-2026"]
 claim_ids: []
 hypothesis_ids: []
@@ -368,3 +369,14 @@ Les tableaux Insee 2026 donnent des niveaux de vie médians par âge en euros 20
 Début 2024, le patrimoine brut médian est de 26 100 € pour les ménages dont la personne de référence a moins de 30 ans et de 245 000 € pour ceux de 60 à 69 ans. Cette différence mêle cycle de vie, cohorte, endettement et transmissions. L'enquête Histoire de vie et Patrimoine 2023-2024 documente aussi les actifs, dettes, donations, héritages et aides ; ses tableaux de transmissions doivent être exploités pour compléter la comparaison.
 
 **Conclusion provisoire :** les données examinées ne permettent pas d'affirmer que les générations récentes vivent globalement moins bien que leurs parents au même âge. Le résultat historique disponible va plutôt dans le sens d'une progression, mais il est antérieur aux cohortes et tensions les plus récentes. Les difficultés de logement, de patrimoine net et d'accès aux transmissions restent des dimensions prioritaires à tester séparément. Le protocole et les limites sont détaillés dans [l'étude dédiée](../research/foucher-comparaison-generationnelle.md).
+
+
+## 17. Transmissions, patrimoine net et dette : approfondissement HVP 2023-2024
+
+Les tableaux détaillés de l'Insee publiés le 7 avril 2026 indiquent que 41 % des ménages ont déjà hérité et 20 % ont déjà reçu une donation déclarée. Le patrimoine brut médian est de 306 600 € pour les ménages ayant hérité et de 435 900 € pour ceux ayant reçu une donation, contre 205 100 € pour l'ensemble des ménages. Ces écarts ne mesurent pas l'effet causal des transmissions : les ménages ayant hérité sont plus âgés (60 % ont une personne de référence d'au moins 60 ans, contre 40 % de l'ensemble), et l'accumulation au cours du cycle de vie, l'origine sociale, les revenus et la situation familiale interviennent également.
+
+La distinction brut/net est essentielle : début 2024, le patrimoine brut médian de l'ensemble des ménages atteint 205 100 €, mais le patrimoine net médian est de 148 100 €. L'Insee publie des séries de patrimoine brut moyen par âge pour 2015, 2021 et 2024. À 25 ans, cette moyenne est estimée à 140 000 € en 2015, 159 000 € en 2021 et 155 500 € en 2024, en euros 2024. Cette comparaison à âge identique entre vagues est utile, mais elle ne fournit pas encore les médianes et distributions nettes par cohorte ; les petits effectifs et la composition des ménages doivent être examinés.
+
+L'enquête HVP 2023-2024 compte 11 940 ménages répondants en France hors Mayotte. Elle couvre actifs, dettes, transmissions et éléments biographiques ; les revenus sont appariés aux données fiscales et sociales de 2022. Les résultats agrégés sont déclaratifs et ne sont pas calés sur les masses de la comptabilité nationale. Les définitions de l'Insee (ménage concerné dès qu'un membre a reçu une transmission, champ restreint pour les donations déclarées, valeurs le plus souvent à la date de transmission) sont conservées dans l'étude dédiée.
+
+**Conséquence pour le diagnostic :** les transmissions contribuent probablement à reproduire les inégalités patrimoniales, mais les chiffres agrégés ne permettent pas encore d'isoler leur contribution nette des autres facteurs. Le test décisif reste une comparaison à âge, origine sociale, structure familiale et patrimoine parental comparables, avec patrimoine net, logement et endettement.
