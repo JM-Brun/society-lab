@@ -16,7 +16,7 @@ class MarkdownAnchorValidationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); (root / 'docs').mkdir()
             (root / 'docs' / 'target.md').write_text('# Présentation\n# Résultat\n', encoding='utf-8')
-            (root / 'docs' / 'source.md').write_text('[ok](target.md#résultat) [bad](target.md#absent) [self](#présentation)\n', encoding='utf-8')
+            (root / 'docs' / 'source.md').write_text('# Présentation\n[ok](target.md#résultat) [bad](target.md#absent) [self](#présentation)\n', encoding='utf-8')
             checked, broken = find_broken_fragments(root)
         self.assertEqual(checked, 3)
         self.assertEqual(broken, [('docs/source.md', 'target.md', 'absent')])
