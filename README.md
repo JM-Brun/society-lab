@@ -63,11 +63,10 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 - [Débat, barrage et cordon sanitaire](dossiers/debat-barrage-cordon-sanitaire.md) — comparaison Belgique–Allemagne–France des stratégies de débat, de non-coalition, de démarcation médiatique et de barrage électoral ; voir le [protocole de revue systématique](dossiers/protocole-revue-systematique-cordon-sanitaire.md), la [matrice de preuves multi-arènes](dossiers/matrice-preuves-cordon-sanitaire.md), le [dossier spécialisé sur le modèle belge](dossiers/cordon-sanitaire-belgique-efficacite.md) et la [synthèse dédiée](syntheses/debat-barrage-cordon-sanitaire.md).
 - [Protocole comparatif des stratégies de réponse aux idées antidémocratiques](dossiers/protocole-comparatif-strategies-reponse-idees-antidemocratiques.md) — cartographie documentaire des travaux existants sur la contradiction, l'analyse indépendante, la pédagogie, les explications alternatives et l'exposition médiatique ; aucune expérimentation n'est prévue par Society Lab.
 
-## Synthèses
+## Synthèses des sujets
 
 - [Comparaison qualitative des scénarios de transition (PREF, RTE, ADEME, négaWatt, SNBC 3)](syntheses/comparaison-scenarios-transition-2026.md)
 - [Comparaison quantitative des trajectoires énergétiques](syntheses/comparaison-quantitative-scenarios-energie-2026.md)
- des sujets
 
 Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et révisable, qui présente les constats, les preuves, les controverses, les limites, les conclusions et les travaux restant à mener. Les synthèses ne remplacent pas les dossiers détaillés ni les registres structurés. La correspondance entre dossiers principaux et synthèses est tenue dans le [registre des synthèses](syntheses/registry.yml) et vérifiée automatiquement par GitHub Actions.
 
