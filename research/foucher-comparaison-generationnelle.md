@@ -12,6 +12,8 @@ source_ids:
   - "SOURCE-INSEE-PATRIMOINE-AGE-2024"
   - "SOURCE-INSEE-INTERGEN-TRANSMISSIONS-2024"
   - "SOURCE-INSEE-PATRIMOINE-NET-ENDETTEMENT-2024"
+  - "SOURCE-INSEE-HVP-ACCESS-2023-2024"
+  - "SOURCE-INSEE-HVP-METHODOLOGY-2023-2024"
 concept_ids:
   - "CONCEPT-DECLASSEMENT-ECONOMIQUE-RELATIF"
   - "CONCEPT-PACTE-INTERGENERATIONNEL"
@@ -118,3 +120,12 @@ L'Insee indique par ailleurs que le patrimoine immobilier augmente fortement ent
 5. Comparer séparément : (a) avoir déjà reçu une transmission, (b) âge au moment de la transmission, (c) montant et nature, (d) patrimoine net actuel, (e) situation de logement et endettement.
 
 La prochaine livraison doit produire une matrice par âge/cohorte, avec indicateurs de patrimoine net, accession à la propriété et transmissions, en distinguant résultats publiés, estimations recalculées et questions encore non identifiables.
+
+
+## 3 quinquies. Accès aux données : une voie réaliste pour passer aux microdonnées
+
+La documentation Insee indique que les données HVP 2023-2024 sont mises à disposition des chercheurs et institutions sur Quetelet-Progedo et au CASD depuis début 2026. Les fichiers de production et de recherche (FPR) sur Quetelet-Progedo offrent un niveau de détail supérieur aux tableaux grand public ; les données individuelles plus détaillées sont accessibles au CASD après autorisation du Comité du secret statistique. La disponibilité n'équivaut donc pas à un accès libre et immédiat.
+
+Le plan de sondage HVP 2023-2024 combine des ménages réinterrogés issus des vagues précédentes et un échantillon entrant. La collecte s'effectue au niveau du ménage, tandis que le suivi longitudinal est réalisé au niveau des individus. Il faut donc identifier les identifiants longitudinaux et les pondérations adaptées avant de construire des trajectoires ; la simple juxtaposition des ménages de chaque vague ne suffit pas.
+
+**Plan opérationnel :** commencer par vérifier le catalogue Quetelet-Progedo, les fichiers disponibles, dictionnaires, pondérations et règles de chaînage ; établir ensuite une table de correspondance des variables de patrimoine net, âge, cohorte, logement et transferts. Si le niveau de détail des FPR est insuffisant, documenter une demande CASD. En attendant, les tableaux publics permettent de cadrer les hypothèses, mais pas de produire une estimation microéconomique propre.
