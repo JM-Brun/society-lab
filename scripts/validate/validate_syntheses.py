@@ -50,6 +50,23 @@ def read_frontmatter(path: Path) -> tuple[dict, str]:
     return metadata, parts[2]
 
 
+def find_unreferenced_markdown_files(root: Path, directory: str, referenced_paths: set[str]) -> list[str]:
+    """List Markdown files not covered by an existing canonical path mapping.
+
+    This is advisory: directories may also contain working notes or evidence matrices,
+    so unreferenced files must be classified before becoming a blocking CI error.
+    """
+    base = root / directory
+    if not base.is_dir():
+        return []
+    return sorted(
+        path.relative_to(root).as_posix()
+        for path in base.glob("*.md")
+        if path.name.lower() != "readme.md"
+        and path.relative_to(root).as_posix() not in referenced_paths
+    )
+
+
 def main() -> int:
     errors: list[str] = []
     try:
@@ -58,6 +75,23 @@ def main() -> int:
     except (ValueError, yaml.YAMLError) as exc:
         fail(str(exc))
         return 1
+
+    referenced_dossier_paths = {
+        entry.get("dossier_path")
+        for entry in syntheses
+        if isinstance(entry, dict) and isinstance(entry.get("dossier_path"), str)
+    }
+    referenced_synthesis_paths = {
+        entry.get("synthesis_path")
+        for entry in syntheses
+        if isinstance(entry, dict) and isinstance(entry.get("synthesis_path"), str)
+    }
+    unreferenced_dossiers = find_unreferenced_markdown_files(
+        ROOT, "dossiers", referenced_dossier_paths
+    )
+    unreferenced_syntheses = find_unreferenced_markdown_files(
+        ROOT, "syntheses", referenced_synthesis_paths
+    )
 
     dossier_by_id = {item.get("id"): item for item in dossiers if isinstance(item, dict)}
     synthesis_by_id = {item.get("dossier_id"): item for item in syntheses if isinstance(item, dict)}
@@ -107,6 +141,21 @@ def main() -> int:
         for error in errors:
             fail(error)
         return 1
+
+    if unreferenced_dossiers:
+        print(
+            f"WARNING: {len(unreferenced_dossiers)} Markdown file(s) in dossiers/ "
+            "are not mapped to a main dossier in syntheses/registry.yml:"
+        )
+        for path in unreferenced_dossiers:
+            print(f"  - {path}")
+    if unreferenced_syntheses:
+        print(
+            f"WARNING: {len(unreferenced_syntheses)} Markdown file(s) in syntheses/ "
+            "are not referenced by syntheses/registry.yml:"
+        )
+        for path in unreferenced_syntheses:
+            print(f"  - {path}")
 
     print(f"Validated {len(dossier_by_id)} main dossier(s): each has a linked synthesis with required metadata and sections.")
     return 0
