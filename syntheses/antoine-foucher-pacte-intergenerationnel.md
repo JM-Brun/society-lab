@@ -142,3 +142,11 @@ Sur les dépenses publiques, l'Insee estime que la protection sociale hors sant�
 - **À faire :** comparer les cohortes à âge identique, intégrer patrimoine net et logement, et reconstituer les arbitrages budgétaires sur séries homogènes.
 
 Les données mobilisées proviennent de l'Insee, du COR et d'un travail méthodologique sur les cohortes publié par l'Insee en 2017. Elles améliorent le cadrage empirique, mais ne remplacent pas encore une étude longitudinale complète.
+
+
+## 13. Chantiers de recherche ouverts
+
+- [Issue #103 — Comparaison des générations à âge identique](https://github.com/JM-Brun/society-lab/issues/103).
+- [Issue #104 — Test de l'éviction budgétaire entre retraites et investissements](https://github.com/JM-Brun/society-lab/issues/104).
+
+La distinction entre ces deux chantiers est méthodologique : le premier porte sur les résultats vécus par les ménages et les cohortes ; le second sur les mécanismes de financement et les arbitrages de finances publiques.
