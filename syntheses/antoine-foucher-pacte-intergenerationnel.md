@@ -44,11 +44,9 @@ Le texte intégral n’ayant pas été consulté dans cette première version, c
 | Les retraites expliquent l’insuffisance de l’investissement | Contesté / non démontré à ce stade | Interprétation de Foucher | L’éviction budgétaire et le contrefactuel restent à établir |
 | Réduire l’écart de niveau de vie entre actifs et retraités améliorerait la situation des jeunes | Jugement normatif et hypothèse d’impact | Proposition de politique publique | Effets distributifs et macroéconomiques à simuler |
 
-## Analyse des preuves
+## 4. Ce que montrent les preuves
 
 Les données statistiques ajoutées dans le dossier sont de nature descriptive. Elles permettent de caractériser les niveaux de vie, les patrimoines et la structure des dépenses publiques, mais elles ne suffisent pas à établir les mécanismes causaux avancés dans l'essai. Les comparaisons entre âges doivent être distinguées des comparaisons entre cohortes, et les comptes budgétaires des évaluations de rendement social.
-
-## 4. Ce que montrent les preuves disponibles
 
 ### Faits et éléments vérifiables
 
@@ -154,3 +152,14 @@ Les données mobilisées proviennent de l'Insee, du COR et d'un travail méthodo
 - [Issue #104 — Test de l'éviction budgétaire entre retraites et investissements](https://github.com/JM-Brun/society-lab/issues/104).
 
 La distinction entre ces deux chantiers est méthodologique : le premier porte sur les résultats vécus par les ménages et les cohortes ; le second sur les mécanismes de financement et les arbitrages de finances publiques.
+
+
+## 14. Industrie, productivité et éducation : trois nuances importantes
+
+La désindustrialisation française est réelle en termes d'emploi et de poids relatif, mais ne correspond pas à une baisse absolue de la production : selon l'Insee, la valeur ajoutée industrielle en volume a été multipliée par 8,1 entre 1950 et 2025, contre 8,6 pour le PIB. La baisse de la part nominale de l'industrie s'explique en partie par les prix relatifs, tandis que l'emploi industriel a reculé de 5,4 millions en 1970 à 3,3 millions en 2010. Il faut donc distinguer emploi, volume, productivité et souveraineté productive.
+
+La productivité française a connu un décrochage depuis la pandémie, mais la Banque de France et l'Insee identifient plusieurs mécanismes possibles, notamment la composition de l'emploi, l'apprentissage et la rétention de main-d'œuvre. Une explication monocausale serait prématurée.
+
+Enfin, les dépenses publiques d'éducation représentaient 4,7 % du PIB en France en 2022, contre 4,3 % en moyenne OCDE, alors que les résultats PISA ont reculé. Cela ne prouve pas que les ressources sont suffisantes, mais oblige à analyser leur répartition et leur efficience plutôt que de conclure à un simple sous-financement global.
+
+**Bilan :** les thèses de Foucher sur l'affaiblissement productif et éducatif méritent une analyse approfondie, mais les indicateurs mobilisés ne valident pas automatiquement les explications qu'il privilégie. Il faut rechercher les mécanismes précis et les investissements qui produisent effectivement des résultats.
