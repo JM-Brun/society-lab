@@ -25,14 +25,14 @@ Périmètre : publications disponibles au 18 novembre 2026 ; horizon principal 2
 
 - Les scénarios ADEME couvrent environ 790 à 1 287 TWh en 2050 selon le graphique de consommation finale par secteur, usages non énergétiques inclus et soutes internationales exclues.
 - Le scénario négaWatt donne environ 932 TWh en 2050 en additionnant les postes résidentiel-tertiaire, industrie avec matières premières, agriculture et transports ; son périmètre inclut certaines soutes internationales et usages non énergétiques, et exclut l'Outre-mer.
-- La SNBC 3 prévoit 1 178 TWh en 2050, ou 1 006 TWh selon le périmètre de la directive européenne sur l'efficacité énergétique ; la référence 2012 est 1 756 TWh.
+- La SNBC 3 prévoit 1 178 TWh en 2050 dans le périmètre total, ou 1 006 TWh selon le périmètre de la directive européenne ; par rapport à 1 756 TWh en 2012, cela représente environ −33 % et −43 % respectivement.
 - RTE donne 555 TWh d'électricité en trajectoire sobriété, 645 TWh en référence et 752 TWh en réindustrialisation profonde. Ces valeurs concernent l'électricité, pas l'énergie finale totale.
 - L'ADEME estime les besoins électriques intermédiaires pour fabriquer l'hydrogène à 62, 135, 65 et 33 TWh selon S1 à S4 ; ils ne figurent pas dans le total final par vecteur.
 - Le PREF doit être quantifié chantier par chantier, car ses variantes conditionnelles et ses indicateurs énergie-carbone, cuivre et emploi ne forment pas spontanément un bilan agrégé homogène.
 
 ## 4. Ce que montrent les preuves
 
-Les documents primaires confirment les ordres de grandeur et les définitions. L'ADEME publie des valeurs approximatives issues de graphiques, avec des totaux qui diffèrent selon qu'ils sont ventilés par secteur ou par vecteur. négaWatt explicite l'inclusion des soutes internationales, des usages non énergétiques industriels et l'exclusion de l'Outre-mer ; le rapport annonce une baisse de 53 % de la consommation finale entre 2019 et 2050. La SNBC 3 distingue le périmètre énergétique total de celui de la directive européenne. RTE précise que ses 645 TWh de référence incluent les pertes réseau et l'électricité nécessaire à la production d'hydrogène.
+Les documents primaires confirment les ordres de grandeur et les définitions. L'ADEME publie des valeurs approximatives issues de graphiques, avec des totaux qui diffèrent selon qu'ils sont ventilés par secteur ou par vecteur. négaWatt explicite l'inclusion des soutes internationales, des usages non énergétiques industriels et l'exclusion de l'Outre-mer ; le rapport annonce une baisse de 53 % de la consommation finale entre 2019 et 2050. La SNBC 3 distingue le périmètre énergétique total de celui de la directive européenne. Le contrôle arithmétique révèle que −43 % correspond à 1 006 TWh (périmètre DEE), tandis que 1 178 TWh correspond à environ −33 % ; la formulation du projet doit être lue avec cette précaution. RTE précise que ses 645 TWh de référence incluent les pertes réseau et l'électricité nécessaire à la production d'hydrogène.
 
 ## 5. Débat contradictoire
 
@@ -40,7 +40,7 @@ La forte sobriété du scénario ADEME S1 et de négaWatt peut être confrontée
 
 ## 6. Incertitudes et limites
 
-Les valeurs ADEME sont approximatives et les totaux par secteur et par vecteur ne coïncident pas, notamment en raison des usages non énergétiques et des puits technologiques. Les chiffres négaWatt sont issus d'un bilan avec conventions PCS et un périmètre particulier. La SNBC 3 présente deux périmètres de consommation finale ; le document source de juin 2026 est le projet publié avant adoption. Les chiffres RTE sont issus de l'étude 2021-2022 et devront être actualisés par les résultats de la reconduction 2026. Le volet quantitatif du PREF reste à approfondir.
+Les valeurs ADEME sont approximatives et les totaux par secteur et par vecteur ne coïncident pas, notamment en raison des usages non énergétiques et des puits technologiques. Les chiffres négaWatt sont issus d'un bilan avec conventions PCS et un périmètre particulier. La SNBC 3 présente deux périmètres de consommation finale ; une ambiguïté de rédaction apparaît dans l'association des pourcentages de réduction aux valeurs de ces périmètres. Le document source de juin 2026 est le projet publié avant adoption. Les chiffres RTE sont issus de l'étude 2021-2022 et devront être actualisés par les résultats de la reconduction 2026. Le volet quantitatif du PREF reste à approfondir.
 
 ## 7. Conclusion raisonnée
 
