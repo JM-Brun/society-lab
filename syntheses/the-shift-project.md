@@ -1,55 +1,67 @@
-# Synthèse — The Shift Project
+---
+id: "SYNTHESIS-SHIFT-PROJECT"
+title: "The Shift Project : mission, méthode, propositions et controverses"
+domain: "energy-environment-economy"
+status: "provisional"
+confidence: "moderate"
+last_reviewed: "2026-11-18"
+related_dossiers:
+  - "dossiers/the-shift-project-diagnostic-methodes-controverses.md"
+---
 
-**Mise à jour : 18 novembre 2026**  
-**Statut : synthèse initiale, revue documentaire partielle**
-
-## En bref
+## 1. Synthèse exécutive
 
 The Shift Project est un think tank français fondé en 2010 qui cherche à accélérer la décarbonation et à réduire la dépendance de l'économie aux énergies fossiles. Il combine analyses quantitatives et qualitatives, prospective sectorielle, propositions opérationnelles et plaidoyer auprès des décideurs. Sa grille de lecture est explicitement physique et systémique : l'économie dépend de flux d'énergie, de matières et d'infrastructures.
 
-## Principaux constats
+Son intérêt pour Society Lab est double : ses travaux fournissent des diagnostics et propositions à examiner, et son fonctionnement constitue un cas d'étude sur la production d'expertise et l'influence des think tanks.
 
-1. **Une double contrainte structurante.** Le Shift articule l'impératif climatique de réduction des émissions et la vulnérabilité liée à la dépendance aux combustibles fossiles. Ces deux dimensions sont liées mais ne doivent pas être confondues.
-2. **Une approche transversale.** Les sujets couvrent transports, énergie, industrie, bâtiment, agriculture, numérique, santé, emploi, formation et territoires.
-3. **Un think tank d'influence, pas seulement un producteur d'études.** L'organisation assume le plaidoyer, les partenariats et le travail auprès des décideurs.
-4. **Une méthode déclarée traçable et collaborative.** Elle documente les hypothèses, mobilise des expertises pluridisciplinaires et ouvre certains travaux intermédiaires à la critique. La qualité doit néanmoins être contrôlée au niveau de chaque rapport.
-5. **Une gouvernance et un financement à examiner.** Le financement repose principalement sur des membres et mécènes, dont beaucoup d'entreprises. Le Shift publie des règles de gouvernance destinées à protéger son indépendance ; leur existence ne clôt pas l'audit des pratiques et des effets d'agenda.
-6. **Une controverse méthodologique instructive.** En 2020, le Shift a reconnu une erreur de conversion dans un chiffre relayé en entretien sur la vidéo en ligne. L'AIE et Carbon Brief ont également contesté plusieurs hypothèses d'intensité énergétique. Le Shift a répondu en distinguant l'erreur médiatique de ses rapports publiés et en défendant une partie de ses hypothèses restantes.
+## 2. Question et périmètre
 
-## Ce qui est établi, discuté ou encore inconnu
+**Question :** que propose The Shift Project, sur quels diagnostics et méthodes s'appuie-t-il, comment cherche-t-il à influencer les décisions, et quelles limites doivent être prises en compte ?
 
-| Question | État des connaissances |
-|---|---|
-| Mission, secteurs et plaidoyer | Explicitement documentés par l'organisation |
-| Approche physique et systémique | Cadre intellectuel revendiqué ; pertinence à examiner par étude |
-| Qualité des modèles et scénarios | À auditer sur les hypothèses, données, sensibilités et validations externes |
-| Indépendance financière | Gouvernance publiée ; audit détaillé des montants et conventions restant à faire |
-| Controverse streaming vidéo | Erreur de conversion reconnue ; désaccord méthodologique plus large documenté |
-| Effets sociaux et distributifs des propositions | Nécessitent des évaluations spécifiques, rarement résumables par le seul bilan carbone |
+Périmètre : organisation, cadre intellectuel, secteurs d'intervention, méthode, plaidoyer, financement et controverses méthodologiques documentées. L'analyse porte sur les publications institutionnelles disponibles et une controverse historique sur la vidéo en ligne ; elle ne constitue pas un audit complet de tous les travaux du Shift.
 
-## Limites de l'analyse actuelle
+## 3. Principaux constats
 
-Cette synthèse s'appuie surtout sur les documents institutionnels du Shift et une controverse méthodologique bien documentée. Elle ne permet pas de conclure globalement à la qualité ou à la partialité de l'organisation. Elle n'a pas encore audité l'ensemble des rapports, scénarios, comptes, conventions de financement ou critiques externes.
+1. **Double contrainte.** Le Shift articule l'impératif climatique de réduction des émissions et la vulnérabilité liée à la dépendance aux combustibles fossiles. Ces dimensions sont liées mais ne doivent pas être confondues.
+2. **Approche transversale.** Les travaux couvrent transports, énergie, industrie, bâtiment, agriculture, numérique, santé, emploi, formation et territoires.
+3. **Think tank d'influence.** L'organisation assume le plaidoyer, les partenariats et le travail auprès des décideurs ; elle ne se limite pas à publier des études.
+4. **Méthode déclarée collaborative.** Elle mobilise des expertises pluridisciplinaires, des données et des hypothèses quantitatives et qualitatives. La qualité doit être évaluée rapport par rapport.
+5. **Financement à auditer.** Le financement repose sur des membres et mécènes, dont beaucoup d'entreprises. Le Shift publie des règles de gouvernance destinées à protéger son indépendance ; leur existence ne clôt pas l'audit des pratiques et des effets d'agenda.
+6. **Controverse instructive.** En 2020, le Shift a reconnu une erreur de conversion dans un chiffre relayé en entretien sur la vidéo en ligne. L'AIE et Carbon Brief ont également contesté plusieurs hypothèses d'intensité énergétique.
 
-## Conclusion opérationnelle
+## 4. Ce que montrent les preuves
 
-The Shift Project constitue un acteur important du débat français sur la planification de la transition énergétique et climatique. Pour Society Lab, son intérêt est double : ses travaux sont une source de diagnostics et de propositions à examiner, et son fonctionnement offre un cas d'étude sur le rôle des think tanks dans la production d'expertise et l'influence des politiques publiques.
+Les sources institutionnelles documentent la mission, le périmètre sectoriel, les méthodes revendiquées, le plaidoyer et les règles de financement. Elles sont appropriées pour décrire les déclarations de l'organisation, mais ne constituent pas une validation indépendante de ses résultats.
 
-La règle d'analyse à retenir est de ne pas traiter « le Shift » comme une autorité globale : évaluer chaque rapport, chaque modèle et chaque proposition selon ses sources, ses hypothèses, ses incertitudes, ses effets distributifs et les critiques contradictoires disponibles.
+La controverse sur le streaming montre l'intérêt de confronter les publications, les critiques externes et les réponses de l'organisation. L'erreur de conversion reconnue doit être distinguée des désaccords méthodologiques sur les intensités énergétiques des centres de données et des réseaux.
 
-## Approfondissement du PREF 2026
+Le premier volet du PREF 2026 a été approfondi dans un dossier spécifique : [audit de la robustesse et des scénarios](pref-2026-audit-robustesse-scenarios.md).
 
-Le rapport technique d'avril 2026 a été examiné dans un dossier séparé. Il apporte une analyse des conditions de réussite de vingt chantiers et des variantes de trajectoires sous incertitude. Ses points forts sont la lecture systémique et l'attention aux conditions de mise en œuvre ; les principales questions d'audit concernent le cadrage par le PTEF, la non-exhaustivité des chantiers, la définition des variantes et l'intégration transversale des coûts, des inégalités et des finances publiques. Voir le [dossier d'audit](pref-2026-audit-robustesse-scenarios.md) et la [synthèse PREF](pref-2026.md).
+## 5. Débat contradictoire
 
-## Travaux prioritaires
+- **Financement et indépendance :** la présence de financeurs privés justifie un examen des montants, conventions, règles de gouvernance et choix de sujets. Elle ne prouve pas à elle seule une capture de l'expertise.
+- **Méthodes et scénarios :** les modèles dépendent des données, périmètres et hypothèses ; ils doivent être confrontés à des scénarios alternatifs et à des analyses de sensibilité.
+- **Orientation économique :** le positionnement visant à convaincre les acteurs économiques établis est un choix stratégique et normatif, qui mérite débat sur la croissance, la sobriété, la redistribution et la propriété des infrastructures.
+- **Controverse streaming :** une erreur reconnue et un désaccord sur les hypothèses doivent être documentés séparément ; ils ne justifient pas une généralisation à l'ensemble des travaux.
 
-- Décomposer le PREF 2026 en 20 chantiers et auditer chacun.
+## 6. Incertitudes et limites
+
+Cette synthèse repose surtout sur les documents institutionnels du Shift et une controverse méthodologique documentée. Elle ne permet pas de conclure globalement à la qualité ou à la partialité de l'organisation. Les comptes détaillés, conventions de mécénat, modèles sectoriels, hypothèses de scénarios et critiques indépendantes restent à examiner.
+
+## 7. Conclusion raisonnée
+
+The Shift Project est un acteur important du débat français sur la planification de la transition énergétique et climatique. Il apporte une lecture physique et systémique utile, mais ne doit pas être traité comme une autorité globale. Society Lab doit évaluer chaque rapport, modèle et proposition selon ses sources, ses hypothèses, ses incertitudes, ses effets distributifs et les critiques contradictoires disponibles.
+
+### Travaux prioritaires
+
+- Auditer le PREF 2026 chantier par chantier.
 - Comparer les scénarios avec ADEME, négaWatt, RTE et les scénarios européens.
-- Examiner le financement, la gouvernance et les garanties d'indépendance.
+- Examiner financement, gouvernance et garanties d'indépendance.
 - Construire une revue systématique des critiques externes.
 - Évaluer les effets sociaux, économiques et territoriaux des propositions.
 
-## Sources de départ
+### Sources de départ
 
 - https://theshiftproject.org/qui-sommes-nous/
 - https://theshiftproject.org/notre-mission-eclairer-et-influencer-le-debat-sur-les-defis-climat-energie/
