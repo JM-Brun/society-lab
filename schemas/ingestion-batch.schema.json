@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jm-brun.github.io/society-lab/schemas/ingestion-batch.schema.json",
+  "title": "Society Lab ingestion batch manifest",
+  "description": "Audit manifest for a bounded source-discovery and screening batch. It records decisions, not scientific quality.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "batch_id",
+    "created_at",
+    "origin",
+    "selection_criteria",
+    "status",
+    "candidates"
+  ],
+  "properties": {
+    "batch_id": {
+      "type": "string",
+      "pattern": "^BATCH-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "description"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "manual_search",
+            "web_search",
+            "api_catalogue",
+            "dataset_portal",
+            "institutional_catalogue",
+            "referral",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 5
+        },
+        "query": {
+          "type": "string"
+        },
+        "reference_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "selection_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "include",
+        "exclude"
+      ],
+      "properties": {
+        "include": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "minItems": 1
+        },
+        "exclude": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 3
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "open",
+        "screening",
+        "review",
+        "closed"
+      ]
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "decision",
+          "discovered_at"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "pattern": "^CANDIDATE-[A-Z0-9][A-Z0-9-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "canonical_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "external_identifier": {
+            "type": "string",
+            "minLength": 1
+          },
+          "discovered_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "decision": {
+            "enum": [
+              "selected",
+              "duplicate",
+              "excluded",
+              "deferred",
+              "inaccessible"
+            ]
+          },
+          "source_id": {
+            "type": "string",
+            "pattern": "^SOURCE-[A-Z0-9][A-Z0-9-]*$"
+          },
+          "duplicate_of": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision_reason": {
+            "type": "string"
+          },
+          "access_status": {
+            "enum": [
+              "paywalled",
+              "restricted",
+              "unavailable",
+              "unknown",
+              "abstract"
+            ]
+          },
+          "reviewer_note": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "title"
+            ]
+          },
+          {
+            "required": [
+              "canonical_url"
+            ]
+          },
+          {
+            "required": [
+              "external_identifier"
+            ]
+          }
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "selected"
+                }
+              },
+              "required": [
+                "decision"
+              ]
+            },
+            "then": {
+              "required": [
+                "source_id"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "duplicate"
+                }
+              },
+              "required": [
+                "decision"
+              ]
+            },
+            "then": {
+              "required": [
+                "duplicate_of"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "excluded"
+                }
+              },
+              "required": [
+                "decision"
+              ]
+            },
+            "then": {
+              "required": [
+                "decision_reason"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "decision": {
+                  "const": "inaccessible"
+                }
+              },
+              "required": [
+                "decision"
+              ]
+            },
+            "then": {
+              "required": [
+                "decision_reason",
+                "access_status"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "closed"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "closed_at",
+          "reviewed_at"
+        ]
+      }
+    }
+  ]
+}
