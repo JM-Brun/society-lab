@@ -193,13 +193,15 @@ def inspect_source_file(path: Path) -> dict:
         columns = next(reader, [])
     digest = hashlib.sha256()
     with path.open("rb") as handle:
+        prefix = handle.read(3)
+        handle.seek(0)
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return {
         "file_size_bytes": path.stat().st_size,
         "sha256": digest.hexdigest(),
         "decoder": "utf-8-sig",
-        "utf8_bom": path.read_bytes().startswith(b"\xef\xbb\xbf"),
+        "utf8_bom": prefix == b"\xef\xbb\xbf",
         "delimiter": dialect.delimiter,
         "column_count": len(columns),
         "columns": columns,
