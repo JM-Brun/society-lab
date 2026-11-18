@@ -122,3 +122,13 @@ Les relations sont orientées et justifiées. Les relations inverses sont dédui
 - [Graphe de connaissance](../graph.yml)
 - [Protocole d'ingestion](../../docs/ingestion-protocol.md)
 - [Roadmap du projet](../../docs/roadmap.md)
+
+
+## Liens transversaux
+
+L'éducation se relie aux autres domaines par les compétences, les trajectoires et les capacités collectives :
+- **Économie et emploi** : qualification, segmentation, mobilité, progression salariale et productivité ; distinguer effet du diplôme, compétences effectivement mobilisées et sélection sociale.
+- **Transition énergétique** : besoins de formation initiale et continue, reconversions, géographie des emplois et délais d'ajustement.
+- **Générations et finances publiques** : investissement éducatif, transmission des ressources et bénéfices à long terme.
+
+Parcoursup n'est qu'une étape de la chaîne éducative. Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md) pour les questions à instruire et les limites des rapprochements.
