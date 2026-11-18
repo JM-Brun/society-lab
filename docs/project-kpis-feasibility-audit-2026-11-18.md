@@ -84,3 +84,36 @@ Aucune intégration CI n'est ajoutée à ce stade. Il faut d'abord exécuter les
 5. Le calculateur reste en lecture seule ; la CI n'est pas modifiée avant validation et benchmark.
 
 **Limite :** les résultats sont un instantané du dépôt au 18 novembre 2026. Toute évolution du schéma, du périmètre ou des relations peut modifier les valeurs et doit être signalée dans les rapports ultérieurs.
+
+
+## Addendum — intégration CI postérieure à l'audit initial
+
+L'état décrit dans la section « Prototype et tests » ci-dessus correspond à la situation antérieure à l'intégration du benchmark dans la CI. Depuis, le workflow `.github/workflows/validate.yml` exécute `scripts/benchmark/benchmark_project_kpis.py --repeats 3 --scales 1 10 100` dans une étape informative, après le benchmark de validation des schémas de registre. Cette étape ne définit aucun seuil bloquant et ne fait pas échouer la CI sur la valeur d'un KPI.
+
+Exécution de référence sur `main` : [run 44364791315](https://github.com/JM-Brun/society-lab/actions/runs/44364791315), terminé avec succès. Les temps mesurés doivent être lus dans le résumé Actions avant de décider si le benchmark doit rester dans chaque exécution du workflow ou être déplacé vers un déclenchement manuel/périodique. Aucun chiffre de durée n'est repris ici faute de mesure vérifiée dans cet audit.
+
+
+## Mesure des durées Actions — 18 novembre 2026
+
+Les durées ont été extraites des journaux des jobs Actions, entre le début de chaque commande et le début de la commande suivante. Elles incluent la génération des instantanés synthétiques et l'exécution du script ; elles ne sont pas équivalentes aux seules médianes de validation/calcule.
+
+| Benchmark | Run de référence `44364791315` | PR #157 `44375674389` |
+|---|---:|---:|
+| Benchmark schémas : durée de l'étape | 26,8 s | 42,2 s |
+| Benchmark KPI : durée de l'étape | 7,4 s | 11,6 s |
+| Total des deux étapes | 34,2 s | 53,8 s |
+
+Détail du benchmark schémas sur le run de PR : 441 enregistrements à ×1 (0,216764 s médiane), 4 410 à ×10 (1,010848 s) et 44 100 à ×100 (9,064371 s) pour la seule fonction de validation. Le coût de l'étape est supérieur, notamment parce que le benchmark construit et prépare les corpus synthétiques.
+
+Détail du benchmark KPI sur le run de PR :
+
+| Échelle | Chargement YAML médian | Calcul KPI médian | Total médian |
+|---|---:|---:|---:|
+| ×1 | 1,047114 s | 0,001842 s | 1,048956 s |
+| ×10 | 1,051334 s | 0,016635 s | 1,067970 s |
+| ×100 | 1,066890 s | 0,198497 s | 1,265387 s |
+
+Les deux runs montrent une variabilité sensible du temps de job ; ils ne justifient pas un seuil de performance rigide. Ils suffisent toutefois à constater que deux étapes informatives ajoutent environ 34 à 54 secondes à une CI, sans contribuer à la validation fonctionnelle de chaque modification.
+
+**Décision :** déplacer les deux benchmarks synthétiques vers un workflow hebdomadaire et déclenchable manuellement. Conserver dans la CI PR/push les validations, tests unitaires, contrôles de schémas et le calcul ordinaire des trois KPIs (sans charges synthétiques). Les résumés Actions du workflow périodique conserveront les mesures de performance.
+
