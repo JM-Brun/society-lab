@@ -135,6 +135,10 @@ Une revue transversale doit vérifier :
 
 Aucune base externe, aucun graphe universel et aucune synchronisation automatique inter-dépôts ne sont introduits par ce cadre.
 
-## 9. Travaux restant à mener
+## 9. Inventaire du corpus et cas d'étude
+
+L'[inventaire initial des connaissances et des rapprochements inter-domaines](cross-domain-knowledge-inventory.md) documente l'état du graphe, les concepts déjà disponibles, les chaînes candidates et les limites de preuve au 18 novembre 2026. Il complète ce cadre sans créer de registre concurrent.
+
+## 10. Travaux restant à mener
 
 Le programme opérationnel, les cas d'étude, les critères d'acceptation et leur articulation avec les issues existantes sont suivis dans [l'issue #112](https://github.com/JM-Brun/society-lab/issues/112). Les prochaines étapes sont l'inventaire dédoublonné des concepts et mécanismes, l'examen des relations candidates dans les dossiers existants, puis une première cartographie économique sourcée.
