@@ -84,6 +84,7 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 - [Charte fondatrice](CHARTER.md)
 - [Méthodologie](METHODOLOGY.md)
 - [Architecture](docs/architecture.md)
+- [Audit initial du pipeline d'ingestion et de production des connaissances](docs/audit-ingestion-knowledge-pipeline-2026-11.md) — état des lieux des procédures, métadonnées, schémas, extractions, graphes, contrôles et priorités de fiabilisation.
 - [Feuille de route](docs/roadmap.md)
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
