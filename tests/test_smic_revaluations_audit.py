@@ -15,12 +15,13 @@ class SmicHistoricalAuditTests(unittest.TestCase):
         with path.open(encoding="utf-8", newline="") as stream:
             result = audit_rows(list(csv.DictReader(stream)))
         self.assertEqual(result["row_count"], 24)
-        self.assertEqual(result["first_period"], "1970-1971")
-        self.assertEqual(result["last_period"], "1993-1994")
+        self.assertEqual(result["first_period"], "1969-1970")
+        self.assertEqual(result["last_period"], "1992-1993")
         with path.open(encoding="utf-8", newline="") as stream:
-            row_1978 = next(row for row in csv.DictReader(stream) if row["period"] == "1978-1979")
+            row_1978 = next(row for row in csv.DictReader(stream) if row["period"] == "1977-1978")
         self.assertEqual(row_1978["smic_hourly_francs"], "10.85")
         self.assertIn("tableau 2", row_1978["notes"])
+        self.assertIn("Tableau 3", row_1978["source_locator"])
 
     def test_arithmetic_gaps_are_flagged_not_silently_added(self):
         path = ROOT / "data" / "smic-revaluations-1970-1993.csv"
@@ -34,7 +35,8 @@ class SmicHistoricalAuditTests(unittest.TestCase):
 
     def test_rejects_duplicate_periods(self):
         row = {
-            "period": "1970-1971", "date_effective": "1970-07-01",
+            "period": "1969-1970", "date_effective": "1970-07-01",
+            "source_locator": "Tableau 3, p. 166",
             "source_id": "SOURCE-TEST", "observed_change_pct": "10",
             "price_component_pct": "5", "half_tsh_component_pct": "2",
             "legal_obligation_pct": "7", "discretionary_boost_pct": "3",
