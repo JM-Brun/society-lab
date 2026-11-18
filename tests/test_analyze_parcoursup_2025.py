@@ -93,6 +93,8 @@ class ParcoursupAnalysisTests(unittest.TestCase):
             self.assertEqual(source_meta["delimiter"], ";")
             self.assertEqual(source_meta["column_count"], len(fields))
             self.assertEqual(source_meta["columns"], fields)
+            self.assertEqual(source_meta["decoder"], "utf-8-sig")
+            self.assertFalse(source_meta["utf8_bom"])
             self.assertEqual(manifest["source_url"], "https://example.invalid/source.csv")
             self.assertEqual(manifest["downloaded_at_utc"], "2026-11-18T12:00:00Z")
             self.assertTrue(manifest["processed_at_utc"])
