@@ -156,4 +156,4 @@ Le compte rendu rapporte 17 696 contributeurs et 51 859 messages pour cette cons
 
 Cette information documente mieux le déroulement concret du processus, mais ne remplace pas les supports remis, la liste complète des experts, les transcriptions, les observations des échanges et les productions des groupes. La conclusion sur le pluralisme et la qualité délibérative reste donc ouverte.
 
-Source : [compte rendu du troisième week-end, 10 novembre 2026](${reportUrl}).
+Source : [compte rendu du troisième week-end, 10 novembre 2026](https://savoir-animal.fr/3e-session-un-commun-accord-150-citoyens-confrontent-points-de-vue-sur-grands-dilemmes/).
