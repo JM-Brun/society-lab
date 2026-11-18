@@ -24,7 +24,7 @@ La première version doit distinguer quatre indicateurs de pilotage prioritaires
 | Indicateur | Rôle | Calcul cible | Priorité |
 |---|---|---|---|
 | Source-to-Knowledge Coverage | Mesurer l'exploitation documentaire des sources | Sources éligibles reliées à au moins un objet de connaissance / sources éligibles | Principal |
-| Evidence Verification Coverage | Suivre la vérification documentée des claims | Claims éligibles avec statut de vérification explicite / claims éligibles | Principal |
+| Claim Conclusion Coverage | Suivre la vérification documentée des claims | Claims éligibles avec statut de vérification explicite / claims éligibles | Principal |
 | Synthesis Coverage | Vérifier que les dossiers principaux disposent d'une synthèse | Dossiers principaux éligibles avec synthèse enregistrée / dossiers principaux éligibles | Principal |
 | Cross-domain Integration Coverage | Mesurer les mises en relation réellement transversales | Relations inter-domaines justifiées et éligibles, rapportées au périmètre suivi ; voir définition ci-dessous | Principal, après audit |
 | Knowledge Graph Connectivity | Détecter les objets isolés ou insuffisamment reliés | Objets éligibles ayant au moins une relation pertinente et justifiée / objets éligibles | Diagnostic |
@@ -45,16 +45,16 @@ Les indicateurs principaux ne constituent pas un classement de performance scien
 
 Afficher également le nombre de sources sans lien exploitable et la liste des identifiants concernés.
 
-### 3.2 Evidence Verification Coverage
+### 3.2 Claim Conclusion Coverage
 
-**Question :** quelle proportion des claims examinés possède un état de vérification explicite et exploitable ?
+**Question :** quelle proportion des claims actifs possède une conclusion épistémique explicitement documentée ?
 
-- **Numérateur :** claims éligibles dont le statut documente un examen explicite de la proposition, selon une taxonomie validée.
-- **Dénominateur :** claims éligibles, hors seuls cas explicitement exclus par une règle documentée.
-- **Ventilation obligatoire :** vérifié, partiellement vérifié, à vérifier, contesté, réfuté, indéterminé — sous réserve que ces états correspondent aux valeurs réelles ou à une taxonomie adoptée.
-- **Garde-fou :** « réfuté » et « contesté » témoignent d'un examen et ne doivent pas être confondus avec « non vérifié ». Publier la ventilation brute en plus du ratio.
+- **Numérateur :** claims dont le champ canonique `status` vaut `supported`, `partially_supported`, `contested`, `not_supported` ou `insufficient_evidence`.
+- **Dénominateur :** tous les claims actifs, c'est-à-dire les claims dont le statut n'est pas `superseded`.
+- **Ventilation obligatoire :** publier les effectifs par valeur réelle de `status`, notamment `unexamined`, `under_review` et les cinq statuts conclusifs.
+- **Garde-fou :** une conclusion négative ou contestée compte comme une conclusion documentée, pas comme un résultat positif. Ce ratio ne mesure ni la vérité des propositions ni une vérification indépendante.
 
-Ne pas coder la taxonomie dans le calcul avant d'avoir audité le schéma Claim et les valeurs réellement présentes. Si le modèle distingue statut éditorial, statut épistémique et statut de vérification, seul le champ pertinent entre dans le calcul.
+Le champ `source_verifications.status` décrit le contrôle de chaque source associée à un claim ; il ne remplace pas le statut épistémique du claim et n'entre pas dans ce calcul.
 
 ### 3.3 Synthesis Coverage
 
