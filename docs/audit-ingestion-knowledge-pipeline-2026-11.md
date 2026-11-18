@@ -159,3 +159,75 @@ Ces cas servent à tester un même pipeline sur des formes de preuve différente
 **Audit initial réalisé ; audit opérationnel et exhaustif à poursuivre.**
 
 Aucune conclusion n'est tirée ici sur la qualité de chaque source ou claim individuel. Les écarts à confirmer, les tests à écrire et les migrations sont suivis dans l'issue [#114](https://github.com/JM-Brun/society-lab/issues/114).
+
+## 9. Audit technique complémentaire — inventaire et contrôles croisés
+
+Cette section complète la photographie initiale après inspection du contenu réel des registres et du code du validateur.
+
+### 9.1 Volume et répartition observés
+
+Comptage des entrées structurées présentes dans les registres au moment de l'audit (18 novembre 2026) :
+
+| Registre | Entrées |
+|---|---:|
+| Sources | 214 |
+| Études | 59 |
+| Jeux de données | 14 |
+| Claims | 83 |
+| Hypothèses | 22 |
+| Dossiers | 25 |
+| Concepts | 15 |
+| Mécanismes | 0 |
+| Prévisions | 0 |
+| Relations du graphe avant nettoyage | 596 |
+
+Tailles observées : registre des sources ~237 Ko, études ~97 Ko, claims ~117 Ko et graphe ~175 Ko. Ces volumes ne démontrent pas un problème de performance ; ils signalent en revanche que plusieurs registres contiennent déjà les fiches complètes et ne sont plus de simples index légers.
+
+La documentation `sources/README.md` présente le registre comme un index léger et prévoit `records/` et `batches/` si le volume le justifie. Ces répertoires ne sont pas encore présents dans l'arborescence inspectée. Il faut décider explicitement à quel seuil découper les fiches individuelles et comment conserver un index canonique, sans lancer une migration massive uniquement sur la base de la taille actuelle.
+
+Les schémas et registres des mécanismes et prévisions existent, mais leurs registres sont vides. Il s'agit donc de capacités prévues, pas encore de processus éprouvés sur des objets réels. Le chantier des mécanismes devra notamment produire au moins un exemple complet, sourcé et revu avant de considérer le contrat opérationnel.
+
+### 9.2 Défauts de validation confirmés
+
+L'inspection du code a confirmé deux angles morts précis :
+- le validateur contrôlait les références de premier niveau, mais pas `concept_ids` dans les dossiers ;
+- il ne vérifiait pas les `source_id` imbriqués dans `source_verifications` des claims.
+
+Le schéma JSON autorisait donc ces références sans que le validateur vérifie l'existence de leurs cibles. Le validateur a été complété pour couvrir ces deux cas, et des tests unitaires négatifs et positifs ont été ajoutés dans `tests/test_validate_registry.py`.
+
+Le contrôle du graphe vérifiait les types et les extrémités, mais n'imposait pas en code la justification non vide pourtant exigée par `knowledge/GRAPH.md`. Il vérifie maintenant cette exigence.
+
+### 9.3 Doublons de relations observés et traités
+
+L'inventaire des 596 arêtes a identifié sept triplets dupliqués (même type, même nœud source et même nœud cible), avec des identifiants différents et des justifications partiellement complémentaires. Il ne s'agissait pas de doublons stricts de texte : chaque paire apportait une précision utile, mais le modèle du graphe n'avait pas de règle explicite pour gérer plusieurs justifications d'une même relation.
+
+Sur la branche de cette PR, les sept paires ont été consolidées en une seule arête chacune, en fusionnant leurs justifications sans supprimer les nuances documentaires. Le graphe passe ainsi de 596 à 589 arêtes. Le validateur signale désormais toute nouvelle répétition d'un même triplet afin d'éviter le retour de cette ambiguïté.
+
+Cette règle suppose qu'une arête représente une relation sémantique unique entre deux objets. Si plusieurs éléments de preuve doivent être associés au même lien, ils doivent être regroupés dans la justification ou, à terme, portés par une structure de preuves dédiée — pas dupliqués sous plusieurs identifiants d'arête.
+
+### 9.4 Écart entre architecture déclarée et objets opérationnels
+
+L'architecture cite notamment les objets Institution/ORG, Method/METHOD et Analysis/ANALYSIS comme objets fondamentaux, et plusieurs types de relations autorisent ces catégories. En revanche, l'inventaire des registres et schémas actuellement chargés par le validateur ne comporte pas de registres canoniques complets pour ces trois types.
+
+À ce stade, aucune migration ne doit être engagée sans cas d'usage réel. Il faut soit créer ces contrats lorsque le premier objet de ce type est nécessaire, soit préciser dans l'architecture qu'il s'agit de types futurs ou de références textuelles non autonomes. Ne pas laisser entendre qu'un type est déjà géré de bout en bout alors qu'il n'a ni registre ni schéma validé.
+
+### 9.5 Limites qui restent ouvertes
+
+- Le validateur ne mesure toujours pas la performance ; les tailles observées servent de référence initiale, pas de benchmark.
+- Les métadonnées de localisation et d'extraction restent hétérogènes entre sources, études, datasets et claims.
+- Le registre des lots d'ingestion n'est pas encore matérialisé par des manifestes réels dans l'arborescence inspectée.
+- La détection de doublons bibliographiques et de concepts sémantiquement proches n'est pas automatisée.
+- Les contrôles de cohérence entre les relations embarquées dans les fiches et le graphe ne sont pas complets.
+- Les objets de mécanisme ne disposent pas encore d'un cas réel qui éprouve les statuts et les preuves contradictoires.
+- Aucun test de charge ×10/×100 n'a été exécuté.
+
+### 9.6 Modifications techniques incluses dans cette PR
+
+- Ajout du contrôle des références `concept_ids` et des références imbriquées `source_verifications[*].source_id`.
+- Exigence d'une justification non vide sur chaque arête.
+- Détection des doublons sémantiques de triplets `(type, from, to)`.
+- Consolidation des sept paires de relations repérées, avec conservation des précisions dans les justifications.
+- Ajout de tests unitaires couvrant les références valides/invalides, les justifications absentes, les doublons et les extrémités incompatibles.
+
+Les contrôles CI doivent être exécutés sur la tête finale de la PR avant de considérer ces changements comme validés.
+
