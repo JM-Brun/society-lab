@@ -304,3 +304,41 @@ Un article d'Hippolyte d'Albis et Ikpidi Badji, publié par l'Insee en 2017, uti
 - [#104 — Tester l'hypothèse d'éviction des investissements par les dépenses de retraite](https://github.com/JM-Brun/society-lab/issues/104) : séries COFOG, décomposition budgétaire et scénarios contrefactuels.
 
 Ces deux chantiers sont séparés afin de ne pas confondre le diagnostic distributif intergénérationnel avec l'analyse de l'allocation budgétaire.
+
+
+## 15. Deuxième audit empirique — industrie, productivité et éducation
+
+### 15.1 Désindustrialisation : distinguer part nominale, volumes et emplois
+
+Les nouvelles données Insee imposent de nuancer le récit d'une contraction industrielle continue. La part de l'industrie dans la valeur ajoutée est passée d'environ 28 % en 1949 à 13,6 % en 2010, et reste à ce niveau en 2025. Mais l'Insee précise que la baisse sur longue période résulte surtout d'une évolution des prix industriels moins dynamique que celle des services : en volume, la valeur ajoutée industrielle a été multipliée par 8,1 entre 1950 et 2025, contre 8,6 pour le PIB total.
+
+L'emploi industriel, lui, a reculé beaucoup plus nettement : 5,4 millions d'emplois salariés en 1970, puis 3,3 millions en 2010. Cette évolution reflète notamment des gains de productivité plus rapides dans l'industrie, auxquels s'ajoutent externalisation, concurrence internationale et changements de structure. La Cour des comptes souligne également le recul territorial différencié et la concentration des nouveaux pôles innovants.
+
+**Conclusion :** la désindustrialisation est réelle en matière d'emploi et de poids relatif, mais il serait inexact d'en déduire une chute absolue de la production industrielle. Pour évaluer le déclassement productif, il faut compléter les emplois et la part nominale par la valeur ajoutée en volume, la productivité, les capacités physiques, les investissements, les dépendances d'approvisionnement, les exportations et la diffusion technologique.
+
+### 15.2 Productivité : le décrochage récent n'est pas une explication unique
+
+La Banque de France observait en 2023 que la productivité horaire française restait sous son niveau de fin 2019, contrairement à plusieurs comparateurs, tout en soulignant que le recours accru à l'apprentissage, les effets de composition de la main-d'œuvre et la rétention de salariés pouvaient expliquer une partie de l'écart. Il ne faut donc pas interpréter mécaniquement la productivité apparente comme une mesure pure de l'efficacité structurelle.
+
+L'Insee actualise le diagnostic en 2026 : la productivité horaire française reste sous sa tendance pré-Covid, avec un décrochage en partie commun à l'Europe mais plus marqué en France. Les effets de rétention de main-d'œuvre et les difficultés sectorielles, notamment dans l'aéronautique, sont mentionnés parmi les facteurs. Cette donnée appelle une décomposition plutôt qu'une explication monocausale par la fiscalité, la durée du travail ou la désindustrialisation.
+
+### 15.3 Éducation : distinguer niveau de dépense et efficience
+
+L'OCDE indique que les dépenses publiques consacrées aux établissements d'enseignement représentaient 4,7 % du PIB en France en 2022, contre 4,3 % en moyenne OCDE. Dans le même temps, les résultats PISA français ont nettement baissé en 2022 et atteint un niveau historiquement bas ; la France dépense davantage par élève que certains pays ayant de meilleurs scores.
+
+**Conclusion :** le diagnostic « la France n'investit pas assez dans l'éducation » ne peut pas être validé par le seul montant agrégé des dépenses. Les questions pertinentes portent aussi sur la répartition entre primaire, secondaire et supérieur, la rémunération et l'expérience des enseignants, les conditions d'apprentissage, les inégalités sociales, la formation professionnelle, la recherche, l'efficience et les résultats à long terme.
+
+### 15.4 Matrice de lecture révisée
+
+| Thèse | Ce qui est étayé | Ce qui doit être nuancé ou testé |
+|---|---|---|
+| La France s'est désindustrialisée | Baisse du poids relatif et recul massif de l'emploi industriel depuis 1970 | La production industrielle en volume a fortement augmenté ; les prix relatifs expliquent une part du recul de la part nominale |
+| La France a perdu en productivité | Décrochage français depuis 2019 et productivité sous tendance | Effets de composition, apprentissage, rétention de main-d'œuvre, secteurs et heures travaillées |
+| La France sous-investit dans l'éducation | Résultats PISA dégradés et besoins d'amélioration documentés | Dépenses publiques d'éducation supérieures à la moyenne OCDE en part du PIB en 2022 ; enjeu d'efficience et de répartition |
+| La fiscalité explique le décrochage productif | Mécanisme possible à tester | Ne peut être isolé sans contrefactuels et comparaison des politiques, de la structure productive et de la conjoncture |
+
+### 15.5 Conséquence pour l'évaluation du livre
+
+Ces résultats renforcent l'intérêt du diagnostic de Foucher sur les capacités productives, mais empêchent d'en reprendre les formulations les plus générales sans décomposition. La France n'a pas simplement « cessé de produire » : elle a connu des gains de productivité, une transformation des prix relatifs, une baisse de l'emploi industriel et des fragilités sectorielles. De même, les difficultés scolaires ne se résument pas à une insuffisance de crédits.
+
+La question empirique devient donc : quels investissements supplémentaires, dans quels segments, avec quelle gouvernance et quels résultats mesurables permettraient d'améliorer la productivité, les compétences et la résilience productive ?
