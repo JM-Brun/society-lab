@@ -188,7 +188,7 @@ Ces constats documentent le pouvoir d'achat du plancher et l'exposition directe 
 
 ## Décomposition des règles historiques
 
-Un dossier méthodologique distingue maintenant les contributions automatiques, les coups de pouce discrétionnaires, les transitions GMR et les changements de calendrier : [Décomposer les revalorisations du SMIC (1970–2026)](../dossiers/smic-indexation-and-boosts-1970-2026.md). Ce travail est nécessaire pour ne pas assimiler toute hausse nominale à une décision politique discrétionnaire. Le rapport historique de 2020 documente un rattrapage très marqué dans les années 1970, puis une modération à partir du tournant de 1983 ; les 35 heures/GMR et les revalorisations automatiques de 2021–2026 constituent des épisodes spécifiques qui ne doivent pas être confondus avec des coups de pouce classiques.
+Un dossier méthodologique distingue maintenant les contributions automatiques, les coups de pouce discrétionnaires, les transitions GMR et les changements de calendrier : [Décomposer les revalorisations du SMIC (1970–2026)](../dossiers/smic-indexation-and-boosts-1970-2026.md). La transcription des observations 1970–1993 et ses limites de lecture sont détaillées dans la [documentation du jeu historique](../dossiers/smic-revaluations-data-1970-1993.md), associée au [CSV correspondant](../data/smic-revaluations-1970-1993.csv). Ce travail est nécessaire pour ne pas assimiler toute hausse nominale à une décision politique discrétionnaire. Le rapport historique de 2020 documente un rattrapage très marqué dans les années 1970, puis une modération à partir du tournant de 1983 ; les 35 heures/GMR et les revalorisations automatiques de 2021–2026 constituent des épisodes spécifiques qui ne doivent pas être confondus avec des coups de pouce classiques.
 
 
 ### Reconstitution événementielle 1994–2026
@@ -234,7 +234,7 @@ L'OCDE apporte un contrepoint au diagnostic de « trappe à bas salaires » : le
 
 Les travaux de Jamet (2005) et de Gafsi, L’Horty et Mihoubi (2004) montrent pourquoi les estimations d'emploi peu qualifié ne doivent pas être assimilées à des créations nettes d'emploi total. Jamet estime, selon les paramètres du modèle sectoriel, environ 50 000 à 190 000 emplois peu qualifiés en ETP, avec un scénario privilégié autour de 165 000 ; le modèle n'établit pas un solde symétrique sur toutes les qualifications. Gafsi et al. estiment 118 000 à 140 000 emplois peu qualifiés, mais 41 000 à 76 000 emplois qualifiés évincés, soit un solde net de 60 000 à 80 000 emplois. Ces chiffres proviennent de modèles structurels sectoriels et non d'une expérience naturelle. Ils portent sur les allègements de cotisations de 1993–1997, pas sur l'effet causal d'une hausse isolée du SMIC.
 
-La fiche détaillée est disponible dans [l'audit sectoriel des allègements 1993–1997](../dossiers/smic-sectoral-effects-exemptions-1993-1997.md).
+La fiche détaillée est disponible dans [l'audit sectoriel des allègements 1993–1997](../dossiers/smic-sectoral-effects-exemptions-1993-1997.md). L'évaluation microéconomique de Crépon & Desplatz (extensions de 1995–1996) fait l'objet d'un [audit autonome](../dossiers/smic-crepon-desplatz-2001.md) ; elle porte sur les allègements de cotisations, pas sur une hausse isolée du SMIC.
 
 ### Flux de chômage pendant la réforme Fillon (2003–2005)
 

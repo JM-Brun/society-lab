@@ -83,7 +83,7 @@ Ces constats sont partiels. Ils ne permettent pas de classer universellement les
 
 ## 8. Livrables documentaires
 
-- matrice comparative des études, méthodes, résultats et limites ;
+- [matrice de preuves des stratégies de réponse](matrice-preuves-strategies-reponse.md), avec les études, méthodes, résultats et limites ;
 - synthèse de référence actualisée ;
 - journal des recherches et du citation chasing ;
 - registre des sources et des affirmations ;
