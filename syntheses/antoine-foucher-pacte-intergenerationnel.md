@@ -4,7 +4,7 @@ title: "Le pacte intergénérationnel d’Antoine Foucher : diagnostic et propos
 domain: "economy"
 status: "draft"
 last_reviewed: "2026-11-18"
-related_dossiers: ["DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"]
+related_dossiers: ["dossiers/antoine-foucher-pacte-intergenerationnel.md"]
 related_claims: []
 related_studies: []
 related_datasets: []
@@ -43,6 +43,10 @@ Le texte intégral n’ayant pas été consulté dans cette première version, c
 | Les dépenses publiques et leur composition ont changé | Établi en principe | Comptes nationaux et comptes publics | Les chiffres précis rapportés doivent être vérifiés sur séries harmonisées |
 | Les retraites expliquent l’insuffisance de l’investissement | Contesté / non démontré à ce stade | Interprétation de Foucher | L’éviction budgétaire et le contrefactuel restent à établir |
 | Réduire l’écart de niveau de vie entre actifs et retraités améliorerait la situation des jeunes | Jugement normatif et hypothèse d’impact | Proposition de politique publique | Effets distributifs et macroéconomiques à simuler |
+
+## Analyse des preuves
+
+Les données statistiques ajoutées dans le dossier sont de nature descriptive. Elles permettent de caractériser les niveaux de vie, les patrimoines et la structure des dépenses publiques, mais elles ne suffisent pas à établir les mécanismes causaux avancés dans l'essai. Les comparaisons entre âges doivent être distinguées des comparaisons entre cohortes, et les comptes budgétaires des évaluations de rendement social.
 
 ## 4. Ce que montrent les preuves disponibles
 
