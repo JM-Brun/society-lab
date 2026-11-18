@@ -263,3 +263,21 @@ La spécification ne sera considérée comme implémentée que lorsque :
 ---
 
 **Décision de méthode :** cette spécification documente les indicateurs candidats et leur méthode d'adoption. Elle n'affirme pas que les KPIs sont déjà calculables, ne crée pas encore de calculateur et ne modifie pas la CI. La première livraison technique doit être un audit de faisabilité reproductible, puis un prototype testé en lecture seule.
+
+
+## 12. Résultat de l'audit de faisabilité du 18 novembre 2026
+
+L'audit concret est consigné dans [`project-kpis-feasibility-audit-2026-11-18.md`](project-kpis-feasibility-audit-2026-11-18.md). Il conduit à ajuster le tableau de bord initial :
+
+| KPI retenu après audit | Définition opérationnelle | État |
+|---|---|---|
+| Couverture documentaire des sources | Sources du registre ayant au moins une relation typée de contribution documentaire justifiée / sources du registre | Calculable ; instantané 165/220 (75 %) |
+| Claims avec conclusion documentée | Claims actifs dont le statut est `supported`, `partially_supported`, `contested`, `not_supported` ou `insufficient_evidence` / claims actifs non superseded | Calculable ; instantané 28/80 (35 %) |
+| Couverture des synthèses | Dossiers actifs éligibles disposant d'une synthèse existante / dossiers actifs éligibles | Non calculable honnêtement en pourcentage sans inventaire indépendant des dossiers éligibles |
+| Connectivité du graphe | Objets éligibles ayant au moins une relation attendue et justifiée / objets éligibles | Diagnostic seulement ; règles d'éligibilité par type manquantes |
+
+**Correction de schéma :** le champ d'état des claims est `status`, pas `review_status`. Les vérifications documentaires par source sont enregistrées séparément dans `source_verifications` et ne doivent pas être confondues avec le statut épistémique du claim.
+
+**Règle de comptage des sources :** une relation `REL-ABOUT` seule indique un rattachement thématique et ne suffit pas à compter une source comme exploitée. La mesure de couverture documentaire retient les relations typées de contribution listées dans le rapport d'audit, avec justification et extrémités valides.
+
+En conséquence, le tableau de bord initial ne doit pas présenter les quatre ratios comme déjà tous calculables. Les deux premiers peuvent être prototypés immédiatement ; les deux autres restent conditionnés à la définition d'un dénominateur ou de règles d'éligibilité défendables.
