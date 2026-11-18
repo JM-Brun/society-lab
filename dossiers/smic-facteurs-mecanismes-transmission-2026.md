@@ -3,7 +3,7 @@ id: "DOSSIER-SMIC-FACTORS-TRANSMISSION-2026"
 title: "Facteurs déterminants du SMIC : règles, mécanismes et effets"
 domain: "economy-employment"
 status: "provisional"
-last_reviewed: "2026-11-16"
+last_reviewed: "2026-11-18"
 related_issues: [25, 26, 27, 28, 29, 36, 82, 84]
 ---
 
@@ -17,7 +17,7 @@ Il faut séparer trois objets qui sont souvent confondus :
 2. **La décision politique** : éventuel coup de pouce et choix d'anticiper la date de revalorisation. Une anticipation change le calendrier ; elle ne constitue pas, à elle seule, un supplément de pouvoir d'achat annuel équivalent à un coup de pouce.
 3. **Les effets économiques et sociaux** : dépendent de l'exposition des salariés, des entreprises, de la conjoncture, des institutions socio-fiscales et des réactions d'ajustement.
 
-La hausse annoncée le 9 novembre 2026 (+1,6 % au 1er décembre) est présentée par le Gouvernement comme 1 point d'anticipation de la revalorisation automatique et 0,6 point de coup de pouce. Le Gouvernement explique que l'estimation de la composante automatique repose sur une inflation annuelle 2026 estimée à 1 % au 15 décembre, alors que la donnée définitive n'était pas encore connue. Le calcul détaillé, les indices exacts et les arrondis ne sont pas publiés dans les éléments consultés : le découpage est donc **une explication gouvernementale à auditer**, pas encore une réplication indépendante.
+La hausse annoncée le 9 novembre 2026 (+1,6 % au 1er décembre) est présentée par le Gouvernement comme 1 point d'anticipation de la revalorisation automatique et 0,6 point de coup de pouce. Le Gouvernement indique, le 9 novembre, que sa meilleure estimation disponible de l'inflation annuelle 2026 est de 1 % pour la mesure attendue le 15 décembre. Il s'agit d'une prévision formulée avant la date de mesure, et non d'une donnée définitive observée. Le calcul détaillé, les indices exacts et les arrondis ne sont pas publiés dans les éléments consultés : le découpage est donc **une explication gouvernementale à auditer**, pas encore une réplication indépendante.
 
 Le ministre du Travail a cité oralement, lors de la conférence de presse du 9 novembre 2026, des estimations qu'il attribue à la DARES : 5 000 à 20 000 emplois supprimés pour la hausse retenue, et plus de 230 000 dans un scénario de SMIC à 1 700 € nets. La transcription officielle confirme l'attribution politique à la DARES, mais ne donne ni note technique, ni modèle, ni hypothèses, ni intervalles, ni horizon, ni scénario contrefactuel détaillé. Ces nombres doivent donc être qualifiés d'**estimations administratives rapportées par le ministre, non encore auditables à partir de la publication consultée**. Ils ne sont ni des pertes d'emplois observées ni, en l'état, des estimations causales indépendamment vérifiées.
 
@@ -66,7 +66,7 @@ Ces chiffres sont des diagnostics descriptifs, des simulations ou des recommanda
 ### Gouvernement, annonce du 9 novembre 2026
 
 - +1,6 % au 1er décembre 2026, présentés comme 1 point d'anticipation automatique et 0,6 point de coup de pouce.
-- L'inflation annuelle 2026 de 1 % est décrite par le Gouvernement comme sa meilleure estimation disponible au 15 décembre ; la publication définitive était attendue ultérieurement.
+- Le 9 novembre, le Gouvernement présente 1 % comme sa meilleure estimation de l'inflation annuelle 2026, dont la mesure est attendue le 15 décembre ; cette valeur est une prévision à la date de l'annonce, non une observation définitive.
 - Le Gouvernement annonce 1 501,60 € nets mensuels et +5,3 % sur l'année 2026.
 - Le Gouvernement cite des estimations DARES de 5 000 à 20 000 emplois supprimés pour la hausse retenue et plus de 230 000 dans un scénario de SMIC à 1 700 € nets.
 
