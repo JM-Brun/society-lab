@@ -21,6 +21,8 @@ La hausse annoncée le 9 novembre 2026 (+1,6 % au 1er décembre) est présentée
 
 Le ministre du Travail a cité oralement, lors de la conférence de presse du 9 novembre 2026, des estimations qu'il attribue à la DARES : 5 000 à 20 000 emplois supprimés pour la hausse retenue, et plus de 230 000 dans un scénario de SMIC à 1 700 € nets. La transcription officielle confirme l'attribution politique à la DARES, mais ne donne ni note technique, ni modèle, ni hypothèses, ni intervalles, ni horizon, ni scénario contrefactuel détaillé. Ces nombres doivent donc être qualifiés d'**estimations administratives rapportées par le ministre, non encore auditables à partir de la publication consultée**. Ils ne sont ni des pertes d'emplois observées ni, en l'état, des estimations causales indépendamment vérifiées.
 
+Le 18 novembre 2026, le ministre de l'Économie a publiquement évoqué une fourchette de **30 000 à 40 000 emplois** pour l'effet de la hausse du SMIC, selon un article du *Parisien*. Cette déclaration est enregistrée séparément : la source secondaire ne donne pas le modèle, l'horizon ni le choc exact simulé. Il est donc impossible de conclure qu'il s'agit d'une révision de la fourchette précédente. Les 5 000–20 000 et 30 000–40 000 ne doivent être ni additionnés ni comparés comme s'ils mesuraient le même scénario. La note technique DARES/Bercy reste nécessaire pour établir les périmètres, la diffusion salariale, les hypothèses d'allègements, les horizons et les incertitudes.
+
 ## 1. Carte des facteurs et des mécanismes
 
 | Facteur | Agit directement sur | Indicateurs à suivre | Délai | État de preuve / précaution |
