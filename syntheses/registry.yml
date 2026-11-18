@@ -95,3 +95,4 @@ dossiers:
     dossier_path: "dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md"
     synthesis_id: "SYNTHESIS-ENERGY-SCENARIOS-2026"
     synthesis_path: "syntheses/comparaison-scenarios-transition-2026.md"
+  - dossier_id: "DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"
