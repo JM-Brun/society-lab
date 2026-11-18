@@ -158,6 +158,12 @@ Si les données ne permettent pas un calcul honnête, marquer l'indicateur « no
 - Inclure les valeurs brutes, les identifiants concernés et les motifs d'exclusion.
 - Ne créer aucun registre KPI parallèle et aucune dépendance réseau.
 
+Commandes locales :
+```bash
+python scripts/validate/calculate_project_kpis.py
+python scripts/validate/calculate_project_kpis.py --format json --output /tmp/society-lab-kpis.json
+```
+
 ### Phase 2 — Tests unitaires et négatifs
 
 Prévoir au minimum les cas suivants :
