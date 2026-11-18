@@ -193,3 +193,14 @@ Le pacte intergénérationnel est une grille de lecture qui relie finances publi
 - **SMIC et emploi** : intégrer les trajectoires de salaires, les conditions d'emploi et les prélèvements dans la distribution des ressources entre âges et cohortes.
 
 Cette lecture ne valide pas l'hypothèse d'un effet d'éviction des dépenses de retraite sur l'investissement : elle invite à la tester en tenant compte des recettes, de la dette, du cycle et des effets macroéconomiques. Voir l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md).
+
+
+## Liens avec les autres domaines
+
+Le pacte intergénérationnel est une grille de lecture qui relie finances publiques, éducation, capacité productive et transition énergétique. Il permet de poser une question commune : qui finance aujourd'hui les investissements, les transferts et les risques dont les bénéfices ou les coûts se matérialisent à des horizons différents ?
+
+- **Éducation** : distinguer investissement éducatif, dépenses de fonctionnement, compétences acquises et rendement social de long terme.
+- **Énergie** : examiner les actifs, infrastructures, dépendances et coûts de transition transmis aux générations futures.
+- **SMIC et emploi** : intégrer les trajectoires de salaires, les conditions d'emploi et les prélèvements dans la distribution des ressources entre âges et cohortes.
+
+Cette lecture ne valide pas l'hypothèse d'un effet d'éviction des dépenses de retraite sur l'investissement : elle invite à la tester en tenant compte des recettes, de la dette, du cycle et des effets macroéconomiques. Voir l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md).
