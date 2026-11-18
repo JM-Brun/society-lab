@@ -50,6 +50,25 @@ class SourceImpactTracingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unknown source id"):
             build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-MISSING")
 
+
+    def test_real_tig_source_traces_to_claim_dossier_and_synthesis(self):
+        from trace_knowledge_impact import ROOT, load_repository
+
+        registries, graph, syntheses = load_repository(ROOT)
+        report = build_impact_report(
+            registries, graph, syntheses,
+            "SOURCE-COUR-DES-COMPTES-PEINES-ALTERNATIVES-2025",
+        )
+        claims = {item["id"] for item in report["records"].get("CLAIM", [])}
+        dossiers = {item["id"] for item in report["records"].get("DOSSIER", [])}
+        self.assertIn("CLAIM-TIG-EXECUTION-DELAY-2025", claims)
+        self.assertIn("DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE", dossiers)
+        self.assertTrue(any(
+            item["dossier_id"] == "DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE"
+            and item["synthesis_path"] == "syntheses/tig-france.md"
+            for item in report["syntheses"]
+        ))
+
     def test_markdown_warns_against_automatic_invalidation(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
         rendered = render_markdown(report)
