@@ -39,3 +39,14 @@ Le domaine économique est un point de rencontre entre plusieurs dossiers :
 - **Institutions et emploi** : TIG, coûts complets, capacité d'exécution et insertion ; ne pas présumer d'un effet sur l'emploi rémunéré.
 
 Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md) pour les questions, mécanismes candidats et limites de preuve. Les liens indiqués sont des axes d'analyse, pas tous des relations causales établies.
+
+
+## Liens transversaux
+
+Le domaine économique est un point de rencontre entre plusieurs dossiers :
+- **Éducation et compétences** : Parcoursup, formation, qualification et trajectoires professionnelles ; la chaîne diplôme–emploi–salaire–productivité reste à documenter sans assimiler diplôme et compétence.
+- **Énergie et capacité productive** : Shift Project, PREF et scénarios de transition ; examiner l'exposition sectorielle, les coûts, l'investissement et les besoins de compétences.
+- **Finances publiques et générations** : SMIC, allègements, investissement collectif et pacte intergénérationnel ; distinguer comptabilité budgétaire, effets macroéconomiques et arbitrages normatifs.
+- **Institutions et emploi** : TIG, coûts complets, capacité d'exécution et insertion ; ne pas présumer d'un effet sur l'emploi rémunéré.
+
+Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md) pour les questions, mécanismes candidats et limites de preuve. Les liens indiqués sont des axes d'analyse, pas tous des relations causales établies.
