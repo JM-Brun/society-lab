@@ -95,3 +95,13 @@ Le script produit des agrégats descriptifs, des indicateurs par formation et un
 La fiche officielle indique que le jeu a été actualisé le 9 mars 2026 pour ajouter le taux d'accès et le rang de certaines formations. Ces champs doivent être traités comme des indicateurs officiels fournis, distincts des ratios calculés par le script. Avant de les intégrer aux sorties, relever leurs noms exacts et leur disponibilité dans le schéma courant ; ne jamais reconstruire les valeurs manquantes. Le nombre d'enregistrements annoncé reste 14 252, mais le nombre et la liste des colonnes doivent être vérifiés sur le fichier effectivement téléchargé.
 
 Le manifeste produit par le script conserve désormais l'URL canonique fournie, la date de téléchargement si elle est renseignée par l'opérateur, la date de traitement, la taille du fichier, son SHA-256, le décodeur utilisé, la présence éventuelle d'un BOM UTF-8, le séparateur détecté et la liste exacte des colonnes. La date de téléchargement n'est jamais inventée par le script. Pour renseigner `--downloaded-at-utc`, utiliser uniquement l'horodatage réellement relevé au moment du téléchargement ; sinon laisser ce champ vide.
+
+### Champs ajoutés dans la version du 9 mars 2026 — vérification documentaire
+
+La documentation méthodologique et la page officielle de la version courante identifient les indicateurs supplémentaires suivants (noms des champs tels que documentés ; confirmer leur orthographe exacte dans l'en-tête du CSV avant toute modification du script) :
+
+- `taux_acces_ens` : taux d'accès 2025, indicateur ministériel fourni ;
+- `part_acces_gen`, `part_acces_tec`, `part_acces_pro` : parts des terminales générales, technologiques et professionnelles en position de recevoir une proposition en phase principale ;
+- `ran_grp1`, `ran_grp2`, `ran_grp3` : rangs du dernier appelé dans chacun des trois groupes.
+
+Le ministère précise que le taux d'accès et les parts d'accès ne peuvent pas être recalculés à partir de cet open data. Les conserver comme indicateurs officiels fournis, sans les reconstruire ni imputer leurs valeurs manquantes. Le script actuel ne les exploite pas encore : leur intégration aux sorties et au manifeste dépend du contrôle de l'en-tête réel du CSV téléchargé. Cette vérification documentaire ne vaut donc pas validation du schéma physique du fichier.
