@@ -83,3 +83,7 @@ dossiers:
     dossier_path: "dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md"
     synthesis_id: "SYNTHESIS-ECONOMY-SMIC-FRANCE"
     synthesis_path: "syntheses/smic-france.md"
+  - dossier_id: "DOSSIER-SHIFT-PROJECT-ANALYSIS"
+    dossier_path: "dossiers/the-shift-project-diagnostic-methodes-controverses.md"
+    synthesis_id: "SYNTHESIS-SHIFT-PROJECT"
+    synthesis_path: "syntheses/the-shift-project.md"
