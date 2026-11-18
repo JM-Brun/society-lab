@@ -70,8 +70,20 @@ def request(url: str, method: str = "GET", payload: dict | None = None):
     if data is not None:
         headers["Content-Type"] = "application/json"
     req = urllib.request.Request(url, data=data, headers=headers, method=method)
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.load(response), response.headers.get("Link", "")
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                return json.load(response), response.headers.get("Link", "")
+        except urllib.error.HTTPError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                raise
+            delay = int(exc.headers.get("Retry-After", 2 ** attempt))
+            time.sleep(min(delay, 15))
+        except urllib.error.URLError:
+            if attempt == 2:
+                raise
+            time.sleep(2 ** attempt)
+    raise RuntimeError("Échec de la requête GitHub après trois tentatives.")
 
 
 def fetch_labels() -> dict:
