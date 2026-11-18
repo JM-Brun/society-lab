@@ -3,7 +3,7 @@ id: "SYNTHESIS-ECONOMY-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"
 title: "Le pacte intergénérationnel d’Antoine Foucher : diagnostic et propositions"
 domain: "economy"
 status: "draft"
-last_reviewed: "2026-11-17"
+last_reviewed: "2026-11-18"
 related_dossiers: ["DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL"]
 related_claims: []
 related_studies: []
@@ -124,3 +124,21 @@ Les sources statistiques primaires (INSEE, DREES, DARES, OCDE, Eurostat, comptes
 | Date | Modification | Motif |
 |---|---|---|
 | 2026-11-17 | Création | Première synthèse documentaire, texte intégral non consulté |
+
+
+## 12. Premier audit quantitatif : ce que les données permettent déjà de dire
+
+Les données récentes de l'Insee nuancent les comparaisons simplistes entre actifs et retraités. En 2024, le niveau de vie médian des retraités atteint 26 830 € annuels par unité de consommation, contre 26 740 € pour l'ensemble de la population ; leur taux de pauvreté est de 10,4 %, identique à celui des actifs de 18 ans ou plus. Le taux de pauvreté général reste toutefois à 15,4 %, au plus haut depuis 1996. Ces données sont après redistribution et concernent les personnes en logement ordinaire de France métropolitaine. Elles ne suffisent pas à comparer des cohortes à âge identique.
+
+L'écart de patrimoine entre ménages jeunes et âgés est massif en coupe transversale : patrimoine brut médian de 26 100 € sous 30 ans contre 245 000 € entre 60 et 69 ans début 2024. Mais ce constat mêle âge, cycle de vie, génération et transmission. Il ne constitue pas une preuve autonome de déclassement générationnel.
+
+Sur les dépenses publiques, l'Insee estime que la protection sociale hors santé a été le premier contributeur à la hausse des dépenses en 2024, avec 1,4 point attribué aux retraites. Les dépenses d'enseignement et de santé ont elles aussi augmenté. Cette ventilation confirme le poids budgétaire des retraites, mais **ne démontre pas un effet d'éviction sur l'investissement**. Les dépenses publiques atteignent 57,3 % du PIB en 2025, avec un déficit de 5,1 % et une dette brute de 115,7 % du PIB (données provisoires).
+
+### Conclusion provisoire renforcée
+
+- **Confirmé :** les retraites constituent un poste budgétaire majeur ; les retraités disposent en médiane d'un niveau de vie proche de l'ensemble de la population après redistribution ; le patrimoine augmente fortement avec l'âge.
+- **À nuancer :** l'idée d'une opposition globale entre actifs pauvres et retraités aisés ne correspond pas aux indicateurs médians récents. Les écarts entre retraités et au sein des générations doivent être étudiés.
+- **Non démontré :** les retraites auraient causé le sous-investissement éducatif ou productif ; les jeunes vivraient nécessairement moins bien que leurs parents.
+- **À faire :** comparer les cohortes à âge identique, intégrer patrimoine net et logement, et reconstituer les arbitrages budgétaires sur séries homogènes.
+
+Les données mobilisées proviennent de l'Insee, du COR et d'un travail méthodologique sur les cohortes publié par l'Insee en 2017. Elles améliorent le cadrage empirique, mais ne remplacent pas encore une étude longitudinale complète.
