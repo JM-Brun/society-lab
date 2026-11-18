@@ -80,3 +80,24 @@ Les manifestes ne doivent pas contenir les documents sources eux-mêmes, de donn
 
 La décision `selected` signifie uniquement que la candidate a été retenue pour traitement. Elle ne signifie ni que la source est fiable, ni que sa méthode est robuste, ni que ses résultats sont vérifiés, ni qu'elle soutient une conclusion. Ces évaluations interviennent dans les fiches Source, Study, Dataset et Claim, puis dans les relations justifiées du graphe.
 
+
+## Traçabilité fine des extractions associées aux claims
+
+Une vérification de source et une extraction sont deux opérations distinctes :
+- `source_verifications[*].status` indique jusqu'où le passage a été contrôlé ;
+- `source_verifications[*].locator` localise le passage ou l'objet (page, section, tableau, figure, horodatage, champ de dataset ou fragment d'URL) ;
+- `source_verifications[*].extraction` décrit ce qui a été extrait et comment, sans transformer automatiquement l'extraction en conclusion validée.
+
+L'objet `extraction` est facultatif pour préserver la compatibilité avec les claims existants. Lorsqu'il est utilisé, il distingue la nature de l'élément, le contenu ou la valeur rapportée, son unité, son dénominateur, sa population, sa période, sa géographie, sa définition opérationnelle, la méthode d'extraction, sa version éventuelle, les transformations, la date et l'auteur de l'extraction ainsi qu'une empreinte SHA-256 facultative d'un artefact conservé légalement.
+
+### Règles d'interprétation
+
+1. Conserver le localisateur au niveau de la vérification, même si l'extraction structurée est absente.
+2. Ne pas confondre `reported_result` (résultat rapporté par l'auteur) et `recalculation` (résultat recalculé par Society Lab). Documenter formule, filtres et dénominateurs pour les recalculs.
+3. Un extrait textuel est limité à 500 caractères dans le schéma ; privilégier le localisateur et la paraphrase plutôt que la reproduction d'un contenu protégé.
+4. Une empreinte identifie un artefact, elle ne prouve ni son authenticité ni les droits de le conserver.
+5. Une extraction `model_assisted` reste une proposition jusqu'au contrôle humain sur la source originale. Le statut de vérification ne doit jamais être déduit automatiquement de la méthode.
+6. Les champs de population, période, géographie, unité et dénominateur sont renseignés lorsqu'ils conditionnent l'interprétation ; ne pas inventer une valeur absente.
+7. L'interprétation éditoriale, la synthèse et le statut du claim restent distincts de l'extraction brute.
+
+Ce contrat est une extension facultative de `schemas/claim.schema.json`, pas un nouveau registre ni un système de preuve parallèle. Les migrations doivent être faites claim par claim après retour à la source ; ne pas remplir les fiches en bloc à partir de leurs formulations actuelles.
