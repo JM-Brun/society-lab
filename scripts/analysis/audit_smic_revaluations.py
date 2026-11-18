@@ -26,7 +26,7 @@ NUMERIC_FIELDS = (
 def audit_rows(rows: list[dict[str, str]]) -> dict:
     if not rows:
         raise ValueError("dataset is empty")
-    required = {"period", "date_effective", "source_id", *NUMERIC_FIELDS}
+    required = {"period", "date_effective", "source_id", "source_locator", *NUMERIC_FIELDS}
     missing = required - set(rows[0])
     if missing:
         raise ValueError(f"missing columns: {', '.join(sorted(missing))}")
@@ -43,6 +43,12 @@ def audit_rows(rows: list[dict[str, str]]) -> dict:
             raise ValueError(f"duplicate period: {period}")
         periods.add(period)
         effective_date = row["date_effective"]
+        year = int(effective_date[:4])
+        expected_period = f"{year - 1}-{year}"
+        if period != expected_period:
+            raise ValueError(f"period {period} does not match twelve-month window ending {effective_date}; expected {expected_period}")
+        if not row["source_locator"].strip():
+            raise ValueError(f"missing source locator: {period}")
         if previous_date is not None and effective_date < previous_date:
             raise ValueError(f"dates are not ordered at {period}")
         previous_date = effective_date
