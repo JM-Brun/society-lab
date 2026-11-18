@@ -26,3 +26,5 @@ Les agrégats macroéconomiques ne décrivent pas nécessairement les effets vé
 Pour chaque résultat, préciser la question, la période, la population, les données, la méthode d'identification ou les hypothèses du modèle. Ne pas transposer directement une estimation historique à une réforme actuelle. Une simulation interne sert à explorer des conséquences mécaniques ou des scénarios explicitement paramétrés ; elle ne remplace pas une étude empirique existante.
 - [Pour que nos enfants vivent mieux que nous — examen critique de la thèse d’Antoine Foucher](../../dossiers/antoine-foucher-pacte-intergenerationnel.md) — distinction entre faits, interprétations, hypothèses causales et arbitrages normatifs.
 - [Synthèse — Le pacte intergénérationnel d’Antoine Foucher](../../syntheses/antoine-foucher-pacte-intergenerationnel.md) — synthèse provisoire et programme de vérification empirique.
+
+- [Comparer les générations à âge identique : état des preuves et protocole de mise à jour](../../research/foucher-comparaison-generationnelle.md) — revue des résultats d'Albis-Badji, des données Insee récentes et des limites d'identification âge-période-cohorte.
