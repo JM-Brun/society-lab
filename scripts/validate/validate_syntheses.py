@@ -144,15 +144,15 @@ def main() -> int:
 
     if unreferenced_dossiers:
         print(
-            f"WARNING: {len(unreferenced_dossiers)} Markdown file(s) in dossiers/ "
-            "are not mapped to a main dossier in syntheses/registry.yml:"
+            f"WARNING: {len(unreferenced_dossiers)} unmapped Markdown support/research file(s) in dossiers/ "
+            "(not necessarily orphaned; see docs/unmapped-markdown-classification-2026-11-18.md):"
         )
         for path in unreferenced_dossiers:
             print(f"  - {path}")
     if unreferenced_syntheses:
         print(
-            f"WARNING: {len(unreferenced_syntheses)} Markdown file(s) in syntheses/ "
-            "are not referenced by syntheses/registry.yml:"
+            f"WARNING: {len(unreferenced_syntheses)} unmapped Markdown file(s) in syntheses/ "
+            "(may be historical or thematic; see docs/unmapped-markdown-classification-2026-11-18.md):"
         )
         for path in unreferenced_syntheses:
             print(f"  - {path}")
