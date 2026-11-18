@@ -11,6 +11,7 @@ source_ids:
   - "SOURCE-INSEE-LEVEL-BY-AGE-1996-2024"
   - "SOURCE-INSEE-PATRIMOINE-AGE-2024"
   - "SOURCE-INSEE-INTERGEN-TRANSMISSIONS-2024"
+  - "SOURCE-INSEE-PATRIMOINE-NET-ENDETTEMENT-2024"
 concept_ids:
   - "CONCEPT-DECLASSEMENT-ECONOMIQUE-RELATIF"
   - "CONCEPT-PACTE-INTERGENERATIONNEL"
@@ -84,3 +85,36 @@ La formulation la plus rigoureuse est donc : le déclassement générationnel gl
 - Insee (2026), [Niveau de vie selon l’âge, données annuelles 1996-2024](https://www.insee.fr/fr/statistiques/2416878).
 - Insee (2026), [Montants de patrimoine brut des ménages, données 2024](https://www.insee.fr/fr/statistiques/8894780).
 - Insee (2026), [Transmissions intergénérationnelles en 2024 : donations, héritages et aides](https://www.insee.fr/fr/statistiques/8960228).
+
+
+## 3 bis. Ce que révèlent les transmissions (HVP 2023-2024)
+
+L'enquête Histoire de vie et Patrimoine 2023-2024 a recueilli les réponses de 11 940 ménages en France hors Mayotte. Elle couvre les patrimoines financier, immobilier, professionnel et résiduel, l'endettement, les héritages, les donations, les aides financières et des éléments biographiques. Les revenus sont appariés aux données fiscales et sociales de 2022. Les résultats publiés sont fondés sur les déclarations des répondants et ne sont pas calés sur les masses de la comptabilité nationale.
+
+Début 2024 :
+- 41 % des ménages ont déjà hérité au moins une fois au cours de leur vie ; 20 % ont déjà reçu une donation déclarée ; 7 % ont versé une donation.
+- Le patrimoine brut médian atteint 306 600 € pour les ménages ayant déjà hérité, 435 900 € pour ceux ayant reçu une donation, et 205 100 € pour l'ensemble des ménages.
+- Le patrimoine brut moyen est respectivement de 515 400 €, 698 300 € et 374 900 €.
+- 60 % des ménages ayant hérité ont une personne de référence âgée d'au moins 60 ans, contre 40 % de l'ensemble des ménages ; seuls 3 % des ménages ayant hérité ont une personne de référence de moins de 30 ans, contre 9 % de l'ensemble.
+
+**Lecture correcte :** ces écarts sont des associations descriptives entre expérience de transmission et patrimoine observé, pas l'effet causal net d'un héritage ou d'une donation. Les ménages ayant hérité sont plus âgés et ont eu davantage de temps pour accumuler ; l'origine sociale, la composition familiale, le niveau de patrimoine des parents et les trajectoires résidentielles jouent aussi. Le patrimoine observé après transmission mêle le transfert reçu, l'épargne ultérieure, les rendements, les dettes et les autres événements du cycle de vie.
+
+La définition statistique doit également être conservée : un ménage est considéré comme concerné si au moins un membre a reçu un héritage ou une donation au cours de sa vie ; les caractéristiques détaillées de la transmission sont recueillies auprès de la personne de référence et de son conjoint. Les montants peuvent être déclarés à la date de transmission ou à la date de l'enquête, le plus souvent à la date de transmission. Les donations prises en compte sont les donations déclarées auprès d'un notaire, d'un avocat ou de l'administration fiscale. Les aides familiales couvrent notamment dons ponctuels ou réguliers, logement gratuit, paiement de loyer et prêts d'argent.
+
+## 3 ter. Patrimoine net, dette et comparaison à âge identique
+
+Début 2024, le patrimoine brut médian de l'ensemble des ménages est de 205 100 €, tandis que le patrimoine net médian, après déduction des emprunts, est de 148 100 €. La différence est substantielle et interdit d'utiliser le patrimoine brut comme équivalent du patrimoine effectivement détenu.
+
+L'Insee publie également une série de patrimoine brut moyen par âge en euros 2024 pour 2015, 2021 et 2024. À titre d'exemple, à 25 ans, le patrimoine brut moyen est estimé à 140 000 € en 2015, 159 000 € en 2021 et 155 500 € en 2024. Cette comparaison à âge identique entre vagues est plus pertinente qu'une comparaison jeunes/seniors à une date donnée, mais elle ne constitue pas encore le test demandé : il s'agit d'une moyenne, non d'une médiane ou d'une distribution nette, les classes d'âge fines sont sensibles aux effectifs, et la série ne comprend que trois vagues. Il faut éviter d'interpréter la variation 2015-2024 comme une trajectoire individuelle ou un effet générationnel pur.
+
+L'Insee indique par ailleurs que le patrimoine immobilier augmente fortement entre 30 et 45 ans, période d'acquisition fréquente de la résidence principale, et que les ménages de 50 à 79 ans détiennent 61 % de la masse patrimoniale pour 50 % des ménages. Ces constats rendent prioritaire une comparaison de l'accès à la propriété, du taux d'effort, de la dette immobilière et du patrimoine net par âge.
+
+## 3 quater. Limites d'inférence et prochaines extractions
+
+1. Les tableaux agrégés sur les transmissions ne suffisent pas à estimer l'effet d'une transmission à âge, origine sociale, structure familiale et patrimoine parental comparables.
+2. Les transmissions déclarées ne couvrent pas nécessairement les aides informelles non monétaires ou non déclarées ; les aides financières recensées ont un périmètre défini par l'enquête.
+3. L'enquête est un panel rotatif depuis 2014, mais la page de résultats agrégés ne fournit pas à elle seule un panel longitudinal exploitable pour suivre chaque cohorte de naissance.
+4. Pour une comparaison robuste, il faut exploiter les tableaux détaillés par âge, catégorie socioprofessionnelle, revenu et patrimoine, puis obtenir si possible les microdonnées HVP et leur documentation.
+5. Comparer séparément : (a) avoir déjà reçu une transmission, (b) âge au moment de la transmission, (c) montant et nature, (d) patrimoine net actuel, (e) situation de logement et endettement.
+
+La prochaine livraison doit produire une matrice par âge/cohorte, avec indicateurs de patrimoine net, accession à la propriété et transmissions, en distinguant résultats publiés, estimations recalculées et questions encore non identifiables.
