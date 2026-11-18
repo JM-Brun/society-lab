@@ -62,7 +62,7 @@ Ce schéma est une **proposition de structure**, pas une validation automatique 
 - `mixed_evidence` / `challenged` : résultats hétérogènes ou éléments critiques ;
 - `rejected_in_scope` / `retired` : mécanisme rejeté dans le périmètre étudié ou fiche retirée.
 
-**Ne pas créer de registre de mécanismes ni de nœuds `MECHANISM` dans le graphe avant d'avoir ajouté le contrôle de schéma, défini l'emplacement canonique du registre et vérifié les références croisées.** Une fiche de mécanisme ne doit pas être créée pour chaque flèche d'un schéma conceptuel : elle doit décrire un canal explicatif réutilisable, suffisamment distinct et documenté.
+**Ne pas créer de fiches ni de nœuds `MECHANISM` dans le graphe avant d'avoir vérifié le fonctionnement du contrôle de schéma sur des données réelles et examiné les preuves disponibles.** Une fiche de mécanisme ne doit pas être créée pour chaque flèche d'un schéma conceptuel : elle doit décrire un canal explicatif réutilisable, suffisamment distinct et documenté.
 
 ## 4. Exemple pilote : l'économie comme système d'interactions
 
