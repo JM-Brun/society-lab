@@ -122,11 +122,16 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(metrics["source_to_knowledge_coverage"]["numerator"], 169)
         self.assertEqual(metrics["source_to_knowledge_coverage"]["denominator"], 220)
         self.assertEqual(metrics["source_to_knowledge_coverage"]["unknown_count"], 0)
+        self.assertEqual(len(metrics["source_to_knowledge_coverage"]["covered_source_ids"]), 169)
+        self.assertEqual(len(metrics["source_to_knowledge_coverage"]["uncovered_source_ids"]), 51)
         self.assertEqual(metrics["claim_conclusion_coverage"]["numerator"], 28)
         self.assertEqual(metrics["claim_conclusion_coverage"]["denominator"], 80)
+        self.assertEqual(len(metrics["claim_conclusion_coverage"]["conclusive_claim_ids"]), 28)
+        self.assertEqual(len(metrics["claim_conclusion_coverage"]["active_claim_ids"]), 80)
         self.assertEqual(metrics["synthesis_coverage"]["numerator"], 25)
         self.assertEqual(metrics["synthesis_coverage"]["denominator"], 25)
         self.assertEqual(metrics["synthesis_coverage"]["unknown_count"], 0)
+        self.assertEqual(len(metrics["synthesis_coverage"]["covered_dossier_ids"]), 25)
 
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
