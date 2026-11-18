@@ -117,6 +117,7 @@ def calculate_source_coverage(sources, relations, known_ids, known_relation_type
         "excluded_count": 0,
         "unknown_count": sum(map(len, diagnostics.values())),
         "issues": {k: v for k, v in diagnostics.items() if v},
+        "covered_source_ids": sorted(covered),
         "uncovered_source_ids": uncovered,
         "definition_version": 1,
     }
@@ -147,6 +148,11 @@ def calculate_claim_conclusion_coverage(claims):
         "unknown_count": len(unknown),
         "issues": {"unknown_or_missing_status": unknown} if unknown else {},
         "status_counts": counts,
+        "active_claim_ids": sorted(str(c.get("id")) for c in active if c.get("id")),
+        "conclusive_claim_ids": sorted(str(c.get("id")) for c in active
+                                        if c.get("status") in CONCLUSIVE_STATUSES and c.get("id")),
+        "superseded_claim_ids": sorted(str(c.get("id")) for c in claims
+                                        if isinstance(c, dict) and c.get("status") == "superseded" and c.get("id")),
         "definition_version": 1,
     }
 
@@ -215,7 +221,11 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
         "excluded_count": len(dossiers) - denominator,
         "unknown_count": sum(len(v) for v in issues.values()),
         "issues": issues,
+        "active_dossier_ids": sorted(str(d.get("id")) for d in active if d.get("id")),
+        "covered_dossier_ids": sorted(covered),
         "uncovered_dossier_ids": sorted(set(uncovered)),
+        "excluded_dossier_ids": sorted(str(d.get("id")) for d in dossiers
+                                       if isinstance(d, dict) and d.get("status") == "archived" and d.get("id")),
         "unique_synthesis_count": len(unique_paths),
         "definition_version": 1,
     }
