@@ -33,7 +33,7 @@ def build_rows(issues, mapping, dossier_registry):
         dossier_ids = mapped.get("dossier_ids", []) if mapped else []
         domain_ids = sorted({domain for dossier_id in dossier_ids for domain in dossiers.get(dossier_id, {}).get("domain_ids", [])})
         rows.append({"number":number,"title":issue["title"],"url":issue["html_url"],"labels":labels,
-          "priority":priorities[0] if len(priorities)==1 else "unclassified","priority_valid":len(priorities)==1,
+          "priority":priorities[0] if len(priorities)==1 and priorities[0] in {"priority:high","priority:medium","priority:low"} else "unclassified","priority_valid":len(priorities)==1 and priorities[0] in {"priority:high","priority:medium","priority:low"},
           "nature":[label for label in labels if label in {"research","data","documentation","enhancement","knowledge-graph"}],
           "kind":mapped.get("kind","unmapped") if mapped else "unmapped","dossier_ids":dossier_ids,
           "domain_ids":domain_ids,"depends_on":mapped.get("depends_on",[]) if mapped else [],
