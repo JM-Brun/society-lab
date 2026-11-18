@@ -87,3 +87,7 @@ dossiers:
     dossier_path: "dossiers/the-shift-project-diagnostic-methodes-controverses.md"
     synthesis_id: "SYNTHESIS-SHIFT-PROJECT"
     synthesis_path: "syntheses/the-shift-project.md"
+  - dossier_id: "DOSSIER-PREF-2026-ROBUSTNESS-AUDIT"
+    dossier_path: "dossiers/pref-2026-audit-robustesse-scenarios.md"
+    synthesis_id: "SYNTHESIS-PREF-2026-AUDIT"
+    synthesis_path: "syntheses/pref-2026.md"
