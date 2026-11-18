@@ -49,7 +49,6 @@ def load_project_data(root: Path = ROOT) -> dict[str, Any]:
 def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
     known, duplicates = set(), []
     groups = list(data["registries"].values()) + [data["domains"], data["territories"]]
-    groups.append([{"id": row.get("synthesis_id")} for row in data["synthesis_entries"]])
     for records in groups:
         for record in records:
             if not isinstance(record, dict):
@@ -223,7 +222,10 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
 
 def build_report(data):
     known, duplicate_nodes = build_known_ids(data)
-    source = calculate_source_coverage(data["registries"]["sources"], data["relations"], known)
+    relation_types = {r.get("id") for r in data["relation_definitions"] if isinstance(r, dict)}
+    source = calculate_source_coverage(
+        data["registries"]["sources"], data["relations"], known, relation_types
+    )
     if duplicate_nodes:
         source["issues"]["duplicate_node_ids"] = sorted(duplicate_nodes)
         source["unknown_count"] += len(duplicate_nodes)
