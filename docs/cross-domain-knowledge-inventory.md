@@ -34,6 +34,7 @@ Les constats structurels ont été établis à partir de `knowledge/graph.yml`, 
 | REL-SUPPORTS | 86 | 14,7 % |
 | REL-TRANSCRIBES | 19 | 3,2 % |
 | REL-CHILD-OF | 8 | 1,4 % |
+| REL-SUMMARIZED-BY | 8 | 1,4 % |
 | REL-QUALIFIES | 9 | 1,5 % |
 | REL-GEOGRAPHICALLY-WITHIN | 7 | 1,2 % |
 | REL-CITES | 4 | 0,7 % |
