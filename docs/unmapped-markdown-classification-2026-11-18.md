@@ -83,6 +83,23 @@ Qualifier les 35 fichiers Markdown de `dossiers/` non associés à une entrée d
 
 Les catégories décrivent la fonction observée dans le contenu, pas un nouveau type d'objet de données. Elles ne justifient pas la création d'un registre supplémentaire.
 
+
+
+## Résultat de l'audit transversal des liens (18 novembre 2026)
+
+Le contrôle a porté sur les 35 fichiers classifiés, les liens Markdown entrants depuis les deux documents de synthèse/matrice principaux et les références textuelles dans les registres canoniques existants (Sources, Studies, Datasets, Claims, Hypotheses, Concepts, Dossiers).
+
+- 29 fichiers sur 35 sont directement liés depuis `syntheses/smic-france.md`.
+- 16 fichiers sur 35 sont liés depuis `dossiers/smic-causal-evidence-matrix.md`.
+- 14 fichiers sur 35 sont mentionnés par chemin dans au moins un registre existant, principalement dans les notes des objets Source ou Study.
+- Les liens se recouvrent : ces nombres ne s'additionnent pas.
+
+Les six fichiers absents des deux vues SMIC principales ne sont pas tous orphelins : le journal médias est lié depuis le protocole de revue systématique ; l'audit Crépon–Desplatz et les audits détaillés Kramarz–Philippon et Abowd et al. sont reliés par les notes des objets Source/Study ; la note de transcription 1970–1993 porte l'identifiant Dataset et renvoie au CSV ; la matrice des stratégies de réponse est rattachée au protocole comparatif. Les deux derniers liens de navigation ont été explicités dans la PR #145, de même que les liens de synthèse vers l'audit Crépon–Desplatz et la documentation 1970–1993.
+
+**Conclusion de conception :** aucune justification pour créer un registre documentaire générique. Les liens doivent rester dans les relations déjà prévues : synthèses vers artefacts thématiques, protocoles vers journaux/matrices, objets Source/Study vers audits, Dataset vers fichiers de données. Le validateur de couverture des synthèses ne doit pas devenir un contrôle bloquant de tous les Markdown.
+
+**Limite du contrôle :** il s'agit d'un audit de liens connus et de références textuelles dans les registres, pas encore d'une analyse exhaustive de toutes les références entrantes du dépôt ni d'une validation automatique des liens Markdown relatifs. Cette dernière devra être testée séparément avant d'être ajoutée à la CI.
+
 ## Cas distinct : synthèse non référencée
 
 `syntheses/cordon-sanitaire-belgique-efficacite.md` est une synthèse textuelle complète, mais sans frontmatter YAML conforme au contrat actuellement imposé aux synthèses canoniques. Son contenu porte sur le sous-sujet belge du dossier cordon sanitaire. Le registre relie déjà le dossier canonique `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE` à `syntheses/debat-barrage-cordon-sanitaire.md`.
