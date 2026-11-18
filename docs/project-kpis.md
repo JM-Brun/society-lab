@@ -60,7 +60,6 @@ Ne pas coder la taxonomie dans le calcul avant d'avoir audité le schéma Claim 
 
 **Question :** les dossiers principaux éligibles disposent-ils d'une synthèse autonome référencée ?
 
-- **Numérateur :** dossiers principaux dont l'association à une synthèse existe dans le registre canonique et dont le fichier cible est présent.
 - **Dénominateur :** dossiers actifs du registre canonique `dossiers/registry.yml` ; les statuts `scoping`, `researching`, `draft`, `under_review` et `published` sont actifs, `archived` est exclu.
 - **Numérateur :** dossiers actifs associés exactement une fois à une synthèse dont le fichier et le fichier du dossier existent.
 - **Source :** `syntheses/registry.yml`, rapproché du registre indépendant `dossiers/registry.yml`.
