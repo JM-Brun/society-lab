@@ -92,12 +92,19 @@ Ne calculer de ratio ou d'écart que lorsque les périmètres sont identiques ou
 - Vérifier les tables du PREF pour extraire les consommations, émissions, cuivre et emplois par chantier et variante.
 - Comparer les émissions territoriales avec les budgets carbone SNBC 3, et l'empreinte carbone séparément.
 - Ajouter les investissements, coûts complets, dépenses publiques, prix de l'énergie et effets distributifs dans un volet économique distinct.
-- Mettre à jour le dossier lorsque les nouvelles publications RTE et ADEME 2026 seront effectivement publiées.
+- Exploiter en priorité les séries ADEME explicitement taguées « Saison 2 », publiées dans le catalogue open data et mises à jour le 14 octobre 2026 ; ne pas attendre une publication globale si les jeux sont déjà accessibles.
+- Vérifier les données RTE 2026 au fur et à mesure de leur publication ; distinguer les données de consultation des résultats consolidés.
+- Extraire les tableaux PREF chantier par chantier, en particulier les trajectoires énergie, cuivre et emploi.
 
 ## Sources primaires
 
 - ADEME, transcription des graphiques comparatifs : https://www.ademe.fr/les-futurs-en-transition/les-scenarios/transcription-textuelles-des-contenus-presentes-sur-la-page-bilan-compare-des-4-scenarios/
-- ADEME, portail open data : https://data-transitions2050.ademe.fr/datasets
+- ADEME, portail open data Transition(s) 2050 : https://data-transitions2050.ademe.fr/datasets (catalogue de 363 jeux de données ; plusieurs jeux Saison 2 mis à jour le 14 octobre 2026)
+- ADEME, bilan énergie finale Saison 2 par secteur : https://data-transitions2050.ademe.fr/datasets/bilan-energie-finale-par-secteur-en-2050
+- ADEME, bilan énergie finale Saison 2 par énergie : https://data-transitions2050.ademe.fr/datasets/bilan-energie-finale-par-energie
+- ADEME, consommation totale d'électricité Saison 2 : https://data-transitions2050.ademe.fr/datasets/evolution-de-la-consommation-totale-delectricite
+- ADEME, bilan GES détaillé Saison 2 : https://data-transitions2050.ademe.fr/datasets/bilan-ges-detaille-en-2050
+- ADEME, importations d'énergies fossiles Saison 2 : https://data-transitions2050.ademe.fr/datasets/importations-denergies-fossiles-en-2050
 - RTE, trajectoires de consommation électrique : https://rte-futursenergetiques2050.com/panorama/trajectoires
 - RTE, documents et données : https://rte-futursenergetiques2050.com/documents
 - négaWatt, bilans énergie et matière, partie 5 : https://www.negawatt.org/IMG/pdf/scenario-negawatt-2022-rapport-complet-partie5.pdf
