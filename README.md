@@ -41,7 +41,7 @@ Le dépôt organise les contenus autour d'objets identifiés et reliés :
 - **Dossiers et analyses** : synthèses transversales et résultats reproductibles.
 - **Graphe de connaissances** : relations typées entre objets, conservées dans Git et exportables.
 
-Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags dans [le vocabulaire contrôlé](knowledge/TAGS.yml) et les relations dans [l'ontologie légère](knowledge/RELATION_TYPES.yml). Voir [métadonnées et nomenclature](docs/metadata-and-naming.md), [graphe](knowledge/GRAPH.md), [cadre de lecture transversale](docs/cross-domain-knowledge-framework.md), [inventaire des concepts et rapprochements existants](docs/cross-domain-knowledge-inventory.md), [inventaire des concepts et rapprochements existants](docs/cross-domain-knowledge-inventory.md) et [protocole d'ingestion](docs/ingestion-protocol.md).
+Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags dans [le vocabulaire contrôlé](knowledge/TAGS.yml) et les relations dans [l'ontologie légère](knowledge/RELATION_TYPES.yml). Voir [métadonnées et nomenclature](docs/metadata-and-naming.md), [graphe](knowledge/GRAPH.md), [cadre de lecture transversale](docs/cross-domain-knowledge-framework.md), [inventaire des concepts et rapprochements existants](docs/cross-domain-knowledge-inventory.md), [première revue transversale éducation–emploi–salaires](docs/cross-domain-education-employment-evidence.md) et [protocole d'ingestion](docs/ingestion-protocol.md).
 
 ## Premier dossier de recherche
 
