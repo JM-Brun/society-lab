@@ -1,68 +1,86 @@
 # Audit de faisabilité des KPIs — 18 novembre 2026
 
-**Périmètre :** lecture des registres, schémas et graphe de la branche `main` au 18 novembre 2026. Audit documentaire en lecture seule ; aucun calculateur, aucune migration et aucune modification des données canoniques.
+**Périmètre :** instantané de la branche `main` contrôlé le 18 novembre 2026. Lecture des registres, schémas, graphe et fichiers associés. Les résultats sont reproductibles à partir des sources canoniques ; aucune donnée métier n'a été modifiée.
 
 ## Résultats vérifiés
 
-| Élément | Résultat observé | Conséquence |
+| Élément | Résultat | Interprétation |
 |---|---:|---|
-| Sources dans `sources/registry.yml` | 220 | Dénominateur source disponible |
-| Relations dans `knowledge/graph.yml` | 629 | Graphe exploitable par parcours déterministe |
-| Sources avec au moins une relation typée de contribution documentaire (SUPPORTS, QUALIFIES, INCLUDES, USES, CITES, TRANSCRIBES et inverse) | 165 / 220 (75 %) | Première mesure calculable de couverture du graphe ; 55 sources n'ont pas ce type de relation |
-| Claims dans `claims/registry.yml` | 83 | Population mesurable |
-| Statuts des claims | 52 `under_review`, 27 `partially_supported`, 1 `supported`, 3 `superseded` | Le champ canonique est `status`, pas `review_status` |
-| Claims actifs avec conclusion épistémique explicite (`supported` ou `partially_supported`) | 28 / 80 (35 %) | KPI calculable, à nommer « Claims avec conclusion documentée » ; ne pas assimiler à une validation scientifique indépendante |
-| Vérifications de sources enregistrées dans les claims | 30 entrées `source_checked` observées | Compter les claims concernés nécessite une agrégation par claim ; ne pas utiliser 30 comme numérateur de claims |
-| Registre des synthèses | 25 dossiers distincts, 11 chemins de synthèse distincts | Relations plusieurs-dossiers-vers-une-synthèse intentionnelles ; dédupliquer les chemins, mais compter les dossiers pour la couverture |
-| Éligibilité des dossiers | Aucun inventaire indépendant des dossiers actifs identifié dans cet audit | Un ratio de couverture calculé uniquement sur le registre des synthèses serait tautologique (25/25 par construction) |
+| Sources | 220 | Dénominateur du KPI de couverture documentaire |
+| Relations du graphe | 633 | Graphe analysé intégralement |
+| Relations typées de contribution documentaire | 441 | Types retenus : SUPPORTS, QUALIFIES, INCLUDES, USES, CITES, TRANSCRIBES et TRANSCRIBED-FROM |
+| Sources avec au moins une relation documentaire valide | 169 / 220 (76,8 %) | KPI calculable ; 51 sources sans relation retenue |
+| Intégrité des relations | 0 justification vide ; 0 identifiant de relation dupliqué ; 0 triplet dupliqué ; 0 endpoint inconnu | Les 633 relations ont des extrémités enregistrées et une justification non vide |
+| Nœuds indexés pour vérifier les endpoints | 476 identifiants | Inclut registres, domaines, territoires et identifiants de synthèse |
+| Claims | 83 | Population mesurable |
+| Statuts des claims | 52 `under_review`, 27 `partially_supported`, 1 `supported`, 3 `superseded` | Champ canonique : `status` |
+| Claims actifs avec conclusion documentée | 28 / 80 (35 %) | Conclusion explicite, sans interprétation comme taux de vérité |
+| Dossiers actifs | 25 | Dénominateur indépendant issu de `dossiers/registry.yml` ; tous au statut `researching` |
+| Associations dossier/synthèse | 25 / 25 | Correspondance exacte entre les 25 dossiers et les 25 entrées du registre |
+| Fichiers de synthèse distincts | 11 | Tous les chemins déclarés existent ; plusieurs dossiers peuvent partager une synthèse |
 
-## Conclusions par KPI candidat
+## Méthode de calcul
 
-### 1. Couverture des sources dans le graphe — calculable
+### 1. Couverture documentaire des sources — calculable
 
-Formule opérationnelle initiale :
+Formule :
 
-`sources ayant au moins une relation typée de contribution documentaire / sources du registre`
+`sources ayant au moins une relation documentaire valide / sources du registre`
 
-Résultat exploratoire : **165 / 220 = 75 %** selon le type de relation. Ce chiffre est un résultat provisoire : le comptage initial a filtré les types de relation, mais n'a pas encore audité individuellement la non-vacuité des justifications ni la validité de toutes les extrémités. Les relations `REL-ABOUT` seules sont exclues : elles signalent un thème, pas une contribution documentaire. Le prototype devra contrôler ces conditions avant de publier le ratio définitif et produire la liste des sources sans relation retenue.
+Sont retenues les relations `REL-SUPPORTS`, `REL-QUALIFIES`, `REL-INCLUDES`, `REL-USES`, `REL-CITES`, `REL-TRANSCRIBES` et `REL-TRANSCRIBED-FROM`. La source peut être à l'une ou l'autre extrémité. Une relation n'est comptée que si son identifiant est présent et unique, sa justification non vide et ses deux endpoints connus.
 
-Cette mesure porte sur la présence d'un lien documentaire structuré, pas sur la qualité de la source ni sur la force probante du lien. Le 75 % ne doit pas encore être utilisé comme valeur certifiée tant que les contrôles de justification et d'intégrité des extrémités ne sont pas exécutés.
+Les relations `REL-ABOUT` seules sont exclues : elles expriment un rattachement thématique, pas une contribution documentaire. Les relations de synthèse et de hiérarchie territoriale ne sont pas comptées non plus.
+
+Résultat vérifié : **169 / 220 = 76,8 %** ; 51 identifiants de sources ne disposent d'aucune relation retenue. Ce résultat mesure la structuration documentaire, pas la qualité des sources ni la force probante de leur contenu.
 
 ### 2. Claims avec conclusion documentée — calculable
 
-Le schéma `schemas/claim.schema.json` impose `status` et autorise notamment `unexamined`, `under_review`, `supported`, `partially_supported`, `contested`, `not_supported`, `insufficient_evidence` et `superseded`.
+Le schéma `schemas/claim.schema.json` impose le champ `status`. Le dénominateur comprend les claims actifs, hors `superseded`. Le numérateur inclut les statuts conclusifs : `supported`, `partially_supported`, `contested`, `not_supported` et `insufficient_evidence`.
 
-Sur les 83 claims : 3 sont superseded ; parmi les 80 autres, 28 ont une conclusion explicite (`supported` ou `partially_supported`) et 52 sont `under_review`. Référence : **28 / 80 = 35 %**.
+Instantané : 83 claims, dont 3 superseded ; 28 claims actifs ont une conclusion explicite, soit **28 / 80 = 35 %**. Les 52 autres claims actifs sont `under_review`.
 
-Ne pas appeler cela « taux de vérité » ni « vérification indépendante ». Les statuts `contested`, `not_supported` et `insufficient_evidence` devront également compter comme conclusions explicites si ces valeurs apparaissent. Les vérifications au niveau source (`source_verifications.status`) restent un diagnostic séparé.
+Ce KPI mesure la présence d'une conclusion épistémique documentée, quelle qu'en soit l'orientation. Il ne mesure ni un taux de vérité, ni une validation indépendante. Les statuts de `source_verifications` décrivent des contrôles par source et restent distincts.
 
-### 3. Couverture des synthèses — partiellement calculable
+### 3. Couverture des synthèses — calculable
 
-`syntheses/registry.yml` fournit 25 associations dossier/synthèse, dont 11 chemins de synthèse distincts. Le registre est conçu comme la correspondance obligatoire des dossiers principaux, mais l'audit n'a pas identifié de registre indépendant permettant de connaître les dossiers actifs qui devraient y figurer.
+Le dénominateur indépendant est le registre `dossiers/registry.yml`, pas le registre des synthèses lui-même. Les statuts actifs sont `scoping`, `researching`, `draft`, `under_review` et `published` ; `archived` est exclu.
 
-Conclusion : l'intégrité des associations et l'existence des fichiers sont contrôlables ; un taux de couverture indépendant n'est pas défendable tant qu'un dénominateur externe au registre n'est pas défini. Le script `scripts/validate/check_synthesis_freshness.py` contrôle déjà plusieurs invariants de cohérence et d'existence ; réutiliser ce contrôle au lieu de le dupliquer.
+Contrôles effectués :
+- 25 dossiers actifs et 25 associations dans `syntheses/registry.yml` ;
+- chaque identifiant de dossier est présent exactement une fois dans les associations ;
+- aucune association orpheline ou manquante ;
+- les 25 chemins de dossier et les 11 chemins de synthèse distincts existent ;
+- le partage d'une même synthèse par plusieurs dossiers est intentionnel et ne doit pas être compté comme un doublon de dossier.
 
-### 4. Connectivité du graphe — diagnostic calculable, ratio non défendable en l'état
+Résultat : **25 / 25 = 100 %**. Il s'agit d'une couverture de présence et d'intégrité des fichiers, pas d'une évaluation de la qualité ou de la fraîcheur des synthèses. Réutiliser `scripts/validate/validate_syntheses.py` et `scripts/validate/check_synthesis_freshness.py` pour les contrôles complémentaires déjà disponibles, sans les dupliquer.
 
-Le graphe possède des relations typées et justifiées, mais aucune règle générale ne définit quels types d'objets doivent nécessairement avoir au moins une relation. Un objet autonome ou référentiel peut légitimement être isolé.
+### 4. Connectivité du graphe — diagnostic seulement
 
-Conclusion : produire des listes d'objets isolés et des contrôles de relations orphelines/incompatibles ; ne pas publier de pourcentage de connectivité avant d'avoir défini l'éligibilité par type d'objet.
+Le nombre de relations et la présence de références valides ne suffisent pas à définir un taux global de connectivité. Les objets n'ont pas tous vocation à être reliés de la même manière ; les règles d'éligibilité par type restent à formaliser.
 
-## Ajustements de spécification requis
+Conserver des diagnostics : objets isolés, types incompatibles, relations orphelines et objets sans lien attendu. Ne pas publier de ratio global avant définition du périmètre éligible.
 
-- Remplacer toute référence à `review_status` pour les claims par `status`.
-- Ne pas présenter `source_verifications` comme un statut global du claim : c'est une liste de contrôles par source, avec sa propre taxonomie.
-- Préciser que les liens `REL-ABOUT` seuls ne prouvent pas qu'une source est exploitée.
-- Définir la couverture des synthèses comme non calculable en pourcentage tant qu'un dénominateur indépendant n'existe pas.
-- Garder la connectivité en diagnostic, sans ratio agrégé.
-- Dans chaque rapport, fournir les identifiants inclus, exclus, invalides et inconnus.
+## Prototype et tests
 
-## Suite technique recommandée
+Un calculateur local en lecture seule est ajouté dans `scripts/validate/calculate_project_kpis.py`. Il calcule les trois indicateurs dont le dénominateur est maintenant défendable, à partir des registres canoniques et du graphe, sans réseau ni mutation des fiches. Il propose une sortie Markdown ou JSON et détaille les identifiants non couverts et les anomalies.
 
-1. Implémenter un script local en lecture seule pour le KPI 1 et le KPI 2, avec export JSON/Markdown.
-2. Ajouter des tests unitaires pour relations sans justification, extrémités inconnues, relation `REL-ABOUT` seule, claims superseded, statuts inconnus et dénominateur nul.
-3. Vérifier les 55 sources sans relation documentaire et distinguer les omissions réelles des sources de contexte ou des sources légitimement non mobilisées.
-4. Déterminer si un inventaire léger des dossiers actifs existe déjà avant de proposer un mécanisme supplémentaire pour le KPI 3.
-5. Mesurer le temps de calcul avant toute intégration CI ; aucun seuil de performance ou objectif de KPI arbitraire.
+Les tests unitaires de `tests/test_project_kpis.py` couvrent notamment :
+- relations documentaires valides dans les deux sens ;
+- exclusion de `REL-ABOUT` seule ;
+- justifications vides, endpoints inconnus et identifiants dupliqués ;
+- registres vides et dénominateurs nuls ;
+- claims superseded et statuts inconnus ;
+- synthèses partagées, dossiers archivés et fichiers de synthèse manquants ;
+- identifiants de synthèse répétés dans le registre de correspondance.
 
-**Limite de l'audit :** les chiffres ci-dessus sont un instantané reproductible à partir des registres lus. Ils ne certifient pas la qualité scientifique des sources, des affirmations ou des relations.
+Aucune intégration CI n'est ajoutée à ce stade. Il faut d'abord exécuter les tests sur le dépôt, vérifier les sorties du calculateur, puis mesurer son coût sur le corpus actuel et des charges ×10/×100. L'ajout à la CI ne sera envisagé qu'après ces mesures.
+
+## Décisions
+
+1. Les KPIs 1, 2 et 3 sont calculables sans migration de données.
+2. Le KPI 4 reste un diagnostic tant que l'éligibilité des objets n'est pas définie.
+3. Aucun score composite ni cible arbitraire n'est créé.
+4. Les ratios décrivent la structuration et la maintenance documentaires ; ils ne certifient pas la vérité scientifique.
+5. Le calculateur reste en lecture seule ; la CI n'est pas modifiée avant validation et benchmark.
+
+**Limite :** les résultats sont un instantané du dépôt au 18 novembre 2026. Toute évolution du schéma, du périmètre ou des relations peut modifier les valeurs et doit être signalée dans les rapports ultérieurs.
