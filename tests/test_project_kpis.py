@@ -42,6 +42,14 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["status"], "not_computable")
         self.assertIsNone(result["value"])
 
+    def test_unknown_relation_type_is_reported_when_taxonomy_is_supplied(self):
+        valid, diagnostics = inspect_relations(
+            [{**self.edge, "type": "REL-UNKNOWN"}],
+            {"DOSSIER-A", "SOURCE-A"}, {"REL-INCLUDES"}
+        )
+        self.assertEqual(valid, [])
+        self.assertEqual(diagnostics["unknown_relation_types"], ["REL-EDGE-A"])
+
     def test_duplicate_edge_id_is_reported_and_second_edge_excluded(self):
         valid, diagnostics = inspect_relations([self.edge, self.edge], {"DOSSIER-A", "SOURCE-A"})
         self.assertEqual(len(valid), 1)
