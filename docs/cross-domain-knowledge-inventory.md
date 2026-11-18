@@ -169,6 +169,13 @@ Les statuts de cette matrice qualifient la relation entre dossiers, pas la véri
 6. Répliquer la méthode sur énergie et capacité productive, puis sur TIG et capacité institutionnelle.
 7. Mettre à jour les synthèses et les pages de domaines uniquement après que les relations ont été vérifiées.
 
+
+## 9. Premier examen probant : éducation, compétences, emploi et salaires
+
+La chaîne A a fait l'objet d'une première confrontation des registres Parcoursup/éducation et SMIC. La note [Éducation, compétences, emploi et salaires : état des preuves transversales](cross-domain-education-employment-evidence.md) distingue les maillons documentés des ruptures de preuve.
+
+Le résultat principal est négatif au sens méthodologique : le corpus actuel ne permet pas encore de suivre une même population de l'acquis scolaire à la progression salariale. Les inégalités éducatives sont documentées d'un côté ; l'association entre compétences et bas salaires, ainsi que des constats de mobilité, sont documentés de l'autre. Le lien longitudinal entre ces deux ensembles reste à instruire. Aucune arête causale n'est donc ajoutée au graphe sur cette base.
+
 ## 8. Articulation et limites
 
 - Le graphe canonique reste `knowledge/graph.yml`.
