@@ -7,6 +7,7 @@ confidence: "moderate"
 last_reviewed: "2026-11-18"
 related_dossiers:
   - "dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md"
+  - "dossiers/comparaison-quantitative-scenarios-energie-2026.md"
 ---
 
 ## 1. Synthèse exécutive
@@ -37,9 +38,9 @@ La comparaison ne doit pas chercher un vainqueur global. Les scénarios reposent
 
 ## 6. Incertitudes et limites
 
-Cette première matrice est qualitative. Elle n'harmonise pas encore les données chiffrées, les hypothèses macroéconomiques, les coûts, les ressources et les besoins d'emploi. Les publications RTE et ADEME attendues fin 2026 pourront modifier la comparaison.
+La matrice qualitative est désormais complétée par un premier volet quantitatif distinct. Celui-ci donne des ordres de grandeur, mais ne constitue pas encore une harmonisation complète : les périmètres ADEME, négaWatt et SNBC 3 diffèrent, et les valeurs RTE portent sur l'électricité. Les publications actualisées RTE et ADEME attendues fin 2026 pourront modifier la comparaison.
 
 ## 7. Conclusion raisonnée
 
-La confrontation des cinq travaux doit identifier les convergences robustes, les divergences d'hypothèses, les arbitrages de société et les points incertains. La prochaine étape est une comparaison quantitative harmonisée, avec un registre explicite des définitions, années, périmètres et sources.
+La confrontation des cinq travaux doit identifier les convergences robustes, les divergences d'hypothèses, les arbitrages de société et les points incertains. Le dossier quantitatif associé fournit un premier rapprochement et explicite les écarts de périmètre. La suite consiste à exploiter les fichiers open data et à harmoniser les définitions, années, secteurs et vecteurs avant de comparer les coûts, ressources et emplois.
 
