@@ -75,7 +75,7 @@ Télécharger le CSV depuis la page officielle du jeu de données Parcoursup 202
 
 Avec Python standard (aucune dépendance externe) :
 
-    python scripts/analysis/analyze_parcoursup_2025.py --input /chemin/vers/fr-esr-parcoursup.csv --output-dir data/derived/parcoursup-2025
+    python scripts/analysis/analyze_parcoursup_2025.py --input /chemin/vers/fr-esr-parcoursup.csv --output-dir data/derived/parcoursup-2025 --source-url 'https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets/fr-esr-parcoursup/exports/csv' --downloaded-at-utc '2026-11-18T12:00:00Z'
 
 Le script produit des agrégats descriptifs, des indicateurs par formation et un manifeste rappelant l'unité d'analyse et les limites. Les ratios de proposition et d'acceptation sont choisis pour ne pas mélanger un total de campagne (`prop_tot`, `acc_tot`) avec un dénominateur limité à la phase principale. La distribution du ratio demande/capacité inclut minimum, premier quartile, médiane, troisième quartile et maximum. Les sorties sont des données dérivées, pas des microdonnées.
 
@@ -88,3 +88,10 @@ Le script produit des agrégats descriptifs, des indicateurs par formation et un
 - Les sorties conservent les valeurs brutes de sélectivité.
 - Les tests couvrent les dénominateurs nuls, les valeurs manquantes, les quantiles et le fait que les agrégats comptent des formations (et non des personnes uniques).
 - Aucun résultat substantiel n'est publié avant l'exécution sur le fichier officiel et la revue des contrôles.
+
+
+## Mise à jour du jeu officiel — 18 novembre 2026
+
+La fiche officielle indique que le jeu a été actualisé le 9 mars 2026 pour ajouter le taux d'accès et le rang de certaines formations. Ces champs doivent être traités comme des indicateurs officiels fournis, distincts des ratios calculés par le script. Avant de les intégrer aux sorties, relever leurs noms exacts et leur disponibilité dans le schéma courant ; ne jamais reconstruire les valeurs manquantes. Le nombre d'enregistrements annoncé reste 14 252, mais le nombre et la liste des colonnes doivent être vérifiés sur le fichier effectivement téléchargé.
+
+Le manifeste produit par le script conserve désormais l'URL canonique fournie, la date de téléchargement si elle est renseignée par l'opérateur, la date de traitement, la taille du fichier, son SHA-256, l'encodage déclaré, le séparateur détecté et la liste exacte des colonnes. La date de téléchargement n'est jamais inventée par le script.
