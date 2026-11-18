@@ -111,6 +111,65 @@ def validate_graph_edges(edges, relation_by_id, node_type_by_id, errors):
                 errors.append(f"{edge_id}: {endpoint} type {actual_type} not allowed for {edge.get('type')}")
 
 
+
+def validate_batch_manifest(batch, label, source_ids, errors):
+    """Check batch-local candidate identities and links to canonical sources."""
+    candidates = batch.get("candidates", []) or []
+    candidate_ids = [candidate.get("candidate_id") for candidate in candidates]
+    if len(candidate_ids) != len(set(candidate_ids)):
+        errors.append(f"{label}: duplicate candidate_id in batch")
+    known_candidates = {value for value in candidate_ids if isinstance(value, str)}
+    for candidate in candidates:
+        candidate_id = candidate.get("candidate_id", "<missing candidate_id>")
+        source_id = candidate.get("source_id")
+        if source_id and source_id not in source_ids:
+            errors.append(f"{label} {candidate_id}: unresolved source_id {source_id}")
+        duplicate_of = candidate.get("duplicate_of")
+        if duplicate_of:
+            if duplicate_of == candidate_id:
+                errors.append(f"{label} {candidate_id}: candidate cannot be a duplicate of itself")
+            elif duplicate_of not in known_candidates and duplicate_of not in source_ids:
+                errors.append(f"{label} {candidate_id}: unresolved duplicate_of {duplicate_of}")
+        if batch.get("status") == "closed" and candidate.get("decision") == "deferred":
+            errors.append(f"{label} {candidate_id}: closed batch cannot contain deferred candidates")
+
+
+def validate_batch_manifests(source_ids, errors):
+    """Validate every committed source-ingestion batch manifest, if any exist."""
+    import json
+
+    directory = ROOT / "sources" / "batches"
+    schema_path = ROOT / "schemas" / "ingestion-batch.schema.json"
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        Draft202012Validator.check_schema(schema)
+        validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    except Exception as exc:
+        errors.append(f"Invalid schema schemas/ingestion-batch.schema.json: {exc}")
+        return
+
+    seen_batch_ids = set()
+    for path in sorted([*directory.glob("*.yml"), *directory.glob("*.yaml")]):
+        label = path.relative_to(ROOT).as_posix()
+        try:
+            with path.open(encoding="utf-8") as stream:
+                batch = yaml.safe_load(stream) or {}
+        except Exception as exc:
+            errors.append(f"{label}: invalid YAML: {exc}")
+            continue
+        if not isinstance(batch, dict):
+            errors.append(f"{label}: batch manifest must be a mapping")
+            continue
+        batch_id = batch.get("batch_id")
+        if batch_id:
+            if batch_id in seen_batch_ids:
+                errors.append(f"{label}: duplicate batch_id {batch_id}")
+            seen_batch_ids.add(batch_id)
+        for error in validator.iter_errors(batch):
+            location = ".".join(str(part) for part in error.absolute_path)
+            errors.append(f"{label} {location}: {error.message}")
+        validate_batch_manifest(batch, label, source_ids, errors)
+
 def main():
     errors = []
     taxonomy = load_yaml("knowledge/TAXONOMY.yml")
@@ -157,6 +216,7 @@ def main():
                     errors.append(f"{record.get('id')}: unknown tag {tag_id}")
 
     validate_cross_references(all_records, node_ids, errors)
+    validate_batch_manifests(node_ids.get('SOURCE', set()), errors)
 
     # Synthesis documents are first-class graph nodes, sourced from the synthesis registry.
     synthesis_registry = load_yaml("syntheses/registry.yml")
