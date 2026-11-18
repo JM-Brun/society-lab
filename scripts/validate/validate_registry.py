@@ -115,23 +115,47 @@ def validate_graph_edges(edges, relation_by_id, node_type_by_id, errors):
 def validate_batch_manifest(batch, label, source_ids, errors):
     """Check batch-local candidate identities and links to canonical sources."""
     candidates = batch.get("candidates", []) or []
-    candidate_ids = [candidate.get("candidate_id") for candidate in candidates]
+    if not isinstance(candidates, list):
+        return
+    valid_candidates = [candidate for candidate in candidates if isinstance(candidate, dict)]
+    candidate_ids = [candidate.get("candidate_id") for candidate in valid_candidates]
     if len(candidate_ids) != len(set(candidate_ids)):
         errors.append(f"{label}: duplicate candidate_id in batch")
     known_candidates = {value for value in candidate_ids if isinstance(value, str)}
-    for candidate in candidates:
+    duplicate_links = {}
+    selected_sources = set()
+
+    for candidate in valid_candidates:
         candidate_id = candidate.get("candidate_id", "<missing candidate_id>")
         source_id = candidate.get("source_id")
         if source_id and source_id not in source_ids:
             errors.append(f"{label} {candidate_id}: unresolved source_id {source_id}")
+        if candidate.get("decision") == "selected" and source_id:
+            if source_id in selected_sources:
+                errors.append(f"{label}: source_id {source_id} selected more than once in the same batch")
+            selected_sources.add(source_id)
+
         duplicate_of = candidate.get("duplicate_of")
         if duplicate_of:
             if duplicate_of == candidate_id:
                 errors.append(f"{label} {candidate_id}: candidate cannot be a duplicate of itself")
             elif duplicate_of not in known_candidates and duplicate_of not in source_ids:
                 errors.append(f"{label} {candidate_id}: unresolved duplicate_of {duplicate_of}")
+            elif duplicate_of in known_candidates:
+                duplicate_links[candidate_id] = duplicate_of
+
         if batch.get("status") == "closed" and candidate.get("decision") == "deferred":
             errors.append(f"{label} {candidate_id}: closed batch cannot contain deferred candidates")
+
+    for candidate_id in duplicate_links:
+        visited = set()
+        current = candidate_id
+        while current in duplicate_links:
+            if current in visited:
+                errors.append(f"{label}: duplicate_of cycle involving {candidate_id}")
+                break
+            visited.add(current)
+            current = duplicate_links[current]
 
 
 def validate_batch_manifests(source_ids, errors):
