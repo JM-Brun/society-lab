@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
-from validate_registry import validate_cross_references, validate_graph_edges
+from validate_registry import validate_batch_manifest, validate_cross_references, validate_graph_edges
 
 
 class CrossReferenceValidationTests(unittest.TestCase):
