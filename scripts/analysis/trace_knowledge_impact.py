@@ -77,18 +77,19 @@ def index_records(registries: dict[str, list[dict[str, Any]]]) -> dict[str, dict
 def find_dependents(
     registries: dict[str, list[dict[str, Any]]],
     impacted: dict[str, set[str]],
+    dependent_kind: str,
     target_kind: str,
     source_kinds: tuple[str, ...],
 ) -> set[str]:
+    """Return dependents of one requested type, avoiding cross-type ID leakage."""
+    fields = REFERENCE_FIELDS.get(dependent_kind, {}).get(target_kind)
+    if not fields:
+        return set()
     found: set[str] = set()
-    for dependent_kind, by_target in REFERENCE_FIELDS.items():
-        fields = by_target.get(target_kind)
-        if not fields:
-            continue
-        for record in registries.get(dependent_kind, []):
-            refs = record_references(record, fields)
-            if any(refs & impacted.get(kind, set()) for kind in source_kinds):
-                found.add(record["id"])
+    for record in registries.get(dependent_kind, []):
+        refs = record_references(record, fields)
+        if any(refs & impacted.get(kind, set()) for kind in source_kinds):
+            found.add(record["id"])
     return found
 
 
@@ -114,16 +115,16 @@ def build_impact_report(
     # Level 2: claims using impacted studies/datasets; hypotheses using studies.
     for kind in ("STUDY", "DATASET"):
         impacted.setdefault("CLAIM", set()).update(
-            find_dependents(registries, impacted, kind, (kind,))
+            find_dependents(registries, impacted, "CLAIM", kind, (kind,))
         )
     impacted.setdefault("HYPOTHESIS", set()).update(
-        find_dependents(registries, impacted, "STUDY", ("STUDY",))
+        find_dependents(registries, impacted, "HYPOTHESIS", "STUDY", ("STUDY",))
     )
 
     # Level 3: dossiers explicitly referencing affected knowledge objects.
     for kind in ("CLAIM", "STUDY", "HYPOTHESIS"):
         impacted.setdefault("DOSSIER", set()).update(
-            find_dependents(registries, impacted, kind, (kind,))
+            find_dependents(registries, impacted, "DOSSIER", kind, (kind,))
         )
 
     synthesis_by_dossier: dict[str, list[dict[str, str]]] = {}
