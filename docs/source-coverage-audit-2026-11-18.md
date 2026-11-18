@@ -118,7 +118,7 @@ Une relation documentaire ne doit jamais être déduite du seul domaine, du titr
 |---|---|---|
 | `SOURCE-PRI-EU-NONCUSTODIAL-COMPARATIVE-2025` | `STUDY-PRI-EU-NONCUSTODIAL-COMPARATIVE-2025`, champ `source_ids` | Ajouter `REL-CITES` depuis l'étude |
 | `SOURCE-WERMINK-COMMUNITY-SERVICE-RETRIBUTION-2023` | `STUDY-WERMINK-NETHERLANDS-COMMUNITY-SERVICE-IV-2023`, champ `source_ids` | Ajouter `REL-CITES` depuis l'étude |
-| `SOURCE-FO-POUVOIR-ACHAT-2026` | Citation bibliographique dans `dossiers/smic-social-partners-evidence.md`, fichier de travail non enregistré dans `dossiers/registry.yml` | Ne pas créer de lien vers un objet absent du graphe ; enregistrer le dossier de travail ou documenter son rattachement avant de relier |
+| `SOURCE-FO-POUVOIR-ACHAT-2026` | Citation bibliographique dans `dossiers/smic-social-partners-evidence.md`, qui déclare explicitement `DOSSIER-SMIC-FRANCE-TRADEOFFS` comme dossier parent | Ajouter `REL-INCLUDES` depuis le dossier parent ; lien contextuel sur une mesure ponctuelle d'épargne, pas preuve sur le SMIC |
 | `SOURCE-UK-DFE-2024-HARASSMENT-CENSORSHIP` | `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE`, données descriptives et limites du no-platforming ; bibliographie § 13 | Ajouter `REL-INCLUDES` depuis le dossier |
 | `SOURCE-TADROS-2022-RIGHTS-NOPLATFORMING` | Même dossier, analyse normative des droits et conditions de justification ; bibliographie § 14 | Ajouter `REL-INCLUDES` depuis le dossier |
 | `SOURCE-LIBERAL-DEFENSE-NOPLATFORMING-2024` | Même dossier, défense normative du no-platforming non violent ; bibliographie § 15 | Ajouter `REL-INCLUDES` depuis le dossier |
@@ -130,7 +130,7 @@ Une relation documentaire ne doit jamais être déduite du seul domaine, du titr
 | `SOURCE-OECD-PIAAC-DATA-METHODOLOGY-2023` | `STUDY-PIAAC-2023-FRANCE-COMPETENCES` et `DATASET-PIAAC-2023-FRANCE` | Ajouter `REL-CITES` depuis l'étude |
 | `SOURCE-INSEE-PANEL-TOUS-SALARIES-METADATA-2026` | `STUDY-CEREQ-GENERATION-2021-BTS-MATCHING`, `STUDY-INSEE-PANEL-TOUS-SALARIES-TRAJECTORIES` et deux fiches dataset | Ajouter un `REL-CITES` depuis chacune des deux études |
 
-**Bilan :** 9 sources disposent d'un rattachement explicite à une étude (10 relations étude→source, car la source Insee Panel est référencée par deux études) ; 3 autres sont explicitement citées par un dossier enregistré ; 1 source est citée dans un fichier de travail non enregistré et reste volontairement sans lien.
+**Bilan :** 9 sources disposent d'un rattachement explicite à une étude (10 relations étude→source, car la source Insee Panel est référencée par deux études) ; 4 autres sont explicitement citées par un dossier enregistré, dont la source FO via le dossier parent déclaré dans le fichier de travail.
 
 ### B. Les 38 sources avec `REL-ABOUT` uniquement
 
@@ -193,10 +193,10 @@ Ces 11 sources justifient `REL-INCLUDES` depuis le dossier concerné.
 
 ### Synthèse des décisions
 
-- **50 relations candidates justifiées** : 36 relations `REL-CITES` depuis les études et 14 relations `REL-INCLUDES` depuis les dossiers enregistrés.
-- **48 sources distinctes** pourraient ainsi acquérir une relation documentaire ; les 3 sources restant sans couverture seraient `SOURCE-FO-POUVOIR-ACHAT-2026`, `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026`.
-- Projection arithmétique, à confirmer après modification et recalcul : **217/220 (98,6 %)**. Ce n'est pas un résultat observé dans ce commit.
-- Le fichier `dossiers/smic-social-partners-evidence.md` doit faire l'objet d'une décision de gouvernance séparée avant toute relation pour la source FO.
+- **51 relations justifiées** : 36 relations `REL-CITES` depuis les études et 15 relations `REL-INCLUDES` depuis les dossiers enregistrés.
+- **49 sources distinctes** acquièrent une relation documentaire ; les deux sources restant sans couverture sont `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE` et `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026`.
+- Projection arithmétique : **218/220 (99,1 %)**, à confirmer par la CI de la PR de mise à jour du graphe.
+- Le fichier `dossiers/smic-social-partners-evidence.md` reste un document de travail non enregistré ; son lien parent explicite justifie le rattachement de sa source au dossier SMIC enregistré, sans créer de nœud artificiel pour le fichier.
 - Les liens dataset ne sont pas créés automatiquement à partir de `source_ids` : `REL-TRANSCRIBES` ne doit être utilisé que lorsqu'une source est effectivement transformée ou transcrite dans le dataset, pas lorsqu'elle fournit seulement une notice ou des métadonnées.
 - Aucune cible de connectivité globale n'est définie.
 
