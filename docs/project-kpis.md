@@ -67,7 +67,7 @@ Le champ `source_verifications.status` décrit le contrôle de chaque source ass
 
 Un contrôle complémentaire de structure peut vérifier la présence des rubriques attendues dans les synthèses : constats, preuves, controverses, limites, conclusions opérationnelles et travaux restants. Ce contrôle mesure la présence des sections, pas leur qualité rédactionnelle ni leur exhaustivité scientifique.
 
-### 3.4 Cross-domain Integration Coverage
+### 3.4 Cross-domain Integration (diagnostic)
 
 **Question :** les dossiers et objets du projet permettent-ils de relier des domaines distincts par des mécanismes ou des preuves explicitement documentés ?
 
