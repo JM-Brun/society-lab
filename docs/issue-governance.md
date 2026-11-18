@@ -49,3 +49,18 @@ Il publie un rapport dans le résumé GitHub Actions. Il est volontairement non 
 ## Limites connues
 
 L'automatisation ne peut pas déterminer de façon fiable si meta est justifié, si une priorité est proportionnée, si une issue est obsolète ou si deux demandes sont des doublons. Ces points nécessitent une revue humaine contextualisée. Le contrôle actuel ne constitue pas une synchronisation des définitions de labels vers l'API GitHub ; la synchronisation contrôlée reste une étape distincte.
+
+
+## Feuille de route
+
+Les travaux qui dépassent le premier lot sont suivis séparément :
+
+- [#125 — Synchroniser les labels GitHub depuis le référentiel canonique](https://github.com/JM-Brun/society-lab/issues/125) : inventaire, comparaison API, rapport de dérive, dry-run par défaut et application explicite sans suppression.
+- [#126 — Revue sémantique périodique du backlog](https://github.com/JM-Brun/society-lab/issues/126) : justification de meta et des priorités, qualité des objectifs/livrables/critères, fraîcheur, doublons et décisions humaines.
+- [#127 — Vue de backlog multidimensionnelle](https://github.com/JM-Brun/society-lab/issues/127) : priorité, nature, domaine et dépendances à partir des sources canoniques et identifiants stables.
+
+Ordre recommandé : fusionner et stabiliser le lot #124 ; implémenter ensuite la synchronisation contrôlée (#125) ; établir la revue humaine (#126) ; construire la vue de backlog (#127). Les trois chantiers restent distincts pour rendre leurs critères d'acceptation, risques et validations indépendamment vérifiables.
+
+## État de validation du lot initial
+
+Le commit `eaf2e6f2dcca0bb96d079dbc15e7346c473d46bb` a passé le job `validate`, y compris l'audit des labels, la validation des registres, des synthèses, de leur fraîcheur, les tests unitaires et les schémas JSON. La PR #124 reste soumise à revue et décision de fusion ; un succès CI ne vaut pas approbation de revue.
