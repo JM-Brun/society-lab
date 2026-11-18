@@ -199,7 +199,7 @@ def inspect_source_file(path: Path) -> dict:
         "file_size_bytes": path.stat().st_size,
         "sha256": digest.hexdigest(),
         "decoder": "utf-8-sig",
-        "utf8_bom": path.read_bytes().startswith(b"\\xef\\xbb\\xbf"),
+        "utf8_bom": path.read_bytes().startswith(b"\xef\xbb\xbf"),
         "delimiter": dialect.delimiter,
         "column_count": len(columns),
         "columns": columns,
