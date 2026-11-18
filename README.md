@@ -47,6 +47,7 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 - [The Shift Project : diagnostic, méthodes, propositions et controverses](dossiers/the-shift-project-diagnostic-methodes-controverses.md) — dossier critique sur le think tank, son cadre de la double contrainte carbone, ses méthodes, son financement, ses propositions et les controverses documentées ; voir aussi la [synthèse](syntheses/the-shift-project.md).
 - [Audit du PREF 2026 : robustesse, scénarios et conditions de mise en œuvre](dossiers/pref-2026-audit-robustesse-scenarios.md) — analyse du rapport technique, des vingt chantiers, des variantes, des bouclages et des limites à auditer ; voir aussi la [synthèse PREF](syntheses/pref-2026.md).
+- [Comparer les trajectoires françaises de transition](dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md) — matrice comparative PREF, RTE, ADEME, négaWatt et SNBC 3 ; voir aussi la [synthèse](syntheses/comparaison-scenarios-transition-2026.md).
 
 ## Dossiers de recherche
 
