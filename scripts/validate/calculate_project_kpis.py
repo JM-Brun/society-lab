@@ -58,6 +58,11 @@ def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
                 if identifier in known:
                     duplicates.append(identifier)
                 known.add(identifier)
+    # Several dossier rows intentionally share one synthesis_id; deduplicate this mapping.
+    for row in data["synthesis_entries"]:
+        identifier = row.get("synthesis_id") if isinstance(row, dict) else None
+        if isinstance(identifier, str) and identifier:
+            known.add(identifier)
     return known, duplicates
 
 def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str]):
