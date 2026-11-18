@@ -17,6 +17,10 @@ Fournir autant que possible titre, auteur ou organisme, date, URL originale ou D
 - Signaler éléments contradictoires et limites.
 - Distinguer constats, interprétations et jugements de valeur.
 
+## Issues et suivi du travail
+
+Toute nouvelle demande doit préciser son objectif, son contexte, ses dépendances, ses livrables et ses critères d'acceptation. Utiliser le [modèle d'issue](.github/ISSUE_TEMPLATE/task.md) et respecter la [gouvernance des issues](docs/issue-governance.md) ainsi que le [référentiel canonique des labels](governance/issue-labels.json). La priorité est confirmée par triage humain ; ne pas attribuer meta par défaut.
+
 ## Modifications
 Les changements substantiels sont proposés par pull request. Les contrôles automatisés ne remplacent pas la revue du fond.
 
