@@ -9,32 +9,40 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: read
-  issues: write
-
 concurrency:
   group: canonical-issue-label-sync
   cancel-in-progress: false
 
 jobs:
-  sync:
+  dry-run:
+    if: ${{ !inputs.apply }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Dry-run — report drift
-        if: ${{ !inputs.apply }}
+      - name: Compare canonical labels (read-only)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scripts/validate/sync_issue_labels.py
+
+  apply:
+    if: ${{ inputs.apply }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - name: Apply canonical metadata (explicit opt-in)
-        if: ${{ inputs.apply }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
