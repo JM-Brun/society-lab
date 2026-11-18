@@ -71,3 +71,10 @@ The Shift Project est un acteur important du débat français sur la planificati
 - https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/
 - https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines
 - https://theshiftproject.org/publications/empreinte-carbone-video-ligne/
+
+
+## Liens avec les autres domaines
+
+Les travaux du Shift Project éclairent les interactions entre contraintes physiques, organisation productive, emploi, formation, finances publiques et territoires. Leur mise en regard avec les dossiers SMIC, Parcoursup et Antoine Foucher permet d'examiner les effets distributifs et les besoins de compétences associés aux trajectoires de transition.
+
+Il faut toutefois distinguer les scénarios énergétiques, les estimations d'emplois sectoriels, les hypothèses de financement et les effets nets sur les ménages ou les finances publiques. Les rapprochements ne valent pas validation indépendante des hypothèses du Shift. Voir l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md).

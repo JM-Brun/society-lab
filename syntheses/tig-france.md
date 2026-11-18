@@ -3,7 +3,7 @@ id: "SYNTHESIS-SECURITY-TIG-FRANCE"
 title: "Travaux d’intérêt général en France : efficacité, sous-recours et conditions de déploiement"
 domain: "security-justice"
 status: "provisional"
-last_reviewed: "2026-11-16"
+last_reviewed: "2026-11-18"
 related_dossiers:
   - "dossiers/tig-peines-alternatives-incarceration.md"
   - "analysis/tig-research-next-steps.md"
@@ -141,3 +141,17 @@ Les Pays de la Loire comptaient 8 666 personnes suivies en milieu ouvert au 1er 
 **Conclusion actualisée :** le sous-recours est documenté au niveau national ; les mécanismes locaux qui le produisent restent à établir. Les statistiques de prononcé, de suivi en milieu ouvert et de capacité d'accueil doivent rester séparées jusqu'à obtention de définitions et d'unités compatibles.
 
 Sources principales : [RSJ 2025, chapitre 11](https://www.justice.gouv.fr/sites/default/files/2026-01/RSJ2025%20chapitre%2011.pdf) ; [Indicateurs transitoires de milieu ouvert, T4 2025](https://www.justice.gouv.fr/sites/default/files/2026-04/STMO_transitoire_20260101.pdf) ; [Cour des comptes, rapport TIG/DDSE, mars 2025](https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf).
+
+
+## Liens avec les autres domaines
+
+Le TIG est aussi un cas d'étude de capacité institutionnelle et de coûts transférés. Son coût ne se limite pas aux dépenses comptabilisées par l'administration pénitentiaire : les organismes d'accueil mobilisent du temps de tutorat, des équipements et de la coordination. Ces ressources doivent être intégrées à une analyse de coût complet, sans les confondre avec un coût social net.
+
+Le lien avec l'emploi et l'insertion demande de distinguer l'activité effectuée pendant la mesure, l'acquisition éventuelle de compétences et la situation professionnelle ultérieure. Il faut aussi examiner le risque de substitution à un emploi rémunéré sans le présumer. L'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md) précise les questions et les limites à conserver.
+
+
+## Liens avec les autres domaines
+
+Le TIG est aussi un cas d'étude de capacité institutionnelle et de coûts transférés. Son coût ne se limite pas aux dépenses comptabilisées par l'administration pénitentiaire : les organismes d'accueil mobilisent du temps de tutorat, des équipements et de la coordination. Ces ressources doivent être intégrées à une analyse de coût complet, sans les confondre avec un coût social net.
+
+Le lien avec l'emploi et l'insertion demande de distinguer l'activité effectuée pendant la mesure, l'acquisition éventuelle de compétences et la situation professionnelle ultérieure. Il faut aussi examiner le risque de substitution à un emploi rémunéré sans le présumer. L'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md) précise les questions et les limites à conserver.

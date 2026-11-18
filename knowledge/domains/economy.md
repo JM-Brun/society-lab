@@ -28,3 +28,25 @@ Pour chaque résultat, préciser la question, la période, la population, les do
 - [Synthèse — Le pacte intergénérationnel d’Antoine Foucher](../../syntheses/antoine-foucher-pacte-intergenerationnel.md) — synthèse provisoire et programme de vérification empirique.
 
 - [Comparer les générations à âge identique : état des preuves et protocole de mise à jour](../../research/foucher-comparaison-generationnelle.md) — revue des résultats d'Albis-Badji, des données Insee récentes et des limites d'identification âge-période-cohorte.
+
+
+## Liens transversaux
+
+Le domaine économique est un point de rencontre entre plusieurs dossiers :
+- **Éducation et compétences** : Parcoursup, formation, qualification et trajectoires professionnelles ; la chaîne diplôme–emploi–salaire–productivité reste à documenter sans assimiler diplôme et compétence.
+- **Énergie et capacité productive** : Shift Project, PREF et scénarios de transition ; examiner l'exposition sectorielle, les coûts, l'investissement et les besoins de compétences.
+- **Finances publiques et générations** : SMIC, allègements, investissement collectif et pacte intergénérationnel ; distinguer comptabilité budgétaire, effets macroéconomiques et arbitrages normatifs.
+- **Institutions et emploi** : TIG, coûts complets, capacité d'exécution et insertion ; ne pas présumer d'un effet sur l'emploi rémunéré.
+
+Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md) pour les questions, mécanismes candidats et limites de preuve. Les liens indiqués sont des axes d'analyse, pas tous des relations causales établies.
+
+
+## Liens transversaux
+
+Le domaine économique est un point de rencontre entre plusieurs dossiers :
+- **Éducation et compétences** : Parcoursup, formation, qualification et trajectoires professionnelles ; la chaîne diplôme–emploi–salaire–productivité reste à documenter sans assimiler diplôme et compétence.
+- **Énergie et capacité productive** : Shift Project, PREF et scénarios de transition ; examiner l'exposition sectorielle, les coûts, l'investissement et les besoins de compétences.
+- **Finances publiques et générations** : SMIC, allègements, investissement collectif et pacte intergénérationnel ; distinguer comptabilité budgétaire, effets macroéconomiques et arbitrages normatifs.
+- **Institutions et emploi** : TIG, coûts complets, capacité d'exécution et insertion ; ne pas présumer d'un effet sur l'emploi rémunéré.
+
+Voir l'[inventaire transversal](../../docs/cross-domain-knowledge-inventory.md) pour les questions, mécanismes candidats et limites de preuve. Les liens indiqués sont des axes d'analyse, pas tous des relations causales établies.

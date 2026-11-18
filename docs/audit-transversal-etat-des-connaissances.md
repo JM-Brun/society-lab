@@ -2,7 +2,7 @@
 id: "AUDIT-TRANSVERSAL-2026-11-17"
 title: "Audit transversal de l'état des connaissances et des synthèses"
 status: "working_baseline"
-last_reviewed: "2026-11-17"
+last_reviewed: "2026-11-18"
 scope:
   - "TIG et peines alternatives"
   - "SMIC et effets économiques"
@@ -23,6 +23,12 @@ Cet audit fait le point sur les sujets déjà travaillés dans Society Lab, la m
 Society Lab est un projet de **compilation critique des connaissances existantes**. Il rassemble des recherches scientifiques, sociologiques, politiques et économiques, des expérimentations déjà publiées, des données, des évaluations, des travaux historiques et des débats argumentés. Il ne conduit pas ses propres expériences et ne cherche pas à produire artificiellement des données originales.
 
 L'audit porte sur la structure et les contenus présents dans le dépôt à la date indiquée : dossiers, synthèses, registres, graphe, charte, feuille de route et état technique observé. La présence d'une référence dans un registre ne signifie pas que son texte intégral, ses données ou toutes ses interprétations ont été vérifiés. Les appréciations ci-dessous évaluent donc la **maturité documentaire**, pas la vérité définitive des conclusions.
+
+## 1 bis. Lecture transversale et inventaire du graphe
+
+L'audit des sujets thématiques est désormais complété par un [cadre de lecture transversale](cross-domain-knowledge-framework.md) et un [inventaire initial du graphe et des rapprochements inter-domaines](cross-domain-knowledge-inventory.md). Cette première photographie recense 585 relations et 15 concepts canoniques ; elle montre que le graphe documente déjà bien les rattachements, mais que les mécanismes ne sont pas encore matérialisés comme objets de type `MECHANISM`.
+
+Les rapprochements entre SMIC, Parcoursup, TIG, transition énergétique et pacte intergénérationnel doivent donc être traités comme des programmes de vérification, et non comme des conclusions causales. La prochaine étape est d'examiner une chaîne pilote éducation → compétences → emploi → salaires, puis de définir le modèle minimal des mécanismes à partir des études et claims déjà présents.
 
 ## 2. Vue d'ensemble
 
