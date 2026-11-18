@@ -1,0 +1,15 @@
+id: CLAIM-SHIFT-STREAMING-ENERGY-ESTIMATES
+title: "Les estimations énergétiques du Shift Project sur la vidéo en ligne sont sensibles à des hypothèses contestées"
+statement: "Les estimations du Shift Project sur l'énergie consommée par la vidéo en ligne ont été contestées par George Kamiya (AIE) au sujet des hypothèses de débit, de consommation des centres de données et des réseaux. Le Shift a reconnu une erreur de conversion bit/octet dans un chiffre relayé en entretien, tout en défendant séparément les hypothèses restantes de ses rapports."
+status: "under_review"
+claim_type: "methodological"
+domains: ["DOMAIN-TECHNOLOGY", "DOMAIN-ENERGY", "DOMAIN-ENVIRONMENT"]
+source_ids:
+  - SOURCE-CARBONBRIEF-KAMIYA-2020-STREAMING
+  - SOURCE-IEA-2020-STREAMING-FACTCHECK
+  - SOURCE-SHIFT-RESPONSE-STREAMING-2020
+limitations:
+  - "La controverse concerne un cas sectoriel et une période historique ; elle ne permet pas de conclure sur l'ensemble des travaux du Shift Project."
+  - "Distinguer l'erreur de conversion reconnue dans un chiffre d'entretien des hypothèses discutées dans les rapports publiés."
+  - "Les estimations dépendent du terminal, de la résolution, du réseau, des usages et du mix électrique."
+review_status: "screened"
