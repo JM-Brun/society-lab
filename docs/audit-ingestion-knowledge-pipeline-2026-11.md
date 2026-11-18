@@ -245,3 +245,93 @@ Le modèle est testé contre son schéma. Des tests unitaires couvrent égalemen
 
 **Limite assumée :** aucun manifeste réel n'a été ajouté artificiellement, car l'historique des collectes antérieures n'est pas suffisamment consigné pour reconstruire leurs critères et décisions sans spéculation. Le contrat est prêt ; il doit maintenant être utilisé lors des prochaines ingestions et, si des traces fiables existent, appliqué rétrospectivement par lots documentés.
 
+## 11. Couverture réelle des métadonnées
+
+Un comptage des champs renseignés a été effectué sur les enregistrements JSON intégrés aux registres YAML. Il mesure la présence d'une valeur non vide, pas sa justesse ni sa pertinence. Un champ absent n'est pas automatiquement une erreur : certains champs sont conditionnels au type de source. En revanche, l'absence ne doit pas être confondue avec une vérification concluant « aucun », « non applicable » ou « information non publiée ».
+
+### 11.1 Sources — 214 fiches
+
+| Champ | Renseigné | Lecture |
+|---|---:|---|
+| URL | 214/214 | Couverture complète |
+| Langue, domaines, tags | 214/214 | Couverture complète |
+| Méthodologie, limites | 214/214 | Très bonne présence déclarative ; qualité à évaluer |
+| Organisme | 212/214 | Quasi complet |
+| Portée temporelle | 187/214 | 87 % |
+| Portée géographique | 177/214 | 83 % |
+| Date de publication | 150/214 | 70 % |
+| Auteurs individuels | 46/214 | 21 % ; attendu variable selon la nature de la source |
+| DOI | 5/214 | Non généralisable à toutes les sources |
+| Licence | 1/214 | Lacune importante à instruire |
+| Financement/conflits | 0/214 | Aucune valeur explicite dans le champ actuel |
+| Statut d'accès | 214/214 | Présent partout, mais ne remplace pas l'évaluation des droits |
+
+La couverture complète de `methodology` et `limitations` ne garantit pas leur qualité : il faut contrôler si les valeurs sont réellement spécifiques à chaque source ou si certaines formules génériques sont utilisées.
+
+La présence d'un statut d'accès ne remplace pas une revue des droits. La politique demande de vérifier licences, conditions d'accès et restrictions avant archivage ou republication ; pourtant, le champ `license` est renseigné dans une seule fiche. Il faut distinguer « licence identifiée », « tous droits réservés », « domaine public », « accès restreint », « non applicable » et « non vérifié », sans inférer une licence depuis l'accessibilité d'une URL.
+
+### 11.2 Études — 59 fiches
+
+| Champ | Renseigné |
+|---|---:|
+| Sources, question, méthodes | 59/59 |
+| Population/unité, portée géographique et temporelle | 59/59 |
+| Résultats clés, limites, statut de revue | 59/59 |
+| Jeux de données associés | 6/59 |
+| Notes de revue | 32/59 |
+| Financement/conflits | 0/59 |
+
+Les champs structurants de description sont bien présents. La couverture de `dataset_ids` est nécessairement variable selon les études ; elle doit toutefois être contrôlée lorsque l'étude exploite des données identifiables. Les informations de financement/conflits sont absentes du champ dans les 59 fiches : il faut pouvoir consigner explicitement « non déclaré », « non applicable » ou « non examiné ».
+
+### 11.3 Jeux de données — 14 fiches
+
+| Champ | Renseigné |
+|---|---:|
+| Fournisseur, sources, périmètres, période, unité, variables | 14/14 |
+| Statut d'accès, version/vintage, limites | 14/14 |
+| URL | 13/14 |
+| Licence | 12/14 |
+| Notes de transformation | 7/14 |
+| Date de récupération | 0/14 |
+| Empreinte de fichier | 0/14 |
+
+La date de récupération et l'empreinte ne sont pas nécessairement applicables à toutes les données (API vivante, données agrégées, source non téléchargeable). Il faut donc un contrat conditionnel : lorsqu'un fichier ou instantané est acquis et conservé, date, version et empreinte doivent permettre de retrouver exactement l'entrée analysée. Pour une API ou une donnée évolutive, documenter plutôt la requête, la date d'extraction, les paramètres et la réponse/version disponible. Les transformations doivent être décrites dès qu'une harmonisation ou un calcul modifie les données.
+
+### 11.4 Claims — 83 fiches
+
+| Champ | Renseigné |
+|---|---:|
+| Périmètre, domaines, sources, éléments favorables, limites | 83/83 |
+| Études associées | 69/83 |
+| Vérifications par source | 28/83 |
+| Provenance explicite | 26/83 |
+| Contre-preuves | 1/83 |
+| Meilleur contre-argument | 15/83 |
+| Hypothèses explicites | 5/83 |
+| Historique de révision | 3/83 |
+| Déclencheurs de révision | 6/83 |
+| Objet `confidence` | 0/83 |
+
+La présence de `supporting_evidence` dans chaque claim est un bon socle, mais elle ne suffit pas à prouver que l'élément a été localisé et vérifié dans la source. Les champs `source_verifications` et `provenance` sont renseignés dans environ un tiers des claims. C'est la priorité de migration la plus importante pour la traçabilité fine.
+
+Le champ `counter_evidence` quasi absent ne signifie pas que toutes les affirmations ont été examinées et qu'aucune preuve contraire n'existe. Le schéma ne distingue pas encore clairement « aucune contre-preuve identifiée après revue » de « contre-preuves non recherchées ». Même distinction pour la provenance et l'historique : absence de champ ne vaut pas absence de transformation ou de révision.
+
+L'objet `confidence` est défini mais n'est utilisé dans aucune fiche. Il ne faut pas le remplir mécaniquement : décider si le statut qualitatif actuel suffit ou si une probabilité calibrée apporte une information utile. Ne pas introduire de score artificiel.
+
+### 11.5 Hypothèses, dossiers et concepts
+
+- Hypothèses : les 22 fiches ont un mécanisme explicatif, des alternatives et une justification de confiance ; 19/22 référencent des études favorables et 1/22 des études contradictoires. La date de revue n'est renseignée que dans 3/22 fiches.
+- Dossiers : les 25 fiches ont un résumé, une question, des périmètres et une date de revue. Les références vers claims, études, hypothèses et concepts sont variables selon le contenu et ne doivent pas être rendues obligatoires sans examiner le rôle du dossier.
+- Concepts : les 15 fiches ont une définition et des alias ; 14/15 ont des tags. Le petit volume et la présence d'alias constituent une bonne base, mais il reste à examiner les synonymes entre concepts distincts.
+
+### 11.6 Décisions à prendre avant toute migration
+
+1. Introduire des états explicites pour les vérifications de droits, de financement/conflits et de contre-preuves : non examiné, examiné sans élément identifié, information non publiée, non applicable, information identifiée.
+2. Ne pas remplacer les valeurs inconnues par « aucun » ou « non applicable » sans vérification.
+3. Définir des champs conditionnels pour les jeux de données statiques, les API et les sources non téléchargeables.
+4. Prioriser la migration des claims structurants : localisateur, statut de vérification et provenance de l'extraction.
+5. Échantillonner les fiches pour contrôler la qualité sémantique des valeurs déjà présentes, notamment les méthodologies et limites génériques.
+6. Publier un rapport de couverture automatique séparant champ absent, explicitement inconnu, non applicable et vérifié.
+
+Ces chiffres constituent un état de référence du corpus à la date de l'audit. Ils ne sont pas des notes de qualité et ne doivent pas servir à classer mécaniquement les sources ou les sujets.
+
