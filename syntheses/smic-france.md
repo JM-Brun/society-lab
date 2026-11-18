@@ -566,3 +566,14 @@ Le SMIC ne peut être analysé isolément du système de formation, de la struct
 - **Finances publiques et générations** : allègements, prime d'activité, cotisations et recettes doivent être considérés dans une lecture cohérente des transferts et des investissements collectifs.
 
 Ces rapprochements sont développés dans l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md). Ils ne remplacent pas les analyses sectorielles et ne constituent pas, en l'état, des conclusions causales supplémentaires.
+
+
+## Liens avec les autres domaines
+
+Le SMIC ne peut être analysé isolément du système de formation, de la structure productive et des transformations énergétiques.
+
+- **Éducation et compétences** : les qualifications, la formation continue et la segmentation des emplois peuvent modifier les trajectoires salariales et les possibilités de mobilité. Les données Parcoursup décrivent l'accès au supérieur, pas le rendement professionnel causal des formations.
+- **Énergie et transition** : les variations des coûts énergétiques peuvent affecter les secteurs différemment et modifier les arbitrages entre prix, marges, volumes, investissement et emploi. Les effets sur les salaires dépendent de ces canaux et du contexte ; aucun effet uniforme n'est présumé.
+- **Finances publiques et générations** : allègements, prime d'activité, cotisations et recettes doivent être considérés dans une lecture cohérente des transferts et des investissements collectifs.
+
+Ces rapprochements sont développés dans l'[inventaire transversal](../docs/cross-domain-knowledge-inventory.md). Ils ne remplacent pas les analyses sectorielles et ne constituent pas, en l'état, des conclusions causales supplémentaires.
