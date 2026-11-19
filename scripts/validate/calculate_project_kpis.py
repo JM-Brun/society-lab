@@ -370,6 +370,18 @@ def render_markdown(report):
         lines.append(f"Anomalies : {json.dumps(metric['issues'], ensure_ascii=False, sort_keys=True)}")
     lines.extend(["", f"Relations : {report['diagnostics']['relation_count']} ; "
                   f"nœuds indexés : {report['diagnostics']['known_node_count']}."])
+    lines.extend(["", "## Connectivité descriptive par type d’objet",
+                  "| Type | Nœuds | Reliés | Isolés | Connectivité | Degré min / moyen / max |",
+                  "|---|---:|---:|---:|---:|---:|"])
+    for kind, item in report["diagnostics"]["connectivity_by_node_type"].items():
+        percent = "—" if item["connectivity_percent"] is None else f"{item['connectivity_percent']:.1f} %"
+        degrees = "—" if item["node_count"] == 0 else (
+            f"{item['min_degree']} / {item['mean_degree']:.2f} / {item['max_degree']}")
+        lines.append(f"| {kind} | {item['node_count']} | {item['connected_node_count']} | "
+                     f"{item['isolated_node_count']} | {percent} | {degrees} |")
+        if item["isolated_node_ids"]:
+            lines.append(f"\nNœuds isolés {kind} : " + ", ".join(item["isolated_node_ids"]))
+    lines.append("\nCes valeurs sont descriptives ; aucun seuil ou score global n’est défini.")
     return "\n".join(lines) + "\n"
 
 def main(argv=None):
