@@ -287,23 +287,53 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
     for node_id, node_type in node_type_by_id.items():
         nodes_by_type.setdefault(node_type, set()).add(node_id)
 
+    # Keep relation identifiers per node: a self-loop is one incident relation,
+    # while a relation joining two nodes of the same type touches that type once.
+    incident_by_node = {node_id: set() for node_id in node_type_by_id}
+    relation_ids_by_type = {node_type: set() for node_type in nodes_by_type}
+    for edge in valid_edges:
+        relation_id = edge["id"]
+        source, target = edge["from"], edge["to"]
+        incident_by_node[source].add(relation_id)
+        incident_by_node[target].add(relation_id)
+        relation_ids_by_type[node_type_by_id[source]].add(relation_id)
+        relation_ids_by_type[node_type_by_id[target]].add(relation_id)
+
     summaries = {}
     for node_type, identifiers in sorted(nodes_by_type.items()):
         incoming = {kind: 0 for kind in relation_types}
         outgoing = {kind: 0 for kind in relation_types}
-        incident = set()
         for edge in valid_edges:
             kind = edge.get("type")
             if edge.get("from") in identifiers:
                 outgoing[kind] = outgoing.get(kind, 0) + 1
-                incident.add(edge["from"])
             if edge.get("to") in identifiers:
                 incoming[kind] = incoming.get(kind, 0) + 1
-                incident.add(edge["to"])
+        degrees = [len(incident_by_node[node_id]) for node_id in identifiers]
+        distribution = {}
+        for degree in degrees:
+            label = str(degree)
+            distribution[label] = distribution.get(label, 0) + 1
+        node_count = len(identifiers)
+        connected_count = sum(degree > 0 for degree in degrees)
         summaries[node_type] = {
-            "node_count": len(identifiers),
-            "nodes_with_relations": len(incident),
-            "isolated_node_ids": sorted(identifiers - incident),
+            "node_count": node_count,
+            "nodes_with_relations": connected_count,
+            "connectivity_rate": connected_count / node_count if node_count else None,
+            "degree_min": min(degrees) if degrees else None,
+            "degree_mean": sum(degrees) / node_count if node_count else None,
+            "degree_max": max(degrees) if degrees else None,
+            "degree_distribution": dict(sorted(distribution.items(), key=lambda item: int(item[0]))),
+            "relation_type_counts": {
+                kind: sum(1 for edge in valid_edges
+                          if edge["id"] in relation_ids_by_type[node_type]
+                          and edge["type"] == kind)
+                for kind in relation_types
+                if any(edge["id"] in relation_ids_by_type[node_type] and edge["type"] == kind
+                       for edge in valid_edges)
+            },
+            "isolated_node_ids": sorted(node_id for node_id in identifiers
+                                        if not incident_by_node[node_id]),
             "incoming_by_relation_type": {k: v for k, v in incoming.items() if v},
             "outgoing_by_relation_type": {k: v for k, v in outgoing.items() if v},
         }
@@ -382,7 +412,11 @@ def render_markdown(report):
     for node_type, summary in sorted(connectivity.get("node_types", {}).items()):
         lines.append(
             f"- **{node_type}** : {summary['nodes_with_relations']}/"
-            f"{summary['node_count']} nœuds avec relation ; "
+            f"{summary['node_count']} nœuds avec relation "
+            f"({summary['connectivity_rate']:.1%}) ; "
+            f"degré min/moyen/max : {summary['degree_min']}/"
+            f"{summary['degree_mean']:.2f}/{summary['degree_max']} ; "
+            f"distribution : {json.dumps(summary['degree_distribution'], ensure_ascii=False, sort_keys=True)} ; "
             f"{len(summary['isolated_node_ids'])} isolés."
         )
         if summary["isolated_node_ids"]:

@@ -181,6 +181,34 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertIn("aucun degré minimal", result["interpretation"])
         self.assertEqual(result["excluded_invalid_relation_count"], 0)
 
+    def test_connectivity_degrees_count_unique_incident_relations(self):
+        nodes = {
+            "DOSSIER-A": "DOSSIER", "DOSSIER-B": "DOSSIER",
+            "SOURCE-A": "SOURCE", "SOURCE-ISOLATED": "SOURCE",
+        }
+        definitions = [
+            {"id": "REL-INCLUDES", "from": ["DOSSIER"], "to": ["SOURCE"]},
+            {"id": "REL-USES", "from": ["DOSSIER"], "to": ["DOSSIER"]},
+        ]
+        relations = [
+            {**self.edge, "type": "REL-INCLUDES"},
+            {"id": "REL-EDGE-B", "type": "REL-USES", "from": "DOSSIER-A",
+             "to": "DOSSIER-B", "justification": "Relation entre deux dossiers."},
+            {"id": "REL-EDGE-C", "type": "REL-USES", "from": "DOSSIER-A",
+             "to": "DOSSIER-A", "justification": "Boucle de contrôle."},
+        ]
+        result = calculate_connectivity_diagnostics(relations, set(nodes), nodes, definitions)
+        dossier = result["node_types"]["DOSSIER"]
+        self.assertEqual(dossier["degree_distribution"], {"1": 1, "3": 1})
+        self.assertEqual((dossier["degree_min"], dossier["degree_max"]), (1, 3))
+        self.assertEqual(dossier["degree_mean"], 2.0)
+        self.assertEqual(dossier["relation_type_counts"], {"REL-INCLUDES": 1, "REL-USES": 2})
+        self.assertEqual(dossier["connectivity_rate"], 1.0)
+        source = result["node_types"]["SOURCE"]
+        self.assertEqual(source["degree_distribution"], {"0": 1, "1": 1})
+        self.assertEqual(source["relation_type_counts"], {"REL-INCLUDES": 1})
+        self.assertEqual(source["isolated_node_ids"], ["SOURCE-ISOLATED"])
+
     def test_current_repository_report_is_consistent_and_fully_resolved(self):
         report = build_report(load_project_data())
         metrics = {metric["metric_id"]: metric for metric in report["metrics"]}
