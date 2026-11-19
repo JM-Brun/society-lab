@@ -98,8 +98,9 @@ L'étude ne prouve pas que les hausses contemporaines du SMIC ont le même effet
 
 - Kramarz & Philippon (2001), *Journal of Public Economics* : https://www.sciencedirect.com/science/article/pii/S0047272700001377
 - IZA Discussion Paper 219 (2000), texte intégral : https://docs.iza.org/dp219.pdf
-- Copie PDF accessible via CiteSeerX : https://citeseerx.ist.psu.edu/document?doi=92a54aa55a362381ad6346853f174d5be54be3ba&repid=rep1&type=pdf. **Correction de version :** cette copie est identifiée comme *Research Memorandum 0006* (OCFEB), présenté lors d'un atelier en avril 2000 ; ce n'est pas la version éditeur du *Journal of Public Economics*.
-- Copie du même Research Memorandum hébergée par l'Erasmus Repository : https://repub.eur.nl/pub/830/rm0006.pdf.
+- Lien CiteSeerX conservé dans l'ancienne fiche : https://citeseerx.ist.psu.edu/document?doi=92a54aa55a362381ad6346853f174d5be54be3ba&repid=rep1&type=pdf. **Identité/version de cette URL précise non vérifiée** (accès refusé lors du contrôle) ; elle ne doit pas être qualifiée de version publiée sans contrôle du fichier.
+- Version de travail OCFEB *Research Memorandum 0006*, présentée à un atelier en avril 2000, vérifiée sur l'Erasmus Repository : https://repub.eur.nl/pub/830/rm0006.pdf.
+- Copie CiteSeerX distincte vérifiée comme *Research Memorandum 0006* : https://citeseerx.ist.psu.edu/document?doi=3da4834d1c0eedd06ee53358b60a623c8a4275e7&repid=rep1&type=pdf.
 - Version de travail IZA DP 219 (novembre 2000) : https://docs.iza.org/dp219.pdf.
 - Version publiée à citer bibliographiquement : *Journal of Public Economics*, 82(1), 2001, p. 115–146, DOI https://doi.org/10.1016/S0047-2727(00)00137-7. La notice éditeur confirme la publication et le résumé, mais le texte intégral éditeur n'a pas été comparé ligne à ligne aux versions de travail dans cet audit.
 
