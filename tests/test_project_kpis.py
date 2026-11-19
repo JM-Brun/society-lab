@@ -115,6 +115,23 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["unique_synthesis_count"], 1)
         self.assertEqual(result["excluded_count"], 1)
 
+    def test_synthesis_coverage_reports_unknown_dossier_status_without_hiding_coverage(self):
+        with __import__("tempfile").TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "dossiers").mkdir()
+            (root / "syntheses").mkdir()
+            (root / "dossiers" / "a.md").write_text("# A", encoding="utf-8")
+            (root / "syntheses" / "a.md").write_text("# Synthesis", encoding="utf-8")
+            result = calculate_synthesis_coverage(
+                [{"id": "DOSSIER-A", "status": "mystery"}],
+                [{"dossier_id": "DOSSIER-A", "dossier_path": "dossiers/a.md",
+                  "synthesis_id": "SYNTHESIS-A", "synthesis_path": "syntheses/a.md"}],
+                root,
+            )
+        self.assertEqual((result["numerator"], result["denominator"]), (1, 1))
+        self.assertEqual(result["unknown_count"], 1)
+        self.assertEqual(result["issues"], {"unknown_dossier_status": ["DOSSIER-A"]})
+
     def test_synthesis_coverage_flags_missing_synthesis_file(self):
         with __import__("tempfile").TemporaryDirectory() as tmp:
             root = Path(tmp)
