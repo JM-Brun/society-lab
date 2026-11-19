@@ -115,7 +115,10 @@ def scale_corpus(base, factor):
 
 
 def run_validation(base, factor):
+    build_started = time.perf_counter()
     records, edges, synthesis_ids = scale_corpus(base, factor)
+    build_ms = (time.perf_counter() - build_started) * 1000
+    validation_started = time.perf_counter()
     errors = []
     domains = base["taxonomy"].get("domains", [])
     tags = base["tags"].get("tags", [])
@@ -152,10 +155,13 @@ def run_validation(base, factor):
     if errors:
         raise RuntimeError("\n".join(errors[:20]))
 
+    validation_ms = (time.perf_counter() - validation_started) * 1000
     return {
         "scale": factor,
         "records": sum(len(items) for items in records.values()),
         "edges": len(edges),
+        "build_ms": round(build_ms, 2),
+        "validation_ms": round(validation_ms, 2),
     }
 
 
@@ -167,12 +173,12 @@ def benchmark(scales):
         tracemalloc.start()
         started = time.perf_counter()
         counts = run_validation(base, factor)
-        elapsed_ms = (time.perf_counter() - started) * 1000
+        total_ms = (time.perf_counter() - started) * 1000
         _current, peak = tracemalloc.get_traced_memory()
         tracemalloc.stop()
         results.append({
             **counts,
-            "validation_ms": round(elapsed_ms, 2),
+            "total_ms": round(total_ms, 2),
             "peak_memory_mb": round(peak / (1024 * 1024), 2),
         })
     return {"base_yaml_load_ms": round(base["load_ms"], 2), "results": results}
