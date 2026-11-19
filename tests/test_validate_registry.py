@@ -8,7 +8,7 @@ from jsonschema import Draft202012Validator
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
-from validate_registry import validate_batch_manifest, validate_cross_references, validate_graph_edges
+from validate_registry import (validate_batch_manifest, validate_cross_references, validate_graph_edges,\n                                validate_relation_definitions, validate_territory_hierarchy)
 
 
 class CrossReferenceValidationTests(unittest.TestCase):
@@ -76,6 +76,50 @@ class GraphValidationTests(unittest.TestCase):
         errors = []
         validate_graph_edges([edge], self.relations, self.nodes, errors)
         self.assertTrue(any("type STUDY not allowed" in error for error in errors))
+
+class TerritoryHierarchyValidationTests(unittest.TestCase):
+    def test_accepts_acyclic_parent_hierarchy(self):
+        territories = [{"id": "TERRITORY-A", "geographic_parent_id": "TERRITORY-B"},
+                       {"id": "TERRITORY-B"}]
+        errors = []
+        validate_territory_hierarchy(territories, errors)
+        self.assertEqual(errors, [])
+
+    def test_rejects_self_parent(self):
+        errors = []
+        validate_territory_hierarchy([{"id": "TERRITORY-A", "geographic_parent_id": "TERRITORY-A"}], errors)
+        self.assertTrue(any("own geographic parent" in error for error in errors))
+
+    def test_rejects_multi_node_parent_cycle(self):
+        territories = [{"id": "TERRITORY-A", "geographic_parent_id": "TERRITORY-B"},
+                       {"id": "TERRITORY-B", "geographic_parent_id": "TERRITORY-C"},
+                       {"id": "TERRITORY-C", "geographic_parent_id": "TERRITORY-A"}]
+        errors = []
+        validate_territory_hierarchy(territories, errors)
+        self.assertTrue(any("parent cycle" in error for error in errors))
+
+
+class RelationDefinitionValidationTests(unittest.TestCase):
+    def test_accepts_reciprocal_inverse_definitions(self):
+        relations = [{"id": "REL-A", "inverse": "REL-B", "from": ["SOURCE"], "to": ["CLAIM"]},
+                     {"id": "REL-B", "inverse": "REL-A", "from": ["CLAIM"], "to": ["SOURCE"]}]
+        errors = []
+        validate_relation_definitions(relations, errors)
+        self.assertEqual(errors, [])
+
+    def test_rejects_non_reciprocal_inverse(self):
+        relations = [{"id": "REL-A", "inverse": "REL-B", "from": ["SOURCE"], "to": ["CLAIM"]},
+                     {"id": "REL-B", "inverse": "REL-C", "from": ["CLAIM"], "to": ["SOURCE"]}]
+        errors = []
+        validate_relation_definitions(relations, errors)
+        self.assertTrue(any("does not point back" in error for error in errors))
+
+    def test_rejects_incompatible_inverse_endpoint_types(self):
+        relations = [{"id": "REL-A", "inverse": "REL-B", "from": ["SOURCE"], "to": ["CLAIM"]},
+                     {"id": "REL-B", "inverse": "REL-A", "from": ["STUDY"], "to": ["SOURCE"]}]
+        errors = []
+        validate_relation_definitions(relations, errors)
+        self.assertTrue(any("incompatible endpoint types" in error for error in errors))
 
 
 class IngestionBatchValidationTests(unittest.TestCase):
