@@ -26,9 +26,9 @@ L'audit porte sur la structure et les contenus présents dans le dépôt à la d
 
 ## 1 bis. Lecture transversale et inventaire du graphe
 
-L'audit des sujets thématiques est désormais complété par un [cadre de lecture transversale](cross-domain-knowledge-framework.md) et un [inventaire initial du graphe et des rapprochements inter-domaines](cross-domain-knowledge-inventory.md). Cette première photographie recense 585 relations et 15 concepts canoniques ; elle montre que le graphe documente déjà bien les rattachements, mais que les mécanismes ne sont pas encore matérialisés comme objets de type `MECHANISM`.
+L'audit des sujets thématiques est désormais complété par un [cadre de lecture transversale](cross-domain-knowledge-framework.md) et un [inventaire initial du graphe et des rapprochements inter-domaines](cross-domain-knowledge-inventory.md). La photographie initiale de 585 relations est historique ; le graphe courant en compte 684 au 19 novembre 2026 et le registre conserve 15 concepts canoniques. Le registre des mécanismes est présent mais ne contient encore aucune fiche `MECHANISM`.
 
-Les rapprochements entre SMIC, Parcoursup, TIG, transition énergétique et pacte intergénérationnel doivent donc être traités comme des programmes de vérification, et non comme des conclusions causales. La prochaine étape est d'examiner une chaîne pilote éducation → compétences → emploi → salaires, puis de définir le modèle minimal des mécanismes à partir des études et claims déjà présents.
+Les rapprochements entre SMIC, Parcoursup, TIG, transition énergétique et pacte intergénérationnel restent des programmes de vérification, et non des conclusions causales. Le pilote [éducation → compétences → emploi → salaires](../analysis/education-skills-employment-wages-pilot-2026-11-19.md) a inventorié les études et jeux de données disponibles et identifié la rupture principale : le raccordement longitudinal entre parcours de formation et trajectoires salariales. L'appariement expérimental Céreq Génération 2021 / Base Tous salariés est la piste prioritaire, mais sa documentation technique, ses taux de rapprochement, ses variables et ses conditions d'accès restent à établir.
 
 ## 2. Vue d'ensemble
 
