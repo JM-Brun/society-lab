@@ -304,6 +304,37 @@ Au moment de cet audit, les deux PR sont ouvertes et leurs tests / contrôles qu
 
 La suite logique, après validation et fusion de ces PR, est de recalculer les inventaires sur le HEAD courant de LLM Lab, de traiter les associations de pages publiées absentes du manifeste de rendu et de poursuivre l'issue [#1233](https://github.com/JM-Brun/llm-lab/issues/1233) pour les passerelles inter-graphes et les chemins de preuve.
 
+### 9.4.2 Premier inventaire Understand/Build généré en CI
+
+La PR #1379 a exécuté `site/tools/audit_revision_coverage.py` sur le commit `1b431e2ff2ec2a04a76941756c0523e443394d6a`. Le job de qualité a généré et téléversé un artefact JSON/Markdown (`revision-coverage-inventory`, workflow run `44564321515`). Ces chiffres sont donc issus du code de la PR ouverte, pas encore d'une version fusionnée sur `main`.
+
+| Destination / type | Pages FR+EN | Objets pédagogiques bilingues |
+|---|---:|---:|
+| Understand — `concept-lesson` | 42 | 21 leçons |
+| Understand — `system-overview` | 4 | 2 pages d'orientation système |
+| **Understand total** | **46** | **23 sujets bilingues** |
+| Build — `guided-build` | 14 | 7 modules |
+| Build — `concept-bridge` | 2 | 1 sujet |
+| **Build total** | **16** | **8 sujets bilingues** |
+| **Understand + Build** | **62** | **31 sujets bilingues** |
+
+Le parcours Understand compte neuf étapes canoniques. Le rapport de couverture distingue les appartenances core et optional (40 et 6 occurrences dans son modèle de projection) ; il ne faut pas confondre ces occurrences, les pages distinctes et les sujets bilingues. Build est inventorié par sa destination et ses preuves ; aucun ordre linéaire n'est déduit de la seule liste des pages.
+
+### 9.4.3 Associations explicites et couverture des ressources de révision
+
+Le même artefact donne les mesures suivantes :
+
+- Understand : 144 associations explicites page–concept ; les 46 pages ont au moins un concept associé.
+- Build : 18 associations page–concept sur 6 pages ; 10 pages ont une association explicite vers une ressource d'implémentation.
+- Les 62 pages Understand/Build ont toutes `synthesis_status: not_assessed`.
+
+Le dernier point est une limite de modèle, pas un résultat « zéro fiche de révision ». Le dépôt contient des fiches et pages de révision, mais aucune relation typée et suffisamment exhaustive ne permet encore d'affirmer quelle fiche, flashcard ou synthèse couvre quelle page. Avant de créer un champ ou un registre, inventorier les ressources de révision existantes (pages Quarto, `docs/revision-sheets/`, fiches, flashcards, exercices) et vérifier si leur identité peut être portée par les structures existantes. La future mesure devra distinguer `covered`, `not_covered`, `not_expected`, `unknown` et `not_assessed`.
+
+### 9.4.4 État des validations des PR LLM Lab au 19 novembre 2026
+
+- PR [#1379](https://github.com/JM-Brun/llm-lab/pull/1379) : le job Python quality a réussi, le test suite a réussi après relance ; le contrôle Quarto / navigateur était encore en cours lors de la dernière vérification. L'artefact ci-dessus a été généré avec succès.
+- PR [#1380](https://github.com/JM-Brun/llm-lab/pull/1380) : une première CI a révélé un problème Ruff d'ordre des imports, puis un problème de formatage dans le test ajouté. Les deux corrections ont été poussées sur la branche ; les nouveaux contrôles doivent encore être vérifiés sur le dernier HEAD.
+
 ### 9.5 Frontière inter-dépôts à préserver
 
 - `llm-lab` reste propriétaire des pages, routes, métadonnées pédagogiques, concepts LLM, ressources d'implémentation et graphes associés.
