@@ -31,12 +31,14 @@ Les statuts ci-dessous sont des constats documentaires initiaux, non une certifi
 | Interface | Statut initial | Condition pour devenir une intégration vérifiée |
 |---|---|---|
 | Society Lab ↔ Wiki généraliste | À formaliser | Référence interne à un concept canonique ; explication publique autonome et sourcée si nécessaire |
-| Society Lab ↔ LLM Lab | Complémentarité potentielle, non démontrée | Référence vers un exercice, une expérience ou une méthode précise, avec version et limites |
+| Society Lab ↔ LLM Lab | Corpus pédagogique et responsabilités canoniques identifiés ; intégration technique des métadonnées encore non démontrée | Référencer une page, un concept, un module ou une expérience LLM avec dépôt, identifiant, version et limites ; réutiliser les outils pédagogiques existants sans les dupliquer |
 | Society Lab ↔ J-DriftX | Complémentarité potentielle, non démontrée | Réutilisation explicite d'une méthode avec justification de transférabilité |
 | Society Lab ↔ espace professionnel privé | Séparation nécessaire ; transfert privé possible | Référence à un artefact et à une preuve, sans importer les données personnelles |
 | Society Lab ↔ portfolio public | Publication éventuelle, non automatique | Revue de publication, résultats réellement exécutés, sources accessibles et formulation proportionnée |
 
 Ne pas ajouter de liens artificiels pour rendre la matrice plus complète. Une interface peut rester absente si aucun besoin réel ne justifie le couplage.
+
+**Mise à jour du 19 novembre 2026 :** le dépôt public `JM-Brun/llm-lab` a été identifié comme propriétaire des pages Understand/Build. Son manifeste Quarto, son registre de parcours Understand, ses métadonnées `LLM-LAB-PAGE-MAP v1` et son registre de concepts sont documentés dans `docs/metadata-learning-inventory-2026-11-19.md`. Cette identification précise la responsabilité de chaque dépôt, mais ne prouve pas encore qu'une passerelle technique de requêtes ou de provenance est opérationnelle.
 
 ## 4. Identifiants, graphes et correspondances
 
