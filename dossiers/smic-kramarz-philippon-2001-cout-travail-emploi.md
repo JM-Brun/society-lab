@@ -98,4 +98,16 @@ L'étude ne prouve pas que les hausses contemporaines du SMIC ont le même effet
 
 - Kramarz & Philippon (2001), *Journal of Public Economics* : https://www.sciencedirect.com/science/article/pii/S0047272700001377
 - IZA Discussion Paper 219 (2000), texte intégral : https://docs.iza.org/dp219.pdf
-- Version PDF publiée : https://citeseerx.ist.psu.edu/document?doi=92a54aa55a362381ad6346853f174d5be54be3ba&repid=rep1&type=pdf
+- Copie PDF accessible via CiteSeerX : https://citeseerx.ist.psu.edu/document?doi=92a54aa55a362381ad6346853f174d5be54be3ba&repid=rep1&type=pdf. **Correction de version :** cette copie est identifiée comme *Research Memorandum 0006* (OCFEB), présenté lors d'un atelier en avril 2000 ; ce n'est pas la version éditeur du *Journal of Public Economics*.
+- Copie du même Research Memorandum hébergée par l'Erasmus Repository : https://repub.eur.nl/pub/830/rm0006.pdf.
+- Version de travail IZA DP 219 (novembre 2000) : https://docs.iza.org/dp219.pdf.
+- Version publiée à citer bibliographiquement : *Journal of Public Economics*, 82(1), 2001, p. 115–146, DOI https://doi.org/10.1016/S0047-2727(00)00137-7. La notice éditeur confirme la publication et le résumé, mais le texte intégral éditeur n'a pas été comparé ligne à ligne aux versions de travail dans cet audit.
+
+## 10. Vérification de la filiation documentaire
+
+Les versions IZA DP 219 (novembre 2000) et OCFEB Research Memorandum 0006 (présenté en avril 2000) portent le même titre et les mêmes auteurs. Les tableaux de résultats centraux vérifiés dans les deux textes concordent notamment sur :
+- tableau 1 : coefficients différentiels −8,31 (SE 3,11) pour 1990–1992 et 0,73 (SE 1,64) pour 1995 ;
+- tableau 2 : coefficient différentiel −2,63 (SE 1,37), 124 689 observations ;
+- tableau 3 : contraste différentiel −8,37 (SE 3,14), avec une élasticité différentielle de −1,56 pour les hausses de coût.
+
+Ces concordances établissent qu'il s'agit de versions d'un même programme d'étude, et non de réplications indépendantes. Elles ne démontrent pas que chaque détail des deux textes de travail est identique, ni que l'ensemble du texte de la version publiée en 2001 est inchangé. Le dossier détaillé IZA reste la référence de travail pour les tableaux 1–6 et l'annexe A ; la fiche courte conserve une fonction de synthèse et de navigation. Aucune des deux fiches n'est supprimée à ce stade.
