@@ -169,6 +169,16 @@ class ProjectKpiTests(unittest.TestCase):
             "SYNTHESIS-A": "SYNTHESIS",
         })
 
+    def test_synthesis_identifier_collision_with_another_registry_is_reported(self):
+        data = {
+            "registries": {"sources": [{"id": "SYNTHESIS-COLLISION"}]},
+            "domains": [], "territories": [],
+            "synthesis_entries": [{"synthesis_id": "SYNTHESIS-COLLISION"}],
+        }
+        known, duplicates = build_known_ids(data)
+        self.assertIn("SYNTHESIS-COLLISION", known)
+        self.assertEqual(duplicates, ["SYNTHESIS-COLLISION"])
+
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
                 "domains": [{"id": "DOMAIN-A"}], "territories": [{"id": "TERRITORY-A"}],
