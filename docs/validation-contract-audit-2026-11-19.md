@@ -104,7 +104,7 @@ La PR ajoute `scripts/audit/benchmark_validation_scale.py`, exécuté par `tests
 - clone les objets avec des identifiants uniques et remappe leurs références internes ;
 - conserve les taxonomies partagées et évite de dupliquer les arêtes territoriales statiques ;
 - exécute les validations de schémas, d'identifiants, de références croisées et d'arêtes sur les corpus synthétiques ;
-- rapporte le nombre de fiches/arêtes, le temps de validation et le pic mémoire Python.
+- rapporte le nombre de fiches/arêtes, le temps de construction du corpus synthétique, le temps de validation, le temps total et le pic mémoire Python.
 
 **Limite de mesure :** le benchmark couvre la validation des registres et du graphe en mémoire ; il ne mesure pas la génération du site, les appels externes, ni la qualité scientifique. Les chiffres seront ceux du runner GitHub Actions et doivent être interprétés comme un benchmark comparatif reproductible, non comme une mesure universelle.
 
