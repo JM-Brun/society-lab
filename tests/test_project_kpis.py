@@ -5,7 +5,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
     build_known_ids, build_node_type_index, build_report, calculate_claim_conclusion_coverage,
-    calculate_source_coverage, calculate_synthesis_coverage, inspect_relations,
+    calculate_connectivity_by_node_type, calculate_source_coverage,
+    calculate_synthesis_coverage, inspect_relations,
     load_project_data,
 )
 
@@ -167,6 +168,17 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
 
+    def test_connectivity_diagnostics_are_descriptive_per_type_and_ignore_invalid_edges(self):
+        node_types = {"DOSSIER-A": "DOSSIER", "DOSSIER-B": "DOSSIER",
+                      "SOURCE-A": "SOURCE", "CLAIM-A": "CLAIM"}
+        result = calculate_connectivity_by_node_type(node_types, [self.edge])
+        self.assertEqual(result["DOSSIER"]["node_count"], 2)
+        self.assertEqual(result["DOSSIER"]["connected_node_count"], 1)
+        self.assertEqual(result["DOSSIER"]["isolated_node_ids"], ["DOSSIER-B"])
+        self.assertEqual(result["DOSSIER"]["degree_distribution"], {"0": 1, "1": 1})
+        self.assertEqual(result["SOURCE"]["relation_type_counts"], {"REL-INCLUDES": 1})
+        self.assertEqual(result["CLAIM"]["connectivity_percent"], 0)
+        self.assertIsNone(result["STUDY"]["connectivity_percent"])
     def test_node_type_index_covers_canonical_registries_and_shared_syntheses(self):
         data = {
             "registries": {
