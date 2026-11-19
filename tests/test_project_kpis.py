@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
-    build_known_ids, build_report, calculate_claim_conclusion_coverage,
+    build_known_ids, build_node_type_index, build_report, calculate_claim_conclusion_coverage,
     calculate_source_coverage, calculate_synthesis_coverage, inspect_relations,
     load_project_data,
 )
@@ -50,6 +50,19 @@ class ProjectKpiTests(unittest.TestCase):
         )
         self.assertEqual(valid, [])
         self.assertEqual(diagnostics["unknown_relation_types"], ["REL-EDGE-A"])
+
+    def test_incompatible_endpoint_types_are_reported_and_excluded(self):
+        definitions = [{"id": "REL-INCLUDES", "from": ["DOSSIER"], "to": ["SOURCE"]}]
+        node_types = {"DOSSIER-A": "DOSSIER", "SOURCE-A": "SOURCE"}
+        valid, diagnostics = inspect_relations(
+            [{**self.edge, "to": "DOSSIER-A"}],
+            {"DOSSIER-A", "SOURCE-A"}, {"REL-INCLUDES"}, node_types, definitions
+        )
+        self.assertEqual(valid, [])
+        self.assertEqual(
+            diagnostics["incompatible_endpoints"],
+            ["REL-EDGE-A:to:DOSSIER:REL-INCLUDES"],
+        )
 
     def test_duplicate_edge_id_is_reported_and_second_edge_excluded(self):
         valid, diagnostics = inspect_relations([self.edge, self.edge], {"DOSSIER-A", "SOURCE-A"})
@@ -136,6 +149,25 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(syntheses["issues"], {})
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
+
+    def test_node_type_index_covers_canonical_registries_and_shared_syntheses(self):
+        data = {
+            "registries": {
+                "sources": [{"id": "SOURCE-A"}],
+                "studies": [{"id": "STUDY-A"}],
+                "dossiers": [{"id": "DOSSIER-A"}],
+            },
+            "domains": [{"id": "DOMAIN-A"}],
+            "territories": [{"id": "TERRITORY-A"}],
+            "synthesis_entries": [
+                {"synthesis_id": "SYNTHESIS-A"}, {"synthesis_id": "SYNTHESIS-A"}
+            ],
+        }
+        self.assertEqual(build_node_type_index(data), {
+            "SOURCE-A": "SOURCE", "STUDY-A": "STUDY", "DOSSIER-A": "DOSSIER",
+            "DOMAIN-A": "DOMAIN", "TERRITORY-A": "TERRITORY",
+            "SYNTHESIS-A": "SYNTHESIS",
+        })
 
     def test_known_ids_include_synthesis_registry_identifiers(self):
         data = {"registries": {"sources": [{"id": "SOURCE-A"}]},
