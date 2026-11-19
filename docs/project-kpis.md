@@ -84,6 +84,11 @@ Le dénominateur d'une couverture générale n'est pas encore stabilisé : il d�
 
 ### 3.5 Knowledge Graph Connectivity
 
+Le calculateur publie également des statistiques descriptives par type de nœud : taux de nœuds reliés, degrés minimal/moyen/maximal, distribution des degrés et nombre de relations incidentes par type de relation. Le degré compte les identifiants de relations valides distincts incidentes à chaque nœud : une boucle sur un nœud compte une fois. Pour un type de nœud, une relation reliant deux nœuds de ce même type est comptée une seule fois dans la ventilation par type de relation.
+
+Ces statistiques décrivent la structure observée ; elles ne définissent aucun degré minimal attendu, seuil universel, anomalie automatique ou score de qualité. Un degré nul n'est pas, à lui seul, une preuve de défaut documentaire.
+
+
 **Question :** les objets qui devraient être reliés disposent-ils de relations pertinentes et justifiées ?
 
 - **Numérateur :** objets éligibles disposant d'au moins une relation conforme à une liste de relations attendues pour leur type.
