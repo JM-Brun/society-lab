@@ -127,7 +127,7 @@ Chaque métrique doit avoir une définition versionnée, un périmètre explicit
 | Combien de notions ? | `concepts.total` | Concepts canoniques distincts du registre |
 | Combien de pages pédagogiques ? | `pages.in_learning_paths` | Pages distinctes référencées par au moins un parcours |
 | Combien de pages non intégrées ? | `pages.not_in_learning_paths` | Pages éligibles absentes de tout parcours ; exclure explicitement les pages techniques et administratives |
-| Combien de notions enseignées ? | `concepts.taught` | Concepts reliés par une relation pédagogique explicite à au moins une page |
+| Combien de ressources de révision ? | `revision_resources.total` | Fiches, flashcards ou résumés reconnus par une association explicite à une page |\n| Combien de pages avec fiche de révision ? | `pages.with_revision_resource` | Pages éligibles associées à au moins une ressource de révision |\n| Combien de notions enseignées ? | `concepts.taught` | Concepts reliés par une relation pédagogique explicite à au moins une page |
 | Combien de notions sans page ? | `concepts.without_teaching_page` | Concepts canoniques sans relation pédagogique reconnue |
 
 Ne jamais présenter le nombre total de fichiers Markdown comme le nombre de pages pédagogiques.
@@ -252,7 +252,7 @@ Le système doit produire des diagnostics explicables, classés par nature, et n
 
 - notions d'un domaine non couvertes par un parcours ;
 - notions couvertes par une seule page ;
-- pages de synthèse ou de révision absentes lorsqu'elles sont attendues ;
+- pages de synthèse ou de révision absentes lorsqu'elles sont attendues ;\n- pages pédagogiques sans fiche de révision, résumé ou flashcard associée lorsque cette ressource est prévue ;
 - pages avancées sans prérequis explicites, si la progression l'exige ;
 - déséquilibre entre domaines, niveaux ou types de ressources ;
 - notion centrale dans plusieurs dossiers mais absente des supports pédagogiques.
@@ -357,7 +357,7 @@ Livrables progressifs :
 - [ ] Produire les comptages pages, parcours, leçons, notions et synthèses selon des périmètres vérifiés.
 - [ ] Produire les listes des objets inclus, exclus et non classés.
 - [ ] Calculer les pages par parcours et les pages par notion.
-- [ ] Calculer les liens entrants/sortants par page.
+- [ ] Calculer les liens entrants/sortants par page.\n- [ ] Inventorier les ressources de révision (fiches, flashcards, résumés) et leur association aux pages.
 - [ ] Comparer les résultats aux outils existants et expliquer les écarts.
 
 **Sortie :** rapport JSON et Markdown reproductible, sans modification des sources.
@@ -413,7 +413,7 @@ Le système sera considéré comme utile lorsque :
 
 - un utilisateur peut demander combien de pages, leçons et notions existent sans compter manuellement ;
 - chaque résultat peut être expliqué et reproduit à partir d'un commit donné ;
-- les pages d'une notion et les notions d'une page sont consultables dans les deux sens ;
+- les pages d'une notion et les notions d'une page sont consultables dans les deux sens ;\n- les pages disposent d'un état vérifiable concernant leur ressource de révision associée ;
 - les liens entre pages sont distingués par type, direction et profondeur ;
 - les parcours Understand et Build sont inventoriés sans heuristique opaque ;
 - les lacunes et anomalies sont accompagnées de listes concrètes ;
