@@ -117,3 +117,30 @@ Prochaine séquence :
 - [#125 — Synchronisation des labels](https://github.com/JM-Brun/society-lab/issues/125)
 - [#126 — Revue sémantique du backlog](https://github.com/JM-Brun/society-lab/issues/126)
 - [#127 — Vue multidimensionnelle du backlog](https://github.com/JM-Brun/society-lab/issues/127)
+
+
+## Complément de suivi — 19 novembre 2026, contrôle de reprise
+
+### Contrôles PR #160
+
+- La PR #160 est toujours ouverte, non fusionnée et signalée mergeable par GitHub au contrôle effectué après sa création.
+- Le diff relu contient uniquement le lien README et la présente note de reprise (2 fichiers, 120 ajouts, aucune suppression).
+- Les deux contrôles déclenchés sur le commit de la PR sont terminés avec succès :
+  - validation de la base de connaissances : run [44476671851](https://github.com/JM-Brun/society-lab/actions/runs/44476671851), job `validate` — success ;
+  - scan de secrets : run [44476671860](https://github.com/JM-Brun/society-lab/actions/runs/44476671860), job `Scan repository history for secrets` — success.
+- Aucun commentaire de revue n'était présent lors du dernier contrôle. La fusion reste à faire après revue humaine ; la CI verte ne remplace pas cette revue.
+
+### Backlog recontrôlé
+
+Un nouvel inventaire GitHub a trouvé **26 issues ouvertes** et **1 PR ouverte** (la PR #160). La liste des issues a évolué depuis la photographie initiale de 25 issues ; les priorités du présent document doivent donc être recalées sur ce backlog courant, pas sur les anciens décomptes. La PR #160 reste le seul changement en attente dans le dépôt au moment de ce contrôle.
+
+### Travail restant immédiat
+
+1. Obtenir la revue humaine de la PR #160 puis fusionner uniquement après validation de son contenu et des contrôles requis.
+2. Sur #156, récupérer le rapport KPI courant et la liste `uncovered_source_ids`, puis classer chaque entrée avant toute correction du graphe. Le fait que le calculateur et le benchmark soient intégrés ne signifie pas que cette revue est terminée.
+3. Sur #112, recalculer la photographie du graphe sur le `main` courant puis conduire le pilote éducation → compétences → emploi → salaires avec parcours positifs, négatifs et ambigus jusqu'aux sources.
+4. Sur #114, poursuivre la cartographie des étapes réellement exécutées et la matrice de couverture des schémas/validateurs ; coordonner avec #112 sans dupliquer les règles ontologiques.
+5. Reprendre le contrôle de #123/#125/#126/#127 : exécuter la vue backlog après la dépendance #130, inspecter le dry-run des labels et faire valider humainement les priorités signalées.
+6. Réexaminer les issues sectorielles du backlog reconstitué ; en particulier, ne pas fermer les issues SMIC, TIG, Parcoursup ou ADEME tant que les données, analyses, synthèses et graphes attendus ne sont pas livrés.
+
+**Limites du contrôle :** aucun rapport KPI n'a été exécuté dans cette séquence ; aucun CSV Parcoursup ni export ADEME n'a été téléchargé ; aucune relation du graphe ni conclusion scientifique n'a été modifiée. Les résultats CI ci-dessus portent uniquement sur les deux jobs nommés.
