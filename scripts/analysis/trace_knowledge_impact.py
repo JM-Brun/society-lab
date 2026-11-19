@@ -38,6 +38,11 @@ REFERENCE_FIELDS = {
         "DATASET": ("dataset_ids",),
     },
     "HYPOTHESIS": {"STUDY": ("supporting_study_ids", "challenging_study_ids")},
+    "MECHANISM": {
+        "STUDY": ("supporting_study_ids", "challenging_study_ids"),
+        "CLAIM": ("claim_ids",),
+    },
+    "FORECAST": {"CLAIM": ("claim_ids",)},
     "DOSSIER": {
         "CLAIM": ("claim_ids",),
         "STUDY": ("study_ids",),
@@ -52,7 +57,12 @@ def load_yaml(path: Path) -> dict[str, Any]:
         return yaml.safe_load(stream) or {}
 
 
-def record_references(record: dict[str, Any], fields: tuple[str, ...]) -> set[str]:
+def record_references(
+    record: dict[str, Any],
+    fields: tuple[str, ...],
+    *,
+    include_source_verifications: bool = False,
+) -> set[str]:
     found: set[str] = set()
     for field in fields:
         values = record.get(field, []) or []
@@ -60,10 +70,12 @@ def record_references(record: dict[str, Any], fields: tuple[str, ...]) -> set[st
             found.add(values)
         elif isinstance(values, list):
             found.update(value for value in values if isinstance(value, str))
-    # Claim-level source verification references are first-class dependencies.
-    for verification in record.get("source_verifications", []) or []:
-        if isinstance(verification, dict) and isinstance(verification.get("source_id"), str):
-            found.add(verification["source_id"])
+    # Claim-level source verification references are first-class dependencies,
+    # but must never be interpreted as a generic field on other object types.
+    if include_source_verifications:
+        for verification in record.get("source_verifications", []) or []:
+            if isinstance(verification, dict) and isinstance(verification.get("source_id"), str):
+                found.add(verification["source_id"])
     return found
 
 
@@ -87,7 +99,11 @@ def find_dependents(
         return set()
     found: set[str] = set()
     for record in registries.get(dependent_kind, []):
-        refs = record_references(record, fields)
+        refs = record_references(
+            record,
+            fields,
+            include_source_verifications=(dependent_kind == "CLAIM" and target_kind == "SOURCE"),
+        )
         if any(refs & impacted.get(kind, set()) for kind in source_kinds):
             found.add(record["id"])
     return found
@@ -109,7 +125,11 @@ def build_impact_report(
     for kind in ("STUDY", "DATASET", "CLAIM"):
         fields = REFERENCE_FIELDS.get(kind, {}).get("SOURCE", ())
         for record in registries.get(kind, []):
-            if source_id in record_references(record, fields):
+            if source_id in record_references(
+                record,
+                fields,
+                include_source_verifications=(kind == "CLAIM"),
+            ):
                 impacted.setdefault(kind, set()).add(record["id"])
 
     # Level 2: claims using impacted studies/datasets; hypotheses using studies.
@@ -121,7 +141,18 @@ def build_impact_report(
         find_dependents(registries, impacted, "HYPOTHESIS", "STUDY", ("STUDY",))
     )
 
-    # Level 3: dossiers explicitly referencing affected knowledge objects.
+    # Level 3: explanatory mechanisms and forecasts explicitly tied to
+    # affected studies or claims. Their own typed references are not inferred
+    # from graph edges or domain co-membership.
+    for target_kind in ("STUDY", "CLAIM"):
+        impacted.setdefault("MECHANISM", set()).update(
+            find_dependents(registries, impacted, "MECHANISM", target_kind, (target_kind,))
+        )
+    impacted.setdefault("FORECAST", set()).update(
+        find_dependents(registries, impacted, "FORECAST", "CLAIM", ("CLAIM",))
+    )
+
+    # Level 4: dossiers explicitly referencing affected knowledge objects.
     for kind in ("CLAIM", "STUDY", "HYPOTHESIS"):
         impacted.setdefault("DOSSIER", set()).update(
             find_dependents(registries, impacted, "DOSSIER", kind, (kind,))
@@ -198,6 +229,8 @@ def render_markdown(report: dict[str, Any]) -> str:
         "DATASET": "Jeux de données directement liés",
         "CLAIM": "Claims concernés",
         "HYPOTHESIS": "Hypothèses concernées",
+        "MECHANISM": "Mécanismes explicatifs à revoir",
+        "FORECAST": "Prévisions dépendantes à réexaminer",
         "DOSSIER": "Dossiers à revoir",
     }
     for kind, label in labels.items():
