@@ -181,7 +181,9 @@ def build_impact_report(
             "Impact indicatif fondé sur les références typées explicites. "
             "Les arêtes du graphe sont affichées comme contexte, sans propagation. "
             "Une présence dans ce rapport signale une revue à effectuer, pas une "
-            "invalidité automatique ni une modification scientifique."
+            "invalidité automatique ni une modification scientifique. "
+            "L'absence de lien explicite détecté ne démontre pas l'absence de "
+            "dépendance réelle : des références peuvent être manquantes ou non typées."
         ),
     }
 
