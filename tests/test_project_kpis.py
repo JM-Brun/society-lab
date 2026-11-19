@@ -168,10 +168,14 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
 
-    def test_connectivity_diagnostics_are_descriptive_per_type_and_ignore_invalid_edges(self):
+    def test_connectivity_diagnostics_are_descriptive_per_type(self):
         node_types = {"DOSSIER-A": "DOSSIER", "DOSSIER-B": "DOSSIER",
                       "SOURCE-A": "SOURCE", "CLAIM-A": "CLAIM"}
-        result = calculate_connectivity_by_node_type(node_types, [self.edge])
+        valid, _ = inspect_relations(
+            [self.edge, {**self.edge, "id": "REL-BAD", "to": "SOURCE-MISSING"}],
+            set(node_types), {"REL-INCLUDES"}
+        )
+        result = calculate_connectivity_by_node_type(node_types, valid)
         self.assertEqual(result["DOSSIER"]["node_count"], 2)
         self.assertEqual(result["DOSSIER"]["connected_node_count"], 1)
         self.assertEqual(result["DOSSIER"]["isolated_node_ids"], ["DOSSIER-B"])
