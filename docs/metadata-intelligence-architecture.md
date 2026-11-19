@@ -432,3 +432,21 @@ Le système sera considéré comme utile lorsque :
 6. Quelles relations de page à page sont déjà explicites et lesquelles ne sont que des liens de navigation ?
 
 Ces questions doivent être tranchées à partir du dépôt et de tests sur des exemples réels avant toute migration des métadonnées ou modification des validateurs.
+
+
+## 16. Résultats du premier audit du dépôt (19 novembre 2026)
+
+Le lot 0 a été engagé dans `docs/metadata-learning-inventory-2026-11-19.md`, sur l'arbre Git du commit `2e760631f931839df53556a7acfadc5901f1a5bc`.
+
+Constats vérifiés :
+
+- 271 fichiers suivis et 34 répertoires dans l'arbre audité ;
+- 144 fichiers Markdown, aucun fichier Quarto `.qmd` ni HTML ;
+- aucune structure dédiée identifiable pour Understand, Build, parcours, leçons ou flashcards dans ce dépôt ;
+- des outils existants couvrent déjà les KPIs, la couverture des registres, la validation des schémas et références, les liens Markdown, la fraîcheur des synthèses et le traçage d'impact.
+
+En conséquence, les métriques pédagogiques (nombre de parcours, leçons, pages Understand/Build et associations page–notion) ne sont pas calculables à partir de ce dépôt seul. Leur état doit être `not_modelled` ou `unknown`, jamais assimilé à zéro.
+
+**Ajustement du plan :** avant de développer un adaptateur pédagogique ou un inventaire de pages, identifier le dépôt, la branche ou la configuration qui héberge réellement le corpus Understand/Build. Le modèle pédagogique ne sera figé qu'après inspection de ses données et conventions réelles.
+
+Les métriques documentaires et scientifiques restent, elles, calculables à partir des registres et graphes existants. Leur calcul doit réutiliser les scripts actuels, notamment `calculate_project_kpis.py`, `audit_registry_coverage.py` et `trace_knowledge_impact.py`, sans créer de doublon.
