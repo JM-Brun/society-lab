@@ -290,7 +290,7 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
     # Keep relation identifiers per node: a self-loop is one incident relation,
     # while a relation joining two nodes of the same type touches that type once.
     incident_by_node = {node_id: set() for node_id in node_type_by_id}
-    relation_ids_by_type = {node_type: set() for node_type in nodes_by_type.values()}
+    relation_ids_by_type = {node_type: set() for node_type in nodes_by_type}
     for edge in valid_edges:
         relation_id = edge["id"]
         source, target = edge["from"], edge["to"]
