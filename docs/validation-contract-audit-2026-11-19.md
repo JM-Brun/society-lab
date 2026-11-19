@@ -191,14 +191,14 @@ La PR ajoute `scripts/audit/benchmark_validation_scale.py`, exécuté par `tests
 
 **Limite de mesure :** le benchmark couvre la validation des registres et du graphe en mémoire ; il ne mesure pas la génération du site, les appels externes, ni la qualité scientifique. Les chiffres seront ceux du runner GitHub Actions et doivent être interprétés comme un benchmark comparatif reproductible, non comme une mesure universelle.
 
-Mesures relevées sur GitHub Actions (Python 3.12.16, runner hébergé), commit `1f86ce9` :
+Mesures relevées sur GitHub Actions (Python 3.12.16, runner hébergé), commit `6a94213` :
 
 | Échelle | Fiches | Arêtes | Construction du corpus | Validation | Total | Pic mémoire Python |
 |---|---:|---:|---:|---:|---:|---:|
-| ×1 | 441 | 684 | 28,65 ms | 921,93 ms | 952,57 ms | 0,76 MiB |
-| ×10 | 4 410 | 6 777 | 167,35 ms | 4 264,21 ms | 4 449,34 ms | 7,36 MiB |
-| ×100 | 44 100 | 67 707 | 1 610,76 ms | 37 630,58 ms | 39 442,74 ms | 75,36 MiB |
+| ×1 | 441 | 684 | 22,86 ms | 650,29 ms | 675,27 ms | 0,76 MiB |
+| ×10 | 4 410 | 6 777 | 136,39 ms | 3 108,48 ms | 3 262,93 ms | 7,36 MiB |
+| ×100 | 44 100 | 67 707 | 1 394,88 ms | 27 703,76 ms | 29 311,15 ms | 75,36 MiB |
 
-Chargement YAML du corpus de base : 1 028,62 ms. Le temps de validation est environ ×4,63 à ×10 et ×40,82 à ×100 par rapport à ×1 ; le temps total est environ ×4,67 et ×41,42. Le pic mémoire augmente approximativement avec le volume. Sur ce benchmark synthétique, aucun emballement quadratique évident n'apparaît jusqu'à ×100, mais le temps ×100 atteint environ 39,4 secondes. Cette observation ne vaut pas preuve de performance pour des corpus dont les distributions, tailles de champs ou graphes seraient très différentes.
+Chargement YAML du corpus de base : 772,57 ms. Le temps de validation est environ ×4,78 à ×10 et ×42,60 à ×100 par rapport à ×1 ; le temps total est environ ×4,83 et ×43,41. Le pic mémoire augmente approximativement avec le volume. Sur ce benchmark synthétique, aucun emballement quadratique évident n'apparaît jusqu'à ×100, avec un temps total ×100 d'environ 29,3 secondes. Cette observation ne vaut pas preuve de performance pour des corpus dont les distributions, tailles de champs ou graphes seraient très différentes.
 
-La CI du commit `1f86ce9` est entièrement verte : 145 tests réussis, validation des schémas réussie, inventaire des registres généré, scan de secrets réussi. Les seuils de régression devront être définis à partir de plusieurs exécutions comparables, en tenant compte de la variabilité des runners.
+La CI du commit `6a94213` est entièrement verte : 145 tests réussis, validation des schémas réussie, inventaire des registres généré, scan de secrets réussi. Les seuils de régression devront être définis à partir de plusieurs exécutions comparables, en tenant compte de la variabilité des runners.
