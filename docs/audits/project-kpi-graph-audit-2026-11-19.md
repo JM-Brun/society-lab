@@ -6,7 +6,7 @@
 - Commit audité : `8e64dbe59b9bf89326089e3ee9455c236b5db2f9`
 - Instantané du calcul : **2026-11-19 21:20:47 UTC**
 - Calculateur : `scripts/validate/calculate_project_kpis.py`
-- Workflow post-fusion : `Validate knowledge base` #1056, réussi ; `Secret scanning` #330, réussi.
+- Workflow post-fusion : `Validate knowledge base` #1057, réussi ; `Secret scanning` #331, réussi.
 - Les diagnostics de connectivité sont descriptifs : aucun seuil de degré, score global ou anomalie automatique n'est déduit de l'isolement.
 
 ## Indicateurs
