@@ -274,6 +274,59 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
         "definition_version": 1,
     }
 
+def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, relation_definitions):
+    """Describe observed graph connectivity without prescribing minimum degrees."""
+    relation_types = sorted(
+        item.get("id") for item in relation_definitions
+        if isinstance(item, dict) and isinstance(item.get("id"), str)
+    )
+    valid_edges, integrity = inspect_relations(
+        relations, known_ids, set(relation_types), node_type_by_id, relation_definitions
+    )
+    nodes_by_type = {}
+    for node_id, node_type in node_type_by_id.items():
+        nodes_by_type.setdefault(node_type, []).append(node_id)
+
+    summaries = {}
+    for node_type, identifiers in sorted(nodes_by_type.items()):
+        incoming = {kind: 0 for kind in relation_types}
+        outgoing = {kind: 0 for kind in relation_types}
+        incident = set()
+        for edge in valid_edges:
+            kind = edge.get("type")
+            if edge.get("from") in identifiers:
+                outgoing[kind] = outgoing.get(kind, 0) + 1
+                incident.add(edge["from"])
+            if edge.get("to") in identifiers:
+                incoming[kind] = incoming.get(kind, 0) + 1
+                incident.add(edge["to"])
+        summaries[node_type] = {
+            "node_count": len(identifiers),
+            "nodes_with_relations": len(incident),
+            "isolated_node_ids": sorted(set(identifiers) - incident),
+            "incoming_by_relation_type": {k: v for k, v in incoming.items() if v},
+            "outgoing_by_relation_type": {k: v for k, v in outgoing.items() if v},
+        }
+
+    by_relation_type = {}
+    for edge in valid_edges:
+        kind = edge.get("type")
+        by_relation_type[kind] = by_relation_type.get(kind, 0) + 1
+
+    return {
+        "scope": "Nœuds des registres indexés ; relations structurellement et sémantiquement valides.",
+        "node_types": summaries,
+        "valid_relation_count_by_type": dict(sorted(by_relation_type.items())),
+        "excluded_invalid_relation_count": sum(len(items) for items in integrity.values()),
+        "integrity_diagnostics": {k: v for k, v in integrity.items() if v},
+        "interpretation": (
+            "Descriptif uniquement : aucun degré minimal, statut d'anomalie ou score global "
+            "n'est déduit de l'isolement ou du nombre de relations."
+        ),
+        "definition_version": 1,
+    }
+
+
 def build_report(data):
     known, duplicate_nodes = build_known_ids(data)
     node_type_by_id = build_node_type_index(data)
@@ -288,12 +341,16 @@ def build_report(data):
     synthesis = calculate_synthesis_coverage(
         data["registries"]["dossiers"], data["synthesis_entries"], ROOT
     )
+    connectivity = calculate_connectivity_diagnostics(
+        data["relations"], known, node_type_by_id, data["relation_definitions"]
+    )
     return {
         "definition_version": 1,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "metrics": [source, calculate_claim_conclusion_coverage(data["registries"]["claims"]), synthesis],
         "diagnostics": {"known_node_count": len(known), "relation_count": len(data["relations"]),
-                        "duplicate_node_ids": sorted(duplicate_nodes)},
+                        "duplicate_node_ids": sorted(duplicate_nodes),
+                        "connectivity": connectivity},
     }
 
 def render_markdown(report):
