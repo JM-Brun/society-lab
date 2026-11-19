@@ -146,6 +146,16 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["numerator"], 0)
         self.assertEqual(result["uncovered_dossier_ids"], ["DOSSIER-A"])
 
+    def test_connectivity_diagnostics_count_invalid_edges_once(self):
+        invalid = {**self.edge, "justification": ""}
+        result = calculate_connectivity_diagnostics(
+            [invalid], {"DOSSIER-A", "SOURCE-A"},
+            {"DOSSIER-A": "DOSSIER", "SOURCE-A": "SOURCE"},
+            [{"id": "REL-INCLUDES", "from": ["DOSSIER"], "to": ["SOURCE"]}],
+        )
+        self.assertEqual(result["excluded_invalid_relation_count"], 1)
+        self.assertEqual(result["integrity_diagnostics"]["empty_justifications"], ["REL-EDGE-A"])
+
     def test_connectivity_diagnostics_are_descriptive_and_do_not_apply_thresholds(self):
         nodes = {
             "DOSSIER-A": "DOSSIER", "SOURCE-A": "SOURCE",
