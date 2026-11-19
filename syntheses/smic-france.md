@@ -502,7 +502,7 @@ Un dossier dédié distingue désormais les paramètres légaux, les décisions 
 Trois éléments doivent rester séparés :
 
 1. **Formule légale** : inflation des ménages du premier quintile hors tabac et moitié du gain de pouvoir d'achat du SHBOE.
-2. **Décision annoncée le 9 novembre 2026** : +1,6 % au 1er décembre, qualifiés de « coup de pouce » et présentés par Bercy comme supérieurs à la revalorisation légale. Les sources primaires consultées ne publient pas de ventilation officielle entre part automatique et part discrétionnaire ; le partage 1,0 + 0,6 point reste à vérifier et ne doit pas être traité comme une donnée confirmée.
+2. **Décision annoncée le 9 novembre 2026** : +1,6 % au 1er décembre. La transcription officielle confirme que le ministre présente la hausse comme environ 1 point d'anticipation de la composante automatique (meilleure estimation disponible de l'inflation annuelle, encore à mesurer définitivement le 15 décembre) et 0,6 point de coup de pouce discrétionnaire. Cette ventilation est donc confirmée comme déclaration gouvernementale, mais pas répliquée indépendamment à partir des séries et fenêtres de calcul de la formule légale. Le montant net annoncé (1 501,6 €, arrondi oralement à 1 502 €) reste indicatif ; au 19 novembre, le décret fixant le montant légal exact était encore annoncé comme à venir.
 3. **Effets économiques** : le niveau du SMIC relativement à la distribution salariale, la part de salariés concernés, la productivité, la conjoncture, les allègements, les transferts socio-fiscaux, les prix et les marges déterminent la transmission aux salariés, entreprises et finances publiques.
 
 **Nouvelle réserve importante :** lors de la conférence sociale, le Gouvernement a cité des estimations DARES de 5 000 à 20 000 emplois supprimés pour la hausse retenue et de plus de 230 000 dans un scénario de SMIC à 1 700 € nets. En l'absence de note technique publique retrouvée (modèle, horizon, population, hypothèses et intervalles), ces chiffres sont enregistrés comme déclarations attribuées à la DARES, et non comme effets observés ou estimations causales validées.
@@ -514,6 +514,7 @@ La Cour des comptes estime par ailleurs que, sans le gel du barème applicable e
 | Date | Modification |
 |---|---|
 | 2026-11-16 | Ajout de la cartographie des facteurs, des mécanismes de transmission, de l'annonce de décembre 2026 et des limites des estimations d'emploi citées par le Gouvernement. |
+| 2026-11-19 | Vérification de la transcription gouvernementale : ventilation déclarée 1,0 + 0,6 point confirmée comme annonce, mais non répliquée indépendamment ; ajout du claim dédié et maintien du statut under_review jusqu'au texte réglementaire. |
 
 
 ## Complément documentaire — diffusion aux minima conventionnels (16 novembre 2026)

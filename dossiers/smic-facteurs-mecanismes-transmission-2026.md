@@ -136,3 +136,18 @@ La source gouvernementale consultée est une transcription de conférence de pre
 La transcription indique également que le Gouvernement estime à 1 point la composante automatique en anticipant l'inflation annuelle qui sera mesurée au 15 décembre 2026, puis ajoute 0,6 point de coup de pouce. La date du 15 décembre est une date future de mesure évoquée le 9 novembre ; elle ne doit pas être reformulée comme une donnée déjà observée.
 
 Le ministère du Travail apporte une donnée complémentaire sur les branches : 64 branches (36 %), représentant 7,1 millions de salariés, avaient au moins un coefficient inférieur au SMIC au 10 novembre 2026 ; 64 autres branches devaient être concernées après la hausse du 1er décembre. Cette information doit être exploitée pour mesurer les effets de diffusion dans les grilles, mais ne signifie pas que 7,1 millions de salariés sont tous rémunérés au SMIC.
+
+## Addendum — vérification de l'annonce du 9 novembre (19 novembre 2026)
+
+La transcription officielle a été relue intégralement sur le passage de questions-réponses. Elle confirme explicitement la ventilation annoncée par le ministre du Travail : **1 point** correspondant à sa meilleure estimation disponible de l'inflation annuelle 2026 et **0,6 point** de coup de pouce discrétionnaire. Le ministre précise que la mesure définitive de l'inflation n'est attendue que le 15 décembre 2026. La ventilation est donc bien présente dans une source primaire gouvernementale ; elle n'est toutefois pas une réplication indépendante de la formule légale.
+
+La transcription annonce également un SMIC net mensuel de **1 501,6 €** (arrondi oralement à 1 502 €) à compter du 1er décembre, ainsi qu'une hausse de **5,3 % sur l'année 2026**, soit **75 € nets supplémentaires** selon le Gouvernement. Ces montants sont des annonces en net, indicatives pour la paie ; le montant brut légal exact doit être établi par le texte réglementaire applicable.
+
+Le Code du travail numérique, dans sa mise à jour du 17 novembre, indique encore que le décret fixant le nouveau montant sera publié prochainement. Au 19 novembre, l'annonce ne doit donc pas être confondue avec le montant légal déjà entré en vigueur.
+
+Le claim `CLAIM-SMIC-DEC-2026-ANNOUNCED-INCREASE` a été ajouté au registre avec le statut `under_review`, la source primaire et les limites ci-dessus. Il décrit le contenu de l'annonce, pas la réalisation de la hausse ni ses effets économiques. La source est reliée au claim par `REL-SUPPORTS`, et le claim au domaine économique par `REL-ABOUT`.
+
+Sources vérifiées :
+- Gouvernement, transcription du 9 novembre 2026 : https://www.info.gouv.fr/actualite/conference-sociale-hausse-du-smic-de-1-6
+- Code du travail numérique, mise à jour du 17 novembre 2026 : https://code.travail.gouv.fr/actualite/smic-une-augmentation-au-1er-decembre-2026-quelles-consequences-sur-les-salaires
+- Ministère de l'Économie, communiqué du 13 novembre 2026 : https://presse.economie.gouv.fr/le-gouvernement-propose-des-mesures-pour-augmenter-le-pouvoir-dachat-de-13-million-dagents-publics-et-ouvre-cinq-chantiers-structurels-en-faveur-de-la-fonction-publique
