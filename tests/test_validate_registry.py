@@ -8,7 +8,8 @@ from jsonschema import Draft202012Validator
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
-from validate_registry import (validate_batch_manifest, validate_cross_references, validate_graph_edges,\n                                validate_relation_definitions, validate_territory_hierarchy)
+from validate_registry import (validate_batch_manifest, validate_cross_references, validate_graph_edges,
+                                validate_relation_definitions, validate_territory_hierarchy)
 
 
 class CrossReferenceValidationTests(unittest.TestCase):
