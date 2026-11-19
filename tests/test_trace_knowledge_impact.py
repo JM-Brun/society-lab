@@ -69,6 +69,23 @@ class SourceImpactTracingTests(unittest.TestCase):
             for item in report["syntheses"]
         ))
 
+    def test_real_ademe_season2_source_does_not_infer_dossier_from_graph_edge(self):
+        from trace_knowledge_impact import ROOT, load_repository
+
+        registries, graph, syntheses = load_repository(ROOT)
+        source_id = "SOURCE-ADEME-TRANSITIONS2050-SEASON2-OPEN-DATA"
+        report = build_impact_report(registries, graph, syntheses, source_id)
+
+        self.assertEqual(report["source_id"], source_id)
+        # The dossier/source relation exists in the graph, but is contextual:
+        # it must not be promoted to an explicit epistemic dependency.
+        self.assertNotIn("DOSSIER", report["records"])
+        self.assertEqual(report["syntheses"], [])
+        self.assertIn(
+            "REL-QUANT-DOSSIER-INCLUDES-ADEME-SEASON2",
+            {edge["id"] for edge in report["graph_edges"]},
+        )
+
     def test_markdown_warns_against_automatic_invalidation(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
         rendered = render_markdown(report)
