@@ -61,10 +61,6 @@ issues:
     kind: research
     dossier_ids: [DOSSIER-UN-COMMUN-ACCORD-DELIBERATIVE-ASSEMBLY]
     depends_on: []
-  - issue: 92
-    kind: research
-    dossier_ids: [DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX, DOSSIER-SMIC-FRANCE-TRADEOFFS]
-    depends_on: []
   - issue: 103
     kind: research
     dossier_ids: [DOSSIER-ANTOINE-FOUCHER-PACTE-INTERGENERATIONNEL]
@@ -97,11 +93,11 @@ issues:
     kind: meta
     dossier_ids: []
     depends_on: [123]
-  - issue: 126
-    kind: meta
-    dossier_ids: []
-    depends_on: [123]
   - issue: 127
     kind: meta
     dossier_ids: []
-    depends_on: [123, 125, 126]
+    depends_on: [123, 125]
+  - issue: 156
+    kind: meta
+    dossier_ids: []
+    depends_on: []
