@@ -1,0 +1,204 @@
+# Audit ciblé des contrats de validation — 19 novembre 2026
+
+## Portée et méthode
+
+Audit en lecture seule du dépôt `JM-Brun/society-lab` sur la branche `main`, à partir des registres canoniques, du graphe YAML, des schémas JSON et du validateur. Les écarts de rapprochement sont des éléments à arbitrer, pas des erreurs automatiquement corrigibles.
+
+## 1. PR #179 — intégration vérifiée
+
+La PR [#179](https://github.com/JM-Brun/society-lab/pull/179) est **fusionnée** dans `main` par le commit `afe4c8cf15914c7fb8a1b13b1498b6154333aa52`.
+
+Sur le commit de correction `8d91d66db81c18d147b97be4b2143155b23f7694`, les workflows déclenchés par la PR sont terminés avec succès :
+- **Validate knowledge base** : succès ; job `validate`, dont tests unitaires et validation JSON Schema ;
+- **Secret scanning** : succès.
+
+Le statut combiné du commit de merge ne publie pas de statuts individuels (liste vide), mais les deux exécutions PR sont explicitement terminées avec `conclusion=success`. Les contrôles métier ajoutés détectent auto-parenté/cycles territoriaux et incohérences des inverses déclarés. Les inverses réservés non déclarés restent tolérés.
+
+## 2. Taxonomies : slugs de domaines et groupes de tags
+
+État observé :
+- 15 domaines dans `knowledge/TAXONOMY.yml` ;
+- 15 slugs présents, valides et uniques sans distinction de casse ;
+- 38 tags dans `knowledge/TAGS.yml` ;
+- six groupes utilisés : `method` (11), `evidence` (5), `status` (3), `lens` (6), `scale` (11), `horizon` (2).
+
+Le validateur contrôlait déjà l'unicité des identifiants DOMAIN/TAG, mais pas l'unicité/forme des slugs ni l'appartenance des tags à un vocabulaire de groupes. Cette PR ajoute :
+- une syntaxe de slug stable `^[a-z0-9]+(?:-[a-z0-9]+)*$` ;
+- l'unicité des slugs sans distinction de casse ;
+- une liste explicite des six groupes effectivement utilisés, avec rejet des groupes inconnus ou absents ;
+- des tests positifs et négatifs.
+
+Toute introduction d'un nouveau groupe doit donc être accompagnée d'une décision taxonomique, de sa documentation et d'un test. Aucun tag existant n'est renommé ni déplacé.
+
+## 3. Références géographiques : inventaire et contrat proposé
+
+### Constat mesuré
+
+Les quatre registres portant actuellement le champ `geographic_scope` contiennent :
+- sources : 183 fiches sur 220, 233 valeurs ;
+- études : 62 sur 62, 97 valeurs ;
+- jeux de données : 14 sur 14, 20 valeurs ;
+- dossiers : 25 sur 25, 64 valeurs.
+
+Soit **284 fiches, 414 valeurs et 50 libellés distincts**. Aucun de ces enregistrements ne contient actuellement d'identifiant `TERRITORY-*` dans les registres examinés.
+
+Les valeurs mélangent plusieurs sémantiques :
+- territoires administratifs ou lieux : France, Loire-Atlantique, Nantes, Nantes Métropole, Île de Nantes ;
+- ensembles géographiques ou politiques : Europe, Union européenne, zone euro, international ;
+- échantillons/comparateurs : 17 pays, 27 pays européens, comparateurs OCDE, OCDE ;
+- unités administratives ou d'observation : académies, régions, départements, établissements ;
+- territoires infranationaux ou systèmes juridiques distincts : Flandre, Wallonie, England and Wales, Scotland, Northern Ireland ;
+- valeurs incertaines : « À préciser à partir du texte intégral », « Expérience d'enquête ; contexte à préciser dans le texte intégral ».
+
+Ces valeurs ne sont donc ni toutes des territoires, ni toutes des périmètres administratifs, ni toutes convertibles vers le référentiel territorial.
+
+### Contrat recommandé — sans migration immédiate
+
+1. **Conserver `geographic_scope`** comme champ textuel historique, lisible et non destructif. Ne pas le remplacer par des identifiants.
+2. Réserver les identifiants `TERRITORY-*` aux lieux/territoires explicitement représentés dans `knowledge/TERRITORIES.yml`. Un groupe de pays, une population, une juridiction, un échantillon, un comparateur ou une aire fonctionnelle ne devient pas automatiquement un territoire.
+3. À terme, ajouter un champ facultatif distinct (par exemple `geographic_scope_ids`) dans les schémas concernés, en complément du texte. Il ne contiendrait que les correspondances exactes validées humainement ; les valeurs non résolues resteraient dans le champ textuel.
+4. Distinguer dans la documentation le territoire étudié, la juridiction compétente, l'aire fonctionnelle, le territoire vécu et le groupe de comparaison. Le lien parent géographique ne doit pas servir à encoder une simple proximité ou une relation institutionnelle.
+5. Procéder par lots : inventaire des libellés, proposition de correspondances, revue humaine, ajout des identifiants facultatifs, contrôle des références, puis seulement mesure de couverture. Garder les valeurs d'origine et journaliser toute normalisation.
+
+**Décision :** aucune conversion automatique n'est effectuée dans cette PR. Le contrat doit être approuvé avant toute évolution des schémas ou des fiches.
+
+## 4. Relations des fiches et arêtes du graphe
+
+Le graphe contient **684 arêtes** : ABOUT 168, SUPPORTS 87, INCLUDES 326, USES 6, GEOGRAPHICALLY-WITHIN 7, CHILD-OF 8, SUMMARIZED-BY 8, TRANSCRIBES 21, SUMMARIZES 1, QUALIFIES 8 et CITES 44.
+
+Le rapprochement des références explicites des dossiers avec les arêtes `REL-INCLUDES` donne :
+
+| Références déclarées dans les dossiers | Paires déclarées | Paires présentes dans le graphe | Absentes du graphe | Paires du graphe non déclarées dans les fiches |
+|---|---:|---:|---:|---:|
+| `study_ids` | 45 | 38 | 7 | 10 |
+| `claim_ids` | 49 | 40 | 9 | 22 |
+| `hypothesis_ids` | 34 | 22 | 12 | 0 |
+| `concept_ids` | 17 | 11 | 6 | 0 |
+| **Total** | **145** | **111** | **34** | **32** |
+
+Pour les études, 6 références `dataset_ids` sont déclarées ; 5 correspondent à une arête `REL-USES` étude → dataset. La paire absente est `STUDY-PARCOURSUP-ADMISSIONS-2026 → DATASET-PARCOURSUP-2026-INDICATORS`.
+
+### Paires à arbitrer
+
+**Références de fiches absentes de `REL-INCLUDES` :**
+
+- `study_ids` :
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS`
+  - `DOSSIER-SMIC-INDEXATION-DECOMPOSITION → STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS`
+  - `DOSSIER-SMIC-FACTORS-TRANSMISSION-2026 → STUDY-EXPERTS-SMIC-2025`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-KRAUSE-COHEN-ABOU-CHADI-2023-ACCOMMODATION`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-WAGNER-MEYER-2016-IDEOLOGICAL-LANDSCAPE`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-DE-LEEUW-BOURNE-2020-PARTY-BANS-ESS`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-BIARD-2021-DIACHRONIC-CORDON`
+- `claim_ids` :
+  - `DOSSIER-PARCOURSUP-EDUCATION-EQUITY → CLAIM-PARCOURSUP-2026-NEW-BACHELORS-OFFER`
+  - `DOSSIER-PARCOURSUP-EDUCATION-EQUITY → CLAIM-PARCOURSUP-2026-LYCEENS-OFFER`
+  - `DOSSIER-PARCOURSUP-EDUCATION-EQUITY → CLAIM-INSEE-EARLY-SOCIAL-GAPS`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-EUROPE-ACCOMMODATION-NOT-ELECTORAL-CURE-2023`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-WESTERN-EUROPE-IDEOLOGICAL-SHIFT-1980-2014`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-BELGIUM-CORDON-THREE-DECADES-INSTITUTIONAL-ACCESS`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-EUROPE-PARTY-BANS-SOCIAL-LEGITIMACY-ESS-2002-2010`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-EXPOSURE-UNCHECKED-EXTREME-INTERVIEWS-ATTITUDES-NORMS-2025`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → CLAIM-DUTCH-MEDIA-ACCOMMODATION-NORMALIZATION-2022`
+- `hypothesis_ids` :
+  - `DOSSIER-SMIC-HISTORICAL-EPISODES → HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS`
+  - `DOSSIER-SMIC-HISTORICAL-EPISODES → HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER`
+  - `DOSSIER-SMIC-HISTORICAL-EPISODES → HYPOTHESIS-SMIC-PURCHASING-POWER-POVERTY`
+  - `DOSSIER-SMIC-INDEXATION-DECOMPOSITION → HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS`
+  - `DOSSIER-SMIC-INDEXATION-DECOMPOSITION → HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER`
+  - `DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX → HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS`
+  - `DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX → HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER`
+  - `DOSSIER-SMIC-QUANTITATIVE-UPDATE-2026 → HYPOTHESIS-SMIC-PURCHASING-POWER-POVERTY`
+  - `DOSSIER-SMIC-FACTORS-TRANSMISSION-2026 → HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER`
+  - `DOSSIER-SMIC-FACTORS-TRANSMISSION-2026 → HYPOTHESIS-SMIC-RELIEF-LOW-WAGE-TRAP`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → HYPOTHESIS-BOUNDARY-NORM-WITHOUT-VOTER-STIGMA`
+  - `DOSSIER-SMIC-CAHUC-CARCILLO-LEBARBANCHON-2019-HIRING-CREDIT → HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS`
+- `concept_ids` :
+  - `DOSSIER-PREF-2026-ROBUSTNESS-AUDIT → CONCEPT-ROBUSTNESS-OF-TRANSITION`
+  - `DOSSIER-PREF-2026-ROBUSTNESS-AUDIT → CONCEPT-SCENARIO-SENSITIVITY-ANALYSIS`
+  - `DOSSIER-ENERGY-SCENARIOS-COMPARISON-2026 → CONCEPT-ROBUSTNESS-OF-TRANSITION`
+  - `DOSSIER-ENERGY-SCENARIOS-COMPARISON-2026 → CONCEPT-SCENARIO-SENSITIVITY-ANALYSIS`
+  - `DOSSIER-ENERGY-SCENARIOS-QUANTITATIVE-2026 → CONCEPT-ENERGY-ACCOUNTING-PERIMETER`
+  - `DOSSIER-ENERGY-SCENARIOS-QUANTITATIVE-2026 → CONCEPT-SCENARIO-SENSITIVITY-ANALYSIS`
+
+**Arêtes `REL-INCLUDES` présentes dans le graphe mais absentes des listes des fiches :**
+
+- `study_ids` :
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → STUDY-HCREP-EXEMPTIONS-2024`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-PORTER-WOOD-2024-FACTUAL-CORRECTIONS`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-WOOD-ETAL-2024-DEBRIEFING-MISINFORMATION`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-HORTA-RIBEIRO-ETAL-2023-PARLER-DEPLATFORMING`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-KLINENBERG-2024-DEPLATFORMING-CREATORS`
+  - `DOSSIER-DEBATE-BARRAGE-CORDON-SANITAIRE → STUDY-REACTANCE-META-2026`
+  - `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE → STUDY-DE-JONGE-2021-BELGIUM-CORDON`
+  - `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE → STUDY-YE-ETAL-2026-ILLUSORY-TRUTH-META`
+  - `DOSSIER-CORDON-SANITAIRE-BELGIQUE-EFFICACITE → STUDY-ECKER-ETAL-2020-FAMILIARITY-BACKFIRE`
+  - `DOSSIER-SMIC-CAUSAL-EVIDENCE-MATRIX → STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS`
+- `claim_ids` :
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-RECIDIVISM-RAW-5Y-2010`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-RECIDIVISM-ADJUSTED-5Y`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-RECIDIVISM-PRISON-SENTENCE-10Y`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-RECIDIVISM-CONVICTION-COUNT-10Y`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-COST-PRISON-COMPARISON-UNIT-2022`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-HOST-ORGANISATIONS-COSTS-EXCLUDED-2025`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-TUTOR-TIME-100H-2025`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-TERRITORIAL-COST-DDSE-2022`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-SPIP-ASSIGNMENT-DELAY-2023-2024`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-OUTCOME-THREE-YEARS-2025`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-NETHERLANDS-TAAKSTRAF-EXECUTION-OUTCOMES-2024`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-EXEMPTIONS-TOTAL-2024-HCREP`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-EXEMPTIONS-EXPERTS-75BN-2024`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-EXECUTED-WITHIN-3Y-2020`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-CONVERTED-WITHIN-3Y-2020`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-UNEXECUTED-AT-3Y-2020`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-FAILURE-ATTRIBUTABLE-3Y-2020`
+  - `DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE → CLAIM-TIG-COUR-SAMPLE-DELAY-2023-2024`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-COTTET-MW-JOBS-1995-1999`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-COTTET-FIRM-GROWTH-1995-1997`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-ALBERTINI-5PCT-MW-EMPLOYMENT`
+  - `DOSSIER-SMIC-FRANCE-TRADEOFFS → CLAIM-SMIC-ALBERTINI-5PCT-MW-FISCAL-SURPLUS`
+
+Ces paires sont des écarts observés entre deux représentations. Elles ne constituent pas une consigne d'ajouter/supprimer les liens : chaque paire doit être examinée au regard du contenu du dossier, du sens de `REL-INCLUDES` et de la provenance de la relation.
+
+
+Interprétation et garde-fous :
+- ces champs de fiche et les arêtes sont deux représentations qui se recouvrent partiellement, pas nécessairement des duplications sémantiquement identiques ;
+- `source_ids` sur une étude ou un claim n'implique pas à lui seul une arête `SUPPORTS` : la référence bibliographique ne prouve pas que la source étaye le claim ;
+- les liens d'inclusion d'un dossier, l'utilisation d'un dataset et l'appui probatoire sont des relations différentes ;
+- les 34 liens présents dans les fiches mais absents du graphe, les 32 liens du graphe absents des listes de fiches et le lien étude→dataset manquant doivent être arbitrés individuellement ;
+- ne pas synchroniser automatiquement les deux côtés, ni supprimer les arêtes supplémentaires avant d'avoir identifié la source de vérité et le sens métier de chaque champ.
+
+Le validateur actuel contrôle l'existence et le typage des arêtes, ainsi que plusieurs références croisées des fiches ; il ne garantit pas leur équivalence exhaustive. Le prochain livrable doit être une matrice de correspondance par champ et type de relation, avec exceptions justifiées et décision de source de vérité.
+
+## 5. Contraintes conditionnelles des schémas
+
+L'inspection des schémas montre des conditions métier dans :
+- `schemas/mechanism.schema.json` : un mécanisme à statut probant (supported/mixed/challenged/rejected) doit fournir au moins un lien vers études ou claims ;
+- `schemas/ingestion-batch.schema.json` : règles conditionnelles pour les décisions selected, duplicate, excluded, inaccessible, et pour la clôture d'un lot ;
+- `schemas/forecast.schema.json` : aucune règle `if/then` ou `oneOf/anyOf` conditionnelle repérée ; les contraintes sont actuellement principalement structurelles et bornées.
+
+Cette PR ajoute une suite de tests dédiée qui vérifie les cas valides et invalides des conditions mechanism et ingestion-batch, y compris chaque décision et le statut closed. Elle ne modifie pas les schémas ni les données.
+
+## 6. Scalabilité ×10 / ×100
+
+Le corpus de référence interrogé comprend 441 fiches dans les neuf registres canoniques (220 sources, 62 études, 14 datasets, 83 claims, 22 hypothèses, 25 dossiers, 15 concepts, 0 mécanisme et 0 forecast), plus 684 arêtes. Ces volumes sont le point de départ.
+
+La PR ajoute `scripts/audit/benchmark_validation_scale.py`, exécuté par `tests/test_validation_scale_benchmark.py` sur les facteurs ×1, ×10 et ×100. Le script :
+- clone les objets avec des identifiants uniques et remappe leurs références internes ;
+- conserve les taxonomies partagées et évite de dupliquer les arêtes territoriales statiques ;
+- exécute les validations de schémas, d'identifiants, de références croisées et d'arêtes sur les corpus synthétiques ;
+- rapporte le nombre de fiches/arêtes, le temps de construction du corpus synthétique, le temps de validation, le temps total et le pic mémoire Python.
+
+**Limite de mesure :** le benchmark couvre la validation des registres et du graphe en mémoire ; il ne mesure pas la génération du site, les appels externes, ni la qualité scientifique. Les chiffres seront ceux du runner GitHub Actions et doivent être interprétés comme un benchmark comparatif reproductible, non comme une mesure universelle.
+
+Mesures relevées sur GitHub Actions (Python 3.12.16, runner hébergé), commit `6a94213` :
+
+| Échelle | Fiches | Arêtes | Construction du corpus | Validation | Total | Pic mémoire Python |
+|---|---:|---:|---:|---:|---:|---:|
+| ×1 | 441 | 684 | 22,86 ms | 650,29 ms | 675,27 ms | 0,76 MiB |
+| ×10 | 4 410 | 6 777 | 136,39 ms | 3 108,48 ms | 3 262,93 ms | 7,36 MiB |
+| ×100 | 44 100 | 67 707 | 1 394,88 ms | 27 703,76 ms | 29 311,15 ms | 75,36 MiB |
+
+Chargement YAML du corpus de base : 772,57 ms. Le temps de validation est environ ×4,78 à ×10 et ×42,60 à ×100 par rapport à ×1 ; le temps total est environ ×4,83 et ×43,41. Le pic mémoire augmente approximativement avec le volume. Sur ce benchmark synthétique, aucun emballement quadratique évident n'apparaît jusqu'à ×100, avec un temps total ×100 d'environ 29,3 secondes. Cette observation ne vaut pas preuve de performance pour des corpus dont les distributions, tailles de champs ou graphes seraient très différentes.
+
+La CI du commit `6a94213` est entièrement verte : 145 tests réussis, validation des schémas réussie, inventaire des registres généré, scan de secrets réussi. Les seuils de régression devront être définis à partir de plusieurs exécutions comparables, en tenant compte de la variabilité des runners.

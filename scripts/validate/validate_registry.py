@@ -11,6 +11,9 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[2]
 ID_RE = re.compile(r"^(DOMAIN|TAG|REL|SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|DOSSIER|SYNTHESIS|CONCEPT|MECHANISM|ORG|ANALYSIS|METHOD|TERRITORY|FORECAST)-[A-Z0-9][A-Z0-9-]*$")
 
+TAG_GROUPS = {"method", "evidence", "status", "lens", "scale", "horizon"}
+SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
 REGISTRIES = [
     ("sources/registry.yml", "sources", "SOURCE", "schemas/source.schema.json"),
     ("research/studies/registry.yml", "studies", "STUDY", "schemas/study.schema.json"),
@@ -34,6 +37,34 @@ def unique_ids(items, label, errors):
     if len(ids) != len(set(ids)):
         errors.append(f"Duplicate identifiers in {label}")
     return {value for value in ids if isinstance(value, str)}
+
+
+def validate_controlled_vocabularies(domains, tags, errors):
+    """Validate domain slugs and the controlled tag-group vocabulary."""
+    seen_slugs = {}
+    for domain in domains:
+        domain_id = domain.get("id", "<missing domain id>")
+        slug = domain.get("slug")
+        if not isinstance(slug, str) or not SLUG_RE.fullmatch(slug):
+            errors.append(f"{domain_id}: invalid or missing domain slug {slug!r}")
+            continue
+        normalized = slug.casefold()
+        if normalized in seen_slugs:
+            errors.append(
+                f"{domain_id}: duplicate domain slug {slug!r}; "
+                f"already used by {seen_slugs[normalized]}"
+            )
+        else:
+            seen_slugs[normalized] = domain_id
+
+    for tag in tags:
+        tag_id = tag.get("id", "<missing tag id>")
+        group = tag.get("group")
+        if group not in TAG_GROUPS:
+            errors.append(
+                f"{tag_id}: unknown or missing tag group {group!r}; "
+                f"expected one of {sorted(TAG_GROUPS)}"
+            )
 
 
 def validate_schema_and_records(relative, records, label, errors):
@@ -246,6 +277,7 @@ def main():
 
     domains = unique_ids(taxonomy.get("domains", []), "knowledge/TAXONOMY.yml", errors)
     tags = unique_ids(tags_vocab.get("tags", []), "knowledge/TAGS.yml", errors)
+    validate_controlled_vocabularies(taxonomy.get("domains", []), tags_vocab.get("tags", []), errors)
     relation_defs = relation_vocab.get("relations", [])
     territories = territories_vocab.get("territories", [])
     territory_ids = unique_ids(territories, "knowledge/TERRITORIES.yml", errors)
