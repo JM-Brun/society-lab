@@ -123,8 +123,8 @@ Prochaine séquence :
 
 ### Contrôles PR #160
 
-- La PR #160 est toujours ouverte, non fusionnée et signalée mergeable par GitHub au contrôle effectué après sa création.
-- Le diff relu contient uniquement le lien README et la présente note de reprise (2 fichiers, 120 ajouts, aucune suppression).
+- Au contrôle initial, la PR #160 était ouverte et mergeable. Après le commit documentaire complémentaire, elle reste ouverte et non fusionnée, mais GitHub renvoie désormais `mergeable=false` : vérifier la cause (notamment un éventuel conflit avec `main`) avant toute revue finale ou fusion.
+- Le diff relu porte toujours sur les deux fichiers attendus (README et note de reprise) ; il totalise maintenant 147 ajouts et aucune suppression. Le contrôle initial, avant complément, portait sur 120 ajouts.
 - Les deux contrôles déclenchés sur le commit de la PR sont terminés avec succès :
   - validation de la base de connaissances : run [44476671851](https://github.com/JM-Brun/society-lab/actions/runs/44476671851), job `validate` — success ;
   - scan de secrets : run [44476671860](https://github.com/JM-Brun/society-lab/actions/runs/44476671860), job `Scan repository history for secrets` — success.
@@ -143,4 +143,4 @@ Un nouvel inventaire GitHub a trouvé **26 issues ouvertes** et **1 PR ouverte**
 5. Reprendre le contrôle de #123/#125/#126/#127 : exécuter la vue backlog après la dépendance #130, inspecter le dry-run des labels et faire valider humainement les priorités signalées.
 6. Réexaminer les issues sectorielles du backlog reconstitué ; en particulier, ne pas fermer les issues SMIC, TIG, Parcoursup ou ADEME tant que les données, analyses, synthèses et graphes attendus ne sont pas livrés.
 
-**Limites du contrôle :** aucun rapport KPI n'a été exécuté dans cette séquence ; aucun CSV Parcoursup ni export ADEME n'a été téléchargé ; aucune relation du graphe ni conclusion scientifique n'a été modifiée. Les résultats CI ci-dessus portent uniquement sur les deux jobs nommés.
+**Limites du contrôle :** aucun rapport KPI n'a été exécuté dans cette séquence ; aucun CSV Parcoursup ni export ADEME n'a été téléchargé ; aucune relation du graphe ni conclusion scientifique n'a été modifiée. Les résultats CI ci-dessus portent uniquement sur les deux jobs nommés et sur le commit précédent le complément documentaire. Aucun run associé au nouveau commit `39e8665bacc4845d075459af3cd1d4beb15d5288` n'a été retourné par le contrôle des runs PR ; il faut vérifier les statuts de checks propres à ce commit avant de considérer la PR validée.
