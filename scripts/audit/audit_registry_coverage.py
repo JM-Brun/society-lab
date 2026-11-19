@@ -19,6 +19,11 @@ TARGETS = (
     ("Study", "research/studies/registry.yml", "studies", "schemas/study.schema.json", "STUDY", "research/studies"),
     ("Dataset", "research/datasets/registry.yml", "datasets", "schemas/dataset.schema.json", "DATASET", "research/datasets"),
     ("Claim", "claims/registry.yml", "claims", "schemas/claim.schema.json", "CLAIM", "claims"),
+    ("Hypothesis", "hypotheses/registry.yml", "hypotheses", "schemas/hypothesis.schema.json", "HYPOTHESIS", "hypotheses"),
+    ("Forecast", "forecasts/registry.yml", "forecasts", "schemas/forecast.schema.json", "FORECAST", "forecasts"),
+    ("Dossier", "dossiers/registry.yml", "dossiers", "schemas/dossier.schema.json", "DOSSIER", "dossiers"),
+    ("Concept", "knowledge/concepts/registry.yml", "concepts", "schemas/concept.schema.json", "CONCEPT", "knowledge/concepts"),
+    ("Mechanism", "knowledge/mechanisms/registry.yml", "mechanisms", "schemas/mechanism.schema.json", "MECHANISM", "knowledge/mechanisms"),
 )
 VALIDATOR = "scripts/validate/validate_registry.py"
 
