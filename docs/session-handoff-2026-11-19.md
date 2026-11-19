@@ -186,3 +186,18 @@ La revue historique des 51 sources sans relation retenue (instantané antérieur
 - Résultats KPI et suite #156 : commentaire [7002394715](https://github.com/JM-Brun/society-lab/issues/156#issuecomment-7002394715).
 - PR #160 fusionnée : https://github.com/JM-Brun/society-lab/pull/160.
 - Le run 44477441297 confirme le passage du calcul KPI et de l'ensemble du job `validate` ; il ne constitue pas une revue scientifique des dossiers.
+
+
+## Complément d'audit KPI / graphe — 19 novembre 2026
+
+La PR #162 complète le calculateur KPI afin qu'il vérifie, en plus de l'existence des endpoints et des types de relations, la compatibilité des types `from` et `to` avec `knowledge/RELATION_TYPES.yml`. Le validateur bloquant `scripts/validate/validate_registry.py` effectuait déjà ce contrôle ; le changement aligne donc le diagnostic KPI sur la règle canonique, sans remplacer le validateur.
+
+- Les relations incompatibles sont exclues du calcul de couverture et remontées sous `incompatible_endpoints`.
+- L'index des types de nœuds est construit à partir des registres canoniques, domaines, territoires et synthèses.
+- Les collisions entre un identifiant de synthèse et un identifiant déjà déclaré dans un autre registre sont signalées ; les associations répétées d'une même synthèse à plusieurs dossiers restent autorisées.
+- Tests ajoutés : endpoint sémantiquement incompatible, index des types et collision d'identifiant de synthèse.
+- Aucun objet, relation ou claim du graphe courant n'a été modifié.
+
+**État au moment de cette note :** PR #162 ouverte ; une première CI a réussi (118 tests, validation des registres, rapport KPI et secret scan). Un test supplémentaire de collision a ensuite été ajouté ; la CI du dernier commit doit être vérifiée avant revue/fusion.
+
+**Suite :** vérifier la CI du dernier commit de #162, relire le diff, puis faire relire la PR avant fusion. Après intégration, conserver les deux sources contextuelles sans relation et ne pas introduire de ratio global de connectivité sans définir au préalable les populations éligibles.
