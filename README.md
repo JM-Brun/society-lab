@@ -86,6 +86,7 @@ Chaque sujet de recherche doit disposer d'une synthèse autonome, datée et rév
 - [Architecture](docs/architecture.md)
 - [Audit initial du pipeline d'ingestion et de production des connaissances](docs/audit-ingestion-knowledge-pipeline-2026-11.md) — état des lieux des procédures, métadonnées, schémas, extractions, graphes, contrôles et priorités de fiabilisation.
 - [Feuille de route](docs/roadmap.md)
+- [Reprise de session et travail restant — 19 novembre 2026](docs/session-handoff-2026-11-19.md) — état vérifié du dépôt, priorités et séquence de reprise.
 - [Politique des sources](docs/source-policy.md)
 - [Politique de licences](docs/licensing.md)
 - [Prévisions probabilistes](docs/forecasting.md) et [registre des prévisions](forecasts/README.md)
