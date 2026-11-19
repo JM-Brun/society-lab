@@ -41,6 +41,53 @@ class SourceImpactTracingTests(unittest.TestCase):
         self.assertEqual({x["id"] for x in report["records"]["DOSSIER"]}, {"DOSSIER-A"})
         self.assertEqual(report["syntheses"][0]["synthesis_id"], "SYNTHESIS-A")
 
+    def test_source_verifications_are_only_source_dependencies_for_claims(self):
+        registries = {
+            **self.registries,
+            "STUDY": [{
+                "id": "STUDY-A", "title": "Study A",
+                "source_verifications": [{"source_id": "SOURCE-A"}],
+            }],
+            "DATASET": [],
+        }
+        report = build_impact_report(registries, self.graph, self.syntheses, "SOURCE-A")
+
+        self.assertNotIn("STUDY", report["records"])
+        self.assertEqual(
+            {item["id"] for item in report["records"]["CLAIM"]},
+            {"CLAIM-A"},
+        )
+
+    def test_traces_impact_to_mechanisms_and_forecasts_by_typed_references(self):
+        registries = {
+            **self.registries,
+            "MECHANISM": [{
+                "id": "MECHANISM-A",
+                "label": "Mechanism A",
+                "supporting_study_ids": ["STUDY-A"],
+                "challenging_study_ids": [],
+                "claim_ids": ["CLAIM-B"],
+            }],
+            "FORECAST": [{
+                "id": "FORECAST-A",
+                "question": "Will the defined event occur?",
+                "claim_ids": ["CLAIM-A"],
+            }],
+        }
+        report = build_impact_report(registries, self.graph, self.syntheses, "SOURCE-A")
+
+        self.assertEqual(
+            {item["id"] for item in report["records"]["MECHANISM"]},
+            {"MECHANISM-A"},
+        )
+        self.assertEqual(
+            {item["id"] for item in report["records"]["FORECAST"]},
+            {"FORECAST-A"},
+        )
+        rendered = render_markdown(report)
+        self.assertIn("Mécanismes explicatifs à revoir", rendered)
+        self.assertIn("Prévisions dépendantes à réexaminer", rendered)
+
     def test_graph_edges_are_context_not_transitive_dependencies(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
         self.assertEqual({x["id"] for x in report["graph_edges"]}, {"REL-A", "REL-DOMAIN"})
@@ -115,6 +162,21 @@ class SourceImpactTracingTests(unittest.TestCase):
             and item["synthesis_path"] == "syntheses/parcoursup-education.md"
             for item in report["syntheses"]
         ))
+
+    def test_real_ademe_season2_source_does_not_infer_dossier_from_graph_edge(self):
+        from trace_knowledge_impact import ROOT, load_repository
+
+        registries, graph, syntheses = load_repository(ROOT)
+        source_id = "SOURCE-ADEME-TRANSITIONS2050-SEASON2-OPEN-DATA"
+        report = build_impact_report(registries, graph, syntheses, source_id)
+
+        self.assertEqual(report["source_id"], source_id)
+        self.assertNotIn("DOSSIER", report["records"])
+        self.assertEqual(report["syntheses"], [])
+        self.assertIn(
+            "REL-QUANT-DOSSIER-INCLUDES-ADEME-SEASON2",
+            {edge["id"] for edge in report["graph_edges"]},
+        )
 
     def test_markdown_warns_against_automatic_invalidation(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
