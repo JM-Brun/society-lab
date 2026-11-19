@@ -96,13 +96,16 @@ L'inspection des schémas montre des conditions métier dans :
 
 Cette PR ajoute une suite de tests dédiée qui vérifie les cas valides et invalides des conditions mechanism et ingestion-batch, y compris chaque décision et le statut closed. Elle ne modifie pas les schémas ni les données.
 
-## 6. Scalabilité ×10 / ×100 — reste à mesurer
+## 6. Scalabilité ×10 / ×100
 
-Aucune mesure ×10/×100 n'est revendiquée ici. Le corpus actuel représente au moins 220 sources, 62 études, 14 datasets, 83 claims, 22 hypothèses, 25 dossiers, 15 concepts, 0 mécanisme et 0 forecast dans les registres interrogés, plus 684 arêtes. Ces volumes constituent le point de départ, pas un benchmark de performance.
+Le corpus de référence interrogé comprend 441 fiches dans les neuf registres canoniques (220 sources, 62 études, 14 datasets, 83 claims, 22 hypothèses, 25 dossiers, 15 concepts, 0 mécanisme et 0 forecast), plus 684 arêtes. Ces volumes sont le point de départ.
 
-Étape suivante :
-1. ajouter un benchmark reproductible qui clone les enregistrements en conservant des références cohérentes et des identifiants uniques ;
-2. mesurer séparément parsing YAML, validation JSON Schema, résolution des références, validation des arêtes et exécution totale ;
-3. relever temps médian et mémoire maximale sur corpus ×1, ×10 et ×100 ;
-4. distinguer coûts linéaires, coûts quadratiques et temps de démarrage ;
-5. fixer les seuils de régression après une première mesure stable, sans inventer de seuil avant observation.
+La PR ajoute `scripts/audit/benchmark_validation_scale.py`, exécuté par `tests/test_validation_scale_benchmark.py` sur les facteurs ×1, ×10 et ×100. Le script :
+- clone les objets avec des identifiants uniques et remappe leurs références internes ;
+- conserve les taxonomies partagées et évite de dupliquer les arêtes territoriales statiques ;
+- exécute les validations de schémas, d'identifiants, de références croisées et d'arêtes sur les corpus synthétiques ;
+- rapporte le nombre de fiches/arêtes, le temps de validation et le pic mémoire Python.
+
+**Limite de mesure :** le benchmark couvre la validation des registres et du graphe en mémoire ; il ne mesure pas la génération du site, les appels externes, ni la qualité scientifique. Les chiffres seront ceux du runner GitHub Actions et doivent être interprétés comme un benchmark comparatif reproductible, non comme une mesure universelle.
+
+Les premières mesures de CI restent à relever sur le nouveau commit. Les seuils de régression seront définis après observation des rapports ×1/×10/×100, et non fixés arbitrairement.
