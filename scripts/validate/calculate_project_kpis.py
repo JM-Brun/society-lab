@@ -376,6 +376,26 @@ def render_markdown(report):
         lines.append(f"Anomalies : {json.dumps(metric['issues'], ensure_ascii=False, sort_keys=True)}")
     lines.extend(["", f"Relations : {report['diagnostics']['relation_count']} ; "
                   f"nœuds indexés : {report['diagnostics']['known_node_count']}."])
+    connectivity = report["diagnostics"].get("connectivity", {})
+    lines.extend(["", "## Connectivité descriptive par type de nœud"])
+    lines.append(connectivity.get("interpretation", "Diagnostic non disponible."))
+    for node_type, summary in sorted(connectivity.get("node_types", {}).items()):
+        lines.append(
+            f"- **{node_type}** : {summary['nodes_with_relations']}/"
+            f"{summary['node_count']} nœuds avec relation ; "
+            f"{len(summary['isolated_node_ids'])} isolés."
+        )
+        if summary["isolated_node_ids"]:
+            lines.extend(f"  - Isolé : {identifier}" for identifier in summary["isolated_node_ids"])
+        if summary["incoming_by_relation_type"] or summary["outgoing_by_relation_type"]:
+            lines.append(
+                "  - Entrantes : " + json.dumps(summary["incoming_by_relation_type"], ensure_ascii=False, sort_keys=True)
+                + " ; sortantes : " + json.dumps(summary["outgoing_by_relation_type"], ensure_ascii=False, sort_keys=True)
+            )
+    lines.append(
+        "Relations valides par type : "
+        + json.dumps(connectivity.get("valid_relation_count_by_type", {}), ensure_ascii=False, sort_keys=True)
+    )
     return "\n".join(lines) + "\n"
 
 def main(argv=None):
