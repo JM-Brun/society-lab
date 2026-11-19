@@ -9,7 +9,7 @@ from jsonschema import Draft202012Validator
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
 from validate_registry import (validate_batch_manifest, validate_cross_references, validate_graph_edges,
-                                validate_relation_definitions, validate_territory_hierarchy)
+                                validate_controlled_vocabularies, validate_relation_definitions, validate_territory_hierarchy)
 
 
 class CrossReferenceValidationTests(unittest.TestCase):
@@ -267,3 +267,35 @@ class ClaimExtractionSchemaTests(unittest.TestCase):
         self.assertEqual(list(self.validator.iter_errors(self.claim)), [])
 if __name__ == "__main__":
     unittest.main()
+
+
+class ControlledVocabularyValidationTests(unittest.TestCase):
+    def test_accepts_current_domain_slugs_and_tag_groups(self):
+        domains = [{"id": "DOMAIN-A", "slug": "public-policy"},
+                   {"id": "DOMAIN-B", "slug": "labour-market"}]
+        tags = [{"id": "TAG-A", "group": "method"},
+                {"id": "TAG-B", "group": "evidence"},
+                {"id": "TAG-C", "group": "lens"}]
+        errors = []
+        validate_controlled_vocabularies(domains, tags, errors)
+        self.assertEqual(errors, [])
+
+    def test_rejects_duplicate_domain_slugs_case_insensitively(self):
+        domains = [{"id": "DOMAIN-A", "slug": "public-policy"},
+                   {"id": "DOMAIN-B", "slug": "Public-Policy"}]
+        errors = []
+        validate_controlled_vocabularies(domains, [], errors)
+        self.assertTrue(any("duplicate domain slug" in error for error in errors))
+
+    def test_rejects_missing_or_malformed_domain_slugs(self):
+        domains = [{"id": "DOMAIN-A"}, {"id": "DOMAIN-B", "slug": "Public Policy"}]
+        errors = []
+        validate_controlled_vocabularies(domains, [], errors)
+        self.assertEqual(sum("invalid or missing domain slug" in e for e in errors), 2)
+
+    def test_rejects_unknown_or_missing_tag_groups(self):
+        tags = [{"id": "TAG-A", "group": "methodology"},
+                {"id": "TAG-B"}]
+        errors = []
+        validate_controlled_vocabularies([], tags, errors)
+        self.assertEqual(sum("unknown or missing tag group" in e for e in errors), 2)
