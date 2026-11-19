@@ -59,3 +59,13 @@ jobs:
 
       - name: Validate JSON schemas
         run: for schema in schemas/*.schema.json; do python -m json.tool "$schema" > /dev/null; done
+
+      - name: Generate registry coverage inventory
+        run: python scripts/audit/audit_registry_coverage.py --output docs/registry-coverage-inventory.md
+
+      - name: Upload registry coverage inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: registry-coverage-inventory
+          path: docs/registry-coverage-inventory.md
+          if-no-files-found: error
