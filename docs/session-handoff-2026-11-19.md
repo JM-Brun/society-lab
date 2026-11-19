@@ -290,3 +290,31 @@ La première version #172 avait un CI vert (122 tests) sur son ancien commit, ma
 - Une arête contextuelle du graphe ne devient pas une dépendance d'impact sans champ de référence typé.
 - Une CI verte valide les contrôles automatisés exécutés, pas l'ingestion, la qualité scientifique ou la complétude des sources.
 - Maintenir les synthèses et graphes par sujet ; ne pas créer de registre parallèle.
+
+
+## État final confirmé après intégration des PR #174 et #175 — 19 novembre 2026, 13:28 UTC
+
+Cette note complète le relevé précédent, dont certains états de PR ont évolué pendant la session.
+
+- PR #174 est **fusionnée** le 19 novembre à 13:28:06 UTC, merge commit `418ac911b745ec1062f387002fb0bc814042b65b`. Elle apporte le test réel ADEME Saison 2, la correction de portée de `source_verifications`, et l'extension du traçage aux mécanismes et prévisions.
+- CI de #174 : run #1008 (`44533457018`) success ; 124 tests unitaires ; secret scan #282 (`44533457032`) success.
+- PR #175 est **fusionnée** le 19 novembre à 13:28:21 UTC, merge commit `e743bb16a85ddb1b6ea1a492f401ff55bce523a1`. Elle met à jour cette note de reprise.
+- CI du dernier commit documentaire de #175 : run #1010 (`44533715909`) success ; 121 tests unitaires ; secret scan #284 (`44533715599`) success.
+- PR #172 demeure fermée comme supersédée et non fusionnée.
+- Inventaire GitHub après ces intégrations : **24 issues ouvertes, aucune PR ouverte**.
+
+### Suite prioritaire après fusion
+
+1. **#110 — ADEME :** l'intégration du test d'impact ne remplace pas l'ingestion. Identifier l'API réelle et récupérer le premier export prioritaire avec métadonnées, schéma, unités, scénarios, date UTC et SHA-256. Aucun résultat quantitatif Saison 2 n'est encore disponible.
+2. **#114 — Pipeline :** reprendre l'inventaire automatisé fichiers → registres → schémas → validateurs ; définir le journal persistant des décisions de revue et les événements de cycle de vie des sources ; compléter les tests de parcours et de couverture. Les objectifs non achevés de l'ancienne #120 sont rattachés à ce périmètre transversal.
+3. **#2 — Parcoursup :** télécharger et analyser le CSV officiel 2025. Les tests d'impact Parcoursup 2026 ne constituent pas une analyse de ce CSV.
+4. **#125/#127/#123 :** exécuter et examiner le dry-run des labels et la vue backlog réelle ; vérifier artefacts et écarts avant toute application.
+5. **#156 :** poursuivre les diagnostics sémantiques du graphe, sans score global de connectivité tant que les populations éligibles ne sont pas définies.
+6. **Dossiers sectoriels :** maintenir les synthèses et graphes SMIC, TIG et Foucher à mesure que les preuves primaires et calculs sont vérifiés.
+
+### Limites persistantes
+
+- Les mécanismes et prévisions n'ont pas encore de registres alimentés : leurs chemins d'impact sont couverts par tests synthétiques, pas par des parcours réels.
+- L'arête ADEME du graphe reste contextuelle ; aucune dépendance typée vers un dossier ou une synthèse n'a été démontrée par les registres.
+- Le portail ADEME n'a pas encore fourni d'export vérifié et haché dans le dépôt.
+- Les résultats CI attestent les contrôles automatisés exécutés, pas la complétude scientifique des sources ou des dossiers.
