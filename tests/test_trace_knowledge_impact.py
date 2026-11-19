@@ -41,6 +41,24 @@ class SourceImpactTracingTests(unittest.TestCase):
         self.assertEqual({x["id"] for x in report["records"]["DOSSIER"]}, {"DOSSIER-A"})
         self.assertEqual(report["syntheses"][0]["synthesis_id"], "SYNTHESIS-A")
 
+    def test_source_verifications_are_only_source_dependencies_for_claims(self):
+        registries = {
+            **self.registries,
+            "STUDY": [{
+                "id": "STUDY-A", "title": "Study A",
+                "source_verifications": [{"source_id": "SOURCE-A"}],
+            }],
+        }
+        report = build_impact_report(registries, self.graph, self.syntheses, "SOURCE-A")
+
+        # source_verifications is a claim-level field, not a generic reference
+        # accepted on every object type.
+        self.assertNotIn("STUDY", report["records"])
+        self.assertEqual(
+            {item["id"] for item in report["records"]["CLAIM"]},
+            {"CLAIM-A"},
+        )
+
     def test_graph_edges_are_context_not_transitive_dependencies(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
         self.assertEqual({x["id"] for x in report["graph_edges"]}, {"REL-A", "REL-DOMAIN"})
