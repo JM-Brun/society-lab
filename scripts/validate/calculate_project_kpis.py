@@ -58,17 +58,49 @@ def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
                 if identifier in known:
                     duplicates.append(identifier)
                 known.add(identifier)
-    # Several dossier rows intentionally share one synthesis_id; deduplicate this mapping.
+    # Several dossier rows intentionally share one synthesis_id; only collisions
+    # with another node registry are duplicates.
+    synthesis_ids = set()
     for row in data["synthesis_entries"]:
         identifier = row.get("synthesis_id") if isinstance(row, dict) else None
         if isinstance(identifier, str) and identifier:
+            if identifier in known and identifier not in synthesis_ids:
+                duplicates.append(identifier)
             known.add(identifier)
-    return known, duplicates
+            synthesis_ids.add(identifier)
+    return known, sorted(set(duplicates))
 
-def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str], known_relation_types=None):
+
+def build_node_type_index(data: dict[str, Any]) -> dict[str, str]:
+    """Index graph node identifiers by their canonical registry type."""
+    registry_types = {
+        "sources": "SOURCE", "claims": "CLAIM", "dossiers": "DOSSIER",
+        "forecasts": "FORECAST", "hypotheses": "HYPOTHESIS",
+        "concepts": "CONCEPT", "mechanisms": "MECHANISM",
+        "datasets": "DATASET", "studies": "STUDY",
+    }
+    node_types = {}
+    for collection, node_type in registry_types.items():
+        for record in data["registries"].get(collection, []):
+            if isinstance(record, dict) and isinstance(record.get("id"), str):
+                node_types[record["id"]] = node_type
+    for collection, node_type in (("domains", "DOMAIN"), ("territories", "TERRITORY")):
+        for record in data.get(collection, []):
+            if isinstance(record, dict) and isinstance(record.get("id"), str):
+                node_types[record["id"]] = node_type
+    for row in data.get("synthesis_entries", []):
+        identifier = row.get("synthesis_id") if isinstance(row, dict) else None
+        if isinstance(identifier, str) and identifier:
+            node_types[identifier] = "SYNTHESIS"
+    return node_types
+
+def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str], known_relation_types=None,
+                      node_type_by_id=None, relation_definitions=None):
     valid, diagnostics = [], {key: [] for key in (
         "missing_ids", "duplicate_ids", "duplicate_triples", "empty_justifications",
-        "unknown_endpoints", "unknown_relation_types")}
+        "unknown_endpoints", "unknown_relation_types", "incompatible_endpoints")}
+    definitions = {item.get("id"): item for item in (relation_definitions or [])
+                   if isinstance(item, dict) and isinstance(item.get("id"), str)}
     seen_ids, seen_triples = set(), set()
     for edge in relations:
         if not isinstance(edge, dict):
@@ -95,13 +127,25 @@ def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str], know
         if (not isinstance(kind, str) or not kind
                 or (known_relation_types is not None and kind not in known_relation_types)):
             diagnostics["unknown_relation_types"].append(str(edge_id)); invalid = True
+        definition = definitions.get(kind)
+        if definition is not None and node_type_by_id is not None:
+            for endpoint, actual_id in (("from", source), ("to", target)):
+                actual_type = node_type_by_id.get(actual_id)
+                allowed_types = definition.get(endpoint, [])
+                if actual_type is not None and actual_type not in allowed_types:
+                    diagnostics["incompatible_endpoints"].append(
+                        f"{edge_id}:{endpoint}:{actual_type}:{kind}")
+                    invalid = True
         if not invalid:
             valid.append(edge)
     return valid, diagnostics
 
-def calculate_source_coverage(sources, relations, known_ids, known_relation_types=None):
+def calculate_source_coverage(sources, relations, known_ids, known_relation_types=None,
+                              node_type_by_id=None, relation_definitions=None):
     source_ids = {r["id"] for r in sources if isinstance(r, dict) and isinstance(r.get("id"), str)}
-    valid_edges, diagnostics = inspect_relations(relations, known_ids, known_relation_types)
+    valid_edges, diagnostics = inspect_relations(
+        relations, known_ids, known_relation_types, node_type_by_id, relation_definitions
+    )
     covered = {node for edge in valid_edges if edge.get("type") in RELATION_TYPES
                for node in (edge.get("from"), edge.get("to")) if node in source_ids}
     uncovered = sorted(source_ids - covered)
@@ -232,9 +276,11 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
 
 def build_report(data):
     known, duplicate_nodes = build_known_ids(data)
+    node_type_by_id = build_node_type_index(data)
     relation_types = {r.get("id") for r in data["relation_definitions"] if isinstance(r, dict)}
     source = calculate_source_coverage(
-        data["registries"]["sources"], data["relations"], known, relation_types
+        data["registries"]["sources"], data["relations"], known, relation_types,
+        node_type_by_id, data["relation_definitions"]
     )
     if duplicate_nodes:
         source["issues"]["duplicate_node_ids"] = sorted(duplicate_nodes)
