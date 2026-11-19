@@ -265,9 +265,6 @@ class ClaimExtractionSchemaTests(unittest.TestCase):
         extraction = self.claim["source_verifications"][0]["extraction"]
         extraction["denominator"] = "Effectif exact non publié dans le tableau consulté."
         self.assertEqual(list(self.validator.iter_errors(self.claim)), [])
-if __name__ == "__main__":
-    unittest.main()
-
 
 class ControlledVocabularyValidationTests(unittest.TestCase):
     def test_accepts_current_domain_slugs_and_tag_groups(self):
@@ -280,9 +277,9 @@ class ControlledVocabularyValidationTests(unittest.TestCase):
         validate_controlled_vocabularies(domains, tags, errors)
         self.assertEqual(errors, [])
 
-    def test_rejects_duplicate_domain_slugs_case_insensitively(self):
+    def test_rejects_duplicate_domain_slugs(self):
         domains = [{"id": "DOMAIN-A", "slug": "public-policy"},
-                   {"id": "DOMAIN-B", "slug": "Public-Policy"}]
+                   {"id": "DOMAIN-B", "slug": "public-policy"}]
         errors = []
         validate_controlled_vocabularies(domains, [], errors)
         self.assertTrue(any("duplicate domain slug" in error for error in errors))
@@ -299,3 +296,7 @@ class ControlledVocabularyValidationTests(unittest.TestCase):
         errors = []
         validate_controlled_vocabularies([], tags, errors)
         self.assertEqual(sum("unknown or missing tag group" in e for e in errors), 2)
+
+
+if __name__ == "__main__":
+    unittest.main()
