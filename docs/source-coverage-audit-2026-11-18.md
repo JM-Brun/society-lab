@@ -200,3 +200,12 @@ Ces 11 sources justifient `REL-INCLUDES` depuis le dossier concerné.
 - Les liens dataset ne sont pas créés automatiquement à partir de `source_ids` : `REL-TRANSCRIBES` ne doit être utilisé que lorsqu'une source est effectivement transformée ou transcrite dans le dataset, pas lorsqu'elle fournit seulement une notice ou des métadonnées.
 - Aucune cible de connectivité globale n'est définie.
 
+
+
+## Diagnostics descriptifs de connectivité par type d’objet
+
+Le calculateur KPI expose désormais, pour chaque type canonique (`SOURCE`, `CLAIM`, `DOSSIER`, `FORECAST`, `HYPOTHESIS`, `CONCEPT`, `MECHANISM`, `DATASET`, `STUDY`, `DOMAIN`, `TERRITORY`, `SYNTHESIS`) : le nombre de nœuds, le nombre relié et isolé, la proportion de nœuds reliés, les degrés minimal, maximal et moyen, la distribution des degrés, les types de relations incidentes et la liste des identifiants isolés.
+
+Seules les relations valides selon les contrôles existants (identifiants, justification, endpoints connus, type déclaré et compatibilité des endpoints) alimentent ces diagnostics. Une relation est comptée une fois par type touché et une fois par nœud incident ; une boucle sur un même nœud n’est pas artificiellement doublée.
+
+Ces mesures sont descriptives : aucun score agrégé, seuil minimal de connectivité, classement de qualité ni objectif universel n’est défini. Un nœud isolé n’est pas automatiquement une anomalie : les objets de contexte, les concepts, les domaines et les territoires peuvent légitimement ne pas porter les mêmes relations. Les listes d’isolés servent à orienter une revue documentaire, jamais à déclencher automatiquement une création de relation.
