@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "validate"))
 
 from validate_registry import (  # noqa: E402
+    ID_RE,
     REGISTRIES,
     load_yaml,
     unique_ids,
@@ -128,6 +129,15 @@ def run_validation(base, factor):
     domain_ids = unique_ids(domains, "knowledge/TAXONOMY.yml", errors)
     tag_ids = unique_ids(tags, "knowledge/TAGS.yml", errors)
     territory_ids = unique_ids(territories, "knowledge/TERRITORIES.yml", errors)
+    relation_ids = unique_ids(relation_defs, "knowledge/RELATION_TYPES.yml", errors)
+    validate_schema_and_records("schemas/territory.schema.json", territories, "knowledge/TERRITORIES.yml", errors)
+    for territory in territories:
+        parent_id = territory.get("geographic_parent_id")
+        if parent_id and parent_id not in territory_ids:
+            errors.append(f"Unknown parent for {territory.get('id')}: {parent_id}")
+    for identifier in domain_ids | tag_ids | relation_ids | territory_ids:
+        if not ID_RE.fullmatch(identifier):
+            errors.append(f"Invalid controlled identifier: {identifier}")
     validate_controlled_vocabularies(domains, tags, errors)
     validate_relation_definitions(relation_defs, errors)
     validate_territory_hierarchy(territories, errors)
@@ -142,9 +152,15 @@ def run_validation(base, factor):
         items = records[prefix]
         identifiers = unique_ids(items, relative, errors)
         node_ids[prefix] = identifiers
+        for identifier in identifiers:
+            if not identifier.startswith(prefix + "-") or not ID_RE.fullmatch(identifier):
+                errors.append(f"Invalid identifier in {relative}: {identifier!r}")
         node_type_by_id.update({identifier: prefix for identifier in identifiers})
         validate_schema_and_records(schema_path, items, relative, errors)
 
+    for identifier in synthesis_ids:
+        if not ID_RE.fullmatch(identifier) or not identifier.startswith("SYNTHESIS-"):
+            errors.append(f"Invalid synthesis identifier: {identifier!r}")
     node_ids["SYNTHESIS"] = synthesis_ids
     node_type_by_id.update({identifier: "SYNTHESIS" for identifier in synthesis_ids})
     validate_cross_references(records, node_ids, errors)
