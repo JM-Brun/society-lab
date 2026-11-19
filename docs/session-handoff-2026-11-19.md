@@ -144,3 +144,45 @@ Un nouvel inventaire GitHub a trouvé **26 issues ouvertes** et **1 PR ouverte**
 6. Réexaminer les issues sectorielles du backlog reconstitué ; en particulier, ne pas fermer les issues SMIC, TIG, Parcoursup ou ADEME tant que les données, analyses, synthèses et graphes attendus ne sont pas livrés.
 
 **Limites du contrôle :** aucun rapport KPI n'a été exécuté dans cette séquence ; aucun CSV Parcoursup ni export ADEME n'a été téléchargé ; aucune relation du graphe ni conclusion scientifique n'a été modifiée. Les résultats CI ci-dessus portent uniquement sur les deux jobs nommés et sur le commit précédent le complément documentaire. Aucun run associé au nouveau commit `39e8665bacc4845d075459af3cd1d4beb15d5288` n'a été retourné par le contrôle des runs PR ; il faut vérifier les statuts de checks propres à ce commit avant de considérer la PR validée.
+
+
+## Actualisation après fusion de la PR #160 — 19 novembre 2026
+
+### État de la PR et CI
+
+La PR #160 est fusionnée dans `main` (merge commit `567e43dcb0d780109690353a6ac6f4c7936316ca`). Les workflows `Validate knowledge base` et `Secret scanning` associés au dernier commit documentaire ont terminé avec succès. La note de reprise et son lien README sont donc publiés.
+
+### Recalcul des KPIs sur le main fusionné
+
+Le calculateur `scripts/validate/calculate_project_kpis.py` a été exécuté par le job `validate` du run [44477441297](https://github.com/JM-Brun/society-lab/actions/runs/44477441297), étape `Report project KPIs (read-only)`, avec succès. Instantané : 2026-11-19T07:09:40Z.
+
+| Indicateur | Numérateur / dénominateur | Résultat |
+|---|---:|---:|
+| Couverture documentaire des sources | 218 / 220 | 99,1 % |
+| Claims avec conclusion documentée | 28 / 80 | 35,0 % |
+| Dossiers actifs avec synthèse valide | 25 / 25 | 100 % |
+
+Diagnostics associés :
+- Deux sources restent sans relation documentaire retenue : `SOURCE-DEFENSEUR-DROITS-JEUNESSES-ORIGINE-2026` et `SOURCE-EU-EDUCATION-MONITOR-2025-FRANCE`. Elles sont conservées en contexte ; aucun lien artificiel n'est justifié.
+- Claims : 27 `partially_supported`, 1 `supported`, 52 `under_review` ; 3 `superseded` sont exclus. Aucune anomalie de statut signalée.
+- Synthèses : aucun dossier actif sans association/fichiers valides ; 11 fichiers de synthèse distincts pour 25 dossiers actifs.
+- Le calculateur rapporte 684 relations et 476 identifiants indexés ; aucune anomalie structurelle n'est remontée par ses contrôles.
+
+La revue historique des 51 sources sans relation retenue (instantané antérieur) a été traitée dans la PR #158 : 49 sources distinctes ont reçu 51 relations documentaires justifiées ; les deux sources ci-dessus demeurent contextuelles. Ne pas reprendre l'ancien décompte 51 comme état courant.
+
+**Interprétation :** ces KPIs mesurent des propriétés documentaires et de maintenance. Ils ne mesurent ni la vérité des claims, ni l'indépendance des preuves, ni la qualité scientifique des synthèses.
+
+### Travail restant recalé
+
+1. **#156 — Connectivité et sémantique :** la matrice de règles attendues par type d'objet est documentée dans `docs/source-linkage-decisions-2026-11-18.md`. Il reste à la traduire en diagnostics déterministes : compatibilité sémantique des endpoints, collisions d'identifiants entre registres, relations orphelines et tests négatifs. Ne pas produire de ratio global avant validation des populations éligibles.
+2. **#112 — Transversal :** recalculer l'inventaire des objets et relations sur le main actuel, puis mener le pilote éducation → compétences → emploi → salaires. Documenter les parcours positifs, négatifs et ambigus jusqu'aux localisateurs de preuve ; aucune causalité ne découle d'une cooccurrence.
+3. **#114 — Pipeline :** poursuivre l'audit de couverture réelle des schémas et validateurs, des contrats de provenance et des parcours de bout en bout Parcoursup/ADEME/TIG. Prioriser les lacunes testables plutôt qu'une réécriture générale des documents.
+4. **#123/#125/#126/#127 — Gouvernance :** recontrôler les workflows backlog et labels, produire le dry-run, examiner les mappings non résolus et demander une validation humaine des priorités.
+5. **Parcoursup (#2) et ADEME (#110) :** acquérir les données brutes et conserver URL, date, schéma, unités, périmètre et SHA-256 avant toute analyse quantitative.
+6. **SMIC/TIG :** continuer les audits sectoriels, actualiser chaque synthèse et ses relations probantes ; ne pas inférer la causalité à partir des seuls écarts descriptifs.
+
+### Traçabilité GitHub
+
+- Résultats KPI et suite #156 : commentaire [7002394715](https://github.com/JM-Brun/society-lab/issues/156#issuecomment-7002394715).
+- PR #160 fusionnée : https://github.com/JM-Brun/society-lab/pull/160.
+- Le run 44477441297 confirme le passage du calcul KPI et de l'ensemble du job `validate` ; il ne constitue pas une revue scientifique des dossiers.
