@@ -140,6 +140,52 @@ def inspect_relations(relations: list[dict[str, Any]], known_ids: set[str], know
             valid.append(edge)
     return valid, diagnostics
 
+
+def calculate_connectivity_by_node_type(node_type_by_id, valid_relations):
+    """Describe incidence per canonical node type; deliberately defines no score or threshold."""
+    type_names = ("SOURCE", "CLAIM", "DOSSIER", "FORECAST", "HYPOTHESIS",
+                  "CONCEPT", "MECHANISM", "DATASET", "STUDY", "DOMAIN",
+                  "TERRITORY", "SYNTHESIS")
+    nodes_by_type = {kind: sorted(identifier for identifier, actual in node_type_by_id.items()
+                                  if actual == kind) for kind in type_names}
+    incident_by_node = {identifier: set() for identifier in node_type_by_id}
+    relation_types_by_node_type = {kind: {} for kind in type_names}
+    for edge in valid_relations:
+        relation_id, relation_kind = edge.get("id"), edge.get("type")
+        endpoints = {edge.get("from"), edge.get("to")}
+        for endpoint in endpoints:
+            if endpoint in incident_by_node:
+                incident_by_node[endpoint].add(relation_id)
+        touched_types = {node_type_by_id[endpoint] for endpoint in endpoints
+                         if endpoint in node_type_by_id}
+        for kind in touched_types:
+            counts = relation_types_by_node_type[kind]
+            counts[relation_kind] = counts.get(relation_kind, 0) + 1
+
+    result = {}
+    for kind, identifiers in nodes_by_type.items():
+        degrees = {identifier: len(incident_by_node[identifier]) for identifier in identifiers}
+        connected = sorted(identifier for identifier, degree in degrees.items() if degree)
+        isolated = sorted(identifier for identifier, degree in degrees.items() if not degree)
+        distribution = {}
+        for degree in degrees.values():
+            label = str(degree)
+            distribution[label] = distribution.get(label, 0) + 1
+        total = len(identifiers)
+        result[kind] = {
+            "node_count": total,
+            "connected_node_count": len(connected),
+            "isolated_node_count": len(isolated),
+            "connectivity_percent": (100 * len(connected) / total) if total else None,
+            "min_degree": min(degrees.values()) if degrees else None,
+            "max_degree": max(degrees.values()) if degrees else None,
+            "mean_degree": (sum(degrees.values()) / total) if total else None,
+            "degree_distribution": dict(sorted(distribution.items(), key=lambda item: int(item[0]))),
+            "relation_type_counts": dict(sorted(relation_types_by_node_type[kind].items())),
+            "isolated_node_ids": isolated,
+        }
+    return result
+
 def calculate_source_coverage(sources, relations, known_ids, known_relation_types=None,
                               node_type_by_id=None, relation_definitions=None):
     source_ids = {r["id"] for r in sources if isinstance(r, dict) and isinstance(r.get("id"), str)}
@@ -278,6 +324,10 @@ def build_report(data):
     known, duplicate_nodes = build_known_ids(data)
     node_type_by_id = build_node_type_index(data)
     relation_types = {r.get("id") for r in data["relation_definitions"] if isinstance(r, dict)}
+    valid_relations, _ = inspect_relations(
+        data["relations"], known, relation_types, node_type_by_id, data["relation_definitions"]
+    )
+    connectivity = calculate_connectivity_by_node_type(node_type_by_id, valid_relations)
     source = calculate_source_coverage(
         data["registries"]["sources"], data["relations"], known, relation_types,
         node_type_by_id, data["relation_definitions"]
@@ -293,7 +343,8 @@ def build_report(data):
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "metrics": [source, calculate_claim_conclusion_coverage(data["registries"]["claims"]), synthesis],
         "diagnostics": {"known_node_count": len(known), "relation_count": len(data["relations"]),
-                        "duplicate_node_ids": sorted(duplicate_nodes)},
+                        "duplicate_node_ids": sorted(duplicate_nodes),
+                        "connectivity_by_node_type": connectivity},
     }
 
 def render_markdown(report):
