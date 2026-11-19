@@ -317,7 +317,7 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
         "scope": "Nœuds des registres indexés ; relations structurellement et sémantiquement valides.",
         "node_types": summaries,
         "valid_relation_count_by_type": dict(sorted(by_relation_type.items())),
-        "excluded_invalid_relation_count": sum(len(items) for items in integrity.values()),
+        "excluded_invalid_relation_count": len(relations) - len(valid_edges),
         "integrity_diagnostics": {k: v for k, v in integrity.items() if v},
         "interpretation": (
             "Descriptif uniquement : aucun degré minimal, statut d'anomalie ou score global "
