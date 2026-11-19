@@ -157,6 +157,15 @@ def run_validation(base, factor):
                 errors.append(f"Invalid identifier in {relative}: {identifier!r}")
         node_type_by_id.update({identifier: prefix for identifier in identifiers})
         validate_schema_and_records(schema_path, items, relative, errors)
+        for record in items:
+            record_id = record.get("id", f"{prefix} record")
+            for field in ("domains", "domain_ids"):
+                for domain_id in record.get(field, []) or []:
+                    if domain_id not in domain_ids:
+                        errors.append(f"{record_id}: unknown domain {domain_id}")
+            for tag_id in record.get("tags", []) or []:
+                if tag_id not in tag_ids:
+                    errors.append(f"{record_id}: unknown tag {tag_id}")
 
     for identifier in synthesis_ids:
         if not ID_RE.fullmatch(identifier) or not identifier.startswith("SYNTHESIS-"):
