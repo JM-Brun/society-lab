@@ -51,6 +51,49 @@ def validate_schema_and_records(relative, records, label, errors):
         errors.append(f"Invalid schema {relative}: {exc}")
 
 
+
+def validate_territory_hierarchy(territories, errors):
+    """Reject self-parenting and cycles in the declared geographic parent tree."""
+    parent_by_id = {item.get("id"): item.get("geographic_parent_id")
+                    for item in territories if isinstance(item, dict) and isinstance(item.get("id"), str)}
+    for territory_id, parent_id in parent_by_id.items():
+        if parent_id == territory_id:
+            errors.append(f"{territory_id}: territory cannot be its own geographic parent")
+    completed = set()
+    for start in parent_by_id:
+        path = []
+        positions = {}
+        current = start
+        while current in parent_by_id and current not in completed:
+            if current in positions:
+                cycle = path[positions[current]:] + [current]
+                errors.append("Geographic territory parent cycle: " + " -> ".join(cycle))
+                break
+            positions[current] = len(path)
+            path.append(current)
+            parent = parent_by_id[current]
+            if not isinstance(parent, str) or parent not in parent_by_id:
+                break
+            current = parent
+        completed.update(path)
+
+
+def validate_relation_definitions(relation_defs, errors):
+    """Check reciprocal inverse declarations when both relation types are defined."""
+    by_id = {item.get("id"): item for item in relation_defs if isinstance(item, dict) and isinstance(item.get("id"), str)}
+    for relation_id, definition in by_id.items():
+        inverse_id = definition.get("inverse")
+        inverse = by_id.get(inverse_id)
+        # Some inverse labels are intentionally reserved but not yet registered.
+        if inverse is None:
+            continue
+        if inverse.get("inverse") != relation_id:
+            errors.append(f"{relation_id}: inverse {inverse_id} does not point back to {relation_id}")
+        if set(definition.get("from", [])) != set(inverse.get("to", [])):
+            errors.append(f"{relation_id}: inverse {inverse_id} has incompatible endpoint types (from/to)")
+        if set(definition.get("to", [])) != set(inverse.get("from", [])):
+            errors.append(f"{relation_id}: inverse {inverse_id} has incompatible endpoint types (to/from)")
+
 def validate_cross_references(all_records, node_ids, errors):
     """Check both top-level references and nested claim source-verification links."""
     reference_fields = {
@@ -214,6 +257,8 @@ def main():
         if parent_id and parent_id not in territory_ids:
             errors.append(f"{territory.get('id')}: unknown parent territory {parent_id}")
     relation_types = unique_ids(relation_defs, "knowledge/RELATION_TYPES.yml", errors)
+    validate_relation_definitions(relation_defs, errors)
+    validate_territory_hierarchy(territories, errors)
 
     for identifier in domains | tags | relation_types | territory_ids:
         if not ID_RE.fullmatch(identifier):
