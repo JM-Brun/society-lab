@@ -254,7 +254,13 @@ Changements :
 - extension aux mécanismes (`supporting_study_ids`, `challenging_study_ids`, `claim_ids`) et aux prévisions (`claim_ids`) par références typées ;
 - tests synthétiques de portée des références et de chemins mécanisme/prévision.
 
-**État de validation au moment de la rédaction :** aucune exécution CI n'était encore retournée pour le commit #174. Le contrôle de runs PR ne renvoyait aucun run. Il faut vérifier les checks du commit de tête avant toute revue ou fusion. La PR a été créée en brouillon ; aucun chiffre ni résultat d'extraction ADEME n'est revendiqué.
+**Validation CI vérifiée sur le commit de tête** :
+- Validate knowledge base — run #1008 (`44533457018`) : success.
+- 124 tests unitaires : OK.
+- Validation des registres, synthèses, liens, mappings et schémas : success.
+- Secret scanning — run #282 (`44533457032`) : success.
+
+La PR #174 est mergeable au dernier contrôle, mais reste en brouillon et nécessite une revue humaine. Aucun chiffre ni résultat d'extraction ADEME n'est revendiqué.
 
 La première version #172 avait un CI vert (122 tests) sur son ancien commit, mais ce résultat ne valide pas automatiquement la reprise #174.
 
