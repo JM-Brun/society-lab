@@ -285,7 +285,7 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
     )
     nodes_by_type = {}
     for node_id, node_type in node_type_by_id.items():
-        nodes_by_type.setdefault(node_type, []).append(node_id)
+        nodes_by_type.setdefault(node_type, set()).add(node_id)
 
     summaries = {}
     for node_type, identifiers in sorted(nodes_by_type.items()):
@@ -303,7 +303,7 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
         summaries[node_type] = {
             "node_count": len(identifiers),
             "nodes_with_relations": len(incident),
-            "isolated_node_ids": sorted(set(identifiers) - incident),
+            "isolated_node_ids": sorted(identifiers - incident),
             "incoming_by_relation_type": {k: v for k, v in incoming.items() if v},
             "outgoing_by_relation_type": {k: v for k, v in outgoing.items() if v},
         }
