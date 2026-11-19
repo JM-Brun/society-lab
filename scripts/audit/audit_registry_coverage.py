@@ -26,6 +26,7 @@ TARGETS = (
     ("Mechanism", "knowledge/mechanisms/registry.yml", "mechanisms", "schemas/mechanism.schema.json", "MECHANISM", "knowledge/mechanisms"),
 )
 VALIDATOR = "scripts/validate/validate_registry.py"
+SYNTHESIS_REGISTRY = "syntheses/registry.yml"
 
 
 def read_yaml(path: Path) -> dict[str, Any]:
@@ -67,7 +68,47 @@ def inventory(target: tuple[str, str, str, str, str, str]) -> dict[str, Any]:
     }
 
 
-def render(items: list[dict[str, Any]]) -> str:
+
+def audit_syntheses() -> dict[str, Any]:
+    """Check dossier-to-synthesis mappings outside the canonical registries."""
+    registry = read_yaml(ROOT / SYNTHESIS_REGISTRY)
+    entries = registry.get("dossiers", [])
+    if not isinstance(entries, list) or not all(isinstance(row, dict) for row in entries):
+        raise ValueError(f"{SYNTHESIS_REGISTRY}: dossiers must be a list of mappings")
+    dossier_registry = read_yaml(ROOT / "dossiers/registry.yml").get("dossiers", [])
+    known_dossiers = {row.get("id") for row in dossier_registry if isinstance(row, dict)}
+    seen_dossiers: set[str] = set()
+    synthesis_paths: dict[str, str] = {}
+    path_ids: dict[str, str] = {}
+    errors: list[str] = []
+    for index, entry in enumerate(entries):
+        label = f"{SYNTHESIS_REGISTRY} dossiers[{index}]"
+        values = {key: entry.get(key) for key in ("dossier_id", "synthesis_id", "dossier_path", "synthesis_path")}
+        for field, value in values.items():
+            if not isinstance(value, str) or not value.strip():
+                errors.append(f"{label}: missing or invalid {field}")
+        if not all(isinstance(value, str) and value.strip() for value in values.values()):
+            continue
+        dossier_id, synthesis_id = values["dossier_id"], values["synthesis_id"]
+        dossier_path, synthesis_path = values["dossier_path"], values["synthesis_path"]
+        if dossier_id in seen_dossiers:
+            errors.append(f"{label}: duplicate dossier_id {dossier_id}")
+        seen_dossiers.add(dossier_id)
+        if dossier_id not in known_dossiers:
+            errors.append(f"{label}: unknown dossier_id {dossier_id}")
+        if not (ROOT / dossier_path).is_file():
+            errors.append(f"{label}: missing dossier_path {dossier_path}")
+        if not (ROOT / synthesis_path).is_file():
+            errors.append(f"{label}: missing synthesis_path {synthesis_path}")
+        previous_path = synthesis_paths.setdefault(synthesis_id, synthesis_path)
+        if previous_path != synthesis_path:
+            errors.append(f"{label}: synthesis_id {synthesis_id} maps to multiple paths")
+        previous_id = path_ids.setdefault(synthesis_path, synthesis_id)
+        if previous_id != synthesis_id:
+            errors.append(f"{label}: synthesis_path {synthesis_path} maps to multiple IDs")
+    return {"entries": len(entries), "distinct_syntheses": len(synthesis_paths), "errors": errors}
+
+def render(items: list[dict[str, Any]], syntheses: dict[str, Any]) -> str:
     lines = [
         "# Inventaire automatisé — fichiers, registres, schémas et validateurs",
         "",
@@ -105,7 +146,18 @@ def render(items: list[dict[str, Any]]) -> str:
             lines.append("Toutes les propriétés obligatoires sont présentes dans chaque fiche (contrôle de présence uniquement).")
         lines.append("")
     lines += [
-        "## Limites et interprétation",
+        "## Registre complémentaire des synthèses",
+        "",
+        f"- Registre : {SYNTHESIS_REGISTRY}",
+        f"- Associations dossier → synthèse : {syntheses['entries']}",
+        f"- Synthèses distinctes : {syntheses['distinct_syntheses']}",
+        f"- Anomalies de correspondance : {len(syntheses['errors'])}",
+        "",
+    ]
+    lines.extend(f"- À corriger : {error}" for error in syntheses["errors"])
+    if not syntheses["errors"]:
+        lines.append("Aucune anomalie de correspondance détectée.")
+    lines += ["", "## Limites et interprétation",
         "",
         "- Le nombre de fichiers YAML inclut le registre lui-même ; il ne signifie pas que chaque fiche est stockée dans un fichier distinct.",
         "- La présence d'une propriété ne vérifie ni sa qualité, ni sa précision, ni la validité de ses références.",
@@ -126,7 +178,8 @@ def main() -> int:
     parser.add_argument("--output", type=Path, help="Write Markdown report to this path instead of stdout")
     args = parser.parse_args()
     items = [inventory(target) for target in TARGETS]
-    report = render(items)
+    syntheses = audit_syntheses()
+    report = render(items, syntheses)
     if args.output:
         destination = args.output if args.output.is_absolute() else ROOT / args.output
         destination.parent.mkdir(parents=True, exist_ok=True)
