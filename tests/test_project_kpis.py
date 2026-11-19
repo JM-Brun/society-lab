@@ -6,7 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "valida
 from calculate_project_kpis import (
     build_known_ids, build_node_type_index, build_report, calculate_claim_conclusion_coverage,
     calculate_connectivity_diagnostics, calculate_source_coverage, calculate_synthesis_coverage,
-    inspect_relations, load_project_data,
+    inspect_relations, load_project_data, render_markdown,
 )
 
 class ProjectKpiTests(unittest.TestCase):
@@ -189,6 +189,9 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(syntheses["status"], "computed")
         self.assertEqual(syntheses["unknown_count"], 0)
         self.assertEqual(syntheses["issues"], {})
+        markdown = render_markdown(report)
+        self.assertIn("Connectivité descriptive par type de nœud", markdown)
+        self.assertIn("aucun degré minimal", markdown)
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
 
