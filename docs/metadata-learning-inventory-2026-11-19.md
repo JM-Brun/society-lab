@@ -293,6 +293,17 @@ LLM Lab possède déjà les composants suivants :
 
 La *Project Intelligence Layer* est décrite comme une architecture proposée, sans composant runtime unique déjà livré. Les lecteurs, validateurs et générateurs spécialisés existent néanmoins déjà. La prochaine étape n'est donc pas de créer une seconde architecture, mais de faire converger les outils existants vers une API de requêtes testée, selon l'issue #1233 et les priorités déjà ouvertes dans LLM Lab.
 
+### 9.4.1 Implémentations en cours dans LLM Lab
+
+Deux PR ouvertes dans `JM-Brun/llm-lab` matérialisent déjà une partie des besoins décrits ici :
+
+- [PR #1380 — deterministic project metadata query index](https://github.com/JM-Brun/llm-lab/pull/1380) ajoute `site/tools/project_index.py` et ses tests. Le modèle en mémoire indexe les tags, les associations explicites page–concept dans les deux sens, les relations de page par famille et direction, les domaines et les appartenances aux étapes Understand. Il expose des requêtes et des comptages avec des unités distinctes.
+- [PR #1379 — generated Understand/Build revision coverage inventory](https://github.com/JM-Brun/llm-lab/pull/1379) ajoute `site/tools/audit_revision_coverage.py`, ses tests et son intégration CI. Il inventorie les pages publiées des destinations Understand/Build, conserve les appartenances Understand core/optional, signale les pages Understand hors parcours, associe les concepts et les ressources d'implémentation et laisse explicitement la couverture des synthèses à `not_assessed`.
+
+Au moment de cet audit, les deux PR sont ouvertes et leurs tests / contrôles qualité sont encore en cours ; aucune réussite n'est revendiquée. Elles sont toutefois les implémentations à suivre et à réutiliser. Ne pas créer dans Society Lab un second index de pages ou un second inventaire de fiches de révision.
+
+La suite logique, après validation et fusion de ces PR, est de recalculer les inventaires sur le HEAD courant de LLM Lab, de traiter les associations de pages publiées absentes du manifeste de rendu et de poursuivre l'issue [#1233](https://github.com/JM-Brun/llm-lab/issues/1233) pour les passerelles inter-graphes et les chemins de preuve.
+
 ### 9.5 Frontière inter-dépôts à préserver
 
 - `llm-lab` reste propriétaire des pages, routes, métadonnées pédagogiques, concepts LLM, ressources d'implémentation et graphes associés.
