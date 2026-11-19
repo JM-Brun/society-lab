@@ -391,7 +391,7 @@ Deux études microéconomiques françaises apportent un signal défavorable cibl
 
 **Limite essentielle de lecture :** Kramarz & Philippon n'est pas une estimation de l'effet du SMIC brut isolé. Les cotisations patronales au niveau du minimum diminuent fortement dans la période, notamment à partir de 1995 ; le traitement pertinent est le coût total du travail. Les hausses du minimum et les allègements se combinent donc.
 
-**Bilan provisoire :** signal négatif modéré sur la rétention d'emploi des salariés directement rattrapés dans les périodes étudiées ; preuve insuffisante d'un effet important sur l'emploi agrégé et sur les embauches. Les résultats ne sont pas directement transposables à 2021–2024. Audits détaillés : [Abowd, Kramarz & Margolis (1999)](../dossiers/smic-abowd-kramarz-margolis-1999-transitions-emploi.md) ; [Kramarz & Philippon (2001)](../dossiers/smic-kramarz-philippon-2001-cout-travail-emploi.md).
+**Bilan provisoire :** signal négatif modéré sur la rétention d'emploi des salariés directement rattrapés dans les périodes étudiées ; preuve insuffisante d'un effet important sur l'emploi agrégé et sur les embauches. Les résultats ne sont pas directement transposables à 2021–2024. Audits détaillés : [Abowd, Kramarz & Margolis (1999)](../dossiers/smic-abowd-kramarz-margolis-1999-transitions-emploi.md) ; [Kramarz & Philippon (2001), synthèse](../dossiers/smic-kramarz-philippon-2001-cout-travail-emploi.md) ; [Kramarz & Philippon (2001), audit détaillé de la version IZA](../dossiers/smic-kramarz-philippon-payroll-tax-2001.md).
 
 ## 22. Épisode de juin 1981 : résultat sectoriel sur l'emploi des jeunes
 
@@ -419,7 +419,7 @@ Le résultat est particulièrement défavorable dans certaines spécifications p
 
 **Précautions majeures :** la mesure salariale repose sur des tranches de salaire mensuel et des heures déclarées ; l'identification compare des groupes proches sans test moderne de pré-tendances ; la période est ancienne ; l'estimation inconditionnelle suppose que les hausses du SMIC ne modifient pas les entrées en emploi, marge non identifiée directement dans le cas français. Enfin, cette étude et Abowd, Kramarz & Margolis (1999) reposent sur des données françaises très proches et ne doivent pas être comptées comme deux réplications indépendantes.
 
-**Bilan :** signal négatif crédible mais historiquement circonscrit pour la rétention des jeunes directement exposés ; preuve beaucoup plus faible d'un effet massif sur l'emploi total des jeunes ou d'une transposition à la période actuelle. Audit détaillé : [Abowd et al. (1997/2000)](../dossiers/smic-abowd-kramarz-lemieux-margolis-1997-emploi-jeunes.md).
+**Bilan :** signal négatif crédible mais historiquement circonscrit pour la rétention des jeunes directement exposés ; preuve beaucoup plus faible d'un effet massif sur l'emploi total des jeunes ou d'une transposition à la période actuelle. Synthèse de la version de travail : [Abowd et al. (1997/2000)](../dossiers/smic-abowd-kramarz-lemieux-margolis-1997-emploi-jeunes.md) ; [audit détaillé du chapitre publié en 2000](../dossiers/smic-youth-abowd-kramarz-lemieux-margolis-2000.md).
 
 
 ## 25. Rigidité et transmission salariale par les minima (Gautier, Roux & Suarez Castillo, 2019)
