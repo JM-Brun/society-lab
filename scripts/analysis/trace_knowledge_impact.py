@@ -38,6 +38,11 @@ REFERENCE_FIELDS = {
         "DATASET": ("dataset_ids",),
     },
     "HYPOTHESIS": {"STUDY": ("supporting_study_ids", "challenging_study_ids")},
+    "MECHANISM": {
+        "STUDY": ("supporting_study_ids", "challenging_study_ids"),
+        "CLAIM": ("claim_ids",),
+    },
+    "FORECAST": {"CLAIM": ("claim_ids",)},
     "DOSSIER": {
         "CLAIM": ("claim_ids",),
         "STUDY": ("study_ids",),
@@ -136,7 +141,18 @@ def build_impact_report(
         find_dependents(registries, impacted, "HYPOTHESIS", "STUDY", ("STUDY",))
     )
 
-    # Level 3: dossiers explicitly referencing affected knowledge objects.
+    # Level 3: explanatory mechanisms and forecasts explicitly tied to
+    # affected studies or claims. Their own typed references are not inferred
+    # from graph edges or domain co-membership.
+    for target_kind in ("STUDY", "CLAIM"):
+        impacted.setdefault("MECHANISM", set()).update(
+            find_dependents(registries, impacted, "MECHANISM", target_kind, (target_kind,))
+        )
+    impacted.setdefault("FORECAST", set()).update(
+        find_dependents(registries, impacted, "FORECAST", "CLAIM", ("CLAIM",))
+    )
+
+    # Level 4: dossiers explicitly referencing affected knowledge objects.
     for kind in ("CLAIM", "STUDY", "HYPOTHESIS"):
         impacted.setdefault("DOSSIER", set()).update(
             find_dependents(registries, impacted, "DOSSIER", kind, (kind,))
@@ -215,6 +231,8 @@ def render_markdown(report: dict[str, Any]) -> str:
         "DATASET": "Jeux de données directement liés",
         "CLAIM": "Claims concernés",
         "HYPOTHESIS": "Hypothèses concernées",
+        "MECHANISM": "Mécanismes explicatifs à revoir",
+        "FORECAST": "Prévisions dépendantes à réexaminer",
         "DOSSIER": "Dossiers à revoir",
     }
     for kind, label in labels.items():
