@@ -5,8 +5,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
     build_known_ids, build_node_type_index, build_report, calculate_claim_conclusion_coverage,
-    calculate_source_coverage, calculate_synthesis_coverage, inspect_relations,
-    load_project_data,
+    calculate_connectivity_diagnostics, calculate_source_coverage, calculate_synthesis_coverage,
+    inspect_relations, load_project_data, render_markdown,
 )
 
 class ProjectKpiTests(unittest.TestCase):
@@ -146,6 +146,41 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["numerator"], 0)
         self.assertEqual(result["uncovered_dossier_ids"], ["DOSSIER-A"])
 
+    def test_connectivity_diagnostics_count_invalid_edges_once(self):
+        invalid = {**self.edge, "justification": ""}
+        result = calculate_connectivity_diagnostics(
+            [invalid], {"DOSSIER-A", "SOURCE-A"},
+            {"DOSSIER-A": "DOSSIER", "SOURCE-A": "SOURCE"},
+            [{"id": "REL-INCLUDES", "from": ["DOSSIER"], "to": ["SOURCE"]}],
+        )
+        self.assertEqual(result["excluded_invalid_relation_count"], 1)
+        self.assertEqual(result["integrity_diagnostics"]["empty_justifications"], ["REL-EDGE-A"])
+
+    def test_connectivity_diagnostics_are_descriptive_and_do_not_apply_thresholds(self):
+        nodes = {
+            "DOSSIER-A": "DOSSIER", "SOURCE-A": "SOURCE",
+            "SOURCE-ISOLATED": "SOURCE", "CLAIM-A": "CLAIM",
+        }
+        definitions = [
+            {"id": "REL-INCLUDES", "from": ["DOSSIER"], "to": ["SOURCE"]},
+            {"id": "REL-SUPPORTS", "from": ["SOURCE"], "to": ["CLAIM"]},
+        ]
+        relations = [
+            {**self.edge, "type": "REL-INCLUDES"},
+            {"id": "REL-EDGE-B", "type": "REL-SUPPORTS", "from": "SOURCE-A",
+             "to": "CLAIM-A", "justification": "La source étaye le claim."},
+        ]
+        result = calculate_connectivity_diagnostics(
+            relations, set(nodes), nodes, definitions
+        )
+        self.assertEqual(result["node_types"]["SOURCE"]["node_count"], 2)
+        self.assertEqual(result["node_types"]["SOURCE"]["nodes_with_relations"], 1)
+        self.assertEqual(result["node_types"]["SOURCE"]["isolated_node_ids"], ["SOURCE-ISOLATED"])
+        self.assertEqual(result["valid_relation_count_by_type"],
+                         {"REL-INCLUDES": 1, "REL-SUPPORTS": 1})
+        self.assertIn("aucun degré minimal", result["interpretation"])
+        self.assertEqual(result["excluded_invalid_relation_count"], 0)
+
     def test_current_repository_report_is_consistent_and_fully_resolved(self):
         report = build_report(load_project_data())
         metrics = {metric["metric_id"]: metric for metric in report["metrics"]}
@@ -164,6 +199,9 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(syntheses["status"], "computed")
         self.assertEqual(syntheses["unknown_count"], 0)
         self.assertEqual(syntheses["issues"], {})
+        markdown = render_markdown(report)
+        self.assertIn("Connectivité descriptive par type de nœud", markdown)
+        self.assertIn("aucun degré minimal", markdown)
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
 
