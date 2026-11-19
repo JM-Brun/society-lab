@@ -103,7 +103,7 @@ L'étude ne prouve pas que les hausses contemporaines du SMIC ont le même effet
 - Version de travail IZA DP 219 (novembre 2000) : https://docs.iza.org/dp219.pdf.
 - Version publiée à citer bibliographiquement : *Journal of Public Economics*, 82(1), 2001, p. 115–146, DOI https://doi.org/10.1016/S0047-2727(00)00137-7. La notice éditeur confirme la publication et le résumé, mais le texte intégral éditeur n'a pas été comparé ligne à ligne aux versions de travail dans cet audit.
 
-## 10. Vérification de la filiation documentaire
+## 9. Vérification de la filiation documentaire
 
 Les versions IZA DP 219 (novembre 2000) et OCFEB Research Memorandum 0006 (présenté en avril 2000) portent le même titre et les mêmes auteurs. Les tableaux de résultats centraux vérifiés dans les deux textes concordent notamment sur :
 - tableau 1 : coefficients différentiels −8,31 (SE 3,11) pour 1990–1992 et 0,73 (SE 1,64) pour 1995 ;
