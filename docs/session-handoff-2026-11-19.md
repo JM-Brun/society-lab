@@ -201,3 +201,86 @@ La PR #162 complète le calculateur KPI afin qu'il vérifie, en plus de l'existe
 **État au moment de cette note :** PR #162 ouverte ; une première CI a réussi (118 tests, validation des registres, rapport KPI et secret scan). Un test supplémentaire de collision a ensuite été ajouté ; la CI du dernier commit doit être vérifiée avant revue/fusion.
 
 **Suite :** vérifier la CI du dernier commit de #162, relire le diff, puis faire relire la PR avant fusion. Après intégration, conserver les deux sources contextuelles sans relation et ne pas introduire de ratio global de connectivité sans définir au préalable les populations éligibles.
+
+
+## Reprise actualisée — 19 novembre 2026, après intégration des PR #170, #171 et #173
+
+### État GitHub revérifié
+
+Le relevé précédent n'est plus actuel. Les PR ont évolué après le contrôle initial :
+
+- PR #170 — tests d'impact Parcoursup : **fusionnée** le 19 novembre 2026 à 13:23:12 UTC.
+- PR #171 — liens croisés vers les audits détaillés SMIC : **fusionnée** à 13:23:25 UTC.
+- PR #173 — correction de filiation documentaire Kramarz–Philippon : **fusionnée** à 13:24:09 UTC.
+- PR #172 — première branche ADEME/traçage : fermée comme **supersédée**, non fusionnée. Sa base était devenue divergente après les trois fusions ; ne pas compter son CI historique comme validation du code repris.
+- Inventaire GitHub effectué après ces changements : **24 issues ouvertes** et une PR ouverte au moment du relevé (la nouvelle PR #174).
+
+La fusion de #170 a entraîné la clôture de l'issue #120. Cette clôture ne signifie pas que tous les objectifs historiques de #120 sont réalisés : les parcours Parcoursup sont désormais couverts par tests d'intégration et la suite ADEME est reprise dans #174, mais le journal persistant des décisions de revue, les événements de cycle de vie des sources, la mesure de couverture et la scalabilité restent à traiter dans le cadre de l'audit transversal #114. Ne pas rouvrir #120 uniquement pour conserver une liste de tâches ; rattacher les travaux résiduels à #114 et #110.
+
+### Contenu intégré à préserver
+
+**Parcoursup / traçage (#170, fusionnée)**
+
+Deux tests d'intégration couvrent les sources ministérielles et SIES de Parcoursup 2026 :
+- source ministérielle → étude → dataset → claims candidats/lycéens → dossier → synthèse ;
+- source SIES → étude → dataset → claim néo-bacheliers → dossier → synthèse.
+
+Ces tests vérifient la traçabilité documentaire existante. Ils ne prouvent pas que le CSV Parcoursup 2025 a été téléchargé, analysé ou reproduit.
+
+**Synthèse SMIC (#171, fusionnée)**
+
+La synthèse `syntheses/smic-france.md` pointe désormais vers les audits détaillés Abowd et al. (chapitre 2000) et Kramarz–Philippon (IZA DP 219). Les fiches courtes et détaillées sont conservées ; aucune preuve n'est comptée deux fois.
+
+**Filiation Kramarz–Philippon (#173, fusionnée)**
+
+Le lien CiteSeerX historique dont le fichier exact n'a pas été vérifié n'est plus présenté comme une version publiée. Le dossier distingue :
+- OCFEB Research Memorandum 0006 (version de travail, avril 2000) ;
+- IZA DP 219 (version de travail, novembre 2000) ;
+- article publié dans le *Journal of Public Economics* (82(1), 2001, p. 115–146, DOI 10.1016/S0047-2727(00)00137-7).
+
+Les tableaux 1 à 3 des deux versions de travail contrôlées concordent sur les résultats centraux. Le texte intégral éditeur n'a pas été comparé ligne à ligne ; ne pas affirmer une identité intégrale des versions. Aucune fiche n'a été supprimée.
+
+### PR #174 — reprise du traçage ADEME depuis le main courant
+
+La PR [#174](https://github.com/JM-Brun/society-lab/pull/174) reprend depuis le `main` courant les changements de traçage initialement préparés dans #172, après fermeture de #172 comme branche supersédée.
+
+Branche : `test/ademe-impact-trace-mainline`  
+Commit de tête observé à la création : `06dc097b9394078e529a7fc84b8572ea8ccf086c`.
+
+Changements :
+- test réel ADEME Saison 2 : l'arête de graphe `REL-QUANT-DOSSIER-INCLUDES-ADEME-SEASON2` est affichée comme contexte, sans être propagée en dépendance explicite de dossier/synthèse ;
+- avertissement explicite : absence de lien détecté ne prouve pas l'absence de dépendance réelle ;
+- `source_verifications` n'est lu comme référence source que pour les claims ;
+- extension aux mécanismes (`supporting_study_ids`, `challenging_study_ids`, `claim_ids`) et aux prévisions (`claim_ids`) par références typées ;
+- tests synthétiques de portée des références et de chemins mécanisme/prévision.
+
+**État de validation au moment de la rédaction :** aucune exécution CI n'était encore retournée pour le commit #174. Le contrôle de runs PR ne renvoyait aucun run. Il faut vérifier les checks du commit de tête avant toute revue ou fusion. La PR a été créée en brouillon ; aucun chiffre ni résultat d'extraction ADEME n'est revendiqué.
+
+La première version #172 avait un CI vert (122 tests) sur son ancien commit, mais ce résultat ne valide pas automatiquement la reprise #174.
+
+### État des issues à reprendre
+
+- **#110 ADEME Saison 2 — ouverte.** Le catalogue global et la documentation sont repérés, mais le premier export prioritaire n'a pas été acquis avec schéma et SHA-256. Étape suivante : identifier l'API réelle depuis sa spécification ou une réponse vérifiée ; ne pas deviner les routes Opendatasoft. Récupérer d'abord « Bilan énergie finale par secteur en 2050 », conserver l'export brut ou une procédure reproductible, métadonnées, horodatage UTC, unités, scénarios, nombre de lignes et empreinte SHA-256. Aucun calcul avant ce contrôle.
+- **#114 audit pipeline — ouverte.** Continuer l'inventaire fichiers → registres → schémas → validateurs, le journal durable des décisions de revue, les événements de cycle de vie des sources, les parcours de bout en bout et la couverture de dépendances. Ne pas dupliquer les travaux de #110.
+- **#120 — fermée automatiquement après fusion de #170.** Les tests Parcoursup sont livrés ; les tâches restantes listées dans l'ancienne issue sont réaffectées au périmètre transversal #114 et à l'ingestion ADEME #110.
+- **#2 Parcoursup — ouverte.** Les tests d'impact ne remplacent pas l'acquisition et l'analyse du CSV officiel 2025. Télécharger, manifester, hasher, contrôler le schéma et les dénominateurs avant calcul.
+- **#123, #125, #127 — ouvertes.** Les exécutions réelles de la vue backlog et du dry-run de labels restent à confirmer ; ne pas passer en mode application sans revue du rapport.
+
+### Ordre de reprise recommandé
+
+1. Vérifier les checks CI de #174 sur son commit courant ; inspecter les éventuels conflits/états GitHub et faire relire le diff. Ne pas fusionner sans revue humaine.
+2. Mettre à jour les descriptions/commentaires des issues #114 et #110 pour transférer explicitement les tâches résiduelles de #120 et le statut de #174.
+3. Poursuivre #110 par acquisition vérifiée du premier export ADEME ; si l'API n'est pas techniquement documentée ou accessible, consigner le blocage précis plutôt que supposer un endpoint.
+4. Exécuter le workflow backlog view (#127) et le dry-run de synchronisation des labels (#125), puis examiner les artefacts et comparer avec l'état GitHub courant.
+5. Sur #114/#156, reprendre l'audit des validateurs et diagnostics du graphe ; distinguer couverture documentaire, compatibilité sémantique et qualité scientifique.
+6. Sur #2, récupérer réellement le CSV Parcoursup 2025 ; les tests Parcoursup 2026 ne doivent pas être présentés comme résultats d'analyse 2025.
+7. Continuer les dossiers SMIC/TIG/Foucher en mettant à jour leurs synthèses et graphes canoniques à mesure que les preuves sont contrôlées.
+
+### Règles de statut pour les prochaines sessions
+
+- Ne pas compter une PR fermée comme intégrée : vérifier explicitement `merged=true`.
+- Ne pas réutiliser la CI d'une branche supersédée pour valider sa reprise.
+- Une issue fermée par une PR n'implique pas que toutes les tâches historiques ont été réalisées ; transférer les tâches restantes vers une issue active cohérente.
+- Une arête contextuelle du graphe ne devient pas une dépendance d'impact sans champ de référence typé.
+- Une CI verte valide les contrôles automatisés exécutés, pas l'ingestion, la qualité scientifique ou la complétude des sources.
+- Maintenir les synthèses et graphes par sujet ; ne pas créer de registre parallèle.
