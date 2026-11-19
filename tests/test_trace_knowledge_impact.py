@@ -48,6 +48,7 @@ class SourceImpactTracingTests(unittest.TestCase):
                 "id": "STUDY-A", "title": "Study A",
                 "source_verifications": [{"source_id": "SOURCE-A"}],
             }],
+            "DATASET": [],
         }
         report = build_impact_report(registries, self.graph, self.syntheses, "SOURCE-A")
 
