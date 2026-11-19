@@ -25,6 +25,11 @@ class ValidationScaleBenchmarkTests(unittest.TestCase):
         self.assertGreater(results[2]["records"], results[1]["records"])
         self.assertGreater(results[1]["edges"], results[0]["edges"])
         self.assertGreater(results[2]["edges"], results[1]["edges"])
+        for item in results:
+            self.assertGreaterEqual(item["build_ms"], 0)
+            self.assertGreater(item["validation_ms"], 0)
+            self.assertGreater(item["total_ms"], 0)
+            self.assertGreater(item["peak_memory_mb"], 0)
         print("VALIDATION_SCALE_BENCHMARK=" + json.dumps(report, ensure_ascii=False))
 
 
