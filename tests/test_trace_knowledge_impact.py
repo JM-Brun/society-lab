@@ -69,6 +69,53 @@ class SourceImpactTracingTests(unittest.TestCase):
             for item in report["syntheses"]
         ))
 
+    def test_real_parcoursup_2026_ministry_source_traces_to_dossier_and_synthesis(self):
+        from trace_knowledge_impact import ROOT, load_repository
+
+        registries, graph, syntheses = load_repository(ROOT)
+        report = build_impact_report(
+            registries, graph, syntheses,
+            "SOURCE-PARCOURSUP-BILAN-2026",
+        )
+        studies = {item["id"] for item in report["records"].get("STUDY", [])}
+        datasets = {item["id"] for item in report["records"].get("DATASET", [])}
+        claims = {item["id"] for item in report["records"].get("CLAIM", [])}
+        dossiers = {item["id"] for item in report["records"].get("DOSSIER", [])}
+
+        self.assertIn("STUDY-PARCOURSUP-ADMISSIONS-2026", studies)
+        self.assertIn("DATASET-PARCOURSUP-2026-INDICATORS", datasets)
+        self.assertIn("CLAIM-PARCOURSUP-2026-APPLICANTS", claims)
+        self.assertIn("CLAIM-PARCOURSUP-2026-LYCEENS-OFFER", claims)
+        self.assertIn("DOSSIER-PARCOURSUP-EDUCATION-EQUITY", dossiers)
+        self.assertTrue(any(
+            item["dossier_id"] == "DOSSIER-PARCOURSUP-EDUCATION-EQUITY"
+            and item["synthesis_path"] == "syntheses/parcoursup-education.md"
+            for item in report["syntheses"]
+        ))
+
+    def test_real_parcoursup_2026_sies_source_traces_through_study(self):
+        from trace_knowledge_impact import ROOT, load_repository
+
+        registries, graph, syntheses = load_repository(ROOT)
+        report = build_impact_report(
+            registries, graph, syntheses,
+            "SOURCE-SIES-PARCOURSUP-2026-ADMISSIONS",
+        )
+        studies = {item["id"] for item in report["records"].get("STUDY", [])}
+        datasets = {item["id"] for item in report["records"].get("DATASET", [])}
+        claims = {item["id"] for item in report["records"].get("CLAIM", [])}
+        dossiers = {item["id"] for item in report["records"].get("DOSSIER", [])}
+
+        self.assertIn("STUDY-PARCOURSUP-ADMISSIONS-2026", studies)
+        self.assertIn("DATASET-PARCOURSUP-2026-INDICATORS", datasets)
+        self.assertIn("CLAIM-PARCOURSUP-2026-NEW-BACHELORS-OFFER", claims)
+        self.assertIn("DOSSIER-PARCOURSUP-EDUCATION-EQUITY", dossiers)
+        self.assertTrue(any(
+            item["dossier_id"] == "DOSSIER-PARCOURSUP-EDUCATION-EQUITY"
+            and item["synthesis_path"] == "syntheses/parcoursup-education.md"
+            for item in report["syntheses"]
+        ))
+
     def test_markdown_warns_against_automatic_invalidation(self):
         report = build_impact_report(self.registries, self.graph, self.syntheses, "SOURCE-A")
         rendered = render_markdown(report)
