@@ -149,9 +149,9 @@ Les métriques suivantes restent indisponibles tant que le corpus pédagogique n
 
 Pour chacune, distinguer trois états dans les futurs rapports : `available`, `not_modelled`, `unknown`. Ne pas convertir `not_modelled` en zéro.
 
-## 5. Modèle de liaison recommandé entre corpus pédagogique et Society Lab
+## 5. Modèle de liaison entre corpus pédagogique et Society Lab
 
-Si le parcours pédagogique est hébergé ailleurs, ne pas recopier ses pages dans les registres scientifiques. Construire une couche de liaison minimale, fondée sur les identifiants et chemins canoniques déjà disponibles :
+Le corpus pédagogique a été localisé dans le dépôt public [`JM-Brun/llm-lab`](https://github.com/JM-Brun/llm-lab). Il ne faut pas recopier ses pages dans les registres scientifiques de Society Lab. Construire une couche de liaison minimale, fondée sur les identifiants et chemins canoniques déjà disponibles :
 
 1. une page pédagogique garde son identifiant et son chemin dans son dépôt d'origine ;
 2. une notion renvoie vers l'identifiant `CONCEPT-*` du registre de Society Lab ;
@@ -221,3 +221,84 @@ Le lot 0 sera terminé lorsque :
 - Inventaire de fichiers précédent : `docs/repository-file-inventory-2026-11-18.md` (instantané du 18 novembre, à ne pas confondre avec le présent arbre).
 
 **Prochaine action prioritaire :** retrouver le dépôt ou la configuration qui héberge réellement les pages Understand et Build. Tant que cette dépendance n'est pas résolue, le comptage pédagogique serait artificiel.
+
+
+## 9. Corpus pédagogique retrouvé dans LLM Lab — audit complémentaire
+
+Le dépôt pédagogique distinct est `JM-Brun/llm-lab`, branche `main`, commit audité `07fd29f92a5c96a62c725dc806e284ff6199a82e`. L'arbre contient 924 fichiers et 77 répertoires. Il comprend 233 fichiers Quarto `.qmd` sous `site/` : 110 sous `site/fr/`, 111 sous `site/en/`, 10 fragments générés sous `site/includes/` et 2 pages partagées à la racine de `site/`.
+
+Le manifeste `site/_quarto.yml` comporte **223 entrées explicites dans `project.render`** : 110 françaises, 111 anglaises et 2 pages racine. Ce nombre de pages rendues ne doit pas être confondu avec les 233 fichiers QMD présents dans l'arbre : les fragments inclus sont des ressources de génération, pas des pages autonomes du parcours.
+
+### 9.1 Understand : parcours canonique
+
+Le fichier `data/guided-route.yml` est la source canonique de la route Understand. Son instantané contient :
+
+| Mesure | Français | Anglais |
+|---|---:|---:|
+| Étapes de parcours | 9 | 9 |
+| Occurrences de pages principales dans les étapes | 21 | 21 |
+| Pages principales distinctes | 20 | 20 |
+| Occurrences de pages optionnelles | 28 | 28 |
+| Pages optionnelles distinctes | 27 | 27 |
+| Pages distinctes principales + optionnelles | 46 | 46 |
+
+La page `generation` est référencée dans deux étapes principales ; il faut donc distinguer occurrences et pages distinctes. `cross-entropy` apparaît à la fois comme page principale et comme ressource optionnelle, ce qui explique que l'union compte 46 pages et non 47.
+
+Les deux transitions typées entre étapes sont conservées séparément des appartenances aux étapes. Les liens de page `suggested_route` ne doivent pas être substitués aux appartenances canoniques du parcours.
+
+### 9.2 Build : parcours d'implémentation indépendant
+
+Les pages `site/fr/build-path.qmd` et `site/en/build-path.qmd` sont les points d'entrée du parcours Build. Leurs métadonnées hiérarchiques référencent six pages enfants :
+
+- cinq visites guidées : configuration, briques numériques, bloc Transformer, assemblage du modèle et génération ;
+- une branche distincte de préparation du corpus.
+
+Le document `docs/learning-path.md` précise que Build suit les dépendances d'implémentation et ne constitue pas la suite obligatoire d'Understand. Il faut conserver cette distinction : les cinq visites guidées ne doivent pas être comptées comme cinq étapes Understand, et la branche de préparation du corpus ne doit pas être transformée en prérequis de l'inférence.
+
+### 9.3 Concepts et associations explicites page–notion
+
+Le registre bilingue `data/concepts.yml` contient, au commit audité :
+
+| Mesure | Valeur |
+|---|---:|
+| Concepts canoniques distincts | 102 |
+| Concepts ayant au moins une association explicite à une page | 99 |
+| Concepts sans association de page | 3 |
+| Occurrences d'associations concept–page | 290 |
+| Identifiants de page distincts référencés | 84 |
+
+Les trois concepts sans association de page sont `multi-head-attention`, `causal-mask` et `softmax`. Cela constitue un diagnostic à examiner, pas une erreur automatique : une notion peut être représentée dans les explications d'une page plus générale, dans le graphe ou dans les ressources sans avoir de page autonome.
+
+Le champ `concepts[].resources` de `data/concepts.yml` contient ici des **identifiants de pages**. Il ne doit pas être confondu avec le registre distinct `data/resources.yml`, qui porte des ressources non-page (notamment des modules d'implémentation). Le système de requêtes devra exposer ces deux associations sous des catégories différentes.
+
+Quatre références de page du registre de concepts ne figurent pas dans la liste `project.render` de `site/_quarto.yml` au commit audité : les pages d'exercices FR/EN de l'apprentissage en contexte et de l'ingénierie du contexte. Les quatre fichiers existent et portent `status:published` dans leur page-map. Ce constat est un **cas de réconciliation à examiner**, pas une preuve suffisante de lien cassé : vérifier si ces pages sont volontairement exclues du rendu explicite, intégrées autrement ou si le manifeste doit être complété.
+
+### 9.4 Outils pédagogiques déjà présents
+
+LLM Lab possède déjà les composants suivants :
+
+| Composant | Source canonique / rôle |
+|---|---|
+| Identité et métadonnées de page | `site/**/*.qmd`, frontmatter et bloc `LLM-LAB-PAGE-MAP v1` |
+| Index de pages publiées | `site/tools/page_index.py` |
+| Validation des métadonnées et des relations de page | `site/tools/check_page_metadata.py` |
+| Audit topologique et candidats de revue | `site/tools/audit_page_metadata.py` |
+| Génération de la carte d'apprentissage | `site/tools/build_learning_map.py` |
+| Validation du registre des ressources non-page | `site/tools/check_resource_registry.py` |
+| Parcours Understand | `data/guided-route.yml` |
+| Parcours Build et preuves de réalisation | `docs/learning-path.md`, pages Build, code et tests |
+| Concepts et associations page–concept | `data/concepts.yml` |
+| Architecture cible de requêtes et diagnostics | `docs/project-intelligence-layer.md` |
+| Découverte inter-graphes et traçabilité | issue [#1233](https://github.com/JM-Brun/llm-lab/issues/1233), ouverte au moment de l'audit |
+
+La *Project Intelligence Layer* est décrite comme une architecture proposée, sans composant runtime unique déjà livré. Les lecteurs, validateurs et générateurs spécialisés existent néanmoins déjà. La prochaine étape n'est donc pas de créer une seconde architecture, mais de faire converger les outils existants vers une API de requêtes testée, selon l'issue #1233 et les priorités déjà ouvertes dans LLM Lab.
+
+### 9.5 Frontière inter-dépôts à préserver
+
+- `llm-lab` reste propriétaire des pages, routes, métadonnées pédagogiques, concepts LLM, ressources d'implémentation et graphes associés.
+- `society-lab` reste propriétaire des sources, études, datasets, claims, hypothèses, concepts et mécanismes sociétaux, dossiers et synthèses.
+- Les identifiants de concepts ne sont pas fusionnés par simple similarité de libellé. Une correspondance entre deux concepts doit être qualifiée (exacte, partielle, analogue, ambiguë ou absente), justifiée et versionnée.
+- Les graphes pédagogiques et scientifiques restent séparés. Les passerelles inter-dépôts sont des références ou relations d'interopérabilité explicites, pas une fusion des graphes.
+- Les outils de chaque dépôt restent exécutables indépendamment ; aucune page publique de Society Lab ne doit dépendre d'un artefact non publié de LLM Lab.
+
+Références complémentaires : [contrat inter-dépôts de Society Lab](cross-repository-contract.md), [revue de gestion des connaissances LLM Lab / Society Lab](cross-repository-knowledge-management-review.md), [architecture Project Intelligence Layer de LLM Lab](https://github.com/JM-Brun/llm-lab/blob/main/docs/project-intelligence-layer.md) et [schéma des métadonnées de page LLM Lab](https://github.com/JM-Brun/llm-lab/blob/main/docs/page-metadata-schema.md).
