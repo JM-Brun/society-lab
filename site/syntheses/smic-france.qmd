@@ -61,5 +61,5 @@ Une comparaison des options demande la même législation de référence, un hor
 ## Sources
 
 - Cottet (2024), [*Payroll Tax Reductions for Minimum Wage Workers*](https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or).
-- Direction générale du Trésor (2025), [évolution du SMIC et trajectoires salariales des travailleurs rémunérés au SMIC](https://www.tresor.economie.gouv.fr/Articles/06d82898-9d76-4539-8b29-53ba0f35e393).
+- Direction générale du Trésor (2025), [les trajectoires salariales des salariés rémunérés au voisinage du SMIC](https://www.tresor.economie.gouv.fr/Articles/2025/06/12/les-trajectoires-salariales-des-salaries-remuneres-au-voisinage-du-smic).
 - OCDE (2025), [*Perspectives de l’emploi*](https://doi.org/10.1787/82539f44-en).
