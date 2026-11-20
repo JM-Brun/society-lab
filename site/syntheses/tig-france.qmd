@@ -1,0 +1,55 @@
+---
+title: "Le travail d’intérêt général en France"
+subtitle: "Récidive, coûts et conditions d’exécution d’une peine"
+date: 2026-11-20
+description: "Les coûts administratifs et les études de récidive éclairent des questions distinctes du sous-recours au TIG."
+---
+
+::: {.synthesis-finding}
+**Provisoire · Confiance modérée sur le diagnostic général**
+
+Les délais et les difficultés d’affectation sont documentés. Leur poids dans le sous-recours au travail d’intérêt général (TIG) reste à établir. Les études sur la récidive et les estimations de coût éclairent d’autres dimensions de la peine.
+:::
+
+## Le coût administratif par mesure
+
+::: {.figure-panel}
+::: {.figure-heading}
+**TIG et détention à domicile sous surveillance électronique (DDSE), 2022**
+:::
+
+::: {.bar-chart role="list" aria-label="Coût administratif moyen par mesure en euros"}
+::: {.bar-row role="listitem"}
+[TIG]{.bar-label} [1 862 €]{.bar-value}
+[ ]{.bar-track aria-hidden="true"}[ ]{.bar-fill .bar-tig aria-hidden="true"}
+:::
+
+::: {.bar-row role="listitem"}
+[DDSE]{.bar-label} [2 788 €]{.bar-value}
+[ ]{.bar-track aria-hidden="true"}[ ]{.bar-fill .bar-ddse aria-hidden="true"}
+:::
+:::
+
+[Barres proportionnelles aux montants en euros. Source : Cour des comptes, 2025. Les estimations excluent une partie des charges des juridictions, partenaires et organismes d’accueil. Elles ne suffisent pas à calculer l’économie nette d’un TIG.]{.figure-caption}
+:::
+
+## Que montrent les études de récidive ?
+
+Dans les cohortes étudiées, les comparaisons entre TIG, sursis-TIG et courte peine ferme doivent tenir compte des différences de profil des personnes condamnées. À cinq ans, les écarts se rapprochent de zéro après ajustement sur les caractéristiques observables et ne sont pas statistiquement significatifs. Ce résultat laisse ouverte la possibilité d’écarts que l’étude ne détecte pas. À dix ans, certains indicateurs ajustés sont plus favorables au TIG, sur la base de données observationnelles.
+
+## Où se jouent les délais d’exécution ?
+
+| Étape | Information nécessaire |
+|---|---|
+| Prononcé et transmission | Date de décision et délai avant prise en charge |
+| Affectation | Disponibilité effective des postes, adéquation de la mission et accessibilité |
+| Début de la mesure | Délai après affectation et présence d’un encadrement |
+| Achèvement | Durée écoulée, interruptions et motifs éventuels |
+
+Les files d’attente et les postes recensés ne mesurent pas la même chose. Pour tester l’hypothèse d’un manque de places, il faut connaître le nombre de postes réellement disponibles, les dates et les conditions d’accès. Une mesure des flux par territoire aiderait à distinguer manque de postes, délais de transmission et difficultés de tutorat.
+
+## Sources
+
+- Cour des comptes (2025), [évaluation de deux peines alternatives à l’incarcération](https://www.ccomptes.fr/sites/default/files/2025-03/20250304-Evaluation-2-peines-alternatives-a-l-incarceration.pdf).
+- Ministère de la Justice, [Références statistiques Justice 2025, chapitre 11](https://www.justice.gouv.fr/sites/default/files/2026-01/RSJ2025%20chapitre%2011.pdf).
+- Ministère de la Justice, [indicateurs transitoires de milieu ouvert, T4 2025](https://www.justice.gouv.fr/sites/default/files/2026-04/STMO_transitoire_20260101.pdf).

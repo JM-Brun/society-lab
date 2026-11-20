@@ -1,0 +1,65 @@
+---
+title: "Augmenter le SMIC en France"
+subtitle: "Du salaire brut au revenu disponible et au coût du travail"
+date: 2026-11-20
+description: "Les effets d’une hausse du SMIC passent par les règles socio-fiscales et les réactions des entreprises."
+---
+
+::: {.synthesis-finding}
+**Provisoire · Confiance modérée sur le bilan d’ensemble**
+
+À emploi et durée du travail constants, une hausse du SMIC relève le salaire brut des personnes directement concernées. Les effets sur le revenu disponible, le coût du travail et l’emploi dépendent du montant de la hausse, des règles socio-fiscales et des réactions des entreprises.
+:::
+
+## Trois grandeurs à suivre
+
+::: {.figure-panel}
+::: {.figure-heading}
+**Comment se transmet une hausse du SMIC ?**
+:::
+
+::: {.concept-grid .economy-steps}
+::: {.concept-step}
+**Salaire brut**
+
+Le minimum légal augmente pour les emplois concernés.
+:::
+
+::: {.concept-step}
+**Revenu disponible**
+
+Le résultat dépend des cotisations, des prestations, des impôts et des autres revenus du ménage.
+:::
+
+::: {.concept-step}
+**Coût employeur**
+
+Le résultat dépend du salaire, des cotisations patronales et des allègements applicables.
+:::
+:::
+
+[Les deux derniers canaux partent du salaire brut. Le schéma décrit les mécanismes, sans chiffrer leur ampleur.]{.figure-caption}
+:::
+
+## Ce que les études permettent de comparer
+
+Une étude empirique peut isoler l’effet d’une réforme précise dans le contexte où elle s’est produite. Cottet étudie des baisses de cotisations patronales à partir de réformes historiques. Cette estimation concerne le coût relatif de certains emplois et les entreprises exposées à ces réformes. Une simulation de hausse du SMIC repose, elle, sur des hypothèses explicites concernant les réactions des ménages et des entreprises.
+
+Les entreprises peuvent ajuster leurs prix, leurs marges, le nombre d’heures ou les embauches. La réponse peut varier entre une entreprise capable de relever ses prix et une entreprise dont les marges sont déjà faibles. Les études disponibles portent sur des périodes, des secteurs et des réformes différents. Elles ne permettent pas de fixer une valeur unique pour l’effet d’une hausse récente sur l’emploi en France.
+
+## Ce qui change selon l’instrument
+
+| Instrument | Effet direct recherché | Ce qu’il reste à mesurer |
+|---|---|---|
+| Revalorisation du SMIC | Relever le plancher salarial légal | Revenu disponible, emploi, durée du travail, prix |
+| Réforme des allègements | Modifier le coût employeur autour du SMIC | Coût budgétaire, embauches, effets de seuil |
+| Complément de revenu | Augmenter le revenu disponible des ménages éligibles | Ciblage, recours et interactions avec les prestations |
+| Relèvement des minima de branche | Modifier les premiers niveaux des grilles salariales | Diffusion au-delà du premier échelon et effets par secteur |
+
+Une comparaison des options demande la même législation de référence, un horizon commun et des résultats ventilés par type de ménage et d’entreprise. Le poids accordé au pouvoir d’achat, à l’emploi et au coût public relève ensuite d’un arbitrage explicite.
+
+## Sources
+
+- Cottet (2024), [*Payroll Tax Reductions for Minimum Wage Workers*](https://www.ifo.de/en/cesifo/publications/2024/working-paper/payroll-tax-reductions-minimum-wage-workers-relative-labor-cost-or).
+- Direction générale du Trésor (2025), [les trajectoires salariales des salariés rémunérés au voisinage du SMIC](https://www.tresor.economie.gouv.fr/Articles/2025/06/12/les-trajectoires-salariales-des-salaries-remuneres-au-voisinage-du-smic).
+- OCDE (2025), [*Perspectives de l’emploi*](https://doi.org/10.1787/82539f44-en).

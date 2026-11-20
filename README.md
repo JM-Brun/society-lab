@@ -65,6 +65,8 @@ Les domaines sont définis dans [la taxonomie](knowledge/TAXONOMY.yml), les tags
 
 ## Synthèses des sujets
 
+[Site de lecture des synthèses](https://jm-brun.github.io/society-lab/) · [Fonctionnement de la publication Quarto](docs/architecture.md#publication-quarto)
+
 - [Comparaison qualitative des scénarios de transition](syntheses/comparaison-scenarios-transition-2026.md)
 - [Comparaison quantitative des trajectoires énergétiques](syntheses/comparaison-quantitative-scenarios-energie-2026.md)
 
