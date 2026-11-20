@@ -310,3 +310,19 @@ Sur `42d8b6fb6383724fa482ce07e267065efa3b3342`, les huit derniers écarts SMIC s
 | [Audit du crédit d'embauche](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md) | `HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS` | Retirer la référence de la fiche. Le §8 circonscrit le résultat à l'aide ciblée aux nouvelles embauches. L'étude reste reliée au dossier d'audit et à la matrice, où l'hypothèse sur les revalorisations du SMIC est examinée. |
 
 Le rapport passe de 29 à 21 écarts et ne signale plus d'écart dans les dossiers SMIC. Les trois hypothèses ajoutées au graphe sont des objets discutés dans le dossier historique. Les cinq références retirées concernent les listes des fiches ; leurs objets canoniques, les textes et les liens de recherche cités restent disponibles. Sur les 21 écarts du dépôt, deux sont déjà qualifiés dans les lots TIG et énergie et 19 restent à examiner.
+
+## 13. Arbitrage des dossiers sur le cordon sanitaire — 20 novembre 2026
+
+Sur `9ad3ff7840e961fca972efec4b0627daa9219344`, les deux dossiers concentrent les 19 paires encore à examiner. Le lot rattache les objets déjà traités, avec 11 arêtes `REL-INCLUDES` et huit références d'étude ajoutées aux fiches.
+
+| Dossier et passages | Discordances traitées | Décision |
+|---|---|---|
+| [Dossier général](../dossiers/debat-barrage-cordon-sanitaire.md), §§12.1–12.4 | Études de Biard, Wagner et Meyer, Krause et ses coauteurs, de Leeuw et Bourne et les quatre affirmations correspondantes | Huit arêtes d'inclusion pour les études et résultats discutés. Les objets distinguent accès institutionnel, évolution des programmes, accommodation électorale et soutien déclaré à une interdiction. |
+| Dossier général, §§17.3–17.4 | Affirmations sur les interviews non contestées et la normalisation discursive dans la presse néerlandaise | Deux arêtes d'inclusion. Le premier objet relève d'expériences de court terme et le second d'une analyse du discours. |
+| Dossier général, mise à jour sur les effets affectifs du front commun | Hypothèse de démarcation sans stigmatisation des électeurs | Une arête d'inclusion, justifiée par la discussion du risque de débordement. L'hypothèse reste proposée. |
+| Dossier général, §§18.1–18.3 | Porter et Wood, Wood et ses coauteurs, méta-analyse sur la réactance, Horta Ribeiro et ses coauteurs, Klinenberg | Ajouter cinq études à la fiche. Les passages traitent des corrections, de la réactance et de la déplateformisation avec leurs indicateurs propres. |
+| [Dossier belge](../dossiers/cordon-sanitaire-belgique-efficacite.md), §§3, 5.1 et 5.3 | De Jonge, Ye et ses coauteurs, Ecker et ses coauteurs | Ajouter trois études à la fiche avec les identifiants des arêtes existantes. La comparaison qualitative belge garde son périmètre et les deux études cognitives restent distinctes d'une évaluation du cordon. |
+
+Le dossier belge reprend l'identifiant `STUDY-DE-JONGE-2021-BELGIUM-CORDON` déjà employé dans ses relations. Le rapprochement des deux fiches De Jonge qui renvoient au même DOI relève de l'audit d'ingestion. Le lot conserve les identifiants existants et les statuts probatoires.
+
+Le rapport passe de 21 à deux écarts. Les deux paires encore signalées correspondent aux choix déjà documentés dans les sections 8 et 9 (ancienne ventilation TIG et lien thématique sur le périmètre énergétique). L'inventaire des écarts fiches–graphe est ainsi entièrement arbitré pour les règles actuelles. Les autres volets de l'issue #114, dont le contrat géographique et l'élargissement des mesures de performance, restent distincts.
