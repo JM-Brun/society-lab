@@ -7,16 +7,22 @@ import argparse
 import hashlib
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 from string import ascii_lowercase, ascii_uppercase
+import sys
 from urllib.parse import unquote, urlsplit
 
 import yaml
-from jsonschema import Draft202012Validator
+from jsonschema.exceptions import SchemaError
 
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "scripts" / "validate"))
+
+from validate_registry import load_batch_validator, validate_batch_manifest  # noqa: E402
+
+
 DOI_PATTERN = re.compile(r"10\.[0-9]{4,}/\S+")
 DOI_RESOLVERS = {"doi.org", "dx.doi.org"}
 ASCII_LOWERCASE = str.maketrans(ascii_uppercase, ascii_lowercase)
@@ -61,7 +67,12 @@ def build_report(sources: list[dict], batch: dict | None = None) -> dict:
 
     report = {"sources_checked": len(sources), "registry_collisions": []}
     if batch is not None:
-        report.update(batch_id=batch["batch_id"], candidates_checked=len(candidates), batch_matches=[])
+        report.update(
+            batch_id=batch["batch_id"],
+            candidates_checked=len(candidates),
+            decision_counts=dict(Counter(candidate["decision"] for candidate in candidates)),
+            batch_matches=[],
+        )
     for (kind, value), members in sorted(groups.items()):
         source_ids = sorted(members["source_ids"])
         candidate_ids = sorted(members["candidate_ids"])
@@ -73,19 +84,19 @@ def build_report(sources: list[dict], batch: dict | None = None) -> dict:
     return report
 
 
-def load_batch(path: Path, artifacts: list[list[str]]) -> dict:
+def load_batch(path: Path, artifacts: list[list[str]], source_ids: set[str]) -> dict:
     batch = yaml.safe_load(path.read_text(encoding="utf-8"))
-    schema_path = ROOT / "schemas" / "ingestion-batch.schema.json"
-    schema = json.loads(schema_path.read_text(encoding="utf-8"))
-    validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
-    error = next(validator.iter_errors(batch), None)
+    error = next(load_batch_validator().iter_errors(batch), None)
     if error is not None:
         location = ".".join(map(str, error.absolute_path)) or "manifest"
         raise ValueError(f"invalid batch field {location} ({error.validator})")
 
+    errors = []
+    validate_batch_manifest(batch, str(path), source_ids, errors)
+    if errors:
+        raise ValueError("\n".join(errors))
+
     candidates = {record["candidate_id"]: record for record in batch["candidates"]}
-    if len(candidates) != len(batch["candidates"]):
-        raise ValueError("candidate identifiers must be unique within the batch")
     seen = set()
     for candidate_id, filename in artifacts:
         if candidate_id not in candidates or candidate_id in seen:
@@ -115,9 +126,10 @@ def main() -> None:
     try:
         registry = ROOT / "sources" / "registry.yml"
         sources = yaml.safe_load(registry.read_text(encoding="utf-8"))["sources"]
-        batch = load_batch(args.batch, args.artifact) if args.batch is not None else None
+        source_ids = {source["id"] for source in sources}
+        batch = load_batch(args.batch, args.artifact, source_ids) if args.batch is not None else None
         report = build_report(sources, batch)
-    except (OSError, KeyError, TypeError, ValueError) as exc:
+    except (OSError, KeyError, TypeError, ValueError, SchemaError) as exc:
         parser.error(str(exc))
     except yaml.YAMLError:
         parser.error("invalid YAML in the registry or batch manifest")

@@ -232,16 +232,20 @@ def validate_batch_manifest(batch, label, source_ids, errors):
             current = duplicate_links[current]
 
 
-def validate_batch_manifests(source_ids, errors):
-    """Validate every committed source-ingestion batch manifest, if any exist."""
+def load_batch_validator():
     import json
 
-    directory = ROOT / "sources" / "batches"
     schema_path = ROOT / "schemas" / "ingestion-batch.schema.json"
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    Draft202012Validator.check_schema(schema)
+    return Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+
+
+def validate_batch_manifests(source_ids, errors):
+    """Validate every committed source-ingestion batch manifest, if any exist."""
+    directory = ROOT / "sources" / "batches"
     try:
-        schema = json.loads(schema_path.read_text(encoding="utf-8"))
-        Draft202012Validator.check_schema(schema)
-        validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+        validator = load_batch_validator()
     except Exception as exc:
         errors.append(f"Invalid schema schemas/ingestion-batch.schema.json: {exc}")
         return
@@ -259,14 +263,16 @@ def validate_batch_manifests(source_ids, errors):
             errors.append(f"{label}: batch manifest must be a mapping")
             continue
         batch_id = batch.get("batch_id")
-        if batch_id:
+        if isinstance(batch_id, str) and batch_id:
             if batch_id in seen_batch_ids:
                 errors.append(f"{label}: duplicate batch_id {batch_id}")
             seen_batch_ids.add(batch_id)
-        for error in validator.iter_errors(batch):
+        schema_errors = list(validator.iter_errors(batch))
+        for error in schema_errors:
             location = ".".join(str(part) for part in error.absolute_path)
             errors.append(f"{label} {location}: {error.message}")
-        validate_batch_manifest(batch, label, source_ids, errors)
+        if not schema_errors:
+            validate_batch_manifest(batch, label, source_ids, errors)
 
 def main():
     errors = []
