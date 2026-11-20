@@ -64,6 +64,15 @@ Ces valeurs ne sont donc ni toutes des territoires, ni toutes des périmètres a
 
 ## 4. Relations des fiches et arêtes du graphe
 
+Le [rapport de rapprochement](../scripts/audit/report_graph_reconciliation.py) recalcule les écarts ci-dessous à partir de révisions Git. Il compare `study_ids`, `claim_ids`, `hypothesis_ids` et `concept_ids` des dossiers avec `REL-INCLUDES`, puis `dataset_ids` des études avec `REL-USES`.
+
+```bash
+python scripts/audit/report_graph_reconciliation.py --format json
+python scripts/audit/report_graph_reconciliation.py --revision HEAD --base origin/main
+```
+
+Le rapport fournit les paires propres à chaque côté et, avec `--base`, les paires apparues ou disparues de chaque catégorie. La disparition d'un écart peut venir d'un alignement des représentations ou du retrait d'une référence. Le workflow de validation affiche le résumé à titre indicatif et publie le JSON complet dans l'artefact `graph-reconciliation`. Sur une PR, il compare le commit de fusion testé avec la révision de base indiquée par GitHub. Les modifications locales doivent être commitées pour figurer dans le rapport.
+
 Le graphe contient **684 arêtes** : ABOUT 168, SUPPORTS 87, INCLUDES 326, USES 6, GEOGRAPHICALLY-WITHIN 7, CHILD-OF 8, SUMMARIZED-BY 8, TRANSCRIBES 21, SUMMARIZES 1, QUALIFIES 8 et CITES 44.
 
 Le rapprochement des références explicites des dossiers avec les arêtes `REL-INCLUDES` donne :

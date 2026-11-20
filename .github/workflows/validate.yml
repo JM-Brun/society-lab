@@ -39,6 +39,28 @@ jobs:
       - name: Report project KPIs (read-only)
         run: python scripts/validate/calculate_project_kpis.py --format markdown
 
+      - name: Report registry and graph differences (advisory)
+        id: graph-reconciliation
+        continue-on-error: true
+        env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+        run: |
+          args=(--revision "$GITHUB_SHA" --json-output "$RUNNER_TEMP/graph-reconciliation.json")
+          if [[ -n "$BASE_REVISION" ]]; then
+            args+=(--base "$BASE_REVISION")
+          fi
+          python scripts/audit/report_graph_reconciliation.py "${args[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
+        shell: bash
+
+      - name: Upload registry and graph differences
+        if: steps.graph-reconciliation.outcome == 'success'
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: graph-reconciliation
+          path: ${{ runner.temp }}/graph-reconciliation.json
+          if-no-files-found: error
+
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
 
