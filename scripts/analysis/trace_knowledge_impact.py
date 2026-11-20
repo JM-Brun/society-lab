@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
 from typing import Any
 
@@ -271,33 +272,137 @@ def render_markdown(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def load_repository(root: Path) -> tuple[dict[str, list[dict[str, Any]]], list[dict[str, Any]], list[dict[str, Any]]]:
+def git(root: Path, *args: str) -> str:
+    result = subprocess.run(
+        ["git", *args], cwd=root, check=True, capture_output=True, encoding="utf-8",
+    )
+    return result.stdout
+
+
+def load_git_yaml(root: Path, revision: str, relative: str) -> dict[str, Any]:
+    return yaml.safe_load(git(root, "show", f"{revision}:{relative}")) or {}
+
+
+def load_repository(
+    root: Path, *, revision: str | None = None,
+) -> tuple[dict[str, list[dict[str, Any]]], list[dict[str, Any]], list[dict[str, Any]]]:
+    paths = [relative for relative, _ in REGISTRY_FILES.values()]
+    if revision is None:
+        files = {relative for relative in paths if (root / relative).exists()}
+    else:
+        files = set(git(root, "ls-tree", "-r", "--name-only", revision, "--", *paths).splitlines())
+
+    def read(relative: str) -> dict[str, Any]:
+        if revision is None:
+            return load_yaml(root / relative)
+        return load_git_yaml(root, revision, relative)
+
     registries = {}
     for kind, (relative, collection) in REGISTRY_FILES.items():
-        path = root / relative
-        if path.exists():
-            registries[kind] = load_yaml(path).get(collection, [])
-        else:
-            registries[kind] = []
-    graph = load_yaml(root / "knowledge/graph.yml").get("relations", [])
-    synthesis = load_yaml(root / "syntheses/registry.yml").get("dossiers", [])
+        registries[kind] = read(relative).get(collection, []) if relative in files else []
+    graph = read("knowledge/graph.yml").get("relations", [])
+    synthesis = read("syntheses/registry.yml").get("dossiers", [])
     return registries, graph, synthesis
+
+
+def compare_sources(before: list[dict], after: list[dict]) -> list[dict]:
+    previous = index_records({"SOURCE": before})["SOURCE"]
+    current = index_records({"SOURCE": after})["SOURCE"]
+    if len(previous) != len(before) or len(current) != len(after):
+        raise ValueError("Source records must have distinct string identifiers in both revisions")
+
+    changes = []
+    missing = object()
+    for source_id in sorted(previous.keys() | current.keys()):
+        if source_id not in previous:
+            changes.append({"source_id": source_id, "change": "added"})
+        elif source_id not in current:
+            changes.append({"source_id": source_id, "change": "removed"})
+        else:
+            old, new = previous[source_id], current[source_id]
+            fields = [key for key in sorted(old.keys() | new.keys()) if old.get(key, missing) != new.get(key, missing)]
+            if fields:
+                changes.append({"source_id": source_id, "change": "modified", "changed_fields": fields})
+    return changes
+
+
+def build_git_impact_report(root: Path, base: str, revision: str) -> dict:
+    before_ref, after_ref = (
+        git(root, "rev-parse", "--verify", "--end-of-options", f"{ref}^{{commit}}").strip()
+        for ref in (base, revision)
+    )
+    path, collection = REGISTRY_FILES["SOURCE"]
+    before = load_git_yaml(root, before_ref, path)[collection]
+    after = load_git_yaml(root, after_ref, path)[collection]
+    changes = compare_sources(before, after)
+    for label, ref, absent in (("before", before_ref, "added"), ("after", after_ref, "removed")):
+        relevant = [entry for entry in changes if entry["change"] != absent]
+        if relevant:
+            snapshot = load_repository(root, revision=ref)
+            for entry in relevant:
+                entry[f"impact_{label}"] = build_impact_report(*snapshot, entry["source_id"])
+    return {"base_revision": before_ref, "revision": after_ref, "sources": changes}
+
+
+def impact_counts(impact: dict | None) -> str:
+    if impact is None:
+        return "—"
+    records = sum(len(rows) for kind, rows in impact["records"].items() if kind != "SOURCE")
+    syntheses = len({row["synthesis_id"] for row in impact["syntheses"]})
+    return f"{records} / {syntheses}"
+
+
+def render_git_markdown(report: dict) -> str:
+    changes = report["sources"]
+    lines = [
+        "## Impact des modifications de sources", "",
+        f"Comparaison de `{report['base_revision']}` à `{report['revision']}`.",
+        f"**Fiches sources ajoutées, retirées ou modifiées** · {len(changes)}", "",
+    ]
+    if changes:
+        lines.extend([
+            "Les nombres indiquent les objets liés et les synthèses distinctes à examiner par source.", "",
+            "| Source | Changement | Champs modifiés | Objets / synthèses avant | Objets / synthèses après |",
+            "|---|---|---|---:|---:|",
+        ])
+        labels = {"added": "Ajoutée", "removed": "Retirée", "modified": "Modifiée"}
+        for entry in changes[:30]:
+            fields = ", ".join(f"`{field}`" for field in entry.get("changed_fields", [])) or "—"
+            lines.append(
+                f"| `{entry['source_id']}` | {labels[entry['change']]} | {fields} | "
+                f"{impact_counts(entry.get('impact_before'))} | {impact_counts(entry.get('impact_after'))} |"
+            )
+        if len(changes) > 30:
+            lines.extend(["", "Le résumé affiche les 30 premières sources. Le JSON contient la liste complète."])
+    return "\n".join(lines)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source-id", required=True, help="Canonical SOURCE identifier")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--source-id", help="Canonical SOURCE identifier in the working tree")
+    mode.add_argument("--base", help="Base Git revision for source change detection")
+    parser.add_argument("--revision", help="Compared Git revision (default in diff mode: HEAD)")
     parser.add_argument("--format", choices=("markdown", "json"), default="markdown")
+    parser.add_argument("--json-output", type=Path, help="Also write the JSON report to this path")
     args = parser.parse_args()
-    registries, graph, syntheses = load_repository(ROOT)
+    if args.revision is not None and args.base is None:
+        parser.error("--revision requires --base")
     try:
-        report = build_impact_report(registries, graph, syntheses, args.source_id)
-    except ValueError as exc:
+        if args.base is None:
+            report = build_impact_report(*load_repository(ROOT), args.source_id)
+            render = render_markdown
+        else:
+            report = build_git_impact_report(ROOT, args.base, args.revision or "HEAD")
+            render = render_git_markdown
+        serialized = json.dumps(report, ensure_ascii=False, indent=2)
+        if args.json_output:
+            args.json_output.write_text(serialized + "\n", encoding="utf-8")
+    except subprocess.CalledProcessError as exc:
+        parser.error(exc.stderr.strip() or "unable to read the requested Git revisions")
+    except (KeyError, OSError, TypeError, ValueError, yaml.YAMLError) as exc:
         parser.error(str(exc))
-    if args.format == "json":
-        print(json.dumps(report, ensure_ascii=False, indent=2))
-    else:
-        print(render_markdown(report))
+    print(serialized if args.format == "json" else render(report))
     return 0
 
 

@@ -61,6 +61,25 @@ jobs:
           path: ${{ runner.temp }}/graph-reconciliation.json
           if-no-files-found: error
 
+      - name: Report knowledge impact of source changes (advisory)
+        id: source-impact
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        shell: bash
+        run: |
+          python scripts/analysis/trace_knowledge_impact.py \
+            --base "${GITHUB_SHA}^1" --revision "$GITHUB_SHA" \
+            --json-output "$RUNNER_TEMP/source-change-impact.json" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload source change impact
+        if: steps.source-impact.outcome == 'success'
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-change-impact
+          path: ${{ runner.temp }}/source-change-impact.json
+          if-no-files-found: error
+
       - name: Validate subject syntheses against dossier registry
         run: python scripts/validate/validate_syntheses.py
 
