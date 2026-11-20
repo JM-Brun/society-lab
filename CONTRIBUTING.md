@@ -29,3 +29,18 @@ Les contributions assistées par IA sont acceptées si elles sont vérifiées. L
 
 ## Droits et personnes
 Ne pas publier de données personnelles non nécessaires, de documents confidentiels ou de contenus tiers en violation de leurs licences. Les désaccords portent sur les arguments et les méthodes, non sur les personnes.
+
+## Vérifications locales avant revue
+
+Ouvrir les travaux en cours en brouillon. Passer la PR en revue pour lancer les checks hébergés, dont les vérifications qui utilisent l’API GitHub.
+
+```bash
+python -m pip install PyYAML jsonschema
+python scripts/validate/validate_registry.py
+python scripts/validate/validate_markdown_links.py --strict
+python -m unittest discover -s tests -p 'test_*.py'
+quarto render site
+python scripts/validate/validate_public_site.py
+```
+
+Inclure le rendu Quarto si la contribution modifie le site ou une synthèse publiée. Les tests SMIC et le rejeu du backlog sont inclus dans la suite `unittest`.
