@@ -169,7 +169,10 @@ Commandes locales :
 ```bash
 python scripts/validate/calculate_project_kpis.py
 python scripts/validate/calculate_project_kpis.py --format json --output /tmp/society-lab-kpis.json
+python scripts/validate/calculate_project_kpis.py --revision HEAD --format json
 ```
+
+Le mode `--revision` lit les registres et vérifie la présence des fichiers de dossier et de synthèse dans le commit désigné. Avec la même version du calculateur et le même commit, le JSON est reproductible octet pour octet. Il contient le SHA complet sous `source_revision`. Le mode local sans `--revision` lit la copie de travail et inscrit `generated_at` dans le rapport.
 
 ### Phase 2 — Tests unitaires et négatifs
 
@@ -198,6 +201,8 @@ Les tests doivent vérifier les numérateurs, dénominateurs, exclusions, listes
 - Faire échouer uniquement les erreurs techniques de calcul ou les incohérences qui relèvent déjà d'une règle bloquante.
 - Éviter les appels réseau et les installations supplémentaires.
 - Ne pas dupliquer les validateurs déjà exécutés.
+
+Le workflow de validation publie l'artefact `project-kpis` pour le commit testé par GitHub Actions. Pour rejouer un rapport, utiliser le calculateur de ce commit et exécuter la commande `--revision` avec son `source_revision`.
 
 ### Phase 4 — Historique et visualisation (optionnelle)
 
@@ -233,7 +238,8 @@ Chaque exécution doit produire une structure de ce type :
 | `unknown_count` | Nombre d'éléments indéterminés |
 | `issues` | Anomalies et identifiants concernés |
 | `definition_version` | Version de la définition du KPI |
-| `generated_at` | Horodatage de génération |
+| `generated_at` | Horodatage de génération en mode copie de travail |
+| `source_revision` | SHA complet du commit lu en mode `--revision` |
 
 Un ratio nul ne doit jamais être confondu avec un indicateur non calculable (par exemple dénominateur nul).
 
