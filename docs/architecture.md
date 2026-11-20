@@ -16,7 +16,8 @@ Séparer les sources, les objets de connaissance, les travaux d'analyse et les p
 - `claims/`, `hypotheses/`, `debates/` : propositions examinées et controverses.
 - `analysis/` : analyses quantitatives, qualitatives et reproductibles.
 - `forecasts/` : prévisions probabilistes datées, règles de résolution et historique des résultats.
-- `dossiers/` : synthèses éditoriales transversales.
+- `dossiers/` : dossiers détaillés transversaux.
+- `syntheses/` : synthèses de référence et registre dossier–synthèse.
 - `schemas/` : contrats de données.
 - `scripts/` et `tests/` : validation et automatisation.
 - `site/` : publication Quarto.
@@ -37,7 +38,18 @@ Conserver les données brutes uniquement lorsque leur licence, taille et conditi
 Toute source suit un pipeline documenté : découverte, déduplication, identification, vérification des droits, qualification, extraction, mise en relation, revue et maintenance. Voir [protocole d'ingestion](ingestion-protocol.md).
 
 ## Publication Quarto
-Le site est une projection éditoriale, pas une seconde source de vérité. La construction et le déploiement doivent échouer si les contrôles bloquants échouent.
+Le projet Quarto est isolé dans `site/`, comme dans LLM Lab et J-DriftX. Le manifeste `site/_quarto.yml` liste explicitement l’accueil et les synthèses à rendre. Le site public est produit dans `site/_site/`. Les dossiers, notes d’investigation, ingestions, analyses, jeux de données et registres se consultent dans le dépôt Git public.
+
+Les versions de lecture dans `site/syntheses/` reprennent les synthèses de référence dans `syntheses/`, avec les mêmes noms de fichiers, un format court, leurs références externes et leurs limites. Lorsqu’un résultat de référence change, vérifier aussi la version de lecture concernée. Les pilotes affichent leur statut provisoire et la portée du niveau de confiance.
+
+Pour publier une nouvelle synthèse, préparer la page de lecture, l’ajouter à `project.render` et à l’accueil, puis vérifier le rendu et ses liens. La CI de publication exécute ces deux commandes et envoie uniquement `site/_site/` à GitHub Pages après validation sur `main`.
+
+```sh
+quarto render site
+python scripts/validate/validate_public_site.py
+```
+
+La vérification Python nécessite PyYAML. Le mode de publication du dépôt se règle dans **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 
 ## Intégration avec les autres dépôts
 

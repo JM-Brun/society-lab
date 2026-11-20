@@ -1,0 +1,66 @@
+---
+title: "Les trajectoires françaises de transition"
+subtitle: "Que permettent de comparer le PREF, RTE, l’ADEME, négaWatt et la SNBC 3 ?"
+date: 2026-11-20
+description: "Cinq cadres pour lire la transition française, chacun avec sa question et son périmètre."
+---
+
+::: {.synthesis-finding}
+**Provisoire · Confiance modérée · Corpus arrêté au 18 novembre 2026**
+
+Les cinq travaux éclairent des décisions différentes. RTE analyse le système électrique, l’ADEME explore des choix de société, négaWatt part de la demande, le PREF éprouve la robustesse des chantiers et la SNBC 3 fixe le cadre national.
+:::
+
+## Les questions auxquelles répond chaque cadre
+
+::: {.figure-panel}
+::: {.framework-list}
+::: {.framework-row}
+[PREF]{.framework-name}
+
+**Quels chantiers restent efficaces si certaines conditions échouent ?** Le Plan robuste pour l’économie française examine les dépendances et les variantes de réussite.
+:::
+
+::: {.framework-row}
+[RTE]{.framework-name}
+
+**Quels besoins de production et de réseau selon le mix électrique ?** Les *Futurs énergétiques 2050* étudient le système électrique et ses contraintes.
+:::
+
+::: {.framework-row}
+[ADEME]{.framework-name}
+
+**Quels choix de société conduisent à la neutralité carbone ?** Les scénarios *Transition(s) 2050* font varier, entre autres, les usages et les niveaux de sobriété.
+:::
+
+::: {.framework-row}
+[négaWatt]{.framework-name}
+
+**Quelle trajectoire en agissant sur la demande ?** Le scénario articule sobriété, efficacité et ressources pour construire un bilan énergétique.
+:::
+
+::: {.framework-row}
+[SNBC 3]{.framework-name}
+
+**Quel cadre fixe l’État pour réduire les émissions ?** La stratégie nationale bas-carbone établit une trajectoire et des orientations nationales.
+:::
+:::
+:::
+
+## Quand les chiffres deviennent comparables
+
+Deux chiffres exprimés en TWh peuvent porter sur des réalités différentes. La consommation d’électricité ne couvre qu’une partie de la consommation finale d’énergie. Une comparaison exige le même horizon, les mêmes secteurs et les mêmes conventions, par exemple pour les usages non énergétiques ou les pertes.
+
+La même vigilance vaut pour le carbone. Les émissions territoriales suivent les activités sur le territoire. L’empreinte carbone étend l’observation aux émissions associées à la demande intérieure, y compris via les importations. Comparer ces deux indicateurs demande d’expliciter leurs périmètres.
+
+## Ce qui reste à consolider
+
+Les jeux de données ADEME de la saison 2 sont identifiés dans le corpus. Le rapprochement des séries citées dans la documentation du projet s’appuie principalement sur la saison 1 mise à jour en 2024. Le bilan qualitatif reste informatif pour le choix des questions et indicateurs. Un classement des coûts, des emplois ou des besoins matériels demanderait une harmonisation supplémentaire.
+
+## Sources
+
+- The Shift Project, [rapport du Plan robuste pour l’économie française](https://theshiftproject.org/app/uploads/2026/04/Reussir-dans-lincertitude-Integral-14042026.pdf).
+- RTE, [Futurs énergétiques 2050](https://www.rte-france.com/donnees-publications/etudes-prospectives/futurs-energetique-2050).
+- ADEME, [Transition(s) 2050](https://www.ademe.fr/les-futurs-en-transition/les-scenarios).
+- Association négaWatt, [rapport complet du scénario 2022](https://www.negawatt.org/IMG/pdf/scenario-negawatt-2022-rapport-complet-partie1.pdf).
+- Ministère de la Transition écologique, [stratégie nationale bas-carbone](https://www.ecologie.gouv.fr/strategie-nationale-bas-carbone).

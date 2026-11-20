@@ -1,0 +1,77 @@
+---
+pagetitle: "Synthèses"
+page-layout: custom
+toc: false
+---
+
+::: {.library-hero}
+::: {.hero-copy}
+# Comprendre les enjeux de société {.unnumbered}
+
+Des synthèses pour lire les résultats de la recherche, comprendre les désaccords et situer ce qui reste incertain.
+
+[Explorer les synthèses ↓](#syntheses){.hero-link}
+:::
+
+::: {.hero-art aria-hidden="true"}
+[ ]{.hero-disc}
+[ ]{.hero-orbit}
+[ ]{.hero-cross}
+[ ]{.hero-dot}
+:::
+:::
+
+::: {.library-content}
+## Les synthèses {#syntheses}
+
+::: {.library-grid}
+
+::: {.topic-card .topic-education}
+::: {.topic-art aria-hidden="true"}
+[ ]{} [ ]{} [ ]{}
+:::
+
+[Éducation]{.topic-label}
+
+### [Parcoursup et l’égalité des chances](syntheses/parcoursup-education.qmd)
+
+Du choix des vœux à l’inscription, que mesure chaque étape de l’admission ?
+:::
+
+::: {.topic-card .topic-economy}
+::: {.topic-art aria-hidden="true"}
+[ ]{} [ ]{} [ ]{}
+:::
+
+[Économie et emploi]{.topic-label}
+
+### [Augmenter le SMIC en France](syntheses/smic-france.qmd)
+
+Suivre les effets possibles sur le salaire, le revenu disponible et le coût du travail.
+:::
+
+::: {.topic-card .topic-justice}
+::: {.topic-art aria-hidden="true"}
+[ ]{} [ ]{} [ ]{}
+:::
+
+[Justice]{.topic-label}
+
+### [Le travail d’intérêt général en France](syntheses/tig-france.qmd)
+
+Que sait-on de l’exécution des peines, de la récidive et des coûts ?
+:::
+
+::: {.topic-card .topic-energy}
+::: {.topic-art aria-hidden="true"}
+[ ]{} [ ]{} [ ]{}
+:::
+
+[Énergie et climat]{.topic-label}
+
+### [Les trajectoires françaises de transition](syntheses/comparaison-scenarios-transition-2026.qmd)
+
+Comparer le PREF, RTE, l’ADEME, négaWatt et la SNBC 3 à partir de leurs périmètres.
+:::
+:::
+:::

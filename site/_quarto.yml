@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - syntheses/parcoursup-education.qmd
+    - syntheses/smic-france.qmd
+    - syntheses/tig-france.qmd
+    - syntheses/comparaison-scenarios-transition-2026.qmd
+
+website:
+  title: Society Lab
+  site-url: https://jm-brun.github.io/society-lab/
+  description: "Des synthèses documentées sur les grands enjeux de société."
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Synthèses
+  page-footer:
+    left: Society Lab
+    right: Projet documentaire indépendant
+
+lang: fr
+format:
+  html:
+    theme: [cosmo, styles/editorial.scss]
+    toc: true
+    toc-title: Sur cette page
+    anchor-sections: true
+    html-math-method: plain
+execute:
+  enabled: false
