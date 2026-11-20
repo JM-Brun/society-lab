@@ -274,6 +274,33 @@ def validate_batch_manifests(source_ids, errors):
         if not schema_errors:
             validate_batch_manifest(batch, label, source_ids, errors)
 
+def validate_source_event_references(events, node_ids, errors):
+    """Validate event identities, source links and review targets."""
+    label = "sources/lifecycle.yml"
+    known_nodes = set().union(*node_ids.values())
+    sources = node_ids.get("SOURCE", set())
+    seen_events = set()
+    for event in events:
+        event_id = event["id"]
+        if event_id in seen_events:
+            errors.append(f"{label}: duplicate event {event_id}")
+        seen_events.add(event_id)
+        for field in ("source_id", "replacement_source_id"):
+            if field in event and event[field] not in sources:
+                errors.append(f"{label} {event_id}: unresolved {field} {event[field]}")
+        if event.get("replacement_source_id") == event["source_id"]:
+            errors.append(f"{label} {event_id}: replacement_source_id equals source_id")
+
+        seen_targets = set()
+        for decision in event["decisions"]:
+            target_id = decision["target_id"]
+            if target_id not in known_nodes:
+                errors.append(f"{label} {event_id}: unresolved target_id {target_id}")
+            if target_id in seen_targets:
+                errors.append(f"{label} {event_id}: duplicate decision for {target_id}")
+            seen_targets.add(target_id)
+
+
 def main():
     errors = []
     taxonomy = load_yaml("knowledge/TAXONOMY.yml")
@@ -337,6 +364,14 @@ def main():
             errors.append(f"Invalid synthesis identifier: {identifier!r}")
     node_ids["SYNTHESIS"] = synthesis_ids
     node_type_by_id.update({identifier: "SYNTHESIS" for identifier in synthesis_ids})
+
+    journal = load_yaml("sources/lifecycle.yml")
+    previous_error_count = len(errors)
+    validate_schema_and_records(
+        "schemas/source-lifecycle.schema.json", [journal], "sources/lifecycle.yml", errors,
+    )
+    if len(errors) == previous_error_count:
+        validate_source_event_references(journal["events"], node_ids, errors)
 
     graph = load_yaml("knowledge/graph.yml")
     edges = graph.get("relations", [])

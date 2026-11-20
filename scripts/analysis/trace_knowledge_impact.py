@@ -16,6 +16,7 @@ from typing import Any
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
+LIFECYCLE_PATH = "sources/lifecycle.yml"
 REGISTRY_FILES = {
     "SOURCE": ("sources/registry.yml", "sources"),
     "STUDY": ("research/studies/registry.yml", "studies"),
@@ -352,6 +353,72 @@ def impact_counts(impact: dict | None) -> str:
     return f"{records} / {syntheses}"
 
 
+def build_event_impact_report(root: Path, event_id: str, revision: str | None = None) -> dict:
+    if revision is None:
+        journal = load_yaml(root / LIFECYCLE_PATH)
+    else:
+        revision = git(root, "rev-parse", "--verify", "--end-of-options", f"{revision}^{{commit}}").strip()
+        journal = load_git_yaml(root, revision, LIFECYCLE_PATH)
+
+    matches = [event for event in journal["events"] if event["id"] == event_id]
+    if len(matches) != 1:
+        raise ValueError(f"Expected one event with id {event_id}, found {len(matches)}")
+    event = matches[0]
+    current = load_repository(root, revision=revision)
+    impacts = {"current": build_impact_report(*current, event["source_id"])}
+    if "replacement_source_id" in event:
+        impacts["replacement"] = build_impact_report(*current, event["replacement_source_id"])
+    if baseline := event.get("baseline_revision"):
+        previous = load_repository(root, revision=baseline)
+        impacts["baseline"] = build_impact_report(*previous, event["source_id"])
+
+    targets = {
+        record["id"]
+        for impact in impacts.values()
+        for records in impact["records"].values()
+        for record in records
+    }
+    targets.update(row["synthesis_id"] for impact in impacts.values() for row in impact["syntheses"])
+    decisions = {decision["target_id"] for decision in event["decisions"]}
+    return {
+        "revision": revision,
+        "event": event,
+        "impacts": impacts,
+        "targets_without_decision": sorted(targets - decisions),
+        "decisions_outside_detected_impact": sorted(decisions - targets),
+    }
+
+
+def render_event_markdown(report: dict) -> str:
+    event = report["event"]
+    evidence = event["evidence"]
+    lines = [
+        f"# Revue de source — {event['id']}", "",
+        f"`{event['source_id']}` · `{event['kind']}` · {event['recorded_on']}", "",
+        event["summary"], "",
+        f"Pièce : {evidence['locator']} <{evidence['url']}>", "",
+        f"Révision du journal et du corpus : {report['revision'] or 'copie de travail'}.",
+    ]
+    if event.get("baseline_revision"):
+        lines.append(f"Révision avant l'événement : `{event['baseline_revision']}`.")
+    for heading, key in (
+        ("Cibles détectées sans décision", "targets_without_decision"),
+        ("Décisions hors des dépendances détectées", "decisions_outside_detected_impact"),
+    ):
+        lines.extend(["", f"## {heading}", ""])
+        lines.extend(f"- `{identifier}`" for identifier in report[key])
+        if not report[key]:
+            lines.append("- Aucune.")
+    lines.extend(["", "## Décisions consignées", ""])
+    lines.extend(
+        f"- `{item['target_id']}` · `{item['status']}` · {item['reviewed_on']} — {item['reason']}"
+        for item in sorted(event["decisions"], key=lambda item: item["target_id"])
+    )
+    if not event["decisions"]:
+        lines.append("- Aucune.")
+    return "\n".join(lines)
+
+
 def render_git_markdown(report: dict) -> str:
     changes = report["sources"]
     lines = [
@@ -382,14 +449,18 @@ def main() -> int:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--source-id", help="Canonical SOURCE identifier in the working tree")
     mode.add_argument("--base", help="Base Git revision for source change detection")
-    parser.add_argument("--revision", help="Compared Git revision (default in diff mode: HEAD)")
+    mode.add_argument("--event-id", help="Lifecycle event identifier")
+    parser.add_argument("--revision", help="Git revision for --base or --event-id")
     parser.add_argument("--format", choices=("markdown", "json"), default="markdown")
     parser.add_argument("--json-output", type=Path, help="Also write the JSON report to this path")
     args = parser.parse_args()
-    if args.revision is not None and args.base is None:
-        parser.error("--revision requires --base")
+    if args.revision is not None and args.source_id is not None:
+        parser.error("--revision requires --base or --event-id")
     try:
-        if args.base is None:
+        if args.event_id is not None:
+            report = build_event_impact_report(ROOT, args.event_id, args.revision)
+            render = render_event_markdown
+        elif args.source_id is not None:
             report = build_impact_report(*load_repository(ROOT), args.source_id)
             render = render_markdown
         else:

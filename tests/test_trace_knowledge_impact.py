@@ -7,7 +7,10 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "analysis"))
-from trace_knowledge_impact import build_git_impact_report, build_impact_report, compare_sources, render_markdown
+from trace_knowledge_impact import (
+    build_event_impact_report, build_git_impact_report, build_impact_report,
+    compare_sources, render_event_markdown, render_markdown,
+)
 
 
 class GitSourceImpactTests(unittest.TestCase):
@@ -55,6 +58,20 @@ class GitSourceImpactTests(unittest.TestCase):
             write("research/studies/registry.yml", {"studies": [
                 {"id": "STUDY-NEW", "source_ids": ["SOURCE-NEW", "SOURCE-MODIFIED"]},
             ]})
+            event = {
+                "id": "EVENT-SOURCE-REPLACEMENT", "kind": "new_version",
+                "source_id": "SOURCE-MODIFIED", "replacement_source_id": "SOURCE-NEW",
+                "baseline_revision": base, "recorded_on": "2026-11-20",
+                "evidence": {"url": "https://example.org", "locator": "Version history"},
+                "summary": "Updated release identified.",
+                "decisions": [
+                    {"target_id": "SOURCE-MODIFIED", "status": "corrected",
+                     "reason": "Notice recorded.", "reviewed_on": "2026-11-20"},
+                    {"target_id": "DOSSIER-MANUAL", "status": "needs_review",
+                     "reason": "Documentary reference mentioned in prose.", "reviewed_on": "2026-11-20"},
+                ],
+            }
+            write("sources/lifecycle.yml", {"events": [event]})
             head = commit()
             write("sources/registry.yml", {"sources": []})
 
@@ -68,6 +85,14 @@ class GitSourceImpactTests(unittest.TestCase):
             self.assertNotIn("impact_before", added)
             self.assertEqual(removed["impact_before"]["records"]["STUDY"][0]["id"], "STUDY-OLD")
             self.assertNotIn("impact_after", removed)
+
+            review = build_event_impact_report(root, event["id"], head)
+            self.assertEqual(review["revision"], head)
+            self.assertEqual(review["impacts"]["replacement"]["source_id"], "SOURCE-NEW")
+            self.assertEqual(review["targets_without_decision"], ["SOURCE-NEW", "STUDY-NEW", "STUDY-OLD"])
+            self.assertEqual(review["decisions_outside_detected_impact"], ["DOSSIER-MANUAL"])
+            self.assertIn("STUDY-OLD", render_event_markdown(review))
+            self.assertIn("needs_review", render_event_markdown(review))
 
 
 class SourceImpactTracingTests(unittest.TestCase):

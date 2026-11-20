@@ -34,6 +34,24 @@ Le mode `--base` compare les fiches de `sources/registry.yml` par identifiant, �
 
 Le traceur examine les dépendances dans chaque révision où la source existe. Pour un retrait, le rapport conserve les liens de la base. Pour une modification, il présente les liens avant et après afin qu'une référence retirée en même temps reste visible. Le workflow compare le commit de fusion testé de chaque PR à son premier parent, puis publie un résumé indicatif et l'artefact JSON `source-change-impact`.
 
+## Journal des événements et des décisions
+
+Les [manifestes de lot](../sources/batches/README.md) documentent la sélection des candidates à l'ingestion. Le [journal de cycle de vie](../sources/lifecycle.yml) documente les corrections de métadonnées, nouvelles versions, errata et rétractations concernant des sources canoniques. Chaque événement cite une pièce et son localisateur. `recorded_on` date l'inscription dans le journal. La date de l'événement, si elle est connue, est précisée dans le résumé. Pour une version représentée par une fiche distincte, indiquer aussi `replacement_source_id`.
+
+1. Ajouter une entrée d'après le [schéma du journal](../schemas/source-lifecycle.schema.json), avec une liste `decisions: []` au départ. Si une révision Git antérieure à la modification est connue, l'indiquer dans `baseline_revision` par son SHA complet. Elle doit contenir la fiche d'origine. Le rapport conservera les dépendances détectées à cette révision, même si elles ont ensuite disparu.
+2. Générer le rapport de revue. Par défaut, il lit le journal et les registres de la copie de travail. `--revision` choisit une révision Git pour ces deux entrées. Les révisions nécessaires doivent être présentes dans le clone.
+
+   ```bash
+   python scripts/analysis/trace_knowledge_impact.py \
+     --event-id EVENT-SOURCE-INSERJEUNES-PUBLICATION-METADATA --revision HEAD
+   ```
+
+3. Examiner les objets liés à partir du passage ou des données concernés. Pour chaque objet canonique examiné, consigner la date, le motif et l'une des décisions `unchanged`, `needs_review`, `corrected` ou `deprecated`. Les mises à jour de fiches restent des modifications explicites. L'historique Git conserve les évolutions des décisions.
+
+Le rapport liste les cibles détectées sans décision et les décisions hors des dépendances détectées, par exemple lorsqu'une référence figure uniquement dans le texte. Une décision `needs_review` signale un examen à poursuivre. Les arêtes incidentes constituent le contexte du rapport. Une rétractation n'entraîne aucun changement de statut automatique.
+
+Le pilote InserJeunes reprend la correction de métadonnées documentée dans la [PR #168](https://github.com/JM-Brun/society-lab/pull/168). La décision enregistrée porte sur la fiche DEPP. Les autres objets liés restent visibles pour la revue.
+
 ## Règles de propagation
 
 - Seules les références typées explicites sont suivies : `source_ids`, les `source_verifications[*].source_id`, `study_ids`, `dataset_ids`, `supporting_study_ids`, `challenging_study_ids`, `claim_ids`, `hypothesis_ids` et `concept_ids`.
@@ -52,6 +70,6 @@ Pour chaque objet listé, le responsable de recherche doit vérifier le localisa
 - Les références implicites dans le texte libre ne sont pas détectées.
 - Les analyses reproductibles, débats et pages éditoriales ne sont pas encore intégrés comme types de dépendances autonomes.
 - Les liens dossier → synthèse proviennent du registre de correspondance ; la fraîcheur du contenu est contrôlée séparément par `check_synthesis_freshness.py`.
-- Le script est conçu pour un corpus versionné dans Git ; il ne remplace pas un journal d’événements de source ni un système de notification.
+- Le rapport n'envoie aucune notification.
 
 Les tests unitaires utilisent un graphe synthétique pour vérifier la propagation explicite, la présence des synthèses et l’absence de propagation via les domaines.

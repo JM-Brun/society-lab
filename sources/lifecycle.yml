@@ -1,0 +1,15 @@
+events:
+  - id: EVENT-SOURCE-INSERJEUNES-PUBLICATION-METADATA
+    kind: metadata_correction
+    source_id: SOURCE-DEPP-INSERJEUNES-2026
+    recorded_on: "2026-11-20"
+    baseline_revision: 9baf7210be8afc169640c2069c5a5758f3bdb465
+    evidence:
+      url: https://www.education.gouv.fr/depp/inserjeunes-l-insertion-des-jeunes-apres-une-formation-en-voie-professionnelle-307956
+      locator: Dates de publication et de mise à jour de la page DEPP.
+    summary: La publication initiale du 18 février 2026 et la mise à jour du 25 juin 2026 ont été distinguées dans la fiche Source par la PR 168.
+    decisions:
+      - target_id: SOURCE-DEPP-INSERJEUNES-2026
+        status: corrected
+        reviewed_on: "2026-11-19"
+        reason: La PR 168 documente la correction de la date de publication et renseigne séparément la date de mise à jour.
