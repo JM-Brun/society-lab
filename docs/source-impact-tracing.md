@@ -21,7 +21,18 @@ python scripts/analysis/trace_knowledge_impact.py \
 
 Le test d'intégration du pilote TIG vérifie dans les registres réels que la source Cour des comptes rejoint notamment le claim `CLAIM-TIG-EXECUTION-DELAY-2025`, le dossier TIG et sa synthèse `syntheses/tig-france.md`. Ce test complète les tests unitaires synthétiques : il vérifie un chemin réellement présent, mais ne démontre pas l'exhaustivité de toutes les dépendances du dépôt.
 
-Le script retourne les études et jeux de données qui référencent directement la source, les claims qui la référencent directement ou via une étude/un dataset, les hypothèses liées aux études, les dossiers qui référencent ces objets et les synthèses associées dans `syntheses/registry.yml`.
+Le script retourne les études et jeux de données qui référencent directement la source, les claims qui la référencent directement ou via une étude ou un dataset, les hypothèses liées aux études, les mécanismes et prévisions explicitement liés, les dossiers qui référencent ces objets et les synthèses associées dans `syntheses/registry.yml`.
+
+## Comparaison de deux révisions Git
+
+```bash
+python scripts/analysis/trace_knowledge_impact.py --base origin/main --revision HEAD
+python scripts/analysis/trace_knowledge_impact.py --base origin/main --format json
+```
+
+Le mode `--base` compare les fiches de `sources/registry.yml` par identifiant, à partir de deux commits. Il signale les ajouts, retraits et modifications et indique les champs modifiés. L'ordre des fiches, l'ordre des clés YAML et les changements de mise en forme sont ignorés. L'ordre à l'intérieur d'un champ liste est pris en compte, par exemple pour les auteurs.
+
+Le traceur examine les dépendances dans chaque révision où la source existe. Pour un retrait, le rapport conserve les liens de la base. Pour une modification, il présente les liens avant et après afin qu'une référence retirée en même temps reste visible. Le workflow compare le commit de fusion testé de chaque PR à son premier parent, puis publie un résumé indicatif et l'artefact JSON `source-change-impact`.
 
 ## Règles de propagation
 
@@ -39,7 +50,7 @@ Pour chaque objet listé, le responsable de recherche doit vérifier le localisa
 ## Limites actuelles
 
 - Les références implicites dans le texte libre ne sont pas détectées.
-- Les analyses reproductibles, prévisions, débats et pages éditoriales ne sont pas encore intégrés comme types de dépendances autonomes.
+- Les analyses reproductibles, débats et pages éditoriales ne sont pas encore intégrés comme types de dépendances autonomes.
 - Les liens dossier → synthèse proviennent du registre de correspondance ; la fraîcheur du contenu est contrôlée séparément par `check_synthesis_freshness.py`.
 - Le script est conçu pour un corpus versionné dans Git ; il ne remplace pas un journal d’événements de source ni un système de notification.
 

@@ -1,9 +1,73 @@
+import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
+import yaml
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "analysis"))
-from trace_knowledge_impact import build_impact_report, render_markdown
+from trace_knowledge_impact import build_git_impact_report, build_impact_report, compare_sources, render_markdown
+
+
+class GitSourceImpactTests(unittest.TestCase):
+    def test_registry_order_and_yaml_key_order_do_not_count_as_source_changes(self):
+        before = [{"id": "SOURCE-A", "authors": ["A", "B"]}, {"id": "SOURCE-B"}]
+        after = [{"id": "SOURCE-B"}, {"authors": ["A", "B"], "id": "SOURCE-A"}]
+        self.assertEqual(compare_sources(before, after), [])
+        after[1]["authors"].reverse()
+        self.assertEqual(compare_sources(before, after), [
+            {"source_id": "SOURCE-A", "change": "modified", "changed_fields": ["authors"]},
+        ])
+
+    def test_uses_both_commits_when_sources_or_their_links_are_removed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+
+            def git(*args):
+                return subprocess.check_output(["git", *args], cwd=root, encoding="utf-8").strip()
+
+            def write(relative, data):
+                path = root / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(yaml.safe_dump(data), encoding="utf-8")
+
+            def commit():
+                git("add", ".")
+                git("-c", "user.name=Test", "-c", "user.email=test@example.org", "commit", "-qm", "Snapshot")
+                return git("rev-parse", "HEAD")
+
+            git("init", "-q")
+            write("knowledge/graph.yml", {"relations": []})
+            write("syntheses/registry.yml", {"dossiers": []})
+            write("sources/registry.yml", {"sources": [
+                {"id": "SOURCE-RETIRED", "title": "Retired source"},
+                {"id": "SOURCE-MODIFIED", "title": "Previous version"},
+            ]})
+            write("research/studies/registry.yml", {"studies": [
+                {"id": "STUDY-OLD", "source_ids": ["SOURCE-RETIRED", "SOURCE-MODIFIED"]},
+            ]})
+            base = commit()
+            write("sources/registry.yml", {"sources": [
+                {"id": "SOURCE-MODIFIED", "title": "Revised version"},
+                {"id": "SOURCE-NEW", "title": "New source"},
+            ]})
+            write("research/studies/registry.yml", {"studies": [
+                {"id": "STUDY-NEW", "source_ids": ["SOURCE-NEW", "SOURCE-MODIFIED"]},
+            ]})
+            head = commit()
+            write("sources/registry.yml", {"sources": []})
+
+            report = build_git_impact_report(root, base, "HEAD")
+            self.assertEqual((report["base_revision"], report["revision"]), (base, head))
+            modified, added, removed = report["sources"]
+            self.assertEqual([x["change"] for x in report["sources"]], ["modified", "added", "removed"])
+            self.assertEqual(modified["changed_fields"], ["title"])
+            self.assertEqual(modified["impact_before"]["records"]["STUDY"][0]["id"], "STUDY-OLD")
+            self.assertEqual(modified["impact_after"]["records"]["STUDY"][0]["id"], "STUDY-NEW")
+            self.assertNotIn("impact_before", added)
+            self.assertEqual(removed["impact_before"]["records"]["STUDY"][0]["id"], "STUDY-OLD")
+            self.assertNotIn("impact_after", removed)
 
 
 class SourceImpactTracingTests(unittest.TestCase):
