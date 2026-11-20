@@ -13,7 +13,7 @@ L'ingestion transforme une ressource repérée en objet documenté, vérifiable 
 7. **Mise en relation** — relier domaines, tags, études, datasets, claims, concepts et dossiers uniquement lorsque le lien est justifié.
 8. **Revue** — attribuer un statut explicite ; les points non vérifiés restent non vérifiés.
 9. **Publication éventuelle** — une source n'apparaît dans une conclusion publique qu'après examen adapté à l'enjeu.
-10. **Maintenance** — surveiller errata, nouvelles versions, rétractations, mises à jour et changements d'URL.
+10. **Maintenance** — consigner les nouvelles versions, errata, rétractations et corrections de métadonnées dans le [journal de suivi des sources](source-impact-tracing.md#journal-des-événements-et-des-décisions), puis contrôler les objets liés.
 
 ## Statuts recommandés
 discovered → metadata_complete → screened → reviewed → used → superseded / retracted. Ces statuts décrivent le traitement interne, pas une note de qualité.

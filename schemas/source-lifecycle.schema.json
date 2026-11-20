@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Society Lab source lifecycle and downstream review journal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["events"],
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "source_id", "recorded_on", "evidence", "summary", "decisions"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^EVENT-SOURCE-[A-Z0-9][A-Z0-9-]*$"},
+          "kind": {"enum": ["metadata_correction", "new_version", "erratum", "retraction"]},
+          "source_id": {"$ref": "#/$defs/source_id"},
+          "replacement_source_id": {"$ref": "#/$defs/source_id"},
+          "recorded_on": {"type": "string", "format": "date"},
+          "baseline_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "locator"],
+            "properties": {
+              "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+              "locator": {"$ref": "#/$defs/nonblank"}
+            }
+          },
+          "summary": {"$ref": "#/$defs/nonblank"},
+          "decisions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["target_id", "status", "reviewed_on", "reason"],
+              "properties": {
+                "target_id": {
+                  "type": "string",
+                  "pattern": "^(SOURCE|STUDY|DATASET|CLAIM|HYPOTHESIS|CONCEPT|MECHANISM|FORECAST|DOSSIER|SYNTHESIS)-[A-Z0-9][A-Z0-9-]*$"
+                },
+                "status": {"enum": ["needs_review", "unchanged", "corrected", "deprecated"]},
+                "reviewed_on": {"type": "string", "format": "date"},
+                "reason": {"$ref": "#/$defs/nonblank"}
+              }
+            }
+          }
+        },
+        "if": {"required": ["replacement_source_id"]},
+        "then": {"properties": {"kind": {"const": "new_version"}}}
+      }
+    }
+  },
+  "$defs": {
+    "source_id": {"type": "string", "pattern": "^SOURCE-[A-Z0-9][A-Z0-9-]*$"},
+    "nonblank": {"type": "string", "pattern": "\\S"}
+  }
+}

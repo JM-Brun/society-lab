@@ -9,7 +9,44 @@ from jsonschema import Draft202012Validator
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 
 from validate_registry import (validate_batch_manifest, validate_cross_references, validate_graph_edges,
-                                validate_controlled_vocabularies, validate_relation_definitions, validate_territory_hierarchy)
+                                validate_controlled_vocabularies, validate_relation_definitions,
+                                validate_source_event_references, validate_territory_hierarchy)
+
+
+class SourceLifecycleTests(unittest.TestCase):
+    def test_event_types_and_evidence(self):
+        schema_path = Path(__file__).resolve().parents[1] / "schemas/source-lifecycle.schema.json"
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        Draft202012Validator.check_schema(schema)
+        validator = Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER)
+        event = {
+            "id": "EVENT-SOURCE-NOTICE", "kind": "new_version",
+            "source_id": "SOURCE-A", "replacement_source_id": "SOURCE-B",
+            "recorded_on": "2026-11-20", "summary": "New notice.",
+            "evidence": {"url": "https://example.org/notice", "locator": "Notice header"},
+            "decisions": [],
+        }
+        self.assertTrue(validator.is_valid({"events": [event]}))
+        for kind in ("erratum", "retraction", "metadata_correction"):
+            with self.subTest(kind=kind):
+                self.assertFalse(validator.is_valid({"events": [{**event, "kind": kind}]}))
+                notice = {k: v for k, v in event.items() if k != "replacement_source_id"}
+                self.assertTrue(validator.is_valid({"events": [{**notice, "kind": kind}]}))
+        self.assertFalse(validator.is_valid({"events": [{**event, "evidence": {"url": "https://example.org"}}]}))
+
+    def test_detects_duplicate_ids_and_invalid_references(self):
+        event = {
+            "id": "EVENT-SOURCE-VERSION", "source_id": "SOURCE-A", "replacement_source_id": "SOURCE-A",
+            "decisions": [{"target_id": "SYNTHESIS-A"}, {"target_id": "SYNTHESIS-A"}, {"target_id": "CLAIM-MISSING"}],
+        }
+        second = {"id": event["id"], "source_id": "SOURCE-MISSING", "decisions": []}
+        errors = []
+        validate_source_event_references(
+            [event, second], {"SOURCE": {"SOURCE-A"}, "SYNTHESIS": {"SYNTHESIS-A"}}, errors,
+        )
+        self.assertEqual(len(errors), 5)
+        for message in ("equals source_id", "duplicate decision", "CLAIM-MISSING", "duplicate event", "SOURCE-MISSING"):
+            self.assertTrue(any(message in error for error in errors))
 
 
 class CrossReferenceValidationTests(unittest.TestCase):
