@@ -1,11 +1,24 @@
 #!/usr/bin/env python3
-"""Generate a multidimensional Markdown view from GitHub and canonical registries."""
+"""Generate a Markdown backlog view from GitHub or replay a captured snapshot."""
 from __future__ import annotations
-import json, os, sys, urllib.error, urllib.request
-from pathlib import Path
+
+import argparse
+import json
+import os
+import subprocess
+import sys
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
+from pathlib import Path
+
 import yaml
+
 API = "https://api.github.com"
+ROOT = Path(__file__).resolve().parents[2]
+MAPPING = "governance/issue-domain-map.yml"
+DOSSIERS = "dossiers/registry.yml"
+SNAPSHOT_VERSION = 1
 
 def load_yaml(path):
     with path.open(encoding="utf-8") as stream: return yaml.safe_load(stream)
@@ -40,13 +53,16 @@ def build_rows(issues, mapping, dossier_registry):
           "mapping_valid":mapped is not None and all(item in dossiers for item in dossier_ids)})
     return sorted(rows,key=lambda row:(row["priority"],row["number"]))
 
-def render_markdown(rows, generated_at):
+def render_markdown(rows, captured_at, *, source_revision=None):
     priorities=["priority:high","priority:medium","priority:low","unclassified"]
-    lines=["# Backlog Society Lab","",f"> Généré le {generated_at} depuis les issues GitHub ouvertes et les registres canoniques. Vue indicative, non décisionnelle.","",
+    lines = ["# Backlog Society Lab", "", f"> Issues GitHub ouvertes relevées le {captured_at}."]
+    if source_revision is not None:
+        lines.append(f"> Révision Git de la correspondance et des dossiers `{source_revision}`.")
+    lines.extend(["",
       f"- Issues ouvertes : **{len(rows)}**",f"- Correspondance explicite : **{sum(row['mapping_valid'] for row in rows)}**",
       f"- À qualifier : **{sum(not row['mapping_valid'] for row in rows)}**",
       f"- Priorité invalide ou absente : **{sum(not row['priority_valid'] for row in rows)}**","",
-      "Les domaines proviennent exclusivement des dossiers référencés. Les dépendances proviennent exclusivement du mapping explicite. Aucune inférence depuis les titres ou mots-clés.",""]
+      "Les domaines proviennent des dossiers référencés. Les dépendances viennent de la correspondance explicite.", ""])
     for priority in priorities:
         selected=[row for row in rows if row["priority"]==priority]
         lines.extend([f"## {priority} ({len(selected)})",""])
@@ -63,20 +79,91 @@ def render_markdown(rows, generated_at):
     lines.extend([f"- [#{row['number']} — {row['title']}]({row['url']})" for row in unmapped] or ["Aucune issue non mappée."])
     lines.append(""); return "\n".join(lines)
 
-def main():
-    repository=os.environ.get("GITHUB_REPOSITORY","JM-Brun/society-lab"); token=os.environ.get("GITHUB_TOKEN")
-    if not token: print("GITHUB_TOKEN est requis.",file=sys.stderr); return 2
-    root=Path(__file__).resolve().parents[2]
-    mapping=load_yaml(root/"governance/issue-domain-map.yml"); dossiers=load_yaml(root/"dossiers/registry.yml")
-    rows=build_rows(fetch_open_issues(repository,token),mapping,dossiers)
-    output=render_markdown(rows,datetime.now(timezone.utc).isoformat(timespec="minutes"))
-    target=Path(os.environ.get("BACKLOG_OUTPUT","backlog-view.md")); target.write_text(output,encoding="utf-8")
-    summary=os.environ.get("GITHUB_STEP_SUMMARY")
-    if summary:
-        with open(summary,"a",encoding="utf-8") as stream: stream.write(output)
-    print(f"Generated {target} for {len(rows)} open issues."); return 0
+def read_git(*args):
+    return subprocess.run(
+        ["git", *args], cwd=ROOT, check=True, capture_output=True, encoding="utf-8",
+    ).stdout
 
-if __name__=="__main__":
-    try: raise SystemExit(main())
-    except (urllib.error.URLError,KeyError,ValueError,OSError) as exc:
-        print(f"Backlog generation failed: {exc}",file=sys.stderr); raise SystemExit(2)
+
+def capture_snapshot(repository, token):
+    revision = read_git("rev-parse", "--verify", "HEAD").strip()
+    mapping = yaml.safe_load(read_git("show", f"{revision}:{MAPPING}"))
+    dossiers = yaml.safe_load(read_git("show", f"{revision}:{DOSSIERS}"))
+    issues = fetch_open_issues(repository, token)
+    issue_numbers = {issue["number"] for issue in issues}
+    mapped = [
+        {key: value for key, value in row.items() if key in {"issue", "dossier_ids", "depends_on", "kind"}}
+        for row in mapping.get("issues", []) if row["issue"] in issue_numbers
+    ]
+    dossier_ids = {identifier for row in mapped for identifier in row.get("dossier_ids", [])}
+    return {
+        "version": SNAPSHOT_VERSION,
+        "repository": repository,
+        "captured_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "source_revision": revision,
+        "issues": [
+            {"number": issue["number"], "title": issue["title"], "html_url": issue["html_url"],
+             "labels": [{"name": name} for name in sorted(label["name"] for label in issue.get("labels", []))]}
+            for issue in sorted(issues, key=lambda item: item["number"])
+        ],
+        "mapping": {"issues": mapped},
+        "dossiers": {"dossiers": [
+            {"id": row["id"], "domain_ids": row.get("domain_ids", [])}
+            for row in dossiers.get("dossiers", []) if row["id"] in dossier_ids
+        ]},
+    }
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    snapshot_options = parser.add_mutually_exclusive_group()
+    snapshot_options.add_argument("--snapshot-output", type=Path, help="Save inputs from GitHub and the current Git commit")
+    snapshot_options.add_argument("--snapshot-input", type=Path, help="Replay this snapshot without API or Git access")
+    args = parser.parse_args(argv)
+    target = Path(os.environ.get("BACKLOG_OUTPUT", "backlog-view.md"))
+    snapshot_path = args.snapshot_input or args.snapshot_output
+    if snapshot_path is not None and snapshot_path.resolve() == target.resolve():
+        parser.error("The snapshot and Markdown output require different paths")
+
+    if args.snapshot_input is not None:
+        snapshot = json.loads(args.snapshot_input.read_text(encoding="utf-8"))
+        if not isinstance(snapshot, dict) or snapshot.get("version") != SNAPSHOT_VERSION:
+            raise ValueError(f"Expected a backlog snapshot with version {SNAPSHOT_VERSION}")
+    else:
+        repository = os.environ.get("GITHUB_REPOSITORY", "JM-Brun/society-lab")
+        token = os.environ.get("GITHUB_TOKEN")
+        if not token:
+            parser.error("GITHUB_TOKEN est requis pour consulter GitHub")
+        if args.snapshot_output is not None:
+            snapshot = capture_snapshot(repository, token)
+        else:
+            issues = fetch_open_issues(repository, token)
+            snapshot = {
+                "issues": issues,
+                "mapping": load_yaml(ROOT / MAPPING),
+                "dossiers": load_yaml(ROOT / DOSSIERS),
+                "captured_at": datetime.now(timezone.utc).isoformat(timespec="minutes"),
+            }
+
+    rows = build_rows(snapshot["issues"], snapshot["mapping"], snapshot["dossiers"])
+    output = render_markdown(rows, snapshot["captured_at"], source_revision=snapshot.get("source_revision"))
+    target.write_text(output, encoding="utf-8")
+    if args.snapshot_output is not None:
+        serialized = json.dumps(snapshot, ensure_ascii=False, indent=2, sort_keys=True)
+        args.snapshot_output.write_text(serialized + "\n", encoding="utf-8")
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as stream:
+            stream.write(output)
+    print(f"Generated {target} for {len(rows)} open issues.")
+    return 0
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except subprocess.CalledProcessError as exc:
+        print(f"Backlog generation failed: {exc.stderr.strip()}", file=sys.stderr)
+        raise SystemExit(2)
+    except (KeyError, ValueError, TypeError, OSError, yaml.YAMLError) as exc:
+        print(f"Backlog generation failed: {exc}", file=sys.stderr)
+        raise SystemExit(2)

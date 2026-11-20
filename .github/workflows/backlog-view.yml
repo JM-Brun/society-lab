@@ -4,6 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 6 * * 1"
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/backlog-view.yml
+      - scripts/report/generate_backlog_view.py
+      - tests/test_backlog_view.py
 
 permissions:
   contents: read
@@ -24,10 +30,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           BACKLOG_OUTPUT: backlog-view.md
-        run: python scripts/report/generate_backlog_view.py
-      - name: Upload generated view
+        run: python scripts/report/generate_backlog_view.py --snapshot-output backlog-snapshot.json
+      - name: Verify offline replay
+        run: |
+          BACKLOG_OUTPUT="$RUNNER_TEMP/backlog-replayed.md" env -u GITHUB_STEP_SUMMARY \
+            python scripts/report/generate_backlog_view.py --snapshot-input backlog-snapshot.json
+          cmp backlog-view.md "$RUNNER_TEMP/backlog-replayed.md"
+      - name: Upload generated view and replay inputs
         uses: actions/upload-artifact@v4
         with:
           name: society-lab-backlog-view
-          path: backlog-view.md
+          path: |
+            backlog-view.md
+            backlog-snapshot.json
+          if-no-files-found: error
           retention-days: 30

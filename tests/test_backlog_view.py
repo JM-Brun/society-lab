@@ -1,5 +1,13 @@
+import json
+import os
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+from scripts.report import generate_backlog_view as backlog
 from scripts.report.generate_backlog_view import build_rows, render_markdown
+
 class BacklogViewTests(unittest.TestCase):
     def setUp(self):
         self.mapping={"issues":[{"issue":7,"kind":"research","dossier_ids":["D1"],"depends_on":[8]},{"issue":8,"kind":"meta","dossier_ids":[],"depends_on":[]}]}
@@ -18,4 +26,39 @@ class BacklogViewTests(unittest.TestCase):
     def test_rendering_includes_domain_and_dependencies(self):
         output=render_markdown(build_rows(self.issues,self.mapping,self.dossiers),"2026-11-18T12:00+00:00")
         self.assertIn("DOMAIN-A, DOMAIN-B",output); self.assertIn("#8",output); self.assertIn("À qualifier",output)
+
+    def test_captured_report_replays_without_github_or_git(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            snapshot_path = root / "snapshot.json"
+            live_path = root / "live.md"
+            replay_path = root / "replay.md"
+            issues = [dict(issue, body="Unused issue body") for issue in reversed(self.issues)]
+            with (
+                patch.dict(os.environ, {"BACKLOG_OUTPUT": str(live_path), "GITHUB_TOKEN": "fixture"}, clear=True),
+                patch.object(backlog, "read_git", side_effect=["fixture-commit\n", json.dumps(self.mapping), json.dumps(self.dossiers)]) as git,
+                patch.object(backlog, "fetch_open_issues", return_value=issues),
+            ):
+                self.assertEqual(backlog.main(["--snapshot-output", str(snapshot_path)]), 0)
+                git.assert_any_call("show", f"fixture-commit:{backlog.MAPPING}")
+                git.assert_any_call("show", f"fixture-commit:{backlog.DOSSIERS}")
+
+            snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+            self.assertEqual(snapshot["source_revision"], "fixture-commit")
+            self.assertEqual([issue["number"] for issue in snapshot["issues"]], [7, 8, 9])
+            self.assertEqual(set(snapshot["issues"][0]), {"number", "title", "html_url", "labels"})
+            self.assertEqual(set(snapshot["dossiers"]["dossiers"][0]), {"id", "domain_ids"})
+            with (
+                patch.dict(os.environ, {"BACKLOG_OUTPUT": str(replay_path)}, clear=True),
+                patch.object(backlog, "fetch_open_issues") as api,
+                patch.object(backlog, "read_git") as git,
+                patch.object(backlog, "load_yaml") as yaml,
+            ):
+                self.assertEqual(backlog.main(["--snapshot-input", str(snapshot_path)]), 0)
+                api.assert_not_called()
+                git.assert_not_called()
+                yaml.assert_not_called()
+            self.assertEqual(live_path.read_bytes(), replay_path.read_bytes())
+            self.assertIn("DOMAIN-A, DOMAIN-B", replay_path.read_text(encoding="utf-8"))
+
 if __name__=="__main__": unittest.main()

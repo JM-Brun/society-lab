@@ -39,7 +39,23 @@ Une ligne de backlog doit exposer au minimum :
 
 Cette correspondance est une première version éditoriale, pas une inférence automatique. Chaque ajout ou modification doit être relu dans une PR.
 
-## Génération et distribution\n\nLe script `scripts/report/generate_backlog_view.py` produit une vue Markdown à partir de l'API GitHub, du mapping et des registres. Le workflow `.github/workflows/backlog-view.yml` l'exécute chaque lundi et à la demande, publie le Markdown dans le résumé Actions et conserve un artefact téléchargeable pendant 30 jours. Le rendu n'est pas commité automatiquement : il s'agit d'une projection datée, pas d'une seconde source de vérité.\n\nLe contrôle `scripts/validate/validate_issue_domain_map.py` vérifie l'unicité des issues mappées, l'existence des dossiers/domaines, le type des issues et les dépendances explicites. Il est intégré à la CI principale.\n\n## Contrôles attendus avant génération
+## Génération et distribution
+
+Le workflow `backlog-view.yml` génère la vue chaque lundi, à la demande et lors d'une PR qui modifie le générateur, ses tests ou le workflow. Il publie le résumé Markdown et conserve pendant 30 jours les fichiers `backlog-view.md` et `backlog-snapshot.json` dans l'artefact `society-lab-backlog-view`.
+
+L'instantané enregistre les champs effectivement utilisés pour le rendu, l'heure du relevé des issues et le SHA du commit dont proviennent les correspondances et dossiers. Le relevé via l'API peut regrouper plusieurs pages lues successivement. L'heure correspond à la fin de la collecte.
+
+Pour capturer un instantané depuis le commit `HEAD`, utiliser la première commande avec `GITHUB_TOKEN` déjà défini. La seconde rejoue le rapport depuis le seul instantané JSON, sans jeton GitHub ni accès au dépôt Git. Utiliser la même version du générateur pour comparer les fichiers octet pour octet.
+
+```bash
+python scripts/report/generate_backlog_view.py --snapshot-output backlog-snapshot.json
+BACKLOG_OUTPUT=backlog-rejoue.md python scripts/report/generate_backlog_view.py --snapshot-input backlog-snapshot.json
+cmp backlog-view.md backlog-rejoue.md
+```
+
+Une exécution sans option d'instantané continue de lire la correspondance et les dossiers depuis la copie de travail locale. Le contrôle `scripts/validate/validate_issue_domain_map.py` vérifie l'unicité des issues mappées, l'existence des dossiers et domaines, le type des issues et les dépendances explicites dans la CI principale.
+
+## Contrôles attendus avant génération
 
 - unicité des numéros d'issues dans la correspondance ;
 - existence de chaque dossier référencé dans `dossiers/registry.yml` ;
