@@ -167,19 +167,33 @@ def calculate_source_coverage(sources, relations, known_ids, known_relation_type
     }
 
 def calculate_claim_conclusion_coverage(claims):
-    counts, active, unknown = {}, [], []
-    for claim in claims:
+    counts = {}
+    active_ids, conclusive_ids, superseded_ids = [], [], []
+    invalid_entries, unknown_statuses = [], []
+    for position, claim in enumerate(claims, start=1):
         if not isinstance(claim, dict):
-            unknown.append("<non-mapping claim>"); continue
-        status = claim.get("status")
-        label = status if isinstance(status, str) and status else "<missing>"
-        counts[label] = counts.get(label, 0) + 1
-        if status == "superseded":
+            invalid_entries.append(f"#{position}: expected a claim mapping")
             continue
-        active.append(claim)
-        if status not in CONCLUSIVE_STATUSES | NON_CONCLUSIVE_STATUSES:
-            unknown.append(str(claim.get("id", "<missing id>")))
-    numerator, denominator = sum(c.get("status") in CONCLUSIVE_STATUSES for c in active), len(active)
+        claim_id = claim.get("id")
+        if not isinstance(claim_id, str) or not claim_id.strip():
+            invalid_entries.append(f"#{position}: missing or invalid claim id")
+            continue
+        status = claim.get("status")
+        label = status if isinstance(status, str) and status else "<missing or invalid>"
+        counts[label] = counts.get(label, 0) + 1
+        if label == "superseded":
+            superseded_ids.append(claim_id)
+            continue
+        active_ids.append(claim_id)
+        if label in CONCLUSIVE_STATUSES:
+            conclusive_ids.append(claim_id)
+        elif label not in NON_CONCLUSIVE_STATUSES:
+            unknown_statuses.append(claim_id)
+    numerator, denominator = len(conclusive_ids), len(active_ids)
+    issues = {
+        "invalid_claim_entries": invalid_entries,
+        "unknown_or_missing_status": unknown_statuses,
+    }
     return {
         "metric_id": "claim_conclusion_coverage",
         "status": "computed" if denominator else "not_computable",
@@ -187,16 +201,14 @@ def calculate_claim_conclusion_coverage(claims):
         "denominator": denominator if denominator else None,
         "value": 100 * numerator / denominator if denominator else None,
         "unit": "%",
-        "scope": "Claims actifs ; superseded exclus du numérateur et du dénominateur.",
+        "scope": "Claims actifs avec identifiant ; superseded et entrées sans identifiant exploitable exclus.",
         "excluded_count": len(claims) - denominator,
-        "unknown_count": len(unknown),
-        "issues": {"unknown_or_missing_status": unknown} if unknown else {},
+        "unknown_count": len(invalid_entries) + len(unknown_statuses),
+        "issues": {key: entries for key, entries in issues.items() if entries},
         "status_counts": counts,
-        "active_claim_ids": sorted(str(c.get("id")) for c in active if c.get("id")),
-        "conclusive_claim_ids": sorted(str(c.get("id")) for c in active
-                                        if c.get("status") in CONCLUSIVE_STATUSES and c.get("id")),
-        "superseded_claim_ids": sorted(str(c.get("id")) for c in claims
-                                        if isinstance(c, dict) and c.get("status") == "superseded" and c.get("id")),
+        "active_claim_ids": sorted(active_ids),
+        "conclusive_claim_ids": sorted(conclusive_ids),
+        "superseded_claim_ids": sorted(superseded_ids),
         "definition_version": 1,
     }
 
