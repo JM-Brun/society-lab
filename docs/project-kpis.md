@@ -56,6 +56,8 @@ Afficher également le nombre de sources sans lien exploitable et la liste des i
 
 Le champ `source_verifications.status` décrit le contrôle de chaque source associée à un claim ; il ne remplace pas le statut épistémique du claim et n'entre pas dans ce calcul.
 
+Le schéma canonique exige un identifiant de claim et un statut reconnu. Lors d'un calcul autonome sur un registre non conforme, une entrée qui n'est pas un objet ou qui n'a pas d'identifiant textuel non vide est exclue du ratio et signalée par sa position (à partir de 1). Un claim identifiable avec un statut inconnu, manquant ou mal typé reste au dénominateur et est signalé par son identifiant. La validation du registre vérifie la conformité complète au schéma, notamment le format et l'unicité des identifiants.
+
 ### 3.3 Synthesis Coverage
 
 **Question :** les dossiers principaux éligibles disposent-ils d'une synthèse autonome référencée ?

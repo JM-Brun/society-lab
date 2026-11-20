@@ -103,6 +103,22 @@ Les domaines isolés sont ainsi passés de quatre à un. Les relations ajoutées
 2. Ne pas traiter le taux de 35 % des claims conclusifs comme une mesure de vérité ou de qualité scientifique. Les 52 claims `under_review` forment un portefeuille de vérification à poursuivre.
 3. Ne pas créer de relation pour `DOMAIN-HEALTH` ou `TERRITORY-INTERNATIONAL` sans objet canonique ou justification sémantique supplémentaire.
 4. Conserver le benchmark ×1/×10/×100 dans le workflow périodique et manuel séparé. Sur l'exécution post-fusion, le calcul KPI en CI a duré environ une seconde, contre environ 53 secondes pour les tests unitaires ; le calcul KPI n'est pas le poste dominant.
+
+## Contre-mesure locale du 20 novembre 2026
+
+Les deux commandes du [workflow de benchmarks](../../.github/workflows/benchmarks.yml) ont été exécutées sur le commit `5492cf2d94432980113925a43061d6ada4915619`, sous Linux avec Python 3.12.14. Chaque cellule donne la médiane de trois répétitions après échauffement. Les volumes ×10 et ×100 sont des agrandissements synthétiques en mémoire.
+
+| Échelle | Fiches validées par schéma | Validation des schémas (s) | Chargement YAML KPI (s) | Calcul KPI (s) | Total KPI (s) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| ×1 | 442 | 0,109 | 0,755 | 0,002 | 0,756 |
+| ×10 | 4 420 | 0,512 | 0,711 | 0,013 | 0,724 |
+| ×100 | 44 200 | 6,540 | 0,710 | 0,159 | 0,869 |
+
+Le benchmark KPI charge le corpus YAML réel à chaque répétition, puis agrandit les structures en mémoire. La colonne YAML reste donc du même ordre aux trois échelles. La validation de schémas isole son propre calcul. Les chiffres excluent l'installation des dépendances, la validation complète et le coût total d'un job GitHub Actions.
+
+Sur ce commit, le rapport en lecture seule compte 477 nœuds indexés et 702 relations valides, sans diagnostic d'intégrité. La couverture documentaire reste à 218/220 et celle des synthèses à 25/25. Le taux de claims conclusifs passe de 28/80 à 28/81 (34,6 %), avec un claim supplémentaire `under_review`. Les deux sources de contexte sans relation documentaire retenue et les deux isolements qualifiés ci-dessus restent les mêmes.
+
+Les mesures confirment le choix de conserver le workflow séparé, hebdomadaire et déclenchable à la demande. L'exécution ×100 des schémas coûte davantage que le calcul KPI et l'utilité de ces mesures est de suivre l'évolution du coût au fil des versions. Aucun seuil bloquant n'en est déduit. Le workflow dédié ne listait encore aucun run GitHub Actions lors de la vérification du 20 novembre. Son premier run fournira le point de comparaison sur un runner hébergé.
 5. L'inventaire de couverture des registres est un artefact distinct : la présence des champs n'atteste ni leur qualité ni la validité scientifique de leurs contenus.
 
 ## Conclusion opérationnelle

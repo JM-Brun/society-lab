@@ -86,6 +86,28 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertEqual(result["numerator"], 0)
         self.assertEqual(result["unknown_count"], 1)
 
+    def test_untraceable_claims_are_excluded_and_invalid_status_is_non_conclusive(self):
+        result = calculate_claim_conclusion_coverage([
+            {"id": "CLAIM-A", "status": "supported"},
+            {"status": "supported"},
+            {"id": ["CLAIM-B"], "status": "supported"},
+            None,
+            {"id": "CLAIM-C", "status": ["supported"]},
+        ])
+        self.assertEqual((result["numerator"], result["denominator"]), (1, 2))
+        self.assertEqual(result["active_claim_ids"], ["CLAIM-A", "CLAIM-C"])
+        self.assertEqual(result["conclusive_claim_ids"], ["CLAIM-A"])
+        self.assertEqual(result["excluded_count"], 3)
+        self.assertEqual(result["unknown_count"], 4)
+        self.assertEqual(result["issues"], {
+            "invalid_claim_entries": [
+                "#2: missing or invalid claim id",
+                "#3: missing or invalid claim id",
+                "#4: expected a claim mapping",
+            ],
+            "unknown_or_missing_status": ["CLAIM-C"],
+        })
+
     def test_no_active_claims_is_not_computable(self):
         result = calculate_claim_conclusion_coverage([{"id": "CLAIM-A", "status": "superseded"}])
         self.assertEqual(result["status"], "not_computable")
