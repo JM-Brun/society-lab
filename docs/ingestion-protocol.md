@@ -63,6 +63,21 @@ Chaque candidate reçoit une décision :
 
 Les identifiants de candidates sont locaux au manifeste. Ils ne remplacent jamais les identifiants canoniques `SOURCE-*`. Les doublons ne sont pas supprimés de l'historique : ils sont conservés comme décisions reliées à la source retenue. Un même `SOURCE-*` ne doit pas être sélectionné deux fois dans un même lot.
 
+### Vérification des correspondances avant ingestion
+
+Depuis la racine du dépôt, le [script de rapprochement](../scripts/audit/check_ingestion_candidates.py) produit un rapport JSON en lecture seule. Sans `--batch`, il recense les valeurs partagées entre fiches canoniques. Avec `--batch`, il ajoute les correspondances du lot avec le registre et entre candidates. Exécuter le contrôle avant d'attribuer une décision finale.
+
+```bash
+python scripts/audit/check_ingestion_candidates.py
+python scripts/audit/check_ingestion_candidates.py --batch sources/batches/mon-lot.yml
+python scripts/audit/check_ingestion_candidates.py --batch sources/batches/mon-lot.yml \
+  --artifact CANDIDATE-001 /chemin/vers/source.pdf
+```
+
+- Le script compare les identifiants `SOURCE-*` explicites et les URL exactes, avec leurs paramètres et fragments. Pour le DOI, il utilise `doi` côté source ou `external_identifier` côté candidate. Une URL de résolveur DOI fournit une valeur de repli. Les autres formats d'identifiants externes restent à examiner pendant la revue.
+- Le champ facultatif `artifact_sha256` identifie les octets d'un artefact précis. `--artifact` calcule cette empreinte sur un fichier local et la vérifie si le manifeste la déclare déjà. Documenter la version et le format du fichier dans la fiche lorsque ces éléments sont connus.
+- Le rapport fournit les identifiants à examiner. Une URL commune peut héberger une notice éditoriale utilisée pour documenter un ouvrage. Une empreinte commune indique des octets identiques. La décision `duplicate` et sa justification restent à consigner dans le manifeste.
+
 ### Règles de clôture et de reprise
 
 1. Créer le manifeste avant ou au début de la collecte ; ne pas reconstruire les critères après avoir vu les résultats sans le signaler.
