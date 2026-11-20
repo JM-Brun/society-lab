@@ -65,11 +65,11 @@ Les identifiants de candidates sont locaux au manifeste. Ils ne remplacent jamai
 
 ### Vérification des correspondances avant ingestion
 
-Depuis la racine du dépôt, le [script de rapprochement](../scripts/audit/check_ingestion_candidates.py) produit un rapport JSON en lecture seule. Sans `--batch`, il recense les valeurs partagées entre fiches canoniques. Avec `--batch`, il ajoute les correspondances du lot avec le registre et entre candidates. Exécuter le contrôle avant d'attribuer une décision finale.
+Depuis la racine du dépôt, le [script de rapprochement](../scripts/audit/check_ingestion_candidates.py) produit un rapport JSON en lecture seule. Sans `--batch`, il recense les valeurs partagées entre fiches canoniques. Avec `--batch`, il applique le schéma et les règles de référence utilisés par la CI, calcule les compteurs par décision et ajoute les correspondances du lot avec le registre et entre candidates. Exécuter le contrôle avant d'attribuer une décision finale.
 
 ```bash
 python scripts/audit/check_ingestion_candidates.py
-python scripts/audit/check_ingestion_candidates.py --batch sources/batches/mon-lot.yml
+python scripts/audit/check_ingestion_candidates.py --batch sources/batches/cordon-sanitaire-belgique-pilote.yml
 python scripts/audit/check_ingestion_candidates.py --batch sources/batches/mon-lot.yml \
   --artifact CANDIDATE-001 /chemin/vers/source.pdf
 ```
@@ -77,6 +77,8 @@ python scripts/audit/check_ingestion_candidates.py --batch sources/batches/mon-l
 - Le script compare les identifiants `SOURCE-*` explicites et les URL exactes, avec leurs paramètres et fragments. Pour le DOI, il utilise `doi` côté source ou `external_identifier` côté candidate. Une URL de résolveur DOI fournit une valeur de repli. Les autres formats d'identifiants externes restent à examiner pendant la revue.
 - Le champ facultatif `artifact_sha256` identifie les octets d'un artefact précis. `--artifact` calcule cette empreinte sur un fichier local et la vérifie si le manifeste la déclare déjà. Documenter la version et le format du fichier dans la fiche lorsque ces éléments sont connus.
 - Le rapport fournit les identifiants à examiner. Une URL commune peut héberger une notice éditoriale utilisée pour documenter un ouvrage. Une empreinte commune indique des octets identiques. La décision `duplicate` et sa justification restent à consigner dans le manifeste.
+
+Le [lot pilote sur le cordon sanitaire belge](../sources/batches/cordon-sanitaire-belgique-pilote.yml) reprend trois publications du registre. Le contrôle retrouve une fiche pour Biard (2021) et deux fiches par DOI pour De Jonge (2021) et Miyauchi (2025). Ces deux décisions sont reportées jusqu'à la revue des usages de chaque fiche.
 
 ### Règles de clôture et de reprise
 

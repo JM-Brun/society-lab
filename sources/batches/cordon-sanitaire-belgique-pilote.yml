@@ -1,0 +1,33 @@
+batch_id: BATCH-CORDON-SANITAIRE-BELGIQUE-PILOTE
+created_at: "2026-11-20T09:40:07Z"
+origin:
+  kind: manual_search
+  description: "Revue rétrospective de trois publications à partir du registre des sources de Society Lab."
+  query: "Notices de De Jonge (2021), Biard (2021) et Miyauchi (2025) sur le cordon sanitaire en Belgique."
+  reference_url: "https://github.com/JM-Brun/society-lab/blob/c689f7e68c799d4b426fc7056a6cffd1e1289450/sources/registry.yml"
+selection_criteria:
+  include:
+    - "Publication académique du lot thématique comparant ou étudiant des cas belges de cordon sanitaire."
+  exclude:
+    - "Source extérieure aux trois publications définissant le périmètre du pilote."
+status: screening
+notes: "Les dates de découverte désignent la revue de ce lot. Les décisions portent sur l'identité documentaire des sources."
+candidates:
+  - candidate_id: CANDIDATE-DE-JONGE-2021
+    title: "The Curious Case of Belgium: Why is There no Right-Wing Populism in Wallonia?"
+    canonical_url: "https://doi.org/10.1017/gov.2020.8"
+    discovered_at: "2026-11-20T09:40:07Z"
+    decision: deferred
+    decision_reason: "Deux identifiants canoniques partagent ce DOI. Examiner les usages des fiches avant d'en retenir une."
+  - candidate_id: CANDIDATE-BIARD-2021
+    title: "Challenging the Cordon Sanitaire in Belgium: A Diachronic Analysis"
+    canonical_url: "https://doi.org/10.4324/9781003104643-8"
+    discovered_at: "2026-11-20T09:40:07Z"
+    decision: selected
+    source_id: SOURCE-BIARD-2021-DIACHRONIC-CORDON
+  - candidate_id: CANDIDATE-MIYAUCHI-2025
+    title: "The Solidity and Vulnerability of Cordon Sanitaire in the Consociational Democracy: The Case of the 2024 Local Elections in Belgium"
+    canonical_url: "https://doi.org/10.11193/jacpoj.11.0_79"
+    discovered_at: "2026-11-20T09:40:07Z"
+    decision: deferred
+    decision_reason: "Deux identifiants canoniques partagent ce DOI. Examiner les usages des fiches avant d'en retenir une."
