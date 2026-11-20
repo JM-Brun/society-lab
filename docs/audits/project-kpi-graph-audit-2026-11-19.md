@@ -124,3 +124,20 @@ Les mesures confirment le choix de conserver le workflow séparé, hebdomadaire 
 ## Conclusion opérationnelle
 
 La connectivité documentaire et structurelle du graphe est désormais cohérente avec les métadonnées explicites examinées. Les seuls isolements résiduels sont qualifiés et ne justifient pas de relations artificielles. Les trois KPIs restent stables ; les deux sources de contexte demeurent volontairement hors du numérateur documentaire. L'issue #156 peut rester ouverte pour la revue qualitative des sources et claims et la stabilisation durable du processus d'audit.
+
+## Validation finale de l’issue #156 — 20 novembre 2026
+
+[Rapport JSON du commit `50ff386`](https://github.com/JM-Brun/society-lab/actions/runs/44761357315/artifacts/14641780777) et [benchmark GitHub Actions](https://github.com/JM-Brun/society-lab/actions/runs/44761357293) examinés sur `main` après la fusion de #210.
+
+- Couverture documentaire : **218/220**. Les deux sources sans relation documentaire retenue sont les sources de contexte déjà qualifiées (Défenseur des droits et Education and Training Monitor). Leurs liens `REL-ABOUT` décrivent leur thème.
+- Claims conclusifs : **28/81**. Le test intégré par #192 vérifie les deux cas de périmètre restants : identifiant inexploitable exclu et signalé ; statut inconnu d'un claim identifiable inclus au dénominateur et signalé. Les claims `under_review` gardent leur suivi dans les dossiers concernés.
+- Synthèses : **25/25** dossiers actifs couverts. Le statut `archived` détermine l'exclusion ; les statuts de dossier inconnus restent signalés.
+- Graphe : **477** nœuds indexés, **730** relations valides, aucun identifiant en collision et aucun diagnostic d'intégrité. Les deux isolements documentés persistent (`DOMAIN-HEALTH` et `TERRITORY-INTERNATIONAL`). Les diagnostics portent sur les types effectivement indexés et sur les relations dont l'identifiant, les types, les extrémités et la justification sont valides. Les taux par type décrivent le graphe observé. Un indicateur d'exhaustivité exigerait en plus une matrice justifiée des relations attendues.
+
+| Échelle | Validation des schémas (s) | Calcul KPI seul (s) | Chargement YAML + calcul KPI (s) |
+|---|---:|---:|---:|
+| ×1 | 0,126 | 0,0015 | 0,778 |
+| ×10 | 0,696 | 0,0132 | 0,786 |
+| ×100 | 6,358 | 0,1606 | 0,951 |
+
+Médianes de trois répétitions sur un runner et une révision. Les facteurs ×10 et ×100 s'appliquent aux corpus synthétiques. Le benchmark reste informatif, sur son workflow dédié hebdomadaire, manuel et déclenché après modification de ses propres fichiers sur `main`. La mesure est un point de référence ; la variabilité entre runners reste à observer au fil des exécutions. Les tests intégrés couvrent les cas de périmètre identifiés lors de cet audit.
