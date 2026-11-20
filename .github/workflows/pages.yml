@@ -29,7 +29,11 @@ jobs:
         with:
           version: "1.11.9"
       - name: Render public site
-        run: quarto render site
+        run: |
+          timing="$RUNNER_TEMP/quarto-render-time.txt"
+          /usr/bin/time -f 'Quarto render: %e s elapsed, %M KiB peak RSS' \
+            -o "$timing" quarto render site
+          tee -a "$GITHUB_STEP_SUMMARY" < "$timing"
       - name: Check publication scope and links
         run: python scripts/validate/validate_public_site.py
       - uses: actions/upload-pages-artifact@v3
