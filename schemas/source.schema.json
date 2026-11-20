@@ -86,6 +86,12 @@
     "doi": {
       "type": "string"
     },
+    "artifact_sha256": {
+      "type": "string",
+      "maxLength": 64,
+      "pattern": "^[a-fA-F0-9]{64}$",
+      "description": "SHA-256 of the exact source artifact bytes, when known."
+    },
     "geographic_scope": {
       "type": "array",
       "items": {
