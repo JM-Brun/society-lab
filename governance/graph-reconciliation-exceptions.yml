@@ -1,0 +1,11 @@
+exceptions:
+  - field: claim_ids
+    side: graph_only
+    source: DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE
+    target: CLAIM-TIG-OUTCOME-THREE-YEARS-2025
+    reason: Le graphe conserve la ventilation historique citée au §14.1. La fiche référence les quatre résultats détaillés du §15.3.
+  - field: concept_ids
+    side: registry_only
+    source: DOSSIER-ENERGY-SCENARIOS-QUANTITATIVE-2026
+    target: CONCEPT-ENERGY-ACCOUNTING-PERIMETER
+    reason: La relation thématique REL-ABOUT existe déjà. Le périmètre comptable est un sujet central du dossier.

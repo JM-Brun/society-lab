@@ -26,6 +26,7 @@ RULES = (
 )
 SIDES = {"registry_only": "fiches seules", "graph_only": "graphe seul"}
 SUMMARY_LIMIT = 30
+EXCEPTIONS_PATH = "governance/graph-reconciliation-exceptions.yml"
 
 
 def git(*args: str) -> str:
@@ -89,12 +90,56 @@ def compare_snapshots(current: tuple[dict, list], baseline: tuple[dict, list] | 
     return comparisons
 
 
+def load_exceptions(revision: str) -> list[dict]:
+    if not git("ls-tree", "--name-only", revision, "--", EXCEPTIONS_PATH).strip():
+        return []
+    exceptions = yaml.safe_load(git("show", f"{revision}:{EXCEPTIONS_PATH}"))["exceptions"]
+    if not isinstance(exceptions, list):
+        raise ValueError("reconciliation exceptions must be a list")
+    return exceptions
+
+
+def classify_exceptions(rules: list[dict], exceptions: list[dict]) -> dict:
+    gaps = {
+        (rule["field"], side, source, target)
+        for rule in rules
+        for side in SIDES
+        for source, target in rule[side]
+    }
+    endpoints = {field: (source_type, target_type) for source_type, field, _, target_type in RULES}
+    active, inactive = [], []
+    seen = set()
+    keys = ("field", "side", "source", "target", "reason")
+    for i, entry in enumerate(exceptions, start=1):
+        if not isinstance(entry, dict) or set(entry) != set(keys) or any(
+            not isinstance(entry[key], str) or not entry[key].strip() for key in keys
+        ):
+            raise ValueError(f"invalid reconciliation exception #{i}")
+        key = tuple(entry[k] for k in keys[:-1])
+        field, side, source, target = key
+        if field not in endpoints or side not in SIDES:
+            raise ValueError(f"unknown field or side in reconciliation exception #{i}")
+        source_type, target_type = endpoints[field]
+        if not source.startswith(f"{source_type}-") or not target.startswith(f"{target_type}-"):
+            raise ValueError(f"invalid endpoints in reconciliation exception #{i}")
+        if key in seen:
+            raise ValueError(f"duplicate reconciliation exception #{i}: {key}")
+        seen.add(key)
+        (active if key in gaps else inactive).append(entry)
+    order = lambda entry: tuple(entry[k] for k in keys[:-1])
+    return {
+        "unreviewed_count": len(gaps) - len(active),
+        "documented_exceptions": sorted(active, key=order),
+        "inactive_exceptions": sorted(inactive, key=order),
+    }
+
+
 def render_markdown(report: dict) -> str:
     lines = ["## Rapprochement fiches–graphe", "", f"Révision auditée `{report['revision']}`."]
     if report["base_revision"] is not None:
         lines.append(f"Révision de référence `{report['base_revision']}`.")
     lines.extend([
-        "", "Les écarts sont des éléments à examiner selon le rôle documentaire de chaque lien.", "",
+        "", "Le tableau conserve les écarts bruts entre les fiches et le graphe.", "",
         "| Fiche et champ | Relation | Communes | Fiches seules | Graphe seul |",
         "|---|---|---:|---:|---:|",
     ])
@@ -114,6 +159,22 @@ def render_markdown(report: dict) -> str:
                 details.extend(
                     f"- {label} ({SIDES[side]}, {field}) · `{source}` → `{target}`"
                     for source, target in changes[change][:remaining]
+                )
+    if "unreviewed_count" in report:
+        documented = report["documented_exceptions"]
+        inactive = report["inactive_exceptions"]
+        lines.extend([
+            "",
+            f"**À examiner** {report['unreviewed_count']} · **Écarts documentés** {len(documented)}"
+            f" · **Décisions sans écart correspondant** {len(inactive)}",
+        ])
+        for label, entries in (("Écarts documentés", documented), ("Décisions à réexaminer", inactive)):
+            if entries:
+                lines.extend(["", f"### {label}", ""])
+                lines.extend(
+                    f"- `{entry['source']}` → `{entry['target']}` "
+                    f"(`{entry['field']}`, {SIDES[entry['side']]}). {entry['reason']}"
+                    for entry in entries
                 )
     if report["base_revision"] is not None:
         lines.extend(["", "### Évolution des écarts", "", f"**Apparus** {added} · **Disparus** {resolved}"])
@@ -140,10 +201,11 @@ def main() -> None:
             "base_revision": base,
             "rules": compare_snapshots(load_snapshot(revision), load_snapshot(base) if base else None),
         }
+        report.update(classify_exceptions(report["rules"], load_exceptions(revision)))
     except subprocess.CalledProcessError as exc:
         parser.error(exc.stderr.strip() or "unable to read the requested Git revisions")
-    except (KeyError, TypeError, yaml.YAMLError) as exc:
-        parser.error(f"invalid registry or graph snapshot: {exc}")
+    except (KeyError, TypeError, ValueError, yaml.YAMLError) as exc:
+        parser.error(f"invalid registry, graph, or exception data: {exc}")
 
     serialized = json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True)
     if args.json_output:

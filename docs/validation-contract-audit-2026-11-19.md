@@ -73,6 +73,8 @@ python scripts/audit/report_graph_reconciliation.py --revision HEAD --base origi
 
 Le rapport fournit les paires propres à chaque côté et, avec `--base`, les paires apparues ou disparues de chaque catégorie. La disparition d'un écart peut venir d'un alignement des représentations ou du retrait d'une référence. Le workflow de validation affiche le résumé à titre indicatif et publie le JSON complet dans l'artefact `graph-reconciliation`. Sur une PR, il compare le commit de fusion testé avec la révision de base indiquée par GitHub. Les modifications locales doivent être commitées pour figurer dans le rapport.
 
+Les [exceptions documentées](../governance/graph-reconciliation-exceptions.yml) sont lues dans la révision auditée. Chaque entrée précise le champ, le côté, les deux identifiants et la raison. Le résumé et le JSON distinguent les écarts à examiner, les exceptions qui correspondent à un écart et les décisions sans écart correspondant. Les listes brutes et le calcul des écarts apparus ou disparus restent consultables. Si le motif d'une décision évolue, mettre à jour l'entrée dans le même changement. Une révision antérieure au fichier d'exceptions s'audite avec une liste vide.
+
 Le graphe contient **684 arêtes** : ABOUT 168, SUPPORTS 87, INCLUDES 326, USES 6, GEOGRAPHICALLY-WITHIN 7, CHILD-OF 8, SUMMARIZED-BY 8, TRANSCRIBES 21, SUMMARIZES 1, QUALIFIES 8 et CITES 44.
 
 Le rapprochement des références explicites des dossiers avec les arêtes `REL-INCLUDES` donne :
