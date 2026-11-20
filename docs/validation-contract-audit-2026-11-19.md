@@ -251,3 +251,18 @@ Le rapport de rapprochement sur `4261bb105b0462b56b302560da5ff313e4d28b31` relè
 | §§15.2–15.3, enquête de délais et cohorte nationale | `CLAIM-TIG-COUR-SAMPLE-DELAY-2023-2024`, `CLAIM-TIG-EXECUTED-WITHIN-3Y-2020`, `CLAIM-TIG-CONVERTED-WITHIN-3Y-2020`, `CLAIM-TIG-UNEXECUTED-AT-3Y-2020`, `CLAIM-TIG-FAILURE-ATTRIBUTABLE-3Y-2020` | Le dossier distingue la mesure du délai sur neuf territoires et la ventilation en quatre issues à 36 mois de la cohorte nationale. |
 
 L'arête vers `CLAIM-TIG-OUTCOME-THREE-YEARS-2025` reste dans le graphe. Sa justification pointe vers l'ancienne ventilation agrégée citée au §14.1. La fiche dossier référence les quatre affirmations distinctes du §15.3. Le rapport mécanique continue donc de signaler cet unique écart TIG, qualifié ici comme historique. L'audit recense **49 écarts au total** après correction, dont cet écart documenté. Les 48 autres écarts restent à examiner.
+
+## 9. Arbitrage du lot scénarios énergétiques — 20 novembre 2026
+
+Le rapport de rapprochement sur `63f2e78d6ee9f914e9a8ae19d37ba0906a85ed27` relève six références `concept_ids` sans arête `REL-INCLUDES`. Les décisions ci-dessous reposent sur le texte des dossiers et les définitions du [registre des concepts](../knowledge/concepts/registry.yml).
+
+| Dossier | Concept | Décision et passage |
+|---|---|---|
+| [Audit du PREF](../dossiers/pref-2026-audit-robustesse-scenarios.md) | Robustesse d'une trajectoire | Ajouter `REL-INCLUDES`. Le §3.3 définit la robustesse, la distingue de la résilience et donne les critères d'évaluation. |
+| Audit du PREF | Analyse de sensibilité | Ajouter `REL-INCLUDES`. Les §§3.2 et 5.3 décrivent les variantes de réussite et leur interprétation conditionnelle. |
+| [Comparaison des trajectoires](../dossiers/comparaison-scenarios-transition-pref-rte-ademe-negawatt-snbc3.md) | Robustesse d'une trajectoire | Ajouter `REL-INCLUDES`. Le §3.1 présente la robustesse du PREF et le §5 en fait un axe de comparaison. |
+| Comparaison des trajectoires | Analyse de sensibilité | Ajouter `REL-INCLUDES`. Les §§5–6 proposent de tester les conclusions sous différentes hypothèses de sobriété. Le lien décrit un protocole, avec des tests encore à conduire. |
+| [Comparaison quantitative](../dossiers/comparaison-quantitative-scenarios-energie-2026.md) | Périmètre comptable énergétique | Conserver `REL-ABOUT` (`REL-QUANT-DOSSIER-USES-BOUNDARY-CONCEPT`). Les §§1 et 6 font des conventions de bilan un sujet central. Le rapport fondé sur `REL-INCLUDES` continue de signaler cette paire, qualifiée ici comme thématique. |
+| Comparaison quantitative | Analyse de sensibilité | Retirer la référence de la fiche. Les §§5–7 rapprochent des chiffres publiés, distinguent leurs périmètres et prévoient l'extraction par variante. Le traitement de la sensibilité elle-même est documenté dans les deux dossiers précédents. |
+
+Le lot traite les six paires. Le rapport mécanique passe de 49 à **44 écarts**, dont deux déjà arbitrés (l'ancienne ventilation TIG et le lien thématique de la comparaison quantitative). **42 paires** restent à examiner. Parmi les cinq écarts retirés du rapport, quatre correspondent à des arêtes ajoutées et un à une référence de fiche retirée.
