@@ -282,3 +282,16 @@ Le rapport de rapprochement sur `f28ebf4e3cf00991f14cb40c1fd08730f5e6061e` signa
 | Matrice des preuves | `HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER` | Ajouter `REL-INCLUDES`. Le §2 examine la diffusion salariale, la compression possible et la mobilité. |
 
 Le rapport passe de 44 à 37 écarts, avec zéro écart sur ces deux dossiers. Il reste 35 paires à examiner et deux écarts déjà qualifiés dans les lots TIG et énergie. Les liens d'inclusion indiquent les objets traités dans les dossiers. La vérification probatoire relève des fiches d'études, de claims et d'hypothèses.
+
+## 11. Arbitrage du dossier général sur le SMIC — 20 novembre 2026
+
+Le rapport sur `c60ae8c327fc6886e04b2d5b74b05e1b70206788` relevait huit écarts pour `DOSSIER-SMIC-FRANCE-TRADEOFFS`. Les objets ci-dessous ont été rapprochés des passages du [dossier général](../dossiers/smic-france-tradeoffs.md) et des registres.
+
+| Objets | Décision et ancrage |
+|---|---|
+| `STUDY-HCREP-EXEMPTIONS-2024`, `CLAIM-SMIC-EXEMPTIONS-TOTAL-2024-HCREP`, `CLAIM-SMIC-EXEMPTIONS-EXPERTS-75BN-2024` | Compléter la fiche. Le dossier cite la note HCREP et compare les agrégats en conservant la réserve sur leurs périmètres comptables. |
+| `CLAIM-SMIC-COTTET-MW-JOBS-1995-1999`, `CLAIM-SMIC-COTTET-FIRM-GROWTH-1995-1997` | Compléter la fiche. Le §15.1 distingue les deux groupes d'entreprises et les résultats sur les emplois au SMIC et sur la croissance de l'emploi. |
+| `CLAIM-SMIC-ALBERTINI-5PCT-MW-EMPLOYMENT`, `CLAIM-SMIC-ALBERTINI-5PCT-MW-FISCAL-SURPLUS` | Compléter la fiche. Le tableau du §15.2 présente les résultats simulés par scénario d'indexation pour les deux grandeurs. |
+| `STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS` | Conserver la référence de la fiche, expliciter son rôle au §15.1 et ajouter `REL-INCLUDES`. Le renvoi à l'audit existant compare une aide aux nouvelles embauches à une baisse de cotisations qui agit aussi sur la rétention des emplois. |
+
+Le rapport passe de 37 à 29 écarts, dont deux déjà qualifiés dans les lots TIG et énergie. Le dossier général est réconcilié pour les champs comparés. Les résultats scientifiques gardent leur niveau de preuve et les six claims ajoutés à la fiche restent `under_review`.
