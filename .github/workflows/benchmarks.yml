@@ -1,6 +1,12 @@
 name: Periodic performance benchmarks
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/benchmarks.yml
+      - scripts/benchmark/benchmark_registry_schema_validation.py
+      - scripts/benchmark/benchmark_project_kpis.py
   schedule:
     - cron: "17 4 * * 1"
   workflow_dispatch:

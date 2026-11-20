@@ -1,10 +1,6 @@
 version: 1
 description: "Correspondance explicite entre issues GitHub ouvertes et dossiers canoniques. Ne jamais déduire un domaine depuis le titre."
 issues:
-  - issue: 2
-    kind: research
-    dossier_ids: [DOSSIER-PARCOURSUP-EDUCATION-EQUITY]
-    depends_on: []
   - issue: 21
     kind: research
     dossier_ids: [DOSSIER-TIG-EFFECTIVENESS-AND-UNDERUSE]
