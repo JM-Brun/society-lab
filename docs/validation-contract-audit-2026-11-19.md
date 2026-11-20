@@ -295,3 +295,18 @@ Le rapport sur `c60ae8c327fc6886e04b2d5b74b05e1b70206788` relevait huit écarts 
 | `STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS` | Conserver la référence de la fiche, expliciter son rôle au §15.1 et ajouter `REL-INCLUDES`. Le renvoi à l'audit existant compare une aide aux nouvelles embauches à une baisse de cotisations qui agit aussi sur la rétention des emplois. |
 
 Le rapport passe de 37 à 29 écarts, dont deux déjà qualifiés dans les lots TIG et énergie. Le dossier général est réconcilié pour les champs comparés. Les résultats scientifiques gardent leur niveau de preuve et les six claims ajoutés à la fiche restent `under_review`.
+
+## 12. Arbitrage des dossiers historiques et méthodologiques sur le SMIC — 20 novembre 2026
+
+Sur `42d8b6fb6383724fa482ce07e267065efa3b3342`, les huit derniers écarts SMIC sont des références présentes dans les fiches. Le périmètre de chaque dossier a été vérifié avant arbitrage.
+
+| Dossier | Objet | Décision et ancrage |
+|---|---|---|
+| [Épisodes historiques](../dossiers/smic-historical-episodes.md) | `HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS` | Ajouter `REL-INCLUDES`. Les §§3.2–3.3 et 5 discutent les populations, l'exposition et les mécanismes d'emploi à tester. |
+| Épisodes historiques | `HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER` | Ajouter `REL-INCLUDES`. Les §§3.5 et 5 traitent de la compression des grilles et de la progression salariale. |
+| Épisodes historiques | `HYPOTHESIS-SMIC-PURCHASING-POWER-POVERTY` | Ajouter `REL-INCLUDES`. Les §§3.1 et 5 distinguent pouvoir d'achat au plancher et pauvreté en ménage. |
+| [Décomposition de l'indexation](../dossiers/smic-indexation-decomposition.md) | `STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS`, `HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS`, `HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER` | Retirer ces références de la fiche. Les §§1 et 5 cadrent une décomposition réglementaire et arithmétique des revalorisations. L'emploi et les salaires sont mentionnés comme travaux à rapprocher au §7. Les objets restent reliés à la matrice des preuves. |
+| [Actualisation quantitative](../dossiers/smic-quantitative-update-2026.md) | `HYPOTHESIS-SMIC-PURCHASING-POWER-POVERTY` | Retirer la référence de la fiche. La reconstruction porte sur le pouvoir d'achat horaire. La pauvreté des ménages est citée parmi les limites du calcul et l'hypothèse est traitée dans le dossier historique. |
+| [Audit du crédit d'embauche](../dossiers/smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md) | `HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS` | Retirer la référence de la fiche. Le §8 circonscrit le résultat à l'aide ciblée aux nouvelles embauches. L'étude reste reliée au dossier d'audit et à la matrice, où l'hypothèse sur les revalorisations du SMIC est examinée. |
+
+Le rapport passe de 29 à 21 écarts et ne signale plus d'écart dans les dossiers SMIC. Les trois hypothèses ajoutées au graphe sont des objets discutés dans le dossier historique. Les cinq références retirées concernent les listes des fiches ; leurs objets canoniques, les textes et les liens de recherche cités restent disponibles. Sur les 21 écarts du dépôt, deux sont déjà qualifiés dans les lots TIG et énergie et 19 restent à examiner.
