@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "audit"))
 
-from report_graph_reconciliation import compare_snapshots, render_markdown
+from report_graph_reconciliation import classify_exceptions, compare_snapshots, render_markdown
 
 
 def edge(relation, source, target):
@@ -54,6 +54,48 @@ class GraphReconciliationTests(unittest.TestCase):
         summary = render_markdown({"revision": "after", "base_revision": "before", "rules": rows})
         self.assertIn("**Apparus** 1 · **Disparus** 1", summary)
         self.assertIn("`DOSSIER-A` → `CLAIM-B`", summary)
+
+
+    def test_exception_matches_only_the_exact_field_side_and_pair(self):
+        registries = {
+            "DOSSIER": [{"id": "DOSSIER-A", "claim_ids": ["CLAIM-A", "CLAIM-B"]}],
+            "STUDY": [],
+        }
+        rules = compare_snapshots((registries, []))
+        documented = {
+            "field": "claim_ids", "side": "registry_only", "source": "DOSSIER-A",
+            "target": "CLAIM-A", "reason": "Documentary choice.",
+        }
+        inactive = {**documented, "side": "graph_only"}
+        classification = classify_exceptions(rules, [inactive, documented])
+        self.assertEqual(classification, {
+            "unreviewed_count": 1,
+            "documented_exceptions": [documented],
+            "inactive_exceptions": [inactive],
+        })
+        claim_rule = next(rule for rule in rules if rule["field"] == "claim_ids")
+        self.assertEqual(len(claim_rule["registry_only"]), 2)
+        summary = render_markdown({
+            "revision": "after", "base_revision": None, "rules": rules, **classification,
+        })
+        self.assertIn("**À examiner** 1 · **Écarts documentés** 1", summary)
+        self.assertIn("### Décisions à réexaminer", summary)
+
+    def test_invalid_and_duplicate_exceptions_are_rejected(self):
+        entry = {
+            "field": "claim_ids", "side": "graph_only", "source": "DOSSIER-A",
+            "target": "CLAIM-A", "reason": "Documentary choice.",
+        }
+        for invalid in (
+            {**entry, "field": "unknown"},
+            {**entry, "side": "both"},
+            {**entry, "target": "STUDY-A"},
+            {**entry, "reason": " "},
+        ):
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                classify_exceptions([], [invalid])
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            classify_exceptions([], [entry, {**entry, "reason": "Different reason."}])
 
 
 if __name__ == "__main__":
