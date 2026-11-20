@@ -202,3 +202,30 @@ Mesures relevées sur GitHub Actions (Python 3.12.16, runner hébergé), commit 
 Chargement YAML du corpus de base : 772,57 ms. Le temps de validation est environ ×4,78 à ×10 et ×42,60 à ×100 par rapport à ×1 ; le temps total est environ ×4,83 et ×43,41. Le pic mémoire augmente approximativement avec le volume. Sur ce benchmark synthétique, aucun emballement quadratique évident n'apparaît jusqu'à ×100, avec un temps total ×100 d'environ 29,3 secondes. Cette observation ne vaut pas preuve de performance pour des corpus dont les distributions, tailles de champs ou graphes seraient très différentes.
 
 La CI du commit `6a94213` est entièrement verte : 145 tests réussis, validation des schémas réussie, inventaire des registres généré, scan de secrets réussi. Les seuils de régression devront être définis à partir de plusieurs exécutions comparables, en tenant compte de la variabilité des runners.
+
+## 7. Arbitrage du lot Parcoursup et éducation — 20 novembre 2026
+
+Le rapprochement a été recalculé sur `413cce97adbc485f5d2e138e25d1289b759a366e` pour [l'issue #114](https://github.com/JM-Brun/society-lab/issues/114). Le lot confronte les champs de la [fiche dossier](../dossiers/registry.yml), du [registre des claims](../claims/registry.yml) et des [études](../research/studies/registry.yml) au [dossier rédigé](../dossiers/parcoursup-education-equity.md), au [jeu d'indicateurs](../research/datasets/registry.yml) et aux arêtes existantes.
+
+### Règles d'arbitrage appliquées
+
+| Champ et sens de lecture | Relation à examiner | Décision et exception |
+|---|---|---|
+| `study_ids` et `claim_ids` d'un dossier | `REL-INCLUDES`, du dossier vers l'objet | Retenir la relation lorsque l'étude est mobilisée ou l'affirmation examinée dans le dossier à un emplacement identifiable. L'inclusion d'un claim conserve son statut et son périmètre. |
+| `hypothesis_ids` d'un dossier | `REL-INCLUDES`, du dossier vers l'hypothèse | Vérifier que le dossier examine l'hypothèse comme piste de travail. Le statut de l'hypothèse relève de sa fiche. |
+| `concept_ids` d'un dossier | `REL-INCLUDES`, `REL-ABOUT` ou `REL-USES` selon le rôle | L'inclusion correspond à un concept traité dans le dossier, `REL-ABOUT` à son sujet et `REL-USES` à un concept mobilisé pour l'analyse. Une arête existante peut donc expliquer un écart avec le seul décompte de `REL-INCLUDES`. |
+| `dataset_ids` d'une étude | `REL-USES`, de l'étude vers le dataset | La fiche d'étude identifie le jeu et la revue confirme les données effectivement mobilisées. Une proximité thématique ne suffit pas. |
+| Arête du graphe absente de la liste de la fiche | Relire la relation, sa justification et le dossier | Conserver l'arête si le dossier en justifie le sens. Compléter la liste de la fiche lorsque l'objet appartient à son périmètre déclaré. Consigner les cas ambigus pour revue. |
+
+Les fiches canoniques établissent l'identité, le statut et les références déclarées des objets. Le dossier rédigé permet de vérifier la place de l'objet dans l'analyse. Le graphe expose la relation typée avec sa justification. Le rapprochement est un relevé d'écarts et son résultat dépend de la sémantique des champs et des arêtes comparés.
+
+### Décisions par paire
+
+| Objet de départ | Objet cible | Décision et ancrage documentaire |
+|---|---|---|
+| `DOSSIER-PARCOURSUP-EDUCATION-EQUITY` | `CLAIM-PARCOURSUP-2026-NEW-BACHELORS-OFFER` | Ajouter `REL-INCLUDES`. « Fonctionnement et volumes de Parcoursup 2026 » présente les propositions reçues par les néo-bacheliers inscrits selon le SIES. |
+| `DOSSIER-PARCOURSUP-EDUCATION-EQUITY` | `CLAIM-PARCOURSUP-2026-LYCEENS-OFFER` | Ajouter `REL-INCLUDES`. La même section mobilise le bilan ministériel pour les lycéens ayant fait des vœux. La fiche du claim documente la divergence entre le HTML et le PDF pour le pourcentage publié. |
+| `DOSSIER-PARCOURSUP-EDUCATION-EQUITY` | `CLAIM-INSEE-EARLY-SOCIAL-GAPS` | Ajouter `REL-INCLUDES`. « Les inégalités se forment en amont » cite l'Insee et situe les écarts d'acquis dans la chaîne éducative. |
+| `STUDY-PARCOURSUP-ADMISSIONS-2026` | `DATASET-PARCOURSUP-2026-INDICATORS` | Ajouter `REL-USES`. La référence `dataset_ids` est explicite et les catégories et agrégats de la fiche dataset correspondent à ceux que l'étude reprend du bilan et de la note Flash. |
+
+Après correction, le dossier Parcoursup a zéro divergence pour les quatre champs comparés et les 6 paires étude–dataset déclarées dans le dépôt ont une arête `REL-USES`. À l'échelle des dossiers, 31 paires déclarées restent sans `REL-INCLUDES` et 33 arêtes `REL-INCLUDES` restent hors des listes examinées. Le recomptage avant correction était de 34 et 33. Le décompte historique de la section 4 en comptait 32 dans le second sens, avant l'ajout du lien du dossier SMIC vers `CLAIM-SMIC-DEC-2026-ANNOUNCED-INCREASE`. Les **64 écarts restants** exigent une revue par dossier. Les statuts probatoires, le contrat géographique et les schémas sont hors périmètre de ce lot.
