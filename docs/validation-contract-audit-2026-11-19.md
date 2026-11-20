@@ -266,3 +266,19 @@ Le rapport de rapprochement sur `63f2e78d6ee9f914e9a8ae19d37ba0906a85ed27` relè
 | Comparaison quantitative | Analyse de sensibilité | Retirer la référence de la fiche. Les §§5–7 rapprochent des chiffres publiés, distinguent leurs périmètres et prévoient l'extraction par variante. Le traitement de la sensibilité elle-même est documenté dans les deux dossiers précédents. |
 
 Le lot traite les six paires. Le rapport mécanique passe de 49 à **44 écarts**, dont deux déjà arbitrés (l'ancienne ventilation TIG et le lien thématique de la comparaison quantitative). **42 paires** restent à examiner. Parmi les cinq écarts retirés du rapport, quatre correspondent à des arêtes ajoutées et un à une référence de fiche retirée.
+
+## 10. Arbitrage SMIC : facteurs de transmission et matrice des preuves — 20 novembre 2026
+
+Le rapport de rapprochement sur `f28ebf4e3cf00991f14cb40c1fd08730f5e6061e` signalait sept paires pour ces deux dossiers. Chaque relation a été vérifiée dans le texte et les registres.
+
+| Dossier | Objet | Décision et ancrage |
+|---|---|---|
+| [Facteurs de transmission](../dossiers/smic-facteurs-mecanismes-transmission-2026.md) | `STUDY-EXPERTS-SMIC-2025` | Ajouter `REL-INCLUDES`. Le §3 reprend la projection pour janvier 2026 et la recommandation du rapport. |
+| Facteurs de transmission | `CLAIM-SMIC-DEC-2026-ANNOUNCED-INCREASE` | Ajouter à `claim_ids`. Le §3 et l'addendum du 19 novembre décrivent le montant, la date et la ventilation annoncés. |
+| Facteurs de transmission | `HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER` | Ajouter `REL-INCLUDES`. Le §1 décrit le canal des minima conventionnels et de la compression des grilles. |
+| Facteurs de transmission | `HYPOTHESIS-SMIC-RELIEF-LOW-WAGE-TRAP` | Ajouter `REL-INCLUDES`. Les §§1 et 3 relient le profil des allègements au risque de trappe à bas salaires. |
+| [Matrice des preuves](../dossiers/smic-causal-evidence-matrix.md) | `STUDY-CAHUC-CARCILLO-LE-BARBANCHON-2019-HIRING-CREDITS` | Ajouter à `study_ids`. Le complément sur le crédit d'embauche présente l'évaluation de l'aide temporaire aux nouvelles embauches. |
+| Matrice des preuves | `HYPOTHESIS-SMIC-EMPLOYMENT-EFFECT-HETEROGENEOUS` | Ajouter `REL-INCLUDES`. Les §§2 et 10 examinent les variations des résultats d'emploi selon l'exposition et les groupes étudiés. |
+| Matrice des preuves | `HYPOTHESIS-SMIC-WAGE-COMPRESSION-CAREER` | Ajouter `REL-INCLUDES`. Le §2 examine la diffusion salariale, la compression possible et la mobilité. |
+
+Le rapport passe de 44 à 37 écarts, avec zéro écart sur ces deux dossiers. Il reste 35 paires à examiner et deux écarts déjà qualifiés dans les lots TIG et énergie. Les liens d'inclusion indiquent les objets traités dans les dossiers. La vérification probatoire relève des fiches d'études, de claims et d'hypothèses.
