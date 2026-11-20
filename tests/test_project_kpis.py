@@ -1,12 +1,17 @@
+import json
+import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "validate"))
 from calculate_project_kpis import (
+    REGISTRIES,
     build_known_ids, build_node_type_index, build_report, calculate_claim_conclusion_coverage,
     calculate_connectivity_diagnostics, calculate_source_coverage, calculate_synthesis_coverage,
-    inspect_relations, load_project_data, render_markdown,
+    inspect_relations, load_project_data, main, render_markdown,
 )
 
 class ProjectKpiTests(unittest.TestCase):
@@ -254,6 +259,54 @@ class ProjectKpiTests(unittest.TestCase):
         self.assertIn("aucun degré minimal", markdown)
         self.assertEqual(len(syntheses["covered_dossier_ids"]), syntheses["numerator"])
         self.assertEqual(len(syntheses["active_dossier_ids"]), syntheses["denominator"])
+
+    def test_revision_report_reads_committed_registries_and_file_presence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            documents = {path: {key: []} for path, key in REGISTRIES}
+            documents.update({
+                "knowledge/TAXONOMY.yml": {"domains": []},
+                "knowledge/TERRITORIES.yml": {"territories": []},
+                "knowledge/graph.yml": {"relations": []},
+                "knowledge/RELATION_TYPES.yml": {"relations": []},
+                "dossiers/registry.yml": {"dossiers": [{"id": "DOSSIER-A", "status": "draft"}]},
+                "syntheses/registry.yml": {"dossiers": [{
+                    "dossier_id": "DOSSIER-A", "dossier_path": "dossiers/a.md",
+                    "synthesis_id": "SYNTHESIS-A", "synthesis_path": "syntheses/a.md",
+                }]},
+            })
+            for relative, data in documents.items():
+                path = root / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(data), encoding="utf-8")
+            (root / "dossiers/a.md").touch()
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", "."], cwd=root, check=True)
+            subprocess.run([
+                "git", "-c", "user.name=Test", "-c", "user.email=test@example.org",
+                "-c", "commit.gpgsign=false", "commit", "-qm", "Snapshot",
+            ], cwd=root, check=True)
+            revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root, text=True).strip()
+
+            (root / "syntheses/a.md").touch()
+            (root / "dossiers/registry.yml").write_text('{"dossiers": []}', encoding="utf-8")
+            output = root / "kpis.json"
+            with patch("calculate_project_kpis.ROOT", root):
+                self.assertEqual(main(["--revision", "HEAD", "--format", "json", "--output", str(output)]), 0)
+                first = output.read_bytes()
+                self.assertEqual(main(["--revision", revision, "--format", "json", "--output", str(output)]), 0)
+                self.assertEqual(first, output.read_bytes())
+                self.assertEqual(main(["--format", "json", "--output", str(output)]), 0)
+                local = json.loads(output.read_bytes())
+
+            committed = json.loads(first)
+            self.assertEqual(committed["source_revision"], revision)
+            self.assertNotIn("generated_at", committed)
+            coverage = next(metric for metric in committed["metrics"] if metric["metric_id"] == "synthesis_coverage")
+            self.assertEqual((coverage["numerator"], coverage["denominator"]), (0, 1))
+            self.assertEqual(coverage["issues"]["missing_synthesis_file"], ["DOSSIER-A"])
+            self.assertIn("generated_at", local)
+            self.assertNotIn("source_revision", local)
 
     def test_node_type_index_covers_canonical_registries_and_shared_syntheses(self):
         data = {

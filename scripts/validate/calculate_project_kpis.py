@@ -2,6 +2,7 @@
 """Calculate auditable, read-only Society Lab project KPIs."""
 from __future__ import annotations
 import argparse, json, sys
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -23,27 +24,45 @@ CONCLUSIVE_STATUSES = {"supported", "partially_supported", "contested",
                        "not_supported", "insufficient_evidence"}
 NON_CONCLUSIVE_STATUSES = {"unexamined", "under_review"}
 
-def read_yaml(root: Path, path: str) -> dict[str, Any]:
-    with (root / path).open(encoding="utf-8") as stream:
-        data = yaml.safe_load(stream) or {}
+def git(root: Path, *args: str) -> str:
+    return subprocess.run(
+        ["git", *args], cwd=root, check=True, capture_output=True, encoding="utf-8",
+    ).stdout
+
+
+def committed_files(root: Path, revision: str) -> set[str]:
+    """Index regular files from the commit, independent of the working tree."""
+    entries = git(root, "ls-tree", "-r", "-z", revision).split("\0")
+    return {entry.split("\t", 1)[1] for entry in entries if entry.startswith(("100644 ", "100755 "))}
+
+
+def read_yaml(root: Path, path: str, *, revision: str | None = None) -> dict[str, Any]:
+    if revision is None:
+        content = (root / path).read_text(encoding="utf-8")
+    else:
+        content = git(root, "show", f"{revision}:{path}")
+    data = yaml.safe_load(content) or {}
     if not isinstance(data, dict):
         raise ValueError(f"{path}: expected YAML mapping")
     return data
 
-def load_project_data(root: Path = ROOT) -> dict[str, Any]:
+def load_project_data(root: Path = ROOT, *, revision: str | None = None) -> dict[str, Any]:
+    def read(path: str) -> dict[str, Any]:
+        return read_yaml(root, path, revision=revision)
+
     registries = {}
     for path, key in REGISTRIES:
-        records = read_yaml(root, path).get(key, [])
+        records = read(path).get(key, [])
         if not isinstance(records, list):
             raise ValueError(f"{path}: {key} must be a list")
         registries[key] = records
     return {
         "registries": registries,
-        "domains": read_yaml(root, "knowledge/TAXONOMY.yml").get("domains", []),
-        "territories": read_yaml(root, "knowledge/TERRITORIES.yml").get("territories", []),
-        "synthesis_entries": read_yaml(root, "syntheses/registry.yml").get("dossiers", []),
-        "relations": read_yaml(root, "knowledge/graph.yml").get("relations", []),
-        "relation_definitions": read_yaml(root, "knowledge/RELATION_TYPES.yml").get("relations", []),
+        "domains": read("knowledge/TAXONOMY.yml").get("domains", []),
+        "territories": read("knowledge/TERRITORIES.yml").get("territories", []),
+        "synthesis_entries": read("syntheses/registry.yml").get("dossiers", []),
+        "relations": read("knowledge/graph.yml").get("relations", []),
+        "relation_definitions": read("knowledge/RELATION_TYPES.yml").get("relations", []),
     }
 
 def build_known_ids(data: dict[str, Any]) -> tuple[set[str], list[str]]:
@@ -213,8 +232,15 @@ def calculate_claim_conclusion_coverage(claims):
     }
 
 
-def calculate_synthesis_coverage(dossiers, entries, root: Path):
+def calculate_synthesis_coverage(dossiers, entries, root: Path, *, files: set[str] | None = None):
     """Measure active dossier coverage; shared synthesis files are intentional."""
+    def is_file(path):
+        if not isinstance(path, str):
+            return False
+        if files is None:
+            return (root / path).is_file()
+        return Path(path).as_posix() in files
+
     active_statuses = {"scoping", "researching", "draft", "under_review", "published"}
     active = [d for d in dossiers if isinstance(d, dict) and d.get("status") != "archived"]
     dossier_ids = {d.get("id") for d in dossiers if isinstance(d, dict) and isinstance(d.get("id"), str)}
@@ -242,7 +268,7 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
         dossier_path = entry.get("dossier_path")
         synthesis_path = entry.get("synthesis_path")
         synthesis_id = entry.get("synthesis_id")
-        if not isinstance(dossier_path, str) or not (root / dossier_path).is_file():
+        if not is_file(dossier_path):
             uncovered.append(str(dossier_id))
             issue("missing_dossier_file", str(dossier_id))
             continue
@@ -250,7 +276,7 @@ def calculate_synthesis_coverage(dossiers, entries, root: Path):
             uncovered.append(str(dossier_id))
             issue("missing_synthesis_id", str(dossier_id))
             continue
-        if not isinstance(synthesis_path, str) or not (root / synthesis_path).is_file():
+        if not is_file(synthesis_path):
             uncovered.append(str(dossier_id))
             issue("missing_synthesis_file", str(dossier_id))
             continue
@@ -369,7 +395,7 @@ def calculate_connectivity_diagnostics(relations, known_ids, node_type_by_id, re
     }
 
 
-def build_report(data):
+def build_report(data, *, root: Path = ROOT, files: set[str] | None = None):
     known, duplicate_nodes = build_known_ids(data)
     node_type_by_id = build_node_type_index(data)
     relation_types = {r.get("id") for r in data["relation_definitions"] if isinstance(r, dict)}
@@ -381,14 +407,13 @@ def build_report(data):
         source["issues"]["duplicate_node_ids"] = sorted(duplicate_nodes)
         source["unknown_count"] += len(duplicate_nodes)
     synthesis = calculate_synthesis_coverage(
-        data["registries"]["dossiers"], data["synthesis_entries"], ROOT
+        data["registries"]["dossiers"], data["synthesis_entries"], root, files=files,
     )
     connectivity = calculate_connectivity_diagnostics(
         data["relations"], known, node_type_by_id, data["relation_definitions"]
     )
     return {
         "definition_version": 1,
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "metrics": [source, calculate_claim_conclusion_coverage(data["registries"]["claims"]), synthesis],
         "diagnostics": {"known_node_count": len(known), "relation_count": len(data["relations"]),
                         "duplicate_node_ids": sorted(duplicate_nodes),
@@ -396,9 +421,12 @@ def build_report(data):
     }
 
 def render_markdown(report):
-    lines = ["# KPIs de Society Lab", "", f"Instantané : {report['generated_at']}", "",
-             "| KPI | Résultat | Numérateur / dénominateur | Statut |",
-             "|---|---:|---:|---|"]
+    lines = ["# KPIs de Society Lab", ""]
+    if "source_revision" in report:
+        lines.extend([f"Révision Git des données `{report['source_revision']}`.", ""])
+    if "generated_at" in report:
+        lines.extend([f"Rapport généré le {report['generated_at']} sur la copie de travail.", ""])
+    lines.extend(["| KPI | Résultat | Numérateur / dénominateur | Statut |", "|---|---:|---:|---|"])
     for metric in report["metrics"]:
         value = "non calculable" if metric["value"] is None else f"{metric['value']:.1f} %"
         ratio = "—" if metric["numerator"] is None else f"{metric['numerator']} / {metric['denominator']}"
@@ -448,15 +476,32 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", choices=("markdown", "json"), default="markdown")
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--revision", help="Read inputs from this Git commit or ref and omit the generation time")
+    parser.add_argument("--json-output", type=Path, help="Also write the JSON report to this path")
     args = parser.parse_args(argv)
     try:
-        report = build_report(load_project_data())
-        output = json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) if args.format == "json" else render_markdown(report)
+        revision = None
+        files = None
+        if args.revision is not None:
+            revision = git(ROOT, "rev-parse", "--verify", "--end-of-options", f"{args.revision}^{{commit}}").strip()
+            files = committed_files(ROOT, revision)
+        report = build_report(load_project_data(ROOT, revision=revision), root=ROOT, files=files)
+        if revision is None:
+            report["generated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        else:
+            report["source_revision"] = revision
+        serialized = json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+        if args.json_output:
+            args.json_output.write_text(serialized, encoding="utf-8")
+        output = serialized if args.format == "json" else render_markdown(report)
         if args.output:
-            args.output.write_text(output if output.endswith("\n") else output + "\n", encoding="utf-8")
+            args.output.write_text(output, encoding="utf-8")
         else:
             sys.stdout.write(output)
         return 0
+    except subprocess.CalledProcessError as exc:
+        print(f"ERROR: KPI calculation failed: {exc.stderr.strip()}", file=sys.stderr)
+        return 2
     except (OSError, ValueError, yaml.YAMLError) as exc:
         print(f"ERROR: KPI calculation failed: {exc}", file=sys.stderr)
         return 2
