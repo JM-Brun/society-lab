@@ -81,15 +81,3 @@ issues:
     kind: meta
     dossier_ids: []
     depends_on: []
-  - issue: 125
-    kind: meta
-    dossier_ids: []
-    depends_on: [123]
-  - issue: 127
-    kind: meta
-    dossier_ids: []
-    depends_on: [123, 125]
-  - issue: 156
-    kind: meta
-    dossier_ids: []
-    depends_on: []
