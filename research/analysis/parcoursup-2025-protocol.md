@@ -1,13 +1,14 @@
 # Parcoursup 2025 — protocole d'analyse descriptive
 
-**Statut :** protocole défini avant import et calculs ; aucun résultat calculé n'est présenté ici.  
+**Statut :** protocole défini avant import et calculs. L'exécution du 20 novembre 2026 est documentée dans la [note de résultats](parcoursup-2025-results.md).
+
 **Version :** 1.0 — 13 novembre 2026.
 
 ## 1. Question et périmètre
 
 Décrire comment la demande, le classement, les propositions et les admissions varient entre formations, selon le territoire, la filière et la modalité de sélectivité déclarée. Examiner séparément les profils par voie de baccalauréat et le poids des boursiers parmi les néo-bacheliers.
 
-L'API Explore 2.1 expose les enregistrements sous des noms de champs en snake_case (minuscules), utilisés directement par le script. Le fichier officiel décrit 14 252 formations hors apprentissage, avec 115 variables, pour la campagne du 15 janvier au 10 septembre 2025 (extraction du 7 octobre 2025). Il couvre 1 015 200 candidats, dont 652 800 néo-bacheliers. L'unité de ligne est la formation/établissement, pas le candidat individuel.
+L'API Explore 2.1 expose les enregistrements sous des noms de champs en snake_case (minuscules), utilisés directement par le script. La notice ministérielle décrit 14 252 formations hors apprentissage et 115 variables pour la campagne du 15 janvier au 10 septembre 2025 (extraction du 7 octobre 2025). Il couvre 1 015 200 candidats, dont 652 800 néo-bacheliers. L'unité de ligne est la formation/établissement, pas le candidat individuel.
 
 Source et dictionnaire : [documentation méthodologique officielle](https://data.enseignementsup-recherche.gouv.fr/api/datasets/1.0/fr-esr-parcoursup/attachments/methodologie_opendata_2025pdf/).
 
@@ -104,4 +105,4 @@ La documentation méthodologique et la page officielle de la version courante id
 - `part_acces_gen`, `part_acces_tec`, `part_acces_pro` : parts des terminales générales, technologiques et professionnelles en position de recevoir une proposition en phase principale ;
 - `ran_grp1`, `ran_grp2`, `ran_grp3` : rangs du dernier appelé dans chacun des trois groupes.
 
-Le ministère précise que le taux d'accès et les parts d'accès ne peuvent pas être recalculés à partir de cet open data. Les conserver comme indicateurs officiels fournis, sans les reconstruire ni imputer leurs valeurs manquantes. Le script actuel ne les exploite pas encore : leur intégration aux sorties et au manifeste dépend du contrôle de l'en-tête réel du CSV téléchargé. Cette vérification documentaire ne vaut donc pas validation du schéma physique du fichier.
+Le ministère précise que le taux d'accès et les parts d'accès ne peuvent pas être recalculés à partir de cet open data. Les conserver comme indicateurs officiels fournis, sans les reconstruire ni imputer leurs valeurs manquantes. L'en-tête réel de 118 colonnes, leur couverture et les modalités textuelles de sélectivité sont vérifiés dans la [note de résultats](parcoursup-2025-results.md). Le manifeste conserve leurs noms, et les ratios ainsi que les tableaux d'agrégats continuent d'utiliser les compteurs définis dans ce protocole.
