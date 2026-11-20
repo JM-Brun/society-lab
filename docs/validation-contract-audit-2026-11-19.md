@@ -81,6 +81,24 @@ L'inventaire traite les champs `geographic_scope` au premier niveau. Les champs 
 
 **Décision :** aucune conversion automatique n'est effectuée dans cette PR. Le contrat doit être approuvé avant toute évolution des schémas ou des fiches.
 
+### Décision sur le contrat de géographie — 20 novembre 2026
+
+Le contrôle du corpus à la révision `c03ff6b0854664777555e25aabebe1bc9f570f04` retrouve 284 fiches, 414 occurrences et 50 libellés. Les sept libellés en concordance exacte représentent 199 occurrences. Les cas ci-dessous ont été relus dans leurs fiches en utilisant le champ, le rôle du lieu et la population étudiée.
+
+| Libellé exact | Occurrences | Exemples contrôlés et portée |
+|---|---:|---|
+| France | 167 | Dans `DATASET-PISA-2022-FRANCE`, la France est le pays de l'échantillon et l'OCDE fournit le cadre comparatif. Dans `DATASET-PARCOURSUP-2025-FORMATION-OPEN-DATA`, les formations et établissements sont les unités d'observation. |
+| Europe | 16 | Dans `STUDY-COMPARATIVE-SENTENCING-RATES-EUROPE-2025`, Europe indique le cadre de comparaison. Les pays et systèmes de justice effectivement observés sont listés séparément. |
+| Loire-Atlantique | 7 | Le partenariat TIG de Saint-Herblain et le document de CapAtlantique portent sur des périmètres locaux inclus dans le département. Le libellé départemental fournit un contexte géographique. |
+| Pays de la Loire | 5 | Les mêmes sources locales citent la région comme échelle de contexte. L'annuaire ATIGIP couvre aussi différents niveaux d'organisation. |
+| Nantes Métropole | 2 | Le dossier TIG et le dossier SMIC citent l'échelle métropolitaine aux côtés d'autres échelles. Le rôle précis dépend de la comparaison ou de l'intervention décrite. |
+| Nantes | 1 | Le dossier SMIC cite la commune comme échelle de déclinaison territoriale. |
+| Île de Nantes | 1 | Le dossier SMIC cite le secteur infra-communal comme échelle possible d'analyse. Des données propres à ce périmètre seraient nécessaires pour y établir un résultat. |
+
+`geographic_scope` reste un champ de libellés documentaires. Un libellé peut exprimer le champ d'une observation, un contexte, une juridiction, une aire fonctionnelle, un comparateur ou une échelle de restitution. Les exclusions telles que « France hors Mayotte » et les niveaux géographiques exprimés dans la source font partie de l'information à conserver.
+
+Les éventuelles références structurées relèveront d'un besoin de navigation ou de validation explicite. Le contrat d'un tel changement devra préciser le rôle de chaque référence et son justificatif. Les unités d'observation, groupes comparatifs et périmètres qualifiés restent décrits dans les champs adaptés. Les correspondances textuelles demeurent des candidats à examiner au niveau de la fiche. Cette décision conclut la revue du contrat actuel.
+
 ## 4. Relations des fiches et arêtes du graphe
 
 Le [rapport de rapprochement](../scripts/audit/report_graph_reconciliation.py) recalcule les écarts ci-dessous à partir de révisions Git. Il compare `study_ids`, `claim_ids`, `hypothesis_ids` et `concept_ids` des dossiers avec `REL-INCLUDES`, puis `dataset_ids` des études avec `REL-USES`.
@@ -232,6 +250,8 @@ Mesures relevées sur GitHub Actions (Python 3.12.16, runner hébergé), commit 
 Chargement YAML du corpus de base : 772,57 ms. Le temps de validation est environ ×4,78 à ×10 et ×42,60 à ×100 par rapport à ×1 ; le temps total est environ ×4,83 et ×43,41. Le pic mémoire augmente approximativement avec le volume. Sur ce benchmark synthétique, aucun emballement quadratique évident n'apparaît jusqu'à ×100, avec un temps total ×100 d'environ 29,3 secondes. Cette observation ne vaut pas preuve de performance pour des corpus dont les distributions, tailles de champs ou graphes seraient très différentes.
 
 La CI du commit `6a94213` est entièrement verte : 145 tests réussis, validation des schémas réussie, inventaire des registres généré, scan de secrets réussi. Les seuils de régression devront être définis à partir de plusieurs exécutions comparables, en tenant compte de la variabilité des runners.
+
+Le workflow de [publication des synthèses](../.github/workflows/pages.yml) relève aussi la durée murale et le pic RSS indiqué par GNU time pour `quarto render site` sur le contenu effectivement publié. La durée exclut l'installation de Quarto, le contrôle des liens et le déploiement. Le pic RSS ne mesure pas la somme simultanée de la mémoire de tous les processus. Chaque mesure est rattachée au run et à la révision. Les benchmarks des registres et KPI mesurent d'autres étapes sur corpus réel et synthétique.
 
 ## 7. Arbitrage du lot Parcoursup et éducation — 20 novembre 2026
 
