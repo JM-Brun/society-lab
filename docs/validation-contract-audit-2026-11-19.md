@@ -52,6 +52,25 @@ Les valeurs mélangent plusieurs sémantiques :
 
 Ces valeurs ne sont donc ni toutes des territoires, ni toutes des périmètres administratifs, ni toutes convertibles vers le référentiel territorial.
 
+### Inventaire reproductible par révision Git
+
+Le [script d'inventaire](../scripts/audit/report_geographic_scopes.py) lit les quatre registres et le référentiel des territoires à la même révision. Le JSON donne les occurrences, les identifiants des fiches et les éventuels identifiants territoriaux dont le libellé est exactement identique. Il signale aussi les correspondances multiples. Les libellés d'origine sont conservés avec leur casse, leurs accents et leurs qualifications.
+
+```bash
+python scripts/audit/report_geographic_scopes.py --revision HEAD > /tmp/geographic-scopes.json
+```
+
+Sur `6c6b982e21ee27aba7d6607c4492786ac82c4cf9`, l'exécution retrouve 284 fiches renseignées, 414 occurrences et 50 libellés distincts. Sept libellés (199 occurrences) ont une correspondance textuelle unique avec le référentiel. Les 43 autres (215 occurrences) restent à interpréter. Cette mesure indique une concordance de libellés et ne valide pas l'équivalence des périmètres.
+
+| Cas observé | Question à résoudre avant tout rattachement |
+|---|---|
+| `France`, `Europe`, `Nantes Métropole` | Le contexte de la fiche correspond-il au territoire, à la juridiction, à l'institution ou à une aire fonctionnelle ? |
+| `France hors Mayotte`, `France métropolitaine` | Le périmètre exact doit rester visible. Une référence générale à la France ferait perdre la qualification. |
+| `International`, `OCDE`, `17 pays`, `Établissements` | Examiner le rôle du libellé : échelle relationnelle, comparateur, échantillon ou unité d'observation. |
+| `Belgique`, `Wallonie`, `Flandre` | Les lieux n'ont pas de libellé équivalent dans le référentiel actuel. Toute extension nécessite une décision sur leur périmètre et leur rôle. |
+
+L'inventaire traite les champs `geographic_scope` au premier niveau. Les champs imbriqués de géographie des claims et prévisions portent d'autres contrats. Ce rapport est une aide à la revue du modèle et s'exécute à la demande.
+
 ### Contrat recommandé — sans migration immédiate
 
 1. **Conserver `geographic_scope`** comme champ textuel historique, lisible et non destructif. Ne pas le remplacer par des identifiants.
