@@ -387,6 +387,8 @@ Résultats : hausse supplémentaire de 13 points de pourcentage du nombre d'empl
 
 **Interprétation :** cette étude fournit une preuve empirique utile sur l'hétérogénéité des réponses au coût du travail et sur les canaux de coût relatif / trésorerie. Elle étudie toutefois une baisse de cotisations des années 1990, pas une hausse du SMIC. L'autrice souligne elle-même que l'effet d'une hausse et celui d'une baisse ne sont pas nécessairement symétriques et que l'effet de trésorerie peut masquer le canal de coût relatif. Les résultats ne doivent donc pas être inversés pour prédire les effets d'un coup de pouce actuel.
 
+**Comparaison avec le crédit d’embauche « zéro charges ».** L’[audit de Cahuc, Carcillo et Le Barbanchon (2019)](smic-cahuc-carcillo-le-barbanchon-2019-credit-embauche-zero-charges.md) examine une aide temporaire aux nouvelles embauches en 2009. Son périmètre diffère de celui de Cottet, qui étudie les réactions des entreprises et la rétention des emplois après une baisse de cotisations dans les années 1990. Ces deux études éclairent des canaux du coût employeur distincts de la variation du SMIC légal.
+
 ### 15.2 Albertini, Poirier et Terriau (2025) : résultat chiffré du scénario de hausse de 5 %
 
 Le WP 2501 développe un modèle structurel de recherche et d'appariement sur cycle de vie, avec hétérogénéité par âge, éducation, capital humain, statut familial, temps de travail et productivité ; les décisions de recherche, embauche et séparation sont endogènes. Certains paramètres sont calibrés, les autres estimés par méthode des moments simulés. Le modèle intègre les interactions entre SMIC, barème d'allègements, impôts et transferts.
