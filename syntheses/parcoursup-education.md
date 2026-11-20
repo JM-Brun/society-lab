@@ -23,7 +23,7 @@ Les données de la campagne 2026 indiquent 1 046 000 candidats ayant confirmé a
 
 Les inégalités sociales d'acquis sont documentées en amont : PISA 2022 relève en France un écart de 113 points en mathématiques entre les quartiles socio-économiques supérieur et inférieur, contre 93 points en moyenne OCDE. Les trajectoires éducatives sont également fortement associées au diplôme des parents. Ces constats justifient une analyse de toute la chaîne éducative, mais ne démontrent pas que Parcoursup reproduit à lui seul ces écarts.
 
-Le protocole quantitatif Parcoursup 2025 et les tests sont intégrés, mais le fichier CSV complet n'a pas encore été importé et analysé. Aucun résultat empirique issu de cette analyse n'est donc revendiqué. La prochaine étape est de passer du cadrage et de l'inventaire documentaire à l'exécution contrôlée des données, puis à l'étude des critères des commissions d'examen des vœux et des trajectoires post-admission.
+L'analyse de l'export 2025 trouve une médiane de 10,54 vœux de phase principale par place sur 14 248 formations à capacité positive. La dispersion entre formations est forte et ce rapport décrit la demande relative à l'offre. Les critères des commissions d'examen des vœux et les trajectoires après admission relèvent d'autres sources. [Résultats et contrôles](../research/analysis/parcoursup-2025-results.md).
 
 ## 2. Question et périmètre
 
@@ -41,7 +41,7 @@ Le protocole quantitatif Parcoursup 2025 et les tests sont intégrés, mais le f
 | 93,7 % des néo-bacheliers inscrits ont reçu une proposition et 81,0 % en ont accepté une | Statistique SIES | Réception et acceptation | Ne mesure ni premier choix, ni inscription et réussite |
 | Écart de 113 points PISA en mathématiques entre quartiles socio-économiques en France | Résultat international documenté | Inégalités d'acquis avant l'enseignement supérieur | Ne mesure pas l'effet de Parcoursup |
 | 75 % des 25-34 ans dont au moins un parent est diplômé du supérieur ont eux-mêmes un diplôme du supérieur, contre 32 % lorsque les parents n'ont pas achevé le deuxième cycle secondaire | Indicateur OCDE | Persistance intergénérationnelle des écarts | Association intergénérationnelle, pas effet causal de la plateforme |
-| Le jeu de données Parcoursup 2025 comprend 14 252 formations et 115 variables | Métadonnée documentée | Base pour une analyse descriptive au niveau formation | L'unité n'est pas l'individu ; certains indicateurs ne sont pas recalculables |
+| Le jeu de données Parcoursup 2025 comprend 14 252 formations et 118 colonnes dans l'export analysé | Export et catalogue contrôlés | Base pour une analyse descriptive au niveau formation | L'unité n'est pas l'individu ; certains indicateurs ne sont pas recalculables |
 
 ## 4. Ce que montrent les preuves
 
@@ -55,7 +55,7 @@ Les écarts d'acquis observés dès l'école et dans les évaluations internatio
 
 ### Données et protocole quantitatif
 
-Le fichier Parcoursup 2025 est agrégé au niveau formation. Les rapports de comptes par formation ne doivent pas être interprétés comme des probabilités individuelles ou des taux d'admission sans vérifier les dénominateurs. Le protocole et le script ont été corrigés pour distinguer les phases principale et complémentaire et éviter des ratios mélangeant des populations ou des phases différentes. Les tests unitaires et contrôles de schémas passent selon le dossier, mais le CSV complet reste à télécharger, exécuter et contrôler.
+Le fichier Parcoursup 2025 est agrégé au niveau formation. Les rapports de comptes par formation ne doivent pas être interprétés comme des probabilités individuelles ou des taux d'admission sans vérifier les dénominateurs. Le protocole et le script ont été corrigés pour distinguer les phases principale et complémentaire et éviter des ratios mélangeant des populations ou des phases différentes. La note d'exécution sépare les compositions des vœux en phase principale et des acceptations sur l'ensemble de la campagne. Les données disponibles ne permettent pas d'identifier un effet du statut boursier ou de la voie du bac sur l'admission.
 
 ## 5. Débat contradictoire et hypothèses
 
@@ -68,7 +68,7 @@ Ces propositions restent des hypothèses de recherche, pas des conclusions causa
 
 ## 6. Incertitudes et limites
 
-1. Le CSV Parcoursup 2025 n'a pas encore été exécuté ; aucun résultat issu de cette analyse n'est disponible.
+1. L'export contient trois formations dont le nombre de classés excède d'une unité le nombre de vœux en phase principale. Les ratios correspondants sont conservés et signalés dans la note de résultats.
 2. Les indicateurs administratifs publiés ont des dénominateurs distincts.
 3. Les données agrégées par formation ne permettent pas toutes les analyses individuelles souhaitées.
 4. Les critères déclarés dans les rapports CEV ne sont pas nécessairement équivalents aux pratiques réelles de décision.
@@ -88,7 +88,7 @@ Ces propositions restent des hypothèses de recherche, pas des conclusions causa
 
 ## 8. Questions ouvertes prioritaires
 
-1. Télécharger, vérifier et exécuter le jeu de données officiel Parcoursup 2025 ; documenter le fichier, son checksum, ses variables, ses dénominateurs et les résultats.
+1. Comparer les distributions par filière et territoire entre millésimes dès que les champs et les populations sont suffisamment harmonisés.
 2. Constituer un corpus stratifié de rapports CEV 2026 par filière, sélectivité, territoire et statut public/privé.
 3. Distinguer accès à toute formation, accès aux formations demandées, rang de vœu, inscription et réussite.
 4. Relier les données d'admission aux acquis scolaires en amont et aux trajectoires après admission.
@@ -109,6 +109,7 @@ Ces propositions restent des hypothèses de recherche, pas des conclusions causa
 | Date | Modification |
 |---|---|
 | 2026-11-14 | Première synthèse de cadrage ; aucun résultat quantitatif non exécuté n'est présenté comme acquis. |
+| 2026-11-20 | Ajout du résultat descriptif après import et vérification de l'export ministériel 2025. |
 
 
 ## Liens avec les autres domaines
